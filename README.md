@@ -25,7 +25,7 @@ TO DO : remplacer les points de station par des fichiers de ligne de base GNSS (
 
 * preparation
 
-Pour préparer les observations :
+Pour préparer les observations : <br/>
 https://raw.githack.com/ymeneroux/verniquet/main/preparation/web/index.html#
 
 * releves<br/>
