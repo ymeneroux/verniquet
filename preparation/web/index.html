@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<html>
+
+<!------------------------------------------------>
+<!-- Chargement des functions js et du CSS      -->
+<!------------------------------------------------>
+<head>
+	
+	<!-- JQuery -->
+	<script src="jquery-3.7.0.min.js"></script>
+	
+	<!-- Matrix computations -->
+	<script type="text/javascript" src="sylvester.js"></script>
+	
+	<!-- Specific scripts -->
+	<script src="mainFunctions.js"></script>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="button.css" />
+	
+		<style>
+            .sol_div
+            {
+                font-family:    Courier;
+                font-size:      20px;
+            }
+        </style>
+
+</head>
+
+
+<!------------------------------------------------>
+<!-- Corps de programme                         -->
+<!------------------------------------------------>
+ <!-- <body style="background-image:url('images/fujisan.jpg'); background-attachment:fixed; background-position:POSITION; background-repeat:REPEAT SETTINGS;"> -->
+
+<body>
+
+ <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
+
+
+	<!-- Titre -->
+	<!-- <p style="text-align:center"><font size="10" face="Meiryo">Carnet d'observations</font></p>-->
+ 	<p style="text-align:center"><font size="10" face="Meiryo">Carnet d'observations</font></p>
+ 	
+	<!-- Formuaire d'entrée : nombre de questions tests -->
+	<HR> 
+	<form id="frm1000" action="form_action.asp">
+	
+		Nombre de cibles: &nbsp
+		<input id="spinner" type="number" size="3" name="fname" min="1" max="32" step="1" value="5" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		
+		Number de tours d'horizon: &nbsp
+		<input id="spinner2" type="number" size="3" name="fname" min="1" max="16" step="1" value="4" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			
+		</br></br>	
+				
+		Point de station: &nbsp
+		<input id="area" type="text" size="4" name="fname" min="1" max="32" step="1" value="STAT" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	
+		Point de référence: &nbsp
+		<input id="area" type="text" size="4" name="fname" min="1" max="32" step="1" value="" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	
+		Nom du chantier: &nbsp
+		<input id="area" type="text" size="15" name="fname" min="1" max="32" step="1" value="mesures" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+		
+		</br></br>	
+
+		Tolérance CG/CD (°): &nbsp
+		<input id="area" type="text" size="3" name="fname" min="1" max="32" step="1" value="0.100" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+		Tolérance CG/CD /cible (°): &nbsp
+		<input id="area" type="text" size="3" name="fname" min="1" max="32" step="1" value="0.020" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+		Tolérance CG/CD /tour (°): &nbsp
+		<input id="area" type="text" size="3" name="fname" min="1" max="32" step="1" value="0.010" size="1">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+
+		<input type="checkbox" id="sec_box" name="sec_box" checked />
+		<label for="sec_box">Prédictions en ''</label>
+
+	
+	<HR>
+	
+	   <div class="buttons">
+		<a href="#" class="button start" onclick="firstButton()">START</a>
+	   </div>
+	
+	</form> 
+	
+	</br> </br>
+		
+	
+	 <style>
+            .out_div
+            {
+                font-family:    Courier New;
+                font-size:      14px;
+            }
+        </style>
+
+		
+	<!-- FORMULAIRE -->	
+	<form id="frm"> </form>
+
+
+		
+	<!-- ESPACE TEXTE -->	
+	<div class="sol_div"><form id="sol"></form></div>	
+		
+	
+	<!-- OUTPUTS -->	
+	<div class="out_div"><form id="out"></form></div>
+	
+	
+</body>
+
+
+</html>
