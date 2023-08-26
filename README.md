@@ -5,14 +5,14 @@ Dépôt contenant toutes les données, scripts et relevés topométriques pour l
 # _Contenu_
 
 * compensation
-Résultat (à jour) de la compensation globale :
+Résultat (à jour) de la compensation globale :<br/>
 https://github.com/ymeneroux/verniquet/blob/main/compensation/verniquet.new
 
-Points Verniquet (2D) disponibles au 26/08/2023 : 
+Points Verniquet (2D) disponibles au 26/08/2023 : <br/>
 
-``STATION     E N U sigma_E sigma_N  *``
-``IMBM     657010.0465 6861156.5642 0.0000 0.027086 0.023019  *``
-``CDTN     655859.2852 6861090.3263 0.0000 0.161143 0.085510  *``
+``STATION     E N U sigma_E sigma_N  *``<br/>
+``IMBM     657010.0465 6861156.5642 0.0000 0.027086 0.023019  *``<br/>
+``CDTN     655859.2852 6861090.3263 0.0000 0.161143 0.085510  *``<br/>
 
 TO DO : remplacer les points de station par des fichiers de ligne de base GNSS (fichiers *.bas dans ``ldb_gnss``)
 
