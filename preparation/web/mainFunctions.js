@@ -528,7 +528,7 @@ function reduction(){
 		sec = Math.floor(60*(60*(AVG_SAVED[i]-deg)-min)+0.5)
 		output += "<tr><td align=right>"+NOM[i]+ "&nbsp&nbsp</td>"
 		output += "<td align=right>"+deg+"°&nbsp</td><td align=right>"+min+"'&nbsp</td><td align=right>"+sec+"\"&nbsp</td>"
-		output += "<td align=right> &nbsp +/- &nbsp </td><td align=right>"+(STD_SAVED[i]*3600).toFixed(1)+"</td>"
+		output += "<td align=right> &nbsp +/- &nbsp </td><td align=right>"+(STD_SAVED[i]*3600).toFixed(1)+"\"</td>"
 		relatif = (STD_SAVED[i]*3.14159/180*1000*1e2).toFixed(1)+" cm/km"
 		if (NTH_SAVED[i] == 1){
 			relatif = "?"
