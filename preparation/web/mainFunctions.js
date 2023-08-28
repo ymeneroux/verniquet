@@ -46,6 +46,7 @@ function firstButton() {
     
     var disp_sec = document.getElementById("frm1000").elements[8].checked
 	
+	/*
 	var ex_values = [
 	["IMBM", "000", "07", "30", "180", "07", "17", "044", "59", "56", "224", "59", "33", "090", "10", "46", "270", "10", "52", "135", "04", "15", "315", "03", "40"], 
 	["GLOB", "358", "35", "45", "178", "35", "25", "043", "28", "13", "223", "27", "51", "088", "38", "53", "268", "39", "08", "133", "32", "32", "313", "31", "58"], 
@@ -56,7 +57,7 @@ function firstButton() {
 	["SRBN", "010", "35", "01", "190", "34", "40", "055", "27", "26", "235", "26", "58", "100", "38", "32", "280", "38", "16", "145", "31", "44", "325", "30", "57"], 
 	["TFLE", "018", "00", "44", "198", "00", "11", "062", "53", "13", "242", "52", "38", "108", "04", "19", "288", "04", "06", "152", "57", "27", "332", "56", "52"], 
 	];
-	
+	*/
 
 	var formulaire = '<div id="formulaire_angles"> </br>';
 	var readonly = "" 
@@ -95,7 +96,7 @@ function firstButton() {
 			
 			
 		}
-		formulaire += '<div class=\"buttons\"><a href="#" class="button start" onclick="secondButton()">SUBMIT</a><a href="#" class="button start" onclick="submitAndSave()">SUBMIT & SAVE</a></div>';
+		formulaire += '<div class=\"buttons\"><a href="#" class="button back" onclick="secondButton()">SUBMIT</a><a href="#" class="button back" onclick="submitAndSave()">SUBMIT & SAVE</a></div>';
 		formulaire += "</br></br>"
 		formulaire += "</br></br>"
 	}
@@ -249,10 +250,19 @@ function back_text_area(){
 	
 	chaine = document.getElementById("ta").value
 	lines = chaine.split("\n")
-	lines.pop()
+	while(lines[lines.length-1] == ""){
+		lines.pop()
+	}
 	
-	ncb = lines.length;   // Nombre de cibles 
-	nth = 0;              // Nombre de tours d'horizon
+	// lines.pop()
+	
+	ncb = lines.length;                                   // Nombre de cibles 
+	nth = Math.floor((lines[0].split(" ")).length/6);     // Nombre de tours d'horizon
+	
+	nth = 
+	document.getElementById("frm1000").elements[0].value = ncb
+	document.getElementById("frm1000").elements[1].value = nth
+	firstButton()
 	
 	for (var i=0; i<ncb; i++){
 		line = lines[i].split(" ")
@@ -307,11 +317,18 @@ function reduction(){
 	text_area = '</br></br>'
 	
 	chaine = document.getElementById("ta").value
+	alert(chaine)
 	lines = chaine.split("\n")
-	lines.pop()
+	while(lines[lines.length-1] == ""){
+		lines.pop()
+	}
+	
+	//lines.pop()
 	
 	ncb = lines.length;   // Nombre de cibles 
 	nth = 0;              // Nombre de tours d'horizon
+	
+	alert(lines)
 	
 	output = ""
 	
@@ -342,7 +359,7 @@ function reduction(){
 	// -----------------------------------------------------------------
 	// Contrôle des fermetures CG/CD
 	// -----------------------------------------------------------------
-	output  = "</br><b>Contrôle des fermetures CG/CD (en °):</b></br></br><table>"
+	output  = "</br></br></br></br><b>Contrôle des fermetures CG/CD (en °):</b></br></br><table>"
 	output += "<tr><td>   </td>"
 	nb_controles_incoherents = 0
 	incoherences = ""
@@ -584,11 +601,16 @@ function secondButton() {
 		}
 		text_area += '\n'
 	}
+	
+	
 	text_area += '</textarea><br></br>'
+	
+	/*
 	text_area += '<div class=\"buttons\"><a href="#" class="button start" onclick="reduction()">REDUCTION</a>';
 	text_area += '<a href="#" class="button start" onclick="save_text_area()">SAVE</a></div>';
 	text_area += '<a href="#" class="button start" onclick="back_text_area()">RETOUR</a></div>';
 	text_area +=  '</br> </br>'
+	*/
 	
 	document.getElementById("sol").innerHTML = text_area;
 	

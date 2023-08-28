@@ -85,14 +85,9 @@
 	
 	<HR>
 	
-	   <div class="buttons">
-		<a href="#" class="button start" onclick="firstButton()">START</a>
-	   </div>
 	
 	</form> 
 	
-	</br> </br>
-		
 	
 	 <style>
             .out_div
@@ -102,18 +97,27 @@
             }
         </style>
 
+
+		<!-- ESPACE TEXTE -->	
+	<div class="sol_div"><form id="sol"><br></br><textarea id="ta" rows = "5" cols = "130" name = "description"></textarea><br></br></form></div>	
+	
+	<div class="buttons">
+		<a href="#" class="button list"       onclick="firstButton()">FORMULAIRE</a>
+	    <a href="#" class="button load"       onclick="save_text_area()">SAVE</a>
+	    <a href="#" class="button start"      onclick="back_text_area()">REMPLIR</a>
+	    <a href="#" class="button statistics" onclick="reduction()">REDUCTION</a>
+	 </div>
+	
+	<!-- OUTPUTS -->	
+	<div class="out_div"><form id="out"></form></div></br> </br>
+
 		
 	<!-- FORMULAIRE -->	
 	<form id="frm"> </form>
 
 
 		
-	<!-- ESPACE TEXTE -->	
-	<div class="sol_div"><form id="sol"></form></div>	
-		
-	
-	<!-- OUTPUTS -->	
-	<div class="out_div"><form id="out"></form></div>
+
 	
 	
 </body>
