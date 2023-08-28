@@ -259,7 +259,6 @@ function back_text_area(){
 	ncb = lines.length;                                   // Nombre de cibles 
 	nth = Math.floor((lines[0].split(" ")).length/6);     // Nombre de tours d'horizon
 	
-	nth = 
 	document.getElementById("frm1000").elements[0].value = ncb
 	document.getElementById("frm1000").elements[1].value = nth
 	firstButton()
@@ -317,7 +316,7 @@ function reduction(){
 	text_area = '</br></br>'
 	
 	chaine = document.getElementById("ta").value
-	alert(chaine)
+	
 	lines = chaine.split("\n")
 	while(lines[lines.length-1] == ""){
 		lines.pop()
@@ -328,7 +327,7 @@ function reduction(){
 	ncb = lines.length;   // Nombre de cibles 
 	nth = 0;              // Nombre de tours d'horizon
 	
-	alert(lines)
+	
 	
 	output = ""
 	
