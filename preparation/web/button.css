@@ -47,6 +47,10 @@ a.start {
 	background: url(images/start.png)  3px 3px no-repeat #f3f3f3;
     padding-left: 32px; 
 }
+a.back {
+	background: url(images/back.png)  3px 3px no-repeat #f3f3f3;
+    padding-left: 32px; 
+}
 a.save {
     background: url(images/icones_std.png) 10px 7px no-repeat #f3f3f3;
     padding-left: 30px;
