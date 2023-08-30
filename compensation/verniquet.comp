@@ -35,12 +35,11 @@ data=
 		"SRBN",
 		"VDGC",
 		"NTDM",
-		"RNBV",
+		"MRVC",
 		"POINT",
 		"BAT4",
 		"GLOB",
-		"SSLP",
-		"MRVC"
+		"SSLP"
 	],
 	"all_uninitializable_point_names" : 
 	[
@@ -73,8 +72,6 @@ data=
 			"EGLM_y",
 			"CHNY_x",
 			"CHNY_y",
-			"RNBV_x",
-			"RNBV_y",
 			"BCTR_x",
 			"BCTR_y",
 			"GLOB_x",
@@ -85,10 +82,10 @@ data=
 			"VDGC_y",
 			"SRBN_x",
 			"SRBN_y",
-			"MRVC_x",
-			"MRVC_y",
 			"SSLP_x",
 			"SSLP_y",
+			"MRVC_x",
+			"MRVC_y",
 			"POINT_x",
 			"POINT_y",
 			"POINT_G0",
@@ -136,12 +133,10 @@ data=
 		],
 		"all_sigma0" : 
 		[
-			7397.6440442927069,
-			791.13865579078936,
-			94.315569653110742,
-			1.5523438602811304,
-			1.5395592870507648,
-			1.5395592870196002
+			1881.3952272656134,
+			48.304771397364519,
+			1.5398884175200132,
+			1.5395592870431349
 		],
 		"chi2_test" : 
 		{
@@ -151,20 +146,20 @@ data=
 			"min" : 0.7169873634870777
 		},
 		"compensationDone" : true,
-		"computation_duration" : "00:00:00.003990",
-		"computation_start" : "2023-Aug-29 23:23:13.713527",
+		"computation_duration" : "00:00:00.001969",
+		"computation_start" : "2023-Aug-31 00:32:37.331409",
 		"internal_constraints" : false,
 		"interrupted" : false,
 		"invertedMatrix" : true,
 		"kernel" : null,
 		"messages_computation" : "",
 		"messages_read_config" : "",
-		"messages_read_data" : "Lecture du COR...<br/>\nLecture du fichier verniquet.cor...<br/>\nLecture du OBS...<br/>\nLecture du fichier verniquet.obs...<br/>\nMise en place des points...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;14 points non initialis\u00e9s.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Le point ATFN n'est pas connect\u00e9 avec les autres, il est retir\u00e9.</font><br/>\nLecture des donn\u00e9es termin\u00e9e.<br/>\nInitialisation termin\u00e9e avec 9 points non initialis\u00e9s.<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point EGSP.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point SGRV.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point CPLE.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point SCPL.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point ANFN.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point IMJR.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point IMJG.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point EGLV.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point BMAT.</font><br/>\nD\u00e9viation de la verticale non utilis\u00e9e.<br/>\n",
+		"messages_read_data" : "Lecture du COR...<br/>\nLecture du fichier verniquet.cor...<br/>\nLecture du OBS...<br/>\nLecture du fichier verniquet.obs...<br/>\nMise en place des points...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;13 points non initialis\u00e9s.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Le point ATFN n'est pas connect\u00e9 avec les autres, il est retir\u00e9.</font><br/>\nLecture des donn\u00e9es termin\u00e9e.<br/>\nInitialisation termin\u00e9e avec 9 points non initialis\u00e9s.<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point EGSP.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point SGRV.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point CPLE.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point SCPL.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point ANFN.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point IMJR.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point IMJG.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point EGLV.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point BMAT.</font><br/>\nD\u00e9viation de la verticale non utilis\u00e9e.<br/>\n",
 		"messages_set_least_squares" : "",
-		"nbr_active_obs" : 96,
-		"nbr_all_obs" : 96,
-		"nbr_iterations" : 5,
-		"nbr_parameters" : 74,
+		"nbr_active_obs" : 94,
+		"nbr_all_obs" : 94,
+		"nbr_iterations" : 3,
+		"nbr_parameters" : 72,
 		"projection" : 
 		{
 			"center_cartgeocentric" : 
@@ -212,8 +207,8 @@ data=
 			]
 		},
 		"rank_default" : 0,
-		"sigma_0_final" : 1.5395592870196002,
-		"sigma_0_init" : 7397.6440442927069,
+		"sigma_0_final" : 1.5395592870431349,
+		"sigma_0_init" : 1881.3952272656134,
 		"unit_name" : "g",
 		"use_vertical_deviation" : false
 	},
@@ -256,8 +251,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				167.30714522608122,
-				307.26326407019792,
+				167.3071452261008,
+				307.26326407022685,
 				154.26240904188188
 			],
 			"coord_compensated_georef" : 
@@ -274,8 +269,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				167.30310057428724,
-				307.25583597349532,
+				167.30310057430685,
+				307.25583597352426,
 				154.27199999999999
 			],
 			"coord_init_latlong" : 
@@ -298,31 +293,31 @@ data=
 				"axes" : 
 				[
 					[
-						0.046168522688828213,
-						33.39498383880526,
+						0.046168522689533233,
+						33.394983838806588,
 						0.0
 					],
 					[
-						0.031563539018326023,
-						133.39498383880525,
+						0.031563539018811461,
+						133.39498383880652,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00054046299132047288,
-					0.00020763167753381589,
-					0.00077914421724980176
+					0.00054046299132053262,
+					0.00020763167753377456,
+					0.00077914421724979103
 				],
 				"sigmas" : 
 				[
-					0.035791458658415751,
-					0.04297395687777833
+					0.035791458658964867,
+					0.042973956878434964
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 24,
-			"rank" : 56,
+			"rank" : 54,
 			"shift_from_read" : 
 			[
 				-0.035091331694275141,
@@ -343,26 +338,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-5395.7324491134514,
-				-5990.4888537678053,
+				-5395.7324491134641,
+				-5990.4888537677871,
 				-5.093254053621199
 			],
 			"coord_compensated_georef" : 
 			[
-				652428.61599061382,
+				652428.6159906137,
 				6856554.5481380047,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.3522620524989901,
+				2.3522620524989883,
 				48.807308407613817,
 				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-5395.7360381460549,
-				-5990.4928384135956,
+				-5395.7360381460694,
+				-5990.4928384135756,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -385,34 +380,34 @@ data=
 				"axes" : 
 				[
 					[
-						0.03078204500784543,
-						64.490508605491144,
+						0.030782045008315259,
+						64.490508605501802,
 						0.0
 					],
 					[
-						0.029500165539560551,
-						164.49050860558464,
+						0.029500165540009407,
+						164.49050860578319,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00039062864385033656,
-					1.4640861055258335e-05,
-					0.00037629450135230586
+					0.00039062864385035629,
+					1.4640861055201775e-05,
+					0.00037629450135221463
 				],
 				"sigmas" : 
 				[
-					0.030428354044801046,
-					0.029864851110473295
+					0.030428354045266965,
+					0.029864851110926207
 				]
 			},
 			"nbActiveObs" : 7,
 			"number" : 10,
-			"rank" : 16,
+			"rank" : 14,
 			"shift_from_read" : 
 			[
-				0.0059906138340011239,
+				0.0059906137175858021,
 				-0.011861994862556458,
 				0.0
 			],
@@ -431,29 +426,29 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -5395.7338847258525,
+							"computed_value" : -5395.733884725867,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "BCTR",
 							"instrument_height" : 0.0,
 							"line" : 14,
-							"nabla" : 0.53572587946980521,
-							"normalized_residual" : 0.30385923064386589,
+							"nabla" : 0.53572587947037009,
+							"normalized_residual" : 0.30385922991627012,
 							"number" : 26,
-							"obsRedondancy" : 2.342839037415867,
+							"obsRedondancy" : 2.3428390374109265,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -5395.7399619104654,
-							"rank" : 74,
-							"residual" : 0.0060771846128773177,
-							"residualStd" : 0.3074824880738653,
-							"sigmaResidual" : 0.0030612670823800168,
-							"sigma_a_posteriori" : 0.019764327558769525,
+							"rank" : 72,
+							"residual" : 0.0060771845983254025,
+							"residualStd" : 0.30748248733758582,
+							"sigmaResidual" : 0.0030612670823767936,
+							"sigma_a_posteriori" : 0.019764327558770025,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : 1.9851860191671162,
+							"standardized_residual" : 1.9851860144156468,
 							"target_height" : 0.0,
 							"to" : "BCTR",
 							"unit_factor" : 1.0,
@@ -463,29 +458,29 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -5990.4904476237243,
+							"computed_value" : -5990.4904476237043,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "BCTR",
 							"instrument_height" : 0.0,
 							"line" : 14,
-							"nabla" : 0.33683661976538876,
-							"normalized_residual" : -0.59092405740557297,
+							"nabla" : 0.33683661976474066,
+							"normalized_residual" : -0.59092405640512879,
 							"number" : 27,
-							"obsRedondancy" : 5.9263746619235391,
+							"obsRedondancy" : 5.9263746619463431,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -5990.4786291425762,
-							"rank" : 75,
-							"residual" : -0.011818481148111459,
-							"residualStd" : -0.60925307622445091,
-							"sigmaResidual" : 0.0048688292892331069,
-							"sigma_a_posteriori" : 0.019398311817070728,
+							"rank" : 73,
+							"residual" : -0.011818481128102576,
+							"residualStd" : -0.60925307519304928,
+							"sigmaResidual" : 0.0048688292892424762,
+							"sigma_a_posteriori" : 0.019398311817068376,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : -2.4273763662748991,
+							"standardized_residual" : -2.4273763621606399,
 							"target_height" : 0.0,
 							"to" : "BCTR",
 							"unit_factor" : 1.0,
@@ -502,26 +497,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-1997.2669552658683,
-				-1429.1801966436908,
+				-1997.2669552655752,
+				-1429.1801966434314,
 				-0.47262574969064736
 			],
 			"coord_compensated_georef" : 
 			[
-				655859.61920849013,
-				6861090.523905742,
+				655859.61920849048,
+				6861090.5239057411,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.3985066843349196,
-				48.848345243455007,
+				2.3985066843349245,
+				48.848345243455,
 				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-1997.2670785433716,
-				-1429.180284861224,
+				-1997.2670785430785,
+				-1429.180284860965,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -544,35 +539,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.13980448207388776,
-						81.096538597716901,
+						0.13980448207600266,
+						81.09653859771781,
 						0.0
 					],
 					[
-						0.037496082784454557,
-						181.09653859771691,
+						0.03749608278502406,
+						181.09653859771777,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.0075909514521229904,
-					0.0021411882527450996,
-					0.0012483326278077478
+					0.0075909514521206364,
+					0.0021411882527443069,
+					0.0012483326278073547
 				],
 				"sigmas" : 
 				[
-					0.13413574471872511,
-					0.054395325358707891
+					0.13413574472075482,
+					0.054395325359530844
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 17,
-			"rank" : 60,
+			"rank" : 58,
 			"shift_from_read" : 
 			[
-				-18.380791509873234,
-				5.523905741982162,
+				-18.380791509523988,
+				5.5239057410508394,
 				0.0
 			],
 			"sigmas_init" : 
@@ -590,7 +585,7 @@ data=
 			"coord_compensated_cartesian" : 
 			[
 				-20611.768718128398,
-				-2884.7341215337838,
+				-2884.7341215337792,
 				-33.942106648748037
 			],
 			"coord_compensated_georef" : 
@@ -608,7 +603,7 @@ data=
 			"coord_compensated_stereographic" : 
 			[
 				-20611.860084804739,
-				-2884.7469088231005,
+				-2884.7469088231001,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -631,26 +626,26 @@ data=
 				"axes" : 
 				[
 					[
-						0.03079118574039201,
-						94.858143601954936,
+						0.0307911857408627,
+						94.85814360195431,
 						0.0
 					],
 					[
-						0.030751426321562515,
-						194.85814360204907,
+						0.030751426322032586,
+						194.8581436020512,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00039999328017162133,
-					8.3018054145447329e-08,
-					0.00039897437896834495
+					0.00039999328017162138,
+					8.3018054145447065e-08,
+					0.00039897437896834457
 				],
 				"sigmas" : 
 				[
-					0.03079092709995105,
-					0.030751685294229121
+					0.03079092710042174,
+					0.030751685294699193
 				]
 			},
 			"nbActiveObs" : 3,
@@ -690,7 +685,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -20611.805120916659,
-							"rank" : 76,
+							"rank" : 74,
 							"residual" : -0.00014375408863998018,
 							"residualStd" : -0.007187764807935002,
 							"sigmaResidual" : 8.1974559337874884e-05,
@@ -707,24 +702,24 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -2884.739236429994,
+							"computed_value" : -2884.7392364299935,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "CHNY",
 							"instrument_height" : 0.0,
 							"line" : 15,
-							"normalized_residual" : 0.08879828519638977,
+							"normalized_residual" : 0.088798285219127138,
 							"number" : 29,
-							"obsRedondancy" : 0.25640525791377211,
+							"obsRedondancy" : 0.25640525791386093,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -2884.7410123956979,
-							"rank" : 77,
-							"residual" : 0.0017759657039277954,
-							"residualStd" : 0.088912346323453101,
-							"sigmaResidual" : 0.0010127294957959247,
-							"sigma_a_posteriori" : 0.01997434301718945,
+							"rank" : 75,
+							"residual" : 0.0017759657043825428,
+							"residualStd" : 0.088912346346219723,
+							"sigmaResidual" : 0.0010127294957961389,
+							"sigma_a_posteriori" : 0.019974343017189439,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
@@ -744,8 +739,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-185.55334227653412,
-				-805.98239653490884,
+				-185.55334227653324,
+				-805.98239653490657,
 				-0.053599729141786574
 			],
 			"coord_compensated_georef" : 
@@ -762,8 +757,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-185.55334357510358,
-				-805.9824021806287,
+				-185.5533435751027,
+				-805.98240218062642,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -786,26 +781,26 @@ data=
 				"axes" : 
 				[
 					[
-						0.030791185740392017,
-						111.07339091313773,
+						0.0307911857408627,
+						111.07339091313801,
 						0.0
 					],
 					[
-						0.030655894564963256,
-						11.073390913140347,
+						0.030655894565431864,
+						11.073390913118279,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
 					0.00039989495035739654,
-					-5.9783726997926559e-07,
-					0.00039659770949697793
+					-5.9783726997811215e-07,
+					0.00039659770949697739
 				],
 				"sigmas" : 
 				[
-					0.030787142221071453,
-					0.030659955393590892
+					0.030787142221542087,
+					0.030659955394059558
 				]
 			},
 			"nbActiveObs" : 4,
@@ -832,22 +827,22 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -185.55334279607862,
+							"computed_value" : -185.55334279607774,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "EGLM",
 							"instrument_height" : 0.0,
 							"line" : 16,
-							"normalized_residual" : 0.036418362125800741,
+							"normalized_residual" : 0.03641836216985439,
 							"number" : 30,
 							"obsRedondancy" : 0.026262410650879087,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -185.55407116332114,
-							"rank" : 78,
-							"residual" : 0.00072836724251601481,
-							"residualStd" : 0.036423145237848654,
+							"rank" : 76,
+							"residual" : 0.0007283672433970878,
+							"residualStd" : 0.036423145281908091,
 							"sigmaResidual" : 0.00032411362606881745,
 							"sigma_a_posteriori" : 0.019997373586483715,
 							"sigma_abs" : 0.02,
@@ -862,24 +857,24 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -805.98239879163816,
+							"computed_value" : -805.98239879163589,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "EGLM",
 							"instrument_height" : 0.0,
 							"line" : 16,
-							"normalized_residual" : 0.20725681354747394,
+							"normalized_residual" : 0.20725681366116078,
 							"number" : 31,
-							"obsRedondancy" : 0.85057262575553017,
+							"obsRedondancy" : 0.85057262575566339,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -805.98654392790911,
-							"rank" : 79,
-							"residual" : 0.0041451362709494788,
-							"residualStd" : 0.20814391149558165,
-							"sigmaResidual" : 0.0018445298867251088,
-							"sigma_a_posteriori" : 0.019914761095654095,
+							"rank" : 77,
+							"residual" : 0.0041451362732232155,
+							"residualStd" : 0.20814391160975523,
+							"sigmaResidual" : 0.0018445298867252556,
+							"sigma_a_posteriori" : 0.019914761095654081,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
@@ -899,26 +894,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-272.99775012031051,
-				-1243.9097948763704,
+				-272.99775012019973,
+				-1243.9097948763144,
 				144.58391901750798
 			],
 			"coord_compensated_georef" : 
 			[
-				657585.00080690975,
+				657585.00080690987,
 				6861263.2707306817,
 				144.71100000000001
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4220000725714828,
+				2.4220000725714845,
 				48.850014648149518,
 				144.71100000000001
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-272.99156361449781,
-				-1243.8816061687835,
+				-272.99156361438696,
+				-1243.8816061687276,
 				144.71100000000001
 			],
 			"coord_init_latlong" : 
@@ -941,34 +936,34 @@ data=
 				"axes" : 
 				[
 					[
-						0.17706181905413823,
-						80.661175519541345,
+						0.1770618190568449,
+						80.661175519542681,
 						0.0
 					],
 					[
-						0.017184778155055487,
-						180.66117551954306,
+						0.017184778155317139,
+						180.66117551954324,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.012054546522147972,
-					0.003739750791531929,
-					0.0012969145139900197
+					0.012054546522148057,
+					0.0037397507915319234,
+					0.0012969145139899163
 				],
 				"sigmas" : 
 				[
-					0.16903313900022776,
-					0.055443685724602926
+					0.1690331390028123,
+					0.055443685725448263
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 25,
-			"rank" : 18,
+			"rank" : 16,
 			"shift_from_read" : 
 			[
-				-0.10612656478770077,
+				-0.10612656467128545,
 				-0.034971271641552448,
 				0.0
 			],
@@ -986,8 +981,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-3875.8835409073699,
-				-1834.8157174187957,
+				-3875.8835409073754,
+				-1834.8157174187836,
 				-1.4409245983891368
 			],
 			"coord_compensated_georef" : 
@@ -1004,8 +999,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-3875.8842702695338,
-				-1834.8160626976937,
+				-3875.8842702695392,
+				-1834.8160626976824,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -1028,31 +1023,31 @@ data=
 				"axes" : 
 				[
 					[
-						0.030791185740392017,
-						71.844263001914626,
+						0.030791185740862703,
+						71.844263001914825,
 						0.0
 					],
 					[
-						0.025459046473090201,
-						171.84426300191461,
+						0.025459046473479397,
+						171.84426300191481,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00037682054271178826,
-					4.8947686207615941e-05,
-					0.00029663796027279378
+					0.00037682054271178864,
+					4.8947686207615616e-05,
+					0.00029663796027279361
 				],
 				"sigmas" : 
 				[
-					0.029885718622690537,
-					0.026516108104766331
+					0.029885718623147404,
+					0.026516108105171667
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 8,
-			"rank" : 72,
+			"rank" : 70,
 			"shift_from_read" : 
 			[
 				-0.0049060146557167172,
@@ -1074,29 +1069,29 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -3875.8838326523087,
+							"computed_value" : -3875.8838326523141,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "GLYN",
 							"instrument_height" : 0.0,
 							"line" : 12,
-							"nabla" : 0.34063731144838177,
-							"normalized_residual" : -0.24914820678532124,
+							"nabla" : 0.34063731144838499,
+							"normalized_residual" : -0.24914820705816965,
 							"number" : 22,
-							"obsRedondancy" : 5.7948643220529501,
+							"obsRedondancy" : 5.79486432205284,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -3875.878849688173,
-							"rank" : 70,
-							"residual" : -0.0049829641357064247,
-							"residualStd" : -0.2566968125768217,
-							"sigmaResidual" : 0.0048145048850543049,
-							"sigma_a_posteriori" : 0.019411866028586439,
+							"rank" : 68,
+							"residual" : -0.0049829641411633929,
+							"residualStd" : -0.25669681285793661,
+							"sigmaResidual" : 0.004814504885054265,
+							"sigma_a_posteriori" : 0.019411866028586449,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : -1.0349899428236264,
+							"standardized_residual" : -1.0349899439570782,
 							"target_height" : 0.0,
 							"to" : "GLYN",
 							"unit_factor" : 1.0,
@@ -1106,29 +1101,29 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -1834.8158555287757,
+							"computed_value" : -1834.8158555287644,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "GLYN",
 							"instrument_height" : 0.0,
 							"line" : 12,
-							"nabla" : 0.16131075078806367,
-							"normalized_residual" : 0.52612225098300769,
+							"nabla" : 0.16131075078806356,
+							"normalized_residual" : 0.52612225155144188,
 							"number" : 23,
-							"obsRedondancy" : 25.84050993180157,
+							"obsRedondancy" : 25.840509931801602,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -1834.8263779737954,
-							"rank" : 71,
-							"residual" : 0.010522445019660154,
-							"residualStd" : 0.61094667015854243,
-							"sigmaResidual" : 0.010166712336208117,
-							"sigma_a_posteriori" : 0.017223180898800133,
+							"rank" : 69,
+							"residual" : 0.010522445031028838,
+							"residualStd" : 0.61094667081862297,
+							"sigmaResidual" : 0.010166712336208122,
+							"sigma_a_posteriori" : 0.017223180898800129,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : 1.0349899428338418,
+							"standardized_residual" : 1.0349899439520676,
 							"target_height" : 0.0,
 							"to" : "GLYN",
 							"unit_factor" : 1.0,
@@ -1147,25 +1142,25 @@ data=
 			[
 				-103.69660888869758,
 				-1732.0435347620039,
-				123.95609039569769
+				123.95609039531027
 			],
 			"coord_compensated_georef" : 
 			[
 				657750.72499998892,
 				6860773.9799984796,
-				124.19200000003721
+				124.19199999964979
 			],
 			"coord_compensated_latlong" : 
 			[
 				2.4243069692688564,
 				48.845625324786994,
-				124.19200000003721
+				124.19199999964979
 			],
 			"coord_compensated_stereographic" : 
 			[
 				-103.69459389193212,
 				-1732.0098782977425,
-				124.19200000003721
+				124.19199999964979
 			],
 			"coord_init_latlong" : 
 			[
@@ -1187,17 +1182,17 @@ data=
 				"axes" : 
 				[
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						100.0,
 						0.0
 					],
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						0.0
 					],
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						100.0
 					]
@@ -1213,9 +1208,9 @@ data=
 				],
 				"sigmas" : 
 				[
-					0.0076977964350980008,
-					0.0076977964350980008,
-					0.0076977964350980008
+					0.0076977964352156749,
+					0.0076977964352156749,
+					0.0076977964352156749
 				]
 			},
 			"nbActiveObs" : 3,
@@ -1225,7 +1220,7 @@ data=
 			[
 				-1.1059455573558807e-08,
 				-1.5208497643470764e-06,
-				3.7218228499114048e-11
+				-3.5019809274672298e-10
 			],
 			"sigmas_init" : 
 			[
@@ -1255,7 +1250,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -103.69459197542794,
-							"rank" : 82,
+							"rank" : 80,
 							"residual" : 0.0,
 							"residualStd" : 0.0,
 							"sigmaResidual" : 0.0,
@@ -1285,7 +1280,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -1732.0098462776216,
-							"rank" : 83,
+							"rank" : 81,
 							"residual" : 0.0,
 							"residualStd" : 0.0,
 							"sigmaResidual" : 0.0,
@@ -1315,7 +1310,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 124.19199999999999,
-							"rank" : 84,
+							"rank" : 82,
 							"residual" : -1.9370816062291851e-10,
 							"residualStd" : -3.8741632124583703e-08,
 							"sigmaResidual" : 0.0,
@@ -1339,8 +1334,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-847.19001826119904,
-				-1354.7425796218092,
+				-847.19001826109218,
+				-1354.7425796216251,
 				-0.20005219861653761
 			],
 			"coord_compensated_georef" : 
@@ -1357,8 +1352,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-847.19004039468268,
-				-1354.7426150198526,
+				-847.19004039457593,
+				-1354.7426150196684,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -1381,31 +1376,31 @@ data=
 				"axes" : 
 				[
 					[
-						0.038463071086051487,
-						61.902018569166103,
+						0.038463071086632439,
+						61.902018569167382,
 						0.0
 					],
 					[
-						0.015714469123513968,
-						161.90201856916602,
+						0.015714469123753044,
+						161.90201856916732,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00045913501016481859,
-					0.00024202299710459864,
-					0.00026920909807606047
+					0.00045913501016466788,
+					0.00024202299710449559,
+					0.00026920909807596788
 				],
 				"sigmas" : 
 				[
-					0.032988807969776976,
-					0.025260461712678619
+					0.032988807970275855,
+					0.025260461713060425
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 16,
-			"rank" : 62,
+			"rank" : 60,
 			"shift_from_read" : 
 			[
 				-0.92363757779821754,
@@ -1426,8 +1421,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-8305.7972136305179,
-				-680.29682772799254,
+				-8305.7972136305198,
+				-680.29682772797969,
 				-5.4418830234060405
 			],
 			"coord_compensated_georef" : 
@@ -1445,7 +1440,7 @@ data=
 			"coord_compensated_stereographic" : 
 			[
 				-8305.8031164869717,
-				-680.29731121283714,
+				-680.29731121282487,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -1468,31 +1463,31 @@ data=
 				"axes" : 
 				[
 					[
-						0.030787318986755251,
-						96.631239438944121,
+						0.030787318987225878,
+						96.631239438944164,
 						0.0
 					],
 					[
-						0.029625260063392736,
-						196.63123943894411,
+						0.029625260063845603,
+						196.63123943894416,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00039981668384749122,
-					1.5643779457536077e-06,
-					0.00037036392615794728
+					0.00039981668384749111,
+					1.5643779457535939e-06,
+					0.00037036392615794712
 				],
 				"sigmas" : 
 				[
-					0.030784129279695944,
-					0.029628574530456905
+					0.030784129280166533,
+					0.029628574530909821
 				]
 			},
 			"nbActiveObs" : 4,
 			"number" : 9,
-			"rank" : 66,
+			"rank" : 64,
 			"shift_from_read" : 
 			[
 				0.00038892170414328575,
@@ -1527,7 +1522,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -8305.799984066849,
-							"rank" : 72,
+							"rank" : 70,
 							"residual" : 0.00040929496208264027,
 							"residualStd" : 0.020469439115183178,
 							"sigmaResidual" : 0.00042815435593820288,
@@ -1544,29 +1539,29 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -680.29702112026268,
+							"computed_value" : -680.29702112025041,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "INVD",
 							"instrument_height" : 0.0,
 							"line" : 13,
-							"nabla" : 0.30125447989824222,
-							"normalized_residual" : -0.14066214207559824,
+							"nabla" : 0.30125447989824133,
+							"normalized_residual" : -0.14066214146168932,
 							"number" : 25,
-							"obsRedondancy" : 7.4090184605131837,
+							"obsRedondancy" : 7.4090184605132281,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -680.29420787742117,
-							"rank" : 73,
-							"residual" : -0.0028132428415119648,
-							"residualStd" : -0.14618165780601136,
-							"sigmaResidual" : 0.005443902446044817,
-							"sigma_a_posteriori" : 0.01924484154670927,
+							"rank" : 71,
+							"residual" : -0.0028132428292337863,
+							"residualStd" : -0.14618165716801296,
+							"sigmaResidual" : 0.0054439024460448317,
+							"sigma_a_posteriori" : 0.019244841546709267,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : -0.51676951771167079,
+							"standardized_residual" : -0.51676951545626915,
 							"target_height" : 0.0,
 							"to" : "INVD",
 							"unit_factor" : 1.0,
@@ -1583,39 +1578,39 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1027.7885516009098,
-				-1518.8216629226099,
-				144.44747527503714
+				1027.7652434381612,
+				-1518.7872191232798,
+				-0.26351874875582298
 			],
 			"coord_compensated_georef" : 
 			[
 				658883.57634287106,
 				6860978.9412045823,
-				144.71100000000001
+				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
 				2.4397229785850452,
 				48.847541835797323,
-				144.71100000000001
+				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				1027.7652788085568,
-				-1518.7872713957086,
-				144.71100000000001
+				1027.7652788085941,
+				-1518.7872713956472,
+				0.0
 			],
 			"coord_init_latlong" : 
 			[
-				2.4397232661978054,
-				48.847542071769574,
-				144.71100000000001
+				2.4397229780013205,
+				48.847541835753375,
+				0.0
 			],
 			"coord_read" : 
 			[
-				658883.59763540793,
-				6860978.9672928853,
-				144.71100000000001
+				658883.57629999996,
+				6860978.9412000002,
+				0.0
 			],
 			"dev_eta" : null,
 			"dev_xi" : null,
@@ -1625,35 +1620,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.027116745590710045,
-						68.096625662875326,
+						0.027116745591124057,
+						68.096625662879489,
 						0.0
 					],
 					[
-						0.01227948712764813,
-						168.09662566288117,
+						0.012279487127834787,
+						168.09662566288,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00025330915015096383,
-					0.00010390997143779834,
-					0.00012053596656207208
+					0.00025330915015095727,
+					0.00010390997143780524,
+					0.00012053596656205611
 				],
 				"sigmas" : 
 				[
-					0.024503146509697878,
-					0.016902647918999234
+					0.024503146510072127,
+					0.016902647919256501
 				]
 			},
 			"nbActiveObs" : 2,
-			"number" : 27,
+			"number" : 22,
 			"rank" : 26,
 			"shift_from_read" : 
 			[
-				-0.021292536868713796,
-				-0.026088302955031395,
+				4.2871106415987015e-05,
+				4.5821070671081543e-06,
 				0.0
 			],
 			"sigmas_init" : 
@@ -1670,26 +1665,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-5620.2405472913497,
-				-895.65114691740416,
+				-5620.2405472909959,
+				-895.6511469172749,
 				-2.5379563826268279
 			],
 			"coord_compensated_georef" : 
 			[
-				652241.0105036624,
+				652241.01050366275,
 				6861650.2351149656,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.3491358131861615,
+				2.3491358131861664,
 				48.853120645362253,
 				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-5620.2424101096603,
-				-895.6514437832592,
+				-5620.2424101093065,
+				-895.65144378313039,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -1712,34 +1707,34 @@ data=
 				"axes" : 
 				[
 					[
-						0.149129408938178,
-						62.677808546207082,
+						0.14912940894043925,
+						62.677808546204297,
 						0.0
 					],
 					[
-						0.034164622414674939,
-						162.67780854620716,
+						0.03416462241519401,
+						162.67780854620432,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.0066616527339278409,
-					0.0040972536559785036,
-					0.003213623356895492
+					0.0066616527339258434,
+					0.0040972536559776328,
+					0.0032136233568950795
 				],
 				"sigmas" : 
 				[
-					0.12565720996832438,
-					0.087275813476381109
+					0.12565720997022645,
+					0.087275813477709657
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 21,
-			"rank" : 20,
+			"rank" : 18,
 			"shift_from_read" : 
 			[
-				2.010503662400879,
+				2.0105036627501249,
 				7.2351149655878544,
 				0.0
 			],
@@ -1759,25 +1754,25 @@ data=
 			[
 				-2358.616262040428,
 				-726.79056864145593,
-				120.15670813889567
+				120.15670813905213
 			],
 			"coord_compensated_georef" : 
 			[
 				655503.46199998842,
 				6861795.4529984789,
-				120.63400000007451
+				120.63400000023097
 			],
 			"coord_compensated_latlong" : 
 			[
 				2.3935798110380127,
 				48.854660163282524,
-				120.63400000007451
+				120.63400000023097
 			],
 			"coord_compensated_stereographic" : 
 			[
 				-2358.5718196790494,
 				-726.77687405271922,
-				120.63400000007451
+				120.63400000023097
 			],
 			"coord_init_latlong" : 
 			[
@@ -1799,17 +1794,17 @@ data=
 				"axes" : 
 				[
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						100.0,
 						0.0
 					],
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						0.0
 					],
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						100.0
 					]
@@ -1825,9 +1820,9 @@ data=
 				],
 				"sigmas" : 
 				[
-					0.0076977964350980008,
-					0.0076977964350980008,
-					0.0076977964350980008
+					0.0076977964352156749,
+					0.0076977964352156749,
+					0.0076977964352156749
 				]
 			},
 			"nbActiveObs" : 3,
@@ -1837,7 +1832,7 @@ data=
 			[
 				-1.1641532182693481e-08,
 				-1.5208497643470764e-06,
-				7.4507511271804105e-11
+				2.3096902168617817e-10
 			],
 			"sigmas_init" : 
 			[
@@ -1867,7 +1862,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -2358.5717314714334,
-							"rank" : 85,
+							"rank" : 83,
 							"residual" : 0.0,
 							"residualStd" : 0.0,
 							"sigmaResidual" : 0.0,
@@ -1897,7 +1892,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -726.77684686819305,
-							"rank" : 86,
+							"rank" : 84,
 							"residual" : 0.0,
 							"residualStd" : 0.0,
 							"sigmaResidual" : 0.0,
@@ -1914,22 +1909,22 @@ data=
 							"active" : true,
 							"code" : -3,
 							"comment" : "",
-							"computed_value" : 120.63399999961257,
+							"computed_value" : 120.63400000054389,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "PANA",
 							"instrument_height" : 0.0,
 							"line" : 21,
-							"normalized_residual" : -7.7486106420110445e-08,
+							"normalized_residual" : 1.0877840850298526e-07,
 							"number" : 39,
 							"obsRedondancy" : 0.0,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 120.634,
-							"rank" : 87,
-							"residual" : -3.8743053210055223e-10,
-							"residualStd" : -7.7486106420110445e-08,
+							"rank" : 85,
+							"residual" : 5.4389204251492629e-10,
+							"residualStd" : 1.0877840850298526e-07,
 							"sigmaResidual" : 0.0,
 							"sigma_a_posteriori" : 0.0050000000000000001,
 							"sigma_abs" : 0.0050000000000000001,
@@ -1951,8 +1946,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1471.7989311832639,
-				-1097.219032306828,
+				1471.798931183235,
+				-1097.2190323068266,
 				99.735931737837689
 			],
 			"coord_compensated_georef" : 
@@ -1969,8 +1964,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				1471.7759168970524,
-				-1097.2018752707029,
+				1471.7759168970235,
+				-1097.2018752707013,
 				100.0
 			],
 			"coord_init_latlong" : 
@@ -1993,31 +1988,31 @@ data=
 				"axes" : 
 				[
 					[
-						0.15475618443934377,
-						117.57498036549985,
+						0.15475618444170861,
+						117.57498036550002,
 						0.0
 					],
 					[
-						0.040982046532932977,
-						17.574980365499862,
+						0.040982046533559087,
+						17.574980365500082,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.0094061661392347892,
-					-0.0024640328212978016,
-					0.0014066521843531933
+					0.0094061661392346677,
+					-0.0024640328212978029,
+					0.0014066521843531885
 				],
 				"sigmas" : 
 				[
-					0.14931475998925314,
-					0.057741728495113449
+					0.14931475999153471,
+					0.057741728495996021
 				]
 			},
 			"nbActiveObs" : 8,
 			"number" : 23,
-			"rank" : 30,
+			"rank" : 28,
 			"shift_from_read" : 
 			[
 				13.594388279132545,
@@ -2039,29 +2034,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -0.00020918459832307466,
+							"computed_value" : -0.00020918459837961786,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 89,
-							"nabla" : 0.0030534975965279894,
-							"normalized_residual" : -0.69728199431601035,
-							"number" : 97,
-							"obsRedondancy" : 16.226133989394665,
-							"obs_azim" : -2.189880676437892,
-							"obs_length" : 8433.1528944476468,
+							"line" : 88,
+							"nabla" : 0.003053497596527979,
+							"normalized_residual" : -0.69728199469296492,
+							"number" : 95,
+							"obsRedondancy" : 16.226133989394775,
+							"obs_azim" : -2.1898806764378911,
+							"obs_length" : 8433.1528944476249,
 							"obs_zen" : 1.58323602533186,
 							"original_value" : 0.0,
-							"rank" : 88,
-							"residual" : -0.00020918459829480306,
-							"residualStd" : -0.76182316070078826,
-							"sigmaResidual" : 0.00012084502716477493,
-							"sigma_a_posteriori" : 0.00027458419366297251,
+							"rank" : 86,
+							"residual" : -0.00020918459840788947,
+							"residualStd" : -0.76182316111263471,
+							"sigmaResidual" : 0.0001208450271647753,
+							"sigma_a_posteriori" : 0.00027458419366297235,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : -1.7310153607692531,
+							"standardized_residual" : -1.7310153617050446,
 							"target_height" : 0.0,
 							"to" : "BCTR",
 							"unit_factor" : 0.015707963267948967,
@@ -2071,29 +2066,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 34.270049761866417,
+							"computed_value" : 34.270049761866289,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 90,
-							"nabla" : 0.004637955279893826,
-							"normalized_residual" : -1.5502381335791879,
-							"number" : 98,
-							"obsRedondancy" : 78.147411963950717,
-							"obs_azim" : -1.6515647077237243,
-							"obs_length" : 22156.196560797995,
+							"line" : 89,
+							"nabla" : 0.0046379552798938269,
+							"normalized_residual" : -1.5502381336922744,
+							"number" : 96,
+							"obsRedondancy" : 78.147411963950702,
+							"obs_azim" : -1.6515647077237245,
+							"obs_length" : 22156.196560797969,
 							"obs_zen" : 1.5768374977319877,
 							"original_value" : 34.271599999999999,
-							"rank" : 89,
-							"residual" : -0.0015502381335791879,
-							"residualStd" : -3.3162478118242227,
-							"sigmaResidual" : 0.00088401024860547124,
-							"sigma_a_posteriori" : 0.00046746751797370142,
+							"rank" : 87,
+							"residual" : -0.0015502381336922743,
+							"residualStd" : -3.3162478120661341,
+							"sigmaResidual" : 0.00088401024860547113,
+							"sigma_a_posteriori" : 0.00046746751797370164,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.001,
-							"standardized_residual" : -1.7536427162747186,
+							"standardized_residual" : -1.7536427164026431,
 							"target_height" : 0.0,
 							"to" : "CHNY",
 							"unit_factor" : 0.015707963267948967,
@@ -2103,29 +2098,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 34.468557556949136,
+							"computed_value" : 34.468557556949662,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 91,
-							"nabla" : 0.0043756436601468975,
-							"normalized_residual" : 1.5575569491201491,
-							"number" : 99,
-							"obsRedondancy" : 87.797837526034456,
-							"obs_azim" : -1.6484465545701634,
-							"obs_length" : 7334.9180583661873,
-							"obs_zen" : 1.5849358921379371,
+							"line" : 90,
+							"nabla" : 0.0043756436601469018,
+							"normalized_residual" : 1.557556949685581,
+							"number" : 97,
+							"obsRedondancy" : 87.7978375260343,
+							"obs_azim" : -1.6484465545701534,
+							"obs_length" : 7334.9180583660636,
+							"obs_zen" : 1.5849358921379373,
 							"original_value" : 34.466999999999999,
-							"rank" : 90,
-							"residual" : 0.0015575569491201491,
-							"residualStd" : 4.4588774184449651,
-							"sigmaResidual" : 0.00093700500279365884,
-							"sigma_a_posteriori" : 0.00034931593828460696,
+							"rank" : 88,
+							"residual" : 0.0015575569496855811,
+							"residualStd" : 4.4588774200636196,
+							"sigmaResidual" : 0.00093700500279365808,
+							"sigma_a_posteriori" : 0.00034931593828460924,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.001,
-							"standardized_residual" : 1.6622717535939819,
+							"standardized_residual" : 1.6622717541974292,
 							"target_height" : 0.0,
 							"to" : "PTHN",
 							"unit_factor" : 0.015707963267948967,
@@ -2135,29 +2130,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 43.870700216871505,
+							"computed_value" : 43.870700216871576,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 92,
-							"nabla" : 0.0045626290724270161,
-							"normalized_residual" : 1.30021687152974,
-							"number" : 100,
-							"obsRedondancy" : 80.749043489202961,
-							"obs_azim" : -1.5007580430280869,
-							"obs_length" : 11128.275834241047,
+							"line" : 91,
+							"nabla" : 0.0045626290724270152,
+							"normalized_residual" : 1.3002168715862832,
+							"number" : 98,
+							"obsRedondancy" : 80.749043489202975,
+							"obs_azim" : -1.500758043028084,
+							"obs_length" : 11128.275834241012,
 							"obs_zen" : 1.5805498748464228,
 							"original_value" : 43.869399999999999,
-							"rank" : 91,
-							"residual" : 0.00130021687152974,
-							"residualStd" : 2.9633956610613796,
+							"rank" : 89,
+							"residual" : 0.0013002168715862833,
+							"residualStd" : 2.9633956611902517,
 							"sigmaResidual" : 0.00089860471559636808,
-							"sigma_a_posteriori" : 0.00043875911968638368,
+							"sigma_a_posteriori" : 0.00043875911968638352,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.001,
-							"standardized_residual" : 1.4469286093906573,
+							"standardized_residual" : 1.4469286094535807,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 0.015707963267948967,
@@ -2167,29 +2162,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 50.485316737627564,
+							"computed_value" : 50.485316737627656,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 93,
-							"nabla" : 0.0046830523630057687,
-							"normalized_residual" : 1.01673762756102,
-							"number" : 101,
-							"obsRedondancy" : 76.649563463809216,
-							"obs_azim" : -1.3968558896884824,
-							"obs_length" : 1685.7026139749003,
-							"obs_zen" : 1.6302696521256879,
+							"line" : 92,
+							"nabla" : 0.004683052363005767,
+							"normalized_residual" : 1.0167376276741062,
+							"number" : 99,
+							"obsRedondancy" : 76.649563463809272,
+							"obs_azim" : -1.3968558896884791,
+							"obs_length" : 1685.7026139748709,
+							"obs_zen" : 1.630269652125689,
 							"original_value" : 50.484299999999998,
-							"rank" : 92,
-							"residual" : 0.0010167376275610201,
-							"residualStd" : 2.1040758623393834,
-							"sigmaResidual" : 0.00087549736415256675,
-							"sigma_a_posteriori" : 0.00048322289407881733,
+							"rank" : 90,
+							"residual" : 0.0010167376276741065,
+							"residualStd" : 2.1040758625734117,
+							"sigmaResidual" : 0.00087549736415256708,
+							"sigma_a_posteriori" : 0.00048322289407881663,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.001,
-							"standardized_residual" : 1.1613257437332962,
+							"standardized_residual" : 1.1613257438624638,
 							"target_height" : 0.0,
 							"to" : "EGLM",
 							"unit_factor" : 0.015707963267948967,
@@ -2198,7 +2193,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -139.41192459000726
+						"g0" : -139.41192459000715
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -2210,29 +2205,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 56.362306265740166,
+							"computed_value" : 56.362306265740052,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 97,
-							"nabla" : 0.0033170765465259521,
-							"normalized_residual" : 0.74698961014882226,
-							"number" : 103,
-							"obsRedondancy" : 25.681739687646822,
-							"obs_azim" : -2.189880676437892,
-							"obs_length" : 8433.1528944476468,
+							"line" : 96,
+							"nabla" : 0.0033170765465259499,
+							"normalized_residual" : 0.74698960987300178,
+							"number" : 101,
+							"obsRedondancy" : 25.681739687646854,
+							"obs_azim" : -2.1898806764378911,
+							"obs_length" : 8433.1528944476249,
 							"obs_zen" : 1.58323602533186,
 							"original_value" : 56.362000000000002,
-							"rank" : 93,
-							"residual" : 0.00030626574016101707,
-							"residualStd" : 0.86649646210757247,
-							"sigmaResidual" : 0.00020777633266311703,
-							"sigma_a_posteriori" : 0.00035345296092275942,
+							"rank" : 91,
+							"residual" : 0.00030626574004793071,
+							"residualStd" : 0.86649646178762518,
+							"sigmaResidual" : 0.00020777633266311722,
+							"sigma_a_posteriori" : 0.00035345296092275931,
 							"sigma_abs" : 0.00040999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00040999999999999999,
-							"standardized_residual" : 1.4740164879971585,
+							"standardized_residual" : 1.4740164874528874,
 							"target_height" : 0.0,
 							"to" : "BCTR",
 							"unit_factor" : 0.015707963267948967,
@@ -2242,29 +2237,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 100.23321566720999,
+							"computed_value" : 100.23321566721,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 98,
-							"nabla" : 0.0036268936341391483,
+							"line" : 97,
+							"nabla" : 0.0036268936341391539,
 							"normalized_residual" : -0.21083197501700301,
-							"number" : 104,
-							"obsRedondancy" : 20.446456724516626,
-							"obs_azim" : -1.5007580430280869,
-							"obs_length" : 11128.275834241047,
+							"number" : 102,
+							"obsRedondancy" : 20.446456724516558,
+							"obs_azim" : -1.500758043028084,
+							"obs_length" : 11128.275834241012,
 							"obs_zen" : 1.5805498748464228,
 							"original_value" : 100.2333,
-							"rank" : 94,
+							"rank" : 92,
 							"residual" : -8.433279000680122e-05,
-							"residualStd" : -0.23637781469473618,
-							"sigmaResidual" : 0.00018087103349963637,
-							"sigma_a_posteriori" : 0.00035677117209883066,
+							"residualStd" : -0.23637781469473609,
+							"sigmaResidual" : 0.00018087103349963615,
+							"sigma_a_posteriori" : 0.00035677117209883077,
 							"sigma_abs" : 0.00040000000000000002,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00040000000000000002,
-							"standardized_residual" : -0.4662592366232638,
+							"standardized_residual" : -0.46625923662326435,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 0.015707963267948967,
@@ -2274,29 +2269,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 106.84783218796605,
+							"computed_value" : 106.84783218796609,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "POINT",
 							"instrument_height" : 0.0,
-							"line" : 99,
-							"nabla" : 0.0046398552498794696,
+							"line" : 98,
+							"nabla" : 0.0046398552498794279,
 							"normalized_residual" : -0.46614453866606148,
-							"number" : 105,
-							"obsRedondancy" : 10.11961175643612,
-							"obs_azim" : -1.3968558896884824,
-							"obs_length" : 1685.7026139749003,
-							"obs_zen" : 1.6302696521256879,
+							"number" : 103,
+							"obsRedondancy" : 10.119611756436298,
+							"obs_azim" : -1.3968558896884791,
+							"obs_length" : 1685.7026139748709,
+							"obs_zen" : 1.630269652125689,
 							"original_value" : 106.848,
-							"rank" : 95,
+							"rank" : 93,
 							"residual" : -0.00016781203391978214,
-							"residualStd" : -0.49168632600250811,
-							"sigmaResidual" : 0.00011452081398741987,
-							"sigma_a_posteriori" : 0.00034129896449250883,
+							"residualStd" : -0.49168632600250861,
+							"sigmaResidual" : 0.00011452081398742085,
+							"sigma_a_posteriori" : 0.00034129896449250851,
 							"sigma_abs" : 0.00036000000000000002,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00036000000000000002,
-							"standardized_residual" : -1.4653409112007909,
+							"standardized_residual" : -1.4653409112007785,
 							"target_height" : 0.0,
 							"to" : "EGLM",
 							"unit_factor" : 0.015707963267948967,
@@ -2305,7 +2300,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -195.77444004034575
+						"g0" : -195.77444004034558
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -2318,26 +2313,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-5840.3027398697031,
-				-1666.1296591233008,
+				-5840.302739869614,
+				-1666.1296591232156,
 				-2.8902401062897902
 			],
 			"coord_compensated_georef" : 
 			[
-				652015.40445444093,
+				652015.40445444104,
 				6860881.4552919324,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.3461481253704646,
+				2.3461481253704659,
 				48.846190278379808,
 				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-5840.3049443222726,
-				-1666.1302880165642,
+				-5840.3049443221835,
+				-1666.1302880164794,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -2360,34 +2355,34 @@ data=
 				"axes" : 
 				[
 					[
-						0.030134293355589269,
-						79.627457303830823,
+						0.030134293356049894,
+						79.627457303831335,
 						0.0
 					],
 					[
-						0.024676119076528107,
-						179.62745730383111,
+						0.024676119076905093,
+						179.6274573038306,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00037062475385399464,
-					3.7689218407215447e-05,
-					0.00026938836625370783
+					0.00037062475385399367,
+					3.7689218407217697e-05,
+					0.00026938836625370338
 				],
 				"sigmas" : 
 				[
-					0.029639005612114917,
-					0.025268870869999835
+					0.029639005612567958,
+					0.025268870870385901
 				]
 			},
 			"nbActiveObs" : 8,
 			"number" : 7,
-			"rank" : 52,
+			"rank" : 50,
 			"shift_from_read" : 
 			[
-				-0.0055455591063946486,
+				-0.0055455589899793267,
 				0.0052919322624802589,
 				0.0
 			],
@@ -2406,29 +2401,29 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -5840.3036216505843,
+							"computed_value" : -5840.3036216504952,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "PTHN",
 							"instrument_height" : 0.0,
 							"line" : 11,
-							"nabla" : 0.30258896847330713,
-							"normalized_residual" : -0.27921690179937286,
+							"nabla" : 0.30258896847330186,
+							"normalized_residual" : -0.27921689734284882,
 							"number" : 20,
-							"obsRedondancy" : 7.3438115365013328,
+							"obsRedondancy" : 7.3438115365015877,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -5840.2980373125483,
-							"rank" : 68,
-							"residual" : -0.0055843380359874573,
-							"residualStd" : -0.29007111769117844,
-							"sigmaResidual" : 0.0054198935548592942,
-							"sigma_a_posteriori" : 0.019251616915313755,
+							"rank" : 66,
+							"residual" : -0.0055843379468569765,
+							"residualStd" : -0.29007111306141287,
+							"sigmaResidual" : 0.0054198935548593948,
+							"sigma_a_posteriori" : 0.019251616915313727,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : -1.0303409060461579,
+							"standardized_residual" : -1.0303408896010777,
 							"target_height" : 0.0,
 							"to" : "PTHN",
 							"unit_factor" : 1.0,
@@ -2438,29 +2433,29 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -1666.1299106789725,
+							"computed_value" : -1666.1299106788877,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "PTHN",
 							"instrument_height" : 0.0,
 							"line" : 11,
-							"nabla" : 0.14350033572875207,
-							"normalized_residual" : 0.26268993060512003,
+							"nabla" : 0.14350033572874965,
+							"normalized_residual" : 0.26268993484563907,
 							"number" : 21,
-							"obsRedondancy" : 32.652908436573057,
+							"obsRedondancy" : 32.652908436574165,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -1666.1351644775846,
-							"rank" : 69,
-							"residual" : 0.0052537986121024005,
-							"residualStd" : 0.32009876844144836,
-							"sigmaResidual" : 0.011428544690654723,
-							"sigma_a_posteriori" : 0.01641305475082892,
+							"rank" : 67,
+							"residual" : 0.0052537986969127815,
+							"residualStd" : 0.32009877360870248,
+							"sigmaResidual" : 0.011428544690654917,
+							"sigma_a_posteriori" : 0.016413054750828784,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : 0.45970845407801603,
+							"standardized_residual" : 0.45970846149893391,
 							"target_height" : 0.0,
 							"to" : "PTHN",
 							"unit_factor" : 1.0,
@@ -2471,120 +2466,33 @@ data=
 				}
 			]
 		},
-		"RNBV" : 
-		{
-			"code" : 6,
-			"comment" : "",
-			"coord_compensated_cartesian" : 
-			[
-				-2980.8910914627604,
-				1183.0736412155932,
-				136.19407726671923
-			],
-			"coord_compensated_georef" : 
-			[
-				654895.14154683845,
-				6863709.5461611934,
-				137.0
-			],
-			"coord_compensated_latlong" : 
-			[
-				2.3850865207622127,
-				48.871831077113463,
-				137.0
-			],
-			"coord_compensated_stereographic" : 
-			[
-				-2980.8274066708473,
-				1183.0483656159097,
-				137.0
-			],
-			"coord_init_latlong" : 
-			[
-				2.3849481125038023,
-				48.871843440898786,
-				137.0
-			],
-			"coord_read" : 
-			[
-				654885.0,
-				6863711.0,
-				137.0
-			],
-			"dev_eta" : null,
-			"dev_xi" : null,
-			"dimension" : 2,
-			"ellips" : 
-			{
-				"axes" : 
-				[
-					[
-						0.077361828568805829,
-						30.045722038511308,
-						0.0
-					],
-					[
-						0.0077385617912292997,
-						130.04572203851069,
-						0.0
-					]
-				],
-				"matrix" : 
-				[
-					0.00054193147651690422,
-					0.001012216262534417,
-					0.0020083295611174135
-				],
-				"sigmas" : 
-				[
-					0.035840049935208791,
-					0.068994410489167296
-				]
-			},
-			"nbActiveObs" : 2,
-			"number" : 22,
-			"rank" : 14,
-			"shift_from_read" : 
-			[
-				10.141546838451177,
-				-1.4538388065993786,
-				0.0
-			],
-			"sigmas_init" : 
-			[
-				0.0,
-				0.0,
-				0.0
-			],
-			"stations" : []
-		},
 		"S1" : 
 		{
 			"code" : 1,
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				0.23184961773927359,
-				0.74095234874825444,
-				154.27199995219866
+				0.23184961773980992,
+				0.74095234874825167,
+				154.27199995289158
 			],
 			"coord_compensated_georef" : 
 			[
 				657867.23720182222,
 				6862505.7391502419,
-				154.27199999966467
+				154.27200000035759
 			],
 			"coord_compensated_latlong" : 
 			[
 				2.4257229068003547,
 				48.861206658417714,
-				154.27199999966467
+				154.27200000035759
 			],
 			"coord_compensated_stereographic" : 
 			[
-				0.23184401277353067,
-				0.74093443139263271,
-				154.27199999966467
+				0.23184401277406694,
+				0.74093443139262971,
+				154.27200000035759
 			],
 			"coord_init_latlong" : 
 			[
@@ -2606,45 +2514,45 @@ data=
 				"axes" : 
 				[
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						100.0
 					],
 					[
-						0.0076845744971764064,
-						77.549087511370388,
+						0.0076845744972938819,
+						77.549087511390553,
 						0.0
 					],
 					[
-						0.0076754211048588906,
-						177.54908751137336,
+						0.0076754211049762221,
+						177.54908751139052,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					2.4907116097639424e-05,
-					1.922690427341572e-08,
+					2.4907116097639451e-05,
+					1.9226904273412567e-08,
 					0.0,
-					2.4861951622658171e-05,
+					2.4861951622658154e-05,
 					0.0,
 					2.5000000000000005e-05
 				],
 				"sigmas" : 
 				[
-					0.0076834831004931698,
-					0.0076765136477442136,
-					0.0076977964350980008
+					0.0076834831006106297,
+					0.0076765136478615589,
+					0.0076977964352156749
 				]
 			},
 			"nbActiveObs" : 12,
 			"number" : 0,
-			"rank" : 68,
+			"rank" : 66,
 			"shift_from_read" : 
 			[
 				0.0012018221896141768,
 				0.00015024188905954361,
-				-3.3531932785990648e-10
+				3.5760194805334322e-10
 			],
 			"sigmas_init" : 
 			[
@@ -2661,24 +2569,24 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 0.23184401248181374,
+							"computed_value" : 0.23184401248235001,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 2,
-							"normalized_residual" : 0.24016453300746421,
+							"normalized_residual" : 0.2401645331147173,
 							"number" : 0,
-							"obsRedondancy" : 0.37153560944230835,
+							"obsRedondancy" : 0.37153560944218622,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.23064318981677642,
 							"rank" : 0,
-							"residual" : 0.001200822665037321,
-							"residualStd" : 0.24061192844989426,
-							"sigmaResidual" : 0.00030476860461763593,
-							"sigma_a_posteriori" : 0.0049907029662803436,
+							"residual" : 0.0012008226655735865,
+							"residualStd" : 0.24061192855734698,
+							"sigmaResidual" : 0.00030476860461758036,
+							"sigma_a_posteriori" : 0.004990702966280347,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -2691,24 +2599,24 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 0.74093443528900149,
+							"computed_value" : 0.74093443528899849,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 2,
-							"normalized_residual" : 0.032102902338615458,
+							"normalized_residual" : 0.032102902338015937,
 							"number" : 1,
-							"obsRedondancy" : 0.55219350936730471,
+							"obsRedondancy" : 0.55219350936737133,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.74077392077730841,
 							"rank" : 1,
-							"residual" : 0.00016051451169307729,
-							"residualStd" : 0.032191906185317788,
-							"sigmaResidual" : 0.00037154862042783414,
-							"sigma_a_posteriori" : 0.0049861760521122973,
+							"residual" : 0.00016051451169007969,
+							"residualStd" : 0.032191906184716616,
+							"sigmaResidual" : 0.0003715486204278569,
+							"sigma_a_posteriori" : 0.0049861760521122955,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -2721,13 +2629,13 @@ data=
 							"active" : true,
 							"code" : -3,
 							"comment" : "",
-							"computed_value" : 154.27199999988079,
+							"computed_value" : 154.27200000081211,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 2,
-							"normalized_residual" : -2.3840129870222881e-08,
+							"normalized_residual" : 1.6242438505287282e-07,
 							"number" : 2,
 							"obsRedondancy" : 0.0,
 							"obs_azim" : 0.0,
@@ -2735,8 +2643,8 @@ data=
 							"obs_zen" : 0.0,
 							"original_value" : 154.27199999999999,
 							"rank" : 2,
-							"residual" : -1.1920064935111441e-10,
-							"residualStd" : -2.3840129870222881e-08,
+							"residual" : 8.1212192526436411e-10,
+							"residualStd" : 1.6242438505287282e-07,
 							"sigmaResidual" : 0.0,
 							"sigma_a_posteriori" : 0.0050000000000000001,
 							"sigma_abs" : 0.0050000000000000001,
@@ -2757,29 +2665,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 0.00048450092949126831,
+							"computed_value" : 0.00048450092964676209,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 5,
-							"nabla" : 0.001896083084590727,
-							"normalized_residual" : 1.6150030983513473,
+							"nabla" : 0.0018960830845907335,
+							"normalized_residual" : 1.6150030987283019,
 							"number" : 40,
-							"obsRedondancy" : 42.08191504582134,
-							"obs_azim" : -1.8488025494853668,
-							"obs_length" : 6075.7717119793851,
-							"obs_zen" : 1.5966092097420623,
+							"obsRedondancy" : 42.081915045821049,
+							"obs_azim" : -1.8488025494853575,
+							"obs_length" : 6075.7717119793006,
+							"obs_zen" : 1.5966092097422959,
 							"original_value" : 0.0,
 							"rank" : 3,
-							"residual" : 0.00048450092950540414,
-							"residualStd" : 2.122102040970022,
-							"sigmaResidual" : 0.00019461172508674596,
-							"sigma_a_posteriori" : 0.00022831179658256993,
+							"residual" : 0.00048450092961849049,
+							"residualStd" : 2.122102041465332,
+							"sigmaResidual" : 0.00019461172508674528,
+							"sigma_a_posteriori" : 0.0002283117965825705,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : 2.4895772815817923,
+							"standardized_residual" : 2.4895772821628883,
 							"target_height" : 0.0,
 							"to" : "PTHN",
 							"unit_factor" : 0.015707963267948967,
@@ -2789,30 +2697,30 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -76.726691226502112,
+							"computed_value" : -76.726691226502155,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 6,
-							"nabla" : 0.0034902016832216291,
-							"normalized_residual" : -2.4890331276258197,
+							"nabla" : 0.0034902016832216299,
+							"normalized_residual" : -2.4890331276964988,
 							"number" : 41,
-							"obsRedondancy" : 88.317474206416492,
-							"obs_azim" : -3.0540302074653281,
-							"obs_length" : 7721.2086070790974,
-							"obs_zen" : 1.5913102470809557,
+							"obsRedondancy" : 88.317474206416435,
+							"obs_azim" : -3.0540302074653218,
+							"obs_length" : 7721.208607079092,
+							"obs_zen" : 1.5913102470811391,
 							"original_value" : -76.724699999999999,
-							"probableError" : 0.0022546234706019123,
+							"probableError" : 0.0022546234706659362,
 							"rank" : 4,
-							"residual" : -0.0019912265021006562,
-							"residualStd" : -7.28219497389449,
-							"sigmaResidual" : 0.00075181901739784806,
-							"sigma_a_posteriori" : 0.00027343768042999205,
+							"residual" : -0.0019912265021571991,
+							"residualStd" : -7.2821949741012597,
+							"sigmaResidual" : 0.00075181901739784774,
+							"sigma_a_posteriori" : 0.0002734376804299927,
 							"sigma_abs" : 0.00080000000000000004,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00080000000000000004,
-							"standardized_residual" : -2.6485450035469609,
+							"standardized_residual" : -2.6485450036221705,
 							"target_height" : 0.0,
 							"to" : "VTRY",
 							"unit_factor" : 0.015707963267948967,
@@ -2822,24 +2730,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -46.731290228037409,
+							"computed_value" : -46.731290228037537,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 7,
-							"normalized_residual" : -0.19197454763956959,
+							"normalized_residual" : -0.19197454800048361,
 							"number" : 42,
-							"obsRedondancy" : 0.804681977807431,
-							"obs_azim" : -2.5828635503740447,
-							"obs_length" : 1606.0264762757292,
-							"obs_zen" : 1.6671130893488086,
+							"obsRedondancy" : 0.8046819778068981,
+							"obs_azim" : -2.5828635503740398,
+							"obs_length" : 1606.0264762756069,
+							"obs_zen" : 1.6671130893496995,
 							"original_value" : -46.731200000000001,
 							"rank" : 5,
-							"residual" : -9.0228037390597702e-05,
-							"residualStd" : -0.19275163288925073,
-							"sigmaResidual" : 4.2160911861303984e-05,
-							"sigma_a_posteriori" : 0.00046810517782975154,
+							"residual" : -9.0228037560227285e-05,
+							"residualStd" : -0.19275163325162514,
+							"sigmaResidual" : 4.2160911861289387e-05,
+							"sigma_a_posteriori" : 0.00046810517782975284,
 							"sigma_abs" : 0.00046999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00046999999999999999,
@@ -2852,29 +2760,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -10.456826674645923,
+							"computed_value" : -10.456826674646162,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 8,
-							"nabla" : 0.0021640877892156276,
-							"normalized_residual" : -0.66669013506092578,
+							"nabla" : 0.0021640877892156293,
+							"normalized_residual" : -0.66669013572613989,
 							"number" : 43,
-							"obsRedondancy" : 41.493091947449642,
-							"obs_azim" : -2.0130656093128176,
-							"obs_length" : 4291.5947296391005,
-							"obs_zen" : 1.6070472793564941,
+							"obsRedondancy" : 41.493091947449571,
+							"obs_azim" : -2.0130656093128145,
+							"obs_length" : 4291.5947296391341,
+							"obs_zen" : 1.607047279356824,
 							"original_value" : -10.4566,
 							"rank" : 6,
-							"residual" : -0.00022667464592071476,
-							"residualStd" : -0.87160648991598799,
-							"sigmaResidual" : 0.00021901144785433426,
-							"sigma_a_posteriori" : 0.00026006534891974403,
+							"residual" : -0.00022667464614688755,
+							"residualStd" : -0.8716064907856641,
+							"sigmaResidual" : 0.0002190114478543341,
+							"sigma_a_posteriori" : 0.0002600653489197442,
 							"sigma_abs" : 0.00034000000000000002,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00034000000000000002,
-							"standardized_residual" : -1.0349899429525591,
+							"standardized_residual" : -1.0349899439852581,
 							"target_height" : 0.0,
 							"to" : "GLYN",
 							"unit_factor" : 0.015707963267948967,
@@ -2884,30 +2792,30 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -21.853536092666833,
+							"computed_value" : -21.853536092666225,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 9,
-							"nabla" : 0.015908415604689877,
-							"normalized_residual" : -0.66259652796599355,
+							"nabla" : 0.015908415604694047,
+							"normalized_residual" : -0.66259652731810281,
 							"number" : 44,
-							"obsRedondancy" : 6.1214784205155803,
-							"obs_azim" : -2.1920847022265781,
-							"obs_length" : 2461.4267949770883,
-							"obs_zen" : 1.6336826678572851,
+							"obsRedondancy" : 6.1214784205123713,
+							"obs_azim" : -2.1920847022265617,
+							"obs_length" : 2461.4267949767582,
+							"obs_zen" : 1.6336826678578695,
 							"original_value" : -21.852900000000002,
-							"probableError" : 0.010391160813628729,
+							"probableError" : 0.010391160803473638,
 							"rank" : 7,
-							"residual" : -0.00063609266684735381,
-							"residualStd" : -0.68385816252666531,
-							"sigmaResidual" : 0.00023751956787488389,
-							"sigma_a_posteriori" : 0.00093015292015696457,
+							"residual" : -0.00063609266622537868,
+							"residualStd" : -0.6838581618579731,
+							"sigmaResidual" : 0.00023751956787482168,
+							"sigma_a_posteriori" : 0.0009301529201569804,
 							"sigma_abs" : 0.00096000000000000002,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00096000000000000002,
-							"standardized_residual" : -2.6780642645090311,
+							"standardized_residual" : -2.6780642618911052,
 							"target_height" : 0.0,
 							"to" : "CDTN",
 							"unit_factor" : 0.015707963267948967,
@@ -2917,29 +2825,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 0.15993547308770906,
+							"computed_value" : 0.15993547308799175,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 10,
-							"nabla" : 0.0067690578403397528,
-							"normalized_residual" : -0.3427644005609965,
+							"nabla" : 0.0067690578403399263,
+							"normalized_residual" : -0.34276439997200492,
 							"number" : 45,
-							"obsRedondancy" : 8.4526665741669778,
-							"obs_azim" : -1.8462978994716668,
-							"obs_length" : 5948.2226467201017,
-							"obs_zen" : 1.5971450634901827,
+							"obsRedondancy" : 8.4526665741665461,
+							"obs_azim" : -1.8462978994716555,
+							"obs_length" : 5948.2226467197297,
+							"obs_zen" : 1.5971450634904225,
 							"original_value" : 0.16009999999999999,
 							"rank" : 8,
-							"residual" : -0.00016452691226927834,
-							"residualStd" : -0.35823899714666529,
-							"sigmaResidual" : 0.00013955265596498226,
-							"sigma_a_posteriori" : 0.00045926577949278926,
+							"residual" : -0.00016452691198656235,
+							"residualStd" : -0.35823899653108199,
+							"sigmaResidual" : 0.0001395526559649789,
+							"sigma_a_posteriori" : 0.00045926577949279024,
 							"sigma_abs" : 0.00048000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00048000000000000001,
-							"standardized_residual" : -1.1789593765278306,
+							"standardized_residual" : -1.178959374501986,
 							"target_height" : 0.0,
 							"to" : "SEDM",
 							"unit_factor" : 0.015707963267948967,
@@ -2949,29 +2857,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 12.490712681052065,
+							"computed_value" : 12.490712681051711,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 11,
-							"nabla" : 0.0025624656210765993,
-							"normalized_residual" : 0.75032918555601169,
+							"nabla" : 0.0025624656210766002,
+							"normalized_residual" : 0.75032918493917677,
 							"number" : 46,
-							"obsRedondancy" : 77.442077937487582,
-							"obs_azim" : -1.6526065040237004,
-							"obs_length" : 8335.4327891137273,
-							"obs_zen" : 1.5898800205976245,
+							"obsRedondancy" : 77.442077937487525,
+							"obs_azim" : -1.652606504023699,
+							"obs_length" : 8335.4327891137436,
+							"obs_zen" : 1.5898800205977945,
 							"original_value" : 12.4903,
 							"rank" : 9,
-							"residual" : 0.00041268105205580642,
-							"residualStd" : 1.5798006697711402,
-							"sigmaResidual" : 0.00048400649351108919,
-							"sigma_a_posteriori" : 0.0002612234948068417,
+							"residual" : 0.00041268105171654725,
+							"residualStd" : 1.579800668472406,
+							"sigmaResidual" : 0.00048400649351108897,
+							"sigma_a_posteriori" : 0.00026122349480684214,
 							"sigma_abs" : 0.00055000000000000003,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00055000000000000003,
-							"standardized_residual" : 0.85263536251782002,
+							"standardized_residual" : 0.85263536181688115,
 							"target_height" : 0.0,
 							"to" : "INVD",
 							"unit_factor" : 0.015707963267948967,
@@ -2981,29 +2889,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 15.589206822127052,
+							"computed_value" : 15.58920682212681,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 12,
-							"nabla" : 0.0051573793280920164,
-							"normalized_residual" : 0.1681480707801804,
+							"nabla" : 0.0051573793280920172,
+							"normalized_residual" : 0.1681480705963001,
 							"number" : 47,
-							"obsRedondancy" : 95.613625449831503,
-							"obs_azim" : -1.6039354718697394,
-							"obs_length" : 9635.5552773778436,
-							"obs_zen" : 1.5874720337455912,
+							"obsRedondancy" : 95.613625449831474,
+							"obs_azim" : -1.6039354718697363,
+							"obs_length" : 9635.5552773778527,
+							"obs_zen" : 1.5874720337457382,
 							"original_value" : 15.589,
 							"rank" : 10,
-							"residual" : 0.00020682212705962189,
-							"residualStd" : 0.80285854185482741,
-							"sigmaResidual" : 0.0012027213058021799,
-							"sigma_a_posteriori" : 0.00025760718268227553,
+							"residual" : 0.0002068221268334491,
+							"residualStd" : 0.8028585409768505,
+							"sigmaResidual" : 0.0012027213058021797,
+							"sigma_a_posteriori" : 0.00025760718268227602,
 							"sigma_abs" : 0.00123,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00123,
-							"standardized_residual" : 0.17196180533417721,
+							"standardized_residual" : 0.17196180514612638,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 0.015707963267948967,
@@ -3013,22 +2921,22 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 149.46930800376464,
+							"computed_value" : 149.46930800376475,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 13,
-							"normalized_residual" : 0.0022171093195526527,
+							"normalized_residual" : 0.0022171093508785221,
 							"number" : 48,
 							"obsRedondancy" : 0.00020333430956753773,
-							"obs_azim" : 0.49904823980071517,
-							"obs_length" : 349.09895742849471,
-							"obs_zen" : 1.5708203983031876,
+							"obs_azim" : 0.49904823980072349,
+							"obs_length" : 349.09895742852927,
+							"obs_zen" : 1.5708203983072464,
 							"original_value" : 149.4693,
 							"rank" : 11,
-							"residual" : 8.0037646435850754e-06,
-							"residualStd" : 0.0022171115736280534,
+							"residual" : 8.003764756671465e-06,
+							"residualStd" : 0.0022171116049539549,
 							"sigmaResidual" : 5.1476917698105156e-06,
 							"sigma_a_posteriori" : 0.0036099963298138467,
 							"sigma_abs" : 0.0036099999999999999,
@@ -3042,7 +2950,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -117.69891032152732
+						"g0" : -117.69891032152688
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -3055,27 +2963,27 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1829.9932572880014,
-				-550.11607263922326,
-				149.46988274073095
+				1829.9932572880232,
+				-550.11607263929352,
+				149.46988274083526
 			],
 			"coord_compensated_georef" : 
 			[
-				659692.70452180691,
+				659692.70452180703,
 				6861941.6512994366,
-				149.75599999973923
+				149.75599999984354
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4506570207599929,
+				2.4506570207599943,
 				48.856250639275778,
-				149.75599999973923
+				149.75599999984354
 			],
 			"coord_compensated_stereographic" : 
 			[
-				1829.9503783412933,
-				-550.10318276069586,
-				149.75599999973923
+				1829.9503783413149,
+				-550.10318276076623,
+				149.75599999984354
 			],
 			"coord_init_latlong" : 
 			[
@@ -3097,45 +3005,45 @@ data=
 				"axes" : 
 				[
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						100.0
 					],
 					[
-						0.0076976555178514287,
-						75.858632149827969,
+						0.0076976555179690959,
+						75.858632149831507,
 						0.0
 					],
 					[
-						0.0076322219047221546,
-						175.85863214982817,
+						0.0076322219048388122,
+						175.85863214983169,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					2.4941089487487537e-05,
-					1.4553415627121476e-07,
+					2.4941089487487526e-05,
+					1.4553415627121674e-07,
 					0.0,
-					2.4633878849625306e-05,
+					2.4633878849625218e-05,
 					0.0,
 					2.5000000000000005e-05
 				],
 				"sigmas" : 
 				[
-					0.0076887214631682242,
-					0.0076412220185154605,
-					0.0076977964350980008
+					0.007688721463285756,
+					0.0076412220186322559,
+					0.0076977964352156749
 				]
 			},
 			"nbActiveObs" : 11,
 			"number" : 1,
-			"rank" : 43,
+			"rank" : 41,
 			"shift_from_read" : 
 			[
-				-0.00047819304745644331,
+				-0.00047819293104112148,
 				0.0012994362041354179,
-				-2.6076918402395677e-10
+				-1.5646151041437406e-10
 			],
 			"sigmas_init" : 
 			[
@@ -3152,24 +3060,24 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 1829.9503373153243,
+							"computed_value" : 1829.9503373153459,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S2",
 							"instrument_height" : 0.0,
 							"line" : 3,
-							"normalized_residual" : -0.097539866737861303,
+							"normalized_residual" : -0.097539862417761469,
 							"number" : 3,
-							"obsRedondancy" : 0.23564205004985572,
+							"obsRedondancy" : 0.23564205004992234,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 1829.950825014658,
 							"rank" : 12,
-							"residual" : -0.00048769933368930651,
-							"residualStd" : -0.097654992712566016,
-							"sigmaResidual" : 0.00024271487905042262,
-							"sigma_a_posteriori" : 0.0049941054742053195,
+							"residual" : -0.00048769931208880735,
+							"residualStd" : -0.09765498838736722,
+							"sigmaResidual" : 0.00024271487905045753,
+							"sigma_a_posteriori" : 0.0049941054742053178,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -3182,29 +3090,29 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -550.10317042403028,
+							"computed_value" : -550.10317042410065,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S2",
 							"instrument_height" : 0.0,
 							"line" : 3,
-							"nabla" : 0.16939923949069352,
-							"normalized_residual" : 0.25951560821795283,
+							"nabla" : 0.16939923949067295,
+							"normalized_residual" : 0.25951559414352232,
 							"number" : 4,
-							"obsRedondancy" : 1.4644846014987722,
+							"obsRedondancy" : 1.4644846014991275,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -550.10446800207137,
 							"rank" : 13,
-							"residual" : 0.0012975780410897642,
-							"residualStd" : 0.26143702132352914,
-							"sigmaResidual" : 0.00060507945790176578,
-							"sigma_a_posteriori" : 0.0049632528496566953,
+							"residual" : 0.0012975779707176116,
+							"residualStd" : 0.26143700714489421,
+							"sigmaResidual" : 0.00060507945790183582,
+							"sigma_a_posteriori" : 0.0049632528496566866,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : 2.1444754472237015,
+							"standardized_residual" : 2.1444753309211206,
 							"target_height" : 0.0,
 							"to" : "S2",
 							"unit_factor" : 1.0,
@@ -3250,29 +3158,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -0.0004781945462929926,
+							"computed_value" : -0.00047819455009552239,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 19,
-							"nabla" : 0.0017842037859660694,
-							"normalized_residual" : -1.5939818208824035,
+							"line" : 20,
+							"nabla" : 0.0017842037859661034,
+							"normalized_residual" : -1.5939818336988609,
 							"number" : 49,
-							"obsRedondancy" : 47.524910724887107,
-							"obs_azim" : -1.7152830764660993,
-							"obs_length" : 7752.5570579815903,
-							"obs_zen" : 1.5906489770814185,
+							"obsRedondancy" : 47.524910724885281,
+							"obs_azim" : -1.7152830764660807,
+							"obs_length" : 7752.5570579815012,
+							"obs_zen" : 1.5906489770814187,
 							"original_value" : 0.0,
 							"rank" : 15,
-							"residual" : -0.00047819454626472099,
-							"residualStd" : -2.2004260156256246,
-							"sigmaResidual" : 0.00020681494059278789,
-							"sigma_a_posteriori" : 0.00021731907497410713,
+							"residual" : -0.00047819455010965822,
+							"residualStd" : -2.2004260333181764,
+							"sigmaResidual" : 0.00020681494059278396,
+							"sigma_a_posteriori" : 0.0002173190749741109,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : -2.3121856907150198,
+							"standardized_residual" : -2.3121857093062603,
 							"target_height" : 0.0,
 							"to" : "PTHN",
 							"unit_factor" : 0.015707963267948967,
@@ -3282,29 +3190,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -9.3895429696712078,
+							"computed_value" : -9.3895429696711954,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 20,
-							"nabla" : 0.003938668792948046,
-							"normalized_residual" : 0.35643955481662787,
+							"line" : 21,
+							"nabla" : 0.0039386687929475967,
+							"normalized_residual" : 0.35643955517002285,
 							"number" : 50,
-							"obsRedondancy" : 2.7740146778322927,
-							"obs_azim" : -1.862766161074155,
-							"obs_length" : 2799.4883938062317,
-							"obs_zen" : 1.6245086914455613,
+							"obsRedondancy" : 2.7740146778329255,
+							"obs_azim" : -1.8627661610740764,
+							"obs_length" : 2799.4883938060771,
+							"obs_zen" : 1.6245086914455644,
 							"original_value" : -9.3895999999999997,
 							"rank" : 16,
-							"residual" : 5.7030328770660464e-05,
-							"residualStd" : 0.36148869171433451,
-							"sigmaResidual" : 2.6648597665263095e-05,
-							"sigma_a_posteriori" : 0.00015776518070371212,
+							"residual" : 5.703032882720366e-05,
+							"residualStd" : 0.36148869207273665,
+							"sigmaResidual" : 2.6648597665266103e-05,
+							"sigma_a_posteriori" : 0.0001577651807037116,
 							"sigma_abs" : 0.00016000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00016000000000000001,
-							"standardized_residual" : 2.1400874255008353,
+							"standardized_residual" : 2.1400874276224013,
 							"target_height" : 0.0,
 							"to" : "IMBM",
 							"unit_factor" : 0.015707963267948967,
@@ -3314,29 +3222,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -11.08901301063376,
+							"computed_value" : -11.089013010636107,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 21,
-							"nabla" : 0.0044854574867541821,
-							"normalized_residual" : -0.21090161756617432,
+							"line" : 22,
+							"nabla" : 0.0044854574867541777,
+							"normalized_residual" : -0.21090161991747547,
 							"number" : 51,
-							"obsRedondancy" : 85.230879790540286,
-							"obs_azim" : -1.8894613740525745,
-							"obs_length" : 2214.4852284669209,
-							"obs_zen" : 1.5732272062860566,
+							"obsRedondancy" : 85.230879790540442,
+							"obs_azim" : -1.889461374052533,
+							"obs_length" : 2214.4852284667968,
+							"obs_zen" : 1.5732272062860568,
 							"original_value" : -11.088800000000001,
 							"rank" : 17,
-							"residual" : -0.00021301063374183608,
-							"residualStd" : -0.54878546220773639,
-							"sigmaResidual" : 0.00093243777526615774,
-							"sigma_a_posteriori" : 0.0003881491920083032,
+							"residual" : -0.00021301063611665023,
+							"residualStd" : -0.54878546832604203,
+							"sigmaResidual" : 0.00093243777526615871,
+							"sigma_a_posteriori" : 0.00038814919200830093,
 							"sigma_abs" : 0.00101,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00101,
-							"standardized_residual" : -0.22844487792339141,
+							"standardized_residual" : -0.22844488047027872,
 							"target_height" : 0.0,
 							"to" : "GLOB",
 							"unit_factor" : 0.015707963267948967,
@@ -3346,30 +3254,30 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -5.1754380071188635,
+							"computed_value" : -5.1754380071196264,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 22,
-							"nabla" : 0.0034727811746313531,
-							"normalized_residual" : 2.1499895310555117,
+							"line" : 23,
+							"nabla" : 0.0034727811746313952,
+							"normalized_residual" : 2.1499895299745386,
 							"number" : 52,
-							"obsRedondancy" : 64.451154569616122,
-							"obs_azim" : -1.7965711551151013,
-							"obs_length" : 3929.7782809582391,
-							"obs_zen" : 1.6091843344520953,
+							"obsRedondancy" : 64.451154569614573,
+							"obs_azim" : -1.796571155115035,
+							"obs_length" : 3929.7782809579007,
+							"obs_zen" : 1.6091843344520986,
 							"original_value" : -5.1768999999999998,
-							"probableError" : -0.0022683734540994054,
+							"probableError" : -0.0022683734529589657,
 							"rank" : 18,
-							"residual" : 0.0014619928811177478,
-							"residualStd" : 3.60598233740712,
-							"sigmaResidual" : 0.00054591403968931313,
-							"sigma_a_posteriori" : 0.00040543539715976346,
+							"residual" : 0.0014619928803826863,
+							"residualStd" : 3.605982335594025,
+							"sigmaResidual" : 0.00054591403968930652,
+							"sigma_a_posteriori" : 0.00040543539715977219,
 							"sigma_abs" : 0.00068000000000000005,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00068000000000000005,
-							"standardized_residual" : 2.6780642643845307,
+							"standardized_residual" : 2.6780642630380846,
 							"target_height" : 0.0,
 							"to" : "CDTN",
 							"unit_factor" : 0.015707963267948967,
@@ -3379,29 +3287,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -4.497051421188254,
+							"computed_value" : -4.4970514211900072,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 23,
-							"nabla" : 0.0034557954303886208,
-							"normalized_residual" : 0.71244001525152445,
+							"line" : 24,
+							"nabla" : 0.0034557954303886399,
+							"normalized_residual" : 0.71244001297511017,
 							"number" : 53,
-							"obsRedondancy" : 83.45514417042908,
-							"obs_azim" : -1.785915083541834,
-							"obs_length" : 8163.598534589968,
-							"obs_zen" : 1.589704532233555,
+							"obsRedondancy" : 83.455144170428142,
+							"obs_azim" : -1.7859150835417832,
+							"obs_length" : 8163.5985345892404,
+							"obs_zen" : 1.5897045322335566,
 							"original_value" : -4.4976000000000003,
 							"rank" : 19,
-							"residual" : 0.00054857881174367378,
-							"residualStd" : 1.7515268963895829,
-							"sigmaResidual" : 0.00070342416065022524,
-							"sigma_a_posteriori" : 0.00031320033558974037,
+							"residual" : 0.0005485788099908348,
+							"residualStd" : 1.7515268907929906,
+							"sigmaResidual" : 0.00070342416065022134,
+							"sigma_a_posteriori" : 0.00031320033558974926,
 							"sigma_abs" : 0.00076999999999999996,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00076999999999999996,
-							"standardized_residual" : 0.77986916348819069,
+							"standardized_residual" : 0.77986916099632853,
 							"target_height" : 0.0,
 							"to" : "VDGC",
 							"unit_factor" : 0.015707963267948967,
@@ -3411,29 +3319,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 0.26453531622505982,
+							"computed_value" : 0.26453531622166726,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 24,
-							"nabla" : 0.0064744723835219271,
-							"normalized_residual" : 1.1049433953276124,
+							"line" : 25,
+							"nabla" : 0.0064744723835219132,
+							"normalized_residual" : 1.1049433930353207,
 							"number" : 54,
-							"obsRedondancy" : 87.837987872969777,
-							"obs_azim" : -1.7111202539733927,
-							"obs_length" : 7628.1554702083977,
-							"obs_zen" : 1.590955482719717,
+							"obsRedondancy" : 87.837987872970132,
+							"obs_azim" : -1.7111202539733676,
+							"obs_length" : 7628.1554702080239,
+							"obs_zen" : 1.5909554827197179,
 							"original_value" : 0.26290000000000002,
 							"rank" : 20,
-							"residual" : 0.0016353162250848663,
-							"residualStd" : 3.1683803724082322,
-							"sigmaResidual" : 0.0013870844553845775,
-							"sigma_a_posteriori" : 0.00051613633240692311,
+							"residual" : 0.0016353162216922747,
+							"residualStd" : 3.1683803658352239,
+							"sigmaResidual" : 0.0013870844553845803,
+							"sigma_a_posteriori" : 0.00051613633240691584,
 							"sigma_abs" : 0.00148,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00148,
-							"standardized_residual" : 1.178959376796898,
+							"standardized_residual" : 1.178959374351052,
 							"target_height" : 0.0,
 							"to" : "SEDM",
 							"unit_factor" : 0.015707963267948967,
@@ -3443,29 +3351,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 2.230103736524895,
+							"computed_value" : 2.2301037365266621,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 25,
-							"nabla" : 0.0025127396893189157,
-							"normalized_residual" : -0.31052733898945406,
+							"line" : 26,
+							"nabla" : 0.0025127396893191815,
+							"normalized_residual" : -0.3105273333351346,
 							"number" : 55,
-							"obsRedondancy" : 25.585629219842453,
-							"obs_azim" : -1.6802451774266824,
-							"obs_length" : 7935.0403654743977,
-							"obs_zen" : 1.5902172457537584,
+							"obsRedondancy" : 25.585629219837035,
+							"obs_azim" : -1.6802451774265763,
+							"obs_length" : 7935.0403654709453,
+							"obs_zen" : 1.5902172457537669,
 							"original_value" : 2.2302,
 							"rank" : 21,
-							"residual" : -9.6263475086730762e-05,
-							"residualStd" : -0.35997424936483979,
-							"sigmaResidual" : 0.00015680494150462418,
-							"sigma_a_posteriori" : 0.00026741767017108534,
+							"residual" : -9.6263473333891731e-05,
+							"residualStd" : -0.35997424281014001,
+							"sigmaResidual" : 0.00015680494150460751,
+							"sigma_a_posteriori" : 0.0002674176701710951,
 							"sigma_abs" : 0.00031,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00031,
-							"standardized_residual" : -0.61390587670919772,
+							"standardized_residual" : -0.61390586553079485,
 							"target_height" : 0.0,
 							"to" : "SRBN",
 							"unit_factor" : 0.015707963267948967,
@@ -3475,29 +3383,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 10.484565615158607,
+							"computed_value" : 10.484565615154182,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S2",
 							"instrument_height" : 0.0,
-							"line" : 26,
-							"nabla" : 0.0023346887209966518,
-							"normalized_residual" : -0.26876968281915836,
+							"line" : 27,
+							"nabla" : 0.0023346887209966614,
+							"normalized_residual" : -0.26876969163989667,
 							"number" : 56,
-							"obsRedondancy" : 77.09917868754377,
-							"obs_azim" : -1.5505843934404191,
-							"obs_length" : 11462.085730781338,
-							"obs_zen" : 1.5846523197660194,
+							"obsRedondancy" : 77.09917868754313,
+							"obs_azim" : -1.5505843934404102,
+							"obs_length" : 11462.085730781357,
+							"obs_zen" : 1.5846523197660192,
 							"original_value" : 10.4847,
 							"rank" : 22,
-							"residual" : -0.0001343848414095792,
-							"residualStd" : -0.56163575702781365,
-							"sigmaResidual" : 0.0004390306899510095,
-							"sigma_a_posteriori" : 0.00023927401296659981,
+							"residual" : -0.00013438484581994835,
+							"residualStd" : -0.56163577546010068,
+							"sigmaResidual" : 0.00043903068995100771,
+							"sigma_a_posteriori" : 0.00023927401296660315,
 							"sigma_abs" : 0.00050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00050000000000000001,
-							"standardized_residual" : -0.30609441318231062,
+							"standardized_residual" : -0.30609442322800856,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 0.015707963267948967,
@@ -3506,7 +3414,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -109.19783397403499
+						"g0" : -109.19783397403
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -3519,27 +3427,27 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				3249.317494432009,
-				-1271.7087924056038,
-				143.75699050978031
+				3249.3174944320058,
+				-1271.7087924055477,
+				143.75699050910228
 			],
 			"coord_compensated_georef" : 
 			[
 				661106.54518583545,
 				6861209.8283760101,
-				144.7110000002981
+				144.71099999962007
 			],
 			"coord_compensated_latlong" : 
 			[
 				2.4699924305616756,
 				48.849756236163273,
-				144.7110000002981
+				144.71099999962007
 			],
 			"coord_compensated_stereographic" : 
 			[
-				3249.2442113072666,
-				-1271.6801110650024,
-				144.7110000002981
+				3249.2442113072634,
+				-1271.6801110649462,
+				144.71099999962007
 			],
 			"coord_init_latlong" : 
 			[
@@ -3561,45 +3469,45 @@ data=
 				"axes" : 
 				[
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						100.0
 					],
 					[
-						0.0076846093147548014,
-						155.74396501884814,
+						0.007684609314872283,
+						155.74396501886108,
 						0.0
 					],
 					[
-						0.0076514573335452214,
-						55.743965018853082,
+						0.007651457333662192,
+						55.743965018861076,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					2.4787918618521394e-05,
-					-1.0550935884918593e-07,
+					2.4787918618521405e-05,
+					-1.0550935884919069e-07,
 					0.0,
-					2.4826416138402507e-05,
+					2.4826416138402596e-05,
 					0.0,
 					2.5000000000000005e-05
 				],
 				"sigmas" : 
 				[
-					0.0076650757066786543,
-					0.0076710256197176077,
-					0.0076977964350980008
+					0.0076650757067958288,
+					0.0076710256198348863,
+					0.0076977964352156749
 				]
 			},
 			"nbActiveObs" : 18,
 			"number" : 2,
-			"rank" : 47,
+			"rank" : 45,
 			"shift_from_read" : 
 			[
 				-0.0018141645705327392,
 				-0.0016239900141954422,
-				2.9808688850607723e-10
+				-3.7994141166564077e-10
 			],
 			"sigmas_init" : 
 			[
@@ -3616,24 +3524,24 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 3249.2439684179917,
+							"computed_value" : 3249.2439684179885,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S3",
 							"instrument_height" : 0.0,
 							"line" : 4,
-							"normalized_residual" : -0.36049485197509057,
+							"normalized_residual" : -0.36049485261173686,
 							"number" : 6,
-							"obsRedondancy" : 0.84832552591445065,
+							"obsRedondancy" : 0.84832552591440624,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 3249.2457708922516,
 							"rank" : 23,
-							"residual" : -0.0018024742598754528,
-							"residualStd" : -0.36203373490324897,
-							"sigmaResidual" : 0.00046052294348773785,
-							"sigma_a_posteriori" : 0.00497874669154009,
+							"residual" : -0.0018024742630586843,
+							"residualStd" : -0.36203373554261292,
+							"sigmaResidual" : 0.00046052294348772685,
+							"sigma_a_posteriori" : 0.0049787466915400909,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -3646,24 +3554,24 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -1271.6800159998952,
+							"computed_value" : -1271.680015999839,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S3",
 							"instrument_height" : 0.0,
 							"line" : 4,
-							"normalized_residual" : -0.32716846917537623,
+							"normalized_residual" : -0.32716845794311666,
 							"number" : 7,
-							"obsRedondancy" : 0.69433544638997091,
+							"obsRedondancy" : 0.69433544638961564,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -1271.6783801575493,
 							"rank" : 24,
-							"residual" : -0.0016358423458768812,
-							"residualStd" : -0.3283102417519228,
-							"sigmaResidual" : 0.00041663396596711892,
-							"sigma_a_posteriori" : 0.0049826113774207306,
+							"residual" : -0.0016358422897155833,
+							"residualStd" : -0.32831023048046365,
+							"sigmaResidual" : 0.00041663396596701728,
+							"sigma_a_posteriori" : 0.0049826113774207393,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -3676,13 +3584,13 @@ data=
 							"active" : true,
 							"code" : -3,
 							"comment" : "",
-							"computed_value" : 144.71100000012666,
+							"computed_value" : 144.71099999919534,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S3",
 							"instrument_height" : 0.0,
 							"line" : 4,
-							"normalized_residual" : 2.5329427444376051e-08,
+							"normalized_residual" : -1.6093508747871965e-07,
 							"number" : 8,
 							"obsRedondancy" : 0.0,
 							"obs_azim" : 0.0,
@@ -3690,8 +3598,8 @@ data=
 							"obs_zen" : 0.0,
 							"original_value" : 144.71100000000001,
 							"rank" : 25,
-							"residual" : 1.2664713722188026e-10,
-							"residualStd" : 2.5329427444376051e-08,
+							"residual" : -8.0467543739359826e-10,
+							"residualStd" : -1.6093508747871965e-07,
 							"sigmaResidual" : 0.0,
 							"sigma_a_posteriori" : 0.0050000000000000001,
 							"sigma_abs" : 0.0050000000000000001,
@@ -3712,29 +3620,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -0.00017923040900575356,
+							"computed_value" : -0.00017923041121093813,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 52,
-							"nabla" : 0.0016615639798316813,
-							"normalized_residual" : -0.59743469663872595,
-							"number" : 71,
-							"obsRedondancy" : 54.799435569341412,
-							"obs_azim" : -1.6141651555116003,
-							"obs_length" : 9099.3555037725419,
-							"obs_zen" : 1.5873277861746695,
+							"line" : 51,
+							"nabla" : 0.0016615639798316609,
+							"normalized_residual" : -0.59743470398934118,
+							"number" : 69,
+							"obsRedondancy" : 54.799435569342769,
+							"obs_azim" : -1.6141651555115977,
+							"obs_length" : 9099.3555037724345,
+							"obs_zen" : 1.5873277861745139,
 							"original_value" : 0.0,
 							"rank" : 26,
-							"residual" : -0.00017923040899161776,
-							"residualStd" : -0.88862496904601662,
-							"sigmaResidual" : 0.00022207992257835301,
-							"sigma_a_posteriori" : 0.0002016940950736851,
+							"residual" : -0.00017923041119680233,
+							"residualStd" : -0.88862497997934253,
+							"sigmaResidual" : 0.00022207992257835572,
+							"sigma_a_posteriori" : 0.00020169409507368206,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : -0.80705363596469504,
+							"standardized_residual" : -0.80705364589437423,
 							"target_height" : 0.0,
 							"to" : "PTHN",
 							"unit_factor" : 0.015707963267948967,
@@ -3744,30 +3652,30 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : " + 0.0520/2",
-							"computed_value" : -62.30133436866042,
+							"computed_value" : -62.301334368662623,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 53,
-							"nabla" : 0.0019592651669459726,
-							"normalized_residual" : 2.2779772093482209,
-							"number" : 72,
-							"obsRedondancy" : 63.233682152804448,
-							"obs_azim" : -2.5927894119740436,
-							"obs_length" : 7523.698810976256,
-							"obs_zen" : 1.5905502273442167,
+							"line" : 52,
+							"nabla" : 0.0019592651669459614,
+							"normalized_residual" : 2.2779772036939012,
+							"number" : 70,
+							"obsRedondancy" : 63.233682152805159,
+							"obs_azim" : -2.5927894119740409,
+							"obs_length" : 7523.698810976286,
+							"obs_zen" : 1.5905502273440282,
 							"original_value" : -62.302199999999999,
-							"probableError" : -0.0013689402705673889,
+							"probableError" : -0.0013689402671694354,
 							"rank" : 27,
-							"residual" : 0.00086563133955232393,
-							"residualStd" : 3.7568538991966518,
-							"sigmaResidual" : 0.00030217451419444635,
-							"sigma_a_posteriori" : 0.00023041389491814589,
+							"residual" : 0.00086563133740368253,
+							"residualStd" : 3.7568538898715502,
+							"sigmaResidual" : 0.00030217451419444803,
+							"sigma_a_posteriori" : 0.00023041389491814364,
 							"sigma_abs" : 0.00038000000000000002,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00038000000000000002,
-							"standardized_residual" : 2.8646735541545332,
+							"standardized_residual" : 2.8646735470439193,
 							"target_height" : 0.0,
 							"to" : "VTRY",
 							"unit_factor" : 0.015707963267948967,
@@ -3777,29 +3685,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -4.1301412551281382,
+							"computed_value" : -4.1301412551280672,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 54,
-							"nabla" : 0.0034179543222233877,
-							"normalized_residual" : -0.19645299104003006,
-							"number" : 73,
-							"obsRedondancy" : 6.3456160931478545,
-							"obs_azim" : -1.6790384472939126,
-							"obs_length" : 9449.8066433930562,
-							"obs_zen" : 1.5867620947947871,
+							"line" : 53,
+							"nabla" : 0.0034179543222231548,
+							"normalized_residual" : -0.19645299077077677,
+							"number" : 71,
+							"obsRedondancy" : 6.3456160931487204,
+							"obs_azim" : -1.6790384472938742,
+							"obs_length" : 9449.8066433923486,
+							"obs_zen" : 1.5867620947946386,
 							"original_value" : -4.1300999999999997,
 							"rank" : 28,
-							"residual" : -4.1255128118406316e-05,
-							"residualStd" : -0.20299932311646171,
-							"sigmaResidual" : 5.2900063299378046e-05,
-							"sigma_a_posteriori" : 0.00020322790975385688,
+							"residual" : -4.125512806186312e-05,
+							"residualStd" : -0.20299932283823713,
+							"sigmaResidual" : 5.2900063299381631e-05,
+							"sigma_a_posteriori" : 0.00020322790975385593,
 							"sigma_abs" : 0.00021000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00021000000000000001,
-							"standardized_residual" : -0.77986916357605496,
+							"standardized_residual" : -0.7798691625071339,
 							"target_height" : 0.0,
 							"to" : "VDGC",
 							"unit_factor" : 0.015707963267948967,
@@ -3809,30 +3717,30 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 0.85020896925125278,
+							"computed_value" : 0.85020896925123868,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 55,
-							"nabla" : 0.0037589268623793698,
-							"normalized_residual" : -1.1976359724871792,
-							"number" : 74,
-							"obsRedondancy" : 19.998972143223771,
-							"obs_azim" : -1.6008072889078397,
-							"obs_length" : 5250.9283213206672,
-							"obs_zen" : 1.5987208768353554,
+							"line" : 54,
+							"nabla" : 0.0037589268623789683,
+							"normalized_residual" : -1.1976359726250894,
+							"number" : 72,
+							"obsRedondancy" : 19.998972143228045,
+							"obs_azim" : -1.6008072889078027,
+							"obs_length" : 5250.9283213203398,
+							"obs_zen" : 1.5987208768350871,
 							"original_value" : 0.85070000000000001,
-							"probableError" : 0.0024552799274042635,
+							"probableError" : 0.0024552799276864692,
 							"rank" : 29,
-							"residual" : -0.00049103074871974348,
-							"residualStd" : -1.3389891216113174,
-							"sigmaResidual" : 0.00018335286246131839,
-							"sigma_a_posteriori" : 0.00036671750411896187,
+							"residual" : -0.00049103074877628668,
+							"residualStd" : -1.3389891217655405,
+							"sigmaResidual" : 0.00018335286246133801,
+							"sigma_a_posteriori" : 0.00036671750411895206,
 							"sigma_abs" : 0.00040999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00040999999999999999,
-							"standardized_residual" : -2.6780642643271264,
+							"standardized_residual" : -2.6780642646352244,
 							"target_height" : 0.0,
 							"to" : "CDTN",
 							"unit_factor" : 0.015707963267948967,
@@ -3842,29 +3750,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 1.7687913475230759,
+							"computed_value" : 1.768791347527783,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 56,
-							"nabla" : 0.0024322024070894698,
-							"normalized_residual" : 0.44499423974405072,
-							"number" : 75,
-							"obsRedondancy" : 52.541830214546479,
-							"obs_azim" : -1.5863782306513607,
-							"obs_length" : 9307.7169504120066,
-							"obs_zen" : 1.5869860988327908,
+							"line" : 55,
+							"nabla" : 0.0024322024070892933,
+							"normalized_residual" : 0.4449942506582022,
+							"number" : 73,
+							"obsRedondancy" : 52.541830214554118,
+							"obs_azim" : -1.5863782306512495,
+							"obs_length" : 9307.7169504086105,
+							"obs_zen" : 1.5869860988326445,
 							"original_value" : 1.7685999999999999,
 							"rank" : 30,
-							"residual" : 0.0001913475230899418,
-							"residualStd" : 0.64594999082508664,
-							"sigmaResidual" : 0.00031168869736757614,
-							"sigma_a_posteriori" : 0.00029622652807151411,
+							"residual" : 0.00019134752778302694,
+							"residualStd" : 0.64595000666803126,
+							"sigmaResidual" : 0.00031168869736759869,
+							"sigma_a_posteriori" : 0.00029622652807149031,
 							"sigma_abs" : 0.00042999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00042999999999999999,
-							"standardized_residual" : 0.61390587694068566,
+							"standardized_residual" : 0.61390589199760404,
 							"target_height" : 0.0,
 							"to" : "SRBN",
 							"unit_factor" : 0.015707963267948967,
@@ -3874,24 +3782,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 3.7566999999999799,
+							"computed_value" : 3.7567000000000363,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 57,
-							"normalized_residual" : 0.0,
-							"number" : 76,
-							"obsRedondancy" : 4.4408920985006262e-14,
-							"obs_azim" : -1.5551522345582156,
-							"obs_length" : 9986.6089042572403,
-							"obs_zen" : 1.5714849370869726,
+							"line" : 56,
+							"normalized_residual" : 1.1308638867425837e-10,
+							"number" : 74,
+							"obsRedondancy" : -8.8817841970012523e-14,
+							"obs_azim" : -1.5551522345581774,
+							"obs_length" : 9973.723824709019,
+							"obs_zen" : 1.5714840486169914,
 							"original_value" : 3.7566999999999999,
 							"rank" : 31,
-							"residual" : 0.0,
-							"residualStd" : 0.0,
-							"sigmaResidual" : 1.0235411493307607e-11,
-							"sigma_a_posteriori" : 0.0004999999999999999,
+							"residual" : 5.6543194337129184e-14,
+							"residualStd" : 1.1308638867425831e-10,
+							"sigmaResidual" : null,
+							"sigma_a_posteriori" : 0.00050000000000000023,
 							"sigma_abs" : 0.00050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00050000000000000001,
@@ -3904,29 +3812,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 5.4581483397227171,
+							"computed_value" : 5.458148339720978,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 58,
-							"nabla" : 0.0037969085003538793,
-							"normalized_residual" : 0.4707293549894061,
-							"number" : 77,
-							"obsRedondancy" : 63.851468515895235,
-							"obs_azim" : -1.5284259465355381,
-							"obs_length" : 8878.7320180198094,
-							"obs_zen" : 1.5877077996705464,
+							"line" : 57,
+							"nabla" : 0.0037969085003538559,
+							"normalized_residual" : 0.47072935269711447,
+							"number" : 75,
+							"obsRedondancy" : 63.851468515896016,
+							"obs_azim" : -1.5284259465355281,
+							"obs_length" : 8878.7320180194438,
+							"obs_zen" : 1.5877077996703874,
 							"original_value" : 5.4577999999999998,
 							"rank" : 32,
-							"residual" : 0.00034833972269216054,
-							"residualStd" : 0.78293544081946098,
-							"sigmaResidual" : 0.00059131264284897737,
-							"sigma_a_posteriori" : 0.00044491500132829603,
+							"residual" : 0.00034833972099586471,
+							"residualStd" : 0.78293543700684032,
+							"sigmaResidual" : 0.00059131264284898095,
+							"sigma_a_posteriori" : 0.00044491500132829131,
 							"sigma_abs" : 0.00073999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00073999999999999999,
-							"standardized_residual" : 0.58909567874929958,
+							"standardized_residual" : 0.58909567588060074,
 							"target_height" : 0.0,
 							"to" : "NTDM",
 							"unit_factor" : 0.015707963267948967,
@@ -3936,29 +3844,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 6.0161191484419589,
+							"computed_value" : 6.0161191484393441,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 59,
-							"nabla" : 0.0033807558727929963,
-							"normalized_residual" : -0.48209057983228559,
-							"number" : 78,
-							"obsRedondancy" : 91.789768335302483,
-							"obs_azim" : -1.5196613615675885,
-							"obs_length" : 11571.201565435338,
-							"obs_zen" : 1.5841006018906412,
+							"line" : 58,
+							"nabla" : 0.003380755872792992,
+							"normalized_residual" : -0.48209058312467412,
+							"number" : 76,
+							"obsRedondancy" : 91.789768335302696,
+							"obs_azim" : -1.5196613615675922,
+							"obs_length" : 11571.20156543532,
+							"obs_zen" : 1.5841006018905188,
 							"original_value" : 6.0164999999999997,
 							"rank" : 33,
-							"residual" : -0.00038085155806750559,
-							"residualStd" : -1.6824839870670885,
-							"sigmaResidual" : 0.00075687511795581098,
-							"sigma_a_posteriori" : 0.00022636266436711075,
+							"residual" : -0.00038085156066849257,
+							"residualStd" : -1.6824839985574624,
+							"sigmaResidual" : 0.00075687511795581185,
+							"sigma_a_posteriori" : 0.0002263626643671079,
 							"sigma_abs" : 0.00079000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00079000000000000001,
-							"standardized_residual" : -0.50318942852305659,
+							"standardized_residual" : -0.50318943195953703,
 							"target_height" : 0.0,
 							"to" : "INVD",
 							"unit_factor" : 0.015707963267948967,
@@ -3968,29 +3876,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 7.4643740714338813,
+							"computed_value" : 7.4643740714313935,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 60,
-							"nabla" : 0.0030970629971101972,
-							"normalized_residual" : -0.86934523069883252,
-							"number" : 79,
-							"obsRedondancy" : 90.85160991140225,
-							"obs_azim" : -1.4969122264346051,
-							"obs_length" : 12914.111735250483,
-							"obs_zen" : 1.5828926300754922,
+							"line" : 59,
+							"nabla" : 0.0030970629971101937,
+							"normalized_residual" : -0.86934523415425002,
+							"number" : 77,
+							"obsRedondancy" : 90.851609911402477,
+							"obs_azim" : -1.4969122264346069,
+							"obs_length" : 12914.111735250463,
+							"obs_zen" : 1.5828926300753825,
 							"original_value" : 7.4649999999999999,
 							"rank" : 34,
-							"residual" : -0.00062592856610315945,
-							"residualStd" : -2.8742195465109983,
-							"sigmaResidual" : 0.00068627599825486351,
-							"sigma_a_posteriori" : 0.00021777340108307703,
+							"residual" : -0.00062592856859105997,
+							"residualStd" : -2.8742195579352976,
+							"sigmaResidual" : 0.00068627599825486438,
+							"sigma_a_posteriori" : 0.00021777340108307429,
 							"sigma_abs" : 0.00072000000000000005,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00072000000000000005,
-							"standardized_residual" : -0.91206536101340863,
+							"standardized_residual" : -0.9120653646386262,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 0.015707963267948967,
@@ -3999,7 +3907,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -102.76076615613864
+						"g0" : -102.76076615613627
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -4011,30 +3919,30 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 0.0005493744863304356,
+							"computed_value" : 0.00054937448616080599,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 62,
-							"nabla" : 0.0022107210678122672,
-							"normalized_residual" : 1.8312482877681189,
-							"number" : 80,
-							"obsRedondancy" : 30.955820723955995,
-							"obs_azim" : -2.0704434527556344,
-							"obs_length" : 9850.1744077567164,
-							"obs_zen" : 1.5861671999670433,
+							"line" : 61,
+							"nabla" : 0.0022107210678126705,
+							"normalized_residual" : 1.831248287202687,
+							"number" : 78,
+							"obsRedondancy" : 30.955820723944704,
+							"obs_azim" : -2.070443452755637,
+							"obs_length" : 9850.1744077567291,
+							"obs_zen" : 1.5861671999668994,
 							"original_value" : 0.0,
-							"probableError" : -0.0017747049617240073,
+							"probableError" : -0.0017747049611766814,
 							"rank" : 35,
-							"residual" : 0.0005493744863304356,
-							"residualStd" : 2.2038584437079409,
-							"sigmaResidual" : 0.00016691386596553439,
-							"sigma_a_posteriori" : 0.00024927848151904243,
+							"residual" : 0.00054937448616080599,
+							"residualStd" : 2.2038584430272783,
+							"sigmaResidual" : 0.00016691386596550395,
+							"sigma_a_posteriori" : 0.00024927848151906282,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : 3.2913651789952221,
+							"standardized_residual" : 3.2913651779795523,
 							"target_height" : 0.0,
 							"to" : "BCTR",
 							"unit_factor" : 0.015707963267948967,
@@ -4044,24 +3952,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 24.756599999999988,
+							"computed_value" : 24.756600000000002,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 64,
+							"line" : 63,
 							"normalized_residual" : 0.0,
-							"number" : 82,
-							"obsRedondancy" : -1.3766765505351941e-12,
-							"obs_azim" : -1.6815763188705808,
-							"obs_length" : 2235.2306814143631,
-							"obs_zen" : 1.5709504534494629,
+							"number" : 80,
+							"obsRedondancy" : 1.4210854715202004e-12,
+							"obs_azim" : -1.6815763188705806,
+							"obs_length" : 2239.8848558988348,
+							"obs_zen" : 1.6356019275644951,
 							"original_value" : 24.756599999999999,
 							"rank" : 36,
 							"residual" : 0.0,
 							"residualStd" : 0.0,
-							"sigmaResidual" : null,
-							"sigma_a_posteriori" : 3.0000000000000204e-05,
+							"sigmaResidual" : 3.5617724594586817e-12,
+							"sigma_a_posteriori" : 2.9999999999999787e-05,
 							"sigma_abs" : 3.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 3.0000000000000001e-05,
@@ -4074,29 +3982,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 30.518391261378593,
+							"computed_value" : 30.518391261380557,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 66,
-							"nabla" : 0.0034107382417615669,
-							"normalized_residual" : -1.9037008397586928,
-							"number" : 84,
-							"obsRedondancy" : 79.128762109532275,
-							"obs_azim" : -1.5910703133792563,
-							"obs_length" : 4099.8771063656841,
-							"obs_zen" : 1.6063826091884503,
+							"line" : 65,
+							"nabla" : 0.0034107382417615387,
+							"normalized_residual" : -1.9037008370843524,
+							"number" : 82,
+							"obsRedondancy" : 79.128762109533611,
+							"obs_azim" : -1.5910703133792254,
+							"obs_length" : 4099.8771063655395,
+							"obs_zen" : 1.6063826091881059,
 							"original_value" : 30.5198,
 							"rank" : 37,
-							"residual" : -0.0014087386214214326,
-							"residualStd" : -4.1670105248670293,
-							"sigmaResidual" : 0.00065826218280545237,
-							"sigma_a_posteriori" : 0.00033806936963913379,
+							"residual" : -0.0014087386194424208,
+							"residualStd" : -4.1670105190132993,
+							"sigmaResidual" : 0.0006582621828054579,
+							"sigma_a_posteriori" : 0.00033806936963912294,
 							"sigma_abs" : 0.00073999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00073999999999999999,
-							"standardized_residual" : -2.140087427501181,
+							"standardized_residual" : -2.1400874244947441,
 							"target_height" : 0.0,
 							"to" : "IMBM",
 							"unit_factor" : 0.015707963267948967,
@@ -4106,24 +4014,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 32.31150317997259,
+							"computed_value" : 32.311503179972604,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 67,
-							"normalized_residual" : 0.0052130697857013372,
-							"number" : 85,
-							"obsRedondancy" : 0.052074395146672892,
-							"obs_azim" : -1.5629041772266603,
-							"obs_length" : 3522.4250606331425,
-							"obs_zen" : 1.5710392098234176,
+							"line" : 66,
+							"normalized_residual" : 0.0052130698783950987,
+							"number" : 83,
+							"obsRedondancy" : 0.052074395148826724,
+							"obs_azim" : -1.5629041772266601,
+							"obs_length" : 3522.4250606330284,
+							"obs_zen" : 1.5710392098232167,
 							"original_value" : 32.311500000000002,
 							"rank" : 38,
-							"residual" : 3.1799725692778158e-06,
-							"residualStd" : 0.005214427653330112,
-							"sigmaResidual" : 1.3920087080932912e-05,
-							"sigma_a_posteriori" : 0.00060984115241237966,
+							"residual" : 3.1799726258210101e-06,
+							"residualStd" : 0.0052144277460480738,
+							"sigmaResidual" : 1.3920087081220785e-05,
+							"sigma_a_posteriori" : 0.00060984115241237305,
 							"sigma_abs" : 0.00060999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00060999999999999997,
@@ -4136,29 +4044,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 36.512681249105668,
+							"computed_value" : 36.512681249105562,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 68,
-							"nabla" : 0.0026880801748542975,
-							"normalized_residual" : -1.2392256798370271,
-							"number" : 86,
-							"obsRedondancy" : 78.259895710901546,
-							"obs_azim" : -1.4969122264346051,
-							"obs_length" : 12914.111735250483,
-							"obs_zen" : 1.5828926300754922,
+							"line" : 67,
+							"nabla" : 0.0026880801748542528,
+							"normalized_residual" : -1.2392256800320036,
+							"number" : 84,
+							"obsRedondancy" : 78.259895710904146,
+							"obs_azim" : -1.4969122264346069,
+							"obs_length" : 12914.111735250463,
+							"obs_zen" : 1.5828926300753825,
 							"original_value" : 36.513399999999997,
 							"rank" : 39,
-							"residual" : -0.00071875089430547569,
-							"residualStd" : -2.6577834512760128,
-							"sigmaResidual" : 0.00051309481499180328,
-							"sigma_a_posteriori" : 0.00027043245150781586,
+							"residual" : -0.0007187508944185621,
+							"residualStd" : -2.6577834516943404,
+							"sigmaResidual" : 0.00051309481499181185,
+							"sigma_a_posteriori" : 0.00027043245150779966,
 							"sigma_abs" : 0.00058,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00058,
-							"standardized_residual" : -1.4008149630530915,
+							"standardized_residual" : -1.4008149632734688,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 0.015707963267948967,
@@ -4168,29 +4076,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 61.950088616985475,
+							"computed_value" : 61.950088616985219,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S3",
 							"instrument_height" : 0.0,
-							"line" : 69,
-							"nabla" : 0.0045419268327070439,
-							"normalized_residual" : -0.92633790081650669,
-							"number" : 87,
-							"obsRedondancy" : 35.495665004392706,
-							"obs_azim" : -1.0973423658680947,
-							"obs_length" : 3462.9540747129299,
-							"obs_zen" : 1.5682741670365918,
+							"line" : 68,
+							"nabla" : 0.0045419268327070586,
+							"normalized_residual" : -0.92633790115919268,
+							"number" : 85,
+							"obsRedondancy" : 35.495665004392464,
+							"obs_azim" : -1.0973423658680987,
+							"obs_length" : 3462.9540747128999,
+							"obs_zen" : 1.5682741670363871,
 							"original_value" : 61.950699999999998,
 							"rank" : 40,
-							"residual" : -0.00061138301453889446,
-							"residualStd" : -1.1533868146355517,
-							"sigmaResidual" : 0.00039321637397129669,
-							"sigma_a_posteriori" : 0.00053007629945213115,
+							"residual" : -0.00061138301476506716,
+							"residualStd" : -1.1533868150622293,
+							"sigmaResidual" : 0.00039321637397129544,
+							"sigma_a_posteriori" : 0.00053007629945213213,
 							"sigma_abs" : 0.00066,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00066,
-							"standardized_residual" : -1.5548259304774605,
+							"standardized_residual" : -1.554825931052652,
 							"target_height" : 0.0,
 							"to" : "BAT4",
 							"unit_factor" : 0.015707963267948967,
@@ -4212,8 +4120,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-2989.9844834584419,
-				1165.2599352623126,
+				-2989.9844834584628,
+				1165.2599352623131,
 				136.56810076128434
 			],
 			"coord_compensated_georef" : 
@@ -4230,8 +4138,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-2989.9204290643638,
-				1165.2349719118938,
+				-2989.9204290643847,
+				1165.2349719118947,
 				137.375
 			],
 			"coord_init_latlong" : 
@@ -4254,40 +4162,40 @@ data=
 				"axes" : 
 				[
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						100.0
 					],
 					[
-						0.0076977853563656249,
-						14.508401069828247,
+						0.0076977853564832929,
+						14.508401069784032,
 						0.0
 					],
 					[
-						0.0076862338092003237,
-						114.50840106982825,
+						0.0076862338093177437,
+						114.50840106978993,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					2.4928779977041158e-05,
-					1.6501129115671171e-08,
-					0.0,
-					2.4996100988666058e-05,
+					2.492877997704067e-05,
+					1.6501129115725918e-08,
+					-0.0,
+					2.4996100988666027e-05,
 					0.0,
 					2.5000000000000005e-05
 				],
 				"sigmas" : 
 				[
-					0.007686823870084329,
-					0.0076971961357804137,
-					0.0076977964350980008
+					0.0076868238702017602,
+					0.0076971961358980731,
+					0.0076977964352156749
 				]
 			},
-			"nbActiveObs" : 13,
+			"nbActiveObs" : 11,
 			"number" : 3,
-			"rank" : 38,
+			"rank" : 36,
 			"shift_from_read" : 
 			[
 				0.00044924765825271606,
@@ -4309,24 +4217,24 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -2989.9202400253125,
+							"computed_value" : -2989.9202400253334,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S4",
 							"instrument_height" : 0.0,
 							"line" : 5,
-							"normalized_residual" : 0.089999794545292389,
+							"normalized_residual" : 0.08999979036161676,
 							"number" : 9,
-							"obsRedondancy" : 0.28488009183537111,
+							"obsRedondancy" : 0.284880091837314,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -2989.9206900242852,
 							"rank" : 41,
-							"residual" : 0.00044999897272646194,
-							"residualStd" : 0.090128264848964704,
-							"sigmaResidual" : 0.00026687079825047033,
-							"sigma_a_posteriori" : 0.0049928729181745813,
+							"residual" : 0.0004499989518080838,
+							"residualStd" : 0.090128260659317963,
+							"sigmaResidual" : 0.00026687079825137808,
+							"sigma_a_posteriori" : 0.0049928729181745327,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -4339,24 +4247,24 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 1165.2348982431763,
+							"computed_value" : 1165.2348982431772,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S4",
 							"instrument_height" : 0.0,
 							"line" : 5,
-							"normalized_residual" : -0.018871310385293327,
+							"normalized_residual" : -0.018871310203394387,
 							"number" : 10,
-							"obsRedondancy" : 0.015596045335775077,
+							"obsRedondancy" : 0.015596045335908304,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 1165.2349925997282,
 							"rank" : 42,
-							"residual" : -9.4356551926466636e-05,
-							"residualStd" : -0.018872782146509545,
-							"sigmaResidual" : 6.2442063818739799e-05,
-							"sigma_a_posteriori" : 0.0049996100836631309,
+							"residual" : -9.4356551016971935e-05,
+							"residualStd" : -0.018872781964596432,
+							"sigmaResidual" : 6.2442063819011107e-05,
+							"sigma_a_posteriori" : 0.0049996100836631275,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -4394,36 +4302,6 @@ data=
 							"to" : "S4",
 							"unit_factor" : 1.0,
 							"unit_str" : "m"
-						},
-						{
-							"active" : true,
-							"code" : 2,
-							"comment" : "",
-							"computed_value" : 19.99999999999994,
-							"deflection_correction" : 0.0,
-							"file" : 1,
-							"from" : "S4",
-							"instrument_height" : 0.0,
-							"line" : 47,
-							"normalized_residual" : -1.2079226507921703e-12,
-							"number" : 70,
-							"obsRedondancy" : 3.2662761384472105e-11,
-							"obs_azim" : 0.4719804788228617,
-							"obs_length" : 20.00394522925864,
-							"obs_zen" : 1.5895451061358128,
-							"original_value" : 20.0,
-							"rank" : 44,
-							"residual" : -6.0396132539608516e-14,
-							"residualStd" : -1.2079226507923676e-12,
-							"sigmaResidual" : 2.8584169695568842e-08,
-							"sigma_a_posteriori" : 0.049999999999991836,
-							"sigma_abs" : 0.050000000000000003,
-							"sigma_rel" : 0.0,
-							"sigma_total" : 0.050000000000000003,
-							"target_height" : 0.0,
-							"to" : "RNBV",
-							"unit_factor" : 1.0,
-							"unit_str" : "m"
 						}
 					],
 					"type" : "simple"
@@ -4435,29 +4313,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -0.00019026250566911803,
+							"computed_value" : -0.00019026250352047666,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 32,
-							"nabla" : 0.0034790643744409652,
-							"normalized_residual" : -0.63420835223039351,
+							"line" : 33,
+							"nabla" : 0.0034790643744410268,
+							"normalized_residual" : -0.63420834506825552,
 							"number" : 57,
-							"obsRedondancy" : 12.499288532895525,
-							"obs_azim" : -2.3528469583017881,
-							"obs_length" : 4020.0162890548045,
-							"obs_zen" : 1.6052527617430818,
+							"obsRedondancy" : 12.499288532895081,
+							"obs_azim" : -2.3528469583017926,
+							"obs_length" : 4020.0162890546671,
+							"obs_zen" : 1.6052527617430832,
 							"original_value" : 0.0,
-							"rank" : 45,
-							"residual" : -0.00019026250566911803,
-							"residualStd" : -0.67799449099447007,
-							"sigmaResidual" : 0.0001060629986357446,
-							"sigma_a_posteriori" : 0.000280625444891218,
+							"rank" : 44,
+							"residual" : -0.00019026250352047666,
+							"residualStd" : -0.67799448333785195,
+							"sigmaResidual" : 0.00010606299863574276,
+							"sigma_a_posteriori" : 0.00028062544489121865,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : -1.7938631579005451,
+							"standardized_residual" : -1.7938631376424146,
 							"target_height" : 0.0,
 							"to" : "PTHN",
 							"unit_factor" : 0.015707963267948967,
@@ -4467,24 +4345,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -3.1337268232915725,
+							"computed_value" : -3.1337268232913464,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 34,
-							"normalized_residual" : -0.047898734982232481,
+							"line" : 35,
+							"normalized_residual" : -0.047898734578352524,
 							"number" : 59,
-							"obsRedondancy" : 0.37722858204249921,
-							"obs_azim" : -2.4020684354973882,
-							"obs_length" : 4682.2273656541047,
-							"obs_zen" : 1.6004629247128168,
+							"obsRedondancy" : 0.37722858204303211,
+							"obs_azim" : -2.4020684354974229,
+							"obs_length" : 4682.2273656532943,
+							"obs_zen" : 1.6004629247128219,
 							"original_value" : -3.1337000000000002,
-							"rank" : 46,
-							"residual" : -2.6823291590050185e-05,
-							"residualStd" : -0.04798933524993701,
-							"sigmaResidual" : 3.4394604711862632e-05,
-							"sigma_a_posteriori" : 0.00055894276197721233,
+							"rank" : 45,
+							"residual" : -2.6823291363877409e-05,
+							"residualStd" : -0.04798933484529324,
+							"sigmaResidual" : 3.4394604711886999e-05,
+							"sigma_a_posteriori" : 0.00055894276197721081,
 							"sigma_abs" : 0.00055999999999999995,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00055999999999999995,
@@ -4497,22 +4375,22 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -0.7935817072298802,
+							"computed_value" : -0.79358170722999333,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 35,
-							"normalized_residual" : 0.043554214513511567,
+							"line" : 36,
+							"normalized_residual" : 0.04355421424425826,
 							"number" : 60,
 							"obsRedondancy" : 0.13647801217164801,
-							"obs_azim" : -2.365309521972621,
-							"obs_length" : 3901.4579243147791,
-							"obs_zen" : 1.6062836562740741,
+							"obs_azim" : -2.365309521972661,
+							"obs_length" : 3901.4579243143858,
+							"obs_zen" : 1.6062836562740779,
 							"original_value" : -0.79359999999999997,
-							"rank" : 47,
-							"residual" : 1.8292770095674858e-05,
-							"residualStd" : 0.043583965933179543,
+							"rank" : 46,
+							"residual" : 1.8292769982588472e-05,
+							"residualStd" : 0.043583965663742313,
 							"sigmaResidual" : 1.5516030854273707e-05,
 							"sigma_a_posteriori" : 0.00041971329831985216,
 							"sigma_abs" : 0.00042000000000000002,
@@ -4527,24 +4405,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 5.231803632216856,
+							"computed_value" : 5.2318036321985639,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 36,
-							"normalized_residual" : 0.016510076614153598,
+							"line" : 37,
+							"normalized_residual" : 0.016509993598463727,
 							"number" : 61,
-							"obsRedondancy" : 0.072326023960778141,
-							"obs_azim" : -2.2706629903853535,
-							"obs_length" : 4010.8697965546539,
-							"obs_zen" : 1.6053301047613378,
+							"obsRedondancy" : 0.072326023960445074,
+							"obs_azim" : -2.270662990385679,
+							"obs_length" : 4010.8697965513311,
+							"obs_zen" : 1.6053301047613664,
 							"original_value" : 5.2317999999999998,
-							"rank" : 48,
-							"residual" : 3.6322168551137912e-06,
-							"residualStd" : 0.016516050395781971,
-							"sigmaResidual" : 5.9165695801721175e-06,
-							"sigma_a_posteriori" : 0.00021992042698304082,
+							"rank" : 47,
+							"residual" : 3.6321985916620204e-06,
+							"residualStd" : 0.016515967350054808,
+							"sigmaResidual" : 5.9165695801588369e-06,
+							"sigma_a_posteriori" : 0.00021992042698304118,
 							"sigma_abs" : 0.00022000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00022000000000000001,
@@ -4557,24 +4435,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 7.4766025501529905,
+							"computed_value" : 7.4766025501529345,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 38,
-							"normalized_residual" : 0.0098082806463316453,
+							"line" : 39,
+							"normalized_residual" : 0.0098082804288578199,
 							"number" : 63,
-							"obsRedondancy" : 0.027721331903374224,
-							"obs_azim" : -2.2354017714384811,
-							"obs_length" : 3344.3912214469442,
-							"obs_zen" : 1.6121145353831459,
+							"obsRedondancy" : 0.027721331902597068,
+							"obs_azim" : -2.2354017714385201,
+							"obs_length" : 3344.3912214465704,
+							"obs_zen" : 1.6121145353831505,
 							"original_value" : 7.4766000000000004,
-							"rank" : 49,
-							"residual" : 2.5501529680462275e-06,
-							"residualStd" : 0.0098096404220651273,
-							"sigmaResidual" : 4.3289283161877863e-06,
-							"sigma_a_posteriori" : 0.00025996395977064457,
+							"rank" : 48,
+							"residual" : 2.5501529115030331e-06,
+							"residualStd" : 0.0098096402045611143,
+							"sigmaResidual" : 4.3289283161257717e-06,
+							"sigma_a_posteriori" : 0.0002599639597706456,
 							"sigma_abs" : 0.00025999999999999998,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00025999999999999998,
@@ -4587,24 +4465,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 14.970599999999976,
+							"computed_value" : 14.87060000000001,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 40,
+							"line" : 41,
 							"normalized_residual" : 0.0,
 							"number" : 65,
-							"obsRedondancy" : 1.1102230246251565e-13,
-							"obs_azim" : -2.1176863347661814,
-							"obs_length" : 4385.7677394713801,
-							"obs_zen" : 1.5694260560750106,
-							"original_value" : 14.970599999999999,
-							"rank" : 50,
+							"obsRedondancy" : 0.0,
+							"obs_azim" : -2.1192571310930139,
+							"obs_length" : 4374.8735884915895,
+							"obs_zen" : 1.5694211396242519,
+							"original_value" : 14.8706,
+							"rank" : 49,
 							"residual" : 0.0,
 							"residualStd" : 0.0,
-							"sigmaResidual" : 1.9148701510302654e-11,
-							"sigma_a_posteriori" : 0.00060999999999999965,
+							"sigmaResidual" : 0.0,
+							"sigma_a_posteriori" : 0.00060999999999999997,
 							"sigma_abs" : 0.00060999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00060999999999999997,
@@ -4617,29 +4495,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 35.788856789101743,
+							"computed_value" : 35.788856789104386,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 41,
-							"nabla" : 0.0035049161931226232,
-							"normalized_residual" : 1.4476563037802763,
+							"line" : 42,
+							"nabla" : 0.0035049161931226371,
+							"normalized_residual" : 1.4476563074207285,
 							"number" : 66,
-							"obsRedondancy" : 72.921930571282772,
-							"obs_azim" : -1.7906739218202417,
-							"obs_length" : 6804.0000406512472,
+							"obsRedondancy" : 72.921930571282175,
+							"obs_azim" : -1.7906739218202383,
+							"obs_length" : 6804.0000406512154,
 							"obs_zen" : 1.5914570936511654,
 							"original_value" : 35.787799999999997,
-							"rank" : 51,
-							"residual" : 0.0010567891017596016,
-							"residualStd" : 2.7819967421858136,
-							"sigmaResidual" : 0.00062337867144646999,
-							"sigma_a_posteriori" : 0.00037986712411793949,
+							"rank" : 50,
+							"residual" : 0.0010567891044171319,
+							"residualStd" : 2.7819967491817295,
+							"sigmaResidual" : 0.00062337867144646739,
+							"sigma_a_posteriori" : 0.00037986712411794367,
 							"sigma_abs" : 0.00072999999999999996,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00072999999999999996,
-							"standardized_residual" : 1.6952602810543047,
+							"standardized_residual" : 1.695260285317419,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 0.015707963267948967,
@@ -4648,7 +4526,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -149.78669923847838
+						"g0" : -149.78669923848082
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -4665,15 +4543,15 @@ data=
 							"file" : 1,
 							"from" : "S4",
 							"instrument_height" : 0.0,
-							"line" : 43,
+							"line" : 44,
 							"normalized_residual" : 0.0,
 							"number" : 67,
 							"obsRedondancy" : 0.0,
-							"obs_azim" : -2.3528469583017881,
-							"obs_length" : 4020.0162890548045,
-							"obs_zen" : 1.6052527617430818,
+							"obs_azim" : -2.3528469583017926,
+							"obs_length" : 4020.0162890546671,
+							"obs_zen" : 1.6052527617430832,
 							"original_value" : 0.0,
-							"rank" : 52,
+							"rank" : 51,
 							"residual" : 0.0,
 							"residualStd" : 0.0,
 							"sigmaResidual" : 0.0,
@@ -4685,41 +4563,11 @@ data=
 							"to" : "PTHN",
 							"unit_factor" : 0.015707963267948967,
 							"unit_str" : "g"
-						},
-						{
-							"active" : true,
-							"code" : 5,
-							"comment" : "",
-							"computed_value" : 179.83409999999927,
-							"deflection_correction" : 0.0,
-							"file" : 1,
-							"from" : "S4",
-							"instrument_height" : 0.0,
-							"line" : 45,
-							"normalized_residual" : -7.3506152638267935e-10,
-							"number" : 69,
-							"obsRedondancy" : 2.0257129307310606e-10,
-							"obs_azim" : 0.4719804788228617,
-							"obs_length" : 20.00394522925864,
-							"obs_zen" : 1.5895451061358128,
-							"original_value" : 179.83410000000001,
-							"rank" : 53,
-							"residual" : -7.3506152638267932e-13,
-							"residualStd" : -7.3506152638342392e-10,
-							"sigmaResidual" : 1.4232743608258668e-09,
-							"sigma_a_posteriori" : 0.00099999999999898716,
-							"sigma_abs" : 0.001,
-							"sigma_rel" : 0.0,
-							"sigma_total" : 0.001,
-							"target_height" : 0.0,
-							"to" : "RNBV",
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"g0" : -149.78688950098407
+						"g0" : -149.78688950098433
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -4732,27 +4580,27 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1823.9170035568582,
-				-532.39524635609712,
-				149.29312550307384
+				1823.9170035568584,
+				-532.39524635609587,
+				149.29312550284288
 			],
 			"coord_compensated_georef" : 
 			[
 				659686.7583502318,
 				6861959.4135758178,
-				149.57600000011172
+				149.57599999988076
 			],
 			"coord_compensated_latlong" : 
 			[
 				2.450574299383987,
 				48.856410003260038,
-				149.57600000011172
+				149.57599999988076
 			],
 			"coord_compensated_stereographic" : 
 			[
-				1823.8743176598725,
-				-532.38278648997073,
-				149.57600000011172
+				1823.8743176598723,
+				-532.38278648996936,
+				149.57599999988076
 			],
 			"coord_init_latlong" : 
 			[
@@ -4774,45 +4622,45 @@ data=
 				"axes" : 
 				[
 					[
-						0.0076977964350980008,
+						0.0076977964352156749,
 						0.0,
 						100.0
 					],
 					[
-						0.007686858746526669,
-						103.9409170199615,
+						0.0076868587466441792,
+						103.94091701996373,
 						0.0
 					],
 					[
-						0.0076497285626068645,
-						3.9409170199583352,
+						0.00764972856272381,
+						3.9409170199662511,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					2.4928086709409373e-05,
-					-1.4834403778868557e-08,
+					2.4928086709409397e-05,
+					-1.4834403778897232e-08,
 					0.0,
-					2.4689675891760559e-05,
+					2.46896758917606e-05,
 					0.0,
 					2.5000000000000005e-05
 				],
 				"sigmas" : 
 				[
-					0.0076867169843234575,
-					0.007649871010254365,
-					0.0076977964350980008
+					0.0076867169844409659,
+					0.0076498710103713122,
+					0.0076977964352156749
 				]
 			},
 			"nbActiveObs" : 7,
 			"number" : 4,
-			"rank" : 34,
+			"rank" : 32,
 			"shift_from_read" : 
 			[
 				0.00035023177042603493,
 				0.00057581812143325806,
-				1.1172573977091815e-10
+				-1.1922907106054481e-10
 			],
 			"sigmas_init" : 
 			[
@@ -4829,24 +4677,24 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 1823.874277233549,
+							"computed_value" : 1823.8742772335488,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S5",
 							"instrument_height" : 0.0,
 							"line" : 6,
-							"normalized_residual" : 0.069212910921123694,
+							"normalized_residual" : 0.069212910875648959,
 							"number" : 12,
-							"obsRedondancy" : 0.28765316236253335,
+							"obsRedondancy" : 0.28765316236242233,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 1823.8739311689944,
-							"rank" : 54,
-							"residual" : 0.00034606455460561847,
-							"residualStd" : 0.069312672762372352,
-							"sigmaResidual" : 0.00026816653518034586,
-							"sigma_a_posteriori" : 0.0049928034919681516,
+							"rank" : 52,
+							"residual" : 0.00034606455437824479,
+							"residualStd" : 0.06931267271683203,
+							"sigmaResidual" : 0.00026816653518030163,
+							"sigma_a_posteriori" : 0.0049928034919681542,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
@@ -4859,29 +4707,29 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -532.38277468585147,
+							"computed_value" : -532.38277468585011,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S5",
 							"instrument_height" : 0.0,
 							"line" : 6,
-							"nabla" : 0.18399927312392439,
-							"normalized_residual" : 0.11598738799420971,
+							"nabla" : 0.18399927312393755,
+							"normalized_residual" : 0.11598738826705812,
 							"number" : 13,
-							"obsRedondancy" : 1.2412964329577725,
+							"obsRedondancy" : 1.2412964329575948,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -532.38335462279144,
-							"rank" : 55,
-							"residual" : 0.00057993693997104856,
-							"residualStd" : 0.11671403355969374,
-							"sigmaResidual" : 0.00055706741803792639,
-							"sigma_a_posteriori" : 0.0049688706857555229,
+							"rank" : 53,
+							"residual" : 0.00057993694133529061,
+							"residualStd" : 0.11671403383425141,
+							"sigmaResidual" : 0.00055706741803788682,
+							"sigma_a_posteriori" : 0.0049688706857555272,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : 1.0410534186574256,
+							"standardized_residual" : 1.0410534211064708,
 							"target_height" : 0.0,
 							"to" : "S5",
 							"unit_factor" : 1.0,
@@ -4891,22 +4739,22 @@ data=
 							"active" : true,
 							"code" : -3,
 							"comment" : "",
-							"computed_value" : 149.57600000035018,
+							"computed_value" : 149.57599999941885,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S5",
 							"instrument_height" : 0.0,
 							"line" : 6,
-							"normalized_residual" : 7.0036776378401555e-08,
+							"normalized_residual" : -1.1622773854469415e-07,
 							"number" : 14,
 							"obsRedondancy" : 0.0,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 149.57599999999999,
-							"rank" : 56,
-							"residual" : 3.5018388189200778e-10,
-							"residualStd" : 7.0036776378401555e-08,
+							"rank" : 54,
+							"residual" : -5.8113869272347074e-10,
+							"residualStd" : -1.1622773854469415e-07,
 							"sigmaResidual" : 0.0,
 							"sigma_a_posteriori" : 0.0050000000000000001,
 							"sigma_abs" : 0.0050000000000000001,
@@ -4927,29 +4775,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -8.6090448773137518e-05,
+							"computed_value" : -8.6090449055853494e-05,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S5",
 							"instrument_height" : 0.0,
-							"line" : 74,
-							"nabla" : 0.0041195612507066983,
-							"normalized_residual" : -0.2869681625771251,
-							"number" : 88,
-							"obsRedondancy" : 8.9147320472454883,
-							"obs_azim" : -2.2181339206655615,
-							"obs_length" : 9051.9589459772778,
-							"obs_zen" : 1.5879453173647997,
+							"line" : 73,
+							"nabla" : 0.0041195612507067521,
+							"normalized_residual" : -0.28696816351951165,
+							"number" : 86,
+							"obsRedondancy" : 8.9147320472452556,
+							"obs_azim" : -2.2181339206655593,
+							"obs_length" : 9051.9589459772633,
+							"obs_zen" : 1.5879453173646432,
 							"original_value" : 0.0,
-							"rank" : 57,
-							"residual" : -8.6090448773137518e-05,
-							"residualStd" : -0.30068353462566444,
-							"sigmaResidual" : 8.9572645615282226e-05,
-							"sigma_a_posteriori" : 0.00028631580668464507,
+							"rank" : 55,
+							"residual" : -8.6090449055853494e-05,
+							"residualStd" : -0.30068353561309114,
+							"sigmaResidual" : 8.957264561528106e-05,
+							"sigma_a_posteriori" : 0.00028631580668464545,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : -0.96112432743026399,
+							"standardized_residual" : -0.96112433058655244,
 							"target_height" : 0.0,
 							"to" : "BCTR",
 							"unit_factor" : 0.015707963267948967,
@@ -4959,24 +4807,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -15.559999999999981,
+							"computed_value" : -15.559999999999953,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S5",
 							"instrument_height" : 0.0,
-							"line" : 75,
-							"normalized_residual" : 0.0,
-							"number" : 89,
-							"obsRedondancy" : -1.7763568394002505e-13,
-							"obs_azim" : -2.4625484768092401,
-							"obs_length" : 1267.628142672301,
-							"obs_zen" : 1.574721619028856,
+							"line" : 74,
+							"normalized_residual" : 1.7134301314281571e-10,
+							"number" : 87,
+							"obsRedondancy" : 2.886579864025407e-13,
+							"obs_azim" : -2.4625484768092329,
+							"obs_length" : 1276.3988324082254,
+							"obs_zen" : 1.6883395564317685,
 							"original_value" : -15.56,
-							"rank" : 58,
-							"residual" : 0.0,
-							"residualStd" : 0.0,
-							"sigmaResidual" : null,
-							"sigma_a_posteriori" : 0.00033000000000000027,
+							"rank" : 56,
+							"residual" : 5.6543194337129184e-14,
+							"residualStd" : 1.7134301314281594e-10,
+							"sigmaResidual" : 1.8093822187881337e-11,
+							"sigma_a_posteriori" : 0.00032999999999999951,
 							"sigma_abs" : 0.00033,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00033,
@@ -4989,24 +4837,24 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 20.385300325950698,
+							"computed_value" : 20.385300325950741,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S5",
 							"instrument_height" : 0.0,
-							"line" : 79,
-							"normalized_residual" : 0.0081487676864508401,
-							"number" : 93,
-							"obsRedondancy" : 0.12723923207171861,
-							"obs_azim" : -1.8979210196338128,
-							"obs_length" : 2214.345650814319,
-							"obs_zen" : 1.57314605196891,
+							"line" : 78,
+							"normalized_residual" : 0.0081487691000306992,
+							"number" : 91,
+							"obsRedondancy" : 0.12723923205908427,
+							"obs_azim" : -1.8979210196338054,
+							"obs_length" : 2214.345650814194,
+							"obs_zen" : 1.5731460519682703,
 							"original_value" : 20.385300000000001,
-							"rank" : 59,
-							"residual" : 3.2595070745803365e-07,
-							"residualStd" : 0.0081539568536824255,
-							"sigmaResidual" : 1.4268243455826504e-06,
-							"sigma_a_posteriori" : 3.9974544053520524e-05,
+							"rank" : 57,
+							"residual" : 3.2595076400122803e-07,
+							"residualStd" : 0.0081539582681619399,
+							"sigmaResidual" : 1.4268243455118791e-06,
+							"sigma_a_posteriori" : 3.9974544053523052e-05,
 							"sigma_abs" : 4.0000000000000003e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 4.0000000000000003e-05,
@@ -5019,29 +4867,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 71.07550870133494,
+							"computed_value" : 71.075508701335679,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S5",
 							"instrument_height" : 0.0,
-							"line" : 80,
-							"nabla" : 0.0084676357700293192,
-							"normalized_residual" : 1.166904087041942,
-							"number" : 94,
-							"obsRedondancy" : 56.325722614169948,
-							"obs_azim" : -1.1016810884285979,
-							"obs_length" : 1857.2580149462879,
-							"obs_zen" : 1.5683959291448955,
+							"line" : 79,
+							"nabla" : 0.0084676357700292967,
+							"normalized_residual" : 1.1669040875526546,
+							"number" : 92,
+							"obsRedondancy" : 56.325722614170246,
+							"obs_azim" : -1.1016810884285797,
+							"obs_length" : 1857.2580149462847,
+							"obs_zen" : 1.568395929144514,
 							"original_value" : 71.073700000000002,
-							"rank" : 60,
-							"residual" : 0.00180870133491501,
-							"residualStd" : 1.7657218730218249,
-							"sigmaResidual" : 0.0011632822038548656,
-							"sigma_a_posteriori" : 0.0010243410146013713,
+							"rank" : 58,
+							"residual" : 0.0018087013357066146,
+							"residualStd" : 1.765721873794625,
+							"sigmaResidual" : 0.0011632822038548686,
+							"sigma_a_posteriori" : 0.0010243410146013679,
 							"sigma_abs" : 0.0015499999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0015499999999999999,
-							"standardized_residual" : 1.5548259303902054,
+							"standardized_residual" : 1.554825931070694,
 							"target_height" : 0.0,
 							"to" : "BAT4",
 							"unit_factor" : 0.015707963267948967,
@@ -5050,7 +4898,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -141.21070507504328
+						"g0" : -141.21070507504285
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -5063,27 +4911,27 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1823.8303915019678,
-				-532.37101617279677,
-				149.3181522812915
+				1823.8303915019771,
+				-532.3710161727895,
+				149.31815228087427
 			],
 			"coord_compensated_georef" : 
 			[
 				659686.67192116939,
 				6861959.4384351838,
-				149.60100000011175
+				149.60099999969452
 			],
 			"coord_compensated_latlong" : 
 			[
 				2.4505731191303526,
 				48.856410221411835,
-				149.60100000011175
+				149.60099999969452
 			],
 			"coord_compensated_stereographic" : 
 			[
-				1823.7877004803829,
-				-532.35855478620203,
-				149.60100000011175
+				1823.7877004803927,
+				-532.35855478619487,
+				149.60099999969452
 			],
 			"coord_init_latlong" : 
 			[
@@ -5105,35 +4953,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.046186778610588002,
-						158.48777948801066,
+						0.046186778611294048,
+						158.48777948800401,
 						0.0
 					],
 					[
-						0.046186778610588002,
+						0.046186778611294048,
 						0.0,
 						100.0
 					],
 					[
-						0.045683704888983261,
-						58.487779488010005,
+						0.04568370488968157,
+						58.487779488006609,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.0008876814104856513,
-					-9.4049927967729873e-06,
+					0.00088768141048565206,
+					-9.4049927967745848e-06,
 					-0.0,
-					0.00089281947909666717,
+					0.00089281947909666533,
 					0.0,
 					0.00089999999999999998
 				],
 				"sigmas" : 
 				[
-					0.045869602901513193,
-					0.046002162345531908,
-					0.046186778610588002
+					0.04586960290221441,
+					0.046002162346235081,
+					0.046186778611294048
 				]
 			},
 			"nbActiveObs" : 5,
@@ -5143,7 +4991,7 @@ data=
 			[
 				-0.0020788306137546897,
 				-0.0015648165717720985,
-				1.1175416148034856e-10
+				-3.0547653295798227e-10
 			],
 			"sigmas_init" : 
 			[
@@ -5160,29 +5008,29 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 1823.7876600598067,
+							"computed_value" : 1823.7876600598165,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S6",
 							"instrument_height" : 0.0,
 							"line" : 7,
-							"nabla" : 1.0513465025642863,
-							"normalized_residual" : -0.06891996911993678,
+							"nabla" : 1.0513465025643203,
+							"normalized_residual" : -0.068919968794034503,
 							"number" : 15,
-							"obsRedondancy" : 1.3687321682609666,
+							"obsRedondancy" : 1.3687321682608777,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 1823.7897276588803,
-							"rank" : 61,
-							"residual" : -0.0020675990735981031,
-							"residualStd" : -0.069396531782185342,
-							"sigmaResidual" : 0.0035097848245083034,
-							"sigma_a_posteriori" : 0.029793982789913322,
+							"rank" : 59,
+							"residual" : -0.0020675990638210351,
+							"residualStd" : -0.06939653145402952,
+							"sigmaResidual" : 0.0035097848245081798,
+							"sigma_a_posteriori" : 0.029793982789913336,
 							"sigma_abs" : 0.029999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.029999999999999999,
-							"standardized_residual" : -0.58909567878930003,
+							"standardized_residual" : -0.58909567600366053,
 							"target_height" : 0.0,
 							"to" : "S6",
 							"unit_factor" : 1.0,
@@ -5192,24 +5040,24 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -532.35854298373704,
+							"computed_value" : -532.35854298372988,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "S6",
 							"instrument_height" : 0.0,
 							"line" : 7,
-							"normalized_residual" : -0.052618996058602839,
+							"normalized_residual" : -0.05261899581986048,
 							"number" : 16,
-							"obsRedondancy" : 0.79783565592584926,
+							"obsRedondancy" : 0.79783565592607131,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -532.35696441385528,
-							"rank" : 62,
-							"residual" : -0.0015785698817580851,
-							"residualStd" : -0.052830167056400167,
-							"sigmaResidual" : 0.0026796493993305926,
-							"sigma_a_posteriori" : 0.029880084991456553,
+							"rank" : 60,
+							"residual" : -0.0015785698745958143,
+							"residualStd" : -0.05283016681669974,
+							"sigmaResidual" : 0.0026796493993309365,
+							"sigma_a_posteriori" : 0.029880084991456522,
 							"sigma_abs" : 0.029999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.029999999999999999,
@@ -5235,7 +5083,7 @@ data=
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 149.601,
-							"rank" : 63,
+							"rank" : 61,
 							"residual" : -2.0861534721916541e-10,
 							"residualStd" : -6.9538449073055144e-09,
 							"sigmaResidual" : 0.0,
@@ -5258,29 +5106,29 @@ data=
 							"active" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 5.4045735470280376e-05,
+							"computed_value" : 5.4045735215836001e-05,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S6",
 							"instrument_height" : 0.0,
-							"line" : 82,
-							"nabla" : 0.0040220806248783504,
-							"normalized_residual" : 0.18015245166183994,
-							"number" : 95,
-							"obsRedondancy" : 9.3520900260991908,
-							"obs_azim" : -2.2181418279254208,
-							"obs_length" : 9051.9049033715237,
+							"line" : 81,
+							"nabla" : 0.00402208062487851,
+							"normalized_residual" : 0.18015245071945335,
+							"number" : 93,
+							"obsRedondancy" : 9.3520900260984483,
+							"obs_azim" : -2.2181418279254181,
+							"obs_length" : 9051.9049033715346,
 							"obs_zen" : 1.5879481745018502,
 							"original_value" : 0.0,
-							"rank" : 64,
-							"residual" : 5.404573549855197e-05,
-							"residualStd" : 0.18921749083696873,
-							"sigmaResidual" : 9.1743561209979603e-05,
-							"sigma_a_posteriori" : 0.00028562758791214604,
+							"rank" : 62,
+							"residual" : 5.4045735215836001e-05,
+							"residualStd" : 0.18921748984716169,
+							"sigmaResidual" : 9.174356120997589e-05,
+							"sigma_a_posteriori" : 0.00028562758791214724,
 							"sigma_abs" : 0.00029999999999999997,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00029999999999999997,
-							"standardized_residual" : 0.58909567914912186,
+							"standardized_residual" : 0.58909567606755653,
 							"target_height" : 0.0,
 							"to" : "BCTR",
 							"unit_factor" : 0.015707963267948967,
@@ -5290,29 +5138,29 @@ data=
 							"active" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 38.106899054576346,
+							"computed_value" : 38.106899054576814,
 							"deflection_correction" : 0.0,
 							"file" : 1,
 							"from" : "S6",
 							"instrument_height" : 0.0,
-							"line" : 83,
-							"nabla" : 0.0040220806248783556,
-							"normalized_residual" : -0.24620835033850105,
-							"number" : 96,
-							"obsRedondancy" : 17.467625926525223,
-							"obs_azim" : -1.6195609062691239,
-							"obs_length" : 7454.4768460352225,
-							"obs_zen" : 1.5913801955917448,
+							"line" : 82,
+							"nabla" : 0.0040220806248784258,
+							"normalized_residual" : -0.2462083492352192,
+							"number" : 94,
+							"obsRedondancy" : 17.467625926524612,
+							"obs_azim" : -1.6195609062691099,
+							"obs_length" : 7454.4768460348741,
+							"obs_zen" : 1.5913801955917457,
 							"original_value" : 38.106999999999999,
-							"rank" : 65,
-							"residual" : -0.00010094542363878542,
-							"residualStd" : -0.27101330303655818,
-							"sigmaResidual" : 0.00017135658488219503,
-							"sigma_a_posteriori" : 0.00037247405388498011,
+							"rank" : 63,
+							"residual" : -0.00010094542318643987,
+							"residualStd" : -0.27101330182212208,
+							"sigmaResidual" : 0.00017135658488219197,
+							"sigma_a_posteriori" : 0.00037247405388498152,
 							"sigma_abs" : 0.00040999999999999999,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00040999999999999999,
-							"standardized_residual" : -0.58909567851263966,
+							"standardized_residual" : -0.58909567587285938,
 							"target_height" : 0.0,
 							"to" : "NTDM",
 							"unit_factor" : 0.015707963267948967,
@@ -5321,7 +5169,7 @@ data=
 					],
 					"params" : 
 					{
-						"g0" : -141.2113486030247
+						"g0" : -141.21134860302428
 					},
 					"type" : "hz_unknown",
 					"unitFactor" : 0.015707963267948967
@@ -5334,26 +5182,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-5721.6813871365166,
-				-1616.787826766956,
+				-5721.6813871361528,
+				-1616.7878267667829,
 				-2.7700795760761783
 			],
 			"coord_compensated_georef" : 
 			[
-				652134.3661443264,
+				652134.36614432675,
 				6860929.9320668569,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.347763601543702,
+				2.3477636015437069,
 				48.846635077182803,
 				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-5721.6834570270557,
-				-1616.7884116643597,
+				-5721.683457026691,
+				-1616.7884116641867,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -5376,34 +5224,34 @@ data=
 				"axes" : 
 				[
 					[
-						0.16915762546407331,
-						59.595980589167574,
+						0.16915762546663077,
+						59.595980589165421,
 						0.0
 					],
 					[
-						0.045293606597526868,
-						159.59598058916757,
+						0.045293606598215588,
+						159.59598058916541,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.0081326824021381566,
-					0.0053506889495754835,
-					0.0048051537865925675
+					0.0081326824021351156,
+					0.0053506889495737288,
+					0.0048051537865914148
 				],
 				"sigmas" : 
 				[
-					0.13883959051404843,
-					0.10672104364719538
+					0.13883959051614489,
+					0.10672104364881399
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 18,
-			"rank" : 58,
+			"rank" : 56,
 			"shift_from_read" : 
 			[
-				10.36614432639908,
+				10.366144326748326,
 				-6.0679331431165338,
 				0.0
 			],
@@ -5421,26 +5269,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-6056.1125526473097,
-				-1416.686267020513,
+				-6056.1125526439455,
+				-1416.6862670193686,
 				-3.031156998774923
 			],
 			"coord_compensated_georef" : 
 			[
-				651801.42903691623,
-				6861132.4246782567,
+				651801.42903691961,
+				6861132.4246782595,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.3432041246009612,
-				48.848431269374885,
+				2.3432041246010069,
+				48.848431269374906,
 				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-6056.1149500106503,
-				-1416.6868278317106,
+				-6056.114950007287,
+				-1416.6868278305665,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -5463,35 +5311,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.11933884090171537,
-						64.986893527175155,
+						0.1193388409034022,
+						64.986893527151864,
 						0.0
 					],
 					[
-						0.037338431018471452,
-						164.98689352717511,
+						0.037338431019016904,
+						164.98689352715149,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.0045277834052512263,
-					0.002415300352309145,
-					0.0020689742730092575
+					0.0045277834052391665,
+					0.00241530035230425,
+					0.0020689742730066749
 				],
 				"sigmas" : 
 				[
-					0.10359510610219425,
-					0.070028361185745333
+					0.10359510610363991,
+					0.070028361186772137
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 19,
-			"rank" : 24,
+			"rank" : 22,
 			"shift_from_read" : 
 			[
-				-40.570963083766401,
-				-153.57532174326479,
+				-40.570963080390356,
+				-153.57532174047083,
 				0.0
 			],
 			"sigmas_init" : 
@@ -5508,38 +5356,38 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-6736.0689492513775,
-				-1115.4830698541384,
-				141.05812233788481
+				-6723.1854497215463,
+				-1115.6846403872812,
+				141.07167423135937
 			],
 			"coord_compensated_georef" : 
 			[
-				651123.89685774874,
-				6861438.5265270155,
+				651136.7768510516,
+				6861438.2318704855,
 				144.71100000000001
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.3339367294229865,
-				48.85113298824789,
+				2.3341122781708163,
+				48.851131315354493,
 				144.71100000000001
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-6735.9194021665526,
-				-1115.4583050816946,
+				-6723.0361767642053,
+				-1115.6598691652978,
 				144.71100000000001
 			],
 			"coord_init_latlong" : 
 			[
-				2.3339364972521981,
-				48.851132678527875,
+				2.3341120470545547,
+				48.851131006063866,
 				144.71100000000001
 			],
 			"coord_read" : 
 			[
-				651123.87953083043,
-				6861438.4922327986,
+				651136.75960199151,
+				6861438.197623319,
 				144.71100000000001
 			],
 			"dev_eta" : null,
@@ -5550,35 +5398,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.27184319993143696,
-						73.128974675664523,
+						0.27070754654487755,
+						73.02970874600463,
 						0.0
 					],
 					[
-						0.067679528985689033,
-						173.12897467566449,
+						0.067538902154570535,
+						173.02970874600456,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.026269566493328397,
-					0.010929299484354048,
-					0.0068406465408329441
+					0.026018058476077348,
+					0.010865131344974396,
+					0.0068241799290942647
 				],
 				"sigmas" : 
 				[
-					0.24953005990043861,
-					0.12733417922447779
+					0.24833267148969929,
+					0.12718082926046989
 				]
 			},
 			"nbActiveObs" : 2,
 			"number" : 26,
-			"rank" : 28,
+			"rank" : 24,
 			"shift_from_read" : 
 			[
-				0.017326918314211071,
-				0.034294216893613338,
+				0.017249060096219182,
+				0.034247166477143764,
 				0.0
 			],
 			"sigmas_init" : 
@@ -5595,8 +5443,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-9628.6794763100079,
-				-318.46981711985978,
+				-9628.6794763100024,
+				-318.46981711982977,
 				-7.2726238493853321
 			],
 			"coord_compensated_georef" : 
@@ -5613,8 +5461,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-9628.6886214359674,
-				-318.47011959998849,
+				-9628.688621435962,
+				-318.47011959995706,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -5637,31 +5485,31 @@ data=
 				"axes" : 
 				[
 					[
-						0.030753153598393684,
-						97.288926437434384,
+						0.030753153598863804,
+						97.288926437434711,
 						0.0
 					],
 					[
-						0.028859241349837281,
-						197.28892643743436,
+						0.028859241350278394,
+						197.28892643743472,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00039892614929783291,
-					2.0260006078122673e-06,
-					0.00035146628680576581
+					0.00039892614929783318,
+					2.0260006078120847e-06,
+					0.00035146628680576462
 				],
 				"sigmas" : 
 				[
-					0.030749826542699626,
-					0.028862786336880882
+					0.030749826543169698,
+					0.02886278633732205
 				]
 			},
 			"nbActiveObs" : 9,
 			"number" : 6,
-			"rank" : 54,
+			"rank" : 52,
 			"shift_from_read" : 
 			[
 				0.0020064159762114286,
@@ -5683,24 +5531,24 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -9628.683134357756,
+							"computed_value" : -9628.6831343577505,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "TFLE",
 							"instrument_height" : 0.0,
 							"line" : 10,
-							"normalized_residual" : 0.10091154881592956,
+							"normalized_residual" : 0.10091154908877797,
 							"number" : 18,
-							"obsRedondancy" : 0.26846267554178072,
+							"obsRedondancy" : 0.2684626755417141,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -9628.6851525887323,
-							"rank" : 66,
-							"residual" : 0.0020182309763185913,
-							"residualStd" : 0.10104727708389642,
-							"sigmaResidual" : 0.0010362676788200581,
-							"sigma_a_posteriori" : 0.019973135690167253,
+							"rank" : 64,
+							"residual" : 0.0020182309817755595,
+							"residualStd" : 0.10104727735711179,
+							"sigmaResidual" : 0.0010362676788199274,
+							"sigma_a_posteriori" : 0.01997313569016726,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
@@ -5713,29 +5561,29 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -318.46993811026204,
+							"computed_value" : -318.4699381102306,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "TFLE",
 							"instrument_height" : 0.0,
 							"line" : 10,
-							"nabla" : 0.23540847197670292,
-							"normalized_residual" : -0.080016985836550703,
+							"nabla" : 0.23540847197670015,
+							"normalized_residual" : -0.080016984264830171,
 							"number" : 19,
-							"obsRedondancy" : 12.133428298558558,
+							"obsRedondancy" : 12.133428298558846,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -318.4683377705453,
-							"rank" : 67,
-							"residual" : -0.0016003397167310141,
-							"residualStd" : -0.085363133154309545,
-							"sigmaResidual" : 0.0069666141843964784,
-							"sigma_a_posteriori" : 0.018747434139256652,
+							"rank" : 65,
+							"residual" : -0.0016003396852966034,
+							"residualStd" : -0.085363131477578333,
+							"sigmaResidual" : 0.0069666141843965643,
+							"sigma_a_posteriori" : 0.01874743413925662,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : -0.22971556546297422,
+							"standardized_residual" : -0.22971556095082105,
 							"target_height" : 0.0,
 							"to" : "TFLE",
 							"unit_factor" : 1.0,
@@ -5752,26 +5600,26 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-6144.0497863434503,
-				-2292.4186155495136,
+				-6144.0497863428045,
+				-2292.4186155490224,
 				-3.3697439688288977
 			],
 			"coord_compensated_georef" : 
 			[
-				651707.17059967411,
+				651707.17059967469,
 				6860257.4527273662,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.3420190872727531,
+				2.3420190872727611,
 				48.840555593565163,
 				0.0
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-6144.0524901969193,
-				-2292.4196243936553,
+				-6144.0524901962754,
+				-2292.4196243931642,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -5794,34 +5642,34 @@ data=
 				"axes" : 
 				[
 					[
-						0.13849399892360778,
-						74.563151456921901,
+						0.13849399892569217,
+						74.563151456920423,
 						0.0
 					],
 					[
-						0.052929913805368996,
-						174.56315145692159,
+						0.052929913806172797,
+						174.56315145692005,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.0070465019155568527,
-					0.0024764471767935716,
-					0.002227722450631171
+					0.0070465019155534509,
+					0.0024764471767924016,
+					0.0022277224506305083
 				],
 				"sigmas" : 
 				[
-					0.12923590994066425,
-					0.072665281222221836
+					0.12923590994260864,
+					0.072665281223321845
 				]
 			},
 			"nbActiveObs" : 3,
 			"number" : 20,
-			"rank" : 22,
+			"rank" : 20,
 			"shift_from_read" : 
 			[
-				44.170599674107507,
+				44.170599674689583,
 				-51.547272633761168,
 				0.0
 			],
@@ -5839,8 +5687,8 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-674.8493754200407,
-				-7689.2568102490332,
+				-674.84937542008652,
+				-7689.2568102490068,
 				-4.6685703083811259
 			],
 			"coord_compensated_georef" : 
@@ -5857,8 +5705,8 @@ data=
 			],
 			"coord_compensated_stereographic" : 
 			[
-				-674.849786874816,
-				-7689.2614983860103,
+				-674.84978687486102,
+				-7689.2614983859839,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -5881,31 +5729,31 @@ data=
 				"axes" : 
 				[
 					[
-						0.030693837276028951,
-						29.239393593382555,
+						0.030693837276498152,
+						29.239393593382729,
 						0.0
 					],
 					[
-						0.028441071434088316,
-						129.23939359338257,
+						0.028441071434523079,
+						129.23939359338272,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00035231632068988158,
-					2.2333840090034099e-05,
-					0.00038642917506284002
+					0.00035231632068988169,
+					2.2333840090034187e-05,
+					0.00038642917506283997
 				],
 				"sigmas" : 
 				[
-					0.02889766810350846,
-					0.030264351458865392
+					0.028897668103950214,
+					0.030264351459328036
 				]
 			},
 			"nbActiveObs" : 4,
 			"number" : 13,
-			"rank" : 64,
+			"rank" : 62,
 			"shift_from_read" : 
 			[
 				0.0070178087335079908,
@@ -5927,29 +5775,29 @@ data=
 							"active" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -674.84954000198775,
+							"computed_value" : -674.84954000203277,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "VTRY",
 							"instrument_height" : 0.0,
 							"line" : 17,
-							"nabla" : 0.23749745973355182,
-							"normalized_residual" : 0.35447549041691673,
+							"nabla" : 0.23749745973355205,
+							"normalized_residual" : 0.35447548816591734,
 							"number" : 32,
-							"obsRedondancy" : 11.92091982752962,
+							"obsRedondancy" : 11.920919827529596,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -674.85662951179609,
-							"rank" : 80,
-							"residual" : 0.0070895098083383346,
-							"residualStd" : 0.3777024715886565,
-							"sigmaResidual" : 0.0069053370164039417,
-							"sigma_a_posteriori" : 0.018770091120979715,
+							"rank" : 78,
+							"residual" : 0.0070895097633183468,
+							"residualStd" : 0.37770246919016048,
+							"sigmaResidual" : 0.0069053370164039339,
+							"sigma_a_posteriori" : 0.018770091120979718,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : 1.026671079412472,
+							"standardized_residual" : 1.0266710728928801,
 							"target_height" : 0.0,
 							"to" : "VTRY",
 							"unit_factor" : 1.0,
@@ -5959,30 +5807,30 @@ data=
 							"active" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -7689.2586855013615,
+							"computed_value" : -7689.2586855013351,
 							"deflection_correction" : 0.0,
 							"file" : 0,
 							"from" : "VTRY",
 							"instrument_height" : 0.0,
 							"line" : 17,
 							"nabla" : 0.44518520615902413,
-							"normalized_residual" : -0.48444924041177728,
+							"normalized_residual" : -0.48444923909300996,
 							"number" : 33,
 							"obsRedondancy" : 3.3927062342900216,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : -7689.2489965165532,
-							"probableError" : 0.28558278079926724,
-							"rank" : 81,
-							"residual" : -0.0096889848082355456,
-							"residualStd" : -0.49288241195537857,
+							"probableError" : 0.285582780021854,
+							"rank" : 79,
+							"residual" : -0.0096889847818601993,
+							"residualStd" : -0.49288241061365445,
 							"sigmaResidual" : 0.0036838600593888,
 							"sigma_a_posteriori" : 0.019657801887872407,
 							"sigma_abs" : 0.02,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.02,
-							"standardized_residual" : -2.6301174995890242,
+							"standardized_residual" : -2.6301174924293207,
 							"target_height" : 0.0,
 							"to" : "VTRY",
 							"unit_factor" : 1.0,
