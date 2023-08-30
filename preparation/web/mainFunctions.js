@@ -510,7 +510,7 @@ function reduction(){
 	
 	output += "<table>"
 	output += "<tr><td align=right>7&nbsp</td><td align=right>"+stat_nom+"&nbsp</td><td align=right>"+NOM[ref]+"&nbsp</td>"
-	output += "<td align=right>0.0000&nbsp</td><td align=right>0.00030&nbsp</td></tr>"
+	output += "<td align=right>0.0000&nbsp</td><td align=right>0.00060&nbsp</td></tr>"
 	for (var i=0; i<ncb; i++){
 		if (i == ref){
 			continue
