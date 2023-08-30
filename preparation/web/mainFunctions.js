@@ -97,6 +97,7 @@ function firstButton() {
 			
 		}
 		formulaire += '<div class=\"buttons\"><a href="#" class="button back" onclick="secondButton()">SUBMIT</a><a href="#" class="button back" onclick="submitAndSave()">SUBMIT & SAVE</a></div>';
+		formulaire += '<div id="suggestion_'+j+'"></div>';
 		formulaire += "</br></br>"
 		formulaire += "</br></br>"
 	}
@@ -115,10 +116,9 @@ const file = new File(['foo'], 'note.txt', {
   type: 'text/plain',
 }) */
 	
-	
 
 		$(document).ready(function (){
-			
+					
 			// ---------------------------------------------------------
 			// Modifications noms de station
 			// ---------------------------------------------------------
@@ -215,7 +215,93 @@ const file = new File(['foo'], 'note.txt', {
 						}
 					}
 				}
+		
 			});
+			
+			
+			
+			spaces  = "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"
+			spaces += "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"
+			spaces += "&nbsp &nbsp &nbsp &nbsp"
+			
+				$('#formulaire_angles').keyup(function (e) {
+					
+					var tolerance_cg_cd = document.getElementById("frm1000").elements[5].value
+					
+					let activeElement = document.activeElement;
+					
+					color = "green"
+					field_d = activeElement.id.substring(0, 10) + "d_"+activeElement.id.substring(12, 14); d = parseFloat($('#'+field_d).val())
+					field_m = activeElement.id.substring(0, 10) + "m_"+activeElement.id.substring(12, 14); m = parseFloat($('#'+field_m).val())
+					field_s = activeElement.id.substring(0, 10) + "s_"+activeElement.id.substring(12, 14); s = parseFloat($('#'+field_s).val())
+					input_value = d + m/60.0 + s/3600.0
+					
+					prediction = $('#'+activeElement.id).attr('title')
+					tab = prediction.split(":")[1]
+					d = parseFloat(tab.split("°")[0])
+					m = parseFloat(tab.split("°")[1].split("'")[0])
+					s = parseFloat(tab.split("°")[1].split("'")[1])
+					predicted_value = d+m/60.0+s/3600.0
+					
+					if (Math.abs(predicted_value-input_value) > tolerance_cg_cd){
+						color = "red"
+					}
+					
+					
+					if (isNaN(input_value)){
+						color = 'black'
+					}
+					
+					
+					
+					if (prediction === undefined){
+						prediction = ""
+					}
+					for (var i=0; i<nb2; i++){
+						$('#suggestion_'+i).html(spaces + "<a style=\"color:"+color+";\"><small><i>" + prediction + "</i></small></a>")
+					}
+				});
+				
+				
+				$('#formulaire_angles').click(function (e) {
+					
+					var tolerance_cg_cd = document.getElementById("frm1000").elements[5].value
+					
+					let activeElement = document.activeElement;
+					
+					color = "green"
+					field_d = activeElement.id.substring(0, 10) + "d_"+activeElement.id.substring(12, 14); d = parseFloat($('#'+field_d).val())
+					field_m = activeElement.id.substring(0, 10) + "m_"+activeElement.id.substring(12, 14); m = parseFloat($('#'+field_m).val())
+					field_s = activeElement.id.substring(0, 10) + "s_"+activeElement.id.substring(12, 14); s = parseFloat($('#'+field_s).val())
+					input_value = d + m/60.0 + s/3600.0
+					
+					prediction = $('#'+activeElement.id).attr('title')
+					tab = prediction.split(":")[1]
+					d = parseFloat(tab.split("°")[0])
+					m = parseFloat(tab.split("°")[1].split("'")[0])
+					s = parseFloat(tab.split("°")[1].split("'")[1])
+					predicted_value = d+m/60.0+s/3600.0
+					
+					if (Math.abs(predicted_value-input_value) > tolerance_cg_cd){
+						color = "red"
+					}
+					
+					
+					
+					if (isNaN(input_value)){
+						color = 'black'
+					}
+					
+					
+					
+					if (prediction === undefined){
+						prediction = ""
+					}
+					for (var i=0; i<nb2; i++){
+						$('#suggestion_'+i).html(spaces + "<a style=\"color:"+color+";\"><small><i>" + prediction + "</i></small></a>")
+					}
+				});
+				
 		});
 	
 	return
