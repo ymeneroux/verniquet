@@ -21,6 +21,78 @@ var mode;
 var solution;
 
 
+
+// ----------------------------------------------------------
+// Fonction de gestion des passages entre cellules
+// ----------------------------------------------------------
+document.onkeypress = function (e) {
+    e = e || window.event;
+    
+    if (e.keyCode == 13){
+		
+		var ncb = document.getElementById("frm1000").elements[0].value;
+		var nth = document.getElementById("frm1000").elements[1].value;
+		
+		focus_element = document.activeElement.id
+		split = focus_element.split("_")
+		
+		if (focus_element.substring(focus_element.length-4, focus_element.length) == "stat"){
+			i2 = (parseFloat(split[1]) + 1)
+			j  = split[2]
+			if (i2 == ncb){
+				next_id = "field_0_"+j+"_d_cg"
+			} else{
+				next_id = "field_"+ i2 + "_" + split[2] + "_stat"
+			}
+			
+			try{
+				document.getElementById(next_id).focus();
+			} catch(error){
+			}
+			return
+		}
+
+		i = parseFloat(split[1])
+		j = parseFloat(split[2])
+		k = split[3]
+		l = split[4]
+		
+		i2 = i
+		j2 = j
+		k2 = k
+		l2 = l
+		
+		if (k == "d"){
+			k2 = "m"
+		}
+		if (k == "m"){
+			k2 = "s"
+		}
+		if (k == "s"){
+			k2 = "d"
+			i2 = i+1
+			if (i2 == ncb){
+				i2 = 0
+				if (l == "cg"){
+					l2 = "cd"
+				} else{
+					l2 = "cg"
+					j2 = j+1
+				}
+			}
+			
+		}
+		
+		next_id = "field_"+i2+"_"+j2+"_"+k2+"_"+l2
+	
+		try{
+			document.getElementById(next_id).focus();
+		} catch(error){
+		}
+	}
+};
+	
+
 // ----------------------------------------------------------
 // Fonction d'affichage des NaN
 // ----------------------------------------------------------
@@ -160,10 +232,12 @@ const file = new File(['foo'], 'note.txt', {
 					deg = Math.floor(valeur);
 					min = Math.floor(60*(valeur-deg))
 					sec = Math.floor(60*(60*(valeur-deg)-min))
-					chaine = "Décalage de limbe : ~ " + deg + "° "
-					$('#field_'+0+'_'+i+'_d_cg').attr('title', chaine);
-					$('#field_'+0+'_'+i+'_m_cg').attr('title', chaine);
-					$('#field_'+0+'_'+i+'_s_cg').attr('title', chaine);
+					if (!isNaN(deg)){
+						chaine = "Décalage de limbe : ~ " + deg + "° "
+						$('#field_'+0+'_'+i+'_d_cg').attr('title', chaine);
+						$('#field_'+0+'_'+i+'_m_cg').attr('title', chaine);
+						$('#field_'+0+'_'+i+'_s_cg').attr('title', chaine);
+					}
 				}
 		
 				CC = ["cg", "cd"]
