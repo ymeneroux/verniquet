@@ -29,3 +29,29 @@ SEDM 006 25 00 186 24 49 051 13 17 231 13 13 096 14 52 276 14 49 141 15 07 321 1
 PTHN 006 52 50 186 52 43 051 41 14 231 41 05 096 42 41 276 42 46 141 43 08 321 43 00 
 VTY1 021 30 29 201 30 30 066 18 42 246 18 51 111 20 33 291 20 23 156 20 45 336 20 42 
 VTY2 021 31 45 201 31 35 066 20 00 246 20 00 111 21 40 291 21 31 156 21 58 336 21 52 
+
+Repères d'excentrement par rapport au centre de la souche :
+
+TFLE 000 02 04 180 01 49 
+SOUC 248 31 35 068 31 34 
+
+Angle entre la souche et TFLE : 
+    111° 30' 22" +/- 10"
+	111.5061° +/- 0.002°
+	
+d1 = 4.09 m
+d2 = (4.11 m) x cos(1.5°) = 4.108
+d = 4.10 m +/- 1 cm
+
+Pour se repositionner (précision ~ 1 cm) :
+   En ce centrant sur la souche, mesurer un angle de +111.5061° (~ 111° 30') depuis TFLE. 
+   Suivant la direction obtenue, positionner un point à 4.10 m.
+
+
+
+
+
+
+
+
+
