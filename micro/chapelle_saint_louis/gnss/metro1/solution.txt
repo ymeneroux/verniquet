@@ -1,0 +1,15 @@
+Coin Sud-Est de la rambarde de l'ancienne sortie du métro (rainure intérieure)
+
+ECEF
+X = 4202039.337 m,    Y = 178936.952 m,   Z = 4778993.227 m,    (sigma ~ 1 cm)
+
+
+Lambert 93 :
+E = 658779.182 m,  N = 6860224.364 m, h = 95.422 m
+
+  
+Coordonnées géographiques :
+48.84074919 2.43837362
+
+
+  
