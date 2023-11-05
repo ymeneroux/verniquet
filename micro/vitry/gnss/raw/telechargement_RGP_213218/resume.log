@@ -1,0 +1,14 @@
+Date du téléchargement :2023-11-05 17:57:57
+Liste des actions effectuées :
+	> Etablissement de la liste des fichiers nécessaires pour l'ensemble des recherches : 10 fichier(s) de données et 2 fichier(s) de navigation.
+
+	> TRAITEMENT: recherche 1
+	> Copie des fichiers ATX dans le repertoire de traitement.
+	> Copie des fichiers BRDC dans le repertoire de traitement.
+	> Renommage et décompression des fichiers BRDC.
+	> Copie des fichiers de données dans le répertoire de traitement.
+	> Décompression des fichiers de données.
+	> Personnalisation des fichiers de données (échantillonnage et contrôle des constellations et des observables).
+	> Concaténation des fichiers de données de chaque station.
+	> FIN TRAITEMENT: recherche 1
+
