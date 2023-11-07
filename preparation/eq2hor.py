@@ -7,55 +7,132 @@ import math
 from datetime import timezone
 import numpy as np
 
-
+# Documentation utile : 
 # file:///C:/Users/oo/Desktop/divers/verniquet/Terrain/astro/antenne/arcturus/modif/Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier.html
 # https://www.webastro.net/ephemerides/conversion_coordonnees/#resultat
 # https://pyastronomy.readthedocs.io/en/latest/pyaslDoc/aslDoc/eq2hor.html
 
+# ===========================================================================
 
-position = [2, 26.747, 48, 51.080]
 
+# Coordonnees terrestres
+lon = 2.4457833333333334 
+lat = 48.851333333333336
+
+# ---------------------------------------------
+# Catalogue d'etoiles
+# ---------------------------------------------
 altair = [19, 50, 46.999, 8, 52, 5.96]
+# ---------------------------------------------
+
+# Choix de l'etoile
 etoile = altair
 
-# Position
-lon = position[0]+position[1]/60
-lat = position[2]+position[3]/60
+# ---------------------------------------------
+# Parametres de precision
+# ---------------------------------------------
+std_time  = 0.1  # Time marker standard deviation (in seconds)
+std_angle =   3  # Standard deviation of instrument (in arc-seconds)
+
+# ===========================================================================
 
 # Specific RA and DEC
 ra = (etoile[0] + etoile[1]/60 + etoile[2]/3600)/24 * 360
 dec = etoile[3] + etoile[4]/60 + etoile[5]/3600
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
-i = 0
+
+print(bcolors.HEADER + "# -------------------------------------------------")
+print("# Calcul d'orientations astronomiques")
+print("# -------------------------------------------------" + bcolors.ENDC)
+session = input("Nom session : ")
+file_name = session + ".txt"
+print("")
+
+
+def lecture_angle(complement):
+    print("Lecture angle " + complement +" :")
+    val_ref_d = (int)(input("   DEG: "))
+    val_ref_m = (int)(input("   MIN: "))
+    val_ref_s = (float)(input("   SEC: "))
+    value = '{:02d}'.format(val_ref_d) + "° " + '{:02d}'.format(val_ref_m) + "' " + '{:04.1f}'.format(val_ref_s) + "\" "
+    print("Observation :", value)
+    return val_ref_d + val_ref_m/60.0 + val_ref_s/3600
+
+
+i = 1
 print("=========================================================")
-while (False):
+print("DEBUT DES OBSERVATIONS")
+print("=========================================================")
+while (True):
+	
+	# -------------------------------------------------------------------------
+	# NOUVELLE OBSERVATION 
+	# -------------------------------------------------------------------------
+	
+    signal = input("Observation #" + str(i) + "    " + bcolors.OKGREEN +"[Enter] continuer" + bcolors.ENDC +"   " + bcolors.FAIL +" [X] arret " + bcolors.ENDC)
+    if (signal == "X"):
+        confirmation = input("Fin des observations [y/n] ?")
+        if (confirmation == "y"):
+            break
+
+
+	
+	# -------------------------------------------------------------------------
+	# CERCLE GAUCHE
+	# -------------------------------------------------------------------------
+
+    ref_cg = lecture_angle("CG point de reference")
+	
     
-    input("Mesure #" + str(i) + " etoile CG")
+    input("Mesure etoile CG    " + bcolors.OKCYAN + " [Enter] signal " + bcolors.ENDC)
      
     #jd = datetime.datetime(2023, 9, 10, 0, 25, 0)
     jd  = datetime.datetime.now(timezone.utc)
 
-
+    
     alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
 
    
     
     jd1  = datetime.datetime.now(timezone.utc)
-    time.sleep(0.1)
+    time.sleep(std_time)
     jd2  = datetime.datetime.now(timezone.utc)
     
     alt, az1, ah = pyasl.eq2hor(pyasl.jdcnv(jd1), ra, dec, lon=lon, lat=lat, alt=0.)
     alt, az2, ah = pyasl.eq2hor(pyasl.jdcnv(jd2), ra, dec, lon=lon, lat=lat, alt=0.)
     daz = az2-az1
     
-    print(jd, '{:.5f}'.format(az[0]), "+/-",  '{:.5f}'.format(daz[0]))
-      
-    i += 1
+    eph = str(jd) + " " + '{:.5f}'.format(az[0]) + " +/- " + '{:.5f}'.format(daz[0])
+    print(eph)
+
+    value =  lecture_angle("CG etoile")
+    angle_cg = az[0] - (value - ref_cg)
+
+    
+    f = open(file_name, "a")
+    f.write("CG " + eph + " " + '{:10.10f}'.format(value-ref_cg) + "\n")
+    f.close()
+    
     
     print("---------------------------------------------------------")
     
-    input("Mesure #" + str(i) + " etoile CD")
+    
+    # -------------------------------------------------------------------------
+	# CERCLE DROIT
+	# -------------------------------------------------------------------------
+    
+    input("Mesure etoile CD    " + bcolors.OKCYAN + " [Enter] signal " + bcolors.ENDC)
     
     #jd = datetime.datetime(2023, 9, 10, 0, 25, 0)
     jd  = datetime.datetime.now(timezone.utc)
@@ -66,18 +143,46 @@ while (False):
    
     
     jd1  = datetime.datetime.now(timezone.utc)
-    time.sleep(0.1)
+    time.sleep(std_time)
     jd2  = datetime.datetime.now(timezone.utc)
     
     alt, az1, ah = pyasl.eq2hor(pyasl.jdcnv(jd1), ra, dec, lon=lon, lat=lat, alt=0.)
     alt, az2, ah = pyasl.eq2hor(pyasl.jdcnv(jd2), ra, dec, lon=lon, lat=lat, alt=0.)
     daz = az2-az1
     
-    print(jd, '{:.5f}'.format(az[0]), "+/-",  '{:.5f}'.format(daz[0]))
+
+    eph = str(jd) + " " + '{:.5f}'.format(az[0]) + " +/- " + '{:.5f}'.format(daz[0])
+    print(eph)
+   
+    value = lecture_angle("CD etoile")
+    ref_cd = lecture_angle("CD point de reference")
+    angle_cd = az[0] - (ref_cd - value)
+    
+    
+    f = open(file_name, "a")
+    f.write("CD " + eph + " " + '{:10.10f}'.format(angle_cd) + "\n")
+    f.close()
       
+    azimut = (angle_cg + angle_cd)/2
+    stddev = (daz[0]**2 + (std_angle/3600)**2)**0.5
+
+    line = "Azimut vers la reference : " + '{:2.5f}'.format(azimut) + " +/- " + '{:2.5}'.format(stddev)
+
+    f = open(file_name, "a")
+    f.write(line + "\n")
+    f.close()
+      
+
+
+    print("---------------------------------------------------------")
+    print(line)
     i += 1
 
     print("=========================================================")
+
+
+
+
 
 
 
@@ -94,7 +199,7 @@ while (False):
 dat = [320,2,17,37,58,28,218,6,49,140,2,6,261.7517245662855,261.8986609058640]
 
 
-def process(data):
+def process2(data):
     ref_cg = data[0] +  data[1]/60 +  data[2]/3600
     str_cg = data[3] +  data[4]/60 +  data[5]/3600
     str_cd = data[6] +  data[7]/60 +  data[8]/3600   
@@ -104,11 +209,16 @@ def process(data):
     angle = (cg+cd)/2
     if (angle > 360):
         angle = angle - 180
-    print(angle)
+    return(angle)
 
 
 
-process(dat)
+
+
+
+
+
+
 
 # =========================================================
 # Mesure #0 etoile CG
