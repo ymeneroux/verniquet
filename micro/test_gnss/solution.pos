@@ -1,0 +1,24 @@
+% program   : RTKLIB ver.2.4.2
+% inp file  : log_gnss_02062023-20-08-04.obs
+% inp file  : rgp\ignf313z.23n
+% inp file  : rgp\vity313z.23o
+% obs start : 2023/11/09 11:00:00.0 GPST (week2287 385200.0s)
+% obs end   : 2023/11/09 12:00:00.0 GPST (week2287 388800.0s)
+% pos mode  : static
+% freqs     : L1
+% solution  : forward
+% elev mask : 15.0 deg
+% dynamics  : off
+% tidecorr  : off
+% ionos opt : broadcast
+% tropo opt : saastamoinen
+% ephemeris : broadcast
+% amb res   : fix and hold
+% val thres : 5.0
+% antenna1  :                       ( 0.0000  0.0000  0.0000)
+% antenna2  : TPSCR.G5              ( 0.0000  0.0000  0.0000)
+% ref pos   :  4207852.8050   174564.2590  4774137.6750
+%
+% (x/y/z-ecef=WGS84,Q=1:fix,2:float,3:sbas,4:dgps,5:single,6:ppp,ns=# of satellites)
+%  GPST                      x-ecef(m)      y-ecef(m)      z-ecef(m)   Q  ns   sdx(m)   sdy(m)   sdz(m)  sdxy(m)  sdyz(m)  sdzx(m) age(s)  ratio
+2023/11/09 11:00:00.000   4201762.6174    177858.0580   4779299.3450   1   8   0.0013   0.0006   0.0011   0.0004   0.0004   0.0010  -0.00  999.9
