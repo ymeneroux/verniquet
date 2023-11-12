@@ -1,5 +1,5 @@
      2.11           OBSERVATION DATA    G (GPS)             RINEX VERSION / TYPE
-teqc  2019Feb25                         20231109 19:42:08UTCPGM / RUN BY / DATE
+teqc  2019Feb25                         20231112 14:24:50UTCPGM / RUN BY / DATE
 VITY                                                        MARKER NAME
 18328M001                                                   MARKER NUMBER
 Automatic           TERIA                                   OBSERVER / AGENCY
@@ -12,7 +12,7 @@ Automatic           TERIA                                   OBSERVER / AGENCY
     30.0000                                                 INTERVAL
     18                                                      LEAP SECONDS
 Linux 2.6.32-573.12.1.x86_64|x86_64|gcc|Linux 64|=+         COMMENT
-teqc  2019Feb25                         20231109 19:42:08UTCCOMMENT
+teqc  2019Feb25                         20231112 14:24:49UTCCOMMENT
      2.11           OBSERVATION DATA    M (MIXED)           COMMENT
 teqc  2019Feb25     IGN-RGP             20231109 09:08:25UTCCOMMENT
 teqc  2019Feb25     Administrateur RGP  20231109 09:08:25UTCCOMMENT
