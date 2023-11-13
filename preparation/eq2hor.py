@@ -5,6 +5,7 @@ import datetime
 import time
 import math
 from datetime import timezone
+from datetime import timedelta
 import numpy as np
 
 # Documentation utile : 
@@ -31,9 +32,9 @@ etoile = altair
 # ---------------------------------------------
 # Parametres de precision
 # ---------------------------------------------
-std_time  = 0.1  # Time marker standard deviation (in seconds)
-std_angle =   3  # Standard deviation of instrument (in arc-seconds)
-
+std_time    =  0.1  # Time marker standard deviation (in seconds)
+std_angle   =    3  # Standard deviation of instrument (in arc-seconds)
+offset_time = 21.3  # Offset (in seconds) relative to true time
 # ===========================================================================
 
 # Specific RA and DEC
@@ -98,7 +99,7 @@ while (True):
     input("Mesure etoile CG    " + bcolors.OKCYAN + " [Enter] signal " + bcolors.ENDC)
      
     #jd = datetime.datetime(2023, 9, 10, 0, 25, 0)
-    jd  = datetime.datetime.now(timezone.utc)
+    jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
 
     
     alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
@@ -135,7 +136,7 @@ while (True):
     input("Mesure etoile CD    " + bcolors.OKCYAN + " [Enter] signal " + bcolors.ENDC)
     
     #jd = datetime.datetime(2023, 9, 10, 0, 25, 0)
-    jd  = datetime.datetime.now(timezone.utc)
+    jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
 
 
     alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
