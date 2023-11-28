@@ -1,5 +1,5 @@
 import jinja2
-import pdfkit
+#import pdfkit
 environment = jinja2.Environment()
 template = environment.from_string("Hello, {{ name }}!")
 template.render(name="World")
@@ -30,6 +30,6 @@ for student in students:
     filename_pdf = "../out/pdf/" + filename + ".pdf"
     with open(filename_htm, mode="w", encoding="utf-8") as message:
         message.write(content)
-    pdfkit.from_file(filename_htm, filename_pdf)
+    #pdfkit.from_file(filename_htm, filename_pdf)
     print(f"... wrote {filename_pdf}")
  

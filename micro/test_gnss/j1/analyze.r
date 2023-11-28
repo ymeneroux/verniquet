@@ -2,9 +2,9 @@
 file = "results_mlvl.txt"
 data = read.csv(file, h=F, sep=" ")
 
-data$V2 = data$V2 -  657716.370 
-data$V3 = data$V3 - 6860676.055
-data$V4 = data$V4 -     113.832 
+data$V2 = data$V2 - mean(data$V2) #-  657716.370 
+data$V3 = data$V3 - mean(data$V3) #- 6860676.055
+data$V4 = data$V4 - mean(data$V4) #-     113.832 
 
 T = c(30, 45, 60, 120, 180, 240, 300, 360)
 
