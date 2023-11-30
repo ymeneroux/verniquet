@@ -1,28 +1,145 @@
 <!doctype html>
 <html>
 <head>
-<title>Our nice HTML Page</title>
+<title>{{ name }}</title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
 </head>
 <body>
-Content goes here : <b>{{ name }}</b>
+	
+	
 
 <p>
- <img src="../../gen/photos/ABCD.jpg" alt="Girl in a jacket" style="width:250px;height:300px;"> 
+<small> Date du calcul : {{date_calcul}} </small>
 </p>
+
+<br/>
+	
+<center>
+<h1>{{ name }}</h1>
+</center>
+
+<br/>
+
+<center>
+<p>
+ <img src="../../gen/photos/{{ name }}.png" alt="Pas de photo pour le site CHN" style="height:200px;"> 
+</p>
+<p>
+<small><i>{{com}} </small></i> </td> 
+</p>
+</center>
+
+<br/>
+
+<hr>
+
+<p style="font-size: 14px">
+<b>Coordonnées Lambert 93 - RGF 93 :</b>
+</p>
+<hr>
 
 <center>
 <p>
  <table>
   <tr>
-    <td>X = 657000.000 m &nbsp&nbsp&nbsp&nbsp </td>
-    <td>Y = 657000.000 m &nbsp&nbsp&nbsp&nbsp </td>
-    <td>Z = 657000.000 m &nbsp&nbsp&nbsp&nbsp </td>
+    <td style="font-family:'Courier New'; font-size: 14px">E = {{X_L93}} m &nbsp&nbsp&nbsp&nbsp </td>
+    <td style="font-family:'Courier New'; font-size: 14px">N = {{Y_L93}} m &nbsp&nbsp&nbsp&nbsp </td>
+    <td style="font-family:'Courier New'; font-size: 14px">h = {{Z_L93}} m &nbsp&nbsp&nbsp&nbsp </td>
   </tr>
 </table> 
 </p>
 </center>
+
+
+<center>
+<p>
+ <table>
+  <tr>
+    <td> &#963<sub>X</sub> = <span style="font-family:'Courier New'; font-size: 14px">{{X_STD}} m</span> &nbsp&nbsp&nbsp&nbsp </td>
+    <td> &#963<sub>Y</sub> = <span style="font-family:'Courier New'; font-size: 14px">{{Y_STD}} m</span> &nbsp&nbsp&nbsp&nbsp </td>
+    <td> &#963<sub>Z</sub> = <span style="font-family:'Courier New'; font-size: 14px">{{Z_STD}} m</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+	<td> (&#963<sub>plani</sub> = <span style="font-family:'Courier New'; font-size: 14px">{{STD_PLANI}} mm)</span> &nbsp&nbsp&nbsp&nbsp </td>
+  </tr>
+</table> 
+</p>
+</center>
+
+
+<center>
+<p>
+ <table>
+  <tr>
+  <span style="font-size: 12px">Instruction Comp3D : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </span> <span style="font-family:'Courier New'; font-size: 12px"> 7 {{name}} {{X_L93}} {{Y_L93}} {{Z_L93}} {{X_STD}} {{Y_STD}} {{Z_STD}}  </span>
+  </tr>
+</table> 
+</p>
+</center>
+
+
+<br/>
+
+<hr>
+
+
+
+<p style="font-size: 14px">
+<b>Coordonnées géographiques - RGF 93 :</b>
+</p>
+<hr>
+
+<center>
+<p>
+ <table>
+  <tr>
+    <td>&#955 = <span style="font-family:'Courier New'; font-size: 14px">{{X_GEO}}</span>° &nbsp&nbsp&nbsp&nbsp </td>
+    <td>&#966 = <span style="font-family:'Courier New'; font-size: 14px">{{Y_GEO}}</span>° &nbsp&nbsp&nbsp&nbsp </td>
+    <td>h = {{Z_GEO}} m &nbsp&nbsp&nbsp&nbsp </td>
+  </tr>
+</table> 
+</p>
+</center>
+
+
+
+<center>
+<p>
+ <table>
+  <tr>
+    <td>&#955<sub>dms</sub> = <span style="font-family:'Courier New'; font-size: 14px">{{X_GEO_d}}</span>° <span style="font-family:'Courier New'">{{X_GEO_m}}</span>' <span style="font-family:'Courier New'">{{X_GEO_s}}"</span> &nbsp&nbsp&nbsp&nbsp </td>
+    <td>&#966<sub>dms</sub> = <span style="font-family:'Courier New'; font-size: 14px">{{Y_GEO_d}}</span>° <span style="font-family:'Courier New'">{{Y_GEO_m}}</span>' <span style="font-family:'Courier New'">{{Y_GEO_s}}"</span> &nbsp&nbsp&nbsp&nbsp </td>
+  </tr>
+</table> 
+</p>
+</center>
+
+
+
+<br/>	
+
+<hr>
+<p style="font-size: 14px">
+<b>Coordonnées <i>Eart-Centered Earth Fixed</i> (ECEF) :</b>
+</p>
+<hr>
+
+<center>
+<p>
+ <table>
+  <tr>
+    <td style="font-family:'Courier New'; font-size: 14px">X = {{X_ECEF}} m &nbsp&nbsp&nbsp&nbsp </td>
+    <td style="font-family:'Courier New'; font-size: 14px">Y = {{Y_ECEF}} m &nbsp&nbsp&nbsp&nbsp </td>
+    <td style="font-family:'Courier New'; font-size: 14px">Z = {{Z_ECEF}} m &nbsp&nbsp&nbsp&nbsp </td>
+  </tr>
+</table> 
+</p>
+</center>
+
+<br/>
+ 
+<p style="font-size: 12px">
+<small><b>Attention : </b>toutes les coordonnées altimétriques sont données en hauteurs ellipsoïdales	</small>
+</p> 
 
  
 </body>
