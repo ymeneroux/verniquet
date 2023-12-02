@@ -1,0 +1,123 @@
+ COMP ADJ
+ ELIP GRS 80                 6378137  6356752.3141   0.0000   0.0000   0.0000 m
+ MAXI         15
+ CONF YES YES YES YES NO
+ PSOL NO  YES
+ PMIS NO  NO
+ PRES YES NO
+ PADJ NO  YES NO  NO  NO  NO
+ VARF YES YES NO
+ RTST TAU MAX
+ LUNT m    1.000000000000
+ CONV    0.00010
+ CLEV     95.000
+ ANGT GRD
+ LDEC 4
+ 
+ SIGM AH       8.0
+ SIGM ZA       12.0
+ SIGM DP   0.0010
+
+ HIST NEW
+
+ DSET AH
+ DIR      S4           S6                           0  0     0.0         
+ DIR      S4           S5                           1 80    61.9           
+ DIR      S4           S2                           7  3    91.4          
+ DIR      S4           S3                         398 74    63.3             
+ DIR      S4           I19                         22 33    87.5             
+ DIR      S4           I20                         22 37    52.5             
+ DIR      S4           I21                         24  0    29.0            
+ DIR      S4           I22                         25 93    45.4             
+ DIR      S4           I23                         27 66    48.1             
+ DIR      S4           I24                         29 55    13.9             
+ DIR      S4           I25                         32 39    89.9             
+ DIR      S4           I26                         35 11    90.9             
+ DIR      S4           I27                         39 98    56.4             
+ DIR      S4           I28                         39 81     2.8            
+ DIR      S4           I29                         63 61    36.4             
+ DIR      S4           I30                         63 43    38.9             
+ DIR      S4           I31                         53 70    31.0             
+ DIR      S4           I32                         47 10    76.9             
+ DIR      S4           C20                         22 50     9.1            
+ DIR      S4           C21                         24 14    49.6             
+ DIR      S4           C23                         27 83    99.4             
+ DIR      S4           C25                         32 62    35.0             
+ DIR      S4           C26                         35 38     4.4            
+ DIR      S4           C27                         40 30    94.0             
+ DIR      S4           C28                         40 12    49.8             
+ DIR      S4           C29                         64  1    29.9            
+ DIR      S4           C30                         63 82    60.3             
+ DIR      S4           C31                         53 97    80.8             
+ DIR      S4           C32                         47 32    67.1             
+ DIR      S4           MRVC                       170 19    54.2               
+ DIR      S4           CHVC                       204 81    87.3               
+ DIR      S4           IGNF1                       88 58    41.1               
+ DIR      S4           IGNF2                       88 79    24.1               
+
+ ZANG ZA  S4           S6                         100 20    24.4                               
+ ZANG ZA  S4           S5                         100 40    11.1                               
+ ZANG ZA  S4           S2                         100 57    38.2                               
+ ZANG ZA  S4           S3                          99 98    41.9                              
+ ZANG ZA  S4           I19                         98 69    32.4                               
+ ZANG ZA  S4           I20                        108 11    79.0                                
+ ZANG ZA  S4           I21                        104 54    10.3                                
+ ZANG ZA  S4           I22                         96 63    52.7                               
+ ZANG ZA  S4           I23                        101 29    67.7                                
+ ZANG ZA  S4           I24                        110  9    36.8                               
+ ZANG ZA  S4           I25                         95 88    20.8                               
+ ZANG ZA  S4           I26                        101 93    48.6                                
+ ZANG ZA  S4           I27                        112 17    19.8                                
+ ZANG ZA  S4           I28                         94 82    27.7                               
+ ZANG ZA  S4           I29                         91 85     7.4                              
+ ZANG ZA  S4           I30                        110 85    52.6                                
+ ZANG ZA  S4           I31                         86 68    93.6                               
+ ZANG ZA  S4           I32                         85 75    80.4                               
+ ZANG ZA  S4           C20                        108 15    88.8                                
+ ZANG ZA  S4           C21                        104 55    82.7                                
+ ZANG ZA  S4           C23                        101 30     7.1                               
+ ZANG ZA  S4           C25                         95 85    77.7                               
+ ZANG ZA  S4           C26                        101 94    21.3                                
+ ZANG ZA  S4           C27                        112 24    80.8                                
+ ZANG ZA  S4           C28                         94 78    93.1                               
+ ZANG ZA  S4           C29                         91 82    57.4                               
+ ZANG ZA  S4           C30                        110 88    82.7                                
+ ZANG ZA  S4           C31                         86 64    42.6                               
+ ZANG ZA  S4           C32                         85 71    19.6                               
+ ZANG ZA  S4           MRVC                        98 66    27.6                                
+ ZANG ZA  S4           CHVC                        98 96    47.6                                
+ ZANG ZA  S4           IGNF1                       93 97    80.7                                 
+ ZANG ZA  S4           IGNF2                       93 97    79.1                                 
+
+ DIST DP  S4           S6                                43.08757                             
+ DIST DP  S4           S5                                32.72039                             
+ DIST DP  S4           S2                                15.27495                             
+ DIST DP  S4           S3                                10.76883                             
+ DIST DP  S4           I19                                9.34919                             
+ DIST DP  S4           I20                                9.41214                             
+ DIST DP  S4           I21                                8.82389                             
+ DIST DP  S4           I22                                8.26595                             
+ DIST DP  S4           I23                                7.82610                             
+ DIST DP  S4           I24                                7.50390                             
+ DIST DP  S4           I25                                6.88696                             
+ DIST DP  S4           I26                                6.43941                             
+ DIST DP  S4           I27                                5.91121                             
+ DIST DP  S4           I28                                5.84926                             
+ DIST DP  S4           I29                                6.29786                             
+ DIST DP  S4           I30                                6.34666                             
+ DIST DP  S4           I31                                8.55675                             
+ DIST DP  S4           I32                                9.55984                             
+ DIST DP  S4           C20                                9.36934                             
+ DIST DP  S4           C21                                8.78124                             
+ DIST DP  S4           C23                                7.78555                             
+ DIST DP  S4           C25                                6.84896                             
+ DIST DP  S4           C26                                6.40176                             
+ DIST DP  S4           C27                                5.87616                             
+ DIST DP  S4           C28                                5.81451                             
+ DIST DP  S4           C29                                6.27351                             
+ DIST DP  S4           C30                                6.32351                             
+ DIST DP  S4           C31                                8.52885                             
+ DIST DP  S4           C32                                9.52804                             
+ 
+ HIST ALL Toutes les observations
+ END

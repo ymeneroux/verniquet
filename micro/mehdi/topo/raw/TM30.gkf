@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<!DOCTYPE gama-local SYSTEM "gama-local.dtd">
+
+<gama-local version="2.0">
+  <network axes-xy="en" angles="left-handed" >
+    <description>
+      Donnees reduites
+      C:\Users\adminlocal\Desktop\verniquet\verniquet\micro\mehdi\topo\raw\TM30.gkf
+      fichier cree le 02-12-2023 01:00:04
+    </description>
+
+    <parameters sigma-act="apriori"/>
+
+    <points-observations>
+
+      <obs from="S4">
+        <direction   to="S6"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S5"       val=  "1.8062" stdev="8.0" />
+        <direction   to="S2"       val=  "7.0391" stdev="8.0" />
+        <direction   to="S3"       val="398.7463" stdev="8.0" />
+        <direction   to="I19"      val= "22.3388" stdev="8.0" />
+        <direction   to="I20"      val= "22.3753" stdev="8.0" />
+        <direction   to="I21"      val= "24.0029" stdev="8.0" />
+        <direction   to="I22"      val= "25.9345" stdev="8.0" />
+        <direction   to="I23"      val= "27.6648" stdev="8.0" />
+        <direction   to="I24"      val= "29.5514" stdev="8.0" />
+        <direction   to="I25"      val= "32.3990" stdev="8.0" />
+        <direction   to="I26"      val= "35.1191" stdev="8.0" />
+        <direction   to="I27"      val= "39.9856" stdev="8.0" />
+        <direction   to="I28"      val= "39.8103" stdev="8.0" />
+        <direction   to="I29"      val= "63.6136" stdev="8.0" />
+        <direction   to="I30"      val= "63.4339" stdev="8.0" />
+        <direction   to="I31"      val= "53.7031" stdev="8.0" />
+        <direction   to="I32"      val= "47.1077" stdev="8.0" />
+        <direction   to="C20"      val= "22.5009" stdev="8.0" />
+        <direction   to="C21"      val= "24.1450" stdev="8.0" />
+        <direction   to="C23"      val= "27.8399" stdev="8.0" />
+        <direction   to="C25"      val= "32.6235" stdev="8.0" />
+        <direction   to="C26"      val= "35.3804" stdev="8.0" />
+        <direction   to="C27"      val= "40.3094" stdev="8.0" />
+        <direction   to="C28"      val= "40.1250" stdev="8.0" />
+        <direction   to="C29"      val= "64.0130" stdev="8.0" />
+        <direction   to="C30"      val= "63.8260" stdev="8.0" />
+        <direction   to="C31"      val= "53.9781" stdev="8.0" />
+        <direction   to="C32"      val= "47.3267" stdev="8.0" />
+        <direction   to="MRVC"     val="170.1954" stdev="8.0" />
+        <direction   to="CHVC"     val="204.8187" stdev="8.0" />
+        <direction   to="IGNF1"    val= "88.5841" stdev="8.0" />
+        <direction   to="IGNF2"    val= "88.7924" stdev="8.0" />
+        <z-angle     to="S6"       val="100.2024" stdev="12.0" />
+        <z-angle     to="S5"       val="100.4011" stdev="12.0" />
+        <z-angle     to="S2"       val="100.5738" stdev="12.0" />
+        <z-angle     to="S3"       val= "99.9842" stdev="12.0" />
+        <z-angle     to="I19"      val= "98.6932" stdev="12.0" />
+        <z-angle     to="I20"      val="108.1179" stdev="12.0" />
+        <z-angle     to="I21"      val="104.5410" stdev="12.0" />
+        <z-angle     to="I22"      val= "96.6353" stdev="12.0" />
+        <z-angle     to="I23"      val="101.2968" stdev="12.0" />
+        <z-angle     to="I24"      val="110.0937" stdev="12.0" />
+        <z-angle     to="I25"      val= "95.8821" stdev="12.0" />
+        <z-angle     to="I26"      val="101.9349" stdev="12.0" />
+        <z-angle     to="I27"      val="112.1720" stdev="12.0" />
+        <z-angle     to="I28"      val= "94.8228" stdev="12.0" />
+        <z-angle     to="I29"      val= "91.8507" stdev="12.0" />
+        <z-angle     to="I30"      val="110.8553" stdev="12.0" />
+        <z-angle     to="I31"      val= "86.6894" stdev="12.0" />
+        <z-angle     to="I32"      val= "85.7580" stdev="12.0" />
+        <z-angle     to="C20"      val="108.1589" stdev="12.0" />
+        <z-angle     to="C21"      val="104.5583" stdev="12.0" />
+        <z-angle     to="C23"      val="101.3007" stdev="12.0" />
+        <z-angle     to="C25"      val= "95.8578" stdev="12.0" />
+        <z-angle     to="C26"      val="101.9421" stdev="12.0" />
+        <z-angle     to="C27"      val="112.2481" stdev="12.0" />
+        <z-angle     to="C28"      val= "94.7893" stdev="12.0" />
+        <z-angle     to="C29"      val= "91.8257" stdev="12.0" />
+        <z-angle     to="C30"      val="110.8883" stdev="12.0" />
+        <z-angle     to="C31"      val= "86.6443" stdev="12.0" />
+        <z-angle     to="C32"      val= "85.7120" stdev="12.0" />
+        <z-angle     to="MRVC"     val= "98.6628" stdev="12.0" />
+        <z-angle     to="CHVC"     val= "98.9648" stdev="12.0" />
+        <z-angle     to="IGNF1"    val= "93.9781" stdev="12.0" />
+        <z-angle     to="IGNF2"    val= "93.9779" stdev="12.0" />
+        <s-distance  to="S6"       val="43.0876" stdev="1.0" />
+        <s-distance  to="S5"       val="32.7204" stdev="1.0" />
+        <s-distance  to="S2"       val="15.2750" stdev="1.0" />
+        <s-distance  to="S3"       val="10.7688" stdev="1.0" />
+        <s-distance  to="I19"      val="9.3492" stdev="1.0" />
+        <s-distance  to="I20"      val="9.4121" stdev="1.0" />
+        <s-distance  to="I21"      val="8.8239" stdev="1.0" />
+        <s-distance  to="I22"      val="8.2659" stdev="1.0" />
+        <s-distance  to="I23"      val="7.8261" stdev="1.0" />
+        <s-distance  to="I24"      val="7.5039" stdev="1.0" />
+        <s-distance  to="I25"      val="6.8870" stdev="1.0" />
+        <s-distance  to="I26"      val="6.4394" stdev="1.0" />
+        <s-distance  to="I27"      val="5.9112" stdev="1.0" />
+        <s-distance  to="I28"      val="5.8493" stdev="1.0" />
+        <s-distance  to="I29"      val="6.2979" stdev="1.0" />
+        <s-distance  to="I30"      val="6.3467" stdev="1.0" />
+        <s-distance  to="I31"      val="8.5567" stdev="1.0" />
+        <s-distance  to="I32"      val="9.5598" stdev="1.0" />
+        <s-distance  to="C20"      val="9.3693" stdev="1.0" />
+        <s-distance  to="C21"      val="8.7812" stdev="1.0" />
+        <s-distance  to="C23"      val="7.7856" stdev="1.0" />
+        <s-distance  to="C25"      val="6.8490" stdev="1.0" />
+        <s-distance  to="C26"      val="6.4018" stdev="1.0" />
+        <s-distance  to="C27"      val="5.8762" stdev="1.0" />
+        <s-distance  to="C28"      val="5.8145" stdev="1.0" />
+        <s-distance  to="C29"      val="6.2735" stdev="1.0" />
+        <s-distance  to="C30"      val="6.3235" stdev="1.0" />
+        <s-distance  to="C31"      val="8.5288" stdev="1.0" />
+        <s-distance  to="C32"      val="9.5280" stdev="1.0" />
+      </obs>
+
+    </points-observations>
+  </network>
+</gama-local>
+ 

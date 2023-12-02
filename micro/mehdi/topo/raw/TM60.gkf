@@ -1,0 +1,911 @@
+<?xml version="1.0" ?>
+<!DOCTYPE gama-local SYSTEM "gama-local.dtd">
+
+<gama-local version="2.0">
+  <network axes-xy="en" angles="left-handed" >
+    <description>
+      Donnees reduites
+      C:\Users\adminlocal\Desktop\verniquet\verniquet\micro\mehdi\topo\raw\TM60.gkf
+      fichier cree le 02-12-2023 00:51:32
+    </description>
+
+    <parameters sigma-act="apriori"/>
+
+    <points-observations>
+
+      <obs from="L1">
+        <direction   to="S1"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S2"       val="342.9487" stdev="8.0" />
+        <direction   to="S3"       val="314.9086" stdev="8.0" />
+        <direction   to="S6"       val= "36.8536" stdev="8.0" />
+        <direction   to="I35"      val="231.3010" stdev="8.0" />
+        <direction   to="C35"      val="231.6763" stdev="8.0" />
+        <direction   to="I01"      val="241.0657" stdev="8.0" />
+        <direction   to="C01"      val="241.4597" stdev="8.0" />
+        <direction   to="C02"      val="242.3576" stdev="8.0" />
+        <direction   to="I02"      val="241.9523" stdev="8.0" />
+        <direction   to="I03"      val="245.4667" stdev="8.0" />
+        <direction   to="C03"      val="245.8767" stdev="8.0" />
+        <direction   to="C04"      val="250.0505" stdev="8.0" />
+        <direction   to="I04"      val="249.6368" stdev="8.0" />
+        <direction   to="I05"      val="252.9453" stdev="8.0" />
+        <direction   to="C05"      val="253.3574" stdev="8.0" />
+        <direction   to="C06"      val="256.2666" stdev="8.0" />
+        <direction   to="I06"      val="255.8570" stdev="8.0" />
+        <direction   to="I07"      val="260.2820" stdev="8.0" />
+        <direction   to="C07"      val="260.6857" stdev="8.0" />
+        <direction   to="C08"      val="265.5059" stdev="8.0" />
+        <direction   to="I08"      val="265.1118" stdev="8.0" />
+        <direction   to="I09"      val="267.8694" stdev="8.0" />
+        <direction   to="C09"      val="268.2554" stdev="8.0" />
+        <direction   to="C10"      val="272.0561" stdev="8.0" />
+        <direction   to="I10"      val="271.6835" stdev="8.0" />
+        <direction   to="I11"      val="274.9728" stdev="8.0" />
+        <direction   to="C11"      val="275.3304" stdev="8.0" />
+        <direction   to="C12"      val="279.0148" stdev="8.0" />
+        <direction   to="I12"      val="278.6777" stdev="8.0" />
+        <direction   to="I15"      val="285.6705" stdev="8.0" />
+        <direction   to="C15"      val="285.8506" stdev="8.0" />
+        <direction   to="C16"      val="285.8142" stdev="8.0" />
+        <direction   to="I16"      val="285.6343" stdev="8.0" />
+        <direction   to="I17"      val="286.8497" stdev="8.0" />
+        <direction   to="C17"      val="287.1450" stdev="8.0" />
+        <direction   to="C18"      val="287.1369" stdev="8.0" />
+        <direction   to="I18"      val="286.8408" stdev="8.0" />
+        <direction   to="I33"      val="261.7474" stdev="8.0" />
+        <direction   to="C33"      val="262.0658" stdev="8.0" />
+        <direction   to="C34"      val="256.2077" stdev="8.0" />
+        <direction   to="I34"      val="255.8845" stdev="8.0" />
+        <z-angle     to="S1"       val="102.1481" stdev="12.0" />
+        <z-angle     to="S2"       val="100.8713" stdev="12.0" />
+        <z-angle     to="S3"       val= "99.6003" stdev="12.0" />
+        <z-angle     to="S6"       val="100.1798" stdev="12.0" />
+        <z-angle     to="I35"      val="100.8592" stdev="12.0" />
+        <z-angle     to="C35"      val="100.8624" stdev="12.0" />
+        <z-angle     to="I01"      val= "95.9507" stdev="12.0" />
+        <z-angle     to="C01"      val= "95.9547" stdev="12.0" />
+        <z-angle     to="C02"      val="108.8471" stdev="12.0" />
+        <z-angle     to="I02"      val="108.8349" stdev="12.0" />
+        <z-angle     to="I03"      val= "97.9670" stdev="12.0" />
+        <z-angle     to="C03"      val= "97.9662" stdev="12.0" />
+        <z-angle     to="C04"      val="106.5436" stdev="12.0" />
+        <z-angle     to="I04"      val="106.5405" stdev="12.0" />
+        <z-angle     to="I05"      val= "96.6384" stdev="12.0" />
+        <z-angle     to="C05"      val= "96.6458" stdev="12.0" />
+        <z-angle     to="C06"      val="108.9709" stdev="12.0" />
+        <z-angle     to="I06"      val="108.9688" stdev="12.0" />
+        <z-angle     to="I07"      val="104.1306" stdev="12.0" />
+        <z-angle     to="C07"      val="104.1283" stdev="12.0" />
+        <z-angle     to="C08"      val="108.5950" stdev="12.0" />
+        <z-angle     to="I08"      val="108.6085" stdev="12.0" />
+        <z-angle     to="I09"      val= "96.9636" stdev="12.0" />
+        <z-angle     to="C09"      val= "96.9640" stdev="12.0" />
+        <z-angle     to="C10"      val="100.5457" stdev="12.0" />
+        <z-angle     to="I10"      val="100.5451" stdev="12.0" />
+        <z-angle     to="I11"      val="108.1707" stdev="12.0" />
+        <z-angle     to="C11"      val="108.1594" stdev="12.0" />
+        <z-angle     to="C12"      val= "96.1949" stdev="12.0" />
+        <z-angle     to="I12"      val= "96.1830" stdev="12.0" />
+        <z-angle     to="I15"      val= "99.4638" stdev="12.0" />
+        <z-angle     to="C15"      val= "99.4578" stdev="12.0" />
+        <z-angle     to="C16"      val="109.3560" stdev="12.0" />
+        <z-angle     to="I16"      val="109.3179" stdev="12.0" />
+        <z-angle     to="I17"      val= "97.8322" stdev="12.0" />
+        <z-angle     to="C17"      val= "97.8388" stdev="12.0" />
+        <z-angle     to="C18"      val="108.4113" stdev="12.0" />
+        <z-angle     to="I18"      val="108.4360" stdev="12.0" />
+        <z-angle     to="I33"      val= "88.1546" stdev="12.0" />
+        <z-angle     to="C33"      val= "88.1652" stdev="12.0" />
+        <z-angle     to="C34"      val= "85.1676" stdev="12.0" />
+        <z-angle     to="I34"      val= "85.1601" stdev="12.0" />
+        <s-distance  to="S1"       val="2.5789" stdev="1.0" />
+        <s-distance  to="S2"       val="5.8826" stdev="1.0" />
+        <s-distance  to="S3"       val="9.4202" stdev="1.0" />
+        <s-distance  to="S6"       val="27.8991" stdev="1.0" />
+        <s-distance  to="I35"      val="7.4559" stdev="1.0" />
+        <s-distance  to="C35"      val="7.4414" stdev="1.0" />
+        <s-distance  to="I01"      val="7.1976" stdev="1.0" />
+        <s-distance  to="C01"      val="7.1891" stdev="1.0" />
+        <s-distance  to="C02"      val="7.2336" stdev="1.0" />
+        <s-distance  to="I02"      val="7.2386" stdev="1.0" />
+        <s-distance  to="I03"      val="7.1247" stdev="1.0" />
+        <s-distance  to="C03"      val="7.1220" stdev="1.0" />
+        <s-distance  to="C04"      val="7.1319" stdev="1.0" />
+        <s-distance  to="I04"      val="7.1319" stdev="1.0" />
+        <s-distance  to="I05"      val="7.1047" stdev="1.0" />
+        <s-distance  to="C05"      val="7.1082" stdev="1.0" />
+        <s-distance  to="C06"      val="7.1900" stdev="1.0" />
+        <s-distance  to="I06"      val="7.1865" stdev="1.0" />
+        <s-distance  to="I07"      val="7.1818" stdev="1.0" />
+        <s-distance  to="C07"      val="7.1891" stdev="1.0" />
+        <s-distance  to="C08"      val="7.3442" stdev="1.0" />
+        <s-distance  to="I08"      val="7.3315" stdev="1.0" />
+        <s-distance  to="I09"      val="7.3481" stdev="1.0" />
+        <s-distance  to="C09"      val="7.3610" stdev="1.0" />
+        <s-distance  to="C10"      val="7.4881" stdev="1.0" />
+        <s-distance  to="I10"      val="7.4728" stdev="1.0" />
+        <s-distance  to="I11"      val="7.6815" stdev="1.0" />
+        <s-distance  to="C11"      val="7.6983" stdev="1.0" />
+        <s-distance  to="C12"      val="7.8371" stdev="1.0" />
+        <s-distance  to="I12"      val="7.8171" stdev="1.0" />
+        <s-distance  to="I15"      val="8.3895" stdev="1.0" />
+        <s-distance  to="C15"      val="8.3504" stdev="1.0" />
+        <s-distance  to="C16"      val="8.4447" stdev="1.0" />
+        <s-distance  to="I16"      val="8.4841" stdev="1.0" />
+        <s-distance  to="I17"      val="8.3738" stdev="1.0" />
+        <s-distance  to="C17"      val="8.3976" stdev="1.0" />
+        <s-distance  to="C18"      val="8.4709" stdev="1.0" />
+        <s-distance  to="I18"      val="8.4472" stdev="1.0" />
+        <s-distance  to="I33"      val="9.1841" stdev="1.0" />
+        <s-distance  to="C33"      val="9.1920" stdev="1.0" />
+        <s-distance  to="C34"      val="9.2892" stdev="1.0" />
+        <s-distance  to="I34"      val="9.2867" stdev="1.0" />
+      </obs>
+
+      <obs from="L3">
+        <direction   to="S6"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S1"       val= "59.7086" stdev="8.0" />
+        <direction   to="S3"       val="200.7366" stdev="8.0" />
+        <direction   to="S2"       val= "58.2307" stdev="8.0" />
+        <direction   to="S4"       val="198.9042" stdev="8.0" />
+        <direction   to="I35"      val="126.2217" stdev="8.0" />
+        <direction   to="C35"      val="126.3404" stdev="8.0" />
+        <direction   to="I01"      val="129.4363" stdev="8.0" />
+        <direction   to="C01"      val="129.5746" stdev="8.0" />
+        <direction   to="C02"      val="129.9041" stdev="8.0" />
+        <direction   to="I02"      val="129.7597" stdev="8.0" />
+        <direction   to="I03"      val="131.0339" stdev="8.0" />
+        <direction   to="C03"      val="131.1889" stdev="8.0" />
+        <direction   to="C04"      val="132.8355" stdev="8.0" />
+        <direction   to="I06"      val="135.3746" stdev="8.0" />
+        <direction   to="C06"      val="135.5644" stdev="8.0" />
+        <direction   to="C07"      val="137.7307" stdev="8.0" />
+        <direction   to="I07"      val="137.5205" stdev="8.0" />
+        <direction   to="I08"      val="140.1822" stdev="8.0" />
+        <direction   to="C08"      val="140.4166" stdev="8.0" />
+        <direction   to="C09"      val="142.1072" stdev="8.0" />
+        <direction   to="I09"      val="141.8597" stdev="8.0" />
+        <direction   to="I10"      val="144.4675" stdev="8.0" />
+        <direction   to="C10"      val="144.7391" stdev="8.0" />
+        <direction   to="C11"      val="147.3451" stdev="8.0" />
+        <direction   to="I11"      val="147.0468" stdev="8.0" />
+        <direction   to="I12"      val="150.2754" stdev="8.0" />
+        <direction   to="C12"      val="150.6083" stdev="8.0" />
+        <direction   to="C13"      val="151.5340" stdev="8.0" />
+        <direction   to="I13"      val="151.2476" stdev="8.0" />
+        <direction   to="I14"      val="151.2702" stdev="8.0" />
+        <direction   to="C14"      val="151.5514" stdev="8.0" />
+        <direction   to="I17"      val="159.6821" stdev="8.0" />
+        <direction   to="C17"      val="160.0899" stdev="8.0" />
+        <direction   to="C18"      val="160.1217" stdev="8.0" />
+        <direction   to="I18"      val="159.7154" stdev="8.0" />
+        <direction   to="I19"      val="161.8469" stdev="8.0" />
+        <direction   to="C19"      val="162.0986" stdev="8.0" />
+        <direction   to="C20"      val="162.1574" stdev="8.0" />
+        <direction   to="I20"      val="161.9075" stdev="8.0" />
+        <direction   to="I21"      val="164.8611" stdev="8.0" />
+        <direction   to="C21"      val="165.0736" stdev="8.0" />
+        <direction   to="C22"      val="167.6329" stdev="8.0" />
+        <direction   to="I22"      val="167.4486" stdev="8.0" />
+        <direction   to="I23"      val="169.2507" stdev="8.0" />
+        <direction   to="C23"      val="169.4127" stdev="8.0" />
+        <direction   to="C24"      val="170.9696" stdev="8.0" />
+        <direction   to="I24"      val="170.8238" stdev="8.0" />
+        <direction   to="I25"      val="172.6491" stdev="8.0" />
+        <direction   to="C25"      val="172.7771" stdev="8.0" />
+        <direction   to="C26"      val="174.1129" stdev="8.0" />
+        <direction   to="I26"      val="174.0016" stdev="8.0" />
+        <direction   to="I27"      val="175.7935" stdev="8.0" />
+        <direction   to="C27"      val="175.8860" stdev="8.0" />
+        <direction   to="C28"      val="175.7974" stdev="8.0" />
+        <direction   to="I28"      val="175.7007" stdev="8.0" />
+        <direction   to="I31"      val="157.4306" stdev="8.0" />
+        <direction   to="C31"      val="157.5888" stdev="8.0" />
+        <direction   to="C32"      val="151.9729" stdev="8.0" />
+        <direction   to="I32"      val="151.7710" stdev="8.0" />
+        <direction   to="I33"      val="149.4981" stdev="8.0" />
+        <direction   to="C33"      val="149.7335" stdev="8.0" />
+        <direction   to="C34"      val="146.2650" stdev="8.0" />
+        <direction   to="I34"      val="146.0608" stdev="8.0" />
+        <z-angle     to="S6"       val= "99.9684" stdev="12.0" />
+        <z-angle     to="S1"       val= "99.9455" stdev="12.0" />
+        <z-angle     to="S3"       val= "96.7835" stdev="12.0" />
+        <z-angle     to="S2"       val= "99.6649" stdev="12.0" />
+        <z-angle     to="S4"       val= "99.3080" stdev="12.0" />
+        <z-angle     to="I35"      val="100.0431" stdev="12.0" />
+        <z-angle     to="C35"      val="100.0455" stdev="12.0" />
+        <z-angle     to="I01"      val= "96.5670" stdev="12.0" />
+        <z-angle     to="C01"      val= "96.5610" stdev="12.0" />
+        <z-angle     to="C02"      val="105.7320" stdev="12.0" />
+        <z-angle     to="I02"      val="105.7053" stdev="12.0" />
+        <z-angle     to="I03"      val= "97.9129" stdev="12.0" />
+        <z-angle     to="C03"      val= "97.9044" stdev="12.0" />
+        <z-angle     to="C04"      val="104.3536" stdev="12.0" />
+        <z-angle     to="I06"      val="106.6109" stdev="12.0" />
+        <z-angle     to="C06"      val="106.6437" stdev="12.0" />
+        <z-angle     to="C07"      val="102.8418" stdev="12.0" />
+        <z-angle     to="I07"      val="102.8289" stdev="12.0" />
+        <z-angle     to="I08"      val="107.1451" stdev="12.0" />
+        <z-angle     to="C08"      val="107.1760" stdev="12.0" />
+        <z-angle     to="C09"      val= "96.3165" stdev="12.0" />
+        <z-angle     to="I09"      val= "96.3373" stdev="12.0" />
+        <z-angle     to="I10"      val= "99.7507" stdev="12.0" />
+        <z-angle     to="C10"      val= "99.7510" stdev="12.0" />
+        <z-angle     to="C11"      val="108.0365" stdev="12.0" />
+        <z-angle     to="I11"      val="107.9925" stdev="12.0" />
+        <z-angle     to="I12"      val= "94.6929" stdev="12.0" />
+        <z-angle     to="C12"      val= "94.6720" stdev="12.0" />
+        <z-angle     to="C13"      val= "98.4642" stdev="12.0" />
+        <z-angle     to="I13"      val= "98.4680" stdev="12.0" />
+        <z-angle     to="I14"      val="109.9142" stdev="12.0" />
+        <z-angle     to="C14"      val="109.8497" stdev="12.0" />
+        <z-angle     to="I17"      val= "95.9935" stdev="12.0" />
+        <z-angle     to="C17"      val= "95.9769" stdev="12.0" />
+        <z-angle     to="C18"      val="110.7969" stdev="12.0" />
+        <z-angle     to="I18"      val="110.7525" stdev="12.0" />
+        <z-angle     to="I19"      val= "96.3980" stdev="12.0" />
+        <z-angle     to="C19"      val= "96.4095" stdev="12.0" />
+        <z-angle     to="C20"      val="110.8681" stdev="12.0" />
+        <z-angle     to="I20"      val="110.9311" stdev="12.0" />
+        <z-angle     to="I21"      val="104.6547" stdev="12.0" />
+        <z-angle     to="C21"      val="104.6216" stdev="12.0" />
+        <z-angle     to="C22"      val= "94.7682" stdev="12.0" />
+        <z-angle     to="I22"      val= "94.7439" stdev="12.0" />
+        <z-angle     to="I23"      val="100.0849" stdev="12.0" />
+        <z-angle     to="C23"      val="100.0820" stdev="12.0" />
+        <z-angle     to="C24"      val="108.1990" stdev="12.0" />
+        <z-angle     to="I24"      val="108.2435" stdev="12.0" />
+        <z-angle     to="I25"      val= "95.5682" stdev="12.0" />
+        <z-angle     to="C25"      val= "95.5879" stdev="12.0" />
+        <z-angle     to="C26"      val="100.3236" stdev="12.0" />
+        <z-angle     to="I26"      val="100.3262" stdev="12.0" />
+        <z-angle     to="I27"      val="106.3354" stdev="12.0" />
+        <z-angle     to="C27"      val="106.3086" stdev="12.0" />
+        <z-angle     to="C28"      val= "95.9345" stdev="12.0" />
+        <z-angle     to="I28"      val= "95.9183" stdev="12.0" />
+        <z-angle     to="I31"      val= "88.3664" stdev="12.0" />
+        <z-angle     to="C31"      val= "88.4060" stdev="12.0" />
+        <z-angle     to="C32"      val= "85.0228" stdev="12.0" />
+        <z-angle     to="I32"      val= "84.9685" stdev="12.0" />
+        <z-angle     to="I33"      val= "87.8226" stdev="12.0" />
+        <z-angle     to="C33"      val= "87.7840" stdev="12.0" />
+        <z-angle     to="C34"      val= "85.8099" stdev="12.0" />
+        <z-angle     to="I34"      val= "85.8534" stdev="12.0" />
+        <s-distance  to="S6"       val="29.3125" stdev="1.0" />
+        <s-distance  to="S1"       val="7.0420" stdev="1.0" />
+        <s-distance  to="S3"       val="3.0126" stdev="1.0" />
+        <s-distance  to="S2"       val="2.3204" stdev="1.0" />
+        <s-distance  to="S4"       val="13.7771" stdev="1.0" />
+        <s-distance  to="I35"      val="11.2168" stdev="1.0" />
+        <s-distance  to="C35"      val="11.1753" stdev="1.0" />
+        <s-distance  to="I01"      val="10.2113" stdev="1.0" />
+        <s-distance  to="C01"      val="10.1729" stdev="1.0" />
+        <s-distance  to="C02"      val="10.1114" stdev="1.0" />
+        <s-distance  to="I02"      val="10.1506" stdev="1.0" />
+        <s-distance  to="I03"      val="9.7714" stdev="1.0" />
+        <s-distance  to="C03"      val="9.7316" stdev="1.0" />
+        <s-distance  to="C04"      val="9.3522" stdev="1.0" />
+        <s-distance  to="I06"      val="8.8410" stdev="1.0" />
+        <s-distance  to="C06"      val="8.8028" stdev="1.0" />
+        <s-distance  to="C07"      val="8.3574" stdev="1.0" />
+        <s-distance  to="I07"      val="8.3941" stdev="1.0" />
+        <s-distance  to="I08"      val="7.9975" stdev="1.0" />
+        <s-distance  to="C08"      val="7.9615" stdev="1.0" />
+        <s-distance  to="C09"      val="7.6736" stdev="1.0" />
+        <s-distance  to="I09"      val="7.7078" stdev="1.0" />
+        <s-distance  to="I10"      val="7.3501" stdev="1.0" />
+        <s-distance  to="C10"      val="7.3163" stdev="1.0" />
+        <s-distance  to="C11"      val="7.0782" stdev="1.0" />
+        <s-distance  to="I11"      val="7.1091" stdev="1.0" />
+        <s-distance  to="I12"      val="6.7391" stdev="1.0" />
+        <s-distance  to="C12"      val="6.7099" stdev="1.0" />
+        <s-distance  to="C13"      val="6.7259" stdev="1.0" />
+        <s-distance  to="I13"      val="6.6909" stdev="1.0" />
+        <s-distance  to="I14"      val="6.7751" stdev="1.0" />
+        <s-distance  to="C14"      val="6.8097" stdev="1.0" />
+        <s-distance  to="I17"      val="6.0084" stdev="1.0" />
+        <s-distance  to="C17"      val="5.9835" stdev="1.0" />
+        <s-distance  to="C18"      val="6.0615" stdev="1.0" />
+        <s-distance  to="I18"      val="6.0856" stdev="1.0" />
+        <s-distance  to="I19"      val="6.0404" stdev="1.0" />
+        <s-distance  to="C19"      val="6.0792" stdev="1.0" />
+        <s-distance  to="C20"      val="6.1704" stdev="1.0" />
+        <s-distance  to="I20"      val="6.1315" stdev="1.0" />
+        <s-distance  to="I21"      val="6.5633" stdev="1.0" />
+        <s-distance  to="C21"      val="6.6034" stdev="1.0" />
+        <s-distance  to="C22"      val="7.1475" stdev="1.0" />
+        <s-distance  to="I22"      val="7.1067" stdev="1.0" />
+        <s-distance  to="I23"      val="7.5191" stdev="1.0" />
+        <s-distance  to="C23"      val="7.5596" stdev="1.0" />
+        <s-distance  to="C24"      val="8.0596" stdev="1.0" />
+        <s-distance  to="I24"      val="8.0181" stdev="1.0" />
+        <s-distance  to="I25"      val="8.5494" stdev="1.0" />
+        <s-distance  to="C25"      val="8.5916" stdev="1.0" />
+        <s-distance  to="C26"      val="9.0592" stdev="1.0" />
+        <s-distance  to="I26"      val="9.0153" stdev="1.0" />
+        <s-distance  to="I27"      val="9.8041" stdev="1.0" />
+        <s-distance  to="C27"      val="9.8484" stdev="1.0" />
+        <s-distance  to="C28"      val="9.7914" stdev="1.0" />
+        <s-distance  to="I28"      val="9.7478" stdev="1.0" />
+        <s-distance  to="I31"      val="10.5953" stdev="1.0" />
+        <s-distance  to="C31"      val="10.6327" stdev="1.0" />
+        <s-distance  to="C32"      val="9.7397" stdev="1.0" />
+        <s-distance  to="I32"      val="9.7056" stdev="1.0" />
+        <s-distance  to="I33"      val="9.4261" stdev="1.0" />
+        <s-distance  to="C33"      val="9.3955" stdev="1.0" />
+        <s-distance  to="C34"      val="10.1226" stdev="1.0" />
+        <s-distance  to="I34"      val="10.1547" stdev="1.0" />
+      </obs>
+
+      <obs from="L4">
+        <direction   to="S6"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S1"       val= "29.4587" stdev="8.0" />
+        <direction   to="S3"       val=  "1.9802" stdev="8.0" />
+        <direction   to="S2"       val= "14.0213" stdev="8.0" />
+        <direction   to="S4"       val="195.2879" stdev="8.0" />
+        <direction   to="I19"      val= "61.2835" stdev="8.0" />
+        <direction   to="I20"      val= "61.4425" stdev="8.0" />
+        <direction   to="I21"      val= "69.1951" stdev="8.0" />
+        <direction   to="I22"      val= "78.2688" stdev="8.0" />
+        <direction   to="I23"      val= "86.1070" stdev="8.0" />
+        <direction   to="I24"      val= "94.0954" stdev="8.0" />
+        <direction   to="I25"      val="104.7033" stdev="8.0" />
+        <direction   to="I26"      val="113.2336" stdev="8.0" />
+        <direction   to="I27"      val="124.9767" stdev="8.0" />
+        <direction   to="I28"      val="124.5110" stdev="8.0" />
+        <direction   to="I29"      val="129.8619" stdev="8.0" />
+        <direction   to="I30"      val="129.6923" stdev="8.0" />
+        <direction   to="I31"      val="106.5109" stdev="8.0" />
+        <direction   to="I32"      val= "93.9529" stdev="8.0" />
+        <direction   to="C19"      val= "61.8562" stdev="8.0" />
+        <direction   to="C20"      val= "62.0171" stdev="8.0" />
+        <direction   to="C21"      val= "69.8482" stdev="8.0" />
+        <direction   to="C22"      val= "78.9937" stdev="8.0" />
+        <direction   to="C23"      val= "86.8719" stdev="8.0" />
+        <direction   to="C24"      val= "94.8784" stdev="8.0" />
+        <direction   to="C25"      val="105.4739" stdev="8.0" />
+        <direction   to="C26"      val="113.9607" stdev="8.0" />
+        <direction   to="C27"      val="125.6041" stdev="8.0" />
+        <direction   to="C28"      val="125.1476" stdev="8.0" />
+        <direction   to="C29"      val="130.2623" stdev="8.0" />
+        <direction   to="C30"      val="130.0944" stdev="8.0" />
+        <direction   to="C31"      val="106.9407" stdev="8.0" />
+        <direction   to="C32"      val= "94.3890" stdev="8.0" />
+        <z-angle     to="S6"       val="100.2529" stdev="12.0" />
+        <z-angle     to="S1"       val="100.7505" stdev="12.0" />
+        <z-angle     to="S3"       val="100.1020" stdev="12.0" />
+        <z-angle     to="S2"       val="101.0296" stdev="12.0" />
+        <z-angle     to="S4"       val="100.0987" stdev="12.0" />
+        <z-angle     to="I19"      val= "97.3480" stdev="12.0" />
+        <z-angle     to="I20"      val="117.1843" stdev="12.0" />
+        <z-angle     to="I21"      val="109.8671" stdev="12.0" />
+        <z-angle     to="I22"      val= "93.0277" stdev="12.0" />
+        <z-angle     to="I23"      val="102.8562" stdev="12.0" />
+        <z-angle     to="I24"      val="119.7394" stdev="12.0" />
+        <z-angle     to="I25"      val= "92.6669" stdev="12.0" />
+        <z-angle     to="I26"      val="103.3846" stdev="12.0" />
+        <z-angle     to="I27"      val="117.0092" stdev="12.0" />
+        <z-angle     to="I28"      val= "92.8636" stdev="12.0" />
+        <z-angle     to="I29"      val= "92.1097" stdev="12.0" />
+        <z-angle     to="I30"      val="110.7746" stdev="12.0" />
+        <z-angle     to="I31"      val= "83.5807" stdev="12.0" />
+        <z-angle     to="I32"      val= "80.5923" stdev="12.0" />
+        <z-angle     to="C19"      val= "97.3160" stdev="12.0" />
+        <z-angle     to="C20"      val="117.2807" stdev="12.0" />
+        <z-angle     to="C21"      val="109.9027" stdev="12.0" />
+        <z-angle     to="C22"      val= "92.9927" stdev="12.0" />
+        <z-angle     to="C23"      val="102.8561" stdev="12.0" />
+        <z-angle     to="C24"      val="119.7412" stdev="12.0" />
+        <z-angle     to="C25"      val= "92.6727" stdev="12.0" />
+        <z-angle     to="C26"      val="103.3690" stdev="12.0" />
+        <z-angle     to="C27"      val="116.9286" stdev="12.0" />
+        <z-angle     to="C28"      val= "92.8913" stdev="12.0" />
+        <z-angle     to="C29"      val= "92.1426" stdev="12.0" />
+        <z-angle     to="C30"      val="110.7305" stdev="12.0" />
+        <z-angle     to="C31"      val= "83.5975" stdev="12.0" />
+        <z-angle     to="C32"      val= "80.5872" stdev="12.0" />
+        <s-distance  to="S6"       val="36.7691" stdev="1.0" />
+        <s-distance  to="S1"       val="13.0223" stdev="1.0" />
+        <s-distance  to="S3"       val="4.4497" stdev="1.0" />
+        <s-distance  to="S2"       val="9.1030" stdev="1.0" />
+        <s-distance  to="S4"       val="6.3333" stdev="1.0" />
+        <s-distance  to="I19"      val="4.3731" stdev="1.0" />
+        <s-distance  to="I20"      val="4.5281" stdev="1.0" />
+        <s-distance  to="I21"      val="4.1389" stdev="1.0" />
+        <s-distance  to="I22"      val="3.9042" stdev="1.0" />
+        <s-distance  to="I23"      val="3.7794" stdev="1.0" />
+        <s-distance  to="I24"      val="3.9165" stdev="1.0" />
+        <s-distance  to="I25"      val="3.7877" stdev="1.0" />
+        <s-distance  to="I26"      val="3.8711" stdev="1.0" />
+        <s-distance  to="I27"      val="4.2941" stdev="1.0" />
+        <s-distance  to="I28"      val="4.1584" stdev="1.0" />
+        <s-distance  to="I29"      val="6.4232" stdev="1.0" />
+        <s-distance  to="I30"      val="6.4527" stdev="1.0" />
+        <s-distance  to="I31"      val="6.9251" stdev="1.0" />
+        <s-distance  to="I32"      val="7.0343" stdev="1.0" />
+        <s-distance  to="C19"      val="4.3495" stdev="1.0" />
+        <s-distance  to="C20"      val="4.5052" stdev="1.0" />
+        <s-distance  to="C21"      val="4.1197" stdev="1.0" />
+        <s-distance  to="C22"      val="3.8919" stdev="1.0" />
+        <s-distance  to="C23"      val="3.7722" stdev="1.0" />
+        <s-distance  to="C24"      val="3.9148" stdev="1.0" />
+        <s-distance  to="C25"      val="3.7931" stdev="1.0" />
+        <s-distance  to="C26"      val="3.8838" stdev="1.0" />
+        <s-distance  to="C27"      val="4.3153" stdev="1.0" />
+        <s-distance  to="C28"      val="4.1788" stdev="1.0" />
+        <s-distance  to="C29"      val="6.4443" stdev="1.0" />
+        <s-distance  to="C30"      val="6.4751" stdev="1.0" />
+        <s-distance  to="C31"      val="6.9313" stdev="1.0" />
+        <s-distance  to="C32"      val="7.0308" stdev="1.0" />
+      </obs>
+
+      <obs from="S2">
+        <direction   to="S6"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S1"       val= "64.6315" stdev="8.0" />
+        <direction   to="S3"       val="229.6897" stdev="8.0" />
+        <direction   to="S4"       val="210.8746" stdev="8.0" />
+        <direction   to="CHVC"     val="208.7066" stdev="8.0" />
+        <direction   to="IGNF1"    val="101.5857" stdev="8.0" />
+        <direction   to="IGNF2"    val="101.7990" stdev="8.0" />
+        <direction   to="I35"      val="143.0604" stdev="8.0" />
+        <direction   to="C35"      val="143.2375" stdev="8.0" />
+        <direction   to="I01"      val="147.8545" stdev="8.0" />
+        <direction   to="C01"      val="148.0581" stdev="8.0" />
+        <direction   to="C02"      val="148.5393" stdev="8.0" />
+        <direction   to="I02"      val="148.3262" stdev="8.0" />
+        <direction   to="I03"      val="150.2101" stdev="8.0" />
+        <direction   to="C03"      val="150.4364" stdev="8.0" />
+        <direction   to="I05"      val="154.6020" stdev="8.0" />
+        <direction   to="C05"      val="154.8603" stdev="8.0" />
+        <direction   to="C06"      val="156.7615" stdev="8.0" />
+        <direction   to="I06"      val="156.4904" stdev="8.0" />
+        <direction   to="I07"      val="159.5384" stdev="8.0" />
+        <direction   to="C07"      val="159.8325" stdev="8.0" />
+        <direction   to="C08"      val="163.5540" stdev="8.0" />
+        <direction   to="I08"      val="163.2350" stdev="8.0" />
+        <direction   to="I09"      val="165.5245" stdev="8.0" />
+        <direction   to="C09"      val="165.8580" stdev="8.0" />
+        <direction   to="C10"      val="169.3490" stdev="8.0" />
+        <direction   to="I10"      val="168.9935" stdev="8.0" />
+        <direction   to="I11"      val="172.3092" stdev="8.0" />
+        <direction   to="C11"      val="172.6859" stdev="8.0" />
+        <direction   to="C12"      val="176.7628" stdev="8.0" />
+        <direction   to="I12"      val="176.3617" stdev="8.0" />
+        <direction   to="I13"      val="177.3483" stdev="8.0" />
+        <direction   to="C13"      val="177.5025" stdev="8.0" />
+        <direction   to="C14"      val="177.5069" stdev="8.0" />
+        <direction   to="I14"      val="177.3568" stdev="8.0" />
+        <direction   to="I31"      val="175.6057" stdev="8.0" />
+        <direction   to="C31"      val="175.7079" stdev="8.0" />
+        <direction   to="C32"      val="171.7457" stdev="8.0" />
+        <direction   to="I32"      val="171.6075" stdev="8.0" />
+        <direction   to="I33"      val="169.7121" stdev="8.0" />
+        <direction   to="C33"      val="169.9943" stdev="8.0" />
+        <direction   to="C34"      val="165.5393" stdev="8.0" />
+        <direction   to="I34"      val="165.2867" stdev="8.0" />
+        <z-angle     to="S6"       val= "99.9937" stdev="12.0" />
+        <z-angle     to="S1"       val="100.0880" stdev="12.0" />
+        <z-angle     to="S3"       val= "98.1463" stdev="12.0" />
+        <z-angle     to="S4"       val= "99.4280" stdev="12.0" />
+        <z-angle     to="CHVC"     val= "98.9771" stdev="12.0" />
+        <z-angle     to="IGNF1"    val= "93.7053" stdev="12.0" />
+        <z-angle     to="IGNF2"    val= "93.7061" stdev="12.0" />
+        <z-angle     to="I35"      val="100.1230" stdev="12.0" />
+        <z-angle     to="C35"      val="100.1246" stdev="12.0" />
+        <z-angle     to="I01"      val= "96.3654" stdev="12.0" />
+        <z-angle     to="C01"      val= "96.3588" stdev="12.0" />
+        <z-angle     to="C02"      val="106.2790" stdev="12.0" />
+        <z-angle     to="I02"      val="106.2522" stdev="12.0" />
+        <z-angle     to="I03"      val= "97.8344" stdev="12.0" />
+        <z-angle     to="C03"      val= "97.8266" stdev="12.0" />
+        <z-angle     to="I05"      val= "96.5811" stdev="12.0" />
+        <z-angle     to="C05"      val= "96.5741" stdev="12.0" />
+        <z-angle     to="C06"      val="107.1472" stdev="12.0" />
+        <z-angle     to="I06"      val="107.1174" stdev="12.0" />
+        <z-angle     to="I07"      val="103.0772" stdev="12.0" />
+        <z-angle     to="C07"      val="103.0902" stdev="12.0" />
+        <z-angle     to="C08"      val="107.5628" stdev="12.0" />
+        <z-angle     to="I08"      val="107.5401" stdev="12.0" />
+        <z-angle     to="I09"      val= "96.3222" stdev="12.0" />
+        <z-angle     to="C09"      val= "96.3058" stdev="12.0" />
+        <z-angle     to="C10"      val= "99.8540" stdev="12.0" />
+        <z-angle     to="I10"      val= "99.8538" stdev="12.0" />
+        <z-angle     to="I11"      val="108.1285" stdev="12.0" />
+        <z-angle     to="C11"      val="108.1579" stdev="12.0" />
+        <z-angle     to="C12"      val= "94.8831" stdev="12.0" />
+        <z-angle     to="I12"      val= "94.8930" stdev="12.0" />
+        <z-angle     to="I13"      val= "98.6165" stdev="12.0" />
+        <z-angle     to="C13"      val= "98.6141" stdev="12.0" />
+        <z-angle     to="C14"      val="109.7414" stdev="12.0" />
+        <z-angle     to="I14"      val="109.8140" stdev="12.0" />
+        <z-angle     to="I31"      val= "88.6805" stdev="12.0" />
+        <z-angle     to="C31"      val= "88.7235" stdev="12.0" />
+        <z-angle     to="C32"      val= "85.1872" stdev="12.0" />
+        <z-angle     to="I32"      val= "85.1252" stdev="12.0" />
+        <z-angle     to="I33"      val= "87.8723" stdev="12.0" />
+        <z-angle     to="C33"      val= "87.8448" stdev="12.0" />
+        <z-angle     to="C34"      val= "85.6582" stdev="12.0" />
+        <z-angle     to="I34"      val= "85.6920" stdev="12.0" />
+        <s-distance  to="S6"       val="27.9568" stdev="1.0" />
+        <s-distance  to="S1"       val="4.7221" stdev="1.0" />
+        <s-distance  to="S3"       val="4.8073" stdev="1.0" />
+        <s-distance  to="S4"       val="15.2750" stdev="1.0" />
+        <s-distance  to="I35"      val="10.3003" stdev="1.0" />
+        <s-distance  to="C35"      val="10.2651" stdev="1.0" />
+        <s-distance  to="I01"      val="9.4316" stdev="1.0" />
+        <s-distance  to="C01"      val="9.3990" stdev="1.0" />
+        <s-distance  to="C02"      val="9.3554" stdev="1.0" />
+        <s-distance  to="I02"      val="9.3894" stdev="1.0" />
+        <s-distance  to="I03"      val="9.0601" stdev="1.0" />
+        <s-distance  to="C03"      val="9.0280" stdev="1.0" />
+        <s-distance  to="I05"      val="8.4919" stdev="1.0" />
+        <s-distance  to="C05"      val="8.4590" stdev="1.0" />
+        <s-distance  to="C06"      val="8.2916" stdev="1.0" />
+        <s-distance  to="I06"      val="8.3205" stdev="1.0" />
+        <s-distance  to="I07"      val="7.9643" stdev="1.0" />
+        <s-distance  to="C07"      val="7.9375" stdev="1.0" />
+        <s-distance  to="C08"      val="7.6595" stdev="1.0" />
+        <s-distance  to="I08"      val="7.6840" stdev="1.0" />
+        <s-distance  to="I09"      val="7.4639" stdev="1.0" />
+        <s-distance  to="C09"      val="7.4408" stdev="1.0" />
+        <s-distance  to="C10"      val="7.1949" stdev="1.0" />
+        <s-distance  to="I10"      val="7.2173" stdev="1.0" />
+        <s-distance  to="I11"      val="7.0870" stdev="1.0" />
+        <s-distance  to="C11"      val="7.0689" stdev="1.0" />
+        <s-distance  to="C12"      val="6.8336" stdev="1.0" />
+        <s-distance  to="I12"      val="6.8507" stdev="1.0" />
+        <s-distance  to="I13"      val="6.8430" stdev="1.0" />
+        <s-distance  to="C13"      val="6.8846" stdev="1.0" />
+        <s-distance  to="C14"      val="6.9690" stdev="1.0" />
+        <s-distance  to="I14"      val="6.9265" stdev="1.0" />
+        <s-distance  to="I31"      val="10.8168" stdev="1.0" />
+        <s-distance  to="C31"      val="10.8592" stdev="1.0" />
+        <s-distance  to="C32"      val="9.7914" stdev="1.0" />
+        <s-distance  to="I32"      val="9.7515" stdev="1.0" />
+        <s-distance  to="I33"      val="9.3979" stdev="1.0" />
+        <s-distance  to="C33"      val="9.3776" stdev="1.0" />
+        <s-distance  to="C34"      val="9.9627" stdev="1.0" />
+        <s-distance  to="I34"      val="9.9865" stdev="1.0" />
+      </obs>
+
+      <obs from="S3">
+        <direction   to="S6"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S1"       val= "42.7482" stdev="8.0" />
+        <direction   to="S2"       val= "25.4359" stdev="8.0" />
+        <direction   to="S4"       val="198.3202" stdev="8.0" />
+        <direction   to="CHVC"     val="204.3227" stdev="8.0" />
+        <direction   to="MRVC"     val="170.0300" stdev="8.0" />
+        <direction   to="VITRY1"   val="293.2514" stdev="8.0" />
+        <direction   to="VITRY2"   val="293.3211" stdev="8.0" />
+        <direction   to="IGNF1"    val= "94.6746" stdev="8.0" />
+        <direction   to="IGNF2"    val= "94.8844" stdev="8.0" />
+        <direction   to="I07"      val="114.6783" stdev="8.0" />
+        <direction   to="I08"      val="116.1557" stdev="8.0" />
+        <direction   to="I09"      val="117.1080" stdev="8.0" />
+        <direction   to="I10"      val="118.6761" stdev="8.0" />
+        <direction   to="I12"      val="122.4737" stdev="8.0" />
+        <direction   to="I13"      val="123.4923" stdev="8.0" />
+        <direction   to="I17"      val="129.9176" stdev="8.0" />
+        <direction   to="I19"      val="133.0736" stdev="8.0" />
+        <direction   to="I21"      val="140.4732" stdev="8.0" />
+        <direction   to="I22"      val="146.7548" stdev="8.0" />
+        <direction   to="I23"      val="151.0187" stdev="8.0" />
+        <direction   to="I25"      val="158.7157" stdev="8.0" />
+        <direction   to="I26"      val="161.6231" stdev="8.0" />
+        <direction   to="I27"      val="165.3301" stdev="8.0" />
+        <direction   to="I28"      val="165.1603" stdev="8.0" />
+        <direction   to="I31"      val="142.7092" stdev="8.0" />
+        <direction   to="I32"      val="133.8665" stdev="8.0" />
+        <direction   to="I33"      val="130.7231" stdev="8.0" />
+        <direction   to="I34"      val="128.2011" stdev="8.0" />
+        <direction   to="C07"      val="114.7912" stdev="8.0" />
+        <direction   to="C08"      val="116.2913" stdev="8.0" />
+        <direction   to="C09"      val="117.2528" stdev="8.0" />
+        <direction   to="C10"      val="118.8423" stdev="8.0" />
+        <direction   to="C13"      val="124.0226" stdev="8.0" />
+        <direction   to="C17"      val="130.2786" stdev="8.0" />
+        <direction   to="C19"      val="133.6896" stdev="8.0" />
+        <direction   to="C22"      val="147.1911" stdev="8.0" />
+        <direction   to="C23"      val="151.3950" stdev="8.0" />
+        <direction   to="C26"      val="161.8581" stdev="8.0" />
+        <direction   to="C27"      val="165.5165" stdev="8.0" />
+        <direction   to="C28"      val="165.3550" stdev="8.0" />
+        <direction   to="C31"      val="142.9694" stdev="8.0" />
+        <direction   to="C32"      val="134.1875" stdev="8.0" />
+        <direction   to="C33"      val="130.9256" stdev="8.0" />
+        <direction   to="C34"      val="128.3668" stdev="8.0" />
+        <z-angle     to="S6"       val="100.2716" stdev="12.0" />
+        <z-angle     to="S1"       val="101.0131" stdev="12.0" />
+        <z-angle     to="S2"       val="101.8432" stdev="12.0" />
+        <z-angle     to="S4"       val="100.0129" stdev="12.0" />
+        <z-angle     to="CHVC"     val= "98.9828" stdev="12.0" />
+        <z-angle     to="MRVC"     val= "98.6876" stdev="12.0" />
+        <z-angle     to="VITRY1"   val= "98.6646" stdev="12.0" />
+        <z-angle     to="VITRY2"   val= "98.6653" stdev="12.0" />
+        <z-angle     to="IGNF1"    val= "93.9237" stdev="12.0" />
+        <z-angle     to="IGNF2"    val= "93.9237" stdev="12.0" />
+        <z-angle     to="I07"      val="104.6340" stdev="12.0" />
+        <z-angle     to="I08"      val="109.9236" stdev="12.0" />
+        <z-angle     to="I09"      val= "97.0850" stdev="12.0" />
+        <z-angle     to="I10"      val="101.3233" stdev="12.0" />
+        <z-angle     to="I12"      val= "94.8808" stdev="12.0" />
+        <z-angle     to="I13"      val= "99.8859" stdev="12.0" />
+        <z-angle     to="I17"      val= "96.4256" stdev="12.0" />
+        <z-angle     to="I19"      val= "96.9545" stdev="12.0" />
+        <z-angle     to="I21"      val="109.2529" stdev="12.0" />
+        <z-angle     to="I22"      val= "94.1623" stdev="12.0" />
+        <z-angle     to="I23"      val="102.0287" stdev="12.0" />
+        <z-angle     to="I25"      val= "95.2701" stdev="12.0" />
+        <z-angle     to="I26"      val="101.9736" stdev="12.0" />
+        <z-angle     to="I27"      val="110.0566" stdev="12.0" />
+        <z-angle     to="I28"      val= "95.7346" stdev="12.0" />
+        <z-angle     to="I31"      val= "86.5969" stdev="12.0" />
+        <z-angle     to="I32"      val= "82.6291" stdev="12.0" />
+        <z-angle     to="I33"      val= "86.2762" stdev="12.0" />
+        <z-angle     to="I34"      val= "84.2521" stdev="12.0" />
+        <z-angle     to="C07"      val="104.6587" stdev="12.0" />
+        <z-angle     to="C08"      val="109.9872" stdev="12.0" />
+        <z-angle     to="C09"      val= "97.0584" stdev="12.0" />
+        <z-angle     to="C10"      val="101.3364" stdev="12.0" />
+        <z-angle     to="C13"      val= "99.8708" stdev="12.0" />
+        <z-angle     to="C17"      val= "96.3891" stdev="12.0" />
+        <z-angle     to="C19"      val= "96.9558" stdev="12.0" />
+        <z-angle     to="C22"      val= "94.1918" stdev="12.0" />
+        <z-angle     to="C23"      val="102.0120" stdev="12.0" />
+        <z-angle     to="C26"      val="101.9588" stdev="12.0" />
+        <z-angle     to="C27"      val="109.9993" stdev="12.0" />
+        <z-angle     to="C28"      val= "95.7556" stdev="12.0" />
+        <z-angle     to="C31"      val= "86.6419" stdev="12.0" />
+        <z-angle     to="C32"      val= "82.6843" stdev="12.0" />
+        <z-angle     to="C33"      val= "86.2049" stdev="12.0" />
+        <z-angle     to="C34"      val= "84.1793" stdev="12.0" />
+        <s-distance  to="S6"       val="32.3215" stdev="1.0" />
+        <s-distance  to="S1"       val="9.1720" stdev="1.0" />
+        <s-distance  to="S2"       val="4.8075" stdev="1.0" />
+        <s-distance  to="S4"       val="10.7688" stdev="1.0" />
+        <s-distance  to="I07"      val="7.2175" stdev="1.0" />
+        <s-distance  to="I08"      val="6.7475" stdev="1.0" />
+        <s-distance  to="I09"      val="6.3629" stdev="1.0" />
+        <s-distance  to="I10"      val="5.9179" stdev="1.0" />
+        <s-distance  to="I12"      val="5.0963" stdev="1.0" />
+        <s-distance  to="I13"      val="5.0118" stdev="1.0" />
+        <s-distance  to="I17"      val="4.0293" stdev="1.0" />
+        <s-distance  to="I19"      val="3.9667" stdev="1.0" />
+        <s-distance  to="I21"      val="4.3592" stdev="1.0" />
+        <s-distance  to="I22"      val="4.7427" stdev="1.0" />
+        <s-distance  to="I23"      val="5.0789" stdev="1.0" />
+        <s-distance  to="I25"      val="5.9657" stdev="1.0" />
+        <s-distance  to="I26"      val="6.3899" stdev="1.0" />
+        <s-distance  to="I27"      val="7.1597" stdev="1.0" />
+        <s-distance  to="I28"      val="7.0605" stdev="1.0" />
+        <s-distance  to="I31"      val="8.4869" stdev="1.0" />
+        <s-distance  to="I32"      val="7.8610" stdev="1.0" />
+        <s-distance  to="I33"      val="7.6663" stdev="1.0" />
+        <s-distance  to="I34"      val="8.5185" stdev="1.0" />
+        <s-distance  to="C07"      val="7.1737" stdev="1.0" />
+        <s-distance  to="C08"      val="6.7040" stdev="1.0" />
+        <s-distance  to="C09"      val="6.3193" stdev="1.0" />
+        <s-distance  to="C10"      val="5.8754" stdev="1.0" />
+        <s-distance  to="C13"      val="5.0296" stdev="1.0" />
+        <s-distance  to="C17"      val="3.9904" stdev="1.0" />
+        <s-distance  to="C19"      val="3.9918" stdev="1.0" />
+        <s-distance  to="C22"      val="4.7747" stdev="1.0" />
+        <s-distance  to="C23"      val="5.1138" stdev="1.0" />
+        <s-distance  to="C26"      val="6.4296" stdev="1.0" />
+        <s-distance  to="C27"      val="7.1991" stdev="1.0" />
+        <s-distance  to="C28"      val="7.1010" stdev="1.0" />
+        <s-distance  to="C31"      val="8.5165" stdev="1.0" />
+        <s-distance  to="C32"      val="7.8850" stdev="1.0" />
+        <s-distance  to="C33"      val="7.6292" stdev="1.0" />
+        <s-distance  to="C34"      val="8.4798" stdev="1.0" />
+      </obs>
+
+      <obs from="S5">
+        <direction   to="S4"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S2"       val="395.4497" stdev="8.0" />
+        <direction   to="S1"       val="378.9669" stdev="8.0" />
+        <direction   to="CHVC"     val=  "2.8986" stdev="8.0" />
+        <direction   to="IGNF1"    val="306.7535" stdev="8.0" />
+        <direction   to="IGNF2"    val="306.9648" stdev="8.0" />
+        <direction   to="VITRY1"   val= "91.6239" stdev="8.0" />
+        <direction   to="VITRY2"   val= "91.7057" stdev="8.0" />
+        <direction   to="GLOB"     val="271.3205" stdev="8.0" />
+        <direction   to="EGLV"     val="234.9575" stdev="8.0" />
+        <direction   to="TUBE"     val="394.9558" stdev="8.0" />
+        <direction   to="S6"       val="192.5128" stdev="8.0" />
+        <z-angle     to="S4"       val= "99.5992" stdev="12.0" />
+        <z-angle     to="S2"       val= "99.7533" stdev="12.0" />
+        <z-angle     to="S1"       val= "99.7471" stdev="12.0" />
+        <z-angle     to="CHVC"     val= "98.9938" stdev="12.0" />
+        <z-angle     to="IGNF1"    val= "93.7646" stdev="12.0" />
+        <z-angle     to="IGNF2"    val= "93.7653" stdev="12.0" />
+        <z-angle     to="VITRY1"   val= "98.6706" stdev="12.0" />
+        <z-angle     to="VITRY2"   val= "98.6682" stdev="12.0" />
+        <z-angle     to="GLOB"     val= "98.0666" stdev="12.0" />
+        <z-angle     to="EGLV"     val= "95.9117" stdev="12.0" />
+        <z-angle     to="TUBE"     val= "98.4276" stdev="12.0" />
+        <z-angle     to="S6"       val= "99.5741" stdev="12.0" />
+        <s-distance  to="S4"       val="32.7210" stdev="1.0" />
+        <s-distance  to="S2"       val="17.5422" stdev="1.0" />
+        <s-distance  to="S1"       val="15.4997" stdev="1.0" />
+        <s-distance  to="CHVC"     val="22.0076" stdev="1.0" />
+        <s-distance  to="S6"       val="10.4216" stdev="1.0" />
+      </obs>
+
+      <obs from="S1">
+        <direction   to="S6"       val=  "0.0000" stdev="8.0" />
+        <direction   to="S4"       val="232.8875" stdev="8.0" />
+        <direction   to="S3"       val="256.9560" stdev="8.0" />
+        <direction   to="S2"       val="274.5856" stdev="8.0" />
+        <direction   to="S5"       val="394.5521" stdev="8.0" />
+        <direction   to="U"        val="130.7081" stdev="8.0" />
+        <direction   to="I35"      val="183.0406" stdev="8.0" />
+        <direction   to="C35"      val="183.3141" stdev="8.0" />
+        <direction   to="I01"      val="190.1523" stdev="8.0" />
+        <direction   to="C01"      val="190.4435" stdev="8.0" />
+        <direction   to="C02"      val="191.1087" stdev="8.0" />
+        <direction   to="I02"      val="190.8084" stdev="8.0" />
+        <direction   to="I03"      val="193.4126" stdev="8.0" />
+        <direction   to="C03"      val="193.7191" stdev="8.0" />
+        <direction   to="C04"      val="196.8673" stdev="8.0" />
+        <direction   to="I04"      val="196.5521" stdev="8.0" />
+        <direction   to="I05"      val="199.0849" stdev="8.0" />
+        <direction   to="C05"      val="199.4040" stdev="8.0" />
+        <direction   to="C06"      val="201.6806" stdev="8.0" />
+        <direction   to="I06"      val="201.3572" stdev="8.0" />
+        <direction   to="I07"      val="204.8781" stdev="8.0" />
+        <direction   to="C07"      val="205.2057" stdev="8.0" />
+        <direction   to="C08"      val="209.1783" stdev="8.0" />
+        <direction   to="I08"      val="208.8482" stdev="8.0" />
+        <direction   to="I09"      val="211.1782" stdev="8.0" />
+        <direction   to="C09"      val="211.5096" stdev="8.0" />
+        <direction   to="C10"      val="214.8241" stdev="8.0" />
+        <direction   to="I10"      val="214.4950" stdev="8.0" />
+        <direction   to="I11"      val="217.4551" stdev="8.0" />
+        <direction   to="C11"      val="217.7808" stdev="8.0" />
+        <direction   to="C12"      val="221.1988" stdev="8.0" />
+        <direction   to="I12"      val="220.8780" stdev="8.0" />
+        <direction   to="I15"      val="227.9372" stdev="8.0" />
+        <direction   to="C15"      val="228.0214" stdev="8.0" />
+        <direction   to="C16"      val="227.9958" stdev="8.0" />
+        <direction   to="I16"      val="227.9124" stdev="8.0" />
+        <direction   to="I17"      val="228.9255" stdev="8.0" />
+        <direction   to="C17"      val="229.2311" stdev="8.0" />
+        <direction   to="C18"      val="229.2309" stdev="8.0" />
+        <direction   to="I18"      val="228.9259" stdev="8.0" />
+        <direction   to="I33"      val="208.6740" stdev="8.0" />
+        <direction   to="C33"      val="208.9485" stdev="8.0" />
+        <direction   to="C34"      val="204.1328" stdev="8.0" />
+        <direction   to="I34"      val="203.8649" stdev="8.0" />
+        <z-angle     to="S6"       val= "99.9784" stdev="12.0" />
+        <z-angle     to="S4"       val= "99.5129" stdev="12.0" />
+        <z-angle     to="S3"       val= "98.9844" stdev="12.0" />
+        <z-angle     to="S2"       val= "99.9155" stdev="12.0" />
+        <z-angle     to="S5"       val="100.2494" stdev="12.0" />
+        <z-angle     to="U"        val="113.1348" stdev="12.0" />
+        <z-angle     to="I35"      val="100.0883" stdev="12.0" />
+        <z-angle     to="C35"      val="100.0897" stdev="12.0" />
+        <z-angle     to="I01"      val= "96.3053" stdev="12.0" />
+        <z-angle     to="C01"      val= "96.3055" stdev="12.0" />
+        <z-angle     to="C02"      val="106.2241" stdev="12.0" />
+        <z-angle     to="I02"      val="106.2101" stdev="12.0" />
+        <z-angle     to="I03"      val= "97.8300" stdev="12.0" />
+        <z-angle     to="C03"      val= "97.8271" stdev="12.0" />
+        <z-angle     to="C04"      val="104.5035" stdev="12.0" />
+        <z-angle     to="I04"      val="104.4963" stdev="12.0" />
+        <z-angle     to="I05"      val= "96.7462" stdev="12.0" />
+        <z-angle     to="C05"      val= "96.7503" stdev="12.0" />
+        <z-angle     to="C06"      val="106.5209" stdev="12.0" />
+        <z-angle     to="I06"      val="106.5105" stdev="12.0" />
+        <z-angle     to="I07"      val="102.6994" stdev="12.0" />
+        <z-angle     to="C07"      val="102.7021" stdev="12.0" />
+        <z-angle     to="C08"      val="106.4365" stdev="12.0" />
+        <z-angle     to="I08"      val="106.4370" stdev="12.0" />
+        <z-angle     to="I09"      val= "96.8664" stdev="12.0" />
+        <z-angle     to="C09"      val= "96.8625" stdev="12.0" />
+        <z-angle     to="C10"      val= "99.8369" stdev="12.0" />
+        <z-angle     to="I10"      val= "99.8360" stdev="12.0" />
+        <z-angle     to="I11"      val="106.3670" stdev="12.0" />
+        <z-angle     to="C11"      val="106.3700" stdev="12.0" />
+        <z-angle     to="C12"      val= "96.0759" stdev="12.0" />
+        <z-angle     to="I12"      val= "96.0694" stdev="12.0" />
+        <z-angle     to="I15"      val= "98.9231" stdev="12.0" />
+        <z-angle     to="C15"      val= "98.9134" stdev="12.0" />
+        <z-angle     to="C16"      val="107.8530" stdev="12.0" />
+        <z-angle     to="I16"      val="107.8205" stdev="12.0" />
+        <z-angle     to="I17"      val= "97.4399" stdev="12.0" />
+        <z-angle     to="C17"      val= "97.4436" stdev="12.0" />
+        <z-angle     to="C18"      val="107.0415" stdev="12.0" />
+        <z-angle     to="I18"      val="107.0494" stdev="12.0" />
+        <z-angle     to="I33"      val= "89.4678" stdev="12.0" />
+        <z-angle     to="C33"      val= "89.4663" stdev="12.0" />
+        <z-angle     to="C34"      val= "87.0960" stdev="12.0" />
+        <z-angle     to="I34"      val= "87.0986" stdev="12.0" />
+        <s-distance  to="S6"       val="25.7800" stdev="1.0" />
+        <s-distance  to="S4"       val="18.7477" stdev="1.0" />
+        <s-distance  to="S3"       val="9.1731" stdev="1.0" />
+        <s-distance  to="S2"       val="4.7234" stdev="1.0" />
+        <s-distance  to="S5"       val="15.4990" stdev="1.0" />
+        <s-distance  to="I35"      val="9.8013" stdev="1.0" />
+        <s-distance  to="C35"      val="9.7823" stdev="1.0" />
+        <s-distance  to="I01"      val="9.3871" stdev="1.0" />
+        <s-distance  to="C01"      val="9.3729" stdev="1.0" />
+        <s-distance  to="C02"      val="9.3721" stdev="1.0" />
+        <s-distance  to="I02"      val="9.3862" stdev="1.0" />
+        <s-distance  to="I03"      val="9.2301" stdev="1.0" />
+        <s-distance  to="C03"      val="9.2191" stdev="1.0" />
+        <s-distance  to="C04"      val="9.1233" stdev="1.0" />
+        <s-distance  to="I04"      val="9.1333" stdev="1.0" />
+        <s-distance  to="I05"      val="9.0461" stdev="1.0" />
+        <s-distance  to="C05"      val="9.0390" stdev="1.0" />
+        <s-distance  to="C06"      val="9.0249" stdev="1.0" />
+        <s-distance  to="I06"      val="9.0316" stdev="1.0" />
+        <s-distance  to="I07"      val="8.9283" stdev="1.0" />
+        <s-distance  to="C07"      val="8.9258" stdev="1.0" />
+        <s-distance  to="C08"      val="8.9307" stdev="1.0" />
+        <s-distance  to="I08"      val="8.9314" stdev="1.0" />
+        <s-distance  to="I09"      val="8.8893" stdev="1.0" />
+        <s-distance  to="C09"      val="8.8898" stdev="1.0" />
+        <s-distance  to="C10"      val="8.8944" stdev="1.0" />
+        <s-distance  to="I10"      val="8.8919" stdev="1.0" />
+        <s-distance  to="I11"      val="8.9727" stdev="1.0" />
+        <s-distance  to="C11"      val="8.9810" stdev="1.0" />
+        <s-distance  to="C12"      val="9.0110" stdev="1.0" />
+        <s-distance  to="I12"      val="9.0028" stdev="1.0" />
+        <s-distance  to="I15"      val="9.3266" stdev="1.0" />
+        <s-distance  to="C15"      val="9.2696" stdev="1.0" />
+        <s-distance  to="C16"      val="9.3442" stdev="1.0" />
+        <s-distance  to="I16"      val="9.4048" stdev="1.0" />
+        <s-distance  to="I17"      val="9.2551" stdev="1.0" />
+        <s-distance  to="C17"      val="9.2685" stdev="1.0" />
+        <s-distance  to="C18"      val="9.3219" stdev="1.0" />
+        <s-distance  to="I18"      val="9.3091" stdev="1.0" />
+        <s-distance  to="I33"      val="10.8446" stdev="1.0" />
+        <s-distance  to="C33"      val="10.8451" stdev="1.0" />
+        <s-distance  to="C34"      val="11.0863" stdev="1.0" />
+        <s-distance  to="I34"      val="11.0907" stdev="1.0" />
+      </obs>
+
+      <obs from="S4">
+        <direction   to="C19"      val=  "0.0000" stdev="8.0" />
+        <direction   to="C20"      val=  "0.0368" stdev="8.0" />
+        <direction   to="C21"      val=  "1.6790" stdev="8.0" />
+        <direction   to="C22"      val=  "3.6260" stdev="8.0" />
+        <direction   to="C23"      val=  "5.3757" stdev="8.0" />
+        <direction   to="C24"      val=  "7.2825" stdev="8.0" />
+        <direction   to="C25"      val= "10.1599" stdev="8.0" />
+        <direction   to="C26"      val= "12.9254" stdev="8.0" />
+        <direction   to="C27"      val= "17.8556" stdev="8.0" />
+        <direction   to="C28"      val= "17.6702" stdev="8.0" />
+        <direction   to="C29"      val= "41.5639" stdev="8.0" />
+        <direction   to="C30"      val= "41.3749" stdev="8.0" />
+        <z-angle     to="C19"      val= "98.6769" stdev="12.0" />
+        <z-angle     to="C20"      val="108.1580" stdev="12.0" />
+        <z-angle     to="C21"      val="104.5572" stdev="12.0" />
+        <z-angle     to="C22"      val= "96.6137" stdev="12.0" />
+        <z-angle     to="C23"      val="101.3002" stdev="12.0" />
+        <z-angle     to="C24"      val="110.1430" stdev="12.0" />
+        <z-angle     to="C25"      val= "95.8557" stdev="12.0" />
+        <z-angle     to="C26"      val="101.9421" stdev="12.0" />
+        <z-angle     to="C27"      val="112.2456" stdev="12.0" />
+        <z-angle     to="C28"      val= "94.7870" stdev="12.0" />
+        <z-angle     to="C29"      val= "91.8255" stdev="12.0" />
+        <z-angle     to="C30"      val="110.8859" stdev="12.0" />
+        <s-distance  to="C19"      val="9.3071" stdev="1.0" />
+        <s-distance  to="C20"      val="9.3709" stdev="1.0" />
+        <s-distance  to="C21"      val="8.7821" stdev="1.0" />
+        <s-distance  to="C22"      val="8.2261" stdev="1.0" />
+        <s-distance  to="C23"      val="7.7863" stdev="1.0" />
+        <s-distance  to="C24"      val="7.4643" stdev="1.0" />
+        <s-distance  to="C25"      val="6.8494" stdev="1.0" />
+        <s-distance  to="C26"      val="6.4027" stdev="1.0" />
+        <s-distance  to="C27"      val="5.8771" stdev="1.0" />
+        <s-distance  to="C28"      val="5.8155" stdev="1.0" />
+        <s-distance  to="C29"      val="6.2741" stdev="1.0" />
+        <s-distance  to="C30"      val="6.3243" stdev="1.0" />
+      </obs>
+
+    </points-observations>
+  </network>
+</gama-local>
+ 

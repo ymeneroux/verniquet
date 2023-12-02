@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="TM30.xsl" type="text/xsl"?>
+<carnet version="v1.1.2">
+<etalonnages>
+    <etalonnage id="default" num="-1" serial="" methode="" P="3.000" Ddep="0.0" Dmax="9999.99" M="0.0000" deg_Fourier="0" deg_polynome="0" n_corr_interp="0" lambda_um="0.85" T0_K="285.15" P0_mmHg="760.0">
+        <Coeff_Fourier/>
+        <Coeff_Polynome/>
+        <Coeff_corr_interp/>
+    </etalonnage>
+</etalonnages>
+<stations Z0="400.0140" SigmaZ0="0.0307" SigmaHz="0.0008" SigmaV="0.0012" SigmaDp="0.0010" export_hauteurs_comp3d="N" use_meteo_entete_station="Y" use_first_target_for_Z0_estimation="N">
+   <station num="1" pt_sta="S4" temp="2.0" press_mmHg="750.0" press_hPa="999.7" formule_meteo="Barrel_Sears" ppm="-6.4" Z0="400.0140" SigmaZ0="0.0307" Ht="0.0000" num_ligne="0" valid="Y" cercles="2" fermeture="N" NbPointes="1" NbPointesC1="33" NbPointesC2="33" >
+      <rawdata>
+         <obs pt_vis="S6" Hz="148.4026" V="100.2040" Dp="43.0876"  dHz="0" dV="-54" dDp="0.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="S5" Hz="150.2091" V="100.4021" Dp="32.7205"  dHz="3" dV="-61" dDp="0.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="S2" Hz="155.4427" V="100.5747" Dp="15.2750"  dHz="10" dV="-61" dDp="0.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="S3" Hz="147.1499" V="99.9858" Dp="10.7688"  dHz="9" dV="-54" dDp="0.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="I19" Hz="170.7402" V="98.6960" Dp="9.3512"  dHz="-12" dV="-43" dDp="2.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I20" Hz="170.7797" V="108.1216" Dp="9.4128"  dHz="18" dV="-33" dDp="0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I21" Hz="172.4033" V="104.5430" Dp="8.8256"  dHz="-23" dV="-50" dDp="1.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I22" Hz="174.3352" V="96.6382" Dp="8.2674"  dHz="-20" dV="-41" dDp="1.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I23" Hz="176.0652" V="101.2999" Dp="7.8276"  dHz="-22" dV="-39" dDp="1.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I24" Hz="177.9542" V="110.0958" Dp="7.5053"  dHz="2" dV="-49" dDp="1.3" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I25" Hz="180.8032" V="95.8855" Dp="6.8876"  dHz="15" dV="-36" dDp="0.6" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I26" Hz="183.5230" V="101.9377" Dp="6.4405"  dHz="13" dV="-41" dDp="1.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I27" Hz="188.3876" V="112.1755" Dp="5.9121"  dHz="-7" dV="-35" dDp="0.8" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I28" Hz="188.2114" V="94.8266" Dp="5.8503"  dHz="-16" dV="-32" dDp="1.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I29" Hz="212.0184" V="91.8535" Dp="6.2977"  dHz="21" dV="-43" dDp="-0.2" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I30" Hz="211.8325" V="110.8570" Dp="6.3474"  dHz="-41" dV="-53" dDp="0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I31" Hz="202.1079" V="86.6912" Dp="8.5571"  dHz="21" dV="-52" dDp="0.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I32" Hz="195.5096" V="85.7610" Dp="9.5609"  dHz="-7" dV="-40" dDp="1.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C20" Hz="170.9061" V="108.1596" Dp="9.3703"  dHz="25" dV="-63" dDp="1.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C21" Hz="172.5490" V="104.5601" Dp="8.7826"  dHz="14" dV="-52" dDp="1.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C23" Hz="176.2436" V="101.3024" Dp="7.7870"  dHz="10" dV="-53" dDp="1.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C25" Hz="181.0266" V="95.8583" Dp="6.8501"  dHz="4" dV="-65" dDp="1.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C26" Hz="183.7839" V="101.9450" Dp="6.4022"  dHz="8" dV="-42" dDp="0.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C27" Hz="188.7123" V="112.2486" Dp="5.8767"  dHz="3" dV="-65" dDp="0.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C28" Hz="188.5311" V="94.7914" Dp="5.8153"  dHz="35" dV="-49" dDp="0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C29" Hz="212.4144" V="91.8277" Dp="6.2741"  dHz="-12" dV="-51" dDp="0.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C30" Hz="212.2258" V="110.8903" Dp="6.3237"  dHz="-29" dV="-50" dDp="0.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C31" Hz="202.3831" V="86.6456" Dp="8.5297"  dHz="24" dV="-57" dDp="0.9" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C32" Hz="195.7341" V="85.7129" Dp="9.5287"  dHz="47" dV="-61" dDp="0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="MRVC" Hz="318.5998" V="98.6969" Dp=""  dHz="17" dV="271" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+         <obs pt_vis="CHVC" Hz="353.2243" V="98.9711" Dp=""  dHz="29" dV="-6" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+         <obs pt_vis="IGNF1" Hz="236.9902" V="94.0404" Dp=""  dHz="34" dV="553" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+         <obs pt_vis="IGNF2" Hz="237.1985" V="94.0402" Dp=""  dHz="35" dV="553" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+         <obs pt_vis="S6" Hz="348.4075" V="299.7992" Dp="43.0875"  dHz="0" dV="54" dDp="0.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="S5" Hz="350.2134" V="299.5998" Dp="32.7203"  dHz="-3" dV="61" dDp="-0.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="S2" Hz="355.4457" V="299.4271" Dp="15.2749"  dHz="-10" dV="61" dDp="0.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="S3" Hz="347.1529" V="300.0174" Dp="10.7688"  dHz="-9" dV="54" dDp="0.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="500.0000" />
+         <obs pt_vis="I19" Hz="370.7474" V="301.3095" Dp="9.3471"  dHz="12" dV="43" dDp="-2.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I20" Hz="370.7810" V="291.8859" Dp="9.4114"  dHz="-18" dV="33" dDp="-0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I21" Hz="372.4127" V="295.4609" Dp="8.8221"  dHz="23" dV="50" dDp="-1.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I22" Hz="374.3440" V="303.3677" Dp="8.2644"  dHz="20" dV="41" dDp="-1.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I23" Hz="376.0746" V="298.7063" Dp="7.8245"  dHz="22" dV="39" dDp="-1.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I24" Hz="377.9588" V="289.9085" Dp="7.5026"  dHz="-2" dV="49" dDp="-1.3" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I25" Hz="380.8050" V="304.1214" Dp="6.8864"  dHz="-15" dV="36" dDp="-0.6" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I26" Hz="383.5254" V="298.0680" Dp="6.4384"  dHz="-13" dV="41" dDp="-1.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I27" Hz="388.3939" V="287.8315" Dp="5.9104"  dHz="7" dV="35" dDp="-0.8" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I28" Hz="388.2194" V="305.1811" Dp="5.8483"  dHz="16" dV="32" dDp="-1.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I29" Hz="12.0191" V="308.1520" Dp="6.2981"  dHz="-21" dV="43" dDp="0.2" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I30" Hz="11.8455" V="289.1465" Dp="6.3460"  dHz="41" dV="53" dDp="-0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I31" Hz="2.1085" V="313.3125" Dp="8.5563"  dHz="-21" dV="52" dDp="-0.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="I32" Hz="395.5159" V="314.2450" Dp="9.5587"  dHz="7" dV="40" dDp="-1.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C20" Hz="370.9059" V="291.8418" Dp="9.3683"  dHz="-25" dV="63" dDp="-1.0" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C21" Hz="372.5511" V="295.4436" Dp="8.7798"  dHz="-14" dV="52" dDp="-1.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C23" Hz="376.2464" V="298.7010" Dp="7.7842"  dHz="-10" dV="53" dDp="-1.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C25" Hz="381.0306" V="304.1427" Dp="6.8479"  dHz="-4" dV="65" dDp="-1.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C26" Hz="383.7872" V="298.0607" Dp="6.4014"  dHz="-8" dV="42" dDp="-0.4" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C27" Hz="388.7167" V="287.7525" Dp="5.8757"  dHz="-3" dV="65" dDp="-0.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C28" Hz="388.5290" V="305.2128" Dp="5.8138"  dHz="-35" dV="49" dDp="-0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C29" Hz="12.4217" V="308.1762" Dp="6.2730"  dHz="12" dV="51" dDp="-0.5" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C30" Hz="12.2364" V="289.1137" Dp="6.3234"  dHz="29" dV="50" dDp="-0.1" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C31" Hz="2.3832" V="313.3570" Dp="8.5279"  dHz="-23" dV="57" dDp="-0.9" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="C32" Hz="395.7295" V="314.2890" Dp="9.5273"  dHz="-47" dV="61" dDp="-0.7" ppm="-6.4" c_etal="0.0000" etalonnage="-1" id_etalonnage="default" Hv="0.0000" />
+         <obs pt_vis="IGNF1" Hz="36.9882" V="306.0843" Dp=""  dHz="-34" dV="-553" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+         <obs pt_vis="IGNF2" Hz="37.1965" V="306.0844" Dp=""  dHz="-35" dV="-553" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+         <obs pt_vis="CHVC" Hz="153.2234" V="301.0416" Dp=""  dHz="-29" dV="6" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+         <obs pt_vis="MRVC" Hz="118.6012" V="301.3714" Dp=""  dHz="-17" dV="-271" dDp="" ppm="" c_etal="" etalonnage="" id_etalonnage="" Hv="0.0000" />
+      </rawdata>
+      <CheckNobs>
+         <Nobs pt_vis="S6" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="S5" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="S2" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="S3" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I19" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I20" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I21" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I22" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I23" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I24" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I25" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I26" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I27" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I28" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I29" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I30" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I31" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="I32" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C20" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C21" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C23" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C25" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C26" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C27" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C28" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C29" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C30" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C31" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="C32" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="MRVC" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="CHVC" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="IGNF1" NObsC1="1" NObsC2="1" />
+         <Nobs pt_vis="IGNF2" NObsC1="1" NObsC2="1" />
+      </CheckNobs>
+      <Logs>
+      </Logs>
+      <Data_Ok>
+         <obs pt_vis="S6" Hz="0.0000" V="100.2024" Dp="43.0876" />
+         <obs pt_vis="S5" Hz="1.8062" V="100.4011" Dp="32.7204" />
+         <obs pt_vis="S2" Hz="7.0391" V="100.5738" Dp="15.2750" />
+         <obs pt_vis="S3" Hz="398.7463" V="99.9842" Dp="10.7688" />
+         <obs pt_vis="I19" Hz="22.3388" V="98.6932" Dp="9.3492" />
+         <obs pt_vis="I20" Hz="22.3753" V="108.1179" Dp="9.4121" />
+         <obs pt_vis="I21" Hz="24.0029" V="104.5410" Dp="8.8239" />
+         <obs pt_vis="I22" Hz="25.9345" V="96.6353" Dp="8.2659" />
+         <obs pt_vis="I23" Hz="27.6648" V="101.2968" Dp="7.8261" />
+         <obs pt_vis="I24" Hz="29.5514" V="110.0937" Dp="7.5039" />
+         <obs pt_vis="I25" Hz="32.3990" V="95.8821" Dp="6.8870" />
+         <obs pt_vis="I26" Hz="35.1191" V="101.9349" Dp="6.4394" />
+         <obs pt_vis="I27" Hz="39.9856" V="112.1720" Dp="5.9112" />
+         <obs pt_vis="I28" Hz="39.8103" V="94.8228" Dp="5.8493" />
+         <obs pt_vis="I29" Hz="63.6136" V="91.8507" Dp="6.2979" />
+         <obs pt_vis="I30" Hz="63.4339" V="110.8553" Dp="6.3467" />
+         <obs pt_vis="I31" Hz="53.7031" V="86.6894" Dp="8.5567" />
+         <obs pt_vis="I32" Hz="47.1077" V="85.7580" Dp="9.5598" />
+         <obs pt_vis="C20" Hz="22.5009" V="108.1589" Dp="9.3693" />
+         <obs pt_vis="C21" Hz="24.1450" V="104.5583" Dp="8.7812" />
+         <obs pt_vis="C23" Hz="27.8399" V="101.3007" Dp="7.7856" />
+         <obs pt_vis="C25" Hz="32.6235" V="95.8578" Dp="6.8490" />
+         <obs pt_vis="C26" Hz="35.3804" V="101.9421" Dp="6.4018" />
+         <obs pt_vis="C27" Hz="40.3094" V="112.2481" Dp="5.8762" />
+         <obs pt_vis="C28" Hz="40.1250" V="94.7893" Dp="5.8145" />
+         <obs pt_vis="C29" Hz="64.0130" V="91.8257" Dp="6.2735" />
+         <obs pt_vis="C30" Hz="63.8260" V="110.8883" Dp="6.3235" />
+         <obs pt_vis="C31" Hz="53.9781" V="86.6443" Dp="8.5288" />
+         <obs pt_vis="C32" Hz="47.3267" V="85.7120" Dp="9.5280" />
+         <obs pt_vis="MRVC" Hz="170.1954" V="98.6628" Dp="" />
+         <obs pt_vis="CHVC" Hz="204.8187" V="98.9648" Dp="" />
+         <obs pt_vis="IGNF1" Hz="88.5841" V="93.9781" Dp="" />
+         <obs pt_vis="IGNF2" Hz="88.7924" V="93.9779" Dp="" />
+      </Data_Ok>
+   </station>
+</stations>
+</carnet>
