@@ -7,3 +7,4 @@ J4.1 657716.367 6860676.055 114.004   (leica + RTKlib)
 RCAL 657716.390 6860676.094 114.073   (leica + calcul en ligne)
 
 
+657716.366 m  N = 6860676.060  -> dernier essai calcul en ligne, suppression glonass + galileo
