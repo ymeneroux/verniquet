@@ -1,0 +1,9 @@
+SSLP       #  Eglise de Saint-Sulpice : axe au sommet de la tour Nord
+BAT4       #  Montreuil : bâtiment 4 du quartier de La Noue. Pillier Est de l'antenne Sud
+CHSL_O     #  Sainte Chapelle du Château de Vincennes : sommet en pierre (ouest)
+CHSL_E     #  Sainte Chapelle du Château de Vincennes : sommet doré (est)
+CHVC       #  Château de Vincennes : coin supérieur gauche fenêtre nord première étage donjon
+VTRY_CHN   #  Cheminée Nord de Vitry-sur-Seine :  axe au sommet 
+VTRY_CHS   #  Cheminée Sud de Vitry-sur-Seine :  axe au sommet 
+VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  led Est, étage supérieur
+ESVC       #  Esplanade de Vincennes : clou d'arpentage

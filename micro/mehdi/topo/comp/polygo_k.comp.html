@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<link rel="shortcut icon" type="image/x-icon" href="res/logo_comp.png" />  <link rel="stylesheet" href="res/leaflet.css"/>
+<link rel="shortcut icon" type="image/x-icon" href="res/logo_comp.png" />
+  <link rel="stylesheet" href="res/leaflet.css"/>
   <script src="res/leaflet.js"></script>
   <script src="res/l.ellipse.min.js"></script>
-  <script src="res/jquery.min.js"></script>
   <script src="res/visu_comp.js"></script>
   <script src="res/Chart.js"></script>
-  <script> data_file="polygo_k.comp";</script>
+  <script> var data_file="polygo_k.comp";</script>
   <link rel="stylesheet" href="res/comp3d.css"/>
   <meta charset="utf-8"/>
   <title>JavaScript error!</title>
 </head>
 <body>
-<h1 id='top'>Comp3D</h1>
-<h1 id='title'>JavaScript error!</h1>
+<div id="container">
+  <div id="sideBar">
+    <button class="menu_button" onclick="document.getElementById('sideBar').classList.toggle('collapsed');document.getElementById('main').classList.toggle('side_collapsed');setTimeout(function(){ mymap.invalidateSize()}, 500);"><img src="res/burger.png" width="20" height="20"></button>
+    <div id="logos">
+      <img src="res/logo_IGN.jpg" alt="IGN">
+      <img src="res/logo_comp.png" alt="Comp3D">
+    </div>
+  </div>
+  <div id="main">
+    <h1 id="top">Comp3D</h1>
+    <h1 id="title">JavaScript error!</h1>
+  </div >
+</div >
 </body>
 </html>

@@ -7,6 +7,9 @@ from pyproj import Transformer
 from jinja2 import Environment, FileSystemLoader
 
 
+comment_only = True
+
+
 environment = jinja2.Environment()
 template = environment.from_string("Hello, {{ name }}!")
 template.render(name="World")
@@ -27,8 +30,20 @@ def makeHtmlFile(point):
 	#pdfkit.from_file(filename_htm, filename_pdf)
 	print(f"... wrote {filename_htm}")
 
+
 # ------------------------------------------------------------------------
-# Readin comp file
+# Reading description file
+# ------------------------------------------------------------------------
+input_file_desc = "com.txt"
+DESCRIPTIONS = {}
+f = open(input_file_desc, "r")
+LINES = f.readlines()
+for l in LINES:
+	DESCRIPTIONS[l.split('#')[0].strip()] = l.split('#')[1]
+f.close()
+
+# ------------------------------------------------------------------------
+# Reading comp file
 # ------------------------------------------------------------------------
 input_file_comp = sys.argv[1]
 
@@ -36,8 +51,7 @@ print("------------------------------------------------------------------")
 print("INPUT FILE COMP: ..."+input_file_comp[-42:])
 print("------------------------------------------------------------------")
 
-
-PT_NAME = []; PT_X = []; PT_Y = []; PT_Z = []; PT_COM = []
+PT_NAME = []; PT_X = []; PT_Y = []; PT_Z = [];
 PT_STD_X = []; PT_STD_Y = []; PT_STD_Z = []; 
 t2154to4326 = Transformer.from_crs("EPSG:2154", "EPSG:4326")
 t4326to4978 = Transformer.from_crs("EPSG:4326", "EPSG:4978")
@@ -51,10 +65,6 @@ for l in LINES:
 		l = l.replace('  ', ' ')
 	if l.startswith('*'):
 		continue
-	if "*#" in l:
-		PT_COM.append(l.split("*#")[1])
-	else:
-		PT_COM.append("")
 	l = l.split(' ')
 	PT_NAME.append(l[0])
 	PT_X.append((float)(l[1]))
@@ -62,7 +72,10 @@ for l in LINES:
 	PT_Z.append((float)(l[3]))
 	PT_STD_X.append((float)(l[4]))
 	PT_STD_Y.append((float)(l[5]))
-	PT_STD_Z.append((float)(l[6]))
+	if (l[6].strip() == '*'):
+		PT_STD_Z.append(0)
+	else:
+		PT_STD_Z.append((float)(l[6]))
 	
 N = len(PT_NAME)
 date_calcul = datetime.datetime.fromtimestamp(os.path.getmtime(input_file_comp))
@@ -76,10 +89,10 @@ def deg_dms(deg):
 	m = (int)((deg-d)*60)
 	s = '{:.5f}'.format(3600*(deg-d-m/60))
 	return [d, m, s]
-	
+
 for i in range(N):
 
-	point = {"name": PT_NAME[i], "date_calcul": date_calcul}
+	point = {"name": PT_NAME[i], "date_calcul": date_calcul, "com": ""}
 	
 	point["X_L93"] = '{:.3f}'.format(PT_X[i])
 	point["Y_L93"] = '{:.3f}'.format(PT_Y[i])
@@ -114,7 +127,11 @@ for i in range(N):
 	point["STD_PLANI"] = '{:.1f}'.format(1e3*(PT_STD_X[i]**2 + PT_STD_Y[i]**2)**0.5)
 	point["STD_3D"]  = '{:.1f}'.format(1e3*(PT_STD_X[i]**2 + PT_STD_Y[i]**2 + PT_STD_Z[i]**2)**0.5)
     	
-	point["com"] = PT_COM[i]
+	if PT_NAME[i] in DESCRIPTIONS:
+		point["com"] = DESCRIPTIONS[PT_NAME[i]]
+	else:
+		if comment_only:
+			continue
 
 	makeHtmlFile(point)
 
