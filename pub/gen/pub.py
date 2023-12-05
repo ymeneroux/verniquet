@@ -2,7 +2,7 @@ import os
 import sys
 import jinja2
 import datetime
-#import pdfkit
+import pdfkit
 from pyproj import Transformer
 from jinja2 import Environment, FileSystemLoader
 
@@ -14,6 +14,10 @@ environment = jinja2.Environment()
 template = environment.from_string("Hello, {{ name }}!")
 template.render(name="World")
 
+options = {
+  "enable-local-file-access": None,
+  "disable-internal-links": None
+}
 
 def makeHtmlFile(point):
 
@@ -24,10 +28,10 @@ def makeHtmlFile(point):
 	
 	filename =  f"{point['name']}"
 	filename_htm = "../out/htm/" + filename + ".html"
-	#filename_pdf = "../out/pdf/" + filename + ".pdf"
+	filename_pdf = "../out/pdf/" + filename + ".pdf"
 	with open(filename_htm, mode="w", encoding="utf-8") as message:
 		message.write(content)
-	#pdfkit.from_file(filename_htm, filename_pdf)
+	pdfkit.from_file(filename_htm, filename_pdf, options)
 	print(f"... wrote {filename_htm}")
 
 
