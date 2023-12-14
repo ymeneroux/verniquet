@@ -1,0 +1,59 @@
+R01  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.301 m
+R02  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.301 m
+R03  LAMBERT-93   : E =  657716.390 m  N = 6860676.095 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R04  LAMBERT-93   : E =  657716.390 m  N = 6860676.093 m      Alt ( IGN69 via RAF20 ) =  70.296 m
+R05  LAMBERT-93   : E =  657716.395 m  N = 6860676.098 m      Alt ( IGN69 via RAF20 ) =  70.277 m
+R06  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R07  LAMBERT-93   : E =  657716.391 m  N = 6860676.095 m      Alt ( IGN69 via RAF20 ) =  70.306 m
+R08  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R09  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R10  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R11  LAMBERT-93   : E =  657716.387 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.309 m
+R12  LAMBERT-93   : E =  657716.369 m  N = 6860676.099 m      Alt ( IGN69 via RAF20 ) =  70.280 m
+R13  LAMBERT-93   : E =  657716.390 m  N = 6860676.095 m      Alt ( IGN69 via RAF20 ) =  70.303 m
+R14  LAMBERT-93   : E =  657716.390 m  N = 6860676.095 m      Alt ( IGN69 via RAF20 ) =  70.303 m
+R15  LAMBERT-93   : E =  657716.390 m  N = 6860676.095 m      Alt ( IGN69 via RAF20 ) =  70.301 m
+R16  LAMBERT-93   : E =  657716.388 m  N = 6860676.093 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R17  LAMBERT-93   : E =  657716.390 m  N = 6860676.095 m      Alt ( IGN69 via RAF20 ) =  70.303 m
+R18  LAMBERT-93   : E =  657716.390 m  N = 6860676.095 m      Alt ( IGN69 via RAF20 ) =  70.303 m
+R19  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R20  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.303 m
+R21  LAMBERT-93   : E =  657716.392 m  N = 6860676.081 m      Alt ( IGN69 via RAF20 ) =  70.287 m
+R22  LAMBERT-93   : E =  657716.390 m  N = 6860676.080 m      Alt ( IGN69 via RAF20 ) =  70.306 m
+R23  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+R24  LAMBERT-93   : E =  657716.388 m  N = 6860676.092 m      Alt ( IGN69 via RAF20 ) =  70.291 m
+
+R02-24.23  LAMBERT-93   : E =  657716.366 m  N = 6860676.060 m      Alt ( IGN69 via RAF20 ) =  70.237 m
+R03-24.23  LAMBERT-93   : E =  657716.366 m  N = 6860676.060 m      Alt ( IGN69 via RAF20 ) =  70.237 m
+R04-24.23  LAMBERT-93   : E =  657716.366 m  N = 6860676.060 m      Alt ( IGN69 via RAF20 ) =  70.237 m
+R05-24.23  LAMBERT-93   : E =  657716.367 m  N = 6860676.065 m      Alt ( IGN69 via RAF20 ) =  70.243 m
+R06-24.23  LAMBERT-93   : E =  657716.363 m  N = 6860676.067 m      Alt ( IGN69 via RAF20 ) =  70.273 m
+R07-24.23  LAMBERT-93   : E =  657716.363 m  N = 6860676.067 m      Alt ( IGN69 via RAF20 ) =  70.273 m
+R08-24.23  LAMBERT-93   : E =  657716.363 m  N = 6860676.066 m      Alt ( IGN69 via RAF20 ) =  70.273 m
+R09-24.23  LAMBERT-93   : E =  657716.363 m  N = 6860676.066 m      Alt ( IGN69 via RAF20 ) =  70.270 m
+R10-24.23  LAMBERT-93   : E =  657716.363 m  N = 6860676.066 m      Alt ( IGN69 via RAF20 ) =  70.270 m
+R11-24.23  LAMBERT-93   : E =  657716.363 m  N = 6860676.066 m      Alt ( IGN69 via RAF20 ) =  70.270 m
+R12-24.23  LAMBERT-93   : E =  657716.366 m  N = 6860676.065 m      Alt ( IGN69 via RAF20 ) =  70.260 m
+R13-24.23  LAMBERT-93   : E =  657716.390 m  N = 6860676.060 m      Alt ( IGN69 via RAF20 ) =  70.294 m
+
+
+TE2711_R1214-24.23  LAMBERT-93   : E =  657716.366 m  N = 6860676.065 m      Alt ( IGN69 via RAF20 ) =  70.261 m
+TE2711_R1215-24.23  LAMBERT-93   : E =  657716.366 m  N = 6860676.065 m      Alt ( IGN69 via RAF20 ) =  70.261 m
+TE2711_R1216-24.23  LAMBERT-93   : E =  657716.366 m  N = 6860676.064 m      Alt ( IGN69 via RAF20 ) =  70.262 m
+TE2711_R1217-24.23  LAMBERT-93   : E =  657716.368 m  N = 6860676.067 m      Alt ( IGN69 via RAF20 ) =  70.262 m
+TE2711_R1218-24.23  LAMBERT-93   : E =  657716.368 m  N = 6860676.066 m      Alt ( IGN69 via RAF20 ) =  70.260 m
+TE2711_R1219-24.23  LAMBERT-93   : E =  657716.369 m  N = 6860676.066 m      Alt ( IGN69 via RAF20 ) =  70.258 m
+TE2711_R1220-24.23  LAMBERT-93   : E =  657716.368 m  N = 6860676.067 m      Alt ( IGN69 via RAF20 ) =  70.258 m
+TE2711_R1221-24.23  LAMBERT-93   : E =  657716.368 m  N = 6860676.067 m      Alt ( IGN69 via RAF20 ) =  70.256 m
+TE2711_R1222-24.23  LAMBERT-93   : E =  657716.367 m  N = 6860676.082 m      Alt ( IGN69 via RAF20 ) =  70.271 m
+TE2711_R1223-24.23  LAMBERT-93   : E =  657716.368 m  N = 6860676.096 m      Alt ( IGN69 via RAF20 ) =  70.268 m
+TE2711_R1224.23     LAMBERT-93   : E =  657716.368 m  N = 6860676.096 m      Alt ( IGN69 via RAF20 ) =  70.268 m
+
+
+All               :  LAMBERT-93   : E =  657716.390 m  N = 6860676.094 m      Alt ( IGN69 via RAF20 ) =  70.302 m
+12,21 excluded    :  LAMBERT-93   : E =  657716.370 m  N = 6860676.085 m      Alt ( IGN69 via RAF20 ) =  70.261 m
+12,22 excluded    :  LAMBERT-93   : E =  657716.369 m  N = 6860676.086 m      Alt ( IGN69 via RAF20 ) =  70.284 m
+12,21,22 excluded :  LAMBERT-93   : E =  657716.370 m  N = 6860676.071 m      Alt ( IGN69 via RAF20 ) =  70.268 m
+
+
+

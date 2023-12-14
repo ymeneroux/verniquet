@@ -1,0 +1,240 @@
+
+--------------------------------------------------------------------------------
+IGN                     CALCUL GNSS EN LIGNE                    04-DEC-23 10:59
+                             BERNESE 5.2
+                            COMPTE-RENDU  
+--------------------------------------------------------------------------------
+
+IDENTIFIANT DU CALCUL : 2023-12-04T10:39:10Z_172.16.251.104
+
+
+ORBITES            : COD0OPSRAP_20233320000_01D_05M_ORB.SP3.gz COD0OPSRAP_20233310000_01D_05M_ORB.SP3.gz
+ROTATION TERRESTRE : COD0OPSRAP_20233320000_01D_01D_ERP.ERP.gz COD0OPSRAP_20233310000_01D_01D_ERP.ERP.gz
+------------------------------
+
+Systeme de reference du calcul d'apres les ephemerides : IGS20
+
+
+
+I/  ELEMENTS EN ENTREE
+------------------------------------------------------------
+
+
+ENTREE NUMERO : 1 / 1
+------------------                    
+FICHIER RINEX       : TE2711_nor.23o      
+EN-TETE NOM STATION : -Unknown-    
+EN-TETE NUMERO      : 99999S999
+EN-TETE RECEPTEUR   : LEICA GS10
+EN-TETE ANTENNE     : LEIAS10         NONE
+EN-TETE POSITION    : 4201760.7855    177857.8125   4779300.1812
+EN-TETE ANT H/E/N   : 0.0000 0.0000 0.0000
+  
+ELEMENTS RETENUS                    
+----------------        
+NOM                 : -UNK
+RECEPTEUR: LEICA GS10 :: RECONNU IGS  : NON -> DEFAUT : SIMULA              
+
+*antenne : radome sans indication = 'NONE' (DEFAUT)  
+ANTENNE  :>LEIAS10         NONE<:: RECONNUE IGS : OUI
+
+
+ANTENNE CENTRES DE PHASE N/E/H :
+LEIAS10         NONE 01 0    -1.03     1.35    58.32
+LEIAS10         NONE 02 0    -0.20    -2.38    55.54
+
+ANTENNE ARP H/E/N   :    0.0000 0.0000 0.0000
+
+NOMBRE D'EPOQUES    : ...
+DATE DEBUT          : 27/11/2023 14:39:00.000
+DATE FIN            : 28/11/2023 10:29:30.000
+
+MISE A JOUR RINEX   : TE2711_nor.23o -> -UNK3310.23O
+
+POSITION APPROCHEE (RINEX   ) : 4201760.7855    177857.8125   4779300.1812
+POSITION APPROCHEE (Converto) : 4201767.4749 177859.1234 4779304.2964
+
+*Eléments du contrôle qualité a priori :
+*Observations reçues/attendues : 99% (40898/40899)
+*Multitrajets 1 et 2 (mètres) : n/a n/a
+
+
+
+II/ STATIONS DE REFERENCE DANS UN RAYON DE 1000 km  (MAX : 12)
+----------------------------------------------------------------------
+
+ 1 smne :      91m
+      Donnees manquantes
+ 2 ignf :     104m
+      ignf3310.23d.Z ignf3320.23d.Z => IGNF3310.23O (2.11)
+ 3 pana :    2480m
+      pana3310.23d.Z pana3320.23d.Z => PANA3310.23O (2.11)
+ 4 op71 :    6598m
+      op713310.23d.Z op713320.23d.Z => OP713310.23O (2.11)
+ 5 opmt :    6600m
+      opmt3310.23d.Z opmt3320.23d.Z => OPMT3310.23O (2.11)
+ 6 vity :    8635m
+      vity3310.23d.Z vity3320.23d.Z => VITY3310.23O (2.11)
+ 7 vit2 :    8638m
+      Donnees manquantes
+ 8 mlvl :   12005m
+      mlvl3310.23d.Z mlvl3320.23d.Z => MLVL3310.23O (2.11)
+ 9 mlv2 :   12016m
+      Donnees manquantes
+10 sbgs :   20161m
+      sbgs3310.23d.Z sbgs3320.23d.Z => SBGS3310.23O (2.11)
+11 ct54 :   21363m
+      Donnees manquantes
+12 sirt :   21630m
+      sirt3310.23d.Z sirt3320.23d.Z => SIRT3310.23O (2.11)
+13 ct52 :   24526m
+      Donnees manquantes
+14 ct5e :   24589m
+      Donnees manquantes
+15 cty1 :   25262m
+      Donnees manquantes
+16 ctx1 :   26253m
+      Donnees manquantes
+17 ixsg :   27089m
+      ixsg3310.23d.Z ixsg3320.23d.Z => IXSG3310.23O (2.11)
+18 bret :   27269m
+      bret3310.23d.Z bret3320.23d.Z => BRET3310.23O (2.11)
+19 ct55 :   27591m
+      Donnees manquantes
+20 isla :   32919m
+      isla3310.23d.Z isla3320.23d.Z => ISLA3310.23O (2.11)
+21 ct71 :   34715m
+      Donnees manquantes
+22 tgri :   34867m
+      tgri3310.23d.Z tgri3320.23d.Z => TGRI3310.23O (2.11)
+
+DONNEES DISPONIBLES : 12 (/ 12)
+
+
+III/ TRAITEMENT
+------------------------------------------------------------
+
+
+LOGICIEL : Bernese GNSS Software Version 5.2
+
+
+PHASE 1 : RESOLUTION DES AMBIGUITES
+LIGNE DE BASE  Dist(km)  AMBIGUITES         RESOLUES
+ -UNK BRET     27.3      126              90 ( 71.4%)
+ -UNK IGNF      0.1      156             154 ( 98.7%)
+ -UNK ISLA     32.9      158              92 ( 58.2%)
+ -UNK IXSG     27.1      154              92 ( 59.7%)
+ -UNK MLVL     12.0      154             130 ( 84.4%)
+ -UNK OPMT      6.6      114             114 (100.0%)
+ -UNK OP71      6.6      148             142 ( 95.9%)
+ -UNK PANA      2.5      126              87 ( 69.0%)
+ -UNK SBGS     20.2      128              94 ( 73.4%)
+ -UNK SIRT     21.6      136              86 ( 63.2%)
+ -UNK TGRI     34.9      136             108 ( 79.4%)
+ -UNK VITY      8.6      138             125 ( 90.6%)
+
+AMBIGUITES L1 L2    : 1674   RESOLUES : 1314 (78.5%)
+
+PHASE 2 : TRAITEMENT FINAL (AMBIGUITES RESOLUES FIXEES)
+FACTEUR DE VARIANCE :      1.55
+SIGMA_0             :    0.0012 M
+
+PRECISION INTERNE ESTIMEE (MILLIMETRES) :
+-UNK 99999S999
+          SX :   0.8  SY :   0.3  SZ :   0.9  
+          SN :   0.4  SE :   0.3  SH :   1.1  
+
+
+
+IV/ RESULTATS
+------------------------------------------------------------
+
+
+===================================  ITRF2014  ===================================
+
+POSITION ITRF2014   EPOQUE 2023.910 (29/11/23) :
+-UNK 99999S999
+     X:   4201762.2370  Y:    177858.6357  Z:   4779299.9134
+
+POSITION ITRF2014  COORDONNEES GEOGRAPHIQUES :
+-UNK 99999S999
+LONGITUDE     2.423856634 °  LATITUDE   48.844748161 °  HELL    114.0221
+          E 002 25 25.883883          N 48 50 41.093381         114.0221
+
+
+===================================   ITRF2014  ===================================
+
+POSITION ITRF2014   EPOQUE 2009.000 (01/01/09) :
+-UNK 99999S999
+     X:   4201762.4270  Y:    177858.3730  Z:   4779299.7568
+
+POSITION ITRF2014  COORDONNEES GEOGRAPHIQUES :
+-UNK 99999S999
+LONGITUDE     2.423852948 °  LATITUDE   48.844746025 °  HELL    114.0217
+          E 002 25 25.870614          N 48 50 41.085690         114.0217
+
+
+===================================   ETRF2000  ===================================
+
+POSITION ETRF2000   EPOQUE 2023.910 (29/11/23) :
+-UNK 99999S999
+     X:   4201762.7286  Y:    177858.0612  Z:   4779299.4844
+
+POSITION ETRF2000  COORDONNEES GEOGRAPHIQUES :
+-UNK 99999S999
+LONGITUDE     2.423848531 °  LATITUDE   48.844742462 °  HELL    114.0063
+          E 002 25 25.854710          N 48 50 41.072863         114.0063
+ UTM 31 N   : E =  457728.094 m  N = 5410356.799 m      Alt ( info no info        ) =  0.000 m
+
+
+===================================      RGF93  ===================================
+
+POSITION RGF93   EPOQUE 2023.910 (29/11/23) :
+-UNK 99999S999
+     X:   4201762.7289  Y:    177858.0623  Z:   4779299.4865
+
+POSITION RGF93  COORDONNEES GEOGRAPHIQUES :
+-UNK 99999S999
+LONGITUDE     2.423848546 °  LATITUDE   48.844742472 °  HELL    114.0081
+          E 002 25 25.854764          N 48 50 41.072901         114.0081
+ LAMBERT-93   : E =  657716.366 m  N = 6860676.060 m      Alt ( IGN69 via RAF20 ) =  70.237 m
+ CC48         : E = 1657710.503 m  N = 7294087.500 m
+ CC49         : E = 1657714.946 m  N = 8182895.997 m
+ CC50         : E = 1657706.583 m  N = 9071679.881 m
+
+
+================================================================================
+
+
+QUALITE DE LA MISE EN REFERENCE ETRF2000 : RESIDUS N E HE (MILLIMETRES)
+------------------------------------------------------
+    NOM               N          E          HE    
+------------------------------------------------------
+ BRET 10019M001       2.09       1.64       9.59    
+ ISLA 19802M001      -0.19       0.73       5.04    
+ IXSG 18691M001       0.36       2.58       4.46    
+ MLVL 10092M001      -1.26       4.06      -2.49    
+ OP71 10001S007       0.66       0.02      -0.77    
+ OPMT 10001S006       1.05      -1.03      -1.07    
+ SIRT 19988M001      -0.79       1.10      -1.63    
+ TGRI 19625M001      -0.84      -1.68      -6.12    
+ IGNF 10001M009      -7.80      -3.92      -2.80    
+ SBGS 18310M001       1.13      -2.60      -2.08    
+ VITY 18328M001       2.28       0.23      -7.44    
+ PANA 10001M008       3.32      -1.12       5.29    
+------------------------------------------------------
+ RMS                  2.82       2.23       5.05
+------------------------------------------------------
+
+
+EXACTITUDE ESTIMEE (2*SIGMA) :
+----------------------------
+-UNK 99999S999  E_N :   8.1 mm     E_E :   7.4 mm     E_H :  15.5 mm
+
+
+
+
+--------------------------------------------------------------------------------
+IGN                     CALCUL GNSS EN LIGNE                    04-DEC-23 11:04
+                        FIN DU COMPTE-RENDU                    
+--------------------------------------------------------------------------------

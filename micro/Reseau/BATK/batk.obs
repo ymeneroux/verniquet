@@ -1,0 +1,64 @@
+*Données reduites
+* C:\Users\ymeneroux\Desktop\ORI_K.obs
+* fichier créé le 11/12/2023 à 18:48:42
+
+*Tours d'horizon
+* Station n°1 S51
+* Temperature : 10.0 °C - Pression : 750.0 mmHg - Correction meteo : 1.7 ppm
+* Date/heure debut :  
+* Date/heure fin   :  
+* Numero de cycle : 0
+
+7 BATK              IGNF                 0.1059     0.0008 0.0020   0.0000   0.0000 
+5 BATK              MRVC                62.4621     0.0008 0.0000   0.0000   0.0000 
+5 BATK              CHVC                96.1442     0.0008 0.0100   0.0000   0.0000 
+5 BATK              LED                184.8660     0.0008 0.0000   0.0000   0.0000  
+5 BATK              VITRY              184.9108     0.0008 0.0100   0.0000   0.0000 
+5 BATK              EGLV               328.2032     0.0008 0.0000   0.0000   0.0000 
+5 BATK              GLOBE              364.5652     0.0008 0.0000   0.0000   0.0000 
+
+
+* Station n°2 S52
+* Temperature : 10.0 °C - Pression : 750.0 mmHg - Correction meteo : 1.7 ppm
+* Date/heure debut :  
+* Date/heure fin   :  
+* Numero de cycle : 0
+
+7 BATK              LED                  0.0000     0.0008 0.0000   0.0000   0.0000 
+5 BATK              VITRY                0.0439     0.0008 0.0100   0.0000   0.0000 
+5 BATK              EGLV               143.3376     0.0008 0.0000   0.0000   0.0000 
+5 BATK              GLOB               179.7008     0.0008 0.0000   0.0000   0.0000 
+5 BATK              IGNF               215.2396     0.0008 0.0020   0.0000   0.0000 
+5 BATK              MRVC               277.5966     0.0008 0.0000   0.0000   0.0000 
+5 BATK              TUBE               303.3372     0.0008 0.0100   0.0000   0.0000 
+5 BATK              CHVC               311.2789     0.0008 0.0100   0.0000   0.0000 
+
+
+* Station n°5 S53
+* Temperature : 10.0 °C - Pression : 750.0 mmHg - Correction meteo : 1.7 ppm
+* Date/heure debut :  
+* Date/heure fin   :  
+* Numero de cycle : 0
+
+7 BATK              IGNF                 0.1058     0.0008 0.0020   0.0000   0.0000  
+5 BATK              MRVC                62.4630     0.0008 0.0000   0.0000   0.0000 
+5 BATK              CHVC                96.1457     0.0008 0.0100   0.0000   0.0000 
+5 BATK              LED                184.8666     0.0008 0.0000   0.0000   0.0000 
+5 BATK              VITRY              184.9108     0.0008 0.0100   0.0000   0.0000 
+5 BATK              EGLV               328.2040     0.0008 0.0000   0.0000   0.0000 
+5 BATK              GLOB               364.5654     0.0008 0.0000   0.0000   0.0000 
+ 
+
+* Station n°6 S54
+* Temperature : 10.0 °C - Pression : 750.0 mmHg - Correction meteo : 1.7 ppm
+* Date/heure debut :  
+* Date/heure fin   :  
+* Numero de cycle : 0
+
+7 BATK              LED                  0.0000     0.0008 0.0000   0.0000   0.0000 
+5 BATK              VITRY                0.0452     0.0008 0.0100   0.0000   0.0000 
+5 BATK              EGLV               143.3378     0.0008 0.0000   0.0000   0.0000 
+5 BATK              GLOB               179.7014     0.0008 0.0000   0.0000   0.0000 
+5 BATK              IGNF               215.2396     0.0008 0.0020   0.0000   0.0000 
+5 BATK              TUBE               303.3362     0.0008 0.0100   0.0000   0.0000 
+ 
