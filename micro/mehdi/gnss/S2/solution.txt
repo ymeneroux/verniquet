@@ -18,3 +18,11 @@ Solutions sans GLONASS
 
 
 Solution Bernese :   E =  657733.682 m  N = 6860673.308 m  HELL 114.075 m
+
+
+
+RTKlib
+       
+657733.687 6860673.293 114.075
+       
+      
