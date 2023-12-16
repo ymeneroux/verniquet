@@ -1,0 +1,1627 @@
+data=
+{
+	"COMP3D_COMMIT" : "v5.21rc3-341-g2e091c2b-dirty",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2023 IGN France",
+	"COMP3D_LICENSE" : "Licensed for IGN usage only",
+	"COMP3D_OPTIONS" : "QT GUI SIM RES AUTO ",
+	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"all_data_files" : 
+	{
+		"0" : "batk.cor",
+		"1" : "batk.obs"
+	},
+	"all_forbidden_point_names" : null,
+	"all_point_names" : 
+	[
+		"CHVC",
+		"VITRY",
+		"IGNF",
+		"BATK",
+		"TUBE"
+	],
+	"all_uninitializable_point_names" : 
+	[
+		"MRVC",
+		"LED",
+		"EGLV",
+		"GLOBE",
+		"GLOB"
+	],
+	"computation" : 
+	{
+		"Monte_Carlo_done" : false,
+		"all_parameters_names" : 
+		[
+			"TUBE_x",
+			"TUBE_y",
+			"IGNF_x",
+			"IGNF_y",
+			"CHVC_x",
+			"CHVC_y",
+			"BATK_x",
+			"BATK_y",
+			"BATK_G0_1",
+			"BATK_G0_2",
+			"BATK_G0_3",
+			"BATK_G0_4",
+			"VITRY_x",
+			"VITRY_y"
+		],
+		"all_sigma0" : 
+		[
+			2.41279351452047,
+			1.0275226707847605,
+			1.0275226701615996
+		],
+		"biggest_ellips" : 0.020429270268754955,
+		"chi2_test" : 
+		{
+			"DOF" : 9,
+			"confidence" : 0.98999999999999999,
+			"max" : 2.2776128937503874,
+			"min" : 0.61767960319899406
+		},
+		"compensation_done" : true,
+		"computation_duration" : "00:00:00.000583",
+		"computation_start" : "2023-Dec-14 13:32:08.266470",
+		"internal_constraints" : false,
+		"internal_constraints_obs" : [],
+		"interrupted" : false,
+		"inverted_matrix" : true,
+		"kernel" : null,
+		"messages_computation" : "",
+		"messages_read_config" : "",
+		"messages_read_data" : "Lecture du COR...<br/>\nLecture du fichier batk.cor...<br/>\nLecture du OBS...<br/>\nLecture du fichier batk.obs...<br/>\nMise en place des points...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;5 points non initialis\u00e9s.</font><br/>\nLecture des donn\u00e9es termin\u00e9e.<br/>\nInitialisation termin\u00e9e avec 5 points non initialis\u00e9s.<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point MRVC.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point LED.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point EGLV.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point GLOBE.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Retrait du point GLOB.</font><br/>\nD\u00e9viation de la verticale non utilis\u00e9e.<br/>\n",
+		"messages_set_least_squares" : "",
+		"nbr_active_obs" : 23,
+		"nbr_all_obs" : 23,
+		"nbr_iterations" : 2,
+		"nbr_parameters" : 14,
+		"projection" : 
+		{
+			"center_cartgeocentric" : 
+			[
+				4201614.8839900987,
+				177850.72947416885,
+				4779277.446265555
+			],
+			"center_geographic" : 
+			[
+				2.4238339170178511,
+				48.845614233853382,
+				0.0
+			],
+			"center_latitude" : 48.845614233853382,
+			"earth_model_radius" : 6380969.1091525536,
+			"geocent_def" : "+proj=geocent",
+			"input_proj_EPSG" : 2154,
+			"input_proj_def" : "IGNF:LAMB93",
+			"input_proj_name" : "RGF93 / Lambert-93",
+			"is_georef" : true,
+			"latlong_def" : "+proj=latlong",
+			"local_center_stereo" : 
+			[
+				8.754200142476774e-11,
+				1.0626448236597673e-09,
+				0.0
+			],
+			"local_scale" : 1.0,
+			"rot_global2geocentric" : 
+			[
+				[
+					-0.042291265534327036,
+					-0.75226542895197313,
+					0.65750146255594666
+				],
+				[
+					0.99910532420736553,
+					-0.0318427459420677,
+					0.027831469083824674
+				],
+				[
+					0.0,
+					0.65809023996301053,
+					0.75293906530703214
+				]
+			],
+			"stereo_def" : "+proj=sterea +lat_0=48.8456142338534 +lon_0=2.42383391701785 +k_0=1 +x_0=0 +y_0=0"
+		},
+		"rank_deficiency" : 0,
+		"sigma_0_final" : 1.0275226701615996,
+		"sigma_0_init" : 2.41279351452047,
+		"solver_name" : "N5Eigen8SparseQRINS_12SparseMatrixIdLi0EiEENS_15NaturalOrderingIiEEEE",
+		"unit_name" : "g",
+		"use_vertical_deflection" : false
+	},
+	"config" : 
+	{
+		"center_latitude" : 48.799999999999997,
+		"clean_outputs" : false,
+		"compute_type" : 0,
+		"convergence_criterion" : 0.001,
+		"coord_cov_file" : "",
+		"description" : "",
+		"display_map" : true,
+		"files_unit" : 1,
+		"force_iterations" : 0,
+		"internal_constraints" : false,
+		"invert_matrix" : true,
+		"lang" : "fr",
+		"local_center" : 
+		[
+			657716.0,
+			6860773.0,
+			0.0
+		],
+		"max_iterations" : 100,
+		"misc_metadata" : null,
+		"name" : "batk",
+		"nb_digits" : 4,
+		"proj_def" : "IGNF:LAMB93",
+		"refraction" : 0.12,
+		"root_COR_file" : "batk.cor",
+		"root_OBS_file" : "batk.obs",
+		"use_ellips_height" : true,
+		"use_proj" : true
+	},
+	"config_file" : "/home/YMeneroux/Bureau/KitYann/Recherches/Verniquet/verniquet/micro/Reseau/BATK/batk.comp",
+	"other_stations" : null,
+	"points" : 
+	{
+		"BATK" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1.0766106726443438,
+				-96.942999736417434,
+				-0.00073756881448616696
+			],
+			"coord_compensated_georef" : 
+			[
+				657716.36918045534,
+				6860676.0629409878,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4238485849470743,
+				48.844742497102771,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4238485419045226,
+				48.84474247044556,
+				0.0
+			],
+			"coord_read" : 
+			[
+				657716.36600000004,
+				6860676.0599999996,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.0047719418414593822,
+						21.593873521710027,
+						0.0
+					],
+					[
+						0.0037124956936340648,
+						121.5938735217099,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					1.3996705054199344e-05,
+					2.6713548865927731e-06,
+					0.0,
+					2.0625339809111137e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0038441853382242042,
+					0.004666507505501764,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 15,
+			"number" : 3,
+			"params" : 
+			{
+				"BATK_x" : 
+				{
+					"rank" : 6,
+					"sigma" : 0.0038441853382242042,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.07661067260661
+				},
+				"BATK_y" : 
+				{
+					"rank" : 7,
+					"sigma" : 0.004666507505501764,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -96.942998217092239
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0031804553000256419,
+				0.0029409881681203842,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.0050000000000000001,
+				0.0050000000000000001,
+				0.0080000000000000002
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 1.07661067260661,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.030900285221868013,
+							"normalized_residual" : 0.6318555496227507,
+							"number" : 6,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 44.013179783202631,
+							"obs_zen" : 0.0,
+							"original_value" : 1.0734513948584963,
+							"rank" : 6,
+							"residual" : 0.0031592777481137535,
+							"residual_std" : 0.84445187261016486,
+							"sigma_a_posteriori" : 0.0037412170552106896,
+							"sigma_abs" : 0.0050000000000000001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0033171214849324793,
+							"sigma_total" : 0.0050000000000000001,
+							"standardized_residual" : 0.9524154488957649,
+							"target_height" : 0.0,
+							"to" : "BATK",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -96.942998217092239,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.049006276194427191,
+							"normalized_residual" : 0.59319740147998345,
+							"number" : 7,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 17.498640763555461,
+							"obs_zen" : 0.0,
+							"original_value" : -96.945964204099639,
+							"rank" : 7,
+							"residual" : 0.0029659870073999173,
+							"residual_std" : 0.6530834646499688,
+							"sigma_a_posteriori" : 0.0045415129427439855,
+							"sigma_abs" : 0.0050000000000000001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0020915688348435648,
+							"sigma_total" : 0.0050000000000000001,
+							"standardized_residual" : 1.4180680826704675,
+							"target_height" : 0.0,
+							"to" : "BATK",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.10602568294051655,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 12,
+							"nabla" : 0.010203175828349937,
+							"normalized_residual" : 0.062009049297431826,
+							"number" : 10,
+							"obs_azim" : 0.33012398840402091,
+							"obs_length" : 103.78132913366693,
+							"obs_redondancy" : 66.33450487490127,
+							"obs_zen" : 1.5708034830379303,
+							"original_value" : 0.10589999999999999,
+							"rank" : 10,
+							"residual" : 0.00012568294048995732,
+							"residual_std" : 0.10687166361658916,
+							"sigma_a_posteriori" : 0.0011760174421992266,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.002,
+							"sigma_residual" : 0.0016507868700613507,
+							"sigma_total" : 0.0020268483699388473,
+							"standardized_residual" : 0.076135170911122152,
+							"target_height" : 0.0,
+							"to" : "IGNF",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 96.142916131417721,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 14,
+							"nabla" : 0.0075096814310980069,
+							"normalized_residual" : -0.81358017466382648,
+							"number" : 12,
+							"obs_azim" : 1.8386679359367399,
+							"obs_length" : 818.22684301241031,
+							"obs_redondancy" : 74.227547826917075,
+							"obs_zen" : 1.5708527476622103,
+							"original_value" : 96.144199999999998,
+							"rank" : 11,
+							"residual" : -0.0012838685823070831,
+							"residual_std" : -1.6025902122103739,
+							"sigma_a_posteriori" : 0.00080112094316132519,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.001359573750223752,
+							"sigma_total" : 0.0015780480182393591,
+							"standardized_residual" : -0.94431698324257152,
+							"target_height" : 0.0,
+							"to" : "CHVC",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 184.91120001622579,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 16,
+							"nabla" : 0.0066643521832697337,
+							"normalized_residual" : 0.44044838355314042,
+							"number" : 14,
+							"obs_azim" : -3.0501484286214153,
+							"obs_length" : 5883.6084194997111,
+							"obs_redondancy" : 31.218857753191209,
+							"obs_zen" : 1.5712020312892796,
+							"original_value" : 184.91079999999999,
+							"rank" : 12,
+							"residual" : 0.00040001622574652526,
+							"residual_std" : 0.53108046706739198,
+							"sigma_a_posteriori" : 0.00075321208470611068,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.00050744747030894409,
+							"sigma_total" : 0.00090820227904926112,
+							"standardized_residual" : 0.7882909052694409,
+							"target_height" : 0.0,
+							"to" : "VITRY",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"BATK_G0_1" : 
+						{
+							"rank" : 8,
+							"sigma" : 1.2224180670759163e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : 0.32845854087093207
+						}
+					},
+					"type" : "hz_unknown"
+				},
+				{
+					"nbr_active_obs" : 4,
+					"num" : 2,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.044722995556755504,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 28,
+							"nabla" : 0.0060949056280006327,
+							"normalized_residual" : 0.906180897933483,
+							"number" : 18,
+							"obs_azim" : -3.0501484286214153,
+							"obs_length" : 5883.6084194997111,
+							"obs_redondancy" : 37.324922721001428,
+							"obs_zen" : 1.5712020312892796,
+							"original_value" : 0.043900000000000002,
+							"rank" : 13,
+							"residual" : 0.00082299555673409511,
+							"residual_std" : 1.1446361667230429,
+							"sigma_a_posteriori" : 0.00071900188082492042,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.00055485824769980563,
+							"sigma_total" : 0.00090820227904926112,
+							"standardized_residual" : 1.4832537141618909,
+							"target_height" : 0.0,
+							"to" : "VITRY",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 215.23954866227146,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 31,
+							"nabla" : 0.010123301842515899,
+							"normalized_residual" : -0.025328845185470256,
+							"number" : 21,
+							"obs_azim" : 0.33012398840402091,
+							"obs_length" : 103.78132913366693,
+							"obs_redondancy" : 67.385407806654783,
+							"obs_zen" : 1.5708034830379303,
+							"original_value" : 215.2396,
+							"rank" : 14,
+							"residual" : -5.1337728576603813e-05,
+							"residual_std" : -0.04435161240334691,
+							"sigma_a_posteriori" : 0.0011575166221629795,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.002,
+							"sigma_residual" : 0.0016638117634336432,
+							"sigma_total" : 0.0020268483699388473,
+							"standardized_residual" : -0.030855490810244707,
+							"target_height" : 0.0,
+							"to" : "IGNF",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 303.33720944446361,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 33,
+							"nabla" : 0.0097214426374194925,
+							"normalized_residual" : 0.0052674539606127647,
+							"number" : 23,
+							"obs_azim" : 1.7139588079629227,
+							"obs_length" : 641.11749971267056,
+							"obs_redondancy" : 57.182004207350175,
+							"obs_zen" : 1.5708405350793093,
+							"original_value" : 303.3372,
+							"rank" : 15,
+							"residual" : 9.4444635792516968e-06,
+							"residual_std" : 0.0080498461628875761,
+							"sigma_a_posteriori" : 0.0011732477103467845,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.0013558331068156948,
+							"sigma_total" : 0.0017929845519054177,
+							"standardized_residual" : 0.006965800976370117,
+							"target_height" : 0.0,
+							"to" : "TUBE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 311.27643911074864,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 34,
+							"nabla" : 0.0073901971732280866,
+							"normalized_residual" : -1.5594514380590634,
+							"number" : 24,
+							"obs_azim" : 1.8386679359367399,
+							"obs_length" : 818.22684301241031,
+							"obs_redondancy" : 76.647164021637266,
+							"obs_zen" : 1.5708527476622103,
+							"original_value" : 311.27890000000002,
+							"rank" : 16,
+							"residual" : -0.0024608892513696239,
+							"residual_std" : -3.2270228508461614,
+							"sigma_a_posteriori" : 0.00076258810833160077,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.0013815552558259837,
+							"sigma_total" : 0.0015780480182393591,
+							"standardized_residual" : -1.781245622273967,
+							"target_height" : 0.0,
+							"to" : "CHVC",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"BATK_G0_2" : 
+						{
+							"rank" : 9,
+							"sigma" : 1.167129233953402e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -3.0508509357928535
+						}
+					},
+					"type" : "hz_unknown"
+				},
+				{
+					"nbr_active_obs" : 3,
+					"num" : 3,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.10633688333829351,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 43,
+							"nabla" : 0.010203175828349937,
+							"normalized_residual" : 0.2648857932489091,
+							"number" : 25,
+							"obs_azim" : 0.33012398840402091,
+							"obs_length" : 103.78132913366693,
+							"obs_redondancy" : 66.33450487490127,
+							"obs_zen" : 1.5708034830379303,
+							"original_value" : 0.10580000000000001,
+							"rank" : 17,
+							"residual" : 0.0005368833382665099,
+							"residual_std" : 0.45652667979354472,
+							"sigma_a_posteriori" : 0.0011760174421992268,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.002,
+							"sigma_residual" : 0.0016507868700613507,
+							"sigma_total" : 0.0020268483699388473,
+							"standardized_residual" : 0.32522874273076624,
+							"target_height" : 0.0,
+							"to" : "IGNF",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 96.143227331815496,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 45,
+							"nabla" : 0.0075096814310980069,
+							"normalized_residual" : -1.5669156806032263,
+							"number" : 27,
+							"obs_azim" : 1.8386679359367399,
+							"obs_length" : 818.22684301241031,
+							"obs_redondancy" : 74.227547826917075,
+							"obs_zen" : 1.5708527476622103,
+							"original_value" : 96.145700000000005,
+							"rank" : 18,
+							"residual" : -0.0024726681845240977,
+							"residual_std" : -3.0865104771404859,
+							"sigma_a_posteriori" : 0.00080112094316132519,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.001359573750223752,
+							"sigma_total" : 0.0015780480182393591,
+							"standardized_residual" : -1.8187083886528097,
+							"target_height" : 0.0,
+							"to" : "CHVC",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 184.91151121662355,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 47,
+							"nabla" : 0.0066643521832697337,
+							"normalized_residual" : 0.78310376435963924,
+							"number" : 29,
+							"obs_azim" : -3.0501484286214153,
+							"obs_length" : 5883.6084194997111,
+							"obs_redondancy" : 31.218857753191209,
+							"obs_zen" : 1.5712020312892796,
+							"original_value" : 184.91079999999999,
+							"rank" : 19,
+							"residual" : 0.00071121662352347989,
+							"residual_std" : 0.94424483882382659,
+							"sigma_a_posteriori" : 0.00075321208470611068,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.00050744747030894409,
+							"sigma_total" : 0.00090820227904926112,
+							"standardized_residual" : 1.4015571367228949,
+							"target_height" : 0.0,
+							"to" : "VITRY",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"BATK_G0_3" : 
+						{
+							"rank" : 10,
+							"sigma" : 1.2224180670759161e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : 0.32845365254651482
+						}
+					},
+					"type" : "hz_unknown"
+				},
+				{
+					"nbr_active_obs" : 3,
+					"num" : 4,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.04487965969653257,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 59,
+							"nabla" : 0.0077352082815780009,
+							"normalized_residual" : -0.35271911431333725,
+							"number" : 33,
+							"obs_azim" : -3.0501484286214153,
+							"obs_length" : 5883.6084194997111,
+							"obs_redondancy" : 23.173352281242622,
+							"obs_zen" : 1.5712020312892796,
+							"original_value" : 0.045199999999999997,
+							"rank" : 20,
+							"residual" : -0.00032034030348360978,
+							"residual_std" : -0.40241397418536234,
+							"sigma_a_posteriori" : 0.0007960466684391349,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.00043719684506778625,
+							"sigma_total" : 0.00090820227904926112,
+							"standardized_residual" : -0.73271412430696248,
+							"target_height" : 0.0,
+							"to" : "VITRY",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 215.23970532641124,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 62,
+							"nabla" : 0.010246878741670216,
+							"normalized_residual" : 0.051965609644318254,
+							"number" : 36,
+							"obs_azim" : 0.33012398840402091,
+							"obs_length" : 103.78132913366693,
+							"obs_redondancy" : 65.769878503909183,
+							"obs_zen" : 1.5708034830379303,
+							"original_value" : 215.2396,
+							"rank" : 21,
+							"residual" : 0.0001053264112004649,
+							"residual_std" : 0.088820212187458281,
+							"sigma_a_posteriori" : 0.0011858383199779988,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.002,
+							"sigma_residual" : 0.0016437462680096097,
+							"sigma_total" : 0.0020268483699388473,
+							"standardized_residual" : 0.064077049633702435,
+							"target_height" : 0.0,
+							"to" : "IGNF",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 303.33736610860336,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "BATK",
+							"instrument_height" : 0.0,
+							"line" : 63,
+							"nabla" : 0.0098650941938965894,
+							"normalized_residual" : 0.65037292268528923,
+							"number" : 37,
+							"obs_azim" : 1.7139588079629227,
+							"obs_length" : 641.11749971267056,
+							"obs_redondancy" : 55.52880613585436,
+							"obs_zen" : 1.5708405350793093,
+							"original_value" : 303.33620000000002,
+							"rank" : 22,
+							"residual" : 0.0011661086033523001,
+							"residual_std" : 0.97526594044735859,
+							"sigma_a_posteriori" : 0.00119568269021822,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.0013360900073288444,
+							"sigma_total" : 0.0017929845519054177,
+							"standardized_residual" : 0.87277698130803572,
+							"target_height" : 0.0,
+							"to" : "TUBE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"BATK_G0_4" : 
+						{
+							"rank" : 11,
+							"sigma" : 1.2926168112808301e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -3.0508533966674065
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
+		"CHVC" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				790.12255737929536,
+				-313.51091411729283,
+				-0.056560147788786708
+			],
+			"coord_compensated_georef" : 
+			[
+				658503.72143521381,
+				6860453.7673264053,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.434598265408543,
+				48.84279455890141,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4345982730379774,
+				48.842794564995472,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658503.72199999995,
+				6860453.7680000002,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.0033845538103975561,
+						100.4273903567277,
+						0.0
+					],
+					[
+						0.0019361340660401123,
+						0.42739035672768566,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					1.0849428278107188e-05,
+					-4.9001676751361688e-08,
+					0.0,
+					3.5508168001646784e-06,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0033845024986554595,
+					0.0019362237612818877,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 5,
+			"number" : 0,
+			"params" : 
+			{
+				"CHVC_x" : 
+				{
+					"rank" : 4,
+					"sigma" : 0.0033845024986554595,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 790.12255737322062
+				},
+				"CHVC_y" : 
+				{
+					"rank" : 5,
+					"sigma" : 0.0019362237612818877,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -313.51091259673575
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.00056478613987565041,
+				-0.0006735948845744133,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.0033,
+				0.0019,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 790.12255737322062,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "CHVC",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : -0.16967229354039856,
+							"number" : 0,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 0.37255942968604794,
+							"obs_zen" : 0.0,
+							"original_value" : 790.1231172917893,
+							"rank" : 0,
+							"residual" : -0.00055991856868331524,
+							"residual_std" : -0.16998924450346792,
+							"sigma_a_posteriori" : 0.0032938470331979881,
+							"sigma_abs" : 0.0033,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0033,
+							"target_height" : 0.0,
+							"to" : "CHVC",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -313.51091259673575,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "CHVC",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"nabla" : 0.060840368729865951,
+							"normalized_residual" : -0.35592522713637953,
+							"number" : 1,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 1.6394238181529519,
+							"obs_zen" : 0.0,
+							"original_value" : -313.51023633880419,
+							"probable_error" : 0.041249732013837852,
+							"rank" : 1,
+							"residual" : -0.00067625793155912106,
+							"residual_std" : -0.35887915924218672,
+							"sigma_a_posteriori" : 0.0018843611119328159,
+							"sigma_abs" : 0.0019,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00024327597463646468,
+							"sigma_total" : 0.0019,
+							"standardized_residual" : -2.779797440210344,
+							"target_height" : 0.0,
+							"to" : "CHVC",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"IGNF" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				34.718399968676771,
+				1.2343616536372948,
+				-9.4432831069912737e-05
+			],
+			"coord_compensated_georef" : 
+			[
+				657750.72247621138,
+				6860773.9808839122,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4243069347928579,
+				48.845625332584277,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4243069692688559,
+				48.845625324800679,
+				0.0
+			],
+			"coord_read" : 
+			[
+				657750.72499999998,
+				6860773.9800000004,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.0051376133508079982,
+						21.016345834687872,
+						0.0
+					],
+					[
+						0.0037530533163049541,
+						121.01634583468783,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					1.4566078879059377e-05,
+					3.5753229757219706e-06,
+					0.0,
+					2.3774867642513581e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0039215950090001643,
+					0.005010146976168783,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 2,
+			"params" : 
+			{
+				"IGNF_x" : 
+				{
+					"rank" : 2,
+					"sigma" : 0.0039215950090001643,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 34.718399968592074
+				},
+				"IGNF_y" : 
+				{
+					"rank" : 3,
+					"sigma" : 0.005010146976168783,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.2343631751984276
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.0025237886002287269,
+				0.00088391173630952835,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.0050000000000000001,
+				0.0050000000000000001,
+				0.0080000000000000002
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 34.718399968592074,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "IGNF",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"nabla" : 0.031732193272520852,
+							"normalized_residual" : -0.50609263146128569,
+							"number" : 4,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 41.735684483762505,
+							"obs_zen" : 0.0,
+							"original_value" : 34.72093043174938,
+							"rank" : 4,
+							"residual" : -0.0025304631573064285,
+							"residual_std" : -0.66302314598364587,
+							"sigma_a_posteriori" : 0.0038165532721369652,
+							"sigma_abs" : 0.0050000000000000001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0032301580643895162,
+							"sigma_total" : 0.0050000000000000001,
+							"standardized_residual" : -0.78338679001600919,
+							"target_height" : 0.0,
+							"to" : "IGNF",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 1.2343631751984276,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "IGNF",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"nabla" : 0.092604557363959034,
+							"normalized_residual" : 0.17341942523168008,
+							"number" : 5,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 4.9005294299456885,
+							"obs_zen" : 0.0,
+							"original_value" : 1.2334960780722692,
+							"rank" : 5,
+							"residual" : 0.0008670971261584004,
+							"residual_std" : 0.17783150047247517,
+							"sigma_a_posteriori" : 0.0048759478711850046,
+							"sigma_abs" : 0.0050000000000000001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0011068569724614033,
+							"sigma_total" : 0.0050000000000000001,
+							"standardized_residual" : 0.78338678594594713,
+							"target_height" : 0.0,
+							"to" : "IGNF",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"TUBE" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				635.63531378490109,
+				-188.41376606722019,
+				-0.034398807971157908
+			],
+			"coord_compensated_georef" : 
+			[
+				658350.16964478593,
+				6860579.9743259121,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4324937801640716,
+				48.843919642749597,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4324937521773746,
+				48.843919529065126,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658350.16749999998,
+				6860579.9616999999,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.020429270268754955,
+						108.53955339009794,
+						0.0
+					],
+					[
+						0.011851500295223916,
+						8.5395533900978844,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					0.0003906057052401191,
+					-3.4759086829355314e-05,
+					0.0,
+					0.00013772508062780811,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.020307698343553712,
+					0.012058628900034755,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 4,
+			"number" : 4,
+			"params" : 
+			{
+				"TUBE_x" : 
+				{
+					"rank" : 0,
+					"sigma" : 0.020307698343553712,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 635.63531378163884
+				},
+				"TUBE_y" : 
+				{
+					"rank" : 1,
+					"sigma" : 0.012058628900034755,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -188.41376454265745
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0021447859471663833,
+				0.012625912204384804,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.019906,
+				0.018756999999999999,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 635.63531378163884,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "TUBE",
+							"instrument_height" : 0.0,
+							"line" : 6,
+							"nabla" : 0.68389873332908557,
+							"normalized_residual" : 0.10312413567180086,
+							"number" : 8,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 1.4241381291731803,
+							"obs_zen" : 0.0,
+							"original_value" : 635.63326099259416,
+							"rank" : 8,
+							"residual" : 0.0020527890446828678,
+							"residual_std" : 0.1038663882428888,
+							"sigma_a_posteriori" : 0.019763747246919525,
+							"sigma_abs" : 0.019906,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0023755274698224172,
+							"sigma_total" : 0.019906,
+							"standardized_residual" : 0.86414031020922033,
+							"target_height" : 0.0,
+							"to" : "TUBE",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -188.41376454265745,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "TUBE",
+							"instrument_height" : 0.0,
+							"line" : 6,
+							"nabla" : 0.098583063978472343,
+							"normalized_residual" : 0.67410754487535773,
+							"number" : 9,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 60.854100349231224,
+							"obs_zen" : 0.0,
+							"original_value" : -188.42640877787667,
+							"rank" : 9,
+							"residual" : 0.012644235219227085,
+							"residual_std" : 1.0774225197836635,
+							"sigma_a_posteriori" : 0.011735632945342493,
+							"sigma_abs" : 0.018756999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.014632155288001554,
+							"sigma_total" : 0.018756999999999999,
+							"standardized_residual" : 0.86414031086694554,
+							"target_height" : 0.0,
+							"to" : "TUBE",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"VITRY" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-536.19591051045677,
+				-5955.9692580037645,
+				-2.8061966477748683
+			],
+			"coord_compensated_georef" : 
+			[
+				657136.4479820308,
+				6854821.9008095525,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4165363435288789,
+				48.792056119159675,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4165363165310718,
+				48.792056120740753,
+				0.0
+			],
+			"coord_read" : 
+			[
+				657136.446,
+				6854821.9009999996,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.0099181072559422351,
+						98.235496629328054,
+						0.0
+					],
+					[
+						0.009760957713268131,
+						198.23549662932805,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					9.3167467331951536e-05,
+					8.1143676421088935e-08,
+					0.0,
+					9.024286280426569e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0099179875171340071,
+					0.009761079378355483,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 1,
+			"params" : 
+			{
+				"VITRY_x" : 
+				{
+					"rank" : 12,
+					"sigma" : 0.0099179875171340071,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -536.19591050945144
+				},
+				"VITRY_y" : 
+				{
+					"rank" : 13,
+					"sigma" : 0.009761079378355483,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -5955.9692590010263
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0019820308079943061,
+				-0.00019044708460569382,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.0097000000000000003,
+				0.0094999999999999998,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : -536.19591050945144,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "VITRY",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.20450226280754766,
+							"number" : 2,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 0.98047897550053165,
+							"obs_zen" : 0.0,
+							"original_value" : -536.19789418140067,
+							"rank" : 2,
+							"residual" : 0.0019836719492332122,
+							"residual_std" : 0.20551224676170712,
+							"sigma_a_posteriori" : 0.0096523296323712208,
+							"sigma_abs" : 0.0097000000000000003,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0097000000000000003,
+							"target_height" : 0.0,
+							"to" : "VITRY",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -5955.9692590010263,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "VITRY",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.01836619422216532,
+							"number" : 3,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 0.0079082501211025225,
+							"obs_zen" : 0.0,
+							"original_value" : -5955.9690845221812,
+							"rank" : 3,
+							"residual" : -0.00017447884511057055,
+							"residual_std" : -0.018366920487530174,
+							"sigma_a_posteriori" : 0.009499624350692279,
+							"sigma_abs" : 0.0094999999999999998,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0094999999999999998,
+							"target_height" : 0.0,
+							"to" : "VITRY",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		}
+	}
+}

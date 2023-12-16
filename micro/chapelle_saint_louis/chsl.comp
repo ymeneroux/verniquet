@@ -233,8 +233,8 @@ data=
 			"min" : 0.82267391466856377
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.008980",
-		"computation_start" : "2023-Dec-08 14:58:30.231068",
+		"computation_duration" : "00:00:00.009371",
+		"computation_start" : "2023-Dec-14 13:00:09.343806",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
@@ -325,7 +325,14 @@ data=
 			0.0
 		],
 		"max_iterations" : 100,
-		"misc_metadata" : null,
+		"misc_metadata" : 
+		{
+			"exportSimple" : 
+			{
+				"S1" : true,
+				"S2" : true
+			}
+		},
 		"name" : "chsl",
 		"nb_digits" : 4,
 		"proj_def" : "IGNF:LAMB93",
