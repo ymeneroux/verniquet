@@ -2,7 +2,7 @@ import os
 import sys
 import jinja2
 import datetime
-import pdfkit
+#import pdfkit
 from pyproj import Transformer
 from jinja2 import Environment, FileSystemLoader
 
@@ -31,7 +31,7 @@ def makeHtmlFile(point):
 	filename_pdf = "../out/pdf/" + filename + ".pdf"
 	with open(filename_htm, mode="w", encoding="utf-8") as message:
 		message.write(content)
-	pdfkit.from_file(filename_htm, filename_pdf, options)
+	#pdfkit.from_file(filename_htm, filename_pdf, options)
 	print(f"... wrote {filename_htm}")
 
 
@@ -55,7 +55,7 @@ print("------------------------------------------------------------------")
 print("INPUT FILE COMP: ..."+input_file_comp[-42:])
 print("------------------------------------------------------------------")
 
-PT_NAME = []; PT_X = []; PT_Y = []; PT_Z = [];
+PT_NAME = []; PT_X = []; PT_Y = []; PT_Z = []; PT_CODE = []
 PT_STD_X = []; PT_STD_Y = []; PT_STD_Z = []; 
 t2154to4326 = Transformer.from_crs("EPSG:2154", "EPSG:4326")
 t4326to4978 = Transformer.from_crs("EPSG:4326", "EPSG:4978")
