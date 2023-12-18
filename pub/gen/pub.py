@@ -2,7 +2,7 @@ import os
 import sys
 import jinja2
 import datetime
-#import pdfkit
+import pdfkit
 from pyproj import Transformer
 from jinja2 import Environment, FileSystemLoader
 
@@ -31,7 +31,7 @@ def makeHtmlFile(point):
 	filename_pdf = "../out/pdf/" + filename + ".pdf"
 	with open(filename_htm, mode="w", encoding="utf-8") as message:
 		message.write(content)
-	#pdfkit.from_file(filename_htm, filename_pdf, options)
+	pdfkit.from_file(filename_htm, filename_pdf, options)
 	print(f"... wrote {filename_htm}")
 
 

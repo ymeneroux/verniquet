@@ -7,3 +7,4 @@ VTRY_CHN   #  Cheminée Nord de Vitry-sur-Seine :  axe au sommet
 VTRY_CHS   #  Cheminée Sud de Vitry-sur-Seine :  axe au sommet 
 VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  led Est, étage supérieur
 ESVC       #  Esplanade de Vincennes : clou d'arpentage
+TUBE       #  Cheminée supérieure 20 av. Franklin Roosevelt, Vincennes : axe au sommet

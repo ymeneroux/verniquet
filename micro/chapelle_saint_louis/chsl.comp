@@ -233,8 +233,8 @@ data=
 			"min" : 0.82267391466856377
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.009371",
-		"computation_start" : "2023-Dec-14 13:00:09.343806",
+		"computation_duration" : "00:00:00.013115",
+		"computation_start" : "2023-Dec-18 15:40:39.942574",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
