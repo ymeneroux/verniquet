@@ -277,8 +277,8 @@ data=
 			"min" : 0.84906392692472488
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.012484",
-		"computation_start" : "2023-Dec-20 17:11:11.857652",
+		"computation_duration" : "00:00:00.016998",
+		"computation_start" : "2023-Dec-20 17:18:27.976752",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
@@ -379,7 +379,7 @@ data=
 		"use_ellips_height" : true,
 		"use_proj" : true
 	},
-	"config_file" : "/home/YMeneroux/Bureau/KitYann/Recherches/Verniquet/verniquet/micro/common/com.comp",
+	"config_file" : "/home/YMeneroux/Bureau/KitYann/Recherches/Verniquet/verniquet/micro/preparation/common/com.comp",
 	"other_stations" : null,
 	"points" : 
 	{
