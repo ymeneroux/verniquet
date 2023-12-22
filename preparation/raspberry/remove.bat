@@ -1,0 +1,1 @@
+ssh pi@192.168.1.20 "sudo rm -f /home/pi/*.ubx"
