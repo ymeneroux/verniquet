@@ -63,3 +63,24 @@ https://raw.githack.com/ymeneroux/verniquet/main/preparation/web/index.html#
 * carnet/stylo (ou ordinateur portable)
 * 1 paire de jumelles
 * 1 appareil photo
+
+
+# Fiches géodésiques :
+
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ANFN.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/BAT4.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_E.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_O.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHVC.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/EGLM.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ESVC.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMBM.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJG.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJR.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJR2.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/MTYA.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/TUBE.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/SSLP.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_CHN.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_CHS.html
+https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_LED.html

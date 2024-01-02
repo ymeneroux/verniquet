@@ -5,7 +5,7 @@ CHSL_E     #  Sainte Chapelle du Château de Vincennes : sommet doré (est)
 CHVC       #  Château de Vincennes : coin supérieur gauche fenêtre nord première étage donjon
 VTRY_CHN   #  Cheminée Nord de Vitry-sur-Seine :  axe au sommet 
 VTRY_CHS   #  Cheminée Sud de Vitry-sur-Seine :  axe au sommet 
-VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  led Est, étage supérieur
+VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  signal lumineux Est, étage supérieur
 ESVC       #  Esplanade de Vincennes : clou d'arpentage
 TUBE       #  Cheminée supérieure 20 av. Franklin Roosevelt, Vincennes : axe au sommet
 ANFN       #  Antenne du Fort Neuf de Vincennes, signal lumineux du pillier Nord
