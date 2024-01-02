@@ -8,3 +8,10 @@ VTRY_CHS   #  Cheminée Sud de Vitry-sur-Seine :  axe au sommet
 VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  led Est, étage supérieur
 ESVC       #  Esplanade de Vincennes : clou d'arpentage
 TUBE       #  Cheminée supérieure 20 av. Franklin Roosevelt, Vincennes : axe au sommet
+ANFN       #  Antenne du Fort Neuf de Vincennes, signal lumineux du pillier Nord
+IMJR       #  Immeuble 40 rue de la Jarry, Vincennes - base de l'antenne Yagi
+IMJR2      #  Immeuble 40 rue de la Jarry, Vincennes - haut de l'arête Nord-Est - cheminée annexe
+IMBM       #  Immeuble 124 rue de Lagny, Paris XII - section supérieure de l'arête Nord-Est
+EGLM       #  Eglise Saint-André du Bas Montreuil - axe au sommet de la croix
+MTYA       #  44 rue Diderot, Vincennes - Axe cheminée annexe Nord
+IMJG       #  12 rue Joseph Gaillard, Vincennes - arête Nord-Ouest de la section supérieure
