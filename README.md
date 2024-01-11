@@ -67,7 +67,7 @@ https://raw.githack.com/ymeneroux/verniquet/main/preparation/web/index.html#
 
 # Fiches géodésiques :
 
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ANFN.html
+* [ANFN] https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ANFN.html
 * https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/BAT4.html
 * https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_E.html
 * https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_O.html
