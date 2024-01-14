@@ -25,10 +25,10 @@ var solution;
 // ----------------------------------------------------------
 // Fonction de gestion des passages entre cellules
 // ----------------------------------------------------------
-document.onkeypress = function (e) {
+document.onkeyup = function (e) {
     e = e || window.event;
     
-    if (e.keyCode == 13){
+    if ((e.keyCode == 13) || (document.activeElement.value.length >= document.activeElement.maxLength)){
 		
 		var ncb = document.getElementById("frm1000").elements[0].value;
 		var nth = document.getElementById("frm1000").elements[1].value;
@@ -155,15 +155,15 @@ function firstButton() {
 			formulaire += "</br></br>"
 			*/
 			
-			formulaire += 'Cible : <input type="text" size="4" name="field_i" id="field_'+i+"_"+j+'_stat" '+readonly+'> &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += 'Cible : <input type="text" maxlength="100" size="4" name="field_i" id="field_'+i+"_"+j+'_stat" '+readonly+'> &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += 'CG :  &nbsp'
-			formulaire += '<input type="text" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cg">  ° &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cg"> \' &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cg">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="3" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cg">  ° &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cg"> \' &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cg">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += 'CD :  &nbsp'
-			formulaire += '<input type="text" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cd">  ° &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cd"> \' &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cd">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="3" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cd">  ° &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cd"> \' &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cd">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += "</br></br>"
 			
 			
@@ -703,7 +703,7 @@ function reduction(){
 		}
 		deg = Math.floor(AVG_SAVED[i]); 
 		min = Math.floor(60*(AVG_SAVED[i]-deg))
-		sec = Math.floor(60*(60*(AVG_SAVED[i]-deg)-min)+0.5)
+		sec = Math.floor(600*(60*(AVG_SAVED[i]-deg)-min))/10
 		output += "<tr><td align=right>"+NOM[i]+ "&nbsp&nbsp</td>"
 		output += "<td align=right>"+deg+"°&nbsp</td><td align=right>"+min+"'&nbsp</td><td align=right>"+sec+"\"&nbsp</td>"
 		output += "<td align=right> &nbsp +/- &nbsp </td><td align=right>"+(STD_SAVED[i]*3600).toFixed(1)+"\"</td>"
