@@ -305,9 +305,13 @@ const file = new File(['foo'], 'note.txt', {
 					let activeElement = document.activeElement;
 					
 					color = "green"
-					field_d = activeElement.id.substring(0, 10) + "d_"+activeElement.id.substring(12, 14); d = parseFloat($('#'+field_d).val())
-					field_m = activeElement.id.substring(0, 10) + "m_"+activeElement.id.substring(12, 14); m = parseFloat($('#'+field_m).val())
-					field_s = activeElement.id.substring(0, 10) + "s_"+activeElement.id.substring(12, 14); s = parseFloat($('#'+field_s).val())
+					TAB = activeElement.id.split("_")
+					field1 = TAB[0]+"_"+TAB[1]+"_"+TAB[2]
+					field2 = TAB[4]
+					
+					field_d = field1 + "_d_"+field2; d = parseFloat($('#'+field_d).val())
+					field_m = field1 + "_m_"+field2; m = parseFloat($('#'+field_m).val())
+					field_s = field1 + "_s_"+field2; s = parseFloat($('#'+field_s).val())
 					input_value = d + m/60.0 + s/3600.0
 					
 					prediction = $('#'+activeElement.id).attr('title')
@@ -346,9 +350,13 @@ const file = new File(['foo'], 'note.txt', {
 					let activeElement = document.activeElement;
 					
 					color = "green"
-					field_d = activeElement.id.substring(0, 10) + "d_"+activeElement.id.substring(12, 14); d = parseFloat($('#'+field_d).val())
-					field_m = activeElement.id.substring(0, 10) + "m_"+activeElement.id.substring(12, 14); m = parseFloat($('#'+field_m).val())
-					field_s = activeElement.id.substring(0, 10) + "s_"+activeElement.id.substring(12, 14); s = parseFloat($('#'+field_s).val())
+					TAB = activeElement.id.split("_")
+					field1 = TAB[0]+"_"+TAB[1]+"_"+TAB[2]
+					field2 = TAB[4]
+					
+					field_d = field1 + "_d_"+field2; d = parseFloat($('#'+field_d).val())
+					field_m = field1 + "_m_"+field2; m = parseFloat($('#'+field_m).val())
+					field_s = field1 + "_s_"+field2; s = parseFloat($('#'+field_s).val())
 					input_value = d + m/60.0 + s/3600.0
 					
 					prediction = $('#'+activeElement.id).attr('title')
@@ -363,11 +371,9 @@ const file = new File(['foo'], 'note.txt', {
 					}
 					
 					
-					
 					if (isNaN(input_value)){
-						color = 'black'
+						color = 'black'				
 					}
-					
 					
 					
 					if (prediction === undefined){
