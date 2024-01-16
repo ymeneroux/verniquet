@@ -25,10 +25,10 @@ var solution;
 // ----------------------------------------------------------
 // Fonction de gestion des passages entre cellules
 // ----------------------------------------------------------
-document.onkeypress = function (e) {
+document.onkeyup = function (e) {
     e = e || window.event;
     
-    if (e.keyCode == 13){
+    if ((e.keyCode == 13) || (document.activeElement.value.length >= document.activeElement.maxLength)){
 		
 		var ncb = document.getElementById("frm1000").elements[0].value;
 		var nth = document.getElementById("frm1000").elements[1].value;
@@ -155,15 +155,15 @@ function firstButton() {
 			formulaire += "</br></br>"
 			*/
 			
-			formulaire += 'Cible : <input type="text" size="4" name="field_i" id="field_'+i+"_"+j+'_stat" '+readonly+'> &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += 'Cible : <input type="text" maxlength="100" size="4" name="field_i" id="field_'+i+"_"+j+'_stat" '+readonly+'> &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += 'CG :  &nbsp'
-			formulaire += '<input type="text" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cg">  ° &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cg"> \' &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cg">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="3" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cg">  ° &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cg"> \' &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cg">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += 'CD :  &nbsp'
-			formulaire += '<input type="text" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cd">  ° &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cd"> \' &nbsp &nbsp';
-			formulaire += '<input type="text" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cd">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="3" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cd">  ° &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cd"> \' &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cd">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += "</br></br>"
 			
 			
@@ -305,9 +305,13 @@ const file = new File(['foo'], 'note.txt', {
 					let activeElement = document.activeElement;
 					
 					color = "green"
-					field_d = activeElement.id.substring(0, 10) + "d_"+activeElement.id.substring(12, 14); d = parseFloat($('#'+field_d).val())
-					field_m = activeElement.id.substring(0, 10) + "m_"+activeElement.id.substring(12, 14); m = parseFloat($('#'+field_m).val())
-					field_s = activeElement.id.substring(0, 10) + "s_"+activeElement.id.substring(12, 14); s = parseFloat($('#'+field_s).val())
+					TAB = activeElement.id.split("_")
+					field1 = TAB[0]+"_"+TAB[1]+"_"+TAB[2]
+					field2 = TAB[4]
+					
+					field_d = field1 + "_d_"+field2; d = parseFloat($('#'+field_d).val())
+					field_m = field1 + "_m_"+field2; m = parseFloat($('#'+field_m).val())
+					field_s = field1 + "_s_"+field2; s = parseFloat($('#'+field_s).val())
 					input_value = d + m/60.0 + s/3600.0
 					
 					prediction = $('#'+activeElement.id).attr('title')
@@ -346,9 +350,13 @@ const file = new File(['foo'], 'note.txt', {
 					let activeElement = document.activeElement;
 					
 					color = "green"
-					field_d = activeElement.id.substring(0, 10) + "d_"+activeElement.id.substring(12, 14); d = parseFloat($('#'+field_d).val())
-					field_m = activeElement.id.substring(0, 10) + "m_"+activeElement.id.substring(12, 14); m = parseFloat($('#'+field_m).val())
-					field_s = activeElement.id.substring(0, 10) + "s_"+activeElement.id.substring(12, 14); s = parseFloat($('#'+field_s).val())
+					TAB = activeElement.id.split("_")
+					field1 = TAB[0]+"_"+TAB[1]+"_"+TAB[2]
+					field2 = TAB[4]
+					
+					field_d = field1 + "_d_"+field2; d = parseFloat($('#'+field_d).val())
+					field_m = field1 + "_m_"+field2; m = parseFloat($('#'+field_m).val())
+					field_s = field1 + "_s_"+field2; s = parseFloat($('#'+field_s).val())
 					input_value = d + m/60.0 + s/3600.0
 					
 					prediction = $('#'+activeElement.id).attr('title')
@@ -363,11 +371,9 @@ const file = new File(['foo'], 'note.txt', {
 					}
 					
 					
-					
 					if (isNaN(input_value)){
-						color = 'black'
+						color = 'black'				
 					}
-					
 					
 					
 					if (prediction === undefined){
@@ -703,7 +709,7 @@ function reduction(){
 		}
 		deg = Math.floor(AVG_SAVED[i]); 
 		min = Math.floor(60*(AVG_SAVED[i]-deg))
-		sec = Math.floor(60*(60*(AVG_SAVED[i]-deg)-min)+0.5)
+		sec = Math.floor(600*(60*(AVG_SAVED[i]-deg)-min))/10
 		output += "<tr><td align=right>"+NOM[i]+ "&nbsp&nbsp</td>"
 		output += "<td align=right>"+deg+"°&nbsp</td><td align=right>"+min+"'&nbsp</td><td align=right>"+sec+"\"&nbsp</td>"
 		output += "<td align=right> &nbsp +/- &nbsp </td><td align=right>"+(STD_SAVED[i]*3600).toFixed(1)+"\"</td>"

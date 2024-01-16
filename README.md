@@ -67,20 +67,20 @@ https://raw.githack.com/ymeneroux/verniquet/main/preparation/web/index.html#
 
 # Fiches géodésiques :
 
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ANFN.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/BAT4.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_E.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_O.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHVC.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/EGLM.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ESVC.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMBM.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJG.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJR.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJR2.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/MTYA.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/TUBE.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/SSLP.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_CHN.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_CHS.html
-* https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_LED.html
+* [ANFN](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ANFN.html)
+* [BAT4](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/BAT4.html)
+* [CHSL_E](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_E.html)
+* [CHSL_O](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHSL_O.html)
+* [CHVC](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/CHVC.html)
+* [EGLM](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/EGLM.html)
+* [ESVC](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/ESVC.html)
+* [IMBM](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMBM.html)
+* [IMJG](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJG.html)
+* [IMJR](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJR.html)
+* [IMJR2](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/IMJR2.html)
+* [MTYA](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/MTYA.html)
+* [TUBE](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/TUBE.html)
+* [SSLP](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/SSLP.html)
+* [VTRY_CHN](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_CHN.html)
+* [VTRY_CHS](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_CHS.html)
+* [VTRY_LED](https://raw.githack.com/ymeneroux/verniquet/main/pub/out/htm/VTRY_LED.html)
