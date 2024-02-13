@@ -1,0 +1,392 @@
+data=
+{
+	"COMP3D_COMMIT" : "v5.21rc3-353-g21b04024",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2023 IGN France",
+	"COMP3D_LICENSE" : "Licensed for IGN usage only",
+	"COMP3D_OPTIONS" : "QT GUI SIM RES AUTO ",
+	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"all_data_files" : 
+	{
+		"0" : "ctrl.cor"
+	},
+	"all_forbidden_point_names" : null,
+	"all_point_names" : 
+	[
+		"PE",
+		"PO"
+	],
+	"all_uninitializable_point_names" : null,
+	"computation" : 
+	{
+		"Monte_Carlo_done" : false,
+		"all_parameters_names" : 
+		[
+			"PO_x",
+			"PO_y",
+			"PE_x",
+			"PE_y"
+		],
+		"all_sigma0" : 
+		[
+			null
+		],
+		"chi2_test" : 
+		{
+			"DOF" : 0,
+			"confidence" : 0.98999999999999999,
+			"max" : null,
+			"min" : null
+		},
+		"compensation_done" : false,
+		"computation_duration" : "not-a-date-time",
+		"computation_start" : "not-a-date-time",
+		"internal_constraints" : false,
+		"internal_constraints_obs" : [],
+		"interrupted" : false,
+		"inverted_matrix" : false,
+		"kernel" : null,
+		"messages_computation" : "",
+		"messages_read_config" : "",
+		"messages_read_data" : "Lecture du COR...<br/>\nLecture du fichier ctrl.cor...<br/>\nLecture du OBS...<br/>\nLecture du fichier ctrl.obs...<br/>\nMise en place des points...<br/>\nLecture des donn\u00e9es termin\u00e9e.<br/>\nTous les points sont initialis\u00e9s.<br/>\nD\u00e9viation de la verticale non utilis\u00e9e.<br/>\n",
+		"messages_set_least_squares" : "",
+		"nbr_active_obs" : 4,
+		"nbr_all_obs" : 4,
+		"nbr_iterations" : 0,
+		"nbr_parameters" : 4,
+		"projection" : 
+		{
+			"center_cartgeocentric" : 
+			[
+				4201968.3530438012,
+				178844.53931076283,
+				4778931.9175527468
+			],
+			"center_geographic" : 
+			[
+				2.4371569556426729,
+				48.840893089624124,
+				0.0
+			],
+			"center_latitude" : 48.840893089624124,
+			"earth_model_radius" : 6380965.6076627988,
+			"geocent_def" : "+proj=geocent",
+			"input_proj_EPSG" : 2154,
+			"input_proj_def" : "IGNF:LAMB93",
+			"input_proj_name" : "RGF93 / Lambert-93",
+			"is_georef" : true,
+			"latlong_def" : "+proj=latlong",
+			"local_center_stereo" : 
+			[
+				2.0428387040984371e-10,
+				2.4795032279373682e-09,
+				0.0
+			],
+			"local_scale" : 1.0,
+			"rot_global2geocentric" : 
+			[
+				[
+					-0.042523587239490894,
+					-0.75220382437407174,
+					0.65755695656369262
+				],
+				[
+					0.99909546317070497,
+					-0.032015364023512079,
+					0.027986995875881372
+				],
+				[
+					0.0,
+					0.65815227953982092,
+					0.75288483643684667
+				]
+			],
+			"stereo_def" : "+proj=sterea +lat_0=48.8408930896241 +lon_0=2.43715695564267 +k_0=1 +x_0=0 +y_0=0"
+		},
+		"rank_deficiency" : 0,
+		"sigma_0_final" : null,
+		"sigma_0_init" : null,
+		"solver_name" : "N5Eigen8SparseQRINS_12SparseMatrixIdLi0EiEENS_15NaturalOrderingIiEEEE",
+		"unit_name" : "g",
+		"use_vertical_deflection" : false
+	},
+	"config" : 
+	{
+		"center_latitude" : 48.799999999999997,
+		"clean_outputs" : false,
+		"compute_type" : 0,
+		"convergence_criterion" : 0.001,
+		"coord_cov_file" : "",
+		"description" : "",
+		"display_map" : true,
+		"files_unit" : 1,
+		"force_iterations" : 0,
+		"internal_constraints" : false,
+		"invert_matrix" : true,
+		"lang" : "fr",
+		"local_center" : 
+		[
+			658690.0,
+			6860241.0,
+			0.0
+		],
+		"max_iterations" : 100,
+		"misc_metadata" : null,
+		"name" : "ctrl",
+		"nb_digits" : 4,
+		"proj_def" : "IGNF:LAMB93",
+		"refraction" : 0.12,
+		"root_COR_file" : "ctrl.cor",
+		"root_OBS_file" : "ctrl.obs",
+		"use_ellips_height" : true,
+		"use_proj" : true
+	},
+	"config_file" : "/home/YMeneroux/Bureau/KitYann/Recherches/Verniquet/verniquet/micro/preparation/ctrl/ctrl.comp",
+	"other_stations" : null,
+	"points" : 
+	{
+		"PE" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				0.10221832558468004,
+				0.11174310295965592,
+				-1.2530226509155362e-09
+			],
+			"coord_init_latlong" : 
+			[
+				2.4371583481760495,
+				48.840894094461717,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658690.103,
+				6860241.1109999996,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 2,
+			"number" : 0,
+			"params" : 
+			{
+				"PE_x" : 
+				{
+					"rank" : 2,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.10221832555127232
+				},
+				"PE_y" : 
+				{
+					"rank" : 3,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.11174462917314075
+				}
+			},
+			"sigmas_init" : 
+			[
+				0.01,
+				0.01,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 0.10221832555127232,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PE",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 0,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.10221832555127232,
+							"rank" : 0,
+							"residual" : 0.0,
+							"sigma_abs" : 0.01,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.01,
+							"target_height" : 0.0,
+							"to" : "PE",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 0.11174462917314075,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PE",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 1,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.11174462917314075,
+							"rank" : 1,
+							"residual" : 0.0,
+							"sigma_abs" : 0.01,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.01,
+							"target_height" : 0.0,
+							"to" : "PE",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"PO" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-219.48388276443873,
+				29.364107252643926,
+				-0.0038369207942530181
+			],
+			"coord_init_latlong" : 
+			[
+				2.4341668828636491,
+				48.841157100770594,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658470.75699999998,
+				6860271.9239999996,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 2,
+			"number" : 1,
+			"params" : 
+			{
+				"PO_x" : 
+				{
+					"rank" : 0,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -219.4838827641799
+				},
+				"PO_y" : 
+				{
+					"rank" : 1,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 29.364108776531786
+				}
+			},
+			"sigmas_init" : 
+			[
+				0.01,
+				0.01,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : -219.4838827641799,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 2,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : -219.4838827641799,
+							"rank" : 2,
+							"residual" : 0.0,
+							"sigma_abs" : 0.01,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.01,
+							"target_height" : 0.0,
+							"to" : "PO",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 29.364108776531786,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 3,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 29.364108776531786,
+							"rank" : 3,
+							"residual" : 0.0,
+							"sigma_abs" : 0.01,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.01,
+							"target_height" : 0.0,
+							"to" : "PO",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		}
+	}
+}
