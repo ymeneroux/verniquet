@@ -1,0 +1,12 @@
+* Begin file ctrl.cor --------------------------------------
+ *** Added points ***
+  CHSL_E     658653.9911 6860400.5721 0.0000 0.007828 0.011061 0.000000  * **autoinit
+ *** End added points ***
+  RNE     658690.1044 6860241.1042 0.0000 0.007616 0.006843 0.000000  * Repère de nivellement Est
+  RNO     658470.7666 6860271.9214 0.0000 0.006311 0.006872 0.000000  * Repère de nivellement Ouest
+  PE     658700.6625 6860232.0675 0.0000 0.009959 0.007572 0.000000  * Station Est
+  PO     658488.4303 6860262.0947 0.0000 0.007948 0.006748 0.000000  * Staton Ouest
+  ESVC     658542.7520 6860140.3151 0.0000 0.009304 0.006148 0.000000  * Clou d'arpentage esplanade
+  TUBE     658350.1388 6860579.9695 0.0000 0.010548 0.013111 0.000000  * Point issu de la compensation globale calculée le 13/02
+  M3     658503.6941 6860167.2504 0.0000 0.011034 0.009429 0.000000  * Point esplanade pour visée antenne
+* End file ctrl.cor --------------------------------------

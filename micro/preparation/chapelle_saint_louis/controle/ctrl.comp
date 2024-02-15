@@ -7,13 +7,20 @@ data=
 	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
 	"all_data_files" : 
 	{
-		"0" : "ctrl.cor"
+		"0" : "ctrl.cor",
+		"1" : "ctrl.obs"
 	},
 	"all_forbidden_point_names" : null,
 	"all_point_names" : 
 	[
+		"RNE",
+		"RNO",
 		"PE",
-		"PO"
+		"PO",
+		"ESVC",
+		"TUBE",
+		"M3",
+		"CHSL_E"
 	],
 	"all_uninitializable_point_names" : null,
 	"computation" : 
@@ -21,38 +28,57 @@ data=
 		"Monte_Carlo_done" : false,
 		"all_parameters_names" : 
 		[
+			"TUBE_x",
+			"TUBE_y",
+			"ESVC_x",
+			"ESVC_y",
+			"ESVC_G0_1",
+			"M3_x",
+			"M3_y",
+			"M3_G0_1",
+			"PE_x",
+			"PE_y",
+			"PE_G0_1",
+			"CHSL_E_x",
+			"CHSL_E_y",
+			"RNO_x",
+			"RNO_y",
+			"RNE_x",
+			"RNE_y",
 			"PO_x",
 			"PO_y",
-			"PE_x",
-			"PE_y"
+			"PO_G0_1"
 		],
 		"all_sigma0" : 
 		[
-			null
+			14.45299452557445,
+			0.89577693820324344,
+			0.89561252490435206
 		],
+		"biggest_ellips" : 0.013234586301287387,
 		"chi2_test" : 
 		{
-			"DOF" : 0,
+			"DOF" : 11,
 			"confidence" : 0.98999999999999999,
-			"max" : null,
-			"min" : null
+			"max" : 2.0556101279661108,
+			"min" : 0.6411783645010477
 		},
-		"compensation_done" : false,
-		"computation_duration" : "not-a-date-time",
-		"computation_start" : "not-a-date-time",
+		"compensation_done" : true,
+		"computation_duration" : "00:00:00.000780",
+		"computation_start" : "2024-Feb-16 00:08:59.760552",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
-		"inverted_matrix" : false,
+		"inverted_matrix" : true,
 		"kernel" : null,
 		"messages_computation" : "",
 		"messages_read_config" : "",
-		"messages_read_data" : "Lecture du COR...<br/>\nLecture du fichier ctrl.cor...<br/>\nLecture du OBS...<br/>\nLecture du fichier ctrl.obs...<br/>\nMise en place des points...<br/>\nLecture des donn\u00e9es termin\u00e9e.<br/>\nTous les points sont initialis\u00e9s.<br/>\nD\u00e9viation de la verticale non utilis\u00e9e.<br/>\n",
+		"messages_read_data" : "Lecture du COR...<br/>\nLecture du fichier ctrl.cor...<br/>\nLecture du OBS...<br/>\nLecture du fichier ctrl.obs...<br/>\nMise en place des points...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;1 point non initialis\u00e9.</font><br/>\nLecture des donn\u00e9es termin\u00e9e.<br/>\nTous les points sont initialis\u00e9s.<br/>\nD\u00e9viation de la verticale non utilis\u00e9e.<br/>\n",
 		"messages_set_least_squares" : "",
-		"nbr_active_obs" : 4,
-		"nbr_all_obs" : 4,
-		"nbr_iterations" : 0,
-		"nbr_parameters" : 4,
+		"nbr_active_obs" : 31,
+		"nbr_all_obs" : 31,
+		"nbr_iterations" : 2,
+		"nbr_parameters" : 20,
 		"projection" : 
 		{
 			"center_cartgeocentric" : 
@@ -103,8 +129,8 @@ data=
 			"stereo_def" : "+proj=sterea +lat_0=48.8408930896241 +lon_0=2.43715695564267 +k_0=1 +x_0=0 +y_0=0"
 		},
 		"rank_deficiency" : 0,
-		"sigma_0_final" : null,
-		"sigma_0_init" : null,
+		"sigma_0_final" : 0.89561252490435206,
+		"sigma_0_init" : 14.45299452557445,
 		"solver_name" : "N5Eigen8SparseQRINS_12SparseMatrixIdLi0EiEENS_15NaturalOrderingIiEEEE",
 		"unit_name" : "g",
 		"use_vertical_deflection" : false
@@ -140,20 +166,1543 @@ data=
 		"use_ellips_height" : true,
 		"use_proj" : true
 	},
-	"config_file" : "/home/YMeneroux/Bureau/KitYann/Recherches/Verniquet/verniquet/micro/preparation/ctrl/ctrl.comp",
+	"config_file" : "/home/YMeneroux/Bureau/KitYann/Recherches/Verniquet/verniquet/micro/preparation/chapelle_saint_louis/controle/ctrl.comp",
 	"other_stations" : null,
 	"points" : 
 	{
+		"CHSL_E" : 
+		{
+			"code" : 6,
+			"code_name" : "2-- ",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-37.149781287072194,
+				159.33023369874221,
+				-0.0021000930601076107
+			],
+			"coord_compensated_georef" : 
+			[
+				658653.99109569739,
+				6860400.5721086627,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4366508449758517,
+				48.842325828441474,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4366511395252308,
+				48.842325086823443,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658654.01212493901,
+				6860400.4894933598,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.011696793704775041,
+						26.268249376408736,
+						0.0
+					],
+					[
+						0.0068413221982124572,
+						126.26824937635331,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					7.6395408432332812e-05,
+					4.1223376730235347e-05,
+					0.0,
+					0.00015252079056646056,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0078280535335158458,
+					0.011060752698990683,
+					0.0
+				]
+			},
+			"file_id" : -1,
+			"nbr_active_obs" : 4,
+			"number" : 7,
+			"params" : 
+			{
+				"CHSL_E_x" : 
+				{
+					"rank" : 11,
+					"sigma" : 0.0078280535335158458,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -37.149781287033854
+				},
+				"CHSL_E_y" : 
+				{
+					"rank" : 12,
+					"sigma" : 0.011060752698990683,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 159.33023522255127
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.021029241615906358,
+				0.082615302875638008,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"stations" : []
+		},
+		"ESVC" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : " Clou d'arpentage esplanade",
+			"coord_compensated_cartesian" : 
+			[
+				-146.54410487303221,
+				-101.74400890988289,
+				-0.0024926363917288086
+			],
+			"coord_compensated_georef" : 
+			[
+				658542.75198327913,
+				6860140.3150547436,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4351606028823003,
+				48.839978162906434,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4351609167634716,
+				48.839978136915484,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658542.77500000002,
+				6860140.3119999999,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.0093536152232627876,
+						108.65523189799684,
+						0.0
+					],
+					[
+						0.0060720504288413234,
+						8.6552318979338665,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					0.00010791403559219598,
+					-8.4745809687901713e-06,
+					0.0,
+					4.712465674453887e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0093037734231657607,
+					0.0061481472205567704,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 8,
+			"number" : 4,
+			"params" : 
+			{
+				"ESVC_x" : 
+				{
+					"rank" : 2,
+					"sigma" : 0.0093037734231657607,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -146.54410487296869
+				},
+				"ESVC_y" : 
+				{
+					"rank" : 3,
+					"sigma" : 0.0061481472205567704,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -101.7440073862164
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.023016720893792808,
+				0.0030547436326742172,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.014999999999999999,
+				0.014999999999999999,
+				0.014999999999999999
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : " Clou d'arpentage esplanade",
+							"computed_value" : -146.54410487296869,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "ESVC",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"nabla" : 0.08525384127951896,
+							"normalized_residual" : -1.5360439525541856,
+							"number" : 8,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 52.038206403468457,
+							"obs_zen" : 0.0,
+							"original_value" : -146.52106421368038,
+							"rank" : 8,
+							"residual" : -0.023040659288312781,
+							"residual_std" : -2.2179713651759543,
+							"sigma_a_posteriori" : 0.010388168057564142,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.010820626802907678,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : -2.1293275988523495,
+							"target_height" : 0.0,
+							"to" : "ESVC",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : " Clou d'arpentage esplanade",
+							"computed_value" : -101.7440073862164,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "ESVC",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"nabla" : 0.069168522559782161,
+							"normalized_residual" : 0.19283281213233749,
+							"number" : 9,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 79.055708113538287,
+							"obs_zen" : 0.0,
+							"original_value" : -101.74689987839838,
+							"rank" : 9,
+							"residual" : 0.0028924921819850624,
+							"residual_std" : 0.42135494376452853,
+							"sigma_a_posteriori" : 0.0068647401075742753,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.013336991536904458,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : 0.21687741002019228,
+							"target_height" : 0.0,
+							"to" : "ESVC",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 5,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : -0.00014362145060910236,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "ESVC",
+							"instrument_height" : 0.0,
+							"line" : 11,
+							"nabla" : 0.015277759780103218,
+							"normalized_residual" : -0.23936908437206361,
+							"number" : 21,
+							"obs_azim" : -0.50764460718625992,
+							"obs_length" : 150.02492984845287,
+							"obs_redondancy" : 2.5926915961346331,
+							"obs_zen" : 1.5708066717772582,
+							"original_value" : 0.0,
+							"rank" : 21,
+							"residual" : -0.00014362145062323816,
+							"residual_std" : -0.24253380880859673,
+							"sigma_a_posteriori" : 0.00059217084549470619,
+							"sigma_abs" : 0.00059999999999999995,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 9.6611022901554555e-05,
+							"sigma_total" : 0.00059999999999999995,
+							"standardized_residual" : -1.4865948657803432,
+							"target_height" : 0.0,
+							"to" : "RNO",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 5.5768491771531732,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "ESVC",
+							"instrument_height" : 0.0,
+							"line" : 12,
+							"nabla" : 0.015245968815672559,
+							"normalized_residual" : 0.10036153711264512,
+							"number" : 22,
+							"obs_azim" : -0.42004140916017579,
+							"obs_length" : 480.05238896908338,
+							"obs_redondancy" : 1.7364001682628416,
+							"obs_zen" : 1.5708294288456071,
+							"original_value" : 5.5768000000000004,
+							"rank" : 22,
+							"residual" : 4.9177153185196109e-05,
+							"residual_std" : 0.10124439024247933,
+							"sigma_a_posteriori" : 0.00048572719009337017,
+							"sigma_abs" : 0.00048999999999999998,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 6.4568543455765506e-05,
+							"sigma_total" : 0.00048999999999999998,
+							"standardized_residual" : 0.76162711055866239,
+							"target_height" : 0.0,
+							"to" : "TUBE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 57.578039191618714,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "ESVC",
+							"instrument_height" : 0.0,
+							"line" : 13,
+							"nabla" : 0.0062870001323120277,
+							"normalized_residual" : 0.56531936455202547,
+							"number" : 23,
+							"obs_azim" : 0.39679137347668358,
+							"obs_length" : 283.06691465698651,
+							"obs_redondancy" : 15.310285003118029,
+							"obs_zen" : 1.5708158456957602,
+							"original_value" : 57.5777,
+							"rank" : 23,
+							"residual" : 0.00033919161873121521,
+							"residual_std" : 0.61429718677970713,
+							"sigma_a_posteriori" : 0.00055216209032201325,
+							"sigma_abs" : 0.00059999999999999995,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00023477015570814118,
+							"sigma_total" : 0.00059999999999999995,
+							"standardized_residual" : 1.4447816746898934,
+							"target_height" : 0.0,
+							"to" : "CHSL_E",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 93.672478540249287,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "ESVC",
+							"instrument_height" : 0.0,
+							"line" : 14,
+							"nabla" : 0.014200308996950973,
+							"normalized_residual" : -0.048772160633287813,
+							"number" : 24,
+							"obs_azim" : 0.96376150094218449,
+							"obs_length" : 178.54630667269663,
+							"obs_redondancy" : 1.6139031790166625,
+							"obs_zen" : 1.5708086384700519,
+							"original_value" : 93.672499999999999,
+							"rank" : 24,
+							"residual" : -2.145975067864664e-05,
+							"residual_std" : -0.049170557198352761,
+							"sigma_a_posteriori" : 0.0004364349704657313,
+							"sigma_abs" : 0.00044000000000000002,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 5.5897375202922236e-05,
+							"sigma_total" : 0.00044000000000000002,
+							"standardized_residual" : -0.38391338771708111,
+							"target_height" : 0.0,
+							"to" : "RNE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 98.354507984838449,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "ESVC",
+							"instrument_height" : 0.0,
+							"line" : 15,
+							"nabla" : 0.0085583488115957545,
+							"normalized_residual" : -0.24214516197517,
+							"number" : 25,
+							"obs_azim" : 1.0373066474772465,
+							"obs_length" : 182.65314425263233,
+							"obs_redondancy" : 3.3140185931509247,
+							"obs_zen" : 1.5708089216585936,
+							"original_value" : 98.354600000000005,
+							"rank" : 25,
+							"residual" : -9.2015161550564612e-05,
+							"residual_std" : -0.24626009427314718,
+							"sigma_a_posteriori" : 0.00037365031399891807,
+							"sigma_abs" : 0.00038000000000000002,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 6.917689533731586e-05,
+							"sigma_total" : 0.00038000000000000002,
+							"standardized_residual" : -1.3301429776789822,
+							"target_height" : 0.0,
+							"to" : "PE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"ESVC_G0_1" : 
+						{
+							"rank" : 4,
+							"sigma" : 3.2433263290592547e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -0.50764235118578926
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
+		"M3" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : " Point esplanade pour vis\u00e9e antenne",
+			"coord_compensated_cartesian" : 
+			[
+				-185.79766013366273,
+				-75.084531227693574,
+				-0.0031434427111776131
+			],
+			"coord_compensated_georef" : 
+			[
+				658503.69408510742,
+				6860167.2503941217,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4346258443292546,
+				48.840217881598683,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4346257482288407,
+				48.840217841625645,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658503.68700000003,
+				6860167.2460000003,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.012704596976754624,
+						140.54259291364008,
+						0.0
+					],
+					[
+						0.0070162689888772691,
+						40.54259291358882,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					0.00015177021371970477,
+					-6.6862483478600794e-05,
+					0.0,
+					0.00011082683356238505,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.011033503352099934,
+					0.0094285003391442399,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 7,
+			"number" : 6,
+			"params" : 
+			{
+				"M3_x" : 
+				{
+					"rank" : 5,
+					"sigma" : 0.011033503352099934,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -185.79766013352321
+				},
+				"M3_y" : 
+				{
+					"rank" : 6,
+					"sigma" : 0.0094285003391442399,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -75.084529701088471
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0070851073833182454,
+				0.0043941214680671692,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.014999999999999999,
+				0.014999999999999999,
+				0.014999999999999999
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : " Point esplanade pour vis\u00e9e antenne",
+							"computed_value" : -185.79766013352321,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "M3",
+							"instrument_height" : 0.0,
+							"line" : 10,
+							"nabla" : 0.10780092602122315,
+							"normalized_residual" : 0.4702968834976673,
+							"number" : 12,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 32.546571680131208,
+							"obs_zen" : 0.0,
+							"original_value" : -185.80471458677567,
+							"rank" : 12,
+							"residual" : 0.0070544532524650094,
+							"residual_std" : 0.57262471289841332,
+							"sigma_a_posteriori" : 0.012319505417008622,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.008557440404717712,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : 0.82436487066575348,
+							"target_height" : 0.0,
+							"to" : "M3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : " Point esplanade pour vis\u00e9e antenne",
+							"computed_value" : -75.084529701088471,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "M3",
+							"instrument_height" : 0.0,
+							"line" : 10,
+							"nabla" : 0.086334494785751587,
+							"normalized_residual" : 0.29643727844567519,
+							"number" : 13,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 50.743629527828872,
+							"obs_zen" : 0.0,
+							"original_value" : -75.088976260265156,
+							"rank" : 13,
+							"residual" : 0.0044465591766851276,
+							"residual_std" : 0.42237831554546446,
+							"sigma_a_posteriori" : 0.010527432429723073,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.010685184436293786,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : 0.41614248244342339,
+							"target_height" : 0.0,
+							"to" : "M3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 5,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : -0.00016828199674355729,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "M3",
+							"instrument_height" : 0.0,
+							"line" : 17,
+							"nabla" : 0.032771343698545286,
+							"normalized_residual" : -0.024743320245875812,
+							"number" : 26,
+							"obs_azim" : -0.31190604900767854,
+							"obs_length" : 109.74106273446664,
+							"obs_redondancy" : 72.400001734617518,
+							"obs_zen" : 1.5708038940012825,
+							"original_value" : 0.0,
+							"rank" : 26,
+							"residual" : -0.00016828199675062518,
+							"residual_std" : -0.047098106644758282,
+							"sigma_a_posteriori" : 0.0035730098031308841,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.0057869398551717698,
+							"sigma_total" : 0.0068011081406374402,
+							"standardized_residual" : -0.029079617373287899,
+							"target_height" : 0.0,
+							"to" : "RNO",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 55.833874919394688,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "M3",
+							"instrument_height" : 0.0,
+							"line" : 18,
+							"nabla" : 0.0093136622219390577,
+							"normalized_residual" : -0.12508060529154275,
+							"number" : 27,
+							"obs_azim" : 0.56513305070085373,
+							"obs_length" : 277.57246601134011,
+							"obs_redondancy" : 19.378794027822245,
+							"obs_zen" : 1.5708154668273535,
+							"original_value" : 55.834000000000003,
+							"rank" : 27,
+							"residual" : -0.00012508060529154273,
+							"residual_std" : -0.13930455878853876,
+							"sigma_a_posteriori" : 0.00089789312266091981,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00044021351669186899,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.28413622151246648,
+							"target_height" : 0.0,
+							"to" : "CHSL_E",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 95.388250045092803,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "M3",
+							"instrument_height" : 0.0,
+							"line" : 19,
+							"nabla" : 0.017959367942843488,
+							"normalized_residual" : 0.13175784115731745,
+							"number" : 28,
+							"obs_azim" : 1.1864517222619941,
+							"obs_length" : 200.53120559201281,
+							"obs_redondancy" : 90.829989805662336,
+							"obs_zen" : 1.5708101544410384,
+							"original_value" : 95.387699999999995,
+							"rank" : 28,
+							"residual" : 0.00055004509279947035,
+							"residual_std" : 0.43510248240788557,
+							"sigma_a_posteriori" : 0.0012641736488274782,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.0039786566028405185,
+							"sigma_total" : 0.0041746668582913586,
+							"standardized_residual" : 0.13824894875490676,
+							"target_height" : 0.0,
+							"to" : "RNE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 99.16374917292984,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "M3",
+							"instrument_height" : 0.0,
+							"line" : 20,
+							"nabla" : 0.0090723744174056771,
+							"normalized_residual" : 0.14917292986052264,
+							"number" : 29,
+							"obs_azim" : 1.2457571238802316,
+							"obs_length" : 207.38377960538233,
+							"obs_redondancy" : 20.423293702953636,
+							"obs_zen" : 1.5708106269599051,
+							"original_value" : 99.163600000000002,
+							"rank" : 29,
+							"residual" : 0.00014917292986052266,
+							"residual_std" : 0.16722339636409136,
+							"sigma_a_posteriori" : 0.00089205776885270364,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00045192138368253424,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.33008601771611157,
+							"target_height" : 0.0,
+							"to" : "PE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 157.83728942241757,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "M3",
+							"instrument_height" : 0.0,
+							"line" : 21,
+							"nabla" : 0.072912064318933309,
+							"normalized_residual" : -0.74987817628427456,
+							"number" : 30,
+							"obs_azim" : 2.1673989389197099,
+							"obs_length" : 47.450704431302881,
+							"obs_redondancy" : 65.718144267584265,
+							"obs_zen" : 1.5707995987646328,
+							"original_value" : 157.84809999999999,
+							"rank" : 30,
+							"residual" : -0.010810577582421708,
+							"residual_std" : -1.2807328617366309,
+							"sigma_a_posteriori" : 0.0084409308962080706,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.011686940394534251,
+							"sigma_total" : 0.014416445129779961,
+							"standardized_residual" : -0.92501349518969056,
+							"target_height" : 0.0,
+							"to" : "ESVC",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"M3_G0_1" : 
+						{
+							"rank" : 7,
+							"sigma" : 5.5059013974851742e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -0.31190340564025504
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
 		"PE" : 
 		{
 			"code" : 7,
 			"code_name" : "2xy ",
-			"comment" : "",
+			"comment" : " Station Est",
 			"coord_compensated_cartesian" : 
 			[
-				0.10221832558468004,
-				0.11174310295965592,
-				-1.2530226509155362e-09
+				10.727133129121382,
+				-8.8573639891556848,
+				-1.5159662217989478e-05
+			],
+			"coord_compensated_georef" : 
+			[
+				658700.66245876218,
+				6860232.0674598832,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.437303092520299,
+				48.840813441743251,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4373029784846505,
+				48.840813329148062,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658700.65399999998,
+				6860232.0549999997,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.010713504807054543,
+						69.420062229732665,
+						0.0
+					],
+					[
+						0.0064603406696615599,
+						169.42006222964011,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					0.00012365029412556049,
+					3.7316993419927747e-05,
+					0.0,
+					7.1476166519498526e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0099590459305740012,
+					0.0075718287732608816,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 8,
+			"number" : 2,
+			"params" : 
+			{
+				"PE_x" : 
+				{
+					"rank" : 8,
+					"sigma" : 0.0099590459305740012,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 10.72713312912188
+				},
+				"PE_y" : 
+				{
+					"rank" : 9,
+					"sigma" : 0.0075718287732608816,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -8.8573624638126862
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0084587621968239546,
+				0.012459883466362953,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.014999999999999999,
+				0.014999999999999999,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : " Station Est",
+							"computed_value" : 10.72713312912188,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PE",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.091633680074840837,
+							"normalized_residual" : 0.55804854209758525,
+							"number" : 4,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 45.044313721973104,
+							"obs_zen" : 0.0,
+							"original_value" : 10.718762400990416,
+							"rank" : 4,
+							"residual" : 0.0083707281314637783,
+							"residual_std" : 0.75277581902627788,
+							"sigma_a_posteriori" : 0.011119815381810999,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.010067259104365969,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : 0.83148035077725979,
+							"target_height" : 0.0,
+							"to" : "PE",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : " Station Est",
+							"computed_value" : -8.8573624638126862,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PE",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.074452360535005202,
+							"normalized_residual" : 0.83485827865601436,
+							"number" : 5,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 68.232814880222875,
+							"obs_zen" : 0.0,
+							"original_value" : -8.8698853379925264,
+							"rank" : 5,
+							"residual" : 0.012522874179840215,
+							"residual_std" : 1.4812330414645769,
+							"sigma_a_posteriori" : 0.0084543578419356332,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.012390473497025909,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : 1.0106856838720559,
+							"target_height" : 0.0,
+							"to" : "PE",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 7.5548994822340163e-05,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "PE",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"nabla" : 0.011746445985609894,
+							"normalized_residual" : 0.12591499134700729,
+							"number" : 18,
+							"obs_azim" : -1.4373737377908955,
+							"obs_length" : 214.37124185248118,
+							"obs_redondancy" : 4.3858850217553762,
+							"obs_zen" : 1.570811108781611,
+							"original_value" : 0.0,
+							"rank" : 18,
+							"residual" : 7.5548994808204362e-05,
+							"residual_std" : 0.12877051578023807,
+							"sigma_a_posteriori" : 0.00058669482179552303,
+							"sigma_abs" : 0.00059999999999999995,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00012565502806620725,
+							"sigma_total" : 0.00059999999999999995,
+							"standardized_residual" : 0.60124131895778832,
+							"target_height" : 0.0,
+							"to" : "PO",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 1.9800026189499755,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "PE",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"normalized_residual" : 0.011904318078578736,
+							"number" : 19,
+							"obs_azim" : -1.4062731161028221,
+							"obs_length" : 233.35245417298526,
+							"obs_redondancy" : 0.59093736340471992,
+							"obs_zen" : 1.5708124176321465,
+							"original_value" : 1.98,
+							"rank" : 19,
+							"residual" : 2.618949977287322e-06,
+							"residual_std" : 0.011939648272095071,
+							"sigma_a_posteriori" : 0.00021934900573312868,
+							"sigma_abs" : 0.00022000000000000001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.00022000000000000001,
+							"target_height" : 0.0,
+							"to" : "RNO",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 73.850871253791738,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "PE",
+							"instrument_height" : 0.0,
+							"line" : 9,
+							"normalized_residual" : -0.087109721956922737,
+							"number" : 20,
+							"obs_azim" : -0.27732815155114243,
+							"obs_length" : 174.86928531794342,
+							"obs_redondancy" : 0.27345180490969678,
+							"obs_zen" : 1.5708083849210823,
+							"original_value" : 73.850899999999996,
+							"rank" : 20,
+							"residual" : -2.8746208245784504e-05,
+							"residual_std" : -0.087229068332360382,
+							"sigma_a_posteriori" : 0.00032954849564890043,
+							"sigma_abs" : 0.00033,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.00033,
+							"target_height" : 0.0,
+							"to" : "CHSL_E",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"PE_G0_1" : 
+						{
+							"rank" : 10,
+							"sigma" : 4.4192986219773632e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -1.4373749245117311
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
+		"PO" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : " Staton Ouest",
+			"coord_compensated_cartesian" : 
+			[
+				-201.73886343279983,
+				19.659817544978814,
+				-0.0032147453764554967
+			],
+			"coord_compensated_georef" : 
+			[
+				658488.43031386565,
+				6860262.0946604451,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4344086315810078,
+				48.841069843205929,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4344087911553074,
+				48.841069811039958,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658488.44200000004,
+				6860262.091,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.0088741536229853986,
+						138.23382500214441,
+						0.0
+					],
+					[
+						0.005472908672194925,
+						38.233825002217131,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					7.8749422964500244e-05,
+					-2.8363428262605598e-05,
+					0.0,
+					5.6770310532211551e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.007947743609669114,
+					0.0067480888682274372,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 7,
+			"number" : 3,
+			"params" : 
+			{
+				"PO_x" : 
+				{
+					"rank" : 17,
+					"sigma" : 0.007947743609669114,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -201.73886343263845
+				},
+				"PO_y" : 
+				{
+					"rank" : 18,
+					"sigma" : 0.0067480888682274372,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 19.659819071452969
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.011686134384945035,
+				0.0036604451015591621,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.014999999999999999,
+				0.014999999999999999,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : " Staton Ouest",
+							"computed_value" : -201.73886343263845,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 5,
+							"nabla" : 0.076281211287154774,
+							"normalized_residual" : -0.78088759651488249,
+							"number" : 6,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 65.000256460222118,
+							"obs_zen" : 0.0,
+							"original_value" : -201.72715011869073,
+							"rank" : 6,
+							"residual" : -0.011713313947723236,
+							"residual_std" : -1.3199457852358327,
+							"sigma_a_posteriori" : 0.0088740871623226823,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.012093410479905978,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : -0.96856994701252397,
+							"target_height" : 0.0,
+							"to" : "PO",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : " Staton Ouest",
+							"computed_value" : 19.659819071452969,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 5,
+							"nabla" : 0.071123816564026623,
+							"normalized_residual" : 0.23860122078005475,
+							"number" : 7,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 74.768750874572646,
+							"obs_zen" : 0.0,
+							"original_value" : 19.656240053141268,
+							"rank" : 7,
+							"residual" : 0.0035790183117008212,
+							"residual_std" : 0.47501058290942005,
+							"sigma_a_posteriori" : 0.0075346075234355471,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.01297033883396222,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : 0.27593869038558427,
+							"target_height" : 0.0,
+							"to" : "PO",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 4,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.034957571395757892,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"nabla" : 0.13819252206727656,
+							"normalized_residual" : 1.0893060609526115,
+							"number" : 14,
+							"obs_azim" : -1.0702381111368364,
+							"obs_length" : 20.215544077004747,
+							"obs_redondancy" : 90.652814880664394,
+							"obs_zen" : 1.5707977207587018,
+							"original_value" : 0.0,
+							"rank" : 14,
+							"residual" : 0.034957571395772026,
+							"residual_std" : 3.5629481157301801,
+							"sigma_a_posteriori" : 0.009811417472355732,
+							"sigma_abs" : 0.00059999999999999995,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.030554978343553547,
+							"sigma_total" : 0.032091597255229809,
+							"standardized_residual" : 1.1440875854244332,
+							"target_height" : 0.0,
+							"to" : "RNO",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 123.37069797694258,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.028900820336027117,
+							"number" : 15,
+							"obs_azim" : 0.86711516877878225,
+							"obs_length" : 215.864288628086,
+							"obs_redondancy" : 0.035400372803595648,
+							"obs_zen" : 1.570811211733389,
+							"original_value" : 123.3707,
+							"rank" : 15,
+							"residual" : -2.0230574235218981e-06,
+							"residual_std" : -0.02890593719367834,
+							"sigma_a_posteriori" : 6.99876087727865e-05,
+							"sigma_abs" : 6.9999999999999994e-05,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 6.9999999999999994e-05,
+							"target_height" : 0.0,
+							"to" : "CHSL_E",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 174.31692290966362,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"nabla" : 0.018973187703055144,
+							"normalized_residual" : -0.45881729876706029,
+							"number" : 16,
+							"obs_azim" : 1.6673765986626303,
+							"obs_length" : 202.78756997074953,
+							"obs_redondancy" : 48.397357883129644,
+							"obs_zen" : 1.5708103100282862,
+							"original_value" : 174.3184,
+							"rank" : 16,
+							"residual" : -0.001477090336383423,
+							"residual_std" : -0.63871014509526658,
+							"sigma_a_posteriori" : 0.0023126144898843095,
+							"sigma_abs" : 8.0000000000000007e-05,
+							"sigma_rel" : 0.01,
+							"sigma_residual" : 0.0022396394035330597,
+							"sigma_total" : 0.0032193431685175757,
+							"standardized_residual" : -0.65952149888651468,
+							"target_height" : 0.0,
+							"to" : "RNE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 176.66237766880047,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "PO",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.013816469545013775,
+							"normalized_residual" : 0.59444631619472332,
+							"number" : 17,
+							"obs_azim" : 1.7042189158657881,
+							"obs_length" : 214.37124185248118,
+							"obs_redondancy" : 11.444142264738522,
+							"obs_zen" : 1.570811108781611,
+							"original_value" : 176.6617,
+							"rank" : 17,
+							"residual" : 0.00067766880046198465,
+							"residual_std" : 0.6316899873147287,
+							"sigma_a_posteriori" : 0.0010727869905659082,
+							"sigma_abs" : 0.00114,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00038565278797454792,
+							"sigma_total" : 0.00114,
+							"standardized_residual" : 1.7571992776743752,
+							"target_height" : 0.0,
+							"to" : "PE",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"PO_G0_1" : 
+						{
+							"rank" : 19,
+							"sigma" : 4.4522986923592625e-05,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -1.0707872233842577
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
+		"RNE" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : " Rep\u00e8re de nivellement Est",
+			"coord_compensated_cartesian" : 
+			[
+				0.10366571449931276,
+				0.10497247831986539,
+				-1.0885138207461509e-09
+			],
+			"coord_compensated_georef" : 
+			[
+				658690.10439891461,
+				6860241.1042185109,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4371583678940132,
+				48.840894033564737,
+				0.0
 			],
 			"coord_init_latlong" : 
 			[
@@ -170,27 +1719,70 @@ data=
 			"dev_eta" : null,
 			"dev_xi" : null,
 			"dimension" : 2,
-			"ellips" : null,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.0080515082969318547,
+						64.850609820805488,
+						0.0
+					],
+					[
+						0.00632455868790482,
+						164.85060982066423,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					7.2304476117242072e-05,
+					1.3821744059965884e-05,
+					0.0,
+					5.8382445914286288e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.007615575891076456,
+					0.0068432325913686349,
+					0.0
+				]
+			},
 			"file_id" : 0,
-			"nbr_active_obs" : 2,
+			"nbr_active_obs" : 5,
 			"number" : 0,
 			"params" : 
 			{
-				"PE_x" : 
+				"RNE_x" : 
 				{
-					"rank" : 2,
+					"rank" : 15,
+					"sigma" : 0.007615575891076456,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 0.10221832555127232
+					"value" : 0.10366571446753713
 				},
-				"PE_y" : 
+				"RNE_y" : 
 				{
-					"rank" : 3,
+					"rank" : 16,
+					"sigma" : 0.0068432325913686349,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 0.11174462917314075
+					"value" : 0.10497400424840422
 				}
 			},
+			"shift_from_read" : 
+			[
+				0.0013989146100357175,
+				-0.0067814886569976807,
+				0.0
+			],
 			"sigmas_init" : 
 			[
 				0.01,
@@ -208,26 +1800,32 @@ data=
 							"active" : true,
 							"active_read" : true,
 							"code" : -1,
-							"comment" : "",
-							"computed_value" : 0.10221832555127232,
+							"comment" : " Rep\u00e8re de nivellement Est",
+							"computed_value" : 0.10366571446753713,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
-							"from" : "PE",
+							"from" : "RNE",
 							"instrument_height" : 0.0,
 							"line" : 1,
-							"normalized_residual" : 0.0,
+							"nabla" : 0.077907463418515732,
+							"normalized_residual" : 0.14473889162648079,
 							"number" : 0,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
+							"obs_redondancy" : 27.695523882757932,
 							"obs_zen" : 0.0,
 							"original_value" : 0.10221832555127232,
 							"rank" : 0,
-							"residual" : 0.0,
+							"residual" : 0.0014473889162648079,
+							"residual_std" : 0.17021688974742361,
+							"sigma_a_posteriori" : 0.0085032038736726802,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0052626536920794944,
 							"sigma_total" : 0.01,
+							"standardized_residual" : 0.27503024157625772,
 							"target_height" : 0.0,
-							"to" : "PE",
+							"to" : "RNE",
 							"unit_factor" : 1.0,
 							"unit_str" : "m",
 							"variance_from_matrix" : false
@@ -236,26 +1834,32 @@ data=
 							"active" : true,
 							"active_read" : true,
 							"code" : -2,
-							"comment" : "",
-							"computed_value" : 0.11174462917314075,
+							"comment" : " Rep\u00e8re de nivellement Est",
+							"computed_value" : 0.10497400424840422,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
-							"from" : "PE",
+							"from" : "RNE",
 							"instrument_height" : 0.0,
 							"line" : 1,
-							"normalized_residual" : 0.0,
+							"nabla" : 0.06355439376533481,
+							"normalized_residual" : -0.67706249247365258,
 							"number" : 1,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
+							"obs_redondancy" : 41.617554085713714,
 							"obs_zen" : 0.0,
 							"original_value" : 0.11174462917314075,
 							"rank" : 1,
-							"residual" : 0.0,
+							"residual" : -0.0067706249247365263,
+							"residual_std" : -0.88610994921785313,
+							"sigma_a_posteriori" : 0.0076408406549466979,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0064511668778379719,
 							"sigma_total" : 0.01,
+							"standardized_residual" : -1.0495194207416965,
 							"target_height" : 0.0,
-							"to" : "PE",
+							"to" : "RNE",
 							"unit_factor" : 1.0,
 							"unit_str" : "m",
 							"variance_from_matrix" : false
@@ -266,16 +1870,28 @@ data=
 				}
 			]
 		},
-		"PO" : 
+		"RNO" : 
 		{
 			"code" : 7,
 			"code_name" : "2xy ",
-			"comment" : "",
+			"comment" : " Rep\u00e8re de nivellement Ouest",
 			"coord_compensated_cartesian" : 
 			[
-				-219.48388276443873,
-				29.364107252643926,
-				-0.0038369207942530181
+				-219.47425948731288,
+				29.361567345415278,
+				-0.0038365782207847587
+			],
+			"coord_compensated_georef" : 
+			[
+				658470.76660378207,
+				6860271.9213903649,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4341670139648341,
+				48.841157077920791,
+				0.0
 			],
 			"coord_init_latlong" : 
 			[
@@ -292,27 +1908,70 @@ data=
 			"dev_eta" : null,
 			"dev_xi" : null,
 			"dimension" : 2,
-			"ellips" : null,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.007310718585080876,
+						162.16382673861315,
+						0.0
+					],
+					[
+						0.0057965066307386496,
+						62.163826738629027,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					4.9646454350465182e-05,
+					-1.1479263686087422e-05,
+					0.0,
+					5.8873343912698426e-05,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.0063105073541943526,
+					0.0068719423952113461,
+					0.0
+				]
+			},
 			"file_id" : 0,
-			"nbr_active_obs" : 2,
+			"nbr_active_obs" : 6,
 			"number" : 1,
 			"params" : 
 			{
-				"PO_x" : 
+				"RNO_x" : 
 				{
-					"rank" : 0,
+					"rank" : 13,
+					"sigma" : 0.0063105073541943526,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -219.4838827641799
+					"value" : -219.47425948711717
 				},
-				"PO_y" : 
+				"RNO_y" : 
 				{
-					"rank" : 1,
+					"rank" : 14,
+					"sigma" : 0.0068719423952113461,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 29.364108776531786
+					"value" : 29.361568868290842
 				}
 			},
+			"shift_from_read" : 
+			[
+				0.0096037820912897587,
+				-0.0026096347719430923,
+				0.0
+			],
 			"sigmas_init" : 
 			[
 				0.01,
@@ -330,26 +1989,32 @@ data=
 							"active" : true,
 							"active_read" : true,
 							"code" : -1,
-							"comment" : "",
-							"computed_value" : -219.4838827641799,
+							"comment" : " Rep\u00e8re de nivellement Ouest",
+							"computed_value" : -219.47425948711717,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
-							"from" : "PO",
+							"from" : "RNO",
 							"instrument_height" : 0.0,
 							"line" : 2,
-							"normalized_residual" : 0.0,
+							"nabla" : 0.057778841308398381,
+							"normalized_residual" : 0.96232770627295849,
 							"number" : 2,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
+							"obs_redondancy" : 50.353545649534823,
 							"obs_zen" : 0.0,
 							"original_value" : -219.4838827641799,
 							"rank" : 2,
-							"residual" : 0.0,
+							"residual" : 0.0096232770627295849,
+							"residual_std" : 1.3657740945784402,
+							"sigma_a_posteriori" : 0.0070460240100687407,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0070960232278040655,
 							"sigma_total" : 0.01,
+							"standardized_residual" : 1.3561507274980558,
 							"target_height" : 0.0,
-							"to" : "PO",
+							"to" : "RNO",
 							"unit_factor" : 1.0,
 							"unit_str" : "m",
 							"variance_from_matrix" : false
@@ -358,26 +2023,221 @@ data=
 							"active" : true,
 							"active_read" : true,
 							"code" : -2,
-							"comment" : "",
-							"computed_value" : 29.364108776531786,
+							"comment" : " Rep\u00e8re de nivellement Ouest",
+							"computed_value" : 29.361568868290842,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
-							"from" : "PO",
+							"from" : "RNO",
 							"instrument_height" : 0.0,
 							"line" : 2,
-							"normalized_residual" : 0.0,
+							"nabla" : 0.063932569141471746,
+							"normalized_residual" : -0.25399082409442997,
 							"number" : 3,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
+							"obs_redondancy" : 41.126656087301583,
 							"obs_zen" : 0.0,
 							"original_value" : 29.364108776531786,
 							"rank" : 3,
-							"residual" : 0.0,
+							"residual" : -0.0025399082409442997,
+							"residual_std" : -0.33102338492864147,
+							"sigma_a_posteriori" : 0.0076728967093724404,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0064130067898998501,
 							"sigma_total" : 0.01,
+							"standardized_residual" : -0.39605575421259842,
 							"target_height" : 0.0,
-							"to" : "PO",
+							"to" : "RNO",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"TUBE" : 
+		{
+			"code" : 7,
+			"code_name" : "2xy ",
+			"comment" : " Point issu de la compensation globale calcul\u00e9e le 13/02",
+			"coord_compensated_cartesian" : 
+			[
+				-342.30863476732952,
+				336.57841248286138,
+				-0.018057984641046687
+			],
+			"coord_compensated_georef" : 
+			[
+				658350.13879147207,
+				6860579.9695364479,
+				0.0
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4324933602509526,
+				48.84391959768336,
+				0.0
+			],
+			"coord_init_latlong" : 
+			[
+				2.4324934173516817,
+				48.843919620110306,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658350.14300000004,
+				6860579.9720000001,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 2,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.013234586301287387,
+						185.84460224110092,
+						0.0
+					],
+					[
+						0.010392341509051556,
+						85.844602241152117,
+						0.0
+					],
+					[
+						0.0,
+						0.0,
+						100.0
+					]
+				],
+				"matrix" : 
+				[
+					0.00013871523921431852,
+					-1.8007784314608552e-05,
+					0.0,
+					0.00021429229462253819,
+					0.0,
+					0.0
+				],
+				"sigmas" : 
+				[
+					0.010548294489628244,
+					0.0131106262232991,
+					0.0
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 3,
+			"number" : 5,
+			"params" : 
+			{
+				"TUBE_x" : 
+				{
+					"rank" : 0,
+					"sigma" : 0.010548294489628244,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -342.30863476673755
+				},
+				"TUBE_y" : 
+				{
+					"rank" : 1,
+					"sigma" : 0.0131106262232991,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 336.57841401050894
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.0042085279710590839,
+				-0.0024635521695017815,
+				0.0
+			],
+			"sigmas_init" : 
+			[
+				0.012999999999999999,
+				0.014999999999999999,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 2,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : " Point issu de la compensation globale calcul\u00e9e le 13/02",
+							"computed_value" : -342.30863476673755,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "TUBE",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"nabla" : 0.1259094965882751,
+							"normalized_residual" : -0.3224119369283821,
+							"number" : 10,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 17.919976796261217,
+							"obs_zen" : 0.0,
+							"original_value" : -342.30444341155749,
+							"rank" : 10,
+							"residual" : -0.0041913551800689675,
+							"residual_std" : -0.35587081866964448,
+							"sigma_a_posteriori" : 0.011777743383786154,
+							"sigma_abs" : 0.012999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0055031591641239545,
+							"sigma_total" : 0.012999999999999999,
+							"standardized_residual" : -0.76162710455353289,
+							"target_height" : 0.0,
+							"to" : "TUBE",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : " Point issu de la compensation globale calcul\u00e9e le 13/02",
+							"computed_value" : 336.57841401050894,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "TUBE",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"nabla" : 0.28191498966352724,
+							"normalized_residual" : -0.16614961516173329,
+							"number" : 11,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 4.7589801677608072,
+							"obs_zen" : 0.0,
+							"original_value" : 336.58090625473636,
+							"rank" : 11,
+							"residual" : -0.0024922442274259993,
+							"residual_std" : -0.17025007861459904,
+							"sigma_a_posteriori" : 0.014638725853794044,
+							"sigma_abs" : 0.014999999999999999,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.003272263036105416,
+							"sigma_total" : 0.014999999999999999,
+							"standardized_residual" : -0.76162710635640707,
+							"target_height" : 0.0,
+							"to" : "TUBE",
 							"unit_factor" : 1.0,
 							"unit_str" : "m",
 							"variance_from_matrix" : false

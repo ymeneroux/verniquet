@@ -4,6 +4,7 @@
 7 PE 658700.654 6860232.055 000.000 0.015 0.015 0.000    * Station Est
 7 PO 658488.442 6860262.091 000.000 0.015 0.015 0.000    * Staton Ouest
 
-7 ESVC  658542.775 6860140.312 0.000 0.010 0.010 0.010   * Clou d'arpentage esplanade
+7 ESVC  658542.775 6860140.312 0.000 0.015 0.015 0.015   * Clou d'arpentage esplanade
 7 TUBE  658350.143 6860579.972 0.000 0.013 0.015 0.000   * Point issu de la compensation globale calculée le 13/02
 
+7 M3 658503.687 6860167.246 000.000 0.015 0.015 0.015    * Point esplanade pour visée antenne
