@@ -1,17 +1,42 @@
-SSLP       #  Eglise de Saint-Sulpice : axe au sommet de la tour Nord
-BAT4       #  Montreuil : bâtiment 4 du quartier de La Noue. Pillier Est de l'antenne Sud
-CHSL_O     #  Sainte Chapelle du Château de Vincennes : sommet en pierre (ouest)
-CHSL_E     #  Sainte Chapelle du Château de Vincennes : sommet doré (est)
-CHVC       #  Château de Vincennes : coin supérieur gauche fenêtre nord première étage donjon
-VTRY_CHN   #  Cheminée Nord de Vitry-sur-Seine :  axe au sommet 
-VTRY_CHS   #  Cheminée Sud de Vitry-sur-Seine :  axe au sommet 
-VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  signal lumineux Est, étage supérieur
-ESVC       #  Esplanade de Vincennes : clou d'arpentage
-TUBE       #  Cheminée supérieure 20 av. Franklin Roosevelt, Vincennes : axe au sommet
 ANFN       #  Antenne du Fort Neuf de Vincennes, signal lumineux du pillier Nord
+ASPT       #  Notre-Dame de l'Assomption
+AUGU       #  Eglise Saint-Augustin
+BAT4       #  Montreuil : bâtiment 4 du quartier de La Noue. Pillier Est de l'antenne Sud
+BCTR       #  Immeuble Bicêtre - Avenue Charles Gide - cheminée sud toit supérieur
+CD4N       #  Collège des 4 Nations
+CDTN       #  Colonne du Trône - Statue Nord de Saint-Louis - sommet bannière 
+CHSL_E     #  Sainte Chapelle du Château de Vincennes : sommet doré (est)
+CHSL_O     #  Sainte Chapelle du Château de Vincennes : sommet en pierre (ouest)
+CHVC       #  Château de Vincennes : coin supérieur gauche fenêtre nord première étage donjon
+EGLM       #  Eglise Saint-André du Bas Montreuil - axe au sommet de la croix
+EGSP       #  Eglise Saint-Paul-Saint-Louis - 99 rue Saint-Antoine
+EGLV       #  Eglise Saint-Louis de Vincennes - axe au sommet de la croix
+ESVC       #  Esplanade de Vincennes : clou d'arpentage
+GLOB       #  Sculpture sphère armillaire - Institut national de l'origine et de la qualité
+GLYN       #  Gare de Lyon - Clocher horloge - axe au sommet
+GYRO       #  Repère géodésique cascadelle - Gyrothéodolite Guilands
+IGNF       #  Saint-Mandé - Antenne géodésique IGN - bâtiment A
+IMBM       #  Immeuble 124 rue de Lagny, Paris XII - section supérieure de l'arête Nord-Est
+IMJG       #  12 rue Joseph Gaillard, Vincennes - arête Nord-Ouest de la section supérieure
 IMJR       #  Immeuble 40 rue de la Jarry, Vincennes - base de l'antenne Yagi
 IMJR2      #  Immeuble 40 rue de la Jarry, Vincennes - haut de l'arête Nord-Est - cheminée annexe
-IMBM       #  Immeuble 124 rue de Lagny, Paris XII - section supérieure de l'arête Nord-Est
-EGLM       #  Eglise Saint-André du Bas Montreuil - axe au sommet de la croix
+INVD       #  Dome de l'église des Invalides - axe au sommet
+MINA       #  Basilique du Sacré-Cœur de Montmartre - Tour du Campanile 
 MTYA       #  44 rue Diderot, Vincennes - Axe cheminée annexe Nord
-IMJG       #  12 rue Joseph Gaillard, Vincennes - arête Nord-Ouest de la section supérieure
+NDVC       #  Eglise Notre-Dame de Vincennes - base du coq sur le clocher
+NTDM       #  Cathédrale Notre-Dame de Paris - sommet tour sud
+PTHN       #  Panthéon - croix - axe au niveau de la croisée
+RD3T       #  40 rue des 3 territoires - centre de fenêtre
+SCPL       #  Sainte-Chapelle de Paris
+SEDM       #  Eglise Saint-Etienne Du Mont - Place Sainte-Geneviève
+SGAX       #  Saint-Germain l'Auxerrois
+SGDP       #  Eglise Saint-Germain-des-Prés
+SGRV       #  Eglise Saint-Gervais - 13 rue des Barres - axe au sommet clocher
+SRBN       #  Eglise de la Sorbonne
+SSLP       #  Eglise de Saint-Sulpice - 2 rue Palatine - axe au sommet de la tour Nord
+TFLE       #  Tour Eiffel - antenne supérieure - axe au sommet
+TUBE       #  Cheminée supérieure 20 av. Franklin Roosevelt, Vincennes : axe au sommet
+VDGC       #  Eglise du Val-de-Grâce
+VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  signal lumineux Est, étage supérieur
+VTRY_CHN   #  Cheminée Nord de Vitry-sur-Seine :  axe au sommet 
+VTRY_CHS   #  Cheminée Sud de Vitry-sur-Seine :  axe au sommet 
