@@ -368,6 +368,7 @@ for (let code in type_obs){
   exist[type_obs[code]] = false;
 }
 var exist_type=[];
+var three_dimension=false;
 
 const email = "comp3d@ign.fr";
 const fill_fold = "||";
@@ -499,9 +500,15 @@ function get_header_conf(table_name, matrix_inverted,use_vertical_deflection,com
             {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
             {displayed_name:component[0]+" init", field:"x_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
             {displayed_name:component[1]+" init", field:"y_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-            {displayed_name:component[2]+" init", field:"z_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-            {displayed_name:"\u03C3x init", field:"sigma_x_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-            {displayed_name:"\u03C3y init", field:"sigma_y_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:component[2]+" init", field:"z_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:"\u03C3x init", field:"sigma_x_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+                {displayed_name:"\u03C3y init", field:"sigma_y_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+            )
+        }
+        header_conf.push(
             {displayed_name:"\u03C3z init", field:"sigma_z_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
         )
         if(use_vertical_deflection)
@@ -551,12 +558,24 @@ function get_header_conf(table_name, matrix_inverted,use_vertical_deflection,com
             {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
             {displayed_name:component[0] + " comp", field:"x_comp", tooltip:"", sortable:true, fixed_dec:true, foldable:false, coord:coord_compensated},
             {displayed_name:component[1] + " comp", field:"y_comp", tooltip:"", sortable:true, fixed_dec:true, foldable:false, coord:coord_compensated},
-            {displayed_name:component[2] + " comp", field:"z_comp", tooltip:"", sortable:true, fixed_dec:true, foldable:false, coord:coord_compensated},
-            {displayed_name:"\u0394" + component[0], field:"x_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
-            {displayed_name:"\u0394" + component[1], field:"y_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
-            {displayed_name:"\u0394" + component[2], field:"z_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
-            {displayed_name:"\u03C3x init", field:"sigma_x_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
-            {displayed_name:"\u03C3y init", field:"sigma_y_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
+            {displayed_name:component[2] + " comp", field:"z_comp", tooltip:"", sortable:true, fixed_dec:true, foldable:false, coord:coord_compensated}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:"\u0394" + component[0], field:"x_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
+                {displayed_name:"\u0394" + component[1], field:"y_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
+            )
+        }
+        header_conf.push(
+            {displayed_name:"\u0394" + component[2], field:"z_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:"\u03C3x init", field:"sigma_x_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
+                {displayed_name:"\u03C3y init", field:"sigma_y_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
+            )
+        }
+        header_conf.push(
             {displayed_name:"\u03C3z init", field:"sigma_z_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
             );
 
@@ -585,24 +604,34 @@ function get_header_conf(table_name, matrix_inverted,use_vertical_deflection,com
     }else if(table_name === "interv"){
         header_conf.push(
             {displayed_name:"index_init", field:"index_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-            {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-            {displayed_name:_("\u0302\u03C3x (mm)"), field:"sigmax", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-            {displayed_name:_("\u0302\u03C3y (mm)"), field:"sigmay", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-            {displayed_name:_("\u0302\u03C3z (mm)"), field:"sigmaz", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-
+            {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:_("\u0302\u03C3x (mm)"), field:"sigmax", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+                {displayed_name:_("\u0302\u03C3y (mm)"), field:"sigmay", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+            )
+        }
+        header_conf.push(
+            {displayed_name:_("\u0302\u03C3z (mm)"), field:"sigmaz", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
         );
          return header_conf;
     }else if(table_name === "displa"){
       header_conf.push(
         {displayed_name:"index_init", field:"index_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-        {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-        {displayed_name:_("MSE X (mm)"), field:"emqx", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-        {displayed_name:_("MSE Y (mm)"), field:"emqy", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-        {displayed_name:_("MSE Z (mm)"), field:"emqz", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-        {displayed_name: _("Max X (mm)"), field:"maxx", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-        {displayed_name: _("Max Y (mm)"), field:"maxy", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-        {displayed_name: _("Max Z (mm)"), field:"maxz", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
-      );
+        {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      if (three_dimension){
+        header_conf.push(
+          {displayed_name:_("MSE X (mm)"), field:"emqx", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+          {displayed_name:_("MSE Y (mm)"), field:"emqy", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      }
+      header_conf.push({displayed_name:_("MSE Z (mm)"), field:"emqz", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      if (three_dimension){
+        header_conf.push(
+          {displayed_name: _("Max X (mm)"), field:"maxx", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+          {displayed_name: _("Max Y (mm)"), field:"maxy", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      }
+      header_conf.push({displayed_name: _("Max Z (mm)"), field:"maxz", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
       return header_conf;
     }else{
         return undefined;
@@ -3706,6 +3735,9 @@ function showComp3Djson(data){
     if (data["points"]){
         for (const [key, val] of Object.entries(data["points"])) {
             all_pts.push(val);
+            if (val.dimension !== 1) {
+                three_dimension=true;
+            }
             all_pts_name[key]=val;
             all_pts[all_pts.length - 1].name = key;
             if (val["stations"] && Object.keys(val["stations"]).length !== 0) {
@@ -3809,13 +3841,13 @@ function showComp3Djson(data){
           }
           show_chi2();
         }
-        show_coord_init();
-        show_obs();
         for (let type in exist){
           if (exist[type] && !(type==="cint")){
             exist_type.push(type);
           }
         }
+        show_coord_init();
+        show_obs();
         if (exist["hz"]){
           show_G0();
         }
@@ -3841,7 +3873,9 @@ function showComp3Djson(data){
             show_coord_comp();
         }
         if (data["computation"]["inverted_matrix"]){
-            show_ellips();
+            if (three_dimension){
+                show_ellips();
+            }
             show_intervals();
         }
         if (data["config"]["compute_type"] === 2){//Monte Carlo
