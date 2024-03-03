@@ -37,7 +37,7 @@ etoile = procyon
 # ---------------------------------------------
 std_time    =  0.1  # Time marker standard deviation (in seconds)
 std_angle   =    3  # Standard deviation of instrument (in arc-seconds)
-offset_time =  0.2  # Offset (in seconds) relative to true time
+offset_time =  0.0  # Offset (in seconds) relative to true time
 # ===========================================================================
 
 # Specific RA and DEC
