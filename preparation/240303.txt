@@ -1,0 +1,77 @@
+CG 2024-03-03 23:00:56.384419+00:00 225.53667 +/- 0.00046 43.0991666667
+CD 2024-03-03 23:01:58.735191+00:00 225.82395 +/- 0.00047 269.1414548887
+Azimut vers la reference : 225.78948 +/- 0.00095599
+CG 2024-03-03 23:05:58.584081+00:00 226.92097 +/- 0.00046 44.1594444444
+CD 2024-03-03 23:07:00.999938+00:00 227.20435 +/- 0.00046 271.5835189776
+Azimut vers la reference : 227.17252 +/- 0.00095107
+
+
+
+C:\Users\oo\Desktop\divers\verniquet\Reseau\preparation (main -> origin)
+λ python eq2hor.py
+# -------------------------------------------------
+# Calcul d'orientations astronomiques
+# -------------------------------------------------
+Nom session : 240303
+
+=========================================================
+DEBUT DES OBSERVATIONS
+=========================================================
+Observation #1    [Enter] continuer    [X] arret
+Lecture angle CG point de reference :
+   DEG: 112
+   MIN: 1
+   SEC: 7
+Observation : 112° 01' 07.0"
+Mesure etoile CG     [Enter] signal
+2024-03-03 23:00:56.384419+00:00 225.53667 +/- 0.00046
+Lecture angle CG etoile :
+   DEG: 155
+   MIN: 7
+   SEC: 4
+Observation : 155° 07' 04.0"
+---------------------------------------------------------
+Mesure etoile CD     [Enter] signal
+2024-03-03 23:01:58.735191+00:00 225.82395 +/- 0.00047
+Lecture angle CD etoile :
+   DEG: 335
+   MIN: 20
+   SEC: 10
+Observation : 335° 20' 10.0"
+Lecture angle CD point de reference :
+   DEG: 292
+   MIN: 1
+   SEC: 7
+Observation : 292° 01' 07.0"
+---------------------------------------------------------
+Azimut vers la reference : 225.78948 +/- 0.00095599
+=========================================================
+Observation #2    [Enter] continuer    [X] arret
+Lecture angle CG point de reference :
+   DEG: 112
+   MIN: 1
+   SEC: 17
+Observation : 112° 01' 17.0"
+Mesure etoile CG     [Enter] signal
+2024-03-03 23:05:58.584081+00:00 226.92097 +/- 0.00046
+Lecture angle CG etoile :
+   DEG: 156
+   MIN: 10
+   SEC: 51
+Observation : 156° 10' 51.0"
+---------------------------------------------------------
+Mesure etoile CD     [Enter] signal
+2024-03-03 23:07:00.999938+00:00 227.20435 +/- 0.00046
+Lecture angle CD etoile :
+   DEG: 336
+   MIN: 24
+   SEC: 0
+Observation : 336° 24' 00.0"
+Lecture angle CD point de reference :
+   DEG: 292
+   MIN: 1
+   SEC: 15
+Observation : 292° 01' 15.0"
+---------------------------------------------------------
+Azimut vers la reference : 227.17252 +/- 0.00095107
+=========================================================

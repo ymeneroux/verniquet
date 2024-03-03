@@ -23,20 +23,21 @@ lat = 48.851333333333336
 # ---------------------------------------------
 # Catalogue d'etoiles
 # ---------------------------------------------
-altair = [19, 50, 46.999,  8, 52, 5.96]
-rigel  = [ 5, 14, 32.3  , -8, 12, 6   ]
-sirius = [ 6, 45,  8.9173, -16, 42, 58.017]
+altair  = [19, 50, 46.999 ,  8, 52, 5.96   ]
+rigel   = [ 5, 14, 32.3   , -8, 12, 6      ]
+sirius  = [ 6, 45,  8.9173, -16, 42, 58.017]
+procyon = [ 7, 39, 18.0   ,   5, 13 , 29   ] 
 # ---------------------------------------------
 
 # Choix de l'etoile
-etoile = sirius
+etoile = procyon
 
 # ---------------------------------------------
 # Parametres de precision
 # ---------------------------------------------
 std_time    =  0.1  # Time marker standard deviation (in seconds)
 std_angle   =    3  # Standard deviation of instrument (in arc-seconds)
-offset_time =  0.0  # Offset (in seconds) relative to true time
+offset_time =  0.2  # Offset (in seconds) relative to true time
 # ===========================================================================
 
 # Specific RA and DEC
