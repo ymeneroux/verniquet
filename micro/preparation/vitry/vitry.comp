@@ -1,10 +1,10 @@
 data=
 {
-	"COMP3D_COMMIT" : "v5.21rc3-341-g2e091c2b-dirty",
-	"COMP3D_COPYRIGHT" : "Copyright 1992-2023 IGN France",
-	"COMP3D_LICENSE" : "Licensed for IGN usage only",
+	"COMP3D_COMMIT" : "v5.20rc1",
+	"COMP3D_COPYRIGHT" : "Copyright 1995-2021 IGN France",
+	"COMP3D_LICENSE" : "Licensed for IGN/ENSG usage only",
 	"COMP3D_OPTIONS" : "QT GUI SIM RES AUTO ",
-	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"COMP3D_VERSION" : "COMP3D v5.20rc1",
 	"all_data_files" : 
 	{
 		"0" : "vitry.cor",
@@ -30,7 +30,7 @@ data=
 	"all_uninitializable_point_names" : null,
 	"computation" : 
 	{
-		"Monte_Carlo_done" : false,
+		"ICobs" : [],
 		"all_parameters_names" : 
 		[
 			"BAT4_x",
@@ -39,16 +39,16 @@ data=
 			"PNE_y",
 			"PNO_x",
 			"PNO_y",
-			"PNO_G0_1",
+			"PNO_G0",
 			"AMAR_x",
 			"AMAR_y",
-			"AMAR_G0_1",
+			"AMAR_G0",
 			"PBE_x",
 			"PBE_y",
-			"PBE_G0_1",
+			"PBE_G0",
 			"PSE_x",
 			"PSE_y",
-			"PSE_G0_1",
+			"PSE_G0",
 			"VTRY_LED_x",
 			"VTRY_LED_y",
 			"VTRY_CHS_x",
@@ -59,26 +59,25 @@ data=
 			"PS_y",
 			"PSX_x",
 			"PSX_y",
-			"PSX_G0_1",
-			"PSX_G0_2",
+			"PSX_G0",
+			"PSX_G0",
 			"PSOX_x",
 			"PSOX_y",
-			"PSOX_G0_1",
-			"PSOX_G0_2",
+			"PSOX_G0",
+			"PSOX_G0",
 			"PSO_x",
 			"PSO_y"
 		],
 		"all_sigma0" : 
 		[
-			463.1670772444935,
-			240.19964119749272,
-			94.369588371739582,
-			16.455972653888384,
-			0.97482973210030865,
-			0.96083844795466666,
-			0.96083826811091266
+			463.16640502855802,
+			240.19207497399015,
+			94.352842197500706,
+			16.485546408911581,
+			0.96969711919572932,
+			0.95561255024935376,
+			0.95561236719392373
 		],
-		"biggest_ellips" : 0.03179984674937647,
 		"chi2_test" : 
 		{
 			"DOF" : 14,
@@ -86,13 +85,12 @@ data=
 			"max" : 1.8536064532150447,
 			"min" : 0.66858657272882771
 		},
-		"compensation_done" : true,
-		"computation_duration" : "00:00:00.002813",
-		"computation_start" : "2023-Dec-18 15:32:57.393141",
+		"compensationDone" : true,
+		"computation_duration" : "00:00:00.001981",
+		"computation_start" : "2024-Mar-03 22:17:17.607190",
 		"internal_constraints" : false,
-		"internal_constraints_obs" : [],
 		"interrupted" : false,
-		"inverted_matrix" : true,
+		"invertedMatrix" : true,
 		"kernel" : null,
 		"messages_computation" : "",
 		"messages_read_config" : "",
@@ -118,13 +116,11 @@ data=
 			],
 			"center_latitude" : 48.787432640040834,
 			"earth_model_radius" : 6380925.9529789565,
-			"geocent_def" : "+proj=geocent",
 			"input_proj_EPSG" : 2154,
 			"input_proj_def" : "IGNF:LAMB93",
 			"input_proj_name" : "RGF93 / Lambert-93",
 			"is_georef" : true,
-			"latlong_def" : "+proj=latlong",
-			"local_center_stereo" : 
+			"local_center" : 
 			[
 				2.3371564691571699e-10,
 				3.5421254557104689e-09,
@@ -148,15 +144,13 @@ data=
 					0.65885448031997429,
 					0.75227041265910266
 				]
-			],
-			"stereo_def" : "+proj=sterea +lat_0=48.7874326400408 +lon_0=2.40891886399731 +k_0=1 +x_0=0 +y_0=0"
+			]
 		},
-		"rank_deficiency" : 0,
-		"sigma_0_final" : 0.96083826811091266,
-		"sigma_0_init" : 463.1670772444935,
-		"solver_name" : "N5Eigen8SparseQRINS_12SparseMatrixIdLi0EiEENS_15NaturalOrderingIiEEEE",
+		"rank_default" : 0,
+		"sigma_0_final" : 0.95561236719392373,
+		"sigma_0_init" : 463.16640502855802,
 		"unit_name" : "g",
-		"use_vertical_deflection" : false
+		"use_vertical_deviation" : false
 	},
 	"config" : 
 	{
@@ -164,9 +158,7 @@ data=
 		"clean_outputs" : false,
 		"compute_type" : 0,
 		"convergence_criterion" : 0.001,
-		"coord_cov_file" : "",
 		"description" : "",
-		"display_map" : true,
 		"files_unit" : 1,
 		"force_iterations" : 0,
 		"internal_constraints" : false,
@@ -186,40 +178,45 @@ data=
 		"refraction" : 0.12,
 		"root_COR_file" : "vitry.cor",
 		"root_OBS_file" : "vitry.obs",
+		"save_invert" : false,
 		"use_ellips_height" : true,
 		"use_proj" : true
 	},
-	"config_file" : "/home/YMeneroux/Bureau/KitYann/Recherches/Verniquet/verniquet/micro/vitry/vitry.comp",
-	"other_stations" : null,
+	"config_file" : "C:/Users\\oo\\Desktop\\divers\\verniquet\\Reseau\\micro\\preparation\\vitry\\vitry.comp",
 	"points" : 
 	{
 		"AMAR" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				950.29173164058636,
-				411.31727504212176,
-				-0.083934941010227249
+				950.29173134747418,
+				411.31726274334443,
+				-0.084018861596960343
 			],
 			"coord_compensated_georef" : 
 			[
-				657526.19693707419,
-				6854716.1265668878,
+				657526.19694087165,
+				6854716.1265548281,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4218520029991351,
-				48.791130622827666,
+				2.4218520030520256,
+				48.791130622719457,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				950.29174177493451,
+				411.31726726013034,
 				0.0
 			],
 			"coord_init_latlong" : 
 			[
 				2.4218519900017683,
-				48.791130644648121,
+				48.791130644648128,
 				0.0
 			],
 			"coord_read" : 
@@ -236,63 +233,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0048016573719573304,
-						74.573780286854657,
+						0.0047755415158472533,
+						74.574157641315935,
 						0.0
 					],
 					[
-						0.0045497196285246783,
-						174.57378028685503,
+						0.0045249534585241544,
+						174.57415764131582,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					2.4587751820348582e-05,
-					9.1424224333582834e-07,
-					0.0,
-					2.2807590306334623e-05,
-					0.0,
-					0.0
+					2.4587730437846777e-05,
+					9.1430472212883949e-07,
+					2.2807405042682754e-05
 				],
 				"sigmas" : 
 				[
-					0.0047644163043927303,
-					0.0045887034654999914,
-					0.0
+					0.0047385010717578445,
+					0.0045637274419426223
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 6,
+			"nbActiveObs" : 6,
 			"number" : 10,
-			"params" : 
-			{
-				"AMAR_x" : 
-				{
-					"rank" : 7,
-					"sigma" : 0.0047644163043927303,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 950.29173163000155
-				},
-				"AMAR_y" : 
-				{
-					"rank" : 8,
-					"sigma" : 0.0045887034654999914,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 411.31727658163504
-				}
-			},
+			"rank" : 7,
 			"shift_from_read" : 
 			[
-				0.00093707419000566006,
-				-0.0024331118911504745,
+				0.00094087165780365467,
+				-0.0024451715871691704,
 				0.0
 			],
 			"sigmas_init" : 
@@ -304,273 +273,255 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 950.29173163000155,
+							"computed_value" : 950.29173551836504,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "AMAR",
 							"instrument_height" : 0.0,
 							"line" : 45,
-							"nabla" : 0.15964101930389202,
-							"normalized_residual" : 0.19108455544483149,
+							"nabla" : 0.15963687933218393,
+							"normalized_residual" : 0.19186222814369103,
 							"number" : 12,
+							"obsRedondancy" : 1.6490782486129119,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 1.6489927186056574,
 							"obs_zen" : 0.0,
 							"original_value" : 950.29077620722433,
-							"rank" : 12,
-							"residual" : 0.00095542277722415747,
-							"residual_std" : 0.192679797047833,
-							"sigma_a_posteriori" : 0.0049586038176434892,
+							"rank" : 33,
+							"residual" : 0.00095931114071845514,
+							"residualStd" : 0.19346404615613741,
+							"sigmaResidual" : 0.00064208220825158144,
+							"sigma_a_posteriori" : 0.0049586016615419688,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00064206555712903349,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : 1.4880455221679953,
+							"standardized_residual" : 1.4940627981745551,
 							"target_height" : 0.0,
 							"to" : "AMAR",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 411.31727658163504,
+							"computed_value" : 411.31726454864202,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "AMAR",
 							"instrument_height" : 0.0,
 							"line" : 45,
-							"nabla" : 0.06922500703938908,
-							"normalized_residual" : -0.48497188263354474,
+							"nabla" : 0.069222082388740946,
+							"normalized_residual" : -0.48737848123892036,
 							"number" : 13,
+							"obsRedondancy" : 8.7703798292689701,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 8.7696387746615034,
 							"obs_zen" : 0.0,
 							"original_value" : 411.31970144104821,
-							"rank" : 13,
-							"residual" : -0.0024248594131677237,
-							"residual_std" : -0.50774641169946477,
-							"sigma_a_posteriori" : 0.0047757292957552175,
+							"rank" : 34,
+							"residual" : -0.0024368924061946018,
+							"residualStd" : -0.51026809784443694,
+							"sigmaResidual" : 0.0014807413539566063,
+							"sigma_a_posteriori" : 0.0047757098993430032,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0014806787948996145,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : -1.6376674141079475,
+							"standardized_residual" : -1.6457245552595108,
 							"target_height" : 0.0,
 							"to" : "AMAR",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				},
 				{
-					"nbr_active_obs" : 4,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 0.75936503495909125,
+							"computed_value" : 0.75936800478868094,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "AMAR",
 							"instrument_height" : 0.0,
 							"line" : 49,
-							"nabla" : 0.015173374613421548,
-							"normalized_residual" : -0.45040018089225314,
+							"nabla" : 0.015173329477434593,
+							"normalized_residual" : -0.44931763668305169,
 							"number" : 39,
-							"obs_azim" : -1.5499173071078653,
-							"obs_length" : 367.57857766816215,
-							"obs_redondancy" : 54.892823280368994,
-							"obs_zen" : 1.5708216733630818,
+							"obsRedondancy" : 54.893009875741186,
+							"obs_azim" : -1.5499168694779921,
+							"obs_length" : 367.5793196728419,
+							"obs_zen" : 1.5708216734135987,
 							"original_value" : 0.76060000000000005,
-							"rank" : 39,
-							"residual" : -0.0012349650409042227,
-							"residual_std" : -0.67061881459703332,
-							"sigma_a_posteriori" : 0.0018415305595717564,
+							"rank" : 35,
+							"residual" : -0.0012319952113428716,
+							"residualStd" : -0.66900835504474621,
+							"sigmaResidual" : 0.0020314871337870537,
+							"sigma_a_posteriori" : 0.0018415244025771105,
 							"sigma_abs" : 0.00101,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0020314862712716743,
-							"sigma_total" : 0.0027419283856807706,
-							"standardized_residual" : -0.6079120781511147,
+							"sigma_total" : 0.0027419248895674225,
+							"standardized_residual" : -0.60644992077612292,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 15.823438078343125,
+							"computed_value" : 15.823428985082105,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "AMAR",
 							"instrument_height" : 0.0,
 							"line" : 50,
-							"nabla" : 0.014231000316853414,
-							"normalized_residual" : 0.2264505664874151,
+							"nabla" : 0.014230692845306179,
+							"normalized_residual" : 0.22262393258990218,
 							"number" : 40,
-							"obs_azim" : -1.3132914010766887,
-							"obs_length" : 403.91056943921654,
-							"obs_redondancy" : 46.864183972055088,
-							"obs_zen" : 1.5708241786544772,
+							"obsRedondancy" : 46.86609543010546,
+							"obs_azim" : -1.3132911529333997,
+							"obs_length" : 403.91130795152236,
+							"obs_zen" : 1.5708241787054227,
 							"original_value" : 15.822900000000001,
-							"rank" : 40,
-							"residual" : 0.00053807834311315594,
-							"residual_std" : 0.3106559915372728,
-							"sigma_a_posteriori" : 0.0017320713514987745,
+							"rank" : 36,
+							"residual" : 0.00052898508209269402,
+							"residualStd" : 0.30541192086098556,
+							"sigmaResidual" : 0.0016266756315235086,
+							"sigma_a_posteriori" : 0.001732038096618607,
 							"sigma_abs" : 0.00080000000000000004,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0016266444315985189,
-							"sigma_total" : 0.0023761404153654852,
-							"standardized_residual" : 0.33079038827457896,
+							"sigma_total" : 0.0023761375335469561,
+							"standardized_residual" : 0.32519395498490272,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 16.117630237677869,
+							"computed_value" : 16.1176174589475,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "AMAR",
 							"instrument_height" : 0.0,
 							"line" : 51,
-							"nabla" : 0.014089110892368049,
-							"normalized_residual" : -1.4092561901870204,
+							"nabla" : 0.014088549920827137,
+							"normalized_residual" : -1.4146023016519074,
 							"number" : 41,
-							"obs_azim" : -1.30867024144414,
-							"obs_length" : 400.0969548681345,
-							"obs_redondancy" : 48.419374694969534,
-							"obs_zen" : 1.5708239156847676,
+							"obsRedondancy" : 48.423096155752567,
+							"obs_azim" : -1.3086700511920681,
+							"obs_length" : 400.09778987892912,
+							"obs_zen" : 1.5708239157425126,
 							"original_value" : 16.120999999999999,
-							"rank" : 41,
-							"residual" : -0.0033697623221052527,
-							"residual_std" : -1.9622152641314112,
-							"sigma_a_posteriori" : 0.0017173255063821461,
+							"rank" : 37,
+							"residual" : -0.0033825410524743415,
+							"residualStd" : -1.9697301220812642,
+							"sigmaResidual" : 0.0016639297744178848,
+							"sigma_a_posteriori" : 0.0017172611692104637,
 							"sigma_abs" : 0.00080000000000000004,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.001663868144918403,
-							"sigma_total" : 0.00239116375402123,
-							"standardized_residual" : -2.0252580304495869,
+							"sigma_total" : 0.0023911604332358047,
+							"standardized_residual" : -2.0328628674594764,
 							"target_height" : 0.0,
 							"to" : "VTRY_LED",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 91.422721326170688,
+							"computed_value" : 91.422723535658506,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "AMAR",
 							"instrument_height" : 0.0,
 							"line" : 52,
-							"nabla" : 0.010243475800465857,
-							"normalized_residual" : 0.52665771332490285,
+							"nabla" : 0.010242967969074037,
+							"normalized_residual" : 0.52941957314427313,
 							"number" : 42,
-							"obs_azim" : -0.12578063673654377,
-							"obs_length" : 701.32527588614698,
-							"obs_redondancy" : 10.253048125440934,
-							"obs_zen" : 1.570844687037102,
+							"obsRedondancy" : 10.254064812945751,
+							"obs_azim" : -0.1257802110500911,
+							"obs_length" : 701.32482124146088,
+							"obs_zen" : 1.5708446870052837,
 							"original_value" : 91.422300000000007,
-							"rank" : 42,
-							"residual" : 0.00042132617065992231,
-							"residual_std" : 0.55592806033404596,
-							"sigma_a_posteriori" : 0.00075787894283795628,
+							"rank" : 38,
+							"residual" : 0.00042353565851541858,
+							"residualStd" : 0.55884658298605827,
+							"sigmaResidual" : 0.00025617574983368904,
+							"sigma_a_posteriori" : 0.00075787465005576439,
 							"sigma_abs" : 0.00080000000000000004,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00025616304964381944,
 							"sigma_total" : 0.00080000000000000004,
-							"standardized_residual" : 1.6447577870647347,
+							"standardized_residual" : 1.6533011371700119,
 							"target_height" : 0.0,
 							"to" : "PNE",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"AMAR_G0_1" : 
-						{
-							"rank" : 9,
-							"sigma" : 1.8107591207395737e-05,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : -1.5618453851839675
-						}
+						"g0" : -99.430140468364044
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				}
 			]
 		},
 		"BAT4" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1400.0156663585042,
-				8511.0065347575401,
-				148.43443060528625
+				1400.0223349657363,
+				8510.9646644260647,
+				-5.8296097297518159
 			],
 			"coord_compensated_georef" : 
 			[
-				658036.49931504834,
-				6862810.9766369369,
-				154.27199999999999
+				658036.54145244032,
+				6862811.1430870909,
+				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4279997613057436,
-				48.86396268441927,
-				154.27199999999999
+				2.428000319220939,
+				48.863964184036142,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				1400.0234008499024,
+				8510.9711441122927,
+				0.0
 			],
 			"coord_init_latlong" : 
 			[
-				2.4279997297148084,
-				48.863962687533466,
-				154.27199999999999
+				2.4280003185048811,
+				48.863964184148813,
+				0.0
 			],
 			"coord_read" : 
 			[
-				658036.49699999997,
-				6862810.977,
-				154.27199999999999
+				658036.54139999999,
+				6862811.1431,
+				0.0
 			],
 			"dev_eta" : null,
 			"dev_xi" : null,
@@ -580,145 +531,109 @@ data=
 				"axes" : 
 				[
 					[
-						0.03179984674937647,
-						0.33967290803693923,
+						0.0062219610021956749,
+						0.0059654344074171767,
 						0.0
 					],
 					[
-						0.026201173579266539,
-						100.33967290803712,
+						0.0043537095943691675,
+						100.00596543440732,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00074361262264639283,
-					1.8766907340600492e-06,
-					0.0,
-					0.001095331305456602,
-					0.0,
-					0.0
+					2.0756560736407122e-05,
+					2.02741035139413e-09,
+					4.2392696734836949e-05
 				],
 				"sigmas" : 
 				[
-					0.026201349990403456,
-					0.031799701396319262,
-					0.0
+					0.0043537096142932203,
+					0.0062219609882541637
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 3,
+			"nbActiveObs" : 3,
 			"number" : 12,
-			"params" : 
-			{
-				"BAT4_x" : 
-				{
-					"rank" : 0,
-					"sigma" : 0.026201349990403456,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 1399.981868431762
-				},
-				"BAT4_y" : 
-				{
-					"rank" : 1,
-					"sigma" : 0.031799701396319262,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 8510.8004781469572
-				}
-			},
+			"rank" : 0,
 			"shift_from_read" : 
 			[
-				0.002315048361197114,
-				-0.00036306306719779968,
+				5.244032945483923e-05,
+				-1.2909062206745148e-05,
 				0.0
 			],
 			"sigmas_init" : 
 			[
-				0.0275,
-				0.033099999999999997,
+				0.0045570000000000003,
+				0.0065110000000000003,
 				0.0
 			],
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 1399.981868431762,
+							"computed_value" : 1400.0227613190523,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "BAT4",
 							"instrument_height" : 0.0,
 							"line" : 56,
-							"nabla" : 0.87220940932285729,
-							"normalized_residual" : 0.084288746595782213,
+							"normalized_residual" : 0.011529633698554318,
 							"number" : 16,
+							"obsRedondancy" : 0.046653893020753845,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 1.671058162460437,
 							"obs_zen" : 0.0,
-							"original_value" : 1399.9795504912306,
-							"rank" : 16,
-							"residual" : 0.0023179405313840107,
-							"residual_std" : 0.0850019547303794,
-							"sigma_a_posteriori" : 0.027269261498001608,
-							"sigma_abs" : 0.0275,
+							"original_value" : 1400.0227087785115,
+							"rank" : 46,
+							"residual" : 5.2540540764312027e-05,
+							"residualStd" : 0.0115323241514774,
+							"sigmaResidual" : 9.8428977404422236e-05,
+							"sigma_a_posteriori" : 0.0045559368670348276,
+							"sigma_abs" : 0.0045570000000000003,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0035549089093262353,
-							"sigma_total" : 0.0275,
-							"standardized_residual" : 0.65203936036249432,
+							"sigma_total" : 0.0045570000000000003,
 							"target_height" : 0.0,
 							"to" : "BAT4",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 8510.8004781469572,
+							"computed_value" : 8510.9672562975775,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "BAT4",
 							"instrument_height" : 0.0,
 							"line" : 56,
-							"normalized_residual" : -0.010399442357594975,
+							"normalized_residual" : -0.001688661369033223,
 							"number" : 17,
+							"obsRedondancy" : 0.0010007877529139009,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 0.025437385876136975,
 							"obs_zen" : 0.0,
-							"original_value" : 8510.8008223684992,
-							"rank" : 17,
-							"residual" : -0.00034422154203639366,
-							"residual_std" : -0.010400765283129314,
-							"sigma_a_posteriori" : 0.033095789844882116,
-							"sigma_abs" : 0.033099999999999997,
+							"original_value" : 8510.9672672924517,
+							"rank" : 47,
+							"residual" : -1.0994874173775315e-05,
+							"residualStd" : -0.001688669819054733,
+							"sigmaResidual" : 2.059769800359602e-05,
+							"sigma_a_posteriori" : 0.0065109674192731877,
+							"sigma_abs" : 0.0065110000000000003,
 							"sigma_rel" : 0.0,
-							"sigma_total" : 0.033099999999999997,
+							"sigma_total" : 0.0065110000000000003,
 							"target_height" : 0.0,
 							"to" : "BAT4",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				}
 			]
@@ -726,24 +641,29 @@ data=
 		"PBE" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				916.69931496875904,
-				626.55166222132993,
-				-0.096557422895727996
+				916.69924969467388,
+				626.55170341332087,
+				-0.096608593473419352
 			],
 			"coord_compensated_georef" : 
 			[
-				657494.22279201809,
-				6854931.5734749939,
+				657494.22273171134,
+				6854931.5735182529,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.421395301809361,
-				48.793066134881215,
+				2.4213953009841576,
+				48.793066135266287,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				916.6992612607612,
+				626.55171132196949,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -766,63 +686,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0047965296828999847,
-						38.574285114900945,
+						0.0047704418160689896,
+						38.57511134151477,
 						0.0
 					],
 					[
-						0.0042974410638446448,
-						138.57428511490068,
+						0.004273304890029769,
+						138.57511134151551,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					2.1598707989301156e-05,
-					2.3014422312511936e-06,
-					0.0,
-					2.3325728188363555e-05,
-					0.0,
-					0.0
+					2.1593943595084157e-05,
+					2.3048069842903445e-06,
+					2.3323352238029116e-05
 				],
 				"sigmas" : 
 				[
-					0.0044654391761446257,
-					0.0046405333379161938,
-					0.0
+					0.0044406622526543191,
+					0.0046150588903613133
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 6,
+			"nbActiveObs" : 6,
 			"number" : 5,
-			"params" : 
-			{
-				"PBE_x" : 
-				{
-					"rank" : 10,
-					"sigma" : 0.0044654391761446257,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 916.69931495935032
-				},
-				"PBE_y" : 
-				{
-					"rank" : 11,
-					"sigma" : 0.0046405333379161938,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 626.5516637625891
-				}
-			},
+			"rank" : 10,
 			"shift_from_read" : 
 			[
-				-0.0032079819357022643,
-				0.0024749934673309326,
+				-0.0032682886812835932,
+				0.002518252469599247,
 				0.0
 			],
 			"sigmas_init" : 
@@ -834,260 +726,242 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 916.69931495935032,
+							"computed_value" : 916.69925432101525,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PBE",
 							"instrument_height" : 0.0,
 							"line" : 7,
-							"nabla" : 0.055577870936115395,
-							"normalized_residual" : -0.64538531428297574,
+							"nabla" : 0.055538986149865299,
+							"normalized_residual" : -0.65751298138820857,
 							"number" : 6,
+							"obsRedondancy" : 13.624225619663354,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 13.605168042795391,
 							"obs_zen" : 0.0,
-							"original_value" : 916.70254188592173,
-							"rank" : 6,
-							"residual" : -0.0032269265714148787,
-							"residual_std" : -0.69434481489821043,
-							"sigma_a_posteriori" : 0.0046474410151502894,
+							"original_value" : 916.70254188592219,
+							"rank" : 10,
+							"residual" : -0.0032875649069410429,
+							"residualStd" : -0.70747053125865378,
+							"sigmaResidual" : 0.0018455504341295692,
+							"sigma_a_posteriori" : 0.0046469284043423953,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0018442592037723029,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : -1.7497142293309025,
+							"standardized_residual" : -1.7813465544720168,
 							"target_height" : 0.0,
 							"to" : "PBE",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 626.5516637625891,
+							"computed_value" : 626.55170657536337,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PBE",
 							"instrument_height" : 0.0,
 							"line" : 7,
-							"nabla" : 0.079215630398407039,
-							"normalized_residual" : 0.49056013476729277,
+							"nabla" : 0.079159482907777315,
+							"normalized_residual" : 0.49912325634977606,
 							"number" : 7,
+							"obsRedondancy" : 6.706591047883526,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 6.6970872465457969,
 							"obs_zen" : 0.0,
-							"original_value" : 626.54921096191526,
-							"rank" : 7,
-							"residual" : 0.0024528006738364638,
-							"residual_std" : 0.50786075217134219,
-							"sigma_a_posteriori" : 0.0048296716439488463,
+							"original_value" : 626.54921095908162,
+							"rank" : 11,
+							"residual" : 0.0024956162817488803,
+							"residualStd" : 0.51675218870783168,
+							"sigmaResidual" : 0.0012948543400594841,
+							"sigma_a_posteriori" : 0.004829425663371279,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0012939365562640423,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : 1.8956112353131032,
+							"standardized_residual" : 1.9273336038972806,
 							"target_height" : 0.0,
 							"to" : "PBE",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				},
 				{
-					"nbr_active_obs" : 4,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -0.00024576208147234467,
+							"computed_value" : -0.00025021935697223279,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PBE",
 							"instrument_height" : 0.0,
 							"line" : 40,
-							"nabla" : 0.011011749240059958,
-							"normalized_residual" : -0.40960346912793688,
+							"nabla" : 0.011003862167723913,
+							"normalized_residual" : -0.41703226157768614,
 							"number" : 35,
-							"obs_azim" : -0.11269961208124978,
-							"obs_length" : 483.61846510229742,
-							"obs_redondancy" : 4.9906554551139131,
-							"obs_zen" : 1.570829674952041,
+							"obsRedondancy" : 4.9978121726937053,
+							"obs_azim" : -0.11269886269775332,
+							"obs_length" : 483.61795264715551,
+							"obs_zen" : 1.5708296749179131,
 							"original_value" : 0.0,
-							"rank" : 35,
-							"residual" : -0.00024576208147676209,
-							"residual_std" : -0.42022362541176367,
-							"sigma_a_posteriori" : 0.00058483642188358095,
+							"rank" : 12,
+							"residual" : -0.00025021935694661163,
+							"residualStd" : -0.42786114575819517,
+							"sigmaResidual" : 0.00013413472265486412,
+							"sigma_a_posteriori" : 0.0005848143946401307,
 							"sigma_abs" : 0.00059999999999999995,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00013403864979329679,
 							"sigma_total" : 0.00059999999999999995,
-							"standardized_residual" : -1.8335165406079206,
+							"standardized_residual" : -1.8654331406077422,
 							"target_height" : 0.0,
 							"to" : "PNE",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -128.2318016099133,
+							"computed_value" : -128.23177945655817,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PBE",
 							"instrument_height" : 0.0,
 							"line" : 41,
-							"nabla" : 0.01284296055412258,
-							"normalized_residual" : 0.28236071705604804,
+							"nabla" : 0.012840965226666334,
+							"normalized_residual" : 0.29281445027226355,
 							"number" : 36,
-							"obs_azim" : -2.1269561811309385,
-							"obs_length" : 393.15964739283953,
-							"obs_redondancy" : 45.771763372754357,
-							"obs_zen" : 1.5708234373195167,
+							"obsRedondancy" : 45.785898762303091,
+							"obs_azim" : -2.1269550137486335,
+							"obs_length" : 393.16015564818775,
+							"obs_zen" : 1.5708234373541941,
 							"original_value" : -128.23240000000001,
-							"rank" : 36,
-							"residual" : 0.00059839008667558584,
-							"residual_std" : 0.3834348076025918,
-							"sigma_a_posteriori" : 0.0015606045012370991,
+							"rank" : 13,
+							"residual" : 0.00062054344186287266,
+							"residualStd" : 0.39768240262183585,
+							"sigmaResidual" : 0.0014339881314107297,
+							"sigma_a_posteriori" : 0.0015603995494187352,
 							"sigma_abs" : 0.00050000000000000001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0014337681743632124,
-							"sigma_total" : 0.0021192398606807851,
-							"standardized_residual" : 0.41735483976783916,
+							"sigma_total" : 0.0021192377674185189,
+							"standardized_residual" : 0.43273959405256313,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -112.23906147824462,
+							"computed_value" : -112.23904442705231,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PBE",
 							"instrument_height" : 0.0,
 							"line" : 42,
-							"nabla" : 0.015121682841162514,
-							"normalized_residual" : 0.34747553050925417,
+							"nabla" : 0.015120940745899238,
+							"normalized_residual" : 0.35378882698909786,
 							"number" : 37,
-							"obs_azim" : -1.8757428065888337,
-							"obs_length" : 374.26817723212497,
-							"obs_redondancy" : 53.629987841425852,
-							"obs_zen" : 1.5708221346478106,
+							"obsRedondancy" : 53.635157021866895,
+							"obs_azim" : -1.875741719351115,
+							"obs_length" : 374.26870344682959,
+							"obs_zen" : 1.5708221346849134,
 							"original_value" : -112.23999999999999,
-							"rank" : 37,
-							"residual" : 0.00093852175535042825,
-							"residual_std" : 0.51027656314475245,
-							"sigma_a_posteriori" : 0.0018392413509381452,
+							"rank" : 14,
+							"residual" : 0.0009555729476665775,
+							"residualStd" : 0.51957675912622092,
+							"sigmaResidual" : 0.0019780830029869538,
+							"sigma_a_posteriori" : 0.0018391372032759454,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0019779894314962037,
-							"sigma_total" : 0.002700972220907029,
-							"standardized_residual" : 0.47448269460191483,
+							"sigma_total" : 0.0027009698293723218,
+							"standardized_residual" : 0.48308030867442819,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -112.32023614093281,
+							"computed_value" : -112.32021229321334,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PBE",
 							"instrument_height" : 0.0,
 							"line" : 43,
-							"nabla" : 0.014543132530133373,
-							"normalized_residual" : 0.90904732315725445,
+							"nabla" : 0.014540016491066387,
+							"normalized_residual" : 0.92008737589781231,
 							"number" : 38,
-							"obs_azim" : -1.8770178952086278,
-							"obs_length" : 370.05278513969125,
-							"obs_redondancy" : 37.093639049101348,
-							"obs_zen" : 1.5708218439729869,
+							"obsRedondancy" : 37.109440997710422,
+							"obs_azim" : -1.8770167012113104,
+							"obs_length" : 370.0534029182233,
+							"obs_zen" : 1.5708218440164035,
 							"original_value" : -112.3222,
-							"rank" : 38,
-							"residual" : 0.0019638590671929887,
-							"residual_std" : 1.1461440680467068,
-							"sigma_a_posteriori" : 0.0017134487033029422,
+							"rank" : 15,
+							"residual" : 0.0019877067866383279,
+							"residualStd" : 1.1602093057155127,
+							"sigmaResidual" : 0.0013160289855633286,
+							"sigma_a_posteriori" : 0.0017132312047889403,
 							"sigma_abs" : 0.00044000000000000002,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0013157505090634423,
-							"sigma_total" : 0.0021603485508017548,
-							"standardized_residual" : 1.4925770909189109,
+							"sigma_total" : 0.0021603456787989759,
+							"standardized_residual" : 1.5103822244367104,
 							"target_height" : 0.0,
 							"to" : "VTRY_LED",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"PBE_G0_1" : 
-						{
-							"rank" : 12,
-							"sigma" : 2.067270487156165e-05,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : -0.11269575165950135
-						}
+						"g0" : -7.1743822123159298
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				}
 			]
 		},
 		"PNE" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : " SOLUTION J2",
 			"coord_compensated_cartesian" : 
 			[
-				862.31100277874862,
-				1107.1021084653721,
-				-0.15436321636582306
+				862.31135292909164,
+				1107.1016754607967,
+				-0.15430793486151254
 			],
 			"coord_compensated_georef" : 
 			[
-				657443.4435829022,
-				6855412.4450677559,
+				657443.44393675996,
+				6855412.4446395244,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4206560754105797,
-				48.797387485253353,
+				2.4206560802704229,
+				48.797387481425417,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				862.31137030683033,
+				1107.1016977749171,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -1110,63 +984,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0091284377482637406,
-						64.359330856141,
+						0.009078407452744677,
+						64.27747457519159,
 						0.0
 					],
 					[
-						0.0066757793606714803,
-						164.3593308561436,
+						0.0066124351427184003,
+						164.2774745751864,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					7.8418481975485341e-05,
-					1.8893139294751532e-05,
-					0.0,
-					6.0113792600692021e-05,
-					0.0,
-					0.0
+					7.8253329976688116e-05,
+					1.9089952518280521e-05,
+					5.9879030473275108e-05
 				],
 				"sigmas" : 
 				[
-					0.0085086274252215207,
-					0.0074496755053533661,
-					0.0
+					0.0084534341767818245,
+					0.00739467585587931
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 5,
+			"nbActiveObs" : 5,
 			"number" : 6,
-			"params" : 
-			{
-				"PNE_x" : 
-				{
-					"rank" : 2,
-					"sigma" : 0.0085086274252215207,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 862.31100277090081
-				},
-				"PNE_y" : 
-				{
-					"rank" : 3,
-					"sigma" : 0.0074496755053533661,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 1107.1021100189148
-				}
-			},
+			"rank" : 2,
 			"shift_from_read" : 
 			[
-				0.0025829022051766515,
-				0.0010677557438611984,
+				0.0029367599636316299,
+				0.00063952431082725525,
 				0.0
 			],
 			"sigmas_init" : 
@@ -1178,80 +1024,73 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : " SOLUTION J2",
-							"computed_value" : 862.31100277090081,
+							"computed_value" : 862.31135988009351,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PNE",
 							"instrument_height" : 0.0,
 							"line" : 18,
-							"nabla" : 0.088255719948843014,
-							"normalized_residual" : 0.25752168620556404,
+							"nabla" : 0.087919958491619987,
+							"normalized_residual" : 0.29323260547471364,
 							"number" : 8,
+							"obsRedondancy" : 21.746670023311875,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 21.581518024514658,
 							"obs_zen" : 0.0,
 							"original_value" : 862.30842755403876,
-							"rank" : 8,
-							"residual" : 0.0025752168620556404,
-							"residual_std" : 0.29080682301506944,
-							"sigma_a_posteriori" : 0.0088554210501525753,
+							"rank" : 16,
+							"residual" : 0.0029323260547471364,
+							"residualStd" : 0.33148268312749785,
+							"sigmaResidual" : 0.0046633325019037504,
+							"sigma_a_posteriori" : 0.0088460912258854826,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.004645591245957253,
 							"sigma_total" : 0.01,
-							"standardized_residual" : 0.55433565411005092,
+							"standardized_residual" : 0.62880484150552185,
 							"target_height" : 0.0,
 							"to" : "PNE",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : " SOLUTION J2",
-							"computed_value" : 1107.1021100189148,
+							"computed_value" : 1107.101684385028,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PNE",
 							"instrument_height" : 0.0,
 							"line" : 18,
-							"nabla" : 0.064919099214771098,
-							"normalized_residual" : 0.10887740916132316,
+							"nabla" : 0.064728888136157944,
+							"normalized_residual" : 0.066314020477875602,
 							"number" : 9,
+							"obsRedondancy" : 40.120969526724906,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 39.886207399307985,
 							"obs_zen" : 0.0,
 							"original_value" : 1107.1010212448232,
-							"rank" : 9,
-							"residual" : 0.0010887740916132316,
-							"residual_std" : 0.14042703092207603,
-							"sigma_a_posteriori" : 0.0077533084938426139,
+							"rank" : 17,
+							"residual" : 0.00066314020477875602,
+							"residualStd" : 0.085697465747095372,
+							"sigmaResidual" : 0.0063341115814867762,
+							"sigma_a_posteriori" : 0.0077381542032499652,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0063155528181868597,
 							"sigma_total" : 0.01,
-							"standardized_residual" : 0.17239569091685772,
+							"standardized_residual" : 0.10469348325295846,
 							"target_height" : 0.0,
 							"to" : "PNE",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				}
 			]
@@ -1259,30 +1098,35 @@ data=
 		"PNO" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				628.75646550667238,
-				987.01905590334388,
-				-0.10738156314488378
+				628.75681429009012,
+				987.01942808781416,
+				-0.10731534137557275
 			],
 			"coord_compensated_georef" : 
 			[
-				657209.03136381821,
-				6855294.1325410381,
+				657209.03171888355,
+				6855294.1329145003,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4174769006728205,
-				48.796307937824238,
+				2.4174769054687246,
+				48.796307941206514,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				628.75682310242701,
+				987.01944192455335,
 				0.0
 			],
 			"coord_init_latlong" : 
 			[
 				2.4174769501250957,
-				48.796307942193145,
+				48.796307942193138,
 				0.0
 			],
 			"coord_read" : 
@@ -1299,63 +1143,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0085625641592820718,
-						50.35325771921849,
+						0.0084975560332645195,
+						50.376990043557569,
 						0.0
 					],
 					[
-						0.0063303223986256405,
-						150.35325771921538,
+						0.0062958575773500473,
+						150.3769900435596,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					6.1610793981537243e-05,
-					1.8003742204551833e-05,
-					0.0,
-					6.121116944562922e-05,
-					0.0,
-					0.0
+					6.1450195552534197e-05,
+					1.7832090488843606e-05,
+					6.1027787377457332e-05
 				],
 				"sigmas" : 
 				[
-					0.0075418639636060433,
-					0.0075173648712047953,
-					0.0
+					0.0074910620810615695,
+					0.0074652709308120711
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 7,
+			"nbActiveObs" : 7,
 			"number" : 11,
-			"params" : 
-			{
-				"PNO_x" : 
-				{
-					"rank" : 4,
-					"sigma" : 0.0075418639636060433,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 628.75646550356237
-				},
-				"PNO_y" : 
-				{
-					"rank" : 5,
-					"sigma" : 0.0075173648712047953,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 987.01905745342549
-				}
-			},
+			"rank" : 4,
 			"shift_from_read" : 
 			[
-				-0.0036361818201839924,
-				-0.00045896228402853012,
+				-0.0032811164855957031,
+				-8.5500068962574005e-05,
 				0.0
 			],
 			"sigmas_init" : 
@@ -1367,291 +1183,272 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 628.75646550356237,
+							"computed_value" : 628.75681781493142,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PNO",
 							"instrument_height" : 0.0,
 							"line" : 50,
-							"nabla" : 0.066172766511004288,
-							"normalized_residual" : -0.36331898051003009,
+							"nabla" : 0.066034784828848531,
+							"normalized_residual" : -0.32808784360440768,
 							"number" : 14,
+							"obsRedondancy" : 38.549804447465796,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 38.389206018462751,
 							"obs_zen" : 0.0,
 							"original_value" : 628.76009869336747,
-							"rank" : 14,
-							"residual" : -0.0036331898051003009,
-							"residual_std" : -0.46287069309344392,
-							"sigma_a_posteriori" : 0.0078492543583156514,
+							"rank" : 39,
+							"residual" : -0.0032808784360440768,
+							"residualStd" : -0.41853184165565988,
+							"sigmaResidual" : 0.0062088488826404688,
+							"sigma_a_posteriori" : 0.0078390175119420549,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0061959023570794559,
 							"sigma_total" : 0.01,
-							"standardized_residual" : -0.58638590405625224,
+							"standardized_residual" : -0.52841975993604806,
 							"target_height" : 0.0,
 							"to" : "PNO",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 987.01905745342549,
+							"computed_value" : 987.01943362109296,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PNO",
 							"instrument_height" : 0.0,
 							"line" : 50,
-							"nabla" : 0.065831009298851634,
-							"normalized_residual" : -0.048471665263605246,
+							"nabla" : 0.06567594418106841,
+							"normalized_residual" : -0.010854898516754474,
 							"number" : 15,
+							"obsRedondancy" : 38.972212622542678,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 38.78883055437079,
 							"obs_zen" : 0.0,
 							"original_value" : 987.01954217007813,
-							"rank" : 15,
-							"residual" : -0.00048471665263605246,
-							"residual_std" : -0.061954463701414171,
-							"sigma_a_posteriori" : 0.0078237567348192275,
+							"rank" : 40,
+							"residual" : -0.00010854898516754474,
+							"residualStd" : -0.013895108916183936,
+							"sigmaResidual" : 0.0062427728312459581,
+							"sigma_a_posteriori" : 0.0078120283779219164,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0062280679632106444,
 							"sigma_total" : 0.01,
-							"standardized_residual" : -0.077827771870712714,
+							"standardized_residual" : -0.017387944123842175,
 							"target_height" : 0.0,
 							"to" : "PNO",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				},
 				{
-					"nbr_active_obs" : 5,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -0.0001317755061890168,
+							"computed_value" : -0.00010877877205276975,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PNO",
 							"instrument_height" : 0.0,
 							"line" : 58,
-							"nabla" : 0.0073034065572180097,
-							"normalized_residual" : -0.21962584367781093,
+							"nabla" : 0.0072429213657665475,
+							"normalized_residual" : -0.18129795345073252,
 							"number" : 43,
-							"obs_azim" : 0.10214830308900999,
-							"obs_length" : 7564.8695705310056,
-							"obs_redondancy" : 11.345385574146016,
-							"obs_zen" : 1.5509232278094898,
+							"obsRedondancy" : 11.535666016781077,
+							"obs_azim" : 0.10215139180695809,
+							"obs_length" : 7563.3745971259314,
+							"obs_zen" : 1.5713178631907618,
 							"original_value" : 0.0,
-							"rank" : 43,
-							"residual" : -0.00013177550620668653,
-							"residual_std" : -0.23325597116918453,
-							"sigma_a_posteriori" : 0.00056493947634509865,
+							"rank" : 41,
+							"residual" : -0.00010877877207043949,
+							"residualStd" : -0.19275639508510239,
+							"sigmaResidual" : 0.00020378517527144086,
+							"sigma_a_posteriori" : 0.00056433288256098281,
 							"sigma_abs" : 0.00059999999999999995,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00020209747169849907,
 							"sigma_total" : 0.00059999999999999995,
-							"standardized_residual" : -0.65203936050856204,
+							"standardized_residual" : -0.53379139049514612,
 							"target_height" : 0.0,
 							"to" : "BAT4",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 63.263400464614101,
+							"computed_value" : 63.263400217644218,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PNO",
 							"instrument_height" : 0.0,
 							"line" : 59,
-							"normalized_residual" : 0.0042237642802866035,
+							"normalized_residual" : 0.0019785836156096773,
 							"number" : 44,
-							"obs_azim" : 1.0958895437175247,
-							"obs_length" : 262.61694800958975,
-							"obs_redondancy" : 0.10329092835533737,
-							"obs_zen" : 1.5708144356792395,
+							"obsRedondancy" : 0.10394357191025883,
+							"obs_azim" : 1.095892267324224,
+							"obs_length" : 262.6165856492409,
+							"obs_zen" : 1.570814435654392,
 							"original_value" : 63.263399999999997,
-							"rank" : 44,
-							"residual" : 4.6461407083152639e-07,
-							"residual_std" : 0.0042259473542886261,
-							"sigma_a_posteriori" : 0.0001099431753119265,
+							"rank" : 42,
+							"residual" : 2.1764419771706452e-07,
+							"residualStd" : 0.0019796127231892363,
+							"sigmaResidual" : 3.5464309102450985e-06,
+							"sigma_a_posteriori" : 0.00010994281617185754,
 							"sigma_abs" : 0.00011,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.00011,
 							"target_height" : 0.0,
 							"to" : "PNE",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 198.63705349055425,
+							"computed_value" : 198.6369989675992,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PNO",
 							"instrument_height" : 0.0,
 							"line" : 60,
-							"nabla" : 0.0088702035057266048,
-							"normalized_residual" : 0.4307487737531559,
+							"nabla" : 0.0088551482556203671,
+							"normalized_residual" : 0.39481008074130697,
 							"number" : 45,
-							"obs_azim" : -3.0608513942825253,
-							"obs_length" : 569.88422696109672,
-							"obs_redondancy" : 49.173494837489905,
-							"obs_zen" : 1.5708356234517289,
+							"obsRedondancy" : 49.340805391997442,
+							"obs_azim" : -3.0608495232410076,
+							"obs_length" : 569.88452581561353,
+							"obs_zen" : 1.5708356234727388,
 							"original_value" : 198.63640000000001,
-							"rank" : 45,
-							"residual" : 0.00065349055426846983,
-							"residual_std" : 0.60419750214048606,
-							"sigma_a_posteriori" : 0.0010815843361704637,
+							"rank" : 43,
+							"residual" : 0.00059896759918551365,
+							"residualStd" : 0.55470118358043863,
+							"sigmaResidual" : 0.0010656588946289028,
+							"sigma_a_posteriori" : 0.0010798022735761044,
 							"sigma_abs" : 0.00040000000000000002,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0010638509909666638,
-							"sigma_total" : 0.0015171036903356525,
-							"standardized_residual" : 0.61426887770690364,
+							"sigma_total" : 0.0015171031045126166,
+							"standardized_residual" : 0.56206315379565586,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -197.80521619480572,
+							"computed_value" : -197.80524135803148,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PNO",
 							"instrument_height" : 0.0,
 							"line" : 61,
-							"nabla" : 0.011276839629507698,
-							"normalized_residual" : 0.4284125482974791,
+							"nabla" : 0.011271451018104756,
+							"normalized_residual" : 0.41264765380693319,
 							"number" : 46,
-							"obs_azim" : -3.0049666971828919,
-							"obs_length" : 476.46288498762658,
-							"obs_redondancy" : 33.676994803222179,
-							"obs_zen" : 1.5708291815359654,
+							"obsRedondancy" : 33.709172984280755,
+							"obs_azim" : -3.0049643649598248,
+							"obs_length" : 476.46313698781967,
+							"obs_zen" : 1.5708291815539941,
 							"original_value" : -197.80590000000001,
-							"rank" : 46,
-							"residual" : 0.00068380519427876756,
-							"residual_std" : 0.52605370617745995,
-							"sigma_a_posteriori" : 0.0012998771536990015,
+							"rank" : 44,
+							"residual" : 0.00065864196852360296,
+							"residualStd" : 0.50681873620855888,
+							"sigmaResidual" : 0.00092671046866619686,
+							"sigma_a_posteriori" : 0.0012995612069332967,
 							"sigma_abs" : 0.00025999999999999998,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.00092626846243829431,
-							"sigma_total" : 0.0015961371743106604,
-							"standardized_residual" : 0.73823650702597576,
+							"sigma_total" : 0.0015961364676309632,
+							"standardized_residual" : 0.71073111915049192,
 							"target_height" : 0.0,
 							"to" : "VTRY_LED",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -197.27058286968531,
+							"computed_value" : -197.27062178233209,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PNO",
 							"instrument_height" : 0.0,
 							"line" : 62,
-							"nabla" : 0.011491650135996449,
-							"normalized_residual" : -0.44538871372353261,
+							"nabla" : 0.01148591547376757,
+							"normalized_residual" : -0.46501946952696926,
 							"number" : 47,
-							"obs_azim" : -2.9965686965500788,
-							"obs_length" : 477.85477035192548,
-							"obs_redondancy" : 50.017008950216415,
-							"obs_zen" : 1.5708292775146291,
+							"obsRedondancy" : 50.066930690150983,
+							"obs_azim" : -2.996566580302412,
+							"obs_length" : 477.85502234321075,
+							"obs_zen" : 1.5708292775310593,
 							"original_value" : -197.2697,
-							"rank" : 47,
-							"residual" : -0.00088286968531827348,
-							"residual_std" : -0.62998192190157321,
-							"sigma_a_posteriori" : 0.0014014206672048135,
+							"rank" : 45,
+							"residual" : -0.0009217823320866222,
+							"residualStd" : -0.65807744384625988,
+							"sigmaResidual" : 0.0014025964242391552,
+							"sigma_a_posteriori" : 0.0014007201442722129,
 							"sigma_abs" : 0.00064999999999999997,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0014018974822070489,
-							"sigma_total" : 0.0019822453019460655,
-							"standardized_residual" : -0.62976765171754612,
+							"sigma_total" : 0.0019822445994020096,
+							"standardized_residual" : -0.65719712110819561,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"PNO_G0_1" : 
-						{
-							"rank" : 6,
-							"sigma" : 8.9702463669734314e-06,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : 0.10215037301382082
-						}
+						"g0" : 6.5032683586897804
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				}
 			]
 		},
 		"PS" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				438.2823941495401,
-				17.168043904403227,
-				-0.015053165346822439
+				438.28237738015565,
+				17.168029949883195,
+				-0.01507509891528931
 			],
 			"coord_compensated_georef" : 
 			[
-				657011.32989467087,
-				6854325.8840024862,
+				657011.32987813489,
+				6854325.8839871325,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4148833144448392,
-				48.787586866804887,
+				2.4148833142213255,
+				48.787586866665706,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				438.28237824326709,
+				17.168029987225289,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -1674,63 +1471,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0047503929717491273,
-						83.342875648432255,
+						0.0047245069885383318,
+						83.346377762248508,
 						0.0
 					],
 					[
-						0.0042245978895332917,
-						183.34287564843291,
+						0.0042016060994671603,
+						183.34637776224923,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					2.4101200396660619e-05,
-					1.2772160896122846e-06,
-					0.0,
-					1.9673729408816363e-05,
-					0.0,
-					0.0
+					2.4100857998007775e-05,
+					1.2768792886076469e-06,
+					1.9673429268463071e-05
 				],
 				"sigmas" : 
 				[
-					0.0047170407561684044,
-					0.0042618056289487035,
-					0.0
+					0.0046913519300023051,
+					0.004238593772548962
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 7,
+			"nbActiveObs" : 7,
 			"number" : 7,
-			"params" : 
-			{
-				"PS_x" : 
-				{
-					"rank" : 22,
-					"sigma" : 0.0047170407561684044,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 438.28239414833655
-				},
-				"PS_y" : 
-				{
-					"rank" : 23,
-					"sigma" : 0.0042618056289487035,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 17.168045443254584
-				}
-			},
+			"rank" : 22,
 			"shift_from_read" : 
 			[
-				-0.00010532909072935581,
-				-0.0009975135326385498,
+				-0.00012186507228761911,
+				-0.0010128673166036606,
 				0.0
 			],
 			"sigmas_init" : 
@@ -1742,80 +1511,73 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 438.28239414833655,
+							"computed_value" : 438.28237772530667,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PS",
 							"instrument_height" : 0.0,
 							"line" : 28,
-							"nabla" : 0.1081166123471656,
-							"normalized_residual" : -0.019574397754240636,
+							"nabla" : 0.10809602466064382,
+							"normalized_residual" : -0.022859003684061463,
 							"number" : 10,
+							"obsRedondancy" : 3.5965680079688922,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 3.5951984133575254,
 							"obs_zen" : 0.0,
-							"original_value" : 438.28249202032532,
-							"rank" : 10,
-							"residual" : -9.7871988771203178e-05,
-							"residual_std" : -0.019936048265964193,
-							"sigma_a_posteriori" : 0.0049092973424575354,
+							"original_value" : 438.28249202032509,
+							"rank" : 18,
+							"residual" : -0.00011429501842030731,
+							"residualStd" : -0.023281504935198781,
+							"sigmaResidual" : 0.00094823098556850907,
+							"sigma_a_posteriori" : 0.0049092624698632457,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00094805042236127007,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : -0.10323500360607135,
+							"standardized_residual" : -0.12053499638780743,
 							"target_height" : 0.0,
 							"to" : "PS",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 17.168045443254584,
+							"computed_value" : 17.168029963403207,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PS",
 							"instrument_height" : 0.0,
 							"line" : 28,
-							"nabla" : 0.044413219103191577,
-							"normalized_residual" : -0.19937813449359965,
+							"nabla" : 0.044411967792758349,
+							"normalized_residual" : -0.20247467150866783,
 							"number" : 11,
+							"obsRedondancy" : 21.306282926147723,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 21.305082364734563,
 							"obs_zen" : 0.0,
-							"original_value" : 17.169042333927052,
-							"rank" : 11,
-							"residual" : -0.00099689067246799823,
-							"residual_std" : -0.22475232111098314,
-							"sigma_a_posteriori" : 0.0044355077960495527,
+							"original_value" : 17.16904233676075,
+							"rank" : 19,
+							"residual" : -0.0010123733575433391,
+							"residualStd" : -0.22824468505370918,
+							"sigmaResidual" : 0.0023079364660962679,
+							"sigma_a_posteriori" : 0.004435473962099549,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0023078714416499982,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : -0.43195242788535809,
+							"standardized_residual" : -0.43864871170206265,
 							"target_height" : 0.0,
 							"to" : "PS",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				}
 			]
@@ -1823,24 +1585,29 @@ data=
 		"PSE" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				855.03322545360925,
-				72.503465326342052,
-				-0.057615398424914588
+				855.0331476890052,
+				72.503509389064646,
+				-0.057698400599572139
 			],
 			"coord_compensated_georef" : 
 			[
-				657428.41815652663,
-				6854378.0883897608,
+				657428.41808168089,
+				6854378.0884330571,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.420554863475187,
-				48.78808402931876,
+				2.420554862452168,
+				48.788084029703207,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				855.03315413214489,
+				72.503509938940255,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -1863,63 +1630,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0048004173687689663,
-						35.645826495675855,
+						0.0047743066893609718,
+						35.634580192354065,
 						0.0
 					],
 					[
-						0.0045701346255137623,
-						135.64582649568104,
+						0.0045443070186579285,
+						135.63458019235117,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					2.3282721406521134e-05,
-					1.0518522148100984e-06,
-					0.0,
-					2.4301391596065914e-05,
-					0.0,
-					0.0
+					2.3275403879016494e-05,
+					1.0560133436586466e-06,
+					2.4299025260772599e-05
 				],
 				"sigmas" : 
 				[
-					0.0046362533754762177,
-					0.0047365907621499202,
-					0.0
+					0.0046103126097880006,
+					0.0047105995673513146
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 6,
+			"nbActiveObs" : 6,
 			"number" : 4,
-			"params" : 
-			{
-				"PSE_x" : 
-				{
-					"rank" : 13,
-					"sigma" : 0.0046362533754762177,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 855.03322544589889
-				},
-				"PSE_y" : 
-				{
-					"rank" : 14,
-					"sigma" : 0.0047365907621499202,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 72.503466867642658
-				}
-			},
+			"rank" : 13,
 			"shift_from_read" : 
 			[
-				0.001156526617705822,
-				-0.00061023887246847153,
+				0.0010816808789968491,
+				-0.00056694261729717255,
 				0.0
 			],
 			"sigmas_init" : 
@@ -1931,260 +1670,242 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 855.03322544589889,
+							"computed_value" : 855.03315026616747,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PSE",
 							"instrument_height" : 0.0,
 							"line" : 6,
-							"nabla" : 0.07821742010413317,
-							"normalized_residual" : 0.23224936821861775,
+							"nabla" : 0.078051303950378514,
+							"normalized_residual" : 0.21721342202454252,
 							"number" : 4,
+							"obsRedondancy" : 6.8983844839340165,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 6.8691143739154414,
 							"obs_zen" : 0.0,
-							"original_value" : 855.0320641990578,
+							"original_value" : 855.03206419905734,
 							"rank" : 4,
-							"residual" : 0.0011612468410930887,
-							"residual_std" : 0.2406620849384756,
-							"sigma_a_posteriori" : 0.0048252172393086238,
+							"residual" : 0.0010860671101227126,
+							"residualStd" : 0.2251168738172733,
+							"sigmaResidual" : 0.0013132387905417293,
+							"sigma_a_posteriori" : 0.0048244589208549073,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.001310449767628986,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : 0.88614372696951826,
+							"standardized_residual" : 0.82701418656289827,
 							"target_height" : 0.0,
 							"to" : "PSE",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 72.503466867642658,
+							"computed_value" : 72.503509607597991,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PSE",
 							"instrument_height" : 0.0,
 							"line" : 6,
-							"nabla" : 0.12263288984748393,
-							"normalized_residual" : -0.12002206945851412,
+							"nabla" : 0.12242572414087129,
+							"normalized_residual" : -0.11147464512930583,
 							"number" : 5,
+							"obsRedondancy" : 2.8038989569096007,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 2.794433615736347,
 							"obs_zen" : 0.0,
-							"original_value" : 72.50406697798995,
+							"original_value" : 72.504066980823637,
 							"rank" : 5,
-							"residual" : -0.00060011034729257062,
-							"residual_std" : -0.12173502329475289,
-							"sigma_a_posteriori" : 0.0049296441652583725,
+							"residual" : -0.00055737322564652914,
+							"residualStd" : -0.11307111546101604,
+							"sigmaResidual" : 0.00083724234199388328,
+							"sigma_a_posteriori" : 0.004929404148654541,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00083582797508463655,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : -0.71798308405722244,
+							"standardized_residual" : -0.66572508064887281,
 							"target_height" : 0.0,
 							"to" : "PSE",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				},
 				{
-					"nbr_active_obs" : 4,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : -0.00012794758433733245,
+							"computed_value" : -0.00011941417971961367,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSE",
 							"instrument_height" : 0.0,
 							"line" : 30,
-							"nabla" : 0.0097012346571819195,
-							"normalized_residual" : -0.21324597384843477,
+							"nabla" : 0.0096815271277059557,
+							"normalized_residual" : -0.19902363288958247,
 							"number" : 31,
-							"obs_azim" : -1.7028023743687439,
-							"obs_length" : 420.40844923418126,
-							"obs_redondancy" : 6.4300773168245566,
-							"obs_zen" : 1.570825316273406,
+							"obsRedondancy" : 6.456281842603806,
+							"obs_azim" : -1.7028025300436043,
+							"obs_length" : 420.40839865174263,
+							"obs_zen" : 1.5708253162694197,
 							"original_value" : 0.0,
-							"rank" : 31,
-							"residual" : -0.00012794758430906085,
-							"residual_std" : -0.22045132070428,
-							"sigma_a_posteriori" : 0.0005803892845835728,
+							"rank" : 6,
+							"residual" : -0.00011941417973374947,
+							"residualStd" : -0.20577723876223256,
+							"sigmaResidual" : 0.00015245528732508326,
+							"sigma_a_posteriori" : 0.0005803080090491826,
 							"sigma_abs" : 0.00059999999999999995,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00015214558271789698,
 							"sigma_total" : 0.00059999999999999995,
-							"standardized_residual" : -0.84095497235892014,
+							"standardized_residual" : -0.78327345564027817,
 							"target_height" : 0.0,
 							"to" : "PS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 66.006783868970714,
+							"computed_value" : 66.006738250573335,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSE",
 							"instrument_height" : 0.0,
 							"line" : 31,
-							"nabla" : 0.012836636495909675,
-							"normalized_residual" : 0.50591194170452469,
+							"nabla" : 0.012824789812179665,
+							"normalized_residual" : 0.48245506872585026,
 							"number" : 32,
-							"obs_azim" : -0.66596822812355061,
-							"obs_length" : 440.64552884340549,
-							"obs_redondancy" : 38.582458134166195,
-							"obs_zen" : 1.5708267117325951,
+							"obsRedondancy" : 38.653705293280026,
+							"obs_azim" : -0.66596923441292744,
+							"obs_length" : 440.64603181938645,
+							"obs_zen" : 1.5708267117672303,
 							"original_value" : 66.005799999999994,
-							"rank" : 32,
-							"residual" : 0.00098386897070349105,
-							"residual_std" : 0.64554826090310014,
-							"sigma_a_posteriori" : 0.0015240827530494648,
+							"rank" : 7,
+							"residual" : 0.00093825057334223953,
+							"residualStd" : 0.61597445957681518,
+							"sigmaResidual" : 0.0012090869410932997,
+							"sigma_a_posteriori" : 0.0015231972020184627,
 							"sigma_abs" : 0.00050000000000000001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0012079731467974264,
-							"sigma_total" : 0.0019447435207570465,
-							"standardized_residual" : 0.81447917390541391,
+							"sigma_total" : 0.0019447418716526947,
+							"standardized_residual" : 0.77599926147067622,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 70.882192198046994,
+							"computed_value" : 70.882165260451529,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSE",
 							"instrument_height" : 0.0,
 							"line" : 32,
-							"nabla" : 0.011807057350254812,
-							"normalized_residual" : -0.68593048036801718,
+							"nabla" : 0.011805081108034304,
+							"normalized_residual" : -0.69818533279309758,
 							"number" : 33,
-							"obs_azim" : -0.589385493174168,
-							"obs_length" : 531.32018959001493,
-							"obs_redondancy" : 58.265673020828501,
-							"obs_zen" : 1.570832964249627,
+							"obsRedondancy" : 58.28511930073077,
+							"obs_azim" : -0.58938620602619451,
+							"obs_length" : 531.32071980238732,
+							"obs_zen" : 1.570832964285761,
 							"original_value" : 70.883700000000005,
-							"rank" : 33,
-							"residual" : -0.0015078019529865974,
-							"residual_std" : -1.0617771984125055,
-							"sigma_a_posteriori" : 0.0014200737737078521,
+							"rank" : 8,
+							"residual" : -0.0015347395484533823,
+							"residualStd" : -1.0809988156667933,
+							"sigmaResidual" : 0.0016781964896014207,
+							"sigma_a_posteriori" : 0.0014197421183174078,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0016779174217271143,
-							"sigma_total" : 0.0021981847958959743,
-							"standardized_residual" : -0.8986151126761569,
+							"sigma_total" : 0.0021981836002106219,
+							"standardized_residual" : -0.91451719626579009,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 71.352588690887714,
+							"computed_value" : 71.352551616885393,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSE",
 							"instrument_height" : 0.0,
 							"line" : 33,
-							"nabla" : 0.012531850967966551,
-							"normalized_residual" : 1.0068120520383399,
+							"nabla" : 0.012529054385403823,
+							"normalized_residual" : 0.99181411630323368,
 							"number" : 34,
-							"obs_azim" : -0.58199652234325394,
-							"obs_length" : 529.69875502871355,
-							"obs_redondancy" : 65.400696651741825,
-							"obs_zen" : 1.570832852442174,
+							"obsRedondancy" : 65.429825479842734,
+							"obs_azim" : -0.58199739441758702,
+							"obs_length" : 529.69934046046569,
+							"obs_zen" : 1.5708328524830768,
 							"original_value" : 71.350099999999998,
-							"rank" : 34,
-							"residual" : 0.0024886908877429005,
-							"residual_std" : 1.7116490698279818,
-							"sigma_a_posteriori" : 0.0014539726230172931,
+							"rank" : 9,
+							"residual" : 0.0024516168853707301,
+							"residualStd" : 1.6868617835091388,
+							"sigmaResidual" : 0.0019994483947912934,
+							"sigma_a_posteriori" : 0.0014533596702100211,
 							"sigma_abs" : 0.0012700000000000001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0019990043503434573,
-							"sigma_total" : 0.0024718524998825994,
-							"standardized_residual" : 1.2449652184675375,
+							"sigma_total" : 0.0024718511715769746,
+							"standardized_residual" : 1.2261466171156845,
 							"target_height" : 0.0,
 							"to" : "VTRY_LED",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"PSE_G0_1" : 
-						{
-							"rank" : 15,
-							"sigma" : 1.6111727780257102e-05,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : -1.7028003645727889
-						}
+						"g0" : -108.40365649215038
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				}
 			]
 		},
 		"PSO" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				0.15685653731844165,
-				0.4553114131673815,
-				-1.8842082449843645e-08
+				0.15681094023431705,
+				0.45511905747958892,
+				-1.8419052369706185e-08
 			],
 			"coord_compensated_georef" : 
 			[
-				656573.16023524723,
-				6854312.4540532632,
+				656573.1601882074,
+				6854312.4538597427,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4089209986033673,
-				48.78743673436108,
+				2.4089209979828525,
+				48.787436732617486,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				0.15681094046803304,
+				0.45511906102171545,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -2207,63 +1928,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0094338246518878358,
-						116.62615908571685,
+						0.0093825134249047471,
+						116.62030164921759,
 						0.0
 					],
 					[
-						0.0085919393992100052,
-						16.62615908571679,
+						0.0085424680718774078,
+						16.620301649213186,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					9.5303646275191409e-05,
-					-4.1004105087579015e-06,
-					0.0,
-					8.1057570462146264e-05,
-					0.0,
-					0.0
+					9.5300952953072531e-05,
+					-4.1118797502864657e-06,
+					8.1008947532496646e-05
 				],
 				"sigmas" : 
 				[
-					0.0093800477712489491,
-					0.0086506169728726,
-					0.0
+					0.0093288988301195204,
+					0.0086009863123340333
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 6,
+			"nbActiveObs" : 6,
 			"number" : 3,
-			"params" : 
-			{
-				"PSO_x" : 
-				{
-					"rank" : 32,
-					"sigma" : 0.0093800477712489491,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 0.15685653735127153
-				},
-				"PSO_y" : 
-				{
-					"rank" : 33,
-					"sigma" : 0.0086506169728726,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 0.45531295541728223
-				}
-			},
+			"rank" : 32,
 			"shift_from_read" : 
 			[
-				0.0032352472189813852,
-				0.0050532631576061249,
+				0.0031882073963060975,
+				0.0048597427085042,
 				0.0
 			],
 			"sigmas_init" : 
@@ -2275,80 +1968,73 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 0.15685653735127153,
+							"computed_value" : 0.15681094023431713,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PSO",
 							"instrument_height" : 0.0,
 							"line" : 5,
-							"nabla" : 0.18919229988398714,
-							"normalized_residual" : 0.31978319195436478,
+							"nabla" : 0.18913807305495792,
+							"normalized_residual" : 0.31522348025892488,
 							"number" : 2,
+							"obsRedondancy" : 4.6990470469274843,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 4.6963537248085885,
 							"obs_zen" : 0.0,
 							"original_value" : 0.15365870543172788,
 							"rank" : 2,
-							"residual" : 0.0031978319195436478,
-							"residual_std" : 0.32756755170288421,
-							"sigma_a_posteriori" : 0.0097623586430325027,
+							"residual" : 0.0031522348025892488,
+							"residualStd" : 0.32290140739095036,
+							"sigmaResidual" : 0.0021677285454889152,
+							"sigma_a_posteriori" : 0.0097622206978265208,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0021671072250372377,
 							"sigma_total" : 0.01,
-							"standardized_residual" : 1.4756223792704577,
+							"standardized_residual" : 1.4541649179963563,
 							"target_height" : 0.0,
 							"to" : "PSO",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 0.45531295541728223,
+							"computed_value" : 0.45511905747958925,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "PSO",
 							"instrument_height" : 0.0,
 							"line" : 5,
-							"nabla" : 0.094203278273886512,
-							"normalized_residual" : 0.50796745977582103,
+							"nabla" : 0.094082606316068837,
+							"normalized_residual" : 0.4885776660065233,
 							"number" : 3,
+							"obsRedondancy" : 18.991052467503366,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 18.942429537853723,
 							"obs_zen" : 0.0,
 							"original_value" : 0.45023328081952402,
 							"rank" : 3,
-							"residual" : 0.0050796745977582103,
-							"residual_std" : 0.56420781990261348,
-							"sigma_a_posteriori" : 0.0090031977909044228,
+							"residual" : 0.004885776660065233,
+							"residualStd" : 0.54283409252848436,
+							"sigmaResidual" : 0.0043578724703120181,
+							"sigma_a_posteriori" : 0.0090004970714120357,
 							"sigma_abs" : 0.01,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0043522901486290786,
 							"sigma_total" : 0.01,
-							"standardized_residual" : 1.1671268284717298,
+							"standardized_residual" : 1.1211380537979392,
 							"target_height" : 0.0,
 							"to" : "PSO",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				}
 			]
@@ -2356,24 +2042,29 @@ data=
 		"PSOX" : 
 		{
 			"code" : 6,
-			"code_name" : "2-- ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				0.12044186778916796,
-				0.76939479232642771,
-				-4.8201589553098501e-08
+				0.12039811695005309,
+				0.76918402123442786,
+				-4.7464481106550556e-08
 			],
 			"coord_compensated_georef" : 
 			[
-				656573.12617802108,
-				6854312.7683511134,
+				656573.12613268942,
+				6854312.7681391696,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4089205030488881,
-				48.787439558709224,
+				2.408920502453499,
+				48.787439556800059,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				0.12039811718376946,
+				0.76918402477655801,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -2396,63 +2087,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0099742057159085754,
-						160.31319217202343,
+						0.0099186771262785803,
+						160.20305978536314,
 						0.0
 					],
 					[
-						0.0091277556022255693,
-						60.313192172023214,
+						0.009076449688414711,
+						60.203059785359926,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					9.6214922842139034e-05,
-					-8.3012475103866307e-06,
-					0.0,
-					0.00010179058712623532,
-					0.0,
-					0.0
+					9.6212426348188626e-05,
+					-8.3133184377578755e-06,
+					0.00010173225754446918
 				],
 				"sigmas" : 
 				[
-					0.009424786257099152,
-					0.0096940242420379026,
-					0.0
+					0.009373404201586364,
+					0.0096385366397274477
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 6,
+			"nbActiveObs" : 6,
 			"number" : 8,
-			"params" : 
-			{
-				"PSOX_x" : 
-				{
-					"rank" : 28,
-					"sigma" : 0.009424786257099152,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 0.12044186780164301
-				},
-				"PSOX_y" : 
-				{
-					"rank" : 29,
-					"sigma" : 0.0096940242420379026,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 0.76939633554029063
-				}
-			},
+			"rank" : 28,
 			"shift_from_read" : 
 			[
-				0.12617802107706666,
-				0.7683511134237051,
+				0.12613268941640854,
+				0.76813916955143213,
 				0.0
 			],
 			"sigmas_init" : 
@@ -2464,273 +2127,249 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 3,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 0.26580109498146121,
+							"computed_value" : 0.26578177220908744,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSOX",
 							"instrument_height" : 0.0,
 							"line" : 5,
-							"nabla" : 0.010042599356752639,
-							"normalized_residual" : 0.81656816582604874,
+							"nabla" : 0.010041326576227609,
+							"normalized_residual" : 0.80605686189886649,
 							"number" : 18,
-							"obs_azim" : 0.82839824970339127,
-							"obs_length" : 759.42012628449265,
-							"obs_redondancy" : 56.325738629485386,
-							"obs_zen" : 1.5708486929968202,
+							"obsRedondancy" : 56.340028344396309,
+							"obs_azim" : 0.82839720821137219,
+							"obs_length" : 759.41998204282504,
+							"obs_zen" : 1.5708486929870906,
 							"original_value" : 0.26429999999999998,
-							"rank" : 18,
-							"residual" : 0.0015010949814564993,
-							"residual_std" : 1.2356050095142639,
-							"sigma_a_posteriori" : 0.0012148663771172341,
+							"rank" : 20,
+							"residual" : 0.0014817722091110541,
+							"residualStd" : 1.2198992231217078,
+							"sigmaResidual" : 0.0013798259120000084,
+							"sigma_a_posteriori" : 0.0012146677209279768,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0013796507964124079,
-							"sigma_total" : 0.0018382972105433185,
-							"standardized_residual" : 1.0880253070993691,
+							"sigma_total" : 0.00183829736976666,
+							"standardized_residual" : 1.0738834487919409,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 7.895606749896606,
+							"computed_value" : 7.8955908179375029,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSOX",
 							"instrument_height" : 0.0,
 							"line" : 6,
-							"nabla" : 0.0099538837780897612,
-							"normalized_residual" : 0.37441514361822842,
+							"nabla" : 0.0099531280566646889,
+							"normalized_residual" : 0.36597478199693395,
 							"number" : 19,
-							"obs_azim" : 0.94824695667238768,
-							"obs_length" : 717.22888357509521,
-							"obs_redondancy" : 60.451527293182281,
-							"obs_zen" : 1.5708457836782672,
+							"obsRedondancy" : 60.460734657355573,
+							"obs_azim" : 0.94824596844313891,
+							"obs_length" : 717.22854193572039,
+							"obs_zen" : 1.570845783654913,
 							"original_value" : 7.8948999999999998,
-							"rank" : 19,
-							"residual" : 0.00070674989663252409,
-							"residual_std" : 0.59537219400829966,
-							"sigma_a_posteriori" : 0.0011870723956293326,
+							"rank" : 21,
+							"residual" : 0.00069081793749421511,
+							"residualStd" : 0.58201859863681271,
+							"sigmaResidual" : 0.0014677400840114267,
+							"sigma_a_posteriori" : 0.0011869344710155811,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.001467627992400872,
-							"sigma_total" : 0.0018876103402301486,
-							"standardized_residual" : 0.48155929179053192,
+							"sigma_total" : 0.001887610763027936,
+							"standardized_residual" : 0.47066775992528997,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 45.146828948680316,
+							"computed_value" : 45.146847519028668,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSOX",
 							"instrument_height" : 0.0,
 							"line" : 7,
-							"nabla" : 0.0094855320264247787,
-							"normalized_residual" : -0.86744542198068453,
+							"nabla" : 0.0094821266397600301,
+							"normalized_residual" : -0.85368960840546204,
 							"number" : 20,
-							"obs_azim" : 1.5333877866570873,
-							"obs_length" : 438.46871273010822,
-							"obs_redondancy" : 34.049587976799202,
-							"obs_zen" : 1.5708265616276087,
+							"obsRedondancy" : 34.074049332061954,
+							"obs_azim" : 1.5333873403888167,
+							"obs_length" : 438.46874740042699,
+							"obs_zen" : 1.5708265616310286,
 							"original_value" : 45.148000000000003,
-							"rank" : 20,
-							"residual" : -0.0011710513196739243,
-							"residual_std" : -1.0681528479801679,
-							"sigma_a_posteriori" : 0.0010963330967925919,
+							"rank" : 22,
+							"residual" : -0.0011524809713473738,
+							"residualStd" : -1.0514092521929097,
+							"sigmaResidual" : 0.00078803524608790773,
+							"sigma_a_posteriori" : 0.001096129760075499,
 							"sigma_abs" : 0.0013500000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.0007877523347329194,
 							"sigma_total" : 0.0013500000000000001,
-							"standardized_residual" : -1.4865729595977129,
+							"standardized_residual" : -1.4624738894214526,
 							"target_height" : 0.0,
 							"to" : "PS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"PSOX_G0_1" : 
-						{
-							"rank" : 30,
-							"sigma" : 2.4111466385613296e-05,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : 0.82422305586684186
-						}
+						"g0" : 52.471622439937285
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				},
 				{
-					"nbr_active_obs" : 1,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 2,
 							"comment" : "",
-							"computed_value" : 0.31618728283709135,
+							"computed_value" : 0.31616877638036978,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSOX",
 							"instrument_height" : 0.0,
 							"line" : 9,
-							"nabla" : 0.13101521760001331,
-							"normalized_residual" : 0.23745656741827048,
+							"nabla" : 0.13096792379594152,
+							"normalized_residual" : 0.23375527607395474,
 							"number" : 21,
-							"obs_azim" : 3.0261684902352735,
-							"obs_length" : 0.31618728283709135,
-							"obs_redondancy" : 2.4482977706656639,
-							"obs_zen" : 1.5707963484675402,
+							"obsRedondancy" : 2.4500662986845612,
+							"obs_azim" : 3.0261675825028105,
+							"obs_length" : 0.31616877638036978,
+							"obs_zen" : 1.5707963484691569,
 							"original_value" : 0.315,
-							"rank" : 21,
-							"residual" : 0.0011872828370913524,
-							"residual_std" : 0.24041787793633942,
-							"sigma_a_posteriori" : 0.0049384132631173734,
+							"rank" : 23,
+							"residual" : 0.0011687763803697737,
+							"residualStd" : 0.23667257329303792,
+							"sigmaResidual" : 0.00078263438122225454,
+							"sigma_a_posteriori" : 0.0049383684983331146,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00078235186627656061,
 							"sigma_total" : 0.0050000000000000001,
-							"standardized_residual" : 1.5175816512613125,
+							"standardized_residual" : 1.4933874723781928,
 							"target_height" : 0.0,
 							"to" : "PSO",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				},
 				{
-					"nbr_active_obs" : 2,
-					"num" : 2,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 194.5332998129017,
+							"computed_value" : 194.53329981583917,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSOX",
 							"instrument_height" : 0.0,
 							"line" : 10,
-							"normalized_residual" : -0.00018709826364267758,
+							"normalized_residual" : -0.00018416084469686372,
 							"number" : 22,
-							"obs_azim" : 1.5333877866570873,
-							"obs_length" : 438.46871273010822,
-							"obs_redondancy" : 1.5303323164239657e-06,
-							"obs_zen" : 1.5708265616276087,
+							"obsRedondancy" : 1.5312652812404792e-06,
+							"obs_azim" : 1.5333873403888167,
+							"obs_length" : 438.46874740042699,
+							"obs_zen" : 1.5708265616310286,
 							"original_value" : 194.5333,
-							"rank" : 22,
-							"residual" : -1.8709826364267759e-07,
-							"residual_std" : -0.0001870982650742902,
-							"sigma_a_posteriori" : 0.00099999999234833838,
+							"rank" : 24,
+							"residual" : -1.8416084469686371e-07,
+							"residualStd" : -0.00018416084610685927,
+							"sigmaResidual" : 1.2374430390097729e-07,
+							"sigma_a_posteriori" : 0.00099999999234367349,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.001,
 							"target_height" : 0.0,
 							"to" : "PS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 289.56667098356797,
+							"computed_value" : 289.5666416087825,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSOX",
 							"instrument_height" : 0.0,
 							"line" : 11,
-							"normalized_residual" : 0.018709835679759024,
+							"normalized_residual" : 0.018416087825524955,
 							"number" : 23,
-							"obs_azim" : 3.0261684902352735,
-							"obs_length" : 0.31618728283709135,
-							"obs_redondancy" : 0.015303323465643004,
-							"obs_zen" : 1.5707963484675402,
+							"obsRedondancy" : 0.015312652737720089,
+							"obs_azim" : 3.0261675825028105,
+							"obs_length" : 0.31616877638036978,
+							"obs_zen" : 1.5707963484691569,
 							"original_value" : 289.56479999999999,
-							"rank" : 23,
-							"residual" : 0.0018709835679759025,
-							"residual_std" : 0.018711267457430278,
-							"sigma_a_posteriori" : 0.09999234804550515,
+							"rank" : 25,
+							"residual" : 0.0018416087825524957,
+							"residualStd" : 0.018417497983264738,
+							"sigmaResidual" : 0.001237443038597568,
+							"sigma_a_posteriori" : 0.099992343380512036,
 							"sigma_abs" : 0.10000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.10000000000000001,
 							"target_height" : 0.0,
 							"to" : "PSO",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"PSOX_G0_2" : 
-						{
-							"rank" : 31,
-							"sigma" : 2.7123237968306686e-05,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : -1.522334141196876
-						}
+						"g0" : -96.914829856873226
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				}
 			]
 		},
 		"PSX" : 
 		{
 			"code" : 6,
-			"code_name" : "2-- ",
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				438.84546108864345,
-				17.512350550566772,
-				-0.015092745923400486
+				438.84533947198088,
+				17.512500621748853,
+				-0.015114728214887824
 			],
 			"coord_compensated_georef" : 
 			[
-				657011.89543542371,
-				6854326.2240297478,
+				657011.89531528926,
+				6854326.2241791748,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4148909774172043,
-				48.787589962534398,
+				2.4148909757670496,
+				48.787589963870253,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				438.84534033847177,
+				17.512500659859686,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -2753,63 +2392,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.0078279643071518853,
-						170.68524500653953,
+						0.0077825248257056929,
+						170.67819674566832,
 						0.0
 					],
 					[
-						0.00671219005483094,
-						70.685245006540072,
+						0.006675586237091048,
+						70.678196745667094,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					5.2271005265832747e-05,
-					-6.9955900090065951e-06,
-					0.0,
-					6.2903765465166585e-05,
-					0.0,
-					0.0
+					5.226177195576293e-05,
+					-6.977891390145201e-06,
+					6.2862757518899437e-05
 				],
 				"sigmas" : 
 				[
-					0.0069467347759803984,
-					0.0076205902972407502,
-					0.0
+					0.0069083419609592247,
+					0.0075766718037681225
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 7,
+			"nbActiveObs" : 7,
 			"number" : 9,
-			"params" : 
-			{
-				"PSX_x" : 
-				{
-					"rank" : 24,
-					"sigma" : 0.0069467347759803984,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 438.8454610874864
-				},
-				"PSX_y" : 
-				{
-					"rank" : 25,
-					"sigma" : 0.0076205902972407502,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 17.5123520907567
-				}
-			},
+			"rank" : 24,
 			"shift_from_read" : 
 			[
-				0.89543542370665818,
-				0.22402974776923656,
+				0.89531528926454484,
+				0.22417917475104332,
 				0.0
 			],
 			"sigmas_init" : 
@@ -2821,313 +2432,287 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 4,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 0.39069790802606508,
+							"computed_value" : 0.39069562360035143,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSX",
 							"instrument_height" : 0.0,
 							"line" : 18,
-							"nabla" : 0.011488403370578904,
-							"normalized_residual" : -0.72070666577557729,
+							"nabla" : 0.011488386261297374,
+							"normalized_residual" : -0.72188090057488064,
 							"number" : 24,
-							"obs_azim" : 0.23868932282647065,
-							"obs_length" : 511.16030521845846,
-							"obs_redondancy" : 48.204134642126583,
-							"obs_zen" : 1.5708315741139416,
+							"obsRedondancy" : 48.204279708609633,
+							"obs_azim" : 0.23868819417553661,
+							"obs_length" : 511.16029288931122,
+							"obs_zen" : 1.5708315741136376,
 							"original_value" : 0.3921,
-							"rank" : 24,
-							"residual" : -0.0014020919739594474,
-							"residual_std" : -1.0014078516562213,
-							"sigma_a_posteriori" : 0.0014001208115559884,
+							"rank" : 26,
+							"residual" : -0.0014043763996412625,
+							"residualStd" : -1.003040832628096,
+							"sigmaResidual" : 0.0013507058164393335,
+							"sigma_a_posteriori" : 0.0014001188724905801,
 							"sigma_abs" : 0.00069999999999999999,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0013507037631669426,
-							"sigma_total" : 0.0019454405523648209,
-							"standardized_residual" : -1.0380455079743147,
+							"sigma_total" : 0.0019454405824047517,
+							"standardized_residual" : -1.0397352129151358,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 0.8687704889419624,
+							"computed_value" : 0.86875650969207308,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSX",
 							"instrument_height" : 0.0,
 							"line" : 19,
-							"nabla" : 0.0121863153647895,
-							"normalized_residual" : 0.75210270752173203,
+							"nabla" : 0.012185757744035065,
+							"normalized_residual" : 0.74580881354071971,
 							"number" : 25,
-							"obs_azim" : 0.24619886936691113,
-							"obs_length" : 512.95151507277058,
-							"obs_redondancy" : 55.84133516373987,
-							"obs_zen" : 1.5708316976278045,
+							"obsRedondancy" : 55.846450242729496,
+							"obs_azim" : 0.2461975570141085,
+							"obs_length" : 512.95147924936487,
+							"obs_zen" : 1.570831697625424,
 							"original_value" : 0.86709999999999998,
-							"rank" : 25,
-							"residual" : 0.001670488941965728,
-							"residual_std" : 1.1317986855823503,
-							"sigma_a_posteriori" : 0.0014759594292214631,
+							"rank" : 27,
+							"residual" : 0.0016565096920922496,
+							"residualStd" : 1.1223923524819883,
+							"sigmaResidual" : 0.0016598324720053898,
+							"sigma_a_posteriori" : 0.0014758740011272774,
 							"sigma_abs" : 0.00097999999999999997,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0016597563919420572,
-							"sigma_total" : 0.0022210915148413546,
-							"standardized_residual" : 1.0064663405279088,
+							"sigma_total" : 0.0022210916015164622,
+							"standardized_residual" : 0.9979981233231775,
 							"target_height" : 0.0,
 							"to" : "VTRY_LED",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 7.1119067846330539,
+							"computed_value" : 7.1118893831006353,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSX",
 							"instrument_height" : 0.0,
 							"line" : 20,
-							"nabla" : 0.012105665731242001,
-							"normalized_residual" : 0.053589428144872518,
+							"nabla" : 0.012104374240186511,
+							"normalized_residual" : 0.04485652565191775,
 							"number" : 26,
-							"obs_azim" : 0.34426582497642577,
-							"obs_length" : 426.50486468257407,
-							"obs_redondancy" : 45.545936015762976,
-							"obs_zen" : 1.5708257366552734,
+							"obsRedondancy" : 45.555686446395505,
+							"obs_azim" : 0.34426445886653489,
+							"obs_length" : 426.50467249993125,
+							"obs_zen" : 1.5708257366422416,
 							"original_value" : 7.1117999999999997,
-							"rank" : 26,
-							"residual" : 0.00010678463304168618,
-							"residual_std" : 0.072621292483002614,
-							"sigma_a_posteriori" : 0.0014704314587444126,
+							"rank" : 28,
+							"residual" : 8.9383100620090366e-05,
+							"residualStd" : 0.060792411211162509,
+							"sigmaResidual" : 0.0013449343354043014,
+							"sigma_a_posteriori" : 0.0014703003029377807,
 							"sigma_abs" : 0.00050000000000000001,
 							"sigma_rel" : 0.01,
-							"sigma_residual" : 0.0013447899434716163,
-							"sigma_total" : 0.001992643637715388,
-							"standardized_residual" : 0.079406180541489166,
+							"sigma_total" : 0.0019926443102993418,
+							"standardized_residual" : 0.066459081508407528,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -117.27878764977356,
+							"computed_value" : -117.27876812826702,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSX",
 							"instrument_height" : 0.0,
 							"line" : 21,
-							"nabla" : 0.014956317256270134,
-							"normalized_residual" : 0.0078165990012111115,
+							"nabla" : 0.014948516229652604,
+							"normalized_residual" : 0.020171982910392999,
 							"number" : 27,
-							"obs_azim" : -1.6096586340738974,
-							"obs_length" : 439.02008413075885,
-							"obs_redondancy" : 18.759987709296354,
-							"obs_zen" : 1.570826599648792,
+							"obsRedondancy" : 18.779572977499768,
+							"obs_azim" : -1.6096594201980485,
+							"obs_length" : 439.02002182091064,
+							"obs_zen" : 1.5708265996445785,
 							"original_value" : -117.2788,
-							"rank" : 27,
-							"residual" : 1.2350226421913555e-05,
-							"residual_std" : 0.0086722710382426578,
-							"sigma_a_posteriori" : 0.0014241052162059955,
+							"rank" : 29,
+							"residual" : 3.187173299842094e-05,
+							"residualStd" : 0.022382879533510255,
+							"sigmaResidual" : 0.00068469939375634327,
+							"sigma_a_posteriori" : 0.0014239335448642595,
 							"sigma_abs" : 0.00158,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.00068434226318040195,
 							"sigma_total" : 0.00158,
-							"standardized_residual" : 0.0180468562098113,
+							"standardized_residual" : 0.046548504773122071,
 							"target_height" : 0.0,
 							"to" : "PSO",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"PSX_G0_1" : 
-						{
-							"rank" : 26,
-							"sigma" : 2.2203319100764754e-05,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : 0.23255225443833272
-						}
+						"g0" : 14.804666760685567
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				},
 				{
-					"nbr_active_obs" : 1,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 2,
 							"comment" : "",
-							"computed_value" : 0.65999351926948158,
+							"computed_value" : 0.65998966835973094,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSX",
 							"instrument_height" : 0.0,
 							"line" : 23,
-							"normalized_residual" : -0.0012961461036908872,
+							"normalized_residual" : -0.0020663280538180118,
 							"number" : 28,
-							"obs_azim" : -2.1196174685450488,
-							"obs_length" : 0.65999351926948135,
-							"obs_redondancy" : 0.071396326257811005,
-							"obs_zen" : 1.5707963721112925,
+							"obsRedondancy" : 0.071004603191981985,
+							"obs_azim" : -2.1199123705395744,
+							"obs_length" : 0.65998966835973061,
+							"obs_zen" : 1.5707963721116294,
 							"original_value" : 0.66000000000000003,
-							"rank" : 28,
-							"residual" : -6.4807305184544362e-06,
-							"residual_std" : -0.0012966090519521644,
-							"sigma_a_posteriori" : 0.0049982147731400606,
+							"rank" : 30,
+							"residual" : -1.0331640269090059e-05,
+							"residualStd" : -0.0020670620387310832,
+							"sigmaResidual" : 0.00013323344474265808,
+							"sigma_a_posteriori" : 0.0049982245697049272,
 							"sigma_abs" : 0.0050000000000000001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0050000000000000001,
 							"target_height" : 0.0,
 							"to" : "PS",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				},
 				{
-					"nbr_active_obs" : 2,
-					"num" : 2,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 7,
 							"comment" : "",
-							"computed_value" : 94.68520000198771,
+							"computed_value" : 94.685200020711704,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSX",
 							"instrument_height" : 0.0,
 							"line" : 24,
-							"normalized_residual" : 1.9877194537274393e-06,
+							"normalized_residual" : 2.0711715542496083e-05,
 							"number" : 29,
-							"obs_azim" : -1.6096586340738974,
-							"obs_length" : 439.02008413075885,
-							"obs_redondancy" : 4.0727227523795761e-05,
-							"obs_zen" : 1.570826599648792,
+							"obsRedondancy" : 4.0773729637066936e-05,
+							"obs_azim" : -1.6096594201980485,
+							"obs_length" : 439.02002182091064,
+							"obs_zen" : 1.5708265996445785,
 							"original_value" : 94.685199999999995,
-							"rank" : 29,
-							"residual" : 1.9877194537274393e-09,
-							"residual_std" : 1.9877198584990751e-06,
-							"sigma_a_posteriori" : 0.00099999979636384174,
+							"rank" : 31,
+							"residual" : 2.0711715542496084e-08,
+							"residualStd" : 2.0711719764966821e-05,
+							"sigmaResidual" : 6.3854310436199148e-07,
+							"sigma_a_posteriori" : 0.00099999979613133111,
 							"sigma_abs" : 0.001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.001,
 							"target_height" : 0.0,
 							"to" : "PSO",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 62.220212290201552,
+							"computed_value" : 62.201488311080809,
 							"deflection_correction" : 0.0,
-							"file_id" : 1,
+							"file" : 1,
 							"from" : "PSX",
 							"instrument_height" : 0.0,
 							"line" : 25,
-							"nabla" : 6.4245310725659897,
-							"normalized_residual" : -0.0019877097984681174,
+							"nabla" : 6.4208664536158144,
+							"normalized_residual" : -0.020711688919189571,
 							"number" : 30,
-							"obs_azim" : -2.1196174685450488,
-							"obs_length" : 0.65999351926948135,
-							"obs_redondancy" : 40.727227405408094,
-							"obs_zen" : 1.5707963721112925,
+							"obsRedondancy" : 40.773729652890303,
+							"obs_azim" : -2.1199123705395744,
+							"obs_length" : 0.65998966835973061,
+							"obs_zen" : 1.5707963721116294,
 							"original_value" : 62.222200000000001,
-							"rank" : 30,
-							"residual" : -0.0019877097984681174,
-							"residual_std" : -0.0025818164124935738,
-							"sigma_a_posteriori" : 0.76988812560392117,
+							"rank" : 32,
+							"residual" : -0.020711688919189571,
+							"residualStd" : -0.0269127651870435,
+							"sigmaResidual" : 0.6385431046757164,
+							"sigma_a_posteriori" : 0.76958605982118533,
 							"sigma_abs" : 1.0,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.6381788730865986,
 							"sigma_total" : 1.0,
-							"standardized_residual" : -0.0031146593569517812,
+							"standardized_residual" : -0.032435850872914812,
 							"target_height" : 0.0,
 							"to" : "PS",
 							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"variance_from_matrix" : false
+							"unit_str" : "g"
 						}
 					],
 					"params" : 
 					{
-						"PSX_G0_2" : 
-						{
-							"rank" : 27,
-							"sigma" : 2.6337994059124426e-05,
-							"unit_factor" : 0.015707963267948967,
-							"unit_str" : "g",
-							"value" : -3.0969702777235217
-						}
+						"g0" : -197.15930138829319
 					},
-					"type" : "hz_unknown"
+					"type" : "hz_unknown",
+					"unitFactor" : 0.015707963267948967
 				}
 			]
 		},
 		"VTRY_CHN" : 
 		{
 			"code" : 7,
-			"code_name" : "2xy ",
 			"comment" : "# Chemin\u00e9e Nord : axe au sommet",
 			"coord_compensated_cartesian" : 
 			[
-				559.6987388814548,
-				514.18059295922114,
-				-0.045257807652063775
+				559.69805280666083,
+				514.18086625014689,
+				-0.045263327130035738
 			],
 			"coord_compensated_georef" : 
 			[
-				657136.44538753363,
-				6854821.8963758033,
+				657136.44470495288,
+				6854821.8966538487,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4165363086595124,
-				48.79205607911242,
+				2.4165362993405166,
+				48.792056081567651,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				559.69805611542643,
+				514.18086929315598,
 				0.0
 			],
 			"coord_init_latlong" : 
 			[
 				2.41653499413869,
-				48.792055812087064,
+				48.792055812087071,
 				0.0
 			],
 			"coord_read" : 
@@ -3144,63 +2729,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.011967800601597958,
-						199.70031111251583,
+						0.011899042344396425,
+						0.48976852934298593,
 						0.0
 					],
 					[
-						0.011202432931075949,
-						99.700311112529064,
+						0.011116562098337284,
+						100.48976852933814,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00013593318144174691,
-					-9.0424068052902764e-08,
-					0.0,
-					0.00015514111710242159,
-					0.0,
-					0.0
+					0.00013532599199870545,
+					1.5171407044143675e-07,
+					0.00015504480795577844
 				],
 				"sigmas" : 
 				[
-					0.011202450471321198,
-					0.011967784183066587,
-					0.0
+					0.01111661003935774,
+					0.011898997555793465
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 8,
+			"nbActiveObs" : 8,
 			"number" : 0,
-			"params" : 
-			{
-				"VTRY_CHN_x" : 
-				{
-					"rank" : 20,
-					"sigma" : 0.011202450471321198,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 559.69873887918584
-				},
-				"VTRY_CHN_y" : 
-				{
-					"rank" : 21,
-					"sigma" : 0.011967784183066587,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 514.18059449986902
-				}
-			},
+			"rank" : 20,
 			"shift_from_read" : 
 			[
-				0.096787533606402576,
-				0.028975803405046463,
+				0.096104952855966985,
+				0.02925384882837534,
 				0.0
 			],
 			"sigmas_init" : 
@@ -3212,80 +2769,73 @@ data=
 			"stations" : 
 			[
 				{
-					"nbr_active_obs" : 2,
-					"num" : 1,
 					"observations" : 
 					[
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -1,
 							"comment" : "# Chemin\u00e9e Nord : axe au sommet",
-							"computed_value" : 559.69873887918584,
+							"computed_value" : 559.69805413007361,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "VTRY_CHN",
 							"instrument_height" : 0.0,
 							"line" : 1,
-							"nabla" : 0.26533965150921635,
-							"normalized_residual" : 1.5180939279151713,
+							"nabla" : 0.2653190603666426,
+							"normalized_residual" : 1.5073309862414412,
 							"number" : 0,
+							"obsRedondancy" : 96.656662364530973,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 96.641661260258275,
 							"obs_zen" : 0.0,
 							"original_value" : 559.60215622539795,
 							"rank" : 0,
-							"residual" : 0.096582653787891104,
-							"residual_std" : 8.2839294878103988,
-							"sigma_a_posteriori" : 0.011659038615672688,
+							"residual" : 0.095897904675666723,
+							"residualStd" : 8.2436303307933336,
+							"sigmaResidual" : 0.062548426431056556,
+							"sigma_a_posteriori" : 0.011632970042027334,
 							"sigma_abs" : 0.063620999999999997,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.062543572487972363,
 							"sigma_total" : 0.063620999999999997,
-							"standardized_residual" : 1.5442458744496044,
+							"standardized_residual" : 1.533178532978273,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						},
 						{
 							"active" : true,
-							"active_read" : true,
 							"code" : -2,
 							"comment" : "# Chemin\u00e9e Nord : axe au sommet",
-							"computed_value" : 514.18059449986902,
+							"computed_value" : 514.18086746593372,
 							"deflection_correction" : 0.0,
-							"file_id" : 0,
+							"file" : 0,
 							"from" : "VTRY_CHN",
 							"instrument_height" : 0.0,
 							"line" : 1,
-							"nabla" : 0.28762908945883742,
-							"normalized_residual" : 0.43051466465926391,
+							"nabla" : 0.28762608241406012,
+							"normalized_residual" : 0.43447063724950424,
 							"number" : 1,
+							"obsRedondancy" : 96.743534677566288,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 96.741511859773084,
 							"obs_zen" : 0.0,
 							"original_value" : 514.15088855749286,
 							"rank" : 1,
-							"residual" : 0.029705942376153871,
-							"residual_std" : 2.3849532869828698,
-							"sigma_a_posteriori" : 0.012455565707844087,
+							"residual" : 0.029978908440853047,
+							"residualStd" : 2.4076158959378087,
+							"sigmaResidual" : 0.067868204580968705,
+							"sigma_a_posteriori" : 0.012451698998762315,
 							"sigma_abs" : 0.069001000000000007,
 							"sigma_rel" : 0.0,
-							"sigma_residual" : 0.067867495046580142,
 							"sigma_total" : 0.069001000000000007,
-							"standardized_residual" : 0.43770500673062279,
+							"standardized_residual" : 0.44172243285274115,
 							"target_height" : 0.0,
 							"to" : "VTRY_CHN",
 							"unit_factor" : 1.0,
-							"unit_str" : "m",
-							"variance_from_matrix" : false
+							"unit_str" : "m"
 						}
 					],
-					"params" : null,
 					"type" : "simple"
 				}
 			]
@@ -3293,24 +2843,29 @@ data=
 		"VTRY_CHS" : 
 		{
 			"code" : 6,
-			"code_name" : "2-- ",
 			"comment" : "# Chemin\u00e9e Sud : axe au sommet",
 			"coord_compensated_cartesian" : 
 			[
-				582.79327096435702,
-				418.99140069113082,
-				-0.040351712022072661
+				582.7925351366215,
+				418.99156562987332,
+				-0.040370400796985499
 			],
 			"coord_compensated_georef" : 
 			[
-				657158.82294093445,
-				6854726.5515723964,
+				657158.82220770232,
+				6854726.5517421504,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4168504880408115,
-				48.791200083868254,
+				2.4168504780434334,
+				48.791200085346219,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				582.79253820949805,
+				418.99156784245457,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -3333,63 +2888,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.011457256054910193,
-						20.932638566720861,
+						0.011394607986123071,
+						20.7789510423518,
 						0.0
 					],
 					[
-						0.010082323721837537,
-						120.93263856672898,
+						0.0099944068923415036,
+						120.77895104234841,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00011345347189875901,
-					9.8038159296489565e-06,
-					0.0,
-					0.00013884223889910723,
-					0.0,
-					0.0
+					0.00011275470741730239,
+					9.9601556485236781e-06,
+					0.00013880740276654235
 				],
 				"sigmas" : 
 				[
-					0.010234324595488949,
-					0.011321685740819432,
-					0.0
+					0.010147267347743521,
+					0.011258695557679903
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 6,
+			"nbActiveObs" : 6,
 			"number" : 1,
-			"params" : 
-			{
-				"VTRY_CHS_x" : 
-				{
-					"rank" : 18,
-					"sigma" : 0.010234324595488949,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 582.79327096180009
-				},
-				"VTRY_CHS_y" : 
-				{
-					"rank" : 19,
-					"sigma" : 0.011321685740819432,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 418.99140222664369
-				}
-			},
+			"rank" : 18,
 			"shift_from_read" : 
 			[
-				0.82294093444943428,
-				0.55157239641994238,
+				0.82220770232379436,
+				0.55174215044826269,
 				0.0
 			],
 			"sigmas_init" : 
@@ -3403,24 +2930,29 @@ data=
 		"VTRY_LED" : 
 		{
 			"code" : 6,
-			"code_name" : "2-- ",
 			"comment" : "# Chemin\u00e9e Nord : led rouge c\u00f4t\u00e9 Est",
 			"coord_compensated_cartesian" : 
 			[
-				563.86160171747167,
-				514.99624128399614,
-				-0.045689647281562884
+				563.86081749489779,
+				514.99651946175686,
+				-0.04569559678584946
 			],
 			"coord_compensated_georef" : 
 			[
-				657140.61360170098,
-				6854822.6807047222,
+				657140.61282104964,
+				6854822.680988403,
 				0.0
 			],
 			"coord_compensated_latlong" : 
 			[
-				2.4165929659306897,
-				48.792063409945087,
+				2.4165929552762284,
+				48.792063412444499,
+				0.0
+			],
+			"coord_compensated_stereographic" : 
+			[
+				563.86082086010276,
+				514.99652253866111,
 				0.0
 			],
 			"coord_init_latlong" : 
@@ -3443,63 +2975,35 @@ data=
 				"axes" : 
 				[
 					[
-						0.01183814402591547,
-						8.5624700221849821,
+						0.011772384349733272,
+						9.2665484213424634,
 						0.0
 					],
 					[
-						0.011221153645277881,
-						108.56247002220478,
+						0.011124958439762718,
+						109.26654842133743,
 						0.0
-					],
-					[
-						0.0,
-						0.0,
-						100.0
 					]
 				],
 				"matrix" : 
 				[
-					0.00013666456091879114,
-					2.0478236377083883e-06,
-					0.0,
-					0.00015152110861033468,
-					0.0,
-					0.0
+					0.00013587084522678078,
+					2.3296878687402042e-06,
+					0.0001514212825416727
 				],
 				"sigmas" : 
 				[
-					0.011232547063743013,
-					0.01182733400095091,
-					0.0
+					0.011138966559280268,
+					0.011759130816328582
 				]
 			},
-			"file_id" : 0,
-			"nbr_active_obs" : 5,
+			"nbActiveObs" : 5,
 			"number" : 2,
-			"params" : 
-			{
-				"VTRY_LED_x" : 
-				{
-					"rank" : 16,
-					"sigma" : 0.011232547063743013,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 563.86160171518009
-				},
-				"VTRY_LED_y" : 
-				{
-					"rank" : 17,
-					"sigma" : 0.01182733400095091,
-					"unit_factor" : 1.0,
-					"unit_str" : "m",
-					"value" : 514.99624282462071
-				}
-			},
+			"rank" : 16,
 			"shift_from_read" : 
 			[
-				0.02780170098412782,
-				0.012804722413420677,
+				0.027021049638278782,
+				0.013088403269648552,
 				0.0
 			],
 			"sigmas_init" : 
