@@ -1,205 +1,265 @@
 //Comp3D visualization
-//Copyright 2013-2021 IGN-Travaux Spéciaux jean-michael.muller@ign.fr paul.bouquet@ign.fr
+//Copyright 2013-2023 IGN-Travaux Spéciaux comp3d@ign.fr
 
-var translation_en={
-  "Oui": "Yes",
-  "Non": "No",
-  "Code": "Code",
-  "Afficher les messages lors de la lecture des fichiers": "Show file reading messages",
-  "Masquer les messages lors de la lecture des fichiers": "Hide file reading messages",
-  "Afficher les messages lors du paramétrage du calcul": "Show computation configuration messages",
-  "Masquer les messages lors du paramétrage du calcul": "Hide computation configuration messages",
-  "Afficher les messages lors de la lecture de la configuration": "Show configuration file reading messages",
-  "Masquer les messages lors de la lecture de la configuration": "Hide configuration file reading messages",
-  "Afficher les messages lors du calcul": "Show computation messages",
-  "Masquer les messages lors du calcul": "Hide computation messages",
-  "&sigma;X init": "&sigma;X init",
-  "&sigma;Y init": "&sigma;Y init",
-  "&sigma;Z init": "&sigma;Z init",
-  "Déviation de la verticale ouest-est en secondes d'arc": "Vertical deviation west-east in arc seconds",
-  "Déviation de la verticale sud-nord en secondes d'arc": "Vertical deviation south-north in arc seconds",
-  "Type d&apos;observation": "Observation type",
-  "Provenance de la mesure": "Mesure provenance",
-  "De": "From",
-  "Point visé": "Targeted point",
-  "Vers": "To",
-  "Mesure": "Measure",
-  "Observation": "Observation",
-  "Distance entre les coordonnées compensées des 2 points": "Distance between adjusted coordinates of the two points",
-  "&sigma; absolu + &sigma; relatif": "Absolute &sigma; + relative &sigma;",
-  "Résidu divisé par le &sigma; total": "Residual divided by total &sigma;",
-  "Résidu dans l&apos;unité de la mesure": "Residual in the measure unit",
-  "Écart entre l&apos;observation compensée et l&apos;observation mesurée": "Difference between adjusted and measured obervations",
-  "&sigma; sur l&apos;observation obtenue après compensation": "Observation &sigma; after adjusted",
-  "Résidu divisé par le &sigma; a posteriori": "Residual divided by a posteriori &sigma;",
-  "0% : observation indispensable / 100% : observation inutile": "0%: essential observation / 100%: unnecessary observation",
-  "Résidu normalisé :    *  >3    /    ***  >6    ": "Normalized residual:    * >3    /    ***   >6    ",
-  "Cliquer pour déplier": "Click to unfold",
-  "Version : ": "Version: ",
-  "Commit : ": "Commit: ",
-  "Options : ": "Options: ",
-  "Configuration du chantier": "Project configuration",
-  "Nom": "Name",
-  " :": ":",
-  "Description": "Description",
-  "Fichier COR racine": "Root COR file",
-  "Fichier de coordonnées principal": "",
-  "Fichier OBS racine": "Root OBS file",
-  "Fichier d&apos;observation principal": "Main observation file",
-  "Unité": "Unit",
-  "Nombre de décimales": "Decimal places number",
-  "c&apos;est un indice de la précision donnée dans le rapport, certaines valeurs seront données avec plus ou moins de décimales": "clue for the precision given in the report, some value are given with less or more decimal places",
-  "Type de calcul": "Computation nature",
-  "Inversion de la matrice normale": "Normal matrix inversion",
-  "Nécessaire pour obtenir des intervalles et ellipsoïdes de confiance et obtenir les informations de redondance": "Required to get confidence intervalls and ellipsoids and get redondancy informations",
-  "Contraintes internes": "Internal constraints",
-  "Coefficient de réfraction": "Refraction coefficient",
-  "N&apos;affecte que les mesures zénithales": "Just impact vertical angle measures",
-  "Module linéaire": "Point scale",
-  "Module linéaire moyen du chantier": "Project mean local scale",
-  "Georéférencement": "Georeferencing",
-  "Utilisation d&apos;une projection standard": "Standard projection using",
-  "Définition projection": "Projection definition",
-  "Définition proj4 de la projection": "proj4 projection definition",
-  "Centre de la projection": "Projection center",
-  "Latitude centrale": "Center latitude",
-  "Latitude permettant de déterminer la courbure locale de l&apos;ellipsoïde": "Latitude to determine the local curvature of the ellipsoid",
-  "Centre des coordonnées locales": "Local coordinates center",
-  "Critère de convergence": "Convergence criterion",
-  "Différence de σ0 entre 2 itérations": "σ0 difference between 2 iterations",
-  "Itérations maximum": "Maximum iterations",
-  "En hauteurs ellipsoïdales": "Ellipsoidal heights",
-  "Itérations supplémentaires": "Additional iterations",
-  "Nombre d&apos;itérations supplémentaires après convergence": "Additional iteration number after convergence",
-  "Initialisation avec CAP": "Initialization with CAP",
-  "Calcul des coordonnées initiales des points non renseignés dans le fichier cor": "Initial coordinates computation of points not indicated in the cor file",
-  "Informations sur le calcul": "Computation information",
-  "Compensation effectuée": "Compensation done",
-  "Points non initialisables": "Non-initialisable points",
-  "&sigma;0 initial": "Initial &sigma;0",
-  "&sigma;0 final": "Final &sigma;0",
-  "Itérations": "Iterations",
-  "Interruption du calcul": "Computation interruption",
-  "Défaut de rang": "Rank default",
-  "Début du calcul": "Computation start",
-  "Durée du calcul": "Computation duration",
-  "Rayon de la sphère": "Sphere radius",
-  "Nombre d'observations total": "Total observations number",
-  "Nombre d'observations actives": "Active observations number",
-  "Paramètres": "Parameters",
-  "Avec déviation de la verticale": "Using vertical deflection",
-  "Nom projection": "Projection name",
-  "Cartésiennes globales vers géocentriques :": "Cartesian Global to Geocentric:",
-  "Évolution du &sigma;0": "&sigma;0 evolution",
-  "Iteration": "Iteration",
-  "Test du &chi;²": "&chi;² test",
-  "Confiance : ": "Confidence: ",
-  "Degrés de liberté : ": "Degrees of freedom: ",
-  "Test : ": "Test: ",
-  "Test réussi : ": "Test passed: ",
-  "Coordonnées initiales": "Initial coordinates",
-  "He": "Eh",
-  "Alti": "Gh",
-  "Obs actives": "Active obs",
-  "Nombre d&apos;observations actives en lien avec le point": "Active observations number linked to the point",
-  "Cliquer pour plier": "Click to fold",
-  "Observations": "Observations",
-  "Répartition des résidus": "Residual repartition",
-  "Standard": "Standard",
-  "Tous les résidus": "All residuals",
-  "Répartition des résidus normalisés": "Normalized residuals repartition",
-  "Horizontales": "Horizontal",
-  "Zénithales": "Zenithal",
-  "Distances": "Distances",
-  "Bascules": "Similarities",
-  "Axes": "Axes",
-  "Coord": "Coord",
-  "Dénivelées": "Direct levelling",
-  "Répartition des résidus normalisés par type": "Type-based normalized residuals repartition",
-  "Résidus absolus moyens par rapport à la distance": "Average distance-relative normalized absolute residuals repartition",
-  "Propositions pseudo aléatoires": "Pseudo random propositions",
-  "Redondance totale du système : ": "System redundancy: ",
-  "Somme des redondances partielles correspondant au degré de liberté du système": "Sum of partial redundancies corresponding to the degree of freedom of the system",
-  "Il faudrait mutiplier les sigmas des observations par :": "Observations sigmas may be multiplied by:",
-  "Pas assez d'observations": "Not enough observations",
-  "Pas assez de redondance": "Not enough redundancy",
-  "La moyenne des redondances partielles de ce type est inférieure à 30%": "The partial redundancies average of this type is less than 30%",
-  "Nombre d'observations de ce type : ": "Observation number of this type: ",
-  " dont ": " including ",
-  " redondantes": " redundant ",
-  "Somme des redondances partielles de ce type : ": "Sum of partial redundancies of this type: ",
-  "soit": "which correponds to",
-  "de la redondance totale": "of the total redundancy",
-  "Moyenne des redondances partielles de ce type : ": "Partial redundancies average of this type: ",
-  "Plus gros résidus": "Biggest residuals",
-  "les 20 plus gros résidus normalisés du plus grand au plus petit": "20 biggest normalized residuals",
-  "les 20 plus gros résidus normés du plus grand au plus petit": "20 biggest standardized residuals",
-  "Nom fichier": "File name",
-  "Point origine": "Origin point",
-  "Verticale": "Vertical",
-  "Coordonnées cartésiennes globales": "Global cartesian coordinates",
-  "Déviation": "Deviation",
-  "Axe ": "Axis ",
-  " sur point ": " on point ",
-  "Paramétrage de l'axe": "Axis parametrization",
-  "ID cible ": "Target ID",
-  "Abscisse": "Abscissa",
-  "Rayon": "Radius",
-  "Positions": "Positions",
-  "Coordonnées compensées": "Compensated coordinates",
-  "Ellipsoïdes de confiance": "Confidence ellipsoids",
-  "1/2 Axe (mm)": "1/2 Axis (mm)",
-  "Gisement (gr)": "Bearing (gr)",
-  "Site (gr)": "Tilt (gr)",
-  "Demi-intervalles de confiance": "Confidence semi-intervals",
-  "Demi-intervalles de confiance 1D à 1 𝜎 (68%)": "1D 1 𝜎 confidence semi-intervals (68%)",
-  "&sigma;X (mm)": "&sigma;X (mm)",
-  "&sigma;Y (mm)": "&sigma;Y (mm)",
-  "&sigma;Z (mm)": "&sigma;Z (mm)",
-  "Simulation des déplacements des points": "Points displacements simulation",
-  "Pour ": "For ",
-  " simulations :": " simulations:",
-  "EMQ X (mm)": "MSE X (mm)",
-  "EMQ Y (mm)": "MSE Y (mm)",
-  "EMQ Z (mm)": "MSE Z (mm)",
-  "Max X (mm)": "Max X (mm)",
-  "Max Y (mm)": "Max Y (mm)",
-  "Max Z (mm)": "Max Z (mm)",
-  "Distance": "Distance",
-  "&sigma; total": "Total &sigma;",
-  "Résidu normalisé": "Normalized residual",
-  "Résidu": "Residual",
-  "Résidu mm": "Residual mm",
-  "&sigma; a posteriori": "A posteriori &sigma;",
-  "Résidu standard": "Standard residual",
-  "Redondance": "Redondancy",
-  "Gros résidu": "Big residual",
-  "Angles horizontaux": "Horizontal angles",
-  "Angles zénithaux": "Zenith angles",
-  "Coordonnées": "Coordinates",
-  "Radians": "Rad",
-  "Grades": "Grad",
-  "Degrés": "Deg",
-  "DMS": "DMS",
-  "Compensation": "Compensation",
-  "Simulation propagation": "Simulation propagation",
-  "Simulation Monte-Carlo": "Simulation Monte-Carlo",
-  "Ref": "Ref",
-  "Station": "Station",
-  "Cible": "Target",
-  " - Comp3D": " - Comp3D",
+const translation_fr={
+    "Yes": "Oui",
+    "No": "Non",
+    "Code": "Code",
+    "Show file reading messages": "Afficher les messages lors de la lecture des fichiers",
+    "Hide file reading messages": "Masquer les messages lors de la lecture des fichiers",
+    "Show computation configuration messages": "Afficher les messages lors du paramétrage du calcul",
+    "Hide computation configuration messages": "Masquer les messages lors du paramétrage du calcul",
+    "Show configuration file reading messages": "Afficher les messages lors de la lecture de la configuration",
+    "Hide configuration file reading messages": "Masquer les messages lors de la lecture de la configuration",
+    "Show computation messages": "Afficher les messages lors du calcul",
+    "Hide computation messages": "Masquer les messages lors du calcul",
+    "\u03C3x init": "\u03C3x init",
+    "\u03C3y init": "\u03C3y init",
+    "\u03C3z init": "\u03C3z init",
+    "Vertical deflection west-east in arc seconds": "Déviation de la verticale ouest-est en secondes d'arc",
+    "Vertical deflection south-north in arc seconds": "Déviation de la verticale sud-nord en secondes d'arc",
+    "Observation type": "Type d'observation",
+    "Measure provenance": "Provenance de la mesure",
+    "From": "De",
+    "Targeted point": "Point visé",
+    "To": "Vers",
+    "Measure": "Mesure",
+    "Observation": "Observation",
+    "Distance between adjusted coordinates of the two points": "Distance entre les coordonnées compensées des 2 points",
+    "Absolute \u03C3 + relative \u03C3": "\u03C3 absolu + \u03C3 relatif",
+    "Residual divided by total \u03C3": "Résidu divisé par le \u03C3 total",
+    "Residual in the measure unit": "Résidu dans l\u0027unité de la mesure",
+    "Difference between adjusted and measured observations": "Écart entre l\u0027observation compensée et l\u0027observation mesurée",
+    "Observation \u03C3 after adjusted": "\u03C3 sur l\u0027observation obtenue après compensation",
+    "Residual divided by a posteriori \u03C3": "Résidu divisé par le \u03C3 a posteriori",
+    "0%: essential observation / 100%: unnecessary observation": "0% : observation indispensable / 100% : observation inutile",
+    "Normalized residual:    * >3    /    ***   >6    ": "Résidu normalisé :    *  >3    /    ***  >6    ",
+    "Click to unfold": "Cliquer pour déplier",
+    "Version: ": "Version : ",
+    "Commit: ": "Commit : ",
+    "Options: ": "Options : ",
+    "Project configuration": "Configuration du chantier",
+    "Name": "Nom",
+    ": ": " : ",
+    ":": " :",
+    "Description": "Description",
+    "Root COR file": "Fichier COR racine",
+    "Main coordinates file": "Fichier de coordonnées principal",
+    "Root OBS file": "Fichier OBS racine",
+    "Coord var/covar file" : "Fichier var/covar sur coord",
+    "Main observation file": "Fichier d&apos;observation principal",
+    "Unit": "Unité",
+    "Decimal places number": "Nombre de décimales",
+    "clue for the precision given in the report, some value are given with less or more decimal places": "c'est un indice de la précision donnée dans le rapport, certaines valeurs seront données avec plus ou moins de décimales",
+    "Computation nature": "Type de calcul",
+    "Normal matrix inversion": "Inversion de la matrice normale",
+    "Monte-Carlo simulation done": "Simulation de Monte-Carlo effectuée",
+    "Required to get confidence intervals and ellipsoids and get redondancy informations": "Nécessaire pour obtenir des intervalles et ellipsoïdes de confiance et obtenir les informations de redondance",
+    "Internal constraints": "Contraintes internes",
+    "Refraction coefficient": "Coefficient de réfraction",
+    "Only impacts vertical angle measures": "N'affecte que les mesures zénithales",
+    "Local scale": "Module linéaire",
+    "Project mean local scale": "Module linéaire moyen du chantier",
+    "Georeferencing": "Georéférencement",
+    "Projection definition": "Définition projection",
+    "proj4 projection definition": "Définition proj4 de la projection",
+    "Projection center": "Centre de la projection",
+    "Center latitude": "Latitude centrale",
+    "Latitude to determine the local curvature of the ellipsoid": "Latitude permettant de déterminer la courbure locale de l'ellipsoïde",
+    "Local coordinates center": "Centre des coordonnées locales",
+    "Convergence criterion": "Critère de convergence",
+    "\u03C30 difference between 2 iterations": "Différence de \u03C30 entre 2 itérations",
+    "Maximum iterations": "Itérations maximum",
+    "Ellipsoidal heights": "En hauteurs ellipsoïdales",
+    "Additional iterations": "Itérations supplémentaires",
+    "Additional iteration number after convergence": "Nombre d&apos;itérations supplémentaires après convergence",
+    "Initialization with CAP": "Initialisation avec CAP",
+    "Computation information": "Informations sur le calcul",
+    "Compensation done": "Compensation effectuée",
+    "Non-initialisable points": "Points non initialisables",
+    "Initial \u03C30": "\u03C30 initial",
+    "Final \u03C30": "\u03C30 final",
+    "Iterations": "Itérations",
+    "Computation interruption": "Interruption du calcul",
+    "Rank default": "Défaut de rang",
+    "Computation start": "Début du calcul",
+    "Computation duration": "Durée du calcul",
+    "Sphere radius": "Rayon de la sphère",
+    "Total observations number": "Nombre d'observations total",
+    "Active observations number": "Nombre d'observations actives",
+    "Parameters": "Paramètres",
+    "Using vertical deflection": "Avec déviation de la verticale",
+    "Projection name": "Nom projection",
+    "User proj def":"Déinition de la projection utilisateur",
+    "Cartesian global to Geocentric:": "Cartésiennes globales vers géocentriques :",
+    "\u03C30 evolution": "Évolution du \u03C30",
+    "Iteration": "Iteration",
+    "\u03C7\u00B2 test": "Test du \u03C7²",
+    "Confidence: ": "Confiance : ",
+    "Degrees of freedom: ": "Degrés de liberté : ",
+    "Test: ": "Test : ",
+    "Test passed: ": "Test réussi : ",
+    "Initial coordinates": "Coordonnées initiales",
+    "Eh": "He",
+    "Gh": "Alti",
+    "Active obs": "Obs actives",
+    "Active observations number linked to the point": "Nombre d'observations actives en lien avec le point",
+    "Click to fold": "Cliquer pour plier",
+    "Observations": "Observations",
+    "Residual distribution": "Répartition des résidus",
+    "Standard": "Standard",
+    "All residuals": "Tous les résidus",
+    "Normalized residuals distribution": "Répartition des résidus normalisés",
+    "Horizontal": "Horizontales",
+    "Zenithal": "Zénithales",
+    "Distances": "Distances",
+    "Similarities": "Bascules",
+    "Axes": "Axes",
+    "Coord": "Coord",
+    "Direct levelling": "Dénivelées",
+    "Type-based normalized residuals distribution": "Répartition des résidus normalisés par type",
+    "Average distance-relative normalized absolute residuals distribution": "Résidus absolus moyens par rapport à la distance",
+    "Suggestions": "Suggestions",
+    "System redundancy: ": "Redondance totale du système : ",
+    "Sum of partial redundancies corresponding to the degree of freedom of the system": "Somme des redondances partielles correspondant au degré de liberté du système",
+    "Observations sigmas may be multiplied by:": "Il faudrait mutiplier les sigmas des observations par :",
+    "Not enough observations": "Pas assez d'observations",
+    "Not enough redundancy": "Pas assez de redondance",
+    "The partial redundancies average of this type is less than 30%": "La moyenne des redondances partielles de ce type est inférieure à 30%",
+    "Observation number of this type: ": "Nombre d'observations de ce type : ",
+    " including ": " dont ",
+    " redundant ": " redondantes",
+    "Sum of partial redundancies of this type: ": "Somme des redondances partielles de ce type : ",
+    "which correponds to": "soit",
+    "of the total redundancy": "de la redondance totale",
+    "Partial redundancies average of this type: ": "Moyenne des redondances partielles de ce type : ",
+    "Biggest residuals": "Plus gros résidus",
+    "20 biggest normalized residuals": "les 20 plus gros résidus normalisés du plus grand au plus petit",
+    "20 biggest standardized residuals": "les 20 plus gros résidus normés du plus grand au plus petit",
+    "File name": "Nom fichier",
+    "Origin point": "Point origine",
+    "Vertical": "Verticale",
+    "Global cartesian coordinates": "Coordonnées cartésiennes globales",
+    "Deflection": "Déviation",
+    "Axis": "Axe",
+    "Axes": "Axes",
+    " on point ": " sur le point ",
+    "Axis parameterization": "Paramétrage de l'axe",
+    "Target ID": "ID cible",
+    "Abscissa": "Abscisse",
+    "Radius": "Rayon",
+    "Positions": "Positions",
+    "Compensated coordinates": "Coordonnées compensées",
+    "Confidence ellipsoids": "Ellipsoïdes de confiance",
+    "1/2 Axis (mm)": "1/2 Axe (mm)",
+    "Azimuth (gr)": "Azimut (gr)",
+    "Tilt (gr)": "Site (gr)",
+    "Confidence intervals": "Intervalles de confiance",
+    "1D 1 \u03C3 confidence intervals (68%)": "Intervalles de confiance 1D à 1 \u03C3 (68%)",
+    "\u03C3x (mm)": "\u03C3x (mm)",
+    "\u03C3y (mm)": "\u03C3y (mm)",
+    "\u03C3z (mm)": "\u03C3z (mm)",
+    "Points displacements simulation": "Simulation des déplacements des points",
+    "For ": "Pour ",
+    " simulations:": " simulations :",
+    "MSE X (mm)": "EMQ X (mm)",
+    "MSE Y (mm)": "EMQ Y (mm)",
+    "MSE Z (mm)": "EMQ Z (mm)",
+    "Max X (mm)": "Max X (mm)",
+    "Max Y (mm)": "Max Y (mm)",
+    "Max Z (mm)": "Max Z (mm)",
+    "Distance": "Distance",
+    "Total \u03C3": "\u03C3 total",
+    "Normalized residual": "Résidu normalisé",
+    "Residual": "Résidu",
+    "Residual mm": "Résidu mm",
+    "A posteriori \u03C3": "\u03C3 a posteriori",
+    "Standard residual": "Résidu standard",
+    "Redundancy": "Redondance",
+    "Big residual": "Gros résidu",
+    "Horizontal angles": "Angles horizontaux",
+    "Zenith angles": "Angles zénithaux",
+    "Coordinates": "Coordonnées",
+    "Rad": "Radians",
+    "Grad": "Grades",
+    "Deg": "Degrés",
+    "DMS": "DMS",
+    "Compensation": "Compensation",
+    "Propagation Simulation": "Simulation propagation",
+    "Monte-Carlo Simulation": "Simulation Monte-Carlo",
+    "Ref": "Ref",
+    "Station": "Station",
+    "Target": "Cible",
+    "Internal reliability : value of the biggest not detectable error":"Fiabilité interne : valeur de la plus grande faute non détectable",
+    "Probable error value \n Display if standardized residual > 2.5":"Valeur de la faute probable \n Affichée si résidu normé > 2.5",
+    "Standardized residual":"Résidu normé",
+    "Residual divided by its precision":"Résidu divisé par sa précision",
+    "Observations number minus parameters number":"Nombre d'observations actives moins nombre de paramètres",
+    "Probable error":"Faute probable",
+    "Biggest ellipsoid semi axis:": "Plus gros demi-axe d'ellipsoide :",
+    "Res": "Rés",
+    "GNSS baseline": "Ligne de base GNSS",
+    "System redundancy": "Redondance du système",
+    "Prop": "Prop",
+    "Disp": "Disp",
+    " simulations:": " simulations :",
+    "Inter": "Inter",
+    "Comp": "Comp",
+    "Ell": "Ell",
+    "Big": "Gros",
+    "Sim": "Sim",
+    "Init": "Init",
+    "Obs": "Obs",
+    "Stereo def": "Def proj stéréographique",
+    "LatLong def": "Def proj géographique",
+    "Geocent def": "Def proj géocentrique",
+    "Conf": "Conf",
+    "reset sort": "ordre par défaut",
+    "copy table": "copier table",
+    "whoops": "oups",
+    "Redondancy":"Redondance",
+    "Confidence semi-intervals": "Demi-intevalle de confiance",
+    "1D 1 \u03C3 confidence semi-intervals (68%)": "Demi-intevalle de confiance 1D à 1 \u03C3 (68%)",
+    "Click to fold/unfold": "Cliquer pour plier/déplier",
+    "\u2207": "\u2207",
+    "\u03B7": "\u03B7",
+    "\u03BE": "\u03BE",
+    "\u0302\u03C3x (mm)": "\u0302\u03C3x (mm)",
+    "\u0302\u03C3y (mm)": "\u0302\u03C3y (mm)",
+    "\u0302\u03C3z (mm)": "\u0302\u03C3z (mm)",
+    "Info": "Info",
+    "\u03C30 initial": "\u03C30 initial",
+    "\u03C30 final": "\u03C30 final",
+    "\u03C30": "\u03C30",
+    "\u03C7\u00B2": "\u03C7\u00B2",
+    "Is subframe z forced to be aligned with vertical?": "Est-ce que le z du sous-repère est contraint à la verticale ?",
+    "Verticalized": "Verticalisé",
+    "Not vericalized": "Non vericalisé",
+    "Transformation between subframe and global cartesian frame": "Transformation entre le sous-repère et le repère cartésien global",
+    "Number and nature of active observations": "Nombre et nature des observations actives",
+    "Angle between vertical and sub-frame z": "Angle entre la verticale et l'axe z du sous-repère",
+    "Centering": "Centrage",
+    "No big residuals": "Pas de gros résidus",
+    "Show suggestions per file": "Afficher les suggestions par fichier",
+    "Hide suggestions per file": "Cacher les suggestions par fichier",
+    "Sugg": "Sugg",
+    "Back to top": "Retour en haut",
+    "Select table": "Sélectionner le tableau",
+    "Export table": "Exporter le tableau",
+    "Table selected! CTRL+C to copy": "Tableau sélectionné ! CTRL+C pour copier",
+    "!": " !",
 }
 
 //------------------------------------------------------------------------------
 // begin simple_i18n functions
 //------------------------------------------------------------------------------
-var translations = {
-  // update list of translations here, example: "fr":translation_fr,
-  "en": translation_en,
+const translations = {
+    // update list of translations here, example: "fr":translation_fr,
+    "fr": translation_fr,
 };
 //choose the translation here
 var current_dict = {};
-function _(key) {
+function _(key){
   if (key in current_dict)
     return current_dict[key]
   return key;
@@ -207,19 +267,19 @@ function _(key) {
 // end simple_i18n functions
 
 //------------------------------------------------------------------------------
-// Déclarations des variables
+// Variables declaration
 //------------------------------------------------------------------------------
 const codes_obs = {
-  "-1": "coord_x",
-  "-2": "coord_y",
-  "-3": "coord_z",
+  "-1": "crd_x",
+  "-2": "crd_y",
+  "-3": "crd_z",
   "1": "dist",
   "2": "dist hz",
   "3": "dist",
   "4": "den",
   "5": "hz",
   "6": "zen",
-  "7": "tour",
+  "7": "open",
   "8": "azim",
   "9": "center_meta",
   "10": "photo",
@@ -229,6 +289,8 @@ const codes_obs = {
   "14": "dE",
   "15": "dN",
   "18": "axis",
+  "21": "eq dh",
+  "22": "eq dist",
   "91": "center_x",
   "92": "center_y",
   "101": "bascule_x",
@@ -237,14 +299,15 @@ const codes_obs = {
   "104": "bascule_hz",
   "105": "bascule_zen",
   "106": "bascule_dist",
-
+  "107": "bl_x",
+  "108": "bl_y",
+  "109": "bl_z",
   "181": "axe_r",
   "182": "axe_l",
   "184": "axe_c",
   "187": "axe_fx",
   "188": "axe_fy",
   "189": "axe_fz",
-
   "201": "cint_tx",
   "202": "cint_ty",
   "203": "cint_tz",
@@ -253,19 +316,7 @@ const codes_obs = {
   "206": "cint_rz",
   "207": "cint_sc",
 };
-const codes_pt = {
-  0: "---",
-  1: "XYZ",
-  2: "XY-",
-  3: "--Z",
-  4: "-&nbsp;&nbsp;",
-  5: "&nbsp;&nbsp;Z",
-  6: "--&nbsp;",
-  7: "XY&nbsp;",
-  8: "f--",
-  9: "fXY",
-  undefined: "",
-};
+
 const type_obs = {
   1 : "dist",
   2 : "dist",
@@ -275,12 +326,19 @@ const type_obs = {
   7 : "hz",
   8 : "hz",
   6 : "zen",
+  14 : "dEN",
+  15 : "dEN",
+  21 : "eq dh",
+  22 : "eq dist",
   101 : "basc",
   102 : "basc",
   103 : "basc",
   104 : "basc",
   105 : "basc",
   106 : "basc",
+  107 : "bl",
+  108 : "bl",
+  109 : "bl",
   181 : "axis",
   182 : "axis",
   183 : "axis",
@@ -293,8 +351,27 @@ const type_obs = {
   "-1" : "coord",
   "-2" : "coord",
   "-3" : "coord",
+  201 : "cint",
+  202 : "cint",
+  203 : "cint",
+  204 : "cint",
+  205 : "cint",
+  206 : "cint",
+  207 : "cint",
 };
 
+var title = "?";
+
+//variables to know if obs type exist for graph
+var exist = {};
+for (let code in type_obs){
+  exist[type_obs[code]] = false;
+}
+var exist_type=[];
+var three_dimension=false;
+
+const email = "comp3d@ign.fr";
+const fill_fold = "||";
 const parite = ["paire", ""];
 const max_biggest_residuals = 20;
 //Step for residual ananlysis
@@ -302,143 +379,1103 @@ const first_step_standardized_residual=2.5
 const second_step_standardized_residual=4.1
 const first_step_normalized_residual=3
 const second_step_normalized_residual=6
-var num_decimales;
-var num_decimales_mini;
-var items;
+const type_dist_chart=["dist","hz","zen","basc","bl"];
+var nb_decimals;
+var nb_decimals_mini;
 var all_pts = [];
 var nb_pts;
 var all_pts_name = {};
 var all_files = [];
 var all_obs = [];
+var all_g0 = [];
 var all_basc = [];
 var all_axes = [];
+var all_eq = [];
 var all_active_obs = [];
-var nb_obs_active;
-//variables to know if obs type exist for graph
-var exist = {};
-exist["hz"] = false;
-exist["zen"] = false;
-exist["dist"] = false;
-exist["basc"] = false;
-exist["axis"] = false;
-exist["coord"] = false;
-exist["den"] = false;
+
+//translation in calling : if not, not work
+const full_name_type = {
+  "dist": 'Distances',
+  "hz": 'Horizontal angles',
+  "zen" :  'Zenith angles',
+  "den" : 'Direct levelling',
+  "coord" : 'Coordinates',
+  "basc" : 'Similarities',
+  "axis" : 'Axes',
+  "bl" : 'GNSS baseline',
+  "dEN" : 'Centering',
+  "eq dh" : 'Equal dH',
+  "eq dist" : 'Equal dist',
+};
+
+const bgColor = {//background color
+    "std" : "rgba(120,120,120,1)",
+    "all" : "rgba(255,162,0,1)",
+    "hz" : "rgba(0,180,180,1)",
+    "zen" : "rgba(0,220,0,1)",
+    "dist" : "rgba(0,0,220,1)",
+    "basc" : "rgba(255,204,204,1)",
+    "bl" : "rgba(180,0,30,1)",
+    "axis" : "rgba(200,0,200,1)",
+    "coord" : "rgba(200,200,0,1)",
+    "den" : "rgba(255,215,0,1)",
+    "dEN" : "rgba(255,228,181,1)",
+    "eq dh" : "rgba(255,120,81,1)",
+    "eq dist" : "rgba(255,81,120,1)",
+}
+const bdColor = {//border color
+    "std" : "rgba(120,120,120,1)",
+    "all" : "rgba(255,162,0,1)",
+    "hz" : "rgba(100,180,180,1)",
+    "zen" : "rgba(100,220,100,1)",
+    "dist" : "rgba(100,100,220,1)",
+    "basc" : "rgba(255,224,224,1)",
+    "bl" : "rgba(180,100,30,1)",
+    "axis" : "rgba(200,100,220,1)",
+    "coord" : "rgba(200,200,100,1)",
+    "den" : "rgba(255,215,0,1)",
+    "dEN" : "rgba(255,228,181,1)",
+    "eq dh" : "rgba(255,120,81,1)",
+    "eq dist" : "rgba(255,81,120,1)",
+}
 
 //global for map
 let mymap;
 let minx;
 let miny;
 let maxx;
-let maxy; 
+let maxy;
 
-//variables listing atrributes of column being able to fold (using in get_head_obs and obs2tab)
-const id_fold=["obs_length","sigma_total","normalized_residual","residual","residual_mm","sigma_a_posteriori","residualStd","standardized_residual","obsRedondancy","nabla","probableError"];
-function need_inversion(id_fold){
-  if ((id_fold=="sigma_a_posteriori") ||(id_fold=="residualStd")||(id_fold=="standardized_residual")||(id_fold=="obsRedondancy")||(id_fold=="nabla")||(id_fold=="probableError")) return "class_need_inversion";
-  else return ""
-};
 
-//------------------------------------------------------------------------------
-// Fonctions used in the different parts
-//------------------------------------------------------------------------------
-
-function bool(result){
-    if (result) return _("Oui");
-    else return _("Non");
+function to_fixed(val, digits) {
+    try {
+        return val.toFixed(digits);
+    } catch (error) {
+      if (error instanceof RangeError) return to_fixed(val, 1);
+      return "NaN";
+    }
 }
 
-function add_post(str){
-    return '<span post="&nbsp;'+str+'&nbsp;"></span>';
-}
+function get_header_conf(table_name, matrix_inverted,use_vertical_deflection,compute_type=0){
+    let header_conf = []
+    if(table_name === "observations" || table_name === "biggest_residuals"){
+        header_conf.push(
+            {displayed_name:"index_init", field:"index_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
 
-function add_circle_comment(pt){
-  if (!pt) return "";
-  else if ((pt.comment=="")||(pt.comment=="*")) return "";
-  else return '<span post="&nbsp;&#9432;"></span>';
-}
+        if (table_name === "biggest_residuals")
+            header_conf.push(
+                {displayed_name:"", field:"href_obs", tooltip:"", sortable:false, fixed_dec:false, foldable:false});
 
-function add_comment(pt,nv_tool_tip){
-  if (!pt) return "";
-  else if ((pt.comment=="")||(pt.comment=="*")) return "";
-  else{
-    if (nv_tool_tip)
-    {
-      return '<span class="tooltip"><span class="comment">' + pt.comment + '</span></span>';
+        header_conf.push(
+            {displayed_name:_("Code"), field:"code", tooltip:_("Observation type"), fixed_dec:false, sortable:true, foldable:false },
+            {displayed_name:_("From"), field:"from", tooltip:_("Measure provenance"), fixed_dec:false, sortable:true, foldable:false },
+            {displayed_name:_("To"), field:"to", tooltip:_("Targeted point"), fixed_dec:false, sortable:true, foldable:false },
+            {displayed_name:_("Observation"), field:"original_value", tooltip:_("Measure"), fixed_dec:true, sortable:true, foldable:false },
+            {displayed_name:_("Distance"), field:"obs_length", tooltip:_("Distance between adjusted coordinates of the two points"),fixed_dec:true, sortable:true, foldable:false },
+            {displayed_name:_("Total \u03C3"), field:"sigma_total", tooltip:_("Absolute \u03C3 + relative \u03C3"), fixed_dec:true, sortable:true, foldable:true }
+        )
+        if (!(compute_type===2)){//No Monte-Carlo
+          header_conf.push(
+            {displayed_name:_("Normalized residual"), field:"normalized_residual", tooltip:_("Residual divided by total \u03C3"), fixed_dec:true, sortable:true, foldable:true },
+            {displayed_name:_("Residual"), field:"residual", tooltip:_("Residual in the measure unit"), fixed_dec:true, sortable:true, foldable:true },
+            {displayed_name:_("Residual mm"), field:"residual_mm", tooltip:_("Difference between adjusted and measured observations"), fixed_dec:true, sortable:true, foldable:true }
+          );
+        }
+
+        if (matrix_inverted)
+          header_conf.push(
+            {displayed_name:_("A posteriori \u03C3"), field:"sigma_a_posteriori", tooltip:_("Observation \u03C3 after adjusted"), fixed_dec:true, sortable:true, foldable:true },
+            {displayed_name:_("Standard residual"), field:"residual_std", tooltip:_("Residual divided by a posteriori \u03C3"), fixed_dec:true, sortable:true, foldable:true },
+            {displayed_name:_("Standardized residual"), field:"standardized_residual", tooltip:_("Residual divided by its precision"), fixed_dec:true, sortable:true, foldable:true },
+            {displayed_name:_("Redondancy"), field:"obs_redondancy", tooltip:_("0%: essential observation / 100%: unnecessary observation"), fixed_dec:true, sortable:true, foldable:true },
+            {displayed_name:_("\u2207"), field:"nabla", tooltip:_("Internal reliability : value of the biggest not detectable error"), fixed_dec:true, sortable:true, foldable:true },
+            {displayed_name:_("Probable error"), field:"probable_error", tooltip:_("Probable error value \n Display if standardized residual > 2.5"), fixed_dec:true, sortable:true, foldable:true }
+          );
+        return header_conf
+
+    }else if(table_name === "init_coord"){
+        let component = get_component();
+        header_conf.push(
+            {displayed_name:"index_init", field:"index_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:component[0]+" init", field:"x_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:component[1]+" init", field:"y_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:component[2]+" init", field:"z_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:"\u03C3x init", field:"sigma_x_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+                {displayed_name:"\u03C3y init", field:"sigma_y_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+            )
+        }
+        header_conf.push(
+            {displayed_name:"\u03C3z init", field:"sigma_z_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+        )
+        if(use_vertical_deflection)
+            header_conf.push(
+                {displayed_name:_("\u03B7"), field:"dev_eta", tooltip:_('Vertical deflection west-east in arc seconds'), sortable:true, fixed_dec:false, foldable:false},
+                {displayed_name:_("\u03BE"), field:"dev_xi", tooltip:_('Vertical deflection south-north in arc seconds'), sortable:true, fixed_dec:false, foldable:false}
+            );
+
+        header_conf.push(
+            {displayed_name:_("Active obs"), field:"active_obs", tooltip:_('Active observations number linked to the point'), sortable:true, fixed_dec:false, foldable:false}
+        );
+
+        return header_conf
+    }else if(table_name === "g0s"){
+      header_conf.push(
+        {displayed_name:_("Point"), field:"point", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("Tour number") , field:"num", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("Value"), field:"value", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("\u0302\u03C3"), field:"sigma", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("Active obs"), field:"active_obs", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+      );
+      return header_conf
+    }else if(table_name === "equalities"){
+      header_conf.push(
+        {displayed_name:_("File name"), field:"file_name", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("Type") , field:"type", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("Value"), field:"value", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("\u0302\u03C3"), field:"sigma", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("Active obs"), field:"active_obs", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+      );
+      return header_conf
+    }else if(table_name === "similarities"){
+      header_conf.push(
+        {displayed_name:_("File name"), field:"file_name", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+        {displayed_name:_("Origin point") , field:"origin_point", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+        {displayed_name:_("Vertical"), field:"vertical", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+        {displayed_name:_("Global cartesian coordinates") + "(m)", field:"glob_cart_coord", tooltip:"", sortable:false, fixed_dec:false, foldable:false, colspan: "4"},
+      );
+      return header_conf
+    }else if(table_name === "coord_comp_table"){
+        let component = get_component();
+
+        var coord_compensated = "georef";
+
+        header_conf.push(
+            {displayed_name:"index_init", field:"index_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:component[0] + " comp", field:"x_comp", tooltip:"", sortable:true, fixed_dec:true, foldable:false, coord:coord_compensated},
+            {displayed_name:component[1] + " comp", field:"y_comp", tooltip:"", sortable:true, fixed_dec:true, foldable:false, coord:coord_compensated},
+            {displayed_name:component[2] + " comp", field:"z_comp", tooltip:"", sortable:true, fixed_dec:true, foldable:false, coord:coord_compensated}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:"\u0394" + component[0], field:"x_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
+                {displayed_name:"\u0394" + component[1], field:"y_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
+            )
+        }
+        header_conf.push(
+            {displayed_name:"\u0394" + component[2], field:"z_shift", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:"\u03C3x init", field:"sigma_x_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true},
+                {displayed_name:"\u03C3y init", field:"sigma_y_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
+            )
+        }
+        header_conf.push(
+            {displayed_name:"\u03C3z init", field:"sigma_z_init", tooltip:"", sortable:true, fixed_dec:true, foldable:true}
+            );
+
+        if(use_vertical_deflection){
+            header_conf.push(
+                {displayed_name:_("\u03B7"), field:"dev_eta", tooltip:_("Vertical deflection west-east in arc seconds"), sortable:true, fixed_dec:true, foldable:true},
+                {displayed_name:_("\u03BE"), field:"dev_xi", tooltip:_("Vertical deflection south-north in arc seconds"), sortable:true, fixed_dec:true, foldable:true}
+            );
+        }
+
+        header_conf.push(
+           {displayed_name:_("Active obs"), field:"active_obs", tooltip:_("Active observations number linked to the point"), sortable:true, fixed_dec:false, foldable:true}
+                    );
+        return header_conf
+
+    }else if(table_name === "ellips"){
+       header_conf.push(
+        {displayed_name:_("Name"), field:"name", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+        {displayed_name:_("1/2 Axis (mm)"), field:"semi-axis", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+        {displayed_name:_("Azimuth (gr)"), field:"azim", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+        {displayed_name:_("Tilt (gr)"), field:"tilt", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+
+       );
+        return header_conf;
+
+    }else if(table_name === "interv"){
+        header_conf.push(
+            {displayed_name:"index_init", field:"index_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+            {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+        )
+        if (three_dimension){
+            header_conf.push(
+                {displayed_name:_("\u0302\u03C3x (mm)"), field:"sigmax", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+                {displayed_name:_("\u0302\u03C3y (mm)"), field:"sigmay", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+            )
+        }
+        header_conf.push(
+            {displayed_name:_("\u0302\u03C3z (mm)"), field:"sigmaz", tooltip:"", sortable:true, fixed_dec:false, foldable:false}
+        );
+         return header_conf;
+    }else if(table_name === "displa"){
+      header_conf.push(
+        {displayed_name:"index_init", field:"index_init", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+        {displayed_name:_("Name"), field:"name", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      if (three_dimension){
+        header_conf.push(
+          {displayed_name:_("MSE X (mm)"), field:"emqx", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+          {displayed_name:_("MSE Y (mm)"), field:"emqy", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      }
+      header_conf.push({displayed_name:_("MSE Z (mm)"), field:"emqz", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      if (three_dimension){
+        header_conf.push(
+          {displayed_name: _("Max X (mm)"), field:"maxx", tooltip:"", sortable:true, fixed_dec:false, foldable:false},
+          {displayed_name: _("Max Y (mm)"), field:"maxy", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      }
+      header_conf.push({displayed_name: _("Max Z (mm)"), field:"maxz", tooltip:"", sortable:true, fixed_dec:false, foldable:false});
+      return header_conf;
     }else{
-      return '<span class="comment">' + pt.comment + '</span>';
+        return undefined;
+    }
+}
+
+//------------------------------------------------------------------------------
+// Sorting functions
+//------------------------------------------------------------------------------
+function get_cell_value(row, columnIndex){
+  let td = row.cells[columnIndex];
+  if (td){
+    for (let i = 0; i < td.childNodes.length; ++i){
+      if (td.childNodes[i].nodeType !== Node.TEXT_NODE){
+        if (td.childNodes[i].classList.contains("value")){
+          if (td.childNodes[i].innerText === '-'){
+            return 10000;
+          }else if(td.childNodes[i].innerText === ''){
+            return 9999;
+          }else{
+            let val = parseFloat(Math.abs(td.childNodes[i].innerText));
+            if(isNaN(val))
+              return td.childNodes[i].innerText;
+            else
+              return val;
+          }
+        }
+      }else{
+        return td.innerText;
+      }
+    }
+    return 10001;
+  }else{
+    return 10002;
+  }
+}
+
+function remove_dir_attribute(th){
+  let curr_index = parseInt(th.cellIndex);
+  let tr = th.parentNode
+  for (let i = 0; i < (tr.children.length ); i++) {
+    if (i !== curr_index){ // except current th clicked
+      tr.children[i].removeAttribute('sort_dir');
     }
   }
 }
 
-function add_name(pt,i,rowspan){
-  return '<tr class=\"' + parite[i % 2] + '\"><td class=\"name\" rowspan="' + rowspan + '">' + add_post(codes_pt[pt.code]) + pt.name + add_circle_comment(pt) + add_comment(pt,1) + '</td>';
+function get_sort_dir(th){
+    let sort_dir = th.getAttribute('sort_dir');
+    if (sort_dir === null || th.getAttribute('field') === 'index_init'){
+        sort_dir = 'asc'
+        th.setAttribute('sort_dir', 'asc');
+    }else if (sort_dir === 'asc'){
+        sort_dir = 'desc'
+        th.setAttribute('sort_dir', 'desc');
+    }else{
+        sort_dir = 'asc'
+        th.setAttribute('sort_dir', 'asc');
+    }
+    return sort_dir
 }
 
-function add_code_obs(obs,file2tooltip){
-  return '<td class=\"code\" >' +  codes_obs[obs.code] + add_circle_comment(obs) +'<span class="tooltip">'+_("Code") + file2tooltip + '</br>' + add_comment(obs) + '</span>' +  '</td>'
+function sort_table(th_clicked){
+
+    let th = th_clicked
+    let th_index = th.cellIndex;
+    let table = th.closest('table');
+    let tbody = table.tBodies[0];
+
+    toggle_row_file(table.id, th_index)
+
+    if (table && tbody) {
+        remove_dir_attribute(th);
+        let sort_dir = get_sort_dir(th);
+        let reA = /[^a-zA-Z]/g;
+        let reN = /[^0-9]/g;
+
+        sortRows(tbody, function sortAlphaNum(row1,row2) {
+            let o1 = get_cell_value(row1, th_index);
+            let o2 = get_cell_value(row2, th_index);
+            var AFloat = parseFloat(o1, 10);
+            var BFloat = parseFloat(o2, 10);
+
+            if(isNaN(AFloat) && isNaN(BFloat)){
+                var aA = o1.replace(reA, "");
+                var bA = o2.replace(reA, "");
+                if(aA === bA) {
+                    var aN = parseFloat(o1.replace(reN, ""), 10);
+                    var bN = parseFloat(o2.replace(reN, ""), 10);
+                    return aN === bN ? 0 : aN > bN ? 1 : -1;
+                } else {
+                    return aA > bA ? 1 : -1;
+                }
+            }else if(isNaN(AFloat)){    //A is not a float
+                return 1;   //to make alphanumeric sort first return -1 here
+            }else if(isNaN(BFloat)){    //B is not a float
+                return -1;  //to make alphanumeric sort first return 1 here
+            }else{
+                return AFloat > BFloat ? 1 : -1;
+            }
+        }, sort_dir);
+    }
 }
 
-function displayMessagesRead() {
-  if (document.getElementById("messages_read_data").style.display == "block")
-  {
-    document.getElementById('messages_read_data').style.display = 'none';
-    document.getElementById('messageRead').style.fontWeight = 'normal';
-    document.getElementById("messageRead").value = _("Afficher les messages lors de la lecture des fichiers");
-  }
-  else
-  {
-    document.getElementById('messages_read_data').style.display = 'block';
-    document.getElementById('messageRead').style.fontWeight = 'bold';
-    document.getElementById("messageRead").value = _("Masquer les messages lors de la lecture des fichiers");
+function sortRows(tbody, compare, sort_dir){
+    //convert html collection to array
+    var rows = [].slice.call(tbody.rows);
+    //sort to desired order
+    rows.sort(compare);
+    if (sort_dir === 'desc') {
+        rows.reverse();
+    }
+    //update table
+    var fragment = document.createDocumentFragment();
+    rows.forEach(function (row) {
+        fragment.appendChild(row);
+    });
+    tbody.appendChild(fragment);
+}
+
+function toggle_row_file(table_id, index){
+  let row_file = document.querySelectorAll(`#${table_id} tr.filename`);
+  for (let i=0;i<row_file.length;i++){
+    let r=row_file[i];
+    if (index === 0)
+      r.classList.remove("hide_sorting")
+    else
+      r.classList.add("hide_sorting")
   }
 }
 
-function displayMessagesLeast_squares() {
-  if (document.getElementById("messages_set_least_squares").style.display == "block")
-  {
-    document.getElementById('messages_set_least_squares').style.display = 'none';
-    document.getElementById('messageLeast').style.fontWeight = 'normal';
-    document.getElementById("messageLeast").value = _("Afficher les messages lors du paramétrage du calcul");
+function create_sort_reset_button(table_id){
+
+    // Get the reference table
+    let ref_table = document.querySelector(`#${table_id}`);
+    // first_column = index_init
+    let first_column =  document.querySelector(`#${table_id} th:first-child`);
+
+    let reset_sort = document.createElement("div");
+
+    reset_sort.innerHTML = ('&#8635;');
+    reset_sort.classList.add('mouse_hand');
+    reset_sort.classList.add('button');
+
+    let tt = add_tooltip(_("reset sort"));
+    reset_sort.appendChild(tt);
+
+    reset_sort.addEventListener('click', function(){
+        first_column.click();
+    });
+
+    return reset_sort
+}
+//------------------------------------------------------------------------------
+// End Sorting functions
+//------------------------------------------------------------------------------
+
+function deletetooltip(table){//for table export
+  let table_export = table.cloneNode(true);
+  let tips = table_export.querySelectorAll(`.tooltip`);
+  for (let i=0;i<tips.length;i++){
+    let t=tips[i];
+    t.innerHTML = "";
   }
-  else
-  {
-    document.getElementById('messages_set_least_squares').style.display = 'block';
-    document.getElementById('messageLeast').style.fontWeight = 'bold';
-    document.getElementById("messageLeast").value = _("Masquer les messages lors du paramétrage du calcul");
+  let folds = table_export.querySelectorAll(`.folded`);
+  for (let j=0;j<folds.length;j++){
+    let f=folds[j];
+    f.innerHTML = "";
+  }
+  return table_export
+}
+
+function selectTable(table){
+    var body = document.body, range, sel;
+
+    if (document.createRange && window.getSelection) {
+        range = document.createRange();
+        sel = window.getSelection();
+        sel.removeAllRanges();
+        try {
+            range.selectNodeContents(table);
+            sel.addRange(range);
+        } catch (e) {
+            range.selectNode(table);
+            sel.addRange(range);
+        }
+    } else if (body.createTextRange) {
+        range = body.createTextRange();
+        range.moveToElementText(table);
+        range.select();
+    }
+    notify(_("Table selected! CTRL+C to copy"))
+}
+
+function exportAsSpreadsheet(tables_ids, name){
+    var html = "<html><head><meta charset='utf-8' /></head><body>";
+    let filename = name+".xls";
+
+    tables_ids.forEach((table_id) =>{
+
+        let table = document.querySelector(`#${table_id}`);
+
+        let table2export = deletetooltip(table);
+        html += "<br><br>" + table2export.outerHTML ;
+
+        });
+
+    html += "</body></html>";
+    // Instantiate a Blob object. The first parameter of its constructor is an array containing file contents, and the second parameter is an object containing file type attributes
+    var blob = new Blob([html], { type: "application/octet-stream" });
+
+    const a = document.createElement('a');
+    document.body.appendChild(a);
+    const url = window.URL.createObjectURL(blob);
+    a.href = url;
+    a.download = filename;
+    a.click();
+    setTimeout(() => {
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    }, 0)
+}
+
+function create_select_button(table_id){
+
+    let export_div = document.createElement("div");
+
+    export_div.innerHTML = ('&#10697');;
+    export_div.classList.add('mouse_hand');
+    export_div.classList.add('button');
+
+
+    let tt = add_tooltip(_("Select table"));
+    export_div.appendChild(tt);
+
+    export_div.onclick = function(){
+        selectTable(document.querySelector(`#${table_id}`));
+    };
+
+    return export_div;
+}
+
+function create_export_button(tables_ids, name){
+
+    let export_div = document.createElement("div");
+
+    export_div.innerHTML = ('&#10515;');
+    export_div.classList.add('mouse_hand');
+    export_div.classList.add('button');
+
+
+    let tt = add_tooltip(_("Export table"));
+    export_div.appendChild(tt);
+
+    export_div.onclick = function(){
+        exportAsSpreadsheet(tables_ids, name);
+    };
+
+    return export_div;
+}
+
+function make_th_sortable(th){
+    th.classList.add('mouse_hand');
+    th.addEventListener('click',  function(){
+        sort_table(this);
+    });
+    return th
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Make an html header table
+//---------------------------------------------------------------------------------------
+function make_html_header(header_config){
+
+    let thead = document.createElement("thead");
+    let tr = document.createElement("tr");
+
+    if (header_config !== undefined){
+        header_config.forEach((col, index, array) => {
+            let th = document.createElement("th");
+
+            let span_value = document.createElement("span");
+            span_value.classList.add("foldable");
+            span_value.classList.add("value");
+
+            let span_fold = document.createElement("span");
+            span_fold.classList.add("foldable");
+            span_fold.classList.add("folded");
+            span_fold.innerHTML = fill_fold;
+
+            th.title = col.tooltip;
+            th.setAttribute("field", col.field);
+            span_value.innerHTML = col.displayed_name
+
+            th.appendChild(span_value);
+            th.appendChild(span_fold);
+
+            if (col.sortable)
+                make_th_sortable(th);
+            if (col.colspan){
+                th.colSpan = col.colspan
+             }
+
+            tr.appendChild(th);
+
+        });
+    }
+    thead.appendChild(tr);
+
+    return thead
+}
+
+function format_value(val, abs, num_dec, attribute, active, foldable, style=null){
+  let span_value = document.createElement("span");
+  span_value.classList.add("value");
+  if(style !== null)
+    span_value.classList.add(style);
+  if (val !== undefined){
+    if (foldable)
+      span_value.classList.add("foldable");
+    if (num_dec === false){
+      span_value.innerHTML = val;
+    }else{
+      if (abs){
+        if (val === " " || val === "-"){
+          span_value.innerHTML = val;
+        }else{
+          span_value.innerHTML = to_fixed(Math.abs(parseFloat(val)), num_dec);
+        }
+      }else{
+        if (val === " " || val === "-"){
+          span_value.innerHTML = val;
+        }else{
+          span_value.innerHTML = to_fixed(parseFloat(val), num_dec);
+        }
+      }
+    }
+    if (attribute)
+      if (!(val === " " || val === "-")){
+        span_value.setAttribute(attribute[0], attribute[1]);
+      }
+      return span_value;
+  }else{
+    if (foldable){
+      span_value.classList.add("foldable");
+    }
+    if (active){
+      span_value.innerHTML = "";
+      return span_value;
+    }else{
+      span_value.innerHTML = "-";
+      return span_value;
+    }
   }
 }
 
-function displayMessagesReadConfig() {
-  if (document.getElementById("messages_read_config").style.display == "block")
-  {
-    document.getElementById('messages_read_config').style.display = 'none';
-    document.getElementById('messageReadC').style.fontWeight = 'normal';
-    document.getElementById("messageReadC").value = _("Afficher les messages lors de la lecture de la configuration");
+function toggle_fold_column(){
+
+    var index = this.cellIndex
+
+    let el = this;
+
+    // Get table id
+    while ((el = el.parentElement) && el.nodeName.toUpperCase() !== 'TABLE');
+    let table_id = el.id;
+
+
+    // Loop on j column table
+    let all_td_index = document.querySelectorAll(`#${table_id} tr td:nth-child(${index+1})`);
+    for (let j = 0; j< all_td_index.length; j++){
+        let td_fold = all_td_index[j];
+
+        for (let k = 0; k < td_fold.childNodes.length; k++) {
+            if (td_fold.childNodes[k].nodeType !== Node.TEXT_NODE){
+                if (td_fold.childNodes[k].classList.contains("foldable")) {
+                   td_fold.childNodes[k].classList.toggle("folded");
+                }
+            }
+        }
+    }
+
+    // Toggle m header table
+    let headers = document.querySelectorAll(`#${table_id} tr th:nth-child(${index+1})`);
+    for (let m = 0; m < headers[0].childNodes.length; m++) {
+        if (headers[0].childNodes[m].classList.contains("foldable")) {
+            headers[0].childNodes[m].classList.toggle("folded");
+        }
+    }
+}
+
+function add_dl_row(dlElement,dt_content,dd_content,dt_title=undefined,dd_class=undefined){//add row in enumeration for info_work and info_calc
+  const dt=document.createElement("dt");
+  dt.innerHTML=dt_content+ _(":");
+  if (dt_title){
+    dt.title=dt_title;
   }
-  else
-  {
-    document.getElementById('messages_read_config').style.display = 'block';
-    document.getElementById("messageReadC").value = _("Masquer les messages lors de la lecture de la configuration");
-    document.getElementById('messageReadC').style.fontWeight = 'bold';
+  dlElement.appendChild(dt);
+  const dd=document.createElement("dd");
+  dd.innerHTML=dd_content;
+  if (dd_class){
+    dd.classList.add(dd_class);
+  }
+  dlElement.appendChild(dd);
+  return dlElement;
+}
+
+function add_pt_row(columns, pt, index_init){
+    let new_tr = document.createElement("tr");
+    let pt_code = pt_code_name2html(pt.code_name);
+    let coord = pt.coord_compensated_georef;
+
+    columns.forEach((col, index, array) => {
+        let td = document.createElement("td");
+        let val = pt[col.field];
+        let comment_tooltip;
+        let shift = "-";
+        let sigma = "-";
+        let style = null;
+        if(col.foldable)
+            td.classList.add("mouse_hand")
+        if (col.field === "index_init"){ //COLUMN index_init
+            td.appendChild(format_value(index_init, false, false, false, true, col.foldable));
+        }else if (col.field === "name"){ //COLUMN NAME
+            let attribute = ['pre', pt_code+'\u0020']
+            td.appendChild(format_value(val, false, false, attribute, true, col.foldable));
+            td,comment_tooltip=generate_comment_tooltip(pt.comment,td,false);
+        }else if (col.field === "x_comp"){ //COLUMN X COMPENSATED
+            let attribute = ['post','\u0020'+ 'm'];
+            if (!pt_code[0].replace(/\s/g, '').length){ //Test if pt_code === " "
+                style = "grey";
+            }
+            td.appendChild(format_value(coord[0], false, nb_decimals, attribute, true, col.foldable, style));
+        }else if (col.field === "y_comp"){ //COLUMN Y COMPENSATED
+            let attribute = ['post','\u0020'+ 'm'];
+            if (!pt_code[1].replace(/\s/g, '').length){ //Test if pt_code === " "
+                style = "grey";
+            }
+            td.appendChild(format_value(coord[1], false, nb_decimals, attribute, true, col.foldable, style));
+        }else if (col.field === "z_comp"){ //COLUMN Z COMPENSATED
+            let attribute = ['post','\u0020'+ 'm'];
+            if (!pt_code[2].replace(/\s/g, '').length){ //Test if pt_code === " "
+                style = "grey";
+            }
+            td.appendChild(format_value(coord[2], false, nb_decimals, attribute, true, col.foldable, style));
+        }else if (col.field === "x_shift"){ //COLUMN X SHIFT
+            let attribute = ['post','\u0020'+ 'm'];
+            if (pt_code[0].replace(/\s/g, '').length){ //Test if pt_code === " "
+                shift = pt.shift_from_read[0];
+            }
+            td.appendChild(format_value(shift, false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "y_shift"){ //COLUMN Y SHIFT
+            let attribute = ['post','\u0020'+ 'm'];
+            if (pt_code[1].replace(/\s/g, '').length){ //Test if pt_code === " "
+                shift = pt.shift_from_read[1];
+            }
+            td.appendChild(format_value(shift, false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "z_shift"){ //COLUMN Z SHIFT
+            let attribute = ['post','\u0020'+ 'm'];
+            if (pt_code[2].replace(/\s/g, '').length){ //Test if pt_code === " "
+                shift = pt.shift_from_read[2];
+            }
+            td.appendChild(format_value(shift, false, nb_decimals, attribute, true, col.foldable));
+
+
+        }else if (col.field === "x_init"){ //COLUMN X INIT
+          let attribute = ['post','\u0020'+ 'm']
+          td.appendChild(format_value(pt.coord_read[0], false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "y_init"){ //COLUMN Y INIT
+            let attribute = ['post','\u0020'+ 'm']
+            td.appendChild(format_value(pt.coord_read[1], false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "z_init"){ //COLUMN Z INIT
+            let attribute = ['post','\u0020'+ 'm']
+            td.appendChild(format_value(pt.coord_read[2], false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "sigma_x_init"){ //COLUMN SIGMA X INIT
+            let attribute = ['post','\u0020'+ 'm'];
+            if (pt_code[0] === "x"){
+                sigma = pt.sigmas_init[0];
+            }
+            td.appendChild(format_value(sigma, false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "sigma_y_init"){ //COLUMN  SIGMA Y INIT
+            let attribute = ['post','\u0020'+ 'm'];
+            if (pt_code[1] === "y"){
+                sigma = pt.sigmas_init[1];
+            }
+            td.appendChild(format_value(sigma, false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "sigma_z_init"){ //COLUMN SIGMA Z INIT
+            let attribute = ['post','\u0020'+ 'm'];
+            if (pt_code[2] === "z"){
+                sigma = pt.sigmas_init[2];
+            }
+            td.appendChild(format_value(sigma, false, nb_decimals, attribute, true, col.foldable));
+        }else if (col.field === "dev_eta"){ //COLUMN ETA DEFLECTION
+            let attribute = ['post','\u0020'+ '"']
+            td.appendChild(format_value(pt.dev_eta*(3600*180)/Math.PI, false, 2, attribute, true, col.foldable));
+        }else if (col.field === "dev_xi"){ //COLUMN XI DEFLECTION
+            let attribute = ['post','\u0020'+ '"']
+            td.appendChild(format_value(pt.dev_xi*(3600*180)/Math.PI, false, 2, attribute, true, col.foldable));
+        }else if (col.field === "active_obs"){ //COLUMN ACITVE OBS
+            td.appendChild(format_value(pt.nbr_active_obs, false, false, false, true, col.foldable));
+        }else if (col.field === "sigmax"){ //COLUMN SIGMA X COMP
+          let ix="-";
+          if (pt.params){
+            ix = pt.params[pt.name+"_x"]?parseFloat(pt.params[pt.name+"_x"].sigma) * 1000:"-";
+          }
+          td.appendChild(format_value(ix, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "sigmay"){ //COLUMN SIGMA Y COMP
+          let iy="-";
+          if (pt.params){
+            iy = pt.params[pt.name+"_y"]?parseFloat(pt.params[pt.name+"_y"].sigma) * 1000:"-";
+          }
+          td.appendChild(format_value(iy, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "sigmaz"){ //COLUMN SIGMA Z COMP
+          let iz="-";
+          if (pt.params){
+            iz = pt.params[pt.name+"_z"]?parseFloat(pt.params[pt.name+"_z"].sigma) * 1000:"-";
+          }
+          td.appendChild(format_value(iz, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "emqx"){ //COLUMN EMQ X
+          let ix="-";
+          if (pt.params){
+            ix = pt.params[pt.name+"_x"]?parseFloat(pt.MC_shift_sq_average[0]) * 1000:"-";
+          }
+          td.appendChild(format_value(ix, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "emqy"){ //COLUMN EMQ Y
+          let iy="-";
+          if (pt.params){
+            iy = pt.params[pt.name+"_y"]?parseFloat(pt.MC_shift_sq_average[1]) * 1000:"-";
+          }
+          td.appendChild(format_value(iy, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "emqz"){ //COLUMN EMQ Z
+          let iz="-";
+          if (pt.params){
+            iz = pt.params[pt.name+"_z"]?parseFloat(pt.MC_shift_sq_average[2]) * 1000:"-";
+          }
+          td.appendChild(format_value(iz, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "maxx"){ //COLUMN MAX X
+          let ix="-";
+          if (pt.params){
+            ix = pt.params[pt.name+"_x"]?parseFloat(pt.MC_shift_max[0]) * 1000:"-";
+          }
+          td.appendChild(format_value(ix, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "maxy"){ //COLUMN MAX Y
+          let iy="-";
+          if (pt.params){
+            iy = pt.params[pt.name+"_y"]?parseFloat(pt.MC_shift_max[1]) * 1000:"-";
+          }
+          td.appendChild(format_value(iy, false, nb_decimals_mini, false, true, col.foldable));
+        }else if (col.field === "maxz"){ //COLUMN MAX Z
+          let iz="-";
+          if (pt.params){
+            iz = pt.params[pt.name+"_z"]?parseFloat(pt.MC_shift_max[2]) * 1000:"-";
+          }
+          td.appendChild(format_value(iz, false, nb_decimals_mini, false, true, col.foldable));
+        }
+        if (comment_tooltip){
+            // Tooltip td
+            let sp_tooltip = document.createElement("span");
+            sp_tooltip.classList.add("tooltip");
+
+            let tooltiptext = document.createElement("span");
+            tooltiptext.classList.add("tooltiptext");
+            tooltiptext.appendChild(comment_tooltip);
+
+            //Tooltip info click to fold
+            if (col.foldable){
+                let click_tooltip = document.createElement("span");
+                click_tooltip.classList.add("tooltip_fold");
+                click_tooltip.innerHTML = "<br>"+_("Click to fold/unfold");
+                tooltiptext.appendChild(click_tooltip);
+            }
+
+            sp_tooltip.appendChild(tooltiptext);
+            td.appendChild(sp_tooltip);
+        }
+        new_tr.appendChild(td);
+    });
+    return new_tr;
+}
+
+function add_obs_row(columns, obs,j,matrix_inverted){
+    let new_tr = document.createElement("tr");
+
+    if (!obs.active)
+        new_tr.classList.add('inactive');
+    if (obs.variance_from_matrix)
+        new_tr.classList.add('variance_punk');
+
+    new_tr.id = `${all_files[obs.file_id]}:${obs.line}`;
+
+    columns.forEach((col, index, array) => {
+        let td = document.createElement("td");
+        let val=undefined;
+        if (!(obs[col.field]==="?")){
+            val = obs[col.field];
+        }
+        let comment_tooltip;
+
+        if(col.foldable)
+            td.classList.add("mouse_hand")
+        // For each fieldname format value/add post-pre value
+
+        if (col.field === "index_init"){ //COLUMN index_init
+            td.appendChild(format_value(j, false, false, false, obs.active, col.foldable))
+        }else if (col.field === "href_obs"){ //COLUMN GO TO
+            td.innerHTML = '<a href="#' + all_files[all_active_obs[j].file_id] + ':' + all_active_obs[j].line + '">↑</a>';
+        }else if (col.field === "code"){ //COLUMN CODE
+            td.innerHTML = codes_obs[obs.code];
+            if ((obs.code === 7)||(obs.code === 5)) td.innerHTML += " tr "+obs.num;
+            td.setAttribute("field", col.field);
+            td,comment_tooltip=generate_comment_tooltip(obs.comment,td);
+        }else if (col.field === "from"){ //COLUMN FROM
+            let code_from=get_code_pt(obs.from)
+            let attribute = ['pre', pt_code_name2html(code_from)+'\u0020']
+            td.appendChild(format_value(val, false, false, attribute, obs.active, col.foldable))
+            td.setAttribute("field", col.field);
+            if (all_pts_name[obs.from]){//To exclude CI obs
+              td,comment_tooltip=generate_comment_tooltip(all_pts_name[obs.from].comment,td);
+            }
+        }else if (col.field === "to"){ //COLUMN TO
+            let code_to=get_code_pt(obs.to)
+            let attribute = ['pre', pt_code_name2html(code_to)+'\u0020']
+            td.appendChild(format_value(val, false, false, attribute, obs.active, col.foldable))
+            td.setAttribute("field", col.field);
+            if (all_pts_name[obs.from]){//To exclude CI obs
+              td,comment_tooltip=generate_comment_tooltip(all_pts_name[obs.to].comment,td);
+            }
+        }else if (col.field === "original_value"){ //COLUMN ORIGINAL_VALUE
+            let attribute = ['post','\u0020'+obs.unit_str]
+            td.appendChild(format_value(val, false, nb_decimals, attribute, obs.active, col.foldable))
+        }else if (col.field === "obs_length"){ //COLUMN OBS_LENGTH
+            let attribute = ['post','\u0020'+'m']
+            td.appendChild(format_value(val, false, nb_decimals, attribute, obs.active, col.foldable))
+
+        }else if (col.field === "sigma_total"){ //COLUMN  SIGMA_TOTAL
+            let attribute = ['post','\u0020'+obs.unit_str]
+            td.appendChild(format_value(val, false, nb_decimals, attribute, obs.active, col.foldable))
+            td.setAttribute("field", col.field);
+            if (obs.variance_from_matrix)
+                td,comment_tooltip = generate_comment_tooltip("Sigma from cov input",td);
+
+        }else if (col.field === "normalized_residual"){ //COLUMN  NORMALIZED_RESIDUAL
+            let attribute = ['post','\u0020'+'\u03C3']
+            td.appendChild(format_value(val, false, nb_decimals_mini, attribute, obs.active, col.foldable))
+            if (!matrix_inverted){
+                let val_abs = Math.abs(parseFloat(val));
+                if (val_abs > first_step_normalized_residual && val_abs < second_step_normalized_residual)
+                    new_tr.classList.add("high")
+                else if (val_abs >= second_step_normalized_residual)
+                    new_tr.classList.add("veryhigh")
+            }
+        }else if (col.field === "residual"){ //COLUMN  RESIDUAL
+            let attribute = ['post','\u0020'+obs.unit_str]
+            td.appendChild(format_value(val, false, nb_decimals, attribute, obs.active, col.foldable))
+
+        }else if (col.field === "residual_mm"){ //COLUMN  RESIDUAL_MM
+            let residual_mm = (obs.unit_str === 'm')?parseFloat(obs.residual) * 1000:parseFloat(obs.residual) * obs.obs_length * obs.unit_factor * 1000;
+            let attribute = ['post','\u0020'+'mm']
+            td.appendChild(format_value(residual_mm, false, nb_decimals_mini, attribute, obs.active, col.foldable))
+
+        }else if (col.field === "sigma_a_posteriori"){ //COLUMN  SIGMA_A_POSTERIORI
+            let attribute = ['post', '\u0020'+obs.unit_str]
+            td.appendChild(format_value(val, false, nb_decimals, attribute, obs.active, col.foldable))
+
+        }else if (col.field === "residual_std"){ //COLUMN  RESIDUALSTD
+            let attribute = ['post','\u0020'+'\u03C3']
+            td.appendChild(format_value(val, false, nb_decimals_mini, attribute, obs.active, col.foldable))
+
+        }else if (col.field === "standardized_residual"){ //COLUMN  STANDARDIZED_RESIDUAL
+            let attribute = ['post','\u0020'+'\u03C3']
+            td.appendChild(format_value(val, false, nb_decimals_mini, attribute, obs.active, col.foldable))
+            if (matrix_inverted){
+                let val_abs = Math.abs(parseFloat(val));
+                if (val_abs > first_step_standardized_residual && val_abs < second_step_standardized_residual)
+                    new_tr.classList.add("high")
+                else if (val_abs >= second_step_standardized_residual)
+                    new_tr.classList.add("veryhigh")
+            }
+        }else if (col.field === "obs_redondancy"){ //COLUMN  obs_redondancy
+            let attribute = ['post','\u0020'+'%']
+            td.appendChild(format_value(val, true, 0, attribute, obs.active, col.foldable))
+
+        }else if (col.field === "nabla"){ //COLUMN  NABLA -> paramètre de décentralité 4,1 pour w_max=2,5 et Beta=5%
+            let attribute = ['post','\u0020'+obs.unit_str]
+            td.appendChild(format_value(val, false, nb_decimals, attribute, obs.active, col.foldable))
+
+        }else if (col.field === "probable_error"){ //COLUMN  PROBABLEERROR
+            let attribute = ['post','\u0020'+obs.unit_str]
+            td.appendChild(format_value(val, false, nb_decimals, attribute, obs.active, col.foldable))
+
+        }else{
+            if (col.fixed_dec)
+                td.appendChild(format_value(val, false, nb_decimals, false, obs.active, col.foldable))
+            else
+                td.appendChild(format_value(val, false, false, false, obs.active, col.foldable))
+        }
+
+        //If column is foldable
+        if (col.foldable){
+            let span_fold = document.createElement("span");
+            span_fold.classList.add("foldable");
+            span_fold.classList.add("folded");
+            span_fold.classList.add("small_unicode");
+
+            span_fold.innerHTML = fill_fold;
+            td.appendChild(span_fold);
+            td.addEventListener("click", toggle_fold_column);
+        }
+
+        // Tooltip td
+        let sp_tooltip = document.createElement("span");
+        sp_tooltip.classList.add("tooltip");
+
+        let tooltiptext = document.createElement("span");
+        tooltiptext.classList.add("tooltiptext");
+
+        //Tooltip file name and row number
+        let file_tooltip = document.createElement("span");
+        file_tooltip.classList.add("file");
+        file_tooltip.innerHTML = `${all_files[obs.file_id]}:${obs.line}`;
+
+        tooltiptext.appendChild(file_tooltip);
+        if (comment_tooltip)
+            tooltiptext.appendChild(comment_tooltip);
+
+        //Tooltip info click to fold
+        if (col.foldable){
+            let click_tooltip = document.createElement("span");
+            click_tooltip.classList.add("tooltip_fold");
+            click_tooltip.innerHTML = "<br>"+_("Click to fold/unfold");
+            tooltiptext.appendChild(click_tooltip);
+        }
+
+        sp_tooltip.appendChild(tooltiptext);
+        td.appendChild(sp_tooltip);
+
+        new_tr.appendChild(td);
+    });
+  return new_tr;
+}
+
+//------------------------------------------------------------------------------
+// Functions used in the different parts
+//------------------------------------------------------------------------------
+
+function pt_code_name2html(str){//replace space by insecable space in code name
+  if (str){
+    return String(str).substring(1,4).replace(/ /g,"\u00A0");
+  }else{
+    return undefined;
   }
 }
 
-function displayMessagesComputation() {
-  if (document.getElementById("messages_computation").style.display == "block")
-  {
-    document.getElementById('messages_computation').style.display = 'none';
-    document.getElementById('messageComputation').style.fontWeight = 'normal';
-    document.getElementById("messageComputation").value = _("Afficher les messages lors du calcul");
+function generate_comment_tooltip(comment,td,br=true){//use for user comment in different tables
+  let comment_tooltip;
+  if (!(comment === "")||(comment === "*")){
+    //if(comment === "Sigma from cov input"){
+    //  td.setAttribute('post', '\u0020\u24B8');
+    //}else{
+    td.setAttribute('post', '\u0020\u24BE');
+    //}
+    comment_tooltip = document.createElement("span");
+    comment_tooltip.classList.add("comment")
+    if (br){//for obs comment
+      comment_tooltip.innerHTML = '<br>'+comment;
+    }else{//for ellipse and coordinates comment
+      comment_tooltip.innerHTML = comment;
+    }
   }
-  else
-  {
-    document.getElementById('messages_computation').style.display = 'block';
-    document.getElementById('messageComputation').style.fontWeight = 'bold';
-    document.getElementById("messageComputation").value = _("Masquer les messages lors du calcul");
+  return td,comment_tooltip;
+}
+
+function notify(str){
+    let div_notify = document.getElementById("notify");
+
+    while (div_notify.firstChild){
+        div_notify.removeChild(div_notify.firstChild)
+    }
+
+    div_notify.classList.toggle("show_notif");
+    let span =  document.createElement("span");
+    span.innerHTML = str;
+    div_notify.appendChild(span);
+
+    setTimeout(function(){
+        div_notify.classList.toggle("show_notif");
+        div_notify.removeChild(span);
+
+    },5000);
+}
+
+function add_tooltip(str){
+        let sp_tooltip = document.createElement("span");
+        sp_tooltip.classList.add("tooltip");
+
+        //Tooltip column name
+        let sp_tooltiptext = document.createElement("span");
+        sp_tooltiptext.classList.add("tooltiptext");
+        sp_tooltiptext.innerHTML = str;
+
+        sp_tooltip.appendChild(sp_tooltiptext)
+
+        return sp_tooltip
+}
+
+function bool(result){
+    if (result) return _("Yes");
+    else return _("No");
+}
+
+function add_button(report_div,part,div_content,div_display,button_action){//add button for info_calc and suggestions per file
+  const p=document.createElement("p");
+  const button=document.createElement("input");
+  button.type='button';
+  button.id=part+'_button';
+  button.setAttribute('onclick',button_action);
+  p.appendChild(button);
+
+  const div=document.createElement("div");
+  div.id=part+'_data';
+  if (div.id==="suggestions_data"){//to well display ul html element
+    div.appendChild(div_content);
+  }else{
+    div.innerHTML=div_content;
+  }
+  div.style.display=div_display;
+  p.appendChild(div);
+
+  report_div.appendChild(p);
+  return report_div;
+}
+
+function toggleButtons(id_content,id_button,show_message,hide_message){//buttons click action
+  if (document.getElementById(id_content).style.display === "block"){
+    document.getElementById(id_content).style.display = 'none';
+    document.getElementById(id_button).style.fontWeight = 'normal';
+    document.getElementById(id_button).value = show_message;
+  }else{
+    document.getElementById(id_content).style.display = 'block';
+    document.getElementById(id_button).style.fontWeight = 'bold';
+    document.getElementById(id_button).value = hide_message;
   }
 }
 
-function pointSortFunction(p1, p2) {//make points and obs lists
+function pointSortFunction(p1, p2){//make points and obs lists
   if (p1.number > p2.number)
     return 1
   else if (p1.number < p2.number)
@@ -446,7 +1483,7 @@ function pointSortFunction(p1, p2) {//make points and obs lists
   else return 0;
 }
 
-function obsSortFunction(o1, o2) {
+function obsSortFunction(o1, o2){
   if (o1.number > o2.number)
     return 1
   else if (o1.number < o2.number)
@@ -454,8 +1491,8 @@ function obsSortFunction(o1, o2) {
   else return 0;
 }
 
-function residualSortFunction(o1, o2) {
-  if (data["computation"]["invertedMatrix"]){//standardized_residual has been computed
+function residualSortFunction(o1, o2){
+  if (data["computation"]["inverted_matrix"]){//standardized_residual has been computed
     if ((o1.standardized_residual)&&(o2.standardized_residual)){//standardized_residual of the 2 obs exist
       if (Math.abs(o1.standardized_residual) < Math.abs(o2.standardized_residual))
         return 1
@@ -478,1684 +1515,314 @@ function residualSortFunction(o1, o2) {
 }
 
 function residual_is_big(obs){
-  if (data["computation"]["invertedMatrix"] && (Math.abs(obs.standardized_residual)>first_step_standardized_residual))
+  if (data["computation"]["inverted_matrix"] && (Math.abs(obs.standardized_residual)>first_step_standardized_residual))
     return true;
-  else if (!data["computation"]["invertedMatrix"] && (Math.abs(obs.normalized_residual)>first_step_normalized_residual))
+  else if (!data["computation"]["inverted_matrix"] && (Math.abs(obs.normalized_residual)>first_step_normalized_residual))
     return true;
   else
     return false;
 }
 
-function point_sigmas(pt) {
-   //affiche les sigmas des points en fonction de leur type (3D ou 1D libre ou fixé) et gère la mise en forme en fonction de leur signe
-    if (pt.code === 1)
-     return ('<td class="'+((parseFloat(pt.sigmas_init[0])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[0]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;X init") + '</span>' +
-            '</td><td class="'+((parseFloat(pt.sigmas_init[1])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[1]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;Y init") + '</span>' +
-            '</td><td class="'+((parseFloat(pt.sigmas_init[2])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[2]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;Z init") + '</span></td>');
-    else if (pt.code === 2)
-     return ('<td class="'+((parseFloat(pt.sigmas_init[0])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[0]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;X init") + '</span>' +
-        '</td><td class="'+((parseFloat(pt.sigmas_init[1])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[1]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;Y init") + '</span>' +
-        '</td><td>' + '</td>');
-    else if (pt.code === 3)
-      return ('<td>' +
-        '</td><td>' +
-        '</td><td class="'+((parseFloat(pt.sigmas_init[2])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[2]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;Z init") + '</span></td>');
-    else if (pt.code === 4)
-      return ('<td>-' +
-        '</td><td>-' +
-        '</td><td></td>');
-    else if (pt.code === 5)
-      return ('<td>-' +
-        '</td><td>-' +
-        '</td><td class="'+((parseFloat(pt.sigmas_init[2])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[2]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;Z init") + '</span></td>');
-    else if (pt.code === 6 || pt.code === 8)
-      return ('<td>' +
-        '</td><td>' +
-        '</td><td>-</td>');
-    else if (pt.code === 7 || pt.code === 9)
-        return ('<td class="'+((parseFloat(pt.sigmas_init[0])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[0]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;X init") + '</span>' +
-           '</td><td class="'+((parseFloat(pt.sigmas_init[1])<0)?"inactive":"")+'">' + parseFloat(pt.sigmas_init[1]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+_("&sigma;Y init") + '</span>' +
-           '</td><td>-</td>');
-    else return ('<td></td><td></td><td></td>');
+function get_data_suggestions(instrum,type,red_type_instrum,nb_red_type_instrum,num_type_instrum,sum_sigma_type_instrum,red_tot,mu){
+  let warning="";
+  const master_span=document.createElement("span");
+  master_span.classList.add("tooltipp");
+  master_span.setAttribute('post', '\u00A0\u0020\u24D8');
+
+  const not_enough=_("Not enough observations");
+  const not_enough_red=_("Not enough redundancy");
+  let sugg_type_instrum=0;
+  let sigma_type_instrum=0;
+  const av_red=red_type_instrum[type][instrum]/num_type_instrum[type][instrum]*100;
+  if (num_type_instrum[type][instrum]<10){
+    sugg_type_instrum=not_enough;
+  }else if (av_red<30){
+    warning="&#9888; "+_("The partial redundancies average of this type is less than 30%");
+    master_span.setAttribute('warn_post', '\u00A0\u0020\u26A0');
+    master_span.setAttribute('post', '');
+    sugg_type_instrum=not_enough_red;
+  }else{
+    sigma_type_instrum=sum_sigma_type_instrum[type][instrum]/red_type_instrum[type][instrum];
+    sugg_type_instrum= to_fixed(parseFloat((sigma_type_instrum/mu)*(red_tot)), nb_decimals);
+  }
+  const li = document.createElement('li');
+  li.innerHTML=_(full_name_type[type]) + _(": ") + sugg_type_instrum;
+
+  const span1=document.createElement("span");
+  span1.classList.add("tooltipptext");
+  span1.innerHTML=_("Observation number of this type: ") + num_type_instrum[type][instrum] + _(" including ") + nb_red_type_instrum[type][instrum] + _(" redundant ");
+
+  const span2=document.createElement("span");
+  span2.classList.add("sum_red");
+  span2.innerHTML='</br>'+_("Sum of partial redundancies of this type: ")+to_fixed(red_type_instrum[type][instrum], 0)+" "+_("which correponds to")+" "+to_fixed((red_type_instrum[type][instrum]/red_tot*100), 0)+" % "+_("of the total redundancy");
+
+  const span3=document.createElement("span");
+  span3.classList.add("av_red");
+  span3.innerHTML='</br>'+_("Partial redundancies average of this type: ")+to_fixed(av_red, 0)+' %';
+
+  const span4=document.createElement("span");
+  span4.classList.add("warn_red");
+  span4.innerHTML='</br>'+warning;
+
+  master_span.appendChild(span1);
+  span1.appendChild(span2);
+  span2.appendChild(span3);
+  span3.appendChild(span4);
+
+  li.appendChild(master_span);
+
+  return li;
 }
 
-function get_head_dev() {
-  if (data["computation"]["use_vertical_deviation"]){
-    return ("<th class='small' title='"+_("Déviation de la verticale ouest-est en secondes d'arc")+"'>" + "&#951;" + "</th>"+
-            "<th class='small' title='"+_("Déviation de la verticale sud-nord en secondes d'arc")+"'>" + "&#958;" + "</th>");
-  }
-}
-
-function get_dev(pt) {
-  if (data["computation"]["use_vertical_deviation"]){
-    return('<td class="small" >' + parseFloat((pt.dev_eta*(3600*180)/Math.PI).toFixed(num_decimales)) + '<span class="tooltip">'+_("Déviation de la verticale ouest-est en secondes d'arc") + '</span></td>'+
-           '<td class="small" >' + parseFloat((pt.dev_xi*(3600*180)/Math.PI).toFixed(num_decimales)) + '<span class="tooltip">'+_("Déviation de la verticale sud-nord en secondes d'arc") + '</span></td>');
-  }
-}
-
-function get_head_obs(items) {
-  items.push(
-    "<th title='"+_('Type d&apos;observation') +"' class=\"name\">" + _("Code") +
-    "</th><th title='"+_("Provenance de la mesure") +"' class=\"name\">" + _("De") +
-    "</th><th title='"+_("Point visé") +"' class=\"name\">" + _("Vers") +
-    "</th><th title='"+_('Observation')+"'>" + _("Mesure"));
-
-  const help_fold = {
-    "obs_length": _("Distance entre les coordonnées compensées des 2 points"),
-    "sigma_total": _("&sigma; absolu + &sigma; relatif"),
-    "normalized_residual" :  _("Résidu divisé par le &sigma; total"),
-    "residual" : _("Résidu dans l&apos;unité de la mesure"),
-    "residual_mm" : _("Écart entre l&apos;observation compensée et l&apos;observation mesurée"),
-    "sigma_a_posteriori" : _("&sigma; sur l&apos;observation obtenue après compensation"),
-    "residualStd" : _("Résidu divisé par le &sigma; a posteriori"),
-    "standardized_residual" : _("Résidu divisé par sa précision"),
-    "obsRedondancy" : _("0% : observation indispensable / 100% : observation inutile"),
-    "nabla": _("Fiabilité interne : valeur de la plus grande faute non détectable"),
-    "probableError" : _("Valeur de la faute probable \n Affichée si résidu normé > 2.5")
-  };
-  for (var id of id_fold) {
-    items.push("</th><th class='small "+need_inversion(id)+" "+id+" hand' title='"+_(help_fold[id]) + "' onclick='toggle(\""+id+"\")'>" +_(title_fold[id]) +
-      "</th><th class='mask mask_"+id+" hand' title='"+_(title_fold[id]) +" -> "+_("Cliquer pour déplier") + "' onclick='toggle(\""+id+"\")'>&#x27A4;&#x27A4;");
-  }
-  items.push("</th></tr></thead>");
-  return items;
+function get_code_pt(pt_obs){
+    if (pt_obs==="?"){
+        return undefined;
+    }else{
+        return all_pts_name[pt_obs].code_name;
+    }
 }
 
 function toggle(column){
-  name_cookie="style_" + column;
-  mask_column='mask_' + column;
+  let name_cookie="style_" + column;
+  let mask_column='mask_' + column;
+  let new_style="";
   if (getCookie(name_cookie)){
-    if (getCookie(name_cookie)=="table-cell"){
+    if (getCookie(name_cookie)==="table-cell"){
       new_style="none";
-      $('.'+column).hide();
-      $('.'+mask_column).show();
+      document.getElementById(column).hide();
+      document.getElementById(mask_column).show();
     }else{
       new_style="table-cell";
-      $('.'+column).show();
-      $('.'+mask_column).hide();
+      document.getElementById(column).show();
+      document.getElementById(mask_column).hide();
     }
   }else{
     new_style="none";
-    $('.'+column).hide();
-    $('.'+mask_column).show();
+    document.getElementById(column).hide();
+    document.getElementById(mask_column).show();
   }
   setCookie(name_cookie,new_style);
 }
 
-function set_display_column(){
-  var mask_column;var cookie;
-  for (var column of id_fold) {
-    if ($('#column')){
-      mask_column='.mask_'+column;
-      cookie=getCookie('style_'+column)
-      if (cookie){
-        if (cookie=='none'){
-          $('.'+column).hide();
-          $(mask_column).show();
-        }else{
-          $('.'+column).show();
-          $(mask_column).hide();
-        }
-      }else{
-        $(mask_column).hide();
-      }
-    }
-  }
-}
-
-function setCookie(cname, cvalue) {
+function setCookie(cname, cvalue){
   document.cookie = cname + "=" + cvalue;
 }
 
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
+function getCookie(cname){
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for (let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') {
       c = c.substring(1);
     }
-    if (c.indexOf(name) == 0) {
+    if (c.indexOf(name) === 0) {
       return c.substring(name.length, c.length);
     }
   }
   return "";
 }
 
-//------------------------------------------------------------------------------
-// Fonctions d'affichage des parties et de l'entrée associée dans le sommaire
-//------------------------------------------------------------------------------
+function get_component(){
+  let component=[];
+  if (data["config"]["use_proj"]){
+    component=["E","N"];
+  }else{
+    component=["x","y"];
+  }
+  if (data["config"]["use_ellips_height"])
+    component.push(_("Eh"));
+  else
+    component.push(_("Gh"));
+  return component;
+}
 
+function add_section_to_TOC(anchor, section_title, section_title_mini){
+    let p = document.createElement("p");
+    let a_toc = document.createElement("a");
+    a_toc.setAttribute("href", anchor);
+    a_toc.textContent = section_title;
+
+    p.appendChild(a_toc);
+    let toc = document.getElementById("table_of_content");
+    toc.appendChild(p);
+
+    //for mini toc
+    p = document.createElement("p");
+    a_toc = document.createElement("a");
+    a_toc.setAttribute("href", anchor);
+    a_toc.textContent = section_title_mini;
+    p.appendChild(a_toc);
+    toc = document.getElementById("table_of_content_mini");
+    toc.appendChild(p);
+}
+
+function add_back_to_top_button(section){//add arrow buttton to back in top
+  let a_top = document.createElement("a");
+  a_top.href = "#top";
+  a_top.innerHTML = ('&#8593;');
+  a_top.title=_("Back to top");
+  section.appendChild(a_top);
+}
+
+function create_title_section(id,section_title,section_title_mini){
+  add_section_to_TOC("#"+id, section_title, section_title_mini)
+  let section = document.createElement("h2");
+  section.id = id;
+  section.innerHTML = section_title;
+  add_back_to_top_button(section);
+  let report_div = document.getElementById("report");
+  report_div.appendChild(section);
+  return report_div;
+}
+
+//------------------------------------------------------------------------------
+// Display functions of parts and entry associated in summary
+//------------------------------------------------------------------------------
 function show_version(){
-  //Version de Comp3D ------------------------------------------------------------------------------------
-  $("<p/>", {
-    text: _('Version : ') + data["COMP3D_VERSION"],
-    id: 'version'
-  }).appendTo('body');
-  $("<p/>", {
-    text: _('Commit : ') + data["COMP3D_COMMIT"],
-    id: 'commit'
-  }).appendTo('body');
-  $("<p/>", {
-    text: _('Options : ') + data["COMP3D_OPTIONS"],
-    id: 'options'
-  }).appendTo('body');
-  $("<p/>", {
-    text: data["COMP3D_COPYRIGHT"]+ ' - ' + data["COMP3D_LICENSE"],
-    id: 'License'
-  }).appendTo('body');
+  add_section_to_TOC("#top","Comp3D","C3D")
+  let report_div = document.getElementById("report");
+
+  let version = document.createElement("p");
+  version.innerHTML = _("Version: ") + data["COMP3D_VERSION"];
+  version.id = 'version'
+  report_div.appendChild(version);
+
+  let commit = document.createElement("p");
+  commit.innerHTML = _("Commit: ") + data["COMP3D_COMMIT"];
+  commit.id = 'commit';
+  report_div.appendChild(commit);
+
+  /*let options = document.createElement("p");
+  options.innerHTML = _("Options: ") + data["COMP3D_OPTIONS"];
+  options.id = 'options'
+  report_div.appendChild(options);*/
+
+  let license = document.createElement("p");
+  license.innerHTML = data["COMP3D_COPYRIGHT"]+ ' - ' + data["COMP3D_LICENSE"];
+  license.id = 'license';
+  report_div.appendChild(license);
+
+  let mail = document.createElement("a");
+  mail.href = "mailto:"+email;
+  mail.innerHTML = email;
+  report_div.appendChild(mail);
 }
 
+//------------------------------------------------------------------------------
+//--------------- Config information
+//------------------------------------------------------------------------------
 function show_info_work(){
-  //Configuration du chantier ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#info_work">' + _('Configuration du chantier') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Configuration du chantier'),
-    id: 'info_work'
-  }).appendTo('#rapport');
-  items=[];
+  const report_div = create_title_section('info_work',_('Project configuration'),_('Conf'));
 
-  items.push("<dt>" + _("Nom") + _(" :") + "</dt>");
+  let config = document.createElement("dl");
+  config.classList.add('inline-flex');
+
   if (data["config"]["name"]===""){
-    items.push("<dd>-</dd>");
+    config=add_dl_row(config,_("Name"),"-");
   }else{
-    items.push("<dd>" + data["config"]["name"] + "</dd>");
+    config=add_dl_row(config,_("Name"),data["config"]["name"]);
   }
-  items.push("<dt>" + _("Description") + _(" :") + "</dt>");
   if (data["config"]["description"]===""){
-    items.push("<dd>-</dd>");
+    config=add_dl_row(config,_("Description"),"-");
   }else{
-    items.push("<dd>" + data["config"]["description"] + "</dd>");
+    config=add_dl_row(config,_("Description"),data["config"]["description"]);
   }
-  items.push("<dt title='"+_('Fichier de coordonnées principal')+"'>" + _("Fichier COR racine") + _(" :") + "</dt><dd>" + data["config"]["root_COR_file"] + '</dd>');
-  items.push("<dt title='"+_('Fichier d&apos;observation principal')+"'>" + _("Fichier OBS racine") + _(" :") + "</dt><dd>" + data["config"]["root_OBS_file"] + '</dd>');
-  items.push("<dt>" + _("Unité") + _(" :") + "</dt><dd>" + unit[data["config"]["files_unit"]] + '</dd>');
-  items.push("<dt title='"+_('c&apos;est un indice de la précision donnée dans le rapport, certaines valeurs seront données avec plus ou moins de décimales')+"'>" + _("Nombre de décimales") + _(" :") + "</dt><dd>" + parseInt(data["config"]["nb_digits"]) + '</dd>');
-  items.push("<dt>" + _("Type de calcul") + _(" :") + "</dt><dd>" + type_calcul[data["config"]["compute_type"]] + '</dd>');
-  if (data["config"]["compute_type"] == 0)
-      items.push("<dt title='"+_('Nécessaire pour obtenir des intervalles et ellipsoïdes de confiance et obtenir les informations de redondance')+"'>" + _("Inversion de la matrice normale") + _(" :") + "</dt><dd>" + bool(data["config"]["invert_matrix"]) + '</dd>');
-  if (data["config"]["compute_type"] != 2)
-      items.push("<dt>" + _("Contraintes internes") + _(" :") + "</dt><dd>" + bool(data["config"]["internal_constraints"]) + '</dd>');
-  items.push("<dt title='"+_('N&apos;affecte que les mesures zénithales')+"'>" + _("Coefficient de réfraction") + _(" :") + "</dt><dd>" + parseFloat(data["config"]["refraction"]).toFixed(num_decimales) + '</dd>');
-  //items.push("<dt title='"+_('Module linéaire moyen du chantier')+"'>" + _("Module linéaire") + _(" :") + "</dt><dd>" + parseFloat(data["config"]["local_scale"]).toFixed(6) + '</dd>');
-  items.push("<dt title='"+_('Utilisation d&apos;une projection standard')+"'>" + _("Georéférencement") + _(" :") + "</dt><dd>" + bool(data["config"]["use_proj"]) + '</dd>');
-
-  if (data["config"]["use_proj"])
-  {
-      items.push("<dt title='"+_('Définition proj4 de la projection')+"'>" + _("Définition projection") + _(" :") + "</dt><dd>" + data["config"]["proj_def"] + '</dd>');
-      items.push("<dt>" + _("Centre de la projection") + _(" :") + "</dt><dd>" +
-        "E=" + parseFloat(data["config"]["local_center"][0]).toFixed(0) + " " +
-        "N=" + parseFloat(data["config"]["local_center"][1]).toFixed(0) + '</dd>');
-  }else{
-      items.push("<dt title='"+_('Latitude permettant de déterminer la courbure locale de l&apos;ellipsoïde')+"'>" + _("Latitude centrale") + _(" :") + "</dt><dd>" + parseFloat(data["config"]["center_latitude"]).toFixed(2) + '</dd>');
-      items.push("<dt>" + _("Centre des coordonnées locales") + _(" :") + "</dt><dd>" +
-        "X=" + parseFloat(data["config"]["local_center"][0]).toFixed(0) + " " +
-        "Y=" + parseFloat(data["config"]["local_center"][1]).toFixed(0) + '</dd>');
+  config=add_dl_row(config,_("Root COR file"),data["config"]["root_COR_file"]);
+  config=add_dl_row(config,_("Root OBS file"),data["config"]["root_OBS_file"]);
+  if (data["config"]["coord_cov_file"]) {
+    config=add_dl_row(config,_("Coord var/covar file"),data["config"]["coord_cov_file"]);
   }
-
-  items.push("<dt title='"+_('Différence de σ0 entre 2 itérations')+"'>" + _("Critère de convergence") + _(" :") + "</dt><dd>" + parseFloat(data["config"]["convergence_criterion"]).toFixed(6) + '</dd>');
-  items.push("<dt>" + _("Itérations maximum") + _(" :") + "</dt><dd>" + parseInt(data["config"]["max_iterations"]) + '</dd>');
-  items.push("<dt>" + _("En hauteurs ellipsoïdales") + _(" :") + "</dt><dd>" + bool(data["config"]["use_ellips_height"]) + '</dd>');
-  items.push("<dt title='"+_('Nombre d&apos;itérations supplémentaires après convergence')+"'>" + _("Itérations supplémentaires") + _(" :") + "</dt><dd>" + parseInt(data["config"]["force_iterations"]) + '</dd>');
-  $('<dl/>', {
-    'class': 'inline-flex',
-    html: items.join('')
-  }).appendTo('#rapport');
-}
-
-function show_info_calc(){
-  //Informations sur le calcul ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#info_calc">' + _('Informations sur le calcul') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Informations sur le calcul'),
-    id: 'info_calc'
-  }).appendTo('#rapport');
-  items = ["<dt>" + _("Compensation effectuée") + _(" :") + "</dt><dd>" + bool(data["computation"]["compensationDone"]) + '</dd>'];
-
-  if (data["all_uninitializable_point_names"] && (data["all_uninitializable_point_names"].length>0))
-    items.push("<dt>" + _("Points non initialisables") + _(" :") + "</dt><dd>" + data["all_uninitializable_point_names"].join(" ") + '</dd>');
-
-  if (data["config"]["compute_type"] === 0) {
-    items.push("<dt>"+ _("&sigma;0 initial") +_(" :") + "</dt><dd>" + parseFloat(data["computation"]["sigma_0_init"]).toFixed(num_decimales) + '</dd>');
-    items.push("<dt>" + _("&sigma;0 final") + _(" :") + "</dt><dd>" + parseFloat(data["computation"]["sigma_0_final"]).toFixed(num_decimales) + '</dd>');
-  }
-  items.push("<dt>" + _("Itérations") + _(" :") + "</dt><dd>" + parseInt(data["computation"]["nbr_iterations"]) + '</dd>');
-  var interrupted_class = "";
-  if (data["computation"]["interrupted"])
-      interrupted_class = "warn_red";
-  items.push("<dt>" + _("Interruption du calcul") + _(" :") + "</dt><dd class='"+interrupted_class+"'>" + bool(data["computation"]["interrupted"]) + '</dd>');
-  items.push("<dt>" + _("Défaut de rang") + _(" :") + "</dt><dd>" + parseInt(data["computation"]["rank_default"]) + '</dd>');
-  if (data["computation"]["computation_start"]!=="not-a-date-time"){
-     items.push("<dt>" + _("Début du calcul") + _(" :") + "</dt><dd>" + data["computation"]["computation_start"] + '</dd>');
-     items.push("<dt>" + _("Durée du calcul") + _(" :") + "</dt><dd>" + data["computation"]["computation_duration"] +'</dd>');
-  }
-  items.push("<dt>" + _("Rayon de la sphère") + _(" :") + "</dt><dd>" + parseFloat(data["computation"]["projection"]["earth_model_radius"]).toFixed(2) + ' m</dd>');
-
-  items.push("<dt>" + _("Nombre d'observations total") + _(" :") + "</dt><dd>" + parseInt(data["computation"]["nbr_all_obs"]) + '</dd>');
-  items.push("<dt>" + _("Nombre d'observations actives") + _(" :") + "</dt><dd>" + parseInt(data["computation"]["nbr_active_obs"]) + '</dd>');
-  items.push("<dt>" + _("Paramètres") + _(" :") + "</dt><dd>" + parseInt(data["computation"]["nbr_parameters"]) + '</dd>');
-  items.push("<dt>" + _("Inversion de la matrice normale") + _(" :") + "</dt><dd>" + bool(data["computation"]["invertedMatrix"]) + '</dd>');
-  items.push("<dt>" + _("Contraintes internes") + _(" :") + "</dt><dd>" + bool(data["computation"]["internal_constraints"]) + '</dd>');
-  items.push("<dt>" + _("Avec déviation de la verticale") + _(" :") + "</dt><dd>" + bool(data["computation"]["use_vertical_deviation"]) + '</dd>');
-
-  if (data["computation"]["projection"]["is_georef"])
-  {
-      var R=data["computation"]["projection"]["rot_global2geocentric"];
-      var T=data["computation"]["projection"]["center_cartgeocentric"];
-      if (data["computation"]["projection"]["input_proj_EPSG"]>0)
-        items.push("<dt>" + _("Nom projection") + _(" :") + "</dt><dd> EPSG " + data["computation"]["projection"]["input_proj_EPSG"]+": "+data["computation"]["projection"]["input_proj_name"] + '</dd>');
-
-      items.push("<table><th class='likedt' colspan='4'>" + _("Cartésiennes globales vers géocentriques :") + "</th>"
-                 + "<tr><td></td><td>" + R[0][0] + "</td><td>" + R[0][1] + "</td><td>" + R[0][2] + "</td><td></td><td>" + T[0] + "</td></tr>"
-                 + "<tr><td>Geocentr =</td><td>" + R[1][0] + "</td><td>" + R[1][1] + "</td><td>" + R[1][2] + '</td><td>* Global + </td><td>' + T[1] + "</td></tr>"
-                 + "<tr><td></td><td>" + R[2][0] + "</td><td>" + R[2][1] + "</td><td>" + R[2][2] + "</td><td></td><td>" + T[2] + '</td></tr></table>');
-  }
-
-  $('<dl/>', {
-    'class': 'inline-flex',
-    html: items.join('')
-  }).appendTo('#rapport');
-  items=['<p><input type="button" id="messageReadC" onclick="displayMessagesReadConfig()" ></input></p> '];
-  items.push('<div id="messages_read_config" style="display: none;" >'+ data["computation"]["messages_read_config"]+'</div>');
-  items.push('<p><input type="button" id="messageRead" onclick="displayMessagesRead()"></input></p> ');
-  items.push('<div id="messages_read_data" style="display: block;" >'+ data["computation"]["messages_read_data"]+'</div>');
-  items.push('<p><input type="button" id="messageLeast" onclick="displayMessagesLeast_squares()"></input></p> ');
-  items.push('<div id="messages_set_least_squares" style="display: block;" >'+ data["computation"]["messages_set_least_squares"]+'</div>');
-  items.push('<p><input type="button" id="messageComputation" onclick="displayMessagesComputation()"></input></p> ');
-  items.push('<div id="messages_computation" style="display: none;" >'+ data["computation"]["messages_computation"]+'</div>');
-  $('<div/>', {
-    html: items.join('')
-  }).appendTo('#rapport');
-
-  displayMessagesReadConfig();
-  displayMessagesRead();
-  displayMessagesLeast_squares();
-  displayMessagesComputation();
-}
-
-function show_evol_sigma0(){
-  //Graph sigma 0 ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#evol_sigma0">' + _('Évolution du &sigma;0') + '</a>').appendTo('#sommaire');
-  var all_sigma0_labels = [];
-  var chi2_max = [];
-  var chi2_min = [];
-  var all_sigma0_val = [];
-  $.each(data["computation"]["all_sigma0"], function(index, value) {
-    all_sigma0_labels.push(index);
-    all_sigma0_val.push(value);
-    chi2_max.push(data["computation"]["chi2_test"]["max"]);
-    chi2_min.push(data["computation"]["chi2_test"]["min"]);
-  });
-  var sigma0_evol_chart_config = {
-    type: 'line',
-    data: {
-      labels: all_sigma0_labels,
-      datasets: [{
-          label: "sigma0",
-          backgroundColor: "rgba(255,162,0,0.5)",
-          fill: false,
-          borderColor: "rgba(255,162,0,1)",
-          pointColor: "rgba(255,162,0,1)",
-          pointStrokeColor: "#fff",
-          data: all_sigma0_val,
-          lineTension: 0.0
-        },
-        {
-          label: "chi2 max",
-          borderColor: "rgba(150,100,100,0.9)",
-          pointRadius: 0,
-          data: chi2_max,
-          fill: false
-        },
-        {
-          label: "chi2 min",
-          borderColor: "rgba(100,150,100,0.9)",
-          pointRadius: 0,
-          data: chi2_min,
-          fill: false
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      title: {
-        display: false,
-      },
-      tooltips: {
-        mode: 'index',
-        intersect: false,
-      },
-      hover: {
-        mode: 'nearest',
-        intersect: true
-      },
-      scales: {
-        xAxes: [{
-          display: true,
-          scaleLabel: {
-            display: true,
-            labelString: _('Iteration')
-          }
-        }],
-        yAxes: [{
-          display: true,
-          scaleLabel: {
-            display: true,
-            labelString: 'Sigma0'
-          },
-          type: 'logarithmic',
-          ticks: {
-            min: 0,
-            callback: function(value, index, values) {
-              str = value.toExponential()
-              if ((str[0] == "1") || (str[0] == "2") || (str[0] == "5"))
-                return value.toString();
-              else return "";
-            },
-          }
-        }]
-      }
-    }
-  };
-  $("<h2/>", {
-    html: _('Évolution du &sigma;0'),
-    id: "evol_sigma0"
-  }).appendTo('#rapport');
-  $("<div class='graph'><canvas id='sigma0_chart'></canvas></div>").appendTo('#rapport');
-  var ctx = $("#sigma0_chart").get(0).getContext("2d");
-  //This will get the first returned node in the jQuery collection.
-  var myNewChart = new Chart(ctx, sigma0_evol_chart_config);
-}
-
-function show_chi2(){
-  //Test du chi2 ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#test_chi2">' + _('Test du &chi;²') + '</a>').appendTo('#sommaire');
-  var chi2OK = (parseFloat(data["computation"]["chi2_test"]["min"]) < parseFloat(data["computation"]["sigma_0_final"])) &&
-    (parseFloat(data["computation"]["sigma_0_final"]) < parseFloat(data["computation"]["chi2_test"]["max"]));
-  var emoticon = "?";
-  if (!chi2OK) emoticon = "&#128547;";
-  else emoticon = "&#128517;";
-  if (parseFloat(data["computation"]["sigma_0_final"]) > 10)
-    emoticon = "&#128561;";
-  else if (parseFloat(data["computation"]["sigma_0_final"]) > 100)
-    emoticon = "&#128552;";
-  $("<h2/>", {
-    html: _('Test du &chi;²') + _(" :") + " " + emoticon,
-    id: "test_chi2"
-  }).appendTo('#rapport');
-  $("<p>", {
-    text: _('Confiance : ') + data["computation"]["chi2_test"]["confidence"] * 100 + "%"
-  }).appendTo('#rapport');
-  $("<p>", {
-    text: _('Degrés de liberté : ') + data["computation"]["chi2_test"]["DOF"],
-    title: _('Nombre d\'observations actives moins nombre de paramètres')
-  }).appendTo('#rapport');
-  $("<p>", {
-    text: _('Test : ') + parseFloat(data["computation"]["chi2_test"]["min"]).toFixed(num_decimales) + " < " +
-      parseFloat(data["computation"]["sigma_0_final"]).toFixed(num_decimales) + " < " +
-      parseFloat(data["computation"]["chi2_test"]["max"]).toFixed(num_decimales) + " ?"
-  }).appendTo('#rapport');
-  //see http://character-code.com/emoticons-html-codes.php
-  $("<p>", {
-    html: _('Test réussi : ') + bool(chi2OK) + " !"
-  }).appendTo('#rapport');
-}
-
-function show_coord_init(){
-  //write init coords ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#coord_init">' + _('Coordonnées initiales') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Coordonnées initiales'),
-    id: 'coord_init'
-  }).appendTo('#rapport');
-  items = ["<tr><th class=\"name\">" + _("Nom")+'</th>'];
-
-  var composant;
-  if (data["config"]["use_proj"]){
-    composant=["E","N"];
-  }else{
-    composant=["X","Y"];
-  }
-  if (data["config"]["use_ellips_height"])
-    composant.push(_("He"));
-  else
-    composant.push(_("Alti"));
-  items.push("<th>" + composant[0] + " init" +
-    "</th><th>" + composant[1] + " init" +
-    "</th><th>" + composant[2] + " init"
-  );
-  items.push("</th><th>" + _("&sigma;X init") +
-    "</th><th>" + _("&sigma;Y init") +
-    "</th><th>" + _("&sigma;Z init")
-  );
-  items.push(get_head_dev());
-  items.push("</th><th class='small' title='"+_('Nombre d&apos;observations actives en lien avec le point')+"'>" + _("Obs actives") + "</th><\tr>");
-  for (var i = 0; i < nb_pts; i++) {
-    var pt = all_pts[i];
-    items.push(add_name(pt,i,1));
-    items.push('<td>' + parseFloat(pt.coord_read[0]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">' + composant[0] + ' init</span>' +
-               '</td><td>' + parseFloat(pt.coord_read[1]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">' + composant[1] + ' init</span>' +
-               '</td><td>' + parseFloat(pt.coord_read[2]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">' + composant[2] + ' init</span></td>'
-    );
-    items.push(point_sigmas(pt));
-    items.push(get_dev(pt));
-    items.push('<td class="small" >' + pt.nbActiveObs + '<span class="tooltip">'+_('Nombre d&apos;observations actives en lien avec le point') + '</span></td><\tr>');
-  }
-  $('<table/>', {
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport')
-}
-
-function obs2tab(obs,i,isbiggest){
-  var str_active_class = '';
-  var str_gros_residu_class ='';
-  var value_sigma_a_posteriori='';				//Sigma a posteriori
-  var value_residualStd='';				//Résidu standard
-  var value_standardized_residual='';	//Résidu normé
-  var value_obsRedondancy='';
-  var value_nabla='';
-  var value_probableError='';
-  if (!obs.active){
-    value_sigma_a_posteriori="-";
-    value_residualStd="-"
-    value_obsRedondancy="-";
-    value_standardized_residual='-';
-    value_nabla="-";
-    value_probableError="-";
-    str_active_class = ' inactive';
-  }else{
-    value_sigma_a_posteriori=parseFloat(obs.sigma_a_posteriori).toFixed(num_decimales)+ add_post(obs.unit_str);
-    value_residualStd=parseFloat(obs.residualStd).toFixed(num_decimales_mini)+ add_post("𝜎");
-    value_obsRedondancy=Math.abs(parseFloat(obs.obsRedondancy)).toFixed(0) + add_post("%");
-    if (obs.nabla){//si le nabla existe, standardized_residual aussi => redondance >1
-		value_nabla=parseFloat(obs.nabla).toFixed(num_decimales)+ add_post(obs.unit_str);//paramètre de décentralité 4,1 pour w_max=2,5 et Beta=5%
-		value_standardized_residual=parseFloat(obs.standardized_residual).toFixed(num_decimales_mini)+add_post("𝜎");
-		if (Math.abs(parseFloat(value_standardized_residual)) > first_step_standardized_residual){ 
-			str_gros_residu_class = ' gros';
-			if (Math.abs(parseFloat(value_standardized_residual)) >second_step_standardized_residual){
-				str_gros_residu_class = ' tres_gros';
-        }
-        value_probableError=parseFloat(obs.probableError).toFixed(num_decimales)+ add_post(obs.unit_str)
-      }
-		}else{
-			value_nabla="-"
-			value_standardized_residual="-"
-		}
-		if (!data["computation"]["invertedMatrix"]){
-			if (Math.abs(parseFloat(obs.normalized_residual)) > first_step_normalized_residual){ 
-				str_gros_residu_class = ' gros';
-				if (Math.abs(parseFloat(obs.normalized_residual)) > second_step_normalized_residual){
-					str_gros_residu_class = ' tres_gros';
-				}
-			}
-		}
-  }
-  var str_residual_mm = '';
-  if (obs.unit_str === 'm')
-    str_residual_mm = obs.residual * 1000;
-  else
-    str_residual_mm = obs.residual * obs.obs_length * obs.unit_factor * 1000;
-  str='<tr  class=\"' + parite[i % 2] + str_active_class + '\" id="' + all_files[obs.file] + ':' + obs.line +'">';
-  if (isbiggest)
-    str+='<td><a href="#' + all_files[all_active_obs[i].file] + ':' + all_active_obs[i].line + '">↑</a>';
-  if (obs.from=="?"){
-    code_from=undefined;code_to=undefined;
-  }else{
-    code_from= all_pts_name[obs.from].code; code_to= all_pts_name[obs.to].code;
-  }
-  var file2tooltip='<br /><span class="file">'+ all_files[obs.file] + ':' + obs.line +'</span>';
-  str+= add_code_obs(obs,file2tooltip) +
-    '<td class=\"name\">' + add_post(codes_pt[code_from]) + obs.from  +
-    '<span class="tooltip">'+_("De") + file2tooltip + '</br>' + add_comment(all_pts_name[obs.from]) + '</span>' + add_circle_comment(all_pts_name[obs.from]) +
-    '</td><td class=\"name\">' + add_post(codes_pt[code_to]) + obs.to +
-    '<span class="tooltip">'+_("Vers")  + file2tooltip + '</br>' + add_comment(all_pts_name[obs.to]) + '</span>' + add_circle_comment(all_pts_name[obs.to]) +
-    '</td><td>' + parseFloat(obs.original_value).toFixed(num_decimales) + add_post(obs.unit_str) +
-    '<span class="tooltip">'+_("Mesure") + file2tooltip + '</span>';
-
-// Ajout des colonnes masquables
-  var value = {
-    "obs_length": parseFloat(obs.obs_length).toFixed(num_decimales)+ add_post("m"),
-    "sigma_total": parseFloat(obs.sigma_total).toFixed(num_decimales)+ add_post(obs.unit_str),
-    "normalized_residual" :  parseFloat(obs.normalized_residual).toFixed(num_decimales_mini)+ add_post("𝜎"),
-    "residual" : parseFloat(obs.residual).toFixed(num_decimales)+ add_post(obs.unit_str),
-    "residual_mm" : str_residual_mm.toFixed(num_decimales_mini)+ add_post("mm"),
-    "sigma_a_posteriori" : value_sigma_a_posteriori,
-    "residualStd" : value_residualStd,
-    "standardized_residual" : value_standardized_residual,
-    "obsRedondancy" : value_obsRedondancy,
-    "nabla": value_nabla,
-    "probableError" : value_probableError
-  };
-  for (var id of id_fold) {
-	if ((id=="obs_length")||(id=="sigma_total")){
-		str_gros_residu_class_td=''
-	}else{
-		str_gros_residu_class_td=str_gros_residu_class
-	}
-    str+='</td><td class="hand '+need_inversion(id)+' '+id+' '+str_gros_residu_class_td+'" onclick="toggle(\''+id+'\')">' + value[id] +
-      '<span class="tooltip">'+title_fold[id] + file2tooltip + '<span class="fold"></br>'+_("Cliquer pour plier")+'</span></span></td>';
-    str+="</td><td class='mask mask_"+id+"' id="+id+" onclick='toggle(\""+id+"\")'>&#x27A4;&#x27A4;<span class='tooltip'>"+title_fold[id] + '<span class="fold"></br>'+_("Cliquer pour déplier")+'</span></span></td>';
-  }
-  str+='</tr>';
-  return str;
-}
-
-function show_obs(){
-  //write observations ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#obs">' + _('Observations') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: 'Observations',
-    id: 'obs'
-  }).appendTo('#rapport');
-  $("<a/>", {
-    href: '#top'
-  }).html('&#8593;').appendTo('#obs');
-    var items=["<table id='observations_table''> <thead><tr>"];
-    get_head_obs(items)
-    var last_file = -1;
-    var i=1;
-    for (var obs of all_obs) {
-      i++;
-      if (obs.active) {
-        all_active_obs.push(obs);
-        if ((obs.code === 5) || (obs.code === 7) || (obs.code === 8))
-          exist["hz"] = true;
-        else if (obs.code === 6)
-          exist["zen"] = true;
-        else if ((obs.code === 1) || (obs.code === 2) || (obs.code === 3))
-          exist["dist"] = true;
-        else if ((obs.code >= 101) && (obs.code <= 106))
-          exist["basc"] = true;
-        else if ((obs.code >= 181) && (obs.code <= 189))
-          exist["axis"] = true;
-        else if ((obs.code === -1) || (obs.code === -2) || (obs.code === -3))
-          exist["coord"] = true;
-        else if (obs.code === 4)
-          exist["den"] = true;
-      }
-      if (obs.file !== last_file) {
-        last_file = obs.file;
-        items.push(' <tr class="filename"><td colspan="15"> <a href="' + all_files[obs.file] + '" download>' + all_files[obs.file] + '</a></td></tr>');
-      }
-      items.push(obs2tab(obs,i,false));
-    }
-  $('<table/>', {
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport');
-  if (!data["computation"]["invertedMatrix"]) {
-    $('.class_need_inversion').remove();
-  }
-}
-
-function show_repart_residuals(){
-  //Charts ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#repart_residuals">' + _('Répartition des résidus') + '</a>').appendTo('#sommaire');
-  //prepare residuals histogram -----------------------
-  const residuals_class_width = 0.5;
-  var all_residuals_class_labels=["<-3𝜎"];
-  var all_residuals_class_val=[0];
-  var all_residuals_class_val_hz=[0];
-  var all_residuals_class_val_zen=[0];
-  var all_residuals_class_val_dist=[0];
-  var all_residuals_class_val_den=[0];
-  var all_residuals_class_val_bascule=[0];
-  var all_residuals_class_val_axe=[0];
-  var all_residuals_class_val_coord=[0];
-  var all_residuals_class_val_std=[0];
-  for (var i = 0; i < 6 / residuals_class_width - 1; i++) {
-    var x = -3 + (i + 1) * residuals_class_width;
-    all_residuals_class_labels.push(x.toFixed(1) + "𝜎");
-    all_residuals_class_val.push(0);
-    all_residuals_class_val_hz.push(0);
-    all_residuals_class_val_zen.push(0);
-    all_residuals_class_val_dist.push(0);
-    all_residuals_class_val_den.push(0);
-    all_residuals_class_val_bascule.push(0);
-    all_residuals_class_val_axe.push(0);
-    all_residuals_class_val_coord.push(0);
-    //standard: 1/sqrt(2*pi)*e^(-x**2/2)
-    all_residuals_class_val_std.push(nb_obs_active / Math.sqrt(2 * Math.PI) * Math.exp(-(x * x / 1)) * residuals_class_width);
-  }
-  all_residuals_class_labels.push(">3𝜎");
-  all_residuals_class_val.push(0);
-  all_residuals_class_val_hz.push(0);
-  all_residuals_class_val_zen.push(0);
-  all_residuals_class_val_dist.push(0);
-  all_residuals_class_val_den.push(0);
-  all_residuals_class_val_bascule.push(0);
-  all_residuals_class_val_axe.push(0);
-  all_residuals_class_val_coord.push(0);
-  all_residuals_class_val_std.push(0);
-
-  var min_dist = 10000;
-  var max_dist = 0;
-  for (var active_obs of all_active_obs) {
-    var class_num = Math.round((active_obs.normalized_residual + 3) / residuals_class_width);
-    class_num = Math.min(class_num, all_residuals_class_labels.length - 1);
-    class_num = Math.max(class_num, 0);
-    all_residuals_class_val[class_num] += 1;
-    //prepare datas for residuals vs distance charts -----------------------
-    if ((active_obs.code === 1) || (active_obs.code === 2) || (active_obs.code === 3) ||
-      (active_obs.code === 5) || (active_obs.code === 6) ||
-      (active_obs.code === 7) || (active_obs.code === 8) ||
-      ((active_obs.code >= 101) && (active_obs.code <= 106))) {
-      if (active_obs.obs_length > max_dist)
-        max_dist = active_obs.obs_length;
-      if ((active_obs.obs_length > 0.1) && (active_obs.obs_length < min_dist))
-        min_dist = active_obs.obs_length;
-    }
-    if ((active_obs.code === 5) || (active_obs.code === 7) || (active_obs.code === 8))
-      all_residuals_class_val_hz[class_num] += 1;
-    else if (active_obs.code === 6)
-      all_residuals_class_val_zen[class_num] += 1;
-    else if ((active_obs.code === 1) || (active_obs.code === 2) || (active_obs.code === 3))
-      all_residuals_class_val_dist[class_num] += 1;
-    else if ((active_obs.code >= 101) && (active_obs.code <= 106))
-      all_residuals_class_val_bascule[class_num] += 1;
-    else if ((active_obs.code >= 181) && (active_obs.code <= 189))
-      all_residuals_class_val_axe[class_num] += 1;
-    else if ((active_obs.code === -1) || (active_obs.code === -2) || (active_obs.code === -3))
-      all_residuals_class_val_coord[class_num] += 1;
-    else if (active_obs.code === 4)
-      all_residuals_class_val_den[class_num] += 1;
-  }
-  min_dist-=0.001;
-  max_dist+=0.001;
-
-  var all_residuals_class_config = {
-    type: 'bar',
-    data: {
-      labels: all_residuals_class_labels,
-      datasets: [{
-          label: _("Standard"),
-          fill: false,
-          backgroundColor: "rgba(120,120,120,1)",
-          borderColor: "rgba(120,120,120,1)",
-          pointRadius: 0,
-          data: all_residuals_class_val_std,
-          type: 'line'
-        },
-        {
-          label: _("Tous les résidus"),
-          backgroundColor: "rgba(255,162,0,1)",
-          borderColor: "rgba(255,162,0,1)",
-          pointRadius: 0,
-          data: all_residuals_class_val,
-        },
-      ]
-    },
-    options: {
-      responsive: true,
-      title: {
-        display: true,
-        text: _("Répartition des résidus normalisés")
-      },
-      showTooltips: false,
-      hover: {
-        mode: 'nearest',
-        intersect: true
-      },
-      scales: {
-        xAxes: [{
-          display: true,
-          scaleLabel: {
-            display: false,
-          }
-        }],
-        yAxes: [{
-          display: true,
-          scaleLabel: {
-            display: false,
-          }
-        }]
-      }
-    }
-  };
-
-  var dist_chart_num_steps = 10;
-  var dist_chart_start_step = min_dist;
-  var dist_chart_factor_step = Math.pow((max_dist / dist_chart_start_step), 1 / (dist_chart_num_steps - 1));
-  var all_dists = [];
-  var dist_residuals_class_labels = [];
-  var dist_residuals_class_val_std = [];
-  var dist_residuals_class_val_hz = [];
-  var dist_residuals_class_val_hz_abs = [];
-  var dist_residuals_class_val_hz_num = [];
-  var dist_residuals_class_val_hz_et = []; //ecart type
-  var dist_residuals_class_val_zen = [];
-  var dist_residuals_class_val_zen_abs = [];
-  var dist_residuals_class_val_zen_num = [];
-  var dist_residuals_class_val_zen_et = [];
-  var dist_residuals_class_val_dist_abs = [];
-  var dist_residuals_class_val_dist = [];
-  var dist_residuals_class_val_dist_num = [];
-  var dist_residuals_class_val_dist_et = [];
-  var dist_residuals_class_val_basc = [];
-  var dist_residuals_class_val_basc_abs = [];
-  var dist_residuals_class_val_basc_num = [];
-  var dist_residuals_class_val_basc_et = [];
-  var dist_residuals_class_val_axe = [];
-  var dist_residuals_class_val_axe_abs = [];
-  var dist_residuals_class_val_axe_num = [];
-  var dist_residuals_class_val_axe_et = [];
-  var dist_residuals_all = [];
-  var dist = dist_chart_start_step;
-  for (var i = 0; i < dist_chart_num_steps + 1; i++) {
-    all_dists.push(dist);
-    dist_residuals_class_labels.push("<" + dist.toFixed(1) + "m");
-    dist_residuals_class_val_std.push(1.0);
-    dist_residuals_class_val_hz.push(0);
-    dist_residuals_class_val_hz_abs.push(0);
-    dist_residuals_class_val_hz_num.push(0);
-    dist_residuals_class_val_hz_et.push(0);
-    dist_residuals_class_val_zen.push(0);
-    dist_residuals_class_val_zen_abs.push(0);
-    dist_residuals_class_val_zen_num.push(0);
-    dist_residuals_class_val_zen_et.push(0);
-    dist_residuals_class_val_dist.push(0);
-    dist_residuals_class_val_dist_abs.push(0);
-    dist_residuals_class_val_dist_num.push(0);
-    dist_residuals_class_val_dist_et.push(0);
-    dist_residuals_class_val_basc.push(0);
-    dist_residuals_class_val_basc_abs.push(0);
-    dist_residuals_class_val_basc_num.push(0);
-    dist_residuals_class_val_basc_et.push(0);
-    dist_residuals_class_val_axe.push(0);
-    dist_residuals_class_val_axe_abs.push(0);
-    dist_residuals_class_val_axe_num.push(0);
-    dist_residuals_class_val_axe_et.push(0);
-    dist *= dist_chart_factor_step;
-  }
-  for (var active_obs of all_active_obs) {
-    var class_num = 0;
-    for (var j = 0; j < dist_chart_num_steps - 1; j++) {
-      if (active_obs.obs_length > all_dists[j])
-        class_num++;
-    }
-    if ((active_obs.code === 5) || (active_obs.code === 7) || (active_obs.code === 8)) {
-      dist_residuals_class_val_hz_num[class_num] += 1;
-      dist_residuals_class_val_hz[class_num] += (active_obs.normalized_residual);
-      dist_residuals_class_val_hz_abs[class_num] += Math.abs(active_obs.normalized_residual);
-    }
-    else if (active_obs.code === 6) {
-      dist_residuals_class_val_zen_num[class_num] += 1;
-      dist_residuals_class_val_zen[class_num] += (active_obs.normalized_residual);
-      dist_residuals_class_val_zen_abs[class_num] += Math.abs(active_obs.normalized_residual);
-    }
-    else if ((active_obs.code === 1) || (active_obs.code === 2) || (active_obs.code === 3)) {
-      dist_residuals_class_val_dist_num[class_num] += 1;
-      dist_residuals_class_val_dist[class_num] += (active_obs.normalized_residual);
-      dist_residuals_class_val_dist_abs[class_num] += Math.abs(active_obs.normalized_residual);
-    }
-    else if ((active_obs.code >= 101) && (active_obs.code <= 106)) {
-      dist_residuals_class_val_basc_num[class_num] += 1;
-      dist_residuals_class_val_basc[class_num] += (active_obs.normalized_residual);
-      dist_residuals_class_val_basc_abs[class_num] += Math.abs(active_obs.normalized_residual);
-    }
-    else if ((active_obs.code >= 181) && (active_obs.code <= 189)) {
-      dist_residuals_class_val_axe_num[class_num] += 1;
-      dist_residuals_class_val_axe[class_num] += (active_obs.normalized_residual);
-      dist_residuals_class_val_axe_abs[class_num] += Math.abs(active_obs.normalized_residual);
-    }
-  }
-  for (var i = 0; i < dist_chart_num_steps; i++) {
-    if (dist_residuals_class_val_hz_num[i] > 0)
-    {
-      dist_residuals_class_val_hz[i] /= dist_residuals_class_val_hz_num[i];
-      dist_residuals_class_val_hz_abs[i] /= dist_residuals_class_val_hz_num[i];
-    }
-    //else dist_residuals_class_val_hz[i]=parseFloat("NaN");
-    if (dist_residuals_class_val_zen_num[i] > 0)
-    {
-      dist_residuals_class_val_zen[i] /= dist_residuals_class_val_zen_num[i];
-      dist_residuals_class_val_zen_abs[i] /= dist_residuals_class_val_zen_num[i];
-    }
-    //else dist_residuals_class_val_zen[i]=parseFloat("NaN");
-    if (dist_residuals_class_val_dist_num[i] > 0)
-    {
-      dist_residuals_class_val_dist[i] /= dist_residuals_class_val_dist_num[i];
-      dist_residuals_class_val_dist_abs[i] /= dist_residuals_class_val_dist_num[i];
-    }
-    if (dist_residuals_class_val_basc_num[i] > 0)
-    {
-      dist_residuals_class_val_basc[i] /= dist_residuals_class_val_basc_num[i];
-      dist_residuals_class_val_basc_abs[i] /= dist_residuals_class_val_basc_num[i];
-    }
-    if (dist_residuals_class_val_axe_num[i] > 0)
-    {
-      dist_residuals_class_val_axe[i] /= dist_residuals_class_val_axe_num[i];
-      dist_residuals_class_val_axe_abs[i] /= dist_residuals_class_val_axe_num[i];
-    }
-    //else dist_residuals_class_val_dist[i]=parseFloat("NaN");
-  }
-  for (var active_obs of all_active_obs) {
-    var class_num = 0;
-    for (var j = 0; j < dist_chart_num_steps - 1; j++) {
-      if (active_obs.obs_length > all_dists[j])
-        class_num++;
-    }
-    if ((active_obs.code === 5) || (active_obs.code === 7) || (active_obs.code === 8)) {
-      dist_residuals_class_val_hz_et[class_num] += Math.abs(active_obs.normalized_residual - dist_residuals_class_val_hz[class_num]);
-    }
-    else if (active_obs.code === 6) {
-      dist_residuals_class_val_zen_et[class_num] += Math.abs(active_obs.normalized_residual - dist_residuals_class_val_zen[class_num]);
-    }
-    else if ((active_obs.code === 1) || (active_obs.code === 2) || (active_obs.code === 3)) {
-      dist_residuals_class_val_dist_et[class_num] += Math.abs(active_obs.normalized_residual - dist_residuals_class_val_dist[class_num]);
-    }
-    else if ((active_obs.code >= 101) && (active_obs.code <= 106)) {
-      dist_residuals_class_val_basc_et[class_num] += Math.abs(active_obs.normalized_residual - dist_residuals_class_val_basc[class_num]);
-    }
-    else if ((active_obs.code >= 181) && (active_obs.code <= 189)) {
-      dist_residuals_class_val_axe_et[class_num] += Math.abs(active_obs.normalized_residual - dist_residuals_class_val_axe[class_num]);
-    }
-  }
-  for (var i = 0; i < dist_chart_num_steps; i++) {
-    if (dist_residuals_class_val_hz_num[i] > 0)
-      dist_residuals_class_val_hz_et[i] /= dist_residuals_class_val_hz_num[i];
-    if (dist_residuals_class_val_zen_num[i] > 0)
-      dist_residuals_class_val_zen_et[i] /= dist_residuals_class_val_zen_num[i];
-    if (dist_residuals_class_val_dist_num[i] > 0)
-      dist_residuals_class_val_dist_et[i] /= dist_residuals_class_val_dist_num[i];
-    if (dist_residuals_class_val_basc_num[i] > 0)
-      dist_residuals_class_val_basc_et[i] /= dist_residuals_class_val_basc_num[i];
-    if (dist_residuals_class_val_axe_num[i] > 0)
-      dist_residuals_class_val_axe_et[i] /= dist_residuals_class_val_axe_num[i];
-  }
-  //Fill of the tables (if obs type exists) to draw graphes type-based normalized residual repartition and distance normalized residual repartition
-  var data2graph_type = []
-  var data2graph_dist = []
-  if (exist["hz"]) {
-    data2graph_type.push({
-      label: _("Horizontales"),
-      backgroundColor: "rgba(0,180,180,1)",
-      borderColor: "rgba(100,180,180,1)",
-      pointRadius: 0,
-      data: all_residuals_class_val_hz,
-    });
-    data2graph_dist.push({
-      label: _("Horizontales"),
-      backgroundColor: "rgba(0,180,180,1)",
-      borderColor: "rgba(100,180,180,1)",
-      pointRadius: 0,
-      data: dist_residuals_class_val_hz_abs,
-    })
-    dist_residuals_all.push([dist_residuals_class_val_hz, dist_residuals_class_val_hz_num, dist_residuals_class_val_hz_et, dist_residuals_class_val_hz_abs]);
-  }
-  if (exist["zen"]) {
-    data2graph_type.push({
-      label: _("Zénithales"),
-      backgroundColor: "rgba(0,220,0,1)",
-      borderColor: "rgba(100,220,100,1)",
-      pointRadius: 0,
-      data: all_residuals_class_val_zen,
-    });
-    data2graph_dist.push({
-      label: _("Zénithales"),
-      backgroundColor: "rgba(0,220,0,1)",
-      borderColor: "rgba(100,220,100,1)",
-      pointRadius: 0,
-      data: dist_residuals_class_val_zen_abs,
-    })
-    dist_residuals_all.push([dist_residuals_class_val_zen, dist_residuals_class_val_zen_num, dist_residuals_class_val_zen_et, dist_residuals_class_val_zen_abs]);
-  }
-  if (exist["dist"]) {
-    data2graph_type.push({
-      label: _("Distances"),
-      backgroundColor: "rgba(0,0,220,1)",
-      borderColor: "rgba(100,100,220,1)",
-      pointRadius: 0,
-      data: all_residuals_class_val_dist,
-    });
-    data2graph_dist.push({
-      label: _("Distances"),
-      backgroundColor: "rgba(0,0,220,1)",
-      borderColor: "rgba(100,100,220,1)",
-      pointRadius: 0,
-      data: dist_residuals_class_val_dist_abs,
-    })
-    dist_residuals_all.push([dist_residuals_class_val_dist, dist_residuals_class_val_dist_num, dist_residuals_class_val_dist_et, dist_residuals_class_val_dist_abs]);
-  }
-  if (exist["basc"]) {
-    data2graph_type.push({
-      label: _("Bascules"),
-      backgroundColor: "rgba(200,0,200,1)",
-      borderColor: "rgba(200,100,200,1)",
-      pointRadius: 0,
-      data: all_residuals_class_val_bascule,
-    });
-    data2graph_dist.push({
-      label: _("Bascules"),
-      backgroundColor: "rgba(200,0,200,1)",
-      borderColor: "rgba(200,100,220,1)",
-      pointRadius: 0,
-      data: dist_residuals_class_val_basc_abs,
-    })
-    dist_residuals_all.push([dist_residuals_class_val_basc, dist_residuals_class_val_basc_num, dist_residuals_class_val_basc_et, dist_residuals_class_val_basc_abs]);
-  }
-  if (exist["axis"]) {
-    data2graph_type.push({
-      label: _("Axes"),
-      backgroundColor: "rgba(200,0,200,1)",
-      borderColor: "rgba(200,100,200,1)",
-      pointRadius: 0,
-      data: all_residuals_class_val_axe,
-    });
-    data2graph_dist.push({
-      label: _("Axes"),
-      backgroundColor: "rgba(200,0,200,1)",
-      borderColor: "rgba(200,100,220,1)",
-      pointRadius: 0,
-      data: dist_residuals_class_val_axe_abs,
-    })
-    dist_residuals_all.push([dist_residuals_class_val_axe, dist_residuals_class_val_axe_num, dist_residuals_class_val_axe_et, dist_residuals_class_val_axe_abs]);
-  }
-  if (exist["coord"]) {
-    data2graph_type.push({
-      label: _("Coord"),
-      backgroundColor: "rgba(200,200,0,1)",
-      borderColor: "rgba(200,200,100,1)",
-      pointRadius: 0,
-      data: all_residuals_class_val_coord,
-    })
-  }
-  if (exist["den"]) {
-    data2graph_type.push({
-      label: _("Dénivelées"),
-      backgroundColor: "rgba(255,215,0,1)",
-      borderColor: "rgba(255,215,0,1)",
-      pointRadius: 0,
-      data: all_residuals_class_val_den,
-    })
-  }
-
-  //prepare type-based normalized residual repartition charts -----------------------
-  var all_residuals_class_config_type = {
-    type: 'bar',
-    data: {
-      labels: all_residuals_class_labels,
-      datasets: data2graph_type
-    },
-    options: {
-      responsive: true,
-      title: {
-        display: true,
-        text: _("Répartition des résidus normalisés par type")
-      },
-      showTooltips: false,
-      hover: {
-        mode: 'nearest',
-        intersect: true
-      },
-      scales: {
-        xAxes: [{
-          display: true,
-          scaleLabel: {
-            display: false,
-          }
-        }],
-        yAxes: [{
-          display: true,
-          scaleLabel: {
-            display: false,
-          }
-        }]
-      }
-    }
-  };
-
-  //prepare residuals vs distance charts -----------------------
-  var dist_residuals_class_config_type = {
-    type: 'bar',
-    data: {
-      labels: dist_residuals_class_labels,
-      datasets: data2graph_dist
-    },
-    options: {
-      responsive: true,
-      title: {
-        display: true,
-        text: _("Résidus absolus moyens par rapport à la distance")
-      },
-      showTooltips: true,
-      tooltips: {
-        callbacks: {
-          label: function(tooltipItem, data) {
-            return " Abs" + _(" :") + dist_residuals_all[tooltipItem.datasetIndex][3][tooltipItem.index].toFixed(2) + "𝜎  | NoAbs" + _(" :") +
-              dist_residuals_all[tooltipItem.datasetIndex][0][tooltipItem.index].toFixed(2) + "𝜎 +/-" +
-              dist_residuals_all[tooltipItem.datasetIndex][2][tooltipItem.index].toFixed(2) +
-              "𝜎 | NbObs" + _(" :") + dist_residuals_all[tooltipItem.datasetIndex][1][tooltipItem.index];
-            //return tooltipItem.index+" "+tooltipItem.datasetIndex;//Object.keys(tooltipItem);
-            //return data.datasets[0].data[0];//Object.keys(data);
-          }
-        }
-      },
-      hover: {
-        mode: 'nearest',
-        intersect: true
-      },
-      scales: {
-        xAxes: [{
-          display: true,
-          scaleLabel: {
-            display: false,
-          }
-        }],
-        yAxes: [{
-          display: true,
-          scaleLabel: {
-            display: false,
-          },
-          ticks: {
-            callback: function(value, index, values) {
-              return value.toFixed(2) + "𝜎";
-            },
-          }
-        }]
-      }
-    }
-  };
-  //write charts ------------------------------------------------------------------------------------
-  $("<h2/>", {
-    text: _('Répartition des résidus'),
-    id: 'repart_residuals'
-  }).appendTo('#rapport');
-  $("<table id='residuals_charts'/>").html("<tr><td><canvas id='residuals_chart' width='400' height='300'/></td>" +
-    "<td><canvas id='residuals_chart_type' width='400' height='300'/></td></tr>").appendTo('#rapport');
-  var ctx2 = $("#residuals_chart").get(0).getContext("2d");
-  var myNewChart2 = new Chart(ctx2, all_residuals_class_config);
-  var ctx3 = $("#residuals_chart_type").get(0).getContext("2d");
-  var myNewChart3 = new Chart(ctx3, all_residuals_class_config_type);
-  $("<table id='dist_residuals_charts_type'/>").html("<tr><td><canvas id='dist_residuals_chart_type' width='800' height='300'/></td></tr>").appendTo('#rapport');
-  var ctx4 = $("#dist_residuals_chart_type").get(0).getContext("2d");
-  var myNewChart4 = new Chart(ctx4, dist_residuals_class_config_type);
-}
-
-function show_pseudo(){
-  $("<p/>").html('<a href="#propositions_pseudo_aleatoires">' + _('Propositions pseudo aléatoires') + '</a>').appendTo('#sommaire');
-  var sum_sigma = {};
-  sum_sigma["hz"]=0;sum_sigma["zen"]=0;sum_sigma["dist"]=0;sum_sigma["basc"]=0;sum_sigma["axis"]=0;sum_sigma["coord"]=0;sum_sigma["den"]=0;
-  var num_type = {};
-  num_type["hz"]=0;num_type["zen"]=0;num_type["dist"]=0;num_type["basc"]=0;num_type["axis"]=0;num_type["coord"]=0;num_type["den"]=0;
-  var red = {};
-  red["hz"]=0;red["zen"]=0;red["dist"]=0;red["basc"]=0;red["axis"]=0;red["coord"]=0;red["den"]=0;
-  var nb_red = {};
-  nb_red["hz"]=0;nb_red["zen"]=0;nb_red["dist"]=0;nb_red["basc"]=0;nb_red["axis"]=0;nb_red["coord"]=0;nb_red["den"]=0;
-  var sigma = {};
-  var pseudo = {};
-  
-  for (var obs of all_obs){
-    if (obs.active){
-      type=type_obs[obs.code];
-      sum_sigma[type]+=Math.abs(obs.normalized_residual)*(obs.obsRedondancy/100);
-      num_type[type]+=1;
-      red[type]+=obs.obsRedondancy/100;
-      if (obs.obsRedondancy > 80){
-        nb_red[type]+=1;
-      }
-    }
-  }
-  red_tot=red["hz"]+red["zen"]+red["dist"]+red["basc"]+red["axis"]+red["coord"]+red["den"];
-  sum_sigma_n=sum_sigma["hz"]+sum_sigma["zen"]+sum_sigma["dist"]+sum_sigma["basc"]+sum_sigma["axis"]+sum_sigma["coord"]+sum_sigma["den"];
-  mu=sum_sigma_n/parseFloat(data["computation"]["sigma_0_final"]);
-
-  $("<h2/>",{
-  html: _('Propositions pseudo aléatoires'),
-  id: 'propositions_pseudo_aleatoires'
-  }).appendTo('#rapport');
-  $("<h4/>",{
-  html: _('Redondance totale du système : ')+red_tot.toFixed(0),
-  title: _('Somme des redondances partielles correspondant au degré de liberté du système'),
-  }).appendTo('#rapport');
-  $("<p/>",{
-  html: _('Il faudrait mutiplier les sigmas des observations par :'),
-  }).appendTo('#rapport');
-  
-  not_enough=_("Pas assez d'observations");
-  not_enough_red=_("Pas assez de redondance");
-  for (type in exist){
-    var warning="";
-    var post='post="&nbsp;&nbsp;&#9432;"';
-    if (exist[type]){
-      var av_red=red[type]/num_type[type]*100
-      if (num_type[type]<10){
-        pseudo[type]=not_enough;
-      }else if (av_red<30){
-        warning="&#9888; "+_("La moyenne des redondances partielles de ce type est inférieure à 30%");
-        post='warn_post="&nbsp;&nbsp;&#9888;"';
-        pseudo[type]=not_enough_red;
-      }else{
-        sigma[type]=sum_sigma[type]/red[type];
-        pseudo[type]= parseFloat((sigma[type]/mu)*(red_tot)).toFixed(num_decimales);
-      }
-      items=[];
-      items.push(nom_type[type] + _(" :") + " " + pseudo[type] + '<span class="tooltipp" '+post+'>'+
-      '<span class="tooltipptext">'+_("Nombre d'observations de ce type : ") + num_type[type] + _(" dont ") + nb_red[type] + _(" redondantes")+
-      '<span class="sum_red"></br>'+_("Somme des redondances partielles de ce type : ")+red[type].toFixed(0)+" "+_("soit")+" "+(red[type]/red_tot*100).toFixed(0)+" % "+_("de la redondance totale")+'</span>'+
-      '<span class="av_red"></br>'+_("Moyenne des redondances partielles de ce type : ")+av_red.toFixed(0)+' %</span>'+
-      '<span class="warn_red"></br>'+ warning+'</span>'+
-      '</span></span>')
-      $('<p/>',{
-        html: items.join('')
-      }).appendTo('#rapport');
-    }
-  }
-}
-
-function show_biggest_residuals(){
-  $("<p/>").html('<a href="#biggest_residuals">' + _('Plus gros résidus') + '</a>').appendTo('#sommaire');
-  //write biggest residuals ------------------------------------------------------------------------------------
-	title_biggest_residual=""
-  if (data["computation"]["invertedMatrix"]){
-		$("<h2/>", {
-			text: _('Plus gros résidus'),
-			id: 'biggest_residuals',
-			title: _("les 20 plus gros résidus normés du plus grand au plus petit")
-		}).appendTo('#rapport');
-	}else{
-		$("<h2/>", {
-			text: _('Plus gros résidus'),
-			id: 'biggest_residuals',
-			title: _("les 20 plus gros résidus normalisés du plus grand au plus petit")
-		}).appendTo('#rapport');
-	}
-  items = ["<table id='biggest_residuals_table'><thead><tr><th width=3%>"];
-  get_head_obs(items)
-  all_active_obs.sort(residualSortFunction);
-  for (var i = 0; i < Math.min(max_biggest_residuals, nb_obs_active); i++)
-    if (residual_is_big(all_active_obs[i]))
-      items.push(obs2tab(all_active_obs[i],i,true));
-  $('<table/>', {
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport');
-  if (!data["computation"]["invertedMatrix"]){
-    $('.class_need_inversion').remove();
-  }
-}
-
-function show_bascules(){
-  $("<p/>").html('<a href="#basc">' + _('Bascules') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Bascules'),
-    id: 'basc'
-  }).appendTo('#rapport');
-  var triplet_types = {
-    11: "cart obs",
-    12: "angl obs"
-  };
-  items = ["<tr><th class=\"name\">" + _("Nom fichier") +
-  "</th><th>" + _("Point origine") +
-  "</th><th>" + _("Verticale") +
-  "</th><th></th> <th colspan=\"3\">" + _("Coordonnées cartésiennes globales") + " (m)</th></tr>"];
-  for (var i = 0; i < all_basc.length; i++) {
-    var basc = all_basc[i];
-    var origin = all_basc[i].origin;
-    var pos = origin["coord_compensated_cartesian"];
-    var matrix = basc["params"]["R_global2instr"];
-    var obs_type = triplet_types[basc["triplet_type"]];
-    items.push('<tr class=\"' + parite[i % 2] + '\"><td class=\"name\" rowspan=\"2\">' + all_files[basc["observations"][0].file] +
-               '</td><td class=\"name\" rowspan=\"4\">' + basc.name + '</td>');
-    items.push('<td rowspan=\"2\" >' + bool(basc.vertical) + '</td>');
-    items.push('<td  class=\"name\"> Vect </td><td>' + parseFloat(pos[0]).toFixed(num_decimales) +
-               '</td><td>' + parseFloat(pos[1]).toFixed(num_decimales) +
-               '</td><td>' + parseFloat(pos[2]).toFixed(num_decimales) + '</td>');
-    items.push('</tr>');
-    items.push('<tr class=\"' + parite[i % 2] + '\"><td rowspan=\"3\"  class=\"name\"> Mat </td>');
-    items.push('<td>' + parseFloat(matrix[0]).toFixed(num_decimales) +
-               '</td><td>' + parseFloat(matrix[1]).toFixed(num_decimales) +
-               '</td><td>' + parseFloat(matrix[2]).toFixed(num_decimales) + '</td></tr>');
-    items.push('<tr class=\"' + parite[i % 2] + '\"><td rowspan=\"2\">' + obs_type +
-               '</td><td>' + _("Déviation") +
-               '</td><td>' + parseFloat(matrix[3]).toFixed(num_decimales) +
-               '</td><td>' + parseFloat(matrix[4]).toFixed(num_decimales) +
-               '</td><td>' + parseFloat(matrix[5]).toFixed(num_decimales) + '</td></tr>');
-    items.push('<tr class=\"' + parite[i % 2] + '\"><td>' + parseFloat(basc.ang_to_vert).toFixed(num_decimales) + add_post(data["computation"]["unit_name"]) + '</td><td>' + parseFloat(matrix[6]).toFixed(num_decimales) + '</td><td>' + parseFloat(matrix[7]).toFixed(num_decimales) + '</td><td>' + parseFloat(matrix[8]).toFixed(num_decimales) + '</td></tr>');
-  }
-  $('<table/>', {
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport');
-}
-
-function show_axes(){
-  $("<p/>").html('<a href="#axes">' + _('Axes') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Axes'),
-    id: 'axes'
-  }).appendTo('#rapport');
-  
-  for (var i = 0; i < all_axes.length; i++) {
-    var axe = all_axes[i];
-    var origin = all_axes[i].origin;
-    var pos = origin["coord_compensated_cartesian"];
-    var prec_a="";
-    var prec_b="";
-    var prec_c="";
-    if (data["computation"]["invertedMatrix"]) {
-        prec_a=" &plusmn; "+axe.params_sigmas.sigma_a.toFixed(num_decimales);
-        prec_b=" &plusmn; "+axe.params_sigmas.sigma_b.toFixed(num_decimales);
-        prec_c=" &plusmn; "+axe.params_sigmas.sigma_c.toFixed(num_decimales);
-    }
-
-    items = ["<h3>"+_("Axe ")+'<a href="' + all_files[axe["observations"][0].file] + '" download>' + all_files[axe["observations"][0].file] + '</a>'+_(" sur point ")+axe.name+"</h3>"];
-    items.push("<table>");
-    items.push("<tr><th class=\"name\" colspan=\"3\">" + _("Paramétrage de l'axe")+"</th></tr>")
-    items.push("<tr><td>" + axe.params.a.toFixed(num_decimales) + prec_a + "</td><td>" +            "</td><td>" + pos[0].toFixed(num_decimales) + "</td></tr>"
-             + "<tr><td>" + axe.params.b.toFixed(num_decimales) + prec_b + "</td><td>" + " * λ + "+ "</td><td>" + pos[1].toFixed(num_decimales) + "</td></tr>"
-             + "<tr><td>" + axe.params.c.toFixed(num_decimales) + prec_c + "</td><td>" +            "</td><td>" + pos[2].toFixed(num_decimales) + "</td></tr>");
-    items.push("</table>");
-    items.push("<table>");
-    items.push("<tr><th class=\"name\">" + _("ID cible ")+"</th><th>"+_("Abscisse")+"</th><th>"+_("Rayon")+"</th><th>"+_("Positions")+"</th></tr>");
-    for (var j = 0; j < axe.targets.length; j++){
-        var target=axe.targets[j];
-        items.push("<tr><td lass=\"name\">" + target.num+"</td><td>"+target.params.l.toFixed(num_decimales)
-            +"</td><td>"+target.params.r.toFixed(num_decimales)
-            +"</td><td>"+target.axisObs.length
-            +"</td></tr>");
-    }
-    items.push("</table>");
-    $('<div/>', {
-      'class': 'points',
-      html: items.join('')
-    }).appendTo('#rapport');
-  }
-}
-
-function show_coord_comp(){
-  $("<p/>").html('<a href="#coord_comp">' + _('Coordonnées compensées') + '</a>').appendTo('#sommaire');
-  $("<h2/>",{
-    text: _('Coordonnées compensées'),
-    id: 'coord_comp'
-  }).appendTo('#rapport');
-  items = ["<tr><th class=\"name\">" + _("Nom")+'</th>'];
-  var composant;
-  if (data["config"]["use_proj"]){
-    composant=["E","N"];
-  }else{
-    composant=["X","Y"];
-  }
-  if (data["config"]["use_ellips_height"])
-    composant.push(_("He"));
-  else
-    composant.push(_("Alti"));
-  items.push("<th>" + composant[0] + " comp" +
-    "</th><th>" + composant[1] + " comp" +
-    "</th><th>" + composant[2] + " comp" +
-    "</th><th>" + "&Delta;" + composant[0] +
-    "</th><th>" + "&Delta;" + composant[1] +
-    "</th><th>" + "&Delta;Z");
-  items.push("</th><th>" + "&sigma;X init" +
-    "</th><th>" + "&sigma;Y init" +
-    "</th><th>" + "&sigma;Z init");
-  items.push(get_head_dev());
-  items.push("</th><th class='small' title='"+_('Nombre d&apos;observations actives en lien avec le point')+"'>" + _("Obs actives") +"</th></tr>");
-  for (var i = 0; i < nb_pts; i++){
-    var pt = all_pts[i];
-    coord_compensated=[];
-    items.push(add_name(pt,i,1));
-    if (data["config"]["use_proj"]){
-      coord_compensated=pt.coord_compensated_georef;
-    }else{
-      coord_compensated=pt.coord_compensated_stereographic;
-    }
-    items.push('</td><td>' + parseFloat(coord_compensated[0]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ composant[0] + ' comp</span>' +
-              '</td><td>' + parseFloat(coord_compensated[1]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ composant[1] + ' comp</span>' +
-              '</td><td>' + parseFloat(coord_compensated[2]).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ composant[2] + ' comp</span></td>');
-    if (pt.dimension === 3){
-      items.push('<td>' + (parseFloat(pt.shift_from_read[0])).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ "&Delta;" + composant[0] + '</span></td>' +
-                '<td>' + (parseFloat(pt.shift_from_read[1])).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ "&Delta;" + composant[1] + '</span></td>' +
-                '<td>' + (parseFloat(pt.shift_from_read[2])).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ "&Delta;Z" + '</span></td>');
-    }else if (pt.dimension === 2){
-      items.push('<td>' + (parseFloat(pt.shift_from_read[0])).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ "&Delta;" + composant[0] + '</span>' +
-            '</td><td>' + (parseFloat(pt.shift_from_read[1])).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ "&Delta;" + composant[1] + '</span>' +
-            '</td><td>-<span class="tooltip">'+ "&Delta;Z" + '</span></td>');
-    }else{
-      items.push('<td>-<span class="tooltip">'+ "&Delta;" + composant[0] + '</span>' +
-            '</td><td>-<span class="tooltip">'+ "&Delta;" + composant[1] + '</span>' +
-            '</td><td>' + (parseFloat(pt.shift_from_read[2])).toFixed(num_decimales) + add_post("m") + '<span class="tooltip">'+ "&Delta;Z" + '</span></td>');
-    }
-    items.push(point_sigmas(pt));
-    items.push(get_dev(pt));
-    items.push('<td class="small">' + pt.nbActiveObs + '<span class="tooltip">'+_('Nombre d&apos;observations actives en lien avec le point') + '</span></td></tr>');
-  }
-  $('<table/>',{
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport');
-}
-
-function show_ellips(){
-  $("<p/>").html('<a href="#ellips">' + _('Ellipsoïdes de confiance') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Ellipsoïdes de confiance'),
-    id: 'ellips'
-  }).appendTo('#rapport');
-  items = ["<tr><th class=\"name\">" + _("Nom") +
-  "</th><th>" + _("1/2 Axe (mm)") +
-  "</th><th>" + _("Gisement (gr)") +
-  "</th><th>" + _("Site (gr)") + "</th></tr>"];
-  for (var i = 0; i < nb_pts; i++) {
-    var pt = all_pts[i];
-    if (pt.dimension === 1)
-    //Points 1D == Z
-    {
-      items.push(add_name(pt,i,1));
-      items.push('<td>' +
-        parseFloat(pt.ellips.axes[0][0] * 1000).toFixed(num_decimales_mini + 1) + '</td><td>-</td><td>' +
-        parseFloat(pt.ellips.axes[0][2]).toFixed(num_decimales_mini + 1) + '</td></tr>');
-    } else if (pt.dimension === 2){
-      items.push(add_name(pt,i,2));
-      items.push('<td>' +
-        parseFloat(pt.ellips.axes[0][0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("1/2 Axe (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[0][1]).toFixed(num_decimales) + '<span class="tooltip">'+_("Gisement (gr)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[0][2]).toFixed(num_decimales) + '<span class="tooltip">'+_("Site (gr)") + '</span></td>');
-      items.push('</tr>');
-      items.push('<tr class=\"' + parite[i % 2] + '\" >');
-      items.push('<td>' +
-        parseFloat(pt.ellips.axes[1][0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("1/2 Axe (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[1][1]).toFixed(num_decimales) + '<span class="tooltip">'+_("Gisement (gr)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[1][2]).toFixed(num_decimales) + '<span class="tooltip">'+_("Site (gr)") + '</span></td>');
-      items.push('</tr>');
-    } else if (pt.dimension === 3){
-      items.push(add_name(pt,i,3));
-      items.push('<td>' +
-        parseFloat(pt.ellips.axes[0][0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("1/2 Axe (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[0][1]).toFixed(num_decimales) + '<span class="tooltip">'+_("Gisement (gr)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[0][2]).toFixed(num_decimales) + '<span class="tooltip">'+_("Site (gr)") + '</span></td>');
-      items.push('</tr>');
-      items.push('<tr class=\"' + parite[i % 2] + '\" >');
-      items.push('<td>' +
-        parseFloat(pt.ellips.axes[1][0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("1/2 Axe (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[1][1]).toFixed(num_decimales) + '<span class="tooltip">'+_("Gisement (gr)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[1][2]).toFixed(num_decimales) + '<span class="tooltip">'+_("Site (gr)") + '</span></td>');
-      items.push('</tr>');
-      items.push('<tr class=\"' + parite[i % 2] + '\" >');
-      items.push('<td>' +
-        parseFloat(pt.ellips.axes[2][0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("1/2 Axe (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[2][1]).toFixed(num_decimales) + '<span class="tooltip">'+_("Gisement (gr)") + '</span></td><td>' +
-        parseFloat(pt.ellips.axes[2][2]).toFixed(num_decimales) + '<span class="tooltip">'+_("Site (gr)") + '</span></td>');
-      items.push('</tr>');
-    }
-  }
-  $('<table/>', {
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport');
-}
-
-function show_intervalles(){
-  //write sigmas ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#interv">' + _('Demi-intervalles de confiance') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Demi-intervalles de confiance'),
-    id: 'interv',
-    title: _('Demi-intervalles de confiance 1D à 1 𝜎 (68%)')
-  }).appendTo('#rapport');
-  items = ["<tr><th class=\"name\">" + _("Nom")+"</th>"];
-  items.push("<th>" + _("&sigma;X (mm)") +
-    "</th><th>" + _("&sigma;Y (mm)") +
-    "</th><th>" + _("&sigma;Z (mm)") +
-    "</th></tr>");
-  for (var i = 0; i < nb_pts; i++) {
-    var pt = all_pts[i];
-    items.push(add_name(pt,i,1));
-    if (pt.dimension === 1) {    //Points 1D == Z
-      items.push('<td>-</td><td>-</td><td>' +
-        parseFloat(pt.ellips.sigmas[0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("&sigma;Z (mm)") + '</span></td></tr>');
-    } else if (pt.dimension === 2){
-      items.push('<td>' +
-        parseFloat(pt.ellips.sigmas[0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("&sigma;X (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.sigmas[1] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("&sigma;Y (mm)") + '</span></td><td>-</td></tr>');
-    } else if (pt.dimension === 3){
-      items.push('<td>' +
-        parseFloat(pt.ellips.sigmas[0] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("&sigma;X (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.sigmas[1] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("&sigma;Y (mm)") + '</span></td><td>' +
-        parseFloat(pt.ellips.sigmas[2] * 1000).toFixed(num_decimales_mini) + '<span class="tooltip">'+_("&sigma;Z (mm)") + '</span></td></tr>');
-    }
-  }
-  $('<table/>', {
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport');
-}
-
-function show_deplacements(){
-  //Simulation des déplacements des points (Monte-Carlo) ------------------------------------------------------------------------------------
-  $("<p/>").html('<a href="#deplacements">' + _('Simulation des déplacements des points') + '</a>').appendTo('#sommaire');
-  $("<h2/>", {
-    text: _('Simulation des déplacements des points'),
-    id: 'deplacements'
-  }).appendTo('#rapport');
-  $("<p/>", {
-    text: _('Pour ') + parseInt(data["computation"]["nbr_iterations"]) + _(' simulations :')
-  }).appendTo('#rapport');
-  items = ["<tr><th class=\"name\">" + _("Nom") +
-  "</th><th>" + _("EMQ X (mm)") +
-  "</th><th>" + _("EMQ Y (mm)") +
-  "</th><th>" + _("EMQ Z (mm)") +
-  "</th>><th>" + _("Max X (mm)") +
-  "</th>><th>" + _("Max Y (mm)") +
-  "</th>><th>" + _("Max Z (mm)") + "</th></tr>"];
-  for (var i = 0; i < nb_pts; i++) {
-    var pt = all_pts[i];
-    items.push('<tr class=\"' + parite[i % 2] + '\"><td class=\"name\">' + add_post(codes_pt[pt.code]) + pt.name + '</td><td>');
-    if ((pt.code === 4)||(pt.code === 5))
-      items.push(
-        '-</td><td>' +
-        '-</td><td>' +
-        parseFloat(pt.MC_shift_sq_average[2] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-       '-</td><td>' +
-       '-</td><td>' +
-        parseFloat(pt.MC_shift_max[2] * 1000).toFixed(num_decimales_mini) + '</td>'
-      );
-    else if (pt.code >= 6)
-      items.push(
-      parseFloat(pt.MC_shift_sq_average[0] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      parseFloat(pt.MC_shift_sq_average[1] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      '-</td><td>' +
-      parseFloat(pt.MC_shift_max[0] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      parseFloat(pt.MC_shift_max[1] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      '-</td>');
-    else
-      items.push(
-      parseFloat(pt.MC_shift_sq_average[0] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      parseFloat(pt.MC_shift_sq_average[1] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      parseFloat(pt.MC_shift_sq_average[2] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      parseFloat(pt.MC_shift_max[0] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      parseFloat(pt.MC_shift_max[1] * 1000).toFixed(num_decimales_mini) + '</td><td>' +
-      parseFloat(pt.MC_shift_max[2] * 1000).toFixed(num_decimales_mini) + '</td>');
-    items.push('</tr>');
-  }
-  $('<table/>', {
-    'class': 'points',
-    html: items.join('')
-  }).appendTo('#rapport');
-}
-
-function show_footer(){
-  //Pied de page ------------------------------------------------------------------------------------
-  $("<p/>", {
-    text: 'Copyright © 2013-2021 - IGN/SGM/Travaux Spéciaux - travaux.speciaux@ign.fr',
-    class: 'footer'
-  }).appendTo('#rapport');
-}
-
-//------------------------------------------------------------------------------
-// Fonctions de lancement de l'écriture des différentes parties si c'est nécessaire
-//------------------------------------------------------------------------------
-function showComp3Djson(data) {
-  $("#title").text(data["config"]["name"]);
-  num_decimales = parseInt(data["config"]["nb_digits"]);
-  num_decimales_mini = Math.max(num_decimales - 3, 0);
-  const lang = data["config"]["lang"];
-  if (lang in translations)
-    current_dict= translations[lang];
-  if (data["points"]){
-    $.each(data["points"], function(key, val) {
-      all_pts.push(val);
-      all_pts_name[key]=val;
-      $(all_pts).get(-1).name = key;
-      if (val["stations"]) {
-        $.each(val["stations"], function(key2, val2) {
-          $.each(val2["observations"], function(key3, val3) {
-            if (!(val3.active&&(val3.rank<0))) all_obs.push(val3); //ne pas afficher les obs non utilisees
-          });
-          if (val2["type"] === "bascule") {
-            all_basc.push(val2);
-            $(all_basc).get(-1).name = key;
-            $(all_basc).get(-1).origin = val;
-          }
-          if (val2["type"] === "axis") {
-            all_axes.push(val2);
-            $(all_axes).get(-1).name = key;
-            $(all_axes).get(-1).origin = val;
-          }
-        });
-      }
-    });
-  }
-  if (data["computation"]){
-    if (data["computation"]["ICobs"]){
-      $.each(data["computation"]["ICobs"], function(key, val) {
-        all_obs.push(val);
-      });
-    }
-  }else
-      return;
-  nb_pts=all_pts.length;
-  all_pts.sort(pointSortFunction);
-  all_obs.sort(obsSortFunction);
-  all_files = data["all_data_files"];
-  var nbFiles = 0;
-  for (var o in all_files) ++nbFiles;
-  nb_obs_active=parseInt(data["computation"]["nbr_active_obs"])
-  title_fold = {
-    "obs_length": _("Distance"), //_() is here only to generate list of translations
-    "sigma_total": _("&sigma; total"),
-    "normalized_residual" :  _("Résidu normalisé"),
-    "residual" : _("Résidu"),
-    "residual_mm" : _("Résidu mm"),
-    "sigma_a_posteriori" : _("&sigma; a posteriori"),
-    "residualStd" : _("Résidu standard"),
-    "obsRedondancy" : _("Redondance"),
-    "standardized_residual" : _("Résidu normé"),
-    "nabla":"&nabla;",
-    "probableError" : _("Faute probable"),
-  };
-  nom_type = {
-    "dist": _('Distances'),
-    "hz": _('Angles horizontaux'),
-    "zen" :  _('Angles zénithaux'),
-    "den" : _('Dénivelées'),
-    "coord" : _('Coordonnées'),
-    "basc" : _('Bascules'),
-    "axis" : _('Axes'),
-  };
-  unit = {
-    "0": _("Radians"),
-    "1": _("Grades"),
-    "2": _("Degrés"),
+  const units = {
+    "0": _("Rad"),
+    "1": _("Grad"),
+    "2": _("Deg"),
     "3": _("DMS")
   };
-  type_calcul = {
+  config=add_dl_row(config,_("Unit"),units[data["config"]["files_unit"]]);
+  config=add_dl_row(config,_("Decimal places number"),data["config"]["nb_digits"],_("clue for the precision given in the report, some value are given with less or more decimal places"));
+  const compute_nature = {
     "0": _("Compensation"),
-    "1": _("Simulation propagation"),
-    "2": _("Simulation Monte-Carlo")
+    "1": _("Propagation Simulation"),
+    "2": _("Monte-Carlo Simulation")
   };
-  show_version();
-  $('<div class="sommaire" id="sommaire" /div>').appendTo('body');
-  $('<img src=\"res/logo_IGN.jpg\" alt=\"IGN\" width="50%"/><img src=\"res/logo_comp.png\" alt=\"Comp3D\" width="50%"/>').appendTo('#sommaire');
-  $("<a href='#top'><h1>"+title+"</h1></a>").appendTo('#sommaire');
-  $('<div id="rapport" /div>').appendTo('body');
-  show_info_work();
-  createMap();
-  show_info_calc();
-  if ((data["config"]["compute_type"] === 0) && (data["computation"]["all_sigma0"].length>0)) {
-    show_evol_sigma0();
-    show_chi2();
+  config=add_dl_row(config,_("Computation nature"),compute_nature[data["config"]["compute_type"]]);
+  if (data["config"]["compute_type"] === 0){
+    config=add_dl_row(config,_("Normal matrix inversion"),bool(data["config"]["invert_matrix"]),_("Required to get confidence intervals and ellipsoids and get redondancy informations"));
   }
-  show_coord_init();
-  show_obs();
-  if (data["config"]["compute_type"] === 0) {
-    show_repart_residuals();
+  if (data["config"]["compute_type"] !== 2){//No Monte Carlo
+    config=add_dl_row(config,_("Internal constraints"),bool(data["config"]["internal_constraints"]));
   }
-  if ((data["config"]["compute_type"] === 0) && (data["computation"]["invertedMatrix"])) {
-    show_pseudo();
+  config=add_dl_row(config,_("Refraction coefficient"),to_fixed(parseFloat(data["config"]["refraction"]), nb_decimals),_("Only impacts vertical angle measures"));
+  config=add_dl_row(config,_("Georeferencing"),bool(data["config"]["use_proj"]));
+  if (data["config"]["use_proj"]){
+    config=add_dl_row(config,_("Projection definition"),data["config"]["proj_def"]);
+    config=add_dl_row(config,_("Projection center"),"E=" + parseInt(data["config"]["local_center"][0]) + " " +
+                                                    "N=" + parseInt(data["config"]["local_center"][1]));
+  }else{
+    config=add_dl_row(config,_("Center latitude"),to_fixed(parseFloat(data["config"]["center_latitude"]), 2),_("Latitude to determine the local curvature of the ellipsoid"));
+    config=add_dl_row(config,_("Local coordinates center"),"X=" + parseInt(data["config"]["local_center"][0]) + " " +
+                                                           "Y=" + parseInt(data["config"]["local_center"][1]));
   }
-  if (data["config"]["compute_type"] === 0) {
-    show_biggest_residuals();
-  }
-  set_display_column();
-  if (all_basc.length > 0) {
-    show_bascules();
-  }
-  if (all_axes.length > 0) {
-    show_axes();
-  }
-  if ((data["computation"]["compensationDone"]) && (data["config"]["compute_type"] === 0)) {
-    show_coord_comp();
-  }
-  if (data["computation"]["invertedMatrix"]) {
-    show_ellips();
-    show_intervalles();
-  }
-  if (data["config"]["compute_type"] === 2) {
-    show_deplacements();
-  }
-  show_footer();
+  config=add_dl_row(config,_("Convergence criterion"),to_fixed(parseFloat(data["config"]["convergence_criterion"]), 6),_("\u03C30 difference between 2 iterations"));
+  config=add_dl_row(config,_("Maximum iterations"),data["config"]["max_iterations"]);
+  config=add_dl_row(config,_("Ellipsoidal heights"),bool(data["config"]["use_ellips_height"]));
+  config=add_dl_row(config,_("Additional iterations"),data["config"]["force_iterations"],_("Additional iteration number after convergence"));
+
+  report_div.appendChild(config);
 }
 
-function createMap() {
-  $('<div/>', {
-    'id': 'mapid',
-  }).appendTo('#rapport');
+//------------------------------------------------------------------------------
+//--------------- Map function
+//------------------------------------------------------------------------------
+function createMap(){
+  const report_div = document.getElementById("report");
+  const map=document.createElement("div");
+  map.id="mapid";
+  report_div.appendChild(map);
 
-  var markerIconF = L.icon({
+  const markerIconF = L.icon({
     iconUrl: 'res/marker_f.png',
     iconSize:     [16, 16], // size of the icon
     iconAnchor:   [8, 8], // point of the icon which will correspond to marker's location
     //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
   });
-  var markerIconS = L.icon({
+  const markerIconS = L.icon({
     iconUrl: 'res/marker_s.png',
     iconSize:     [16, 16], // size of the icon
     iconAnchor:   [8, 8], // point of the icon which will correspond to marker's location
     //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
   });
-  var markerIconT = L.icon({
+  const markerIconT = L.icon({
     iconUrl: 'res/marker_t.png',
     iconSize:     [16, 16], // size of the icon
     iconAnchor:   [8, 8], // point of the icon which will correspond to marker's location
     //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
   });
-  var markerIconR1 = L.icon({
+  const markerIconR1 = L.icon({
     iconUrl: 'res/marker_r1.png',
     iconSize:     [32, 32], // size of the icon
     iconAnchor:   [16, 16], // point of the icon which will correspond to marker's location
     //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
   });
-  var markerIconR2 = L.icon({
+  const markerIconR2 = L.icon({
     iconUrl: 'res/marker_r2.png',
     iconSize:     [32, 32], // size of the icon
     iconAnchor:   [16, 16], // point of the icon which will correspond to marker's location
     //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
   });
 
-  var all_latlong = [];
-  var key="coord_compensated_cartesian";
+  let all_latlong = [];
+  let key="coord_compensated_cartesian";
 
-  if (data["computation"]["projection"]["is_georef"])
-  {
+  if (data["computation"]["projection"]["is_georef"]){
       mymap = L.map('mapid');
       key="coord_compensated_latlong"
-      if (!data["computation"]["compensationDone"])
+      if (!data["computation"]["compensation_done"])
         key="coord_init_latlong";
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 30,
+            maxZoom: 35,
             attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
             opacity: 0.6
           }).addTo(mymap);
@@ -2166,104 +1833,126 @@ function createMap() {
   mymap.on('focus', function() { mymap.scrollWheelZoom.enable(); });
   mymap.on('blur', function() { mymap.scrollWheelZoom.disable(); });
 
-  var info = L.control();
+  let info = L.control();
   info.onAdd = function (map) {
       this._div = L.DomUtil.create('div', 'map-info');
       this._div.innerHTML = '<p><img src="res/marker_f.png"/>'
-        +_('Ref')+'</p><p><img src="res/marker_s.png"/>'
-        +_('Station')+'</p><p><img src="res/marker_t.png"/>'
-        +_('Cible')+'</p>';
+        +_("Ref")+'</p><p><img src="res/marker_s.png"/>'
+        +_("Station")+'</p><p><img src="res/marker_t.png"/>'
+        +_("Target")+'</p>';
       return this._div;
   };
   info.addTo(mymap);
 
-  var len_factorE=1;
-  var len_factorN=1;
-  var isSimpleCRS=true;
-  if ((data["computation"]["projection"]["is_georef"]) && (all_pts.length>0))
-  {
+  let len_factorE=1;
+  let len_factorN=1;
+  let isSimpleCRS=true;
+  if ((data["computation"]["projection"]["is_georef"]) && (all_pts.length>0)){
     isSimpleCRS=false;
     len_factorE=360/(Math.PI*2*parseFloat(data.computation.projection.earth_model_radius))/Math.cos(Math.PI/180*all_pts[0][key][1]);
     len_factorN=360/(Math.PI*2*parseFloat(data.computation.projection.earth_model_radius));
   }
-  for (var i = 0; i < all_axes.length; i++) {
-    var axe = all_axes[i];
-    var pos = all_axes[i].origin[key];
-    var axe_norm=Math.sqrt(axe.params.a*axe.params.a+axe.params.b*axe.params.b+axe.params.c*axe.params.c);
-    var ellips_az = Math.atan2(axe.params.a,axe.params.b)*180/Math.PI;
-    var axe_proj_norm = Math.sqrt(axe.params.a*axe.params.a+axe.params.b*axe.params.b);
-    //console.log(all_axes[i].origin.name,axe_norm,axe_proj_norm,axe.params.c/axe_norm);
-    for (var j = 0; j< axe.targets.length; j++) {
-        var target = axe.targets[j];
-        var ellips_ctr = [pos[0]+target.params.l*axe.params.a*len_factorE, pos[1]+target.params.l*axe.params.b*len_factorN];
-        var ellips_a = target.params.r;
+  for (let i = 0; i < all_axes.length; i++) {
+    let axe = all_axes[i];
+    let pos = all_axes[i].origin[key];
+    const key_a = Object.keys(axe.params).find(key => key.match(axe.name+'_Aa.*'));
+    const key_b = Object.keys(axe.params).find(key => key.match(axe.name+'_Ab.*'));
+    const key_c = Object.keys(axe.params).find(key => key.match(axe.name+'_Ac.*'));
+
+    const axe_norm=Math.sqrt(
+                           axe.params[key_a].value*axe.params[key_a].value
+                           +axe.params[key_b].value*axe.params[key_b].value
+                           +axe.params[key_c].value*axe.params[key_c].value);
+    let ellips_az = Math.atan2(axe.params[key_a].value,axe.params[key_b].value)*180/Math.PI;
+    let axe_proj_norm = Math.sqrt(axe.params[key_a].value*axe.params[key_a].value
+                                  +axe.params[key_b].value*axe.params[key_b].value);
+
+    for (let j = 0; j< axe.targets.length; j++) {
+        let target = axe.targets[j];
+        const key_l = Object.keys(axe.params).find(key => key.match(axe.name+'_st.*_T'+target.num+'_l'));
+        const key_r = Object.keys(axe.params).find(key => key.match(axe.name+'_st.*_T'+target.num+'_r'));
+        if (axe.params[key_l].value == null || axe.params[key_r].value == null) continue;
+
+        let ellips_ctr = [
+                          pos[0]+axe.params[key_l].value*axe.params[key_a].value*len_factorE,
+                          pos[1]+axe.params[key_l].value*axe.params[key_b].value*len_factorN
+                         ];
+        let ellips_a = axe.params[key_r].value;
         //var ellips_b = ellips_a*axe_proj_norm/axe_norm;
-        var ellips_b = Math.abs(ellips_a*axe.params.c/axe_norm);
+        let ellips_b = Math.abs(ellips_a*axe.params[key_c].value/axe_norm);
         L.ellipse([ellips_ctr[1],ellips_ctr[0]],[ellips_a,ellips_b],
             ellips_az,{color: 'coral',opacity : 0.7,fill:false, simpleCRS:isSimpleCRS}).addTo(mymap);
     }
   }
-  
-  for (var i = 0; i < all_axes.length; i++) {
-    var axe = all_axes[i];
-    var pos = all_axes[i].origin[key];
-    var axe_norm=Math.sqrt(axe.params.a*axe.params.a+axe.params.b*axe.params.b+axe.params.c*axe.params.c);
-    var axe_len_m=2//show +/- 2m
-    var posA = [pos[0]+axe_len_m*len_factorE*axe.params.a/axe_norm, pos[1]+axe_len_m*len_factorN*axe.params.b/axe_norm];
-    var posB = [pos[0]-axe_len_m*len_factorE*axe.params.a/axe_norm, pos[1]-axe_len_m*len_factorN*axe.params.b/axe_norm];
-    var polyline = L.polyline([
-        [posA[1], posA[0]],
-        [posB[1], posB[0]]
-      ],{weight: 8, opacity : 1, color: "olivedrab", dashArray:"12"}).addTo(mymap);
-  }
-  
-  function createObsLine(from, to, obs_color, layerObsLine, layerObsDir) {
-    var v = [from[0]-to[0], to[1]-from[1]];
-    var norm = Math.sqrt(v[0]*v[0]+v[1]*v[1]);
-    if (norm>0) {
-      v[0] = v[0] / norm / 5 * len_factorE;
-      v[1] = v[1] / norm / 5 * len_factorE;
+
+  for (let i = 0; i < all_axes.length; i++) {
+    let axe = all_axes[i];
+    const key_a = Object.keys(axe.params).find(key => key.match(axe.name+'_Aa.*'));
+    const key_b = Object.keys(axe.params).find(key => key.match(axe.name+'_Ab.*'));
+    const key_c = Object.keys(axe.params).find(key => key.match(axe.name+'_Ac.*'));
+    let pos = all_axes[i].origin[key];
+    const axe_norm=Math.sqrt(axe.params[key_a].value*axe.params[key_a].value
+               +axe.params[key_b].value*axe.params[key_b].value
+               +axe.params[key_c].value*axe.params[key_c].value);
+    if (axe_norm > 0) {
+        let axe_len_m=2//show +/- 2m
+        let posA = [pos[0]+axe_len_m*len_factorE*axe.params[key_a].value/axe_norm, pos[1]+axe_len_m*len_factorN*axe.params[key_b].value/axe_norm];
+        let posB = [pos[0]-axe_len_m*len_factorE*axe.params[key_a].value/axe_norm, pos[1]-axe_len_m*len_factorN*axe.params[key_b].value/axe_norm];
+        let polyline = L.polyline([
+            [posA[1], posA[0]],
+            [posB[1], posB[0]]
+          ],{weight: 8, opacity : 1, color: "olivedrab", dashArray:"12"}).addTo(mymap);
     }
+  }
+
+  let layerObsLine = [];
+  let layerObsDir = [];
+
+  function createObsLine(from, to, obs_color, layerObsLine, layerObsDir) {
+    let v = [from[0]-to[0], to[1]-from[1]];
+    let norm = Math.sqrt(v[0]*v[0]+v[1]*v[1]);
     layerObsLine.push(L.polyline([
       [from[1], from[0]],
       [to[1], to[0]]
     ],{weight: 1, opacity : 0.5, color: obs_color}));
-    layerObsDir.push(L.polyline([
-      [(from[1]+to[1])/2+v[1]*2, (from[0]+to[0])/2-v[0]*2],
-      [(from[1]+to[1])/2+v[0]+v[1], (from[0]+to[0])/2+v[1]-v[0]]
-    ],{weight: 1, opacity : 0.5, color: obs_color}));
-    layerObsDir.push(L.polyline([
-      [(from[1]+to[1])/2+v[1]*2, (from[0]+to[0])/2-v[0]*2],
-      [(from[1]+to[1])/2-v[0]+v[1], (from[0]+to[0])/2-v[1]-v[0]]
-    ],{weight: 1, opacity : 0.5, color: obs_color}));
+    if (norm>0.01*len_factorE) {
+      v[0] = v[0] / 50;
+      v[1] = v[1] / 50;
+      layerObsDir.push(L.polyline([
+        [(from[1]+to[1])/2+v[1]*2, (from[0]+to[0])/2-v[0]*2],
+        [(from[1]+to[1])/2+v[0]+v[1], (from[0]+to[0])/2+v[1]-v[0]]
+      ],{weight: 1, opacity : 0.5, color: obs_color}));
+      layerObsDir.push(L.polyline([
+        [(from[1]+to[1])/2+v[1]*2, (from[0]+to[0])/2-v[0]*2],
+        [(from[1]+to[1])/2-v[0]+v[1], (from[0]+to[0])/2-v[1]-v[0]]
+      ],{weight: 1, opacity : 0.5, color: obs_color}));
+    }
   }
 
-  var layerObsLine = [];
-  var layerObsDir = [];
-  for (var obs of all_obs) {
-    if (obs.active && obs.code>0 && obs.code<110) { //do not draw coord, axes and internal contraints
-      var coord_latlong_from = all_pts_name[obs.from][key];
-      var coord_latlong_to = all_pts_name[obs.to][key];
-      var obs_color = "darkmagenta";
+  for (let i = 0; i < all_active_obs.length; i++){
+    let obs=all_active_obs[i];
+    if (obs.code>0 && obs.code<110) { //do not draw coord, axes and internal contraints
+      let coord_latlong_from = all_pts_name[obs.from][key];
+      let coord_latlong_to = all_pts_name[obs.to][key];
+      let obs_color = "darkmagenta";
       createObsLine(coord_latlong_from, coord_latlong_to, obs_color, layerObsLine, layerObsDir);
     }
   }
-  var layerObs={"Obs":L.layerGroup(layerObsLine), "Dir":L.layerGroup(layerObsDir)};
+  let layerObs={"Obs":L.layerGroup(layerObsLine), "Dir":L.layerGroup(layerObsDir)};
   L.control.layers(null, layerObs, {collapsed:false}).addTo(mymap);
 
-  kernVectScale = 5*len_factorE;
-  kernVectColor = "#FF0000FF";
+  let kernVectScale = 5*len_factorE;
+  let kernVectColor = "#FF0000FF";
 
   function drawKernVect(v, layer) {
-    var pt = all_pts[v.n];
-    var pos = pt[key];
-    var vx = v.x*kernVectScale;
-    var vy = v.y*kernVectScale;
-    var vz = v.z*kernVectScale;
-    var miniSize2 = 0.1*len_factorE*len_factorE;
+    const pt = all_pts[v.n];
+    const pos = pt[key];
+    const vx = v.x*kernVectScale;
+    const vy = v.y*kernVectScale;
+    const vz = v.z*kernVectScale;
+    const miniSize2 = 0.1*len_factorE*len_factorE;
 
-    if (vx*vx+vy*vy>miniSize2)
-    {
+    if (vx*vx+vy*vy>miniSize2){
       layer.push(L.polyline([
         [pos[1], pos[0]],
         [pos[1]+vy, pos[0]+vx]
@@ -2277,8 +1966,7 @@ function createMap() {
         [pos[1]+vy+(+vx-vy)/8, pos[0]+vx+(-vy-vx)/8]
       ],{weight: 2, opacity : 1, color: kernVectColor}));
     }
-    if (vz*vz>miniSize2)
-    {
+    if (vz*vz>miniSize2){
       layer.push(L.polyline([
         [pos[1], pos[0]],
         [pos[1]+vz, pos[0]]
@@ -2305,7 +1993,7 @@ function createMap() {
       ],{weight: 2, opacity : 1, color: kernVectColor}));
     }
   }
-  
+
   function drawKernCirc(pos, val, layer) {
     if (val>0)
       layer.push(L.marker([pos[1], pos[0]], {icon:markerIconR1}));
@@ -2314,37 +2002,34 @@ function createMap() {
   }
 
   function drawKernel(num, kernLayers) {
-    var layer = [];
-    var kernData = data["computation"]["kernel"][num];
-    var allVects = {}; //{x,y} indexed by pt name
-    for (param in kernData)
-    {
-      var val = kernData[param].val;
-      var dim = param.substring(param.lastIndexOf("_")+1);
-      var numpt = kernData[param].num_pt;
-      var pt = all_pts[numpt];
-      if (dim[0]=="G")
+    let layer = [];
+    let kernData = data["computation"]["kernel"][num];
+    let allVects = {}; //{x,y} indexed by pt name
+    for (const param in kernData){
+      let val = kernData[param].val;
+      let dim = param[param.lastIndexOf("_")+1];
+      if (dim >= '0' && dim <= '9')
+        dim = param.substring(param.lastIndexOf("_", param.lastIndexOf("_")-1)+1); //dim is after the second "_" from the end
+
+      let numpt = kernData[param].num_pt;
+      let pt = all_pts[numpt];
+      if ((dim[0]==="G")||(dim[0]==="R"))
         drawKernCirc(pt[key], val, layer);
-      if (dim[0]=="x")
-      {
+      if (dim[0]==="x"){
         if (pt.name in allVects)
           allVects[pt.name]["x"] = val;
-        else {
+        else{
           allVects[pt.name] = {"n":numpt,"x":0.0,"y":0.0,"z":0.0};
           allVects[pt.name]["x"] = val;
         }
-      }
-      if (dim[0]=="y")
-      {
+      }else if (dim[0]==="y"){
         if (pt.name in allVects)
           allVects[pt.name]["y"] = val;
         else {
           allVects[pt.name] = {"n":numpt,"x":0.0,"y":0.0,"z":0.0};
           allVects[pt.name]["y"] = val;
         }
-      }
-      if (dim[0]=="z")
-      {
+      }else if (dim[0]==="z"){
         if (pt.name in allVects)
           allVects[pt.name]["z"] = val;
         else {
@@ -2353,63 +2038,71 @@ function createMap() {
         }
       }
     }
-    //console.log("All vects: "+dim+": "+JSON.stringify(allVects));
-    for (pt in allVects)
+    for (const pt in allVects)
       drawKernVect(allVects[pt], layer);
-    var kernLayer = L.layerGroup(layer);
-    if (num==0)
+    let kernLayer = L.layerGroup(layer);
+    if (num===0)
       kernLayer.addTo(mymap);
     kernLayers["Indetermination "+num.toString()] = kernLayer;
   }
 
-  if (data["computation"]["kernel"])
-  {
-    var kernLayers = {};
-    for (var num=0;num<data["computation"]["kernel"].length;num++)
+  if (data["computation"]["kernel"]){
+    let kernLayers = {};
+    for (let num=0;num<data["computation"]["kernel"].length;num++)
       drawKernel(num, kernLayers);
     L.control.layers(kernLayers, null, {collapsed:false}).addTo(mymap);
   }
 
-  for (var i = 0; i < nb_pts; i++)
-  {
-    var pt = all_pts[i];
-    var coord_latlong=all_pts[i][key];
-    if ([1,2,3,5,7,9].indexOf(all_pts[i].code)>=0)
-    {
-        L.marker([coord_latlong[1], coord_latlong[0]], {icon:markerIconF}).bindTooltip(data.all_point_names[i],{permanent: true, direction: 'right', className: 'comp-tooltips'}).addTo(mymap);
+  let all_markers=[];
+  let all_markers_names=[];
+  for (let i = 0; i < nb_pts; i++){
+    let pt = all_pts[i];
+    let coord_latlong=all_pts[i][key];
+    if ([1,2,3,5,7,9].indexOf(all_pts[i].code)>=0){
+      all_markers.push(L.marker([coord_latlong[1], coord_latlong[0]], {icon:markerIconF}).addTo(mymap));
+      all_markers_names.push(data.all_point_names[i]);
+      continue;
+    }
+    let iconFound=false;
+    for (let k =0;k<(pt.stations.length);k++){
+      const st=pt.stations[k];
+      if (st.type !== "simple"){
+        all_markers.push(L.marker([coord_latlong[1], coord_latlong[0]], {icon:markerIconS}).addTo(mymap));
+        all_markers_names.push(data.all_point_names[i]);
+        iconFound=true;
         continue;
+      }
     }
-    var iconFound=false;
-    for (const st of pt.stations)
-    {
-        if (st.type !== "simple")
-        {
-            L.marker([coord_latlong[1], coord_latlong[0]], {icon:markerIconS}).bindTooltip(data.all_point_names[i],{permanent: true, direction: 'right', className: 'comp-tooltips'}).addTo(mymap);
-            iconFound=true;
-            continue;
-        }
+    if (!iconFound){
+      all_markers.push(L.marker([coord_latlong[1], coord_latlong[0]], {icon:markerIconT}).addTo(mymap));
+      all_markers_names.push(data.all_point_names[i]);
     }
-    if (!iconFound)
-        L.marker([coord_latlong[1], coord_latlong[0]], {icon:markerIconT}).bindTooltip(data.all_point_names[i],{permanent: true, direction: 'right', className: 'comp-tooltips'}).addTo(mymap);
   }
 
+  //add tooltips on background, 90% faster
+  setTimeout(() => {
+          for (let i =0; i<all_markers.length;i++){
+            all_markers[i].bindTooltip(all_markers_names[i],{permanent: true, direction: 'right', className: 'comp-tooltips'});
+          }
+        }, 10);
+
   L.control.scale({imperial:false}).addTo(mymap);
-  for (var i = 0; i < nb_pts; i++) {
-    var coord_latlong=all_pts[i][key];
-    if (isFinite(coord_latlong[0]) && isFinite(coord_latlong[1]))
+  for (let i = 0; i < nb_pts; i++) {
+    let coord_latlong=all_pts[i][key];
+    if ((all_pts[i].code<11) && isFinite(coord_latlong[0]) && isFinite(coord_latlong[1]))
       all_latlong.push( [coord_latlong[1],coord_latlong[0]] );
   }
-  if (all_latlong.length>0)
-  {
+  if (all_latlong.length>0){
     minx=all_latlong[0][0];
     miny=all_latlong[0][1];
     maxx=all_latlong[0][0];
     maxy=all_latlong[0][1];
-    for (var pt of all_latlong) {
-        if (minx>pt[0]) minx=pt[0];
-        if (miny>pt[1]) miny=pt[1];
-        if (maxx<pt[0]) maxx=pt[0];
-        if (maxy<pt[1]) maxy=pt[1];
+    for (let j=0;j<all_latlong.length;j++){
+      let pt=all_latlong[j];
+      if (minx>pt[0]) minx=pt[0];
+      if (miny>pt[1]) miny=pt[1];
+      if (maxx<pt[0]) maxx=pt[0];
+      if (maxy<pt[1]) maxy=pt[1];
     }
     minx-=0.0001;
     miny-=0.0001;
@@ -2423,7 +2116,7 @@ function createMap() {
             div.classList.add("leaflet-control-zoom");
             div.classList.add("leaflet-bar");
             div.classList.add("leaflet-control");
-            div.innerHTML='<a class="leaflet-control-zoom-in" title="Reset zoom" onclick="mymap.fitBounds( [[minx,miny],[maxx,maxy]]);">⛋</a>';
+            div.innerHTML='<a class="leaflet-control-zoom-in" title="Reset zoom" onclick="mymap.fitBounds( [[minx,miny],[maxx,maxy]]);">&#128306;</a>';
             return div;
         },
         onRemove: function(map) {}
@@ -2435,21 +2128,1778 @@ function createMap() {
   }
 }
 
-$(document).ready(function() {
-  document.title='... - Comp3D';//update window title ASAP
-  $("#title").text("");
-  $("#title").addClass("spinner");
+//------------------------------------------------------------------------------
+//--------------- Calculation information
+//------------------------------------------------------------------------------
+function show_info_calc(){
+  let report_div = create_title_section('info_calc',_('Computation information'),_('Info'));
 
-  var script_data = document.createElement("script");
+  let calc = document.createElement("dl");
+  calc.classList.add('inline-flex');
+
+  calc=add_dl_row(calc,_("Compensation done"),bool(data["computation"]["compensation_done"]))
+  if (data["all_uninitializable_point_names"] && (data["all_uninitializable_point_names"].length>0)){
+    calc=add_dl_row(calc,_("Non-initialisable points"),data["all_uninitializable_point_names"].join(" "));
+  }
+  if (data["config"]["compute_type"] === 0){
+    calc=add_dl_row(calc,_("\u03C30 initial"),to_fixed(parseFloat(data["computation"]["sigma_0_init"]), nb_decimals));
+    calc=add_dl_row(calc,_("\u03C30 final"),to_fixed(parseFloat(data["computation"]["sigma_0_final"]), nb_decimals));
+  }
+  calc=add_dl_row(calc,_("Iterations"),data["computation"]["nbr_iterations"]);
+  let interrupted_class = "";
+  if (data["computation"]["interrupted"]){
+    interrupted_class = "warn_red";
+  }
+  calc=add_dl_row(calc,_("Computation interruption"),bool(data["computation"]["interrupted"]),"",interrupted_class);
+  calc=add_dl_row(calc,_("Rank default"),data["computation"]["rank_deficiency"]);
+  if (data["computation"]["computation_start"]!=="not-a-date-time"){
+    calc=add_dl_row(calc,_("Computation start"),data["computation"]["computation_start"]);
+    calc=add_dl_row(calc,_("Computation duration"),data["computation"]["computation_duration"]);
+  }
+  calc=add_dl_row(calc,_("Sphere radius"),to_fixed(parseFloat(data["computation"]["projection"]["earth_model_radius"]), 2) + ' m');
+  calc=add_dl_row(calc,_("Total observations number"),data["computation"]["nbr_all_obs"]);
+  calc=add_dl_row(calc,_("Active observations number"),data["computation"]["nbr_active_obs"]);
+  calc=add_dl_row(calc,_("Parameters"),data["computation"]["nbr_parameters"]);
+  calc=add_dl_row(calc,_("Normal matrix inversion"),bool(data["computation"]["inverted_matrix"]));
+  calc=add_dl_row(calc,_("Monte-Carlo simulation done"),bool(data["computation"]["Monte_Carlo_done"]));
+  calc=add_dl_row(calc,_("Internal constraints"),bool(data["computation"]["internal_constraints"]));
+  calc=add_dl_row(calc,_("Using vertical deflection"),bool(data["computation"]["use_vertical_deflection"]));
+  calc=add_dl_row(calc,_("Solver name"),data["computation"]["solver_name"]);
+  if (data["computation"]["projection"]["is_georef"]){
+    const R=data["computation"]["projection"]["rot_global2geocentric"];
+    const T=data["computation"]["projection"]["center_cartgeocentric"];
+    if (data["computation"]["projection"]["input_proj_EPSG"]>0){
+      calc=add_dl_row(calc,_("Projection name"),"EPSG " + data["computation"]["projection"]["input_proj_EPSG"]+_(": ")+data["computation"]["projection"]["input_proj_name"]);
+    }
+    calc=add_dl_row(calc,_("User proj def"),data["computation"]["projection"]["input_proj_def"]);
+    calc=add_dl_row(calc,_("Stereo def"),data["computation"]["projection"]["stereo_def"]);
+    calc=add_dl_row(calc,_("LatLong def"),data["computation"]["projection"]["latlong_def"]);
+    calc=add_dl_row(calc,_("Geocent def"),data["computation"]["projection"]["geocent_def"]);
+    const table = document.createElement("table");
+    table.id = "cart2geoc";
+    const table_content="<th class='likedt' colspan='4'>" + _("Cartesian global to Geocentric:") + "</th>"
+     + "<tr><td></td><td>" + R[0][0] + "</td><td>" + R[0][1] + "</td><td>" + R[0][2] + "</td><td></td><td>" + T[0] + "</td></tr>"
+     + "<tr><td>Geocentr =</td><td>" + R[1][0] + "</td><td>" + R[1][1] + "</td><td>" + R[1][2] + '</td><td>* Global + </td><td>' + T[1] + "</td></tr>"
+     + "<tr><td></td><td>" + R[2][0] + "</td><td>" + R[2][1] + "</td><td>" + R[2][2] + "</td><td></td><td>" + T[2] + '</td></tr>';
+     table.innerHTML=table_content;
+     calc.appendChild(table);
+  }
+
+  report_div.appendChild(calc);
+
+  report_div=add_button(report_div,"read_config",data["computation"]["messages_read_config"],'none',
+    'toggleButtons("read_config_data","read_config_button",_("Show configuration file reading messages"),_("Hide configuration file reading messages"))');
+  toggleButtons("read_config_data","read_config_button",_("Show configuration file reading messages"),_("Hide configuration file reading messages"));
+
+  report_div=add_button(report_div,"read_data",data["computation"]["messages_read_data"],'block',
+    'toggleButtons("read_data_data","read_data_button",_("Show file reading messages"),_("Hide file reading messages"))');
+  toggleButtons("read_data_data","read_data_button",_("Show file reading messages"),_("Hide file reading messages"));
+
+  report_div=add_button(report_div,"set_least_squares",data["computation"]["messages_set_least_squares"],'block',
+    'toggleButtons("set_least_squares_data","set_least_squares_button",_("Show computation configuration messages"),_("Hide computation configuration messages"))');
+  toggleButtons("set_least_squares_data","set_least_squares_button",_("Show computation configuration messages"),_("Hide computation configuration messages"));
+
+  report_div=add_button(report_div,"computation",data["computation"]["messages_computation"],'none',
+    'toggleButtons("computation_data","computation_button",_("Show computation messages"),_("Hide computation messages"))');
+  toggleButtons("computation_data","computation_button",_("Show computation messages"),_("Hide computation messages"));
+}
+
+//------------------------------------------------------------------------------
+//--------------- Sigma 0 evolution graph
+//------------------------------------------------------------------------------
+function show_evol_sigma0(){
+  const report_div = create_title_section('evol_sigma0',_('\u03C30 evolution'),_('\u03C30'));
+  let all_sigma0_labels = [];
+  let chi2_max = [];
+  let chi2_min = [];
+  let all_sigma0_val = [];
+  for (let index = 0; index < data["computation"]["all_sigma0"].length; index++) {
+    all_sigma0_labels.push(index);
+    all_sigma0_val.push(data["computation"]["all_sigma0"][index]);
+    chi2_max.push(data["computation"]["chi2_test"]["max"]);
+    chi2_min.push(data["computation"]["chi2_test"]["min"]);
+  }
+  const sigma0_evol_chart_config = {
+    type: 'line',
+    data: {
+      labels: all_sigma0_labels,
+      datasets: [{
+          label: "\u03C30",
+          backgroundColor: "rgba(255,162,0,0.5)",
+          fill: false,
+          borderColor: "rgba(255,162,0,1)",
+          pointColor: "rgba(255,162,0,1)",
+          pointStrokeColor: "#fff",
+          data: all_sigma0_val,
+          lineTension: 0.0
+        },
+        {
+          label: "\u03C7\u00B2 max",
+          borderColor: "rgba(150,100,100,0.9)",
+          pointRadius: 0,
+          data: chi2_max,
+          fill: false
+        },
+        {
+          label: "\u03C7\u00B2 min",
+          borderColor: "rgba(100,150,100,0.9)",
+          pointRadius: 0,
+          data: chi2_min,
+          fill: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: false,
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: _("Iteration")
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: '\u03C30'
+          },
+          type: 'logarithmic',
+          ticks: {
+            min: 0,
+            callback: function(value, index, values) {
+              str = value.toExponential()
+              if ((str[0] === "1") || (str[0] === "2") || (str[0] === "5"))
+                return value.toString();
+              else return "";
+            },
+          }
+        }]
+      }
+    }
+  };
+
+  const div=document.createElement("div");
+  div.classList.add("graph");
+  const canvas=document.createElement("canvas");
+  canvas.id='sigma0_chart';
+  div.appendChild(canvas);
+  report_div.append(div);
+  const ctx=canvas.getContext("2d");
+  let myNewChart = new Chart(ctx, sigma0_evol_chart_config);
+}
+
+//------------------------------------------------------------------------------
+//--------------- Chi2 test
+//------------------------------------------------------------------------------
+function show_chi2(){
+  let report_div = create_title_section("test_chi2",_("\u03C7\u00B2 test"),_("\u03C7\u00B2"));
+  const chi2OK = (parseFloat(data["computation"]["chi2_test"]["min"]) < parseFloat(data["computation"]["sigma_0_final"])) &&
+                 (parseFloat(data["computation"]["sigma_0_final"]) < parseFloat(data["computation"]["chi2_test"]["max"]));
+  let emoticon = "?";
+  if (!chi2OK) emoticon = "&#128547;";
+  else emoticon = "&#128517;";
+  if (parseFloat(data["computation"]["sigma_0_final"]) > 10)
+    emoticon = "&#128561;";
+  else if (parseFloat(data["computation"]["sigma_0_final"]) > 100)
+    emoticon = "&#128552;";
+  let confidence_section = document.createElement("p");
+  confidence_section.innerHTML = _("Confidence: ") + data["computation"]["chi2_test"]["confidence"] * 100 + "%";
+  report_div.appendChild(confidence_section);
+  let freedom_section = document.createElement("p");
+  freedom_section.innerHTML = _("Degrees of freedom: ") + data["computation"]["chi2_test"]["DOF"];
+  freedom_section.title= _("Observations number minus parameters number")
+  report_div.appendChild(freedom_section);
+  let test_section = document.createElement("p");
+  test_section.innerHTML = _("Test: ") +
+      to_fixed(parseFloat(data["computation"]["chi2_test"]["min"]), nb_decimals) + " < " +
+      to_fixed(parseFloat(data["computation"]["sigma_0_final"]), nb_decimals) + " < " +
+      to_fixed(parseFloat(data["computation"]["chi2_test"]["max"]), nb_decimals) + " ?";
+  report_div.appendChild(test_section);
+  let test_result_section = document.createElement("p");
+  test_result_section.innerHTML = _("Test passed: ") + bool(chi2OK) + _("!") + emoticon;
+  report_div.appendChild(test_result_section);
+  if (data["computation"]["inverted_matrix"]){
+    let big_ellipsoid_section = document.createElement("p");
+    big_ellipsoid_section.innerHTML=_('Biggest ellipsoid semi axis:') + " " + to_fixed(parseFloat(data["computation"]["biggest_ellips"]), nb_decimals) + "m";
+    big_ellipsoid_section.id="biggest_ellips";
+    report_div.appendChild(big_ellipsoid_section);
+  }
+}
+
+//------------------------------------------------------------------------------
+//--------------- Display init coord in html table
+//------------------------------------------------------------------------------
+function show_coord_init(){
+  let report_div = create_title_section('coord_init',_('Initial coordinates'),_('Init'));
+
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "init_coord_table";
+  table.classList.add("report_tables");
+
+  // Create header table
+  let header_conf = get_header_conf("init_coord", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"])
+  let thead = make_html_header(header_conf);
+  let columns_count = header_conf.length;
+  table.appendChild(thead);
+
+  let tbody = document.createElement("tbody");
+
+  for (let i = 0; i < nb_pts; i++) {
+    let pt = all_pts[i];
+    let new_tr = add_pt_row(header_conf, pt, i);
+    tbody.appendChild(new_tr);
+  }
+  table.appendChild(tbody);
+
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  report_div.appendChild(div);
+  report_div.appendChild(table);
+
+  // Add sort reset and copy buttons
+  let reset_button = create_sort_reset_button(table.id);
+  let export_button = create_export_button([table.id], _('Initial coordinates'));
+  let select_button = create_select_button(table.id);
+
+  div.appendChild(reset_button);
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill Observations table
+//---------------------------------------------------------------------------------------
+function show_obs(){
+    console.time("create_obs_table");
+    let report_div = create_title_section('obs',_('Observations'),_('Obs'));
+
+    // Create table tag
+    let table = document.createElement("table");
+    table.id = "observations_table";
+    table.classList.add("report_tables");
+
+    // Create header table
+    let header_conf = get_header_conf("observations", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"],data["config"]["compute_type"])
+    let thead = make_html_header(header_conf);
+    let columns_count = header_conf.length;
+    table.appendChild(thead);
+
+    let tbody = document.createElement("tbody");
+
+    let last_file_id = -1;
+    let index_init = 0;
+    for (let i = 0; i < all_obs.length; i++){
+      let obs=all_obs[i];
+      index_init++;
+
+      // if new file, insert filename row
+      if (obs.file_id !== last_file_id){
+
+        last_file_id = obs.file_id;
+
+        let new_tr = document.createElement("tr");
+
+        new_tr.classList.add("filename");
+        let td_init = document.createElement("td");
+        let span = document.createElement("span");
+        span.classList.add("value");
+        span.innerHTML = index_init;
+        td_init.appendChild(span);
+        new_tr.appendChild(td_init);
+
+        let td_filename = document.createElement("td");
+        td_filename.colSpan = columns_count - 1;
+        let file_link = document.createElement("a");
+        if (obs.file_id>=0)
+        {
+          file_link.href = all_files[obs.file_id];
+          file_link.setAttribute('download', all_files[obs.file_id]);
+          file_link.innerHTML = all_files[obs.file_id];
+        } else {
+          file_link.innerHTML = _('Without file');
+        }
+        td_filename.appendChild(file_link);
+        new_tr.appendChild(td_filename);
+        index_init++;
+        tbody.appendChild(new_tr);
+      }
+      let new_tr = add_obs_row(header_conf, obs,index_init,data["computation"]["inverted_matrix"]);
+      tbody.appendChild(new_tr);
+    }
+
+    table.appendChild(tbody);
+
+    let div = document.createElement("div");
+    div.classList.add("div_buttons");
+    report_div.appendChild(div);
+    report_div.appendChild(table);
+
+    // Add sort reset and copy buttons
+    let reset_button = create_sort_reset_button(table.id);
+    let export_button = create_export_button([table.id], _('Observations'));
+    let select_button = create_select_button(table.id);
+
+    div.appendChild(reset_button);
+    div.appendChild(export_button);
+    div.appendChild(select_button);
+
+    console.timeEnd("create_obs_table");
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill residuals charts
+//---------------------------------------------------------------------------------------
+function show_repart_residuals(){
+  console.time("show_repart_residuals");
+  let report_div = create_title_section("repart_residuals",_("Residual distribution"),_("Res"));
+
+  //prepare residuals histogram -----------------------
+  const residuals_class_width = 0.5;
+  let all_residuals_class_labels=["<-3\u03C3"];
+  let all_residuals_class_val={};
+  all_residuals_class_val["all"]=[0];
+  all_residuals_class_val["std"]=[0];
+  for (let i = 0; i < exist_type.length; i++){
+    all_residuals_class_val[exist_type[i]]=[0];
+  }
+
+  for (let i = 0; i < 6 / residuals_class_width - 1; i++){
+    let x = -3 + (i + 1) * residuals_class_width;
+    all_residuals_class_labels.push(to_fixed(x, 1) + "\u03C3");
+    all_residuals_class_val["all"].push(0);
+    all_residuals_class_val["std"].push(all_active_obs.length * residuals_class_width / Math.sqrt(2 * Math.PI) * Math.exp(- x * x / 2) );
+    for (let i = 0; i < exist_type.length; i++){
+      all_residuals_class_val[exist_type[i]].push(0);
+    }
+  }
+  all_residuals_class_labels.push(">3\u03C3");
+  all_residuals_class_val["all"].push(0);
+  all_residuals_class_val["std"].push(0);
+  for (let i = 0; i < exist_type.length; i++){
+    all_residuals_class_val[exist_type[i]].push(0);
+  }
+
+  let min_dist = 10000;
+  let max_dist = 0;
+  for (let i = 0; i < all_active_obs.length; i++){
+    let active_obs=all_active_obs[i];
+    let class_num = Math.round((active_obs.normalized_residual + 3) / residuals_class_width);
+    class_num = Math.min(class_num, all_residuals_class_labels.length - 1);
+    class_num = Math.max(class_num, 0);
+    all_residuals_class_val["all"][class_num]+=1;
+    //prepare datas for residuals vs distance charts -----------------------
+    let type=type_obs[active_obs.code];
+    if (type_dist_chart.includes(type)){
+      if (active_obs.obs_length > max_dist)
+        max_dist = active_obs.obs_length;
+      if ((active_obs.obs_length > 0.1) && (active_obs.obs_length < min_dist))
+        min_dist = active_obs.obs_length;
+    }
+
+    if (!(type==="cint")){
+      all_residuals_class_val[type][class_num]+=1;
+    }
+  }
+  min_dist-=0.001;
+  max_dist+=0.001;
+
+  let all_residuals_class_config = {
+    type: 'bar',
+    data: {
+      labels: all_residuals_class_labels,
+      datasets: [{
+          label: _("Standard"),
+          fill: false,
+          backgroundColor: bgColor["std"],
+          borderColor: bdColor["std"],
+          pointRadius: 0,
+          data: all_residuals_class_val["std"],
+          type: 'line'
+        },
+        {
+          label: _("All residuals"),
+          backgroundColor: bgColor["all"],
+          borderColor: bdColor["all"],
+          pointRadius: 0,
+          data: all_residuals_class_val["all"],
+        },
+      ]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        text: _("Normalized residuals distribution")
+      },
+      showTooltips: false,
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false,
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false,
+          }
+        }]
+      }
+    }
+  };
+
+  const dist_chart_num_steps = 10;
+  const dist_chart_start_step = min_dist;
+  const dist_chart_factor_step = Math.pow((max_dist / dist_chart_start_step), 1 / (dist_chart_num_steps - 1));
+
+  let dist_residuals_class_val={};
+  let all_dists = [];
+  let dist_graph=false;
+
+  for (const type of exist_type){
+    if (type_dist_chart.includes(type)){//No dist chart for coord and den obs
+      dist_graph=true;
+      dist_residuals_class_val[type]={};
+      dist_residuals_class_val[type]["val"]=[];
+      dist_residuals_class_val[type]["abs"]=[];
+      dist_residuals_class_val[type]["num"]=[];
+      dist_residuals_class_val[type]["et"]=[];//ecart type
+    }
+  }
+
+  if (dist_graph){
+    var dist_residuals_class_labels = [];
+    let dist = dist_chart_start_step;
+    for (let i = 0; i < dist_chart_num_steps + 1; i++){
+      all_dists.push(dist);
+      dist_residuals_class_labels.push("<" + to_fixed(dist, 1) + "m");
+      for (const type of exist_type){
+        if (type_dist_chart.includes(type)){
+          dist_residuals_class_val[type]["val"].push(0);
+          dist_residuals_class_val[type]["abs"].push(0);
+          dist_residuals_class_val[type]["num"].push(0);
+          dist_residuals_class_val[type]["et"].push(0);
+        }
+      }
+      dist *= dist_chart_factor_step;
+    }
+
+    for (let i = 0; i < all_active_obs.length; i++){
+      let active_obs=all_active_obs[i];
+      let type=type_obs[active_obs.code];
+      let class_num = 0;
+      for (let j = 0; j < dist_chart_num_steps - 1; j++){
+        if (active_obs.obs_length > all_dists[j])
+          class_num++;
+      }
+      if (type_dist_chart.includes(type)){
+        dist_residuals_class_val[type]["val"][class_num]+= (active_obs.normalized_residual);
+        dist_residuals_class_val[type]["abs"][class_num] += Math.abs(active_obs.normalized_residual);
+        dist_residuals_class_val[type]["num"][class_num] += 1;
+      }
+    }
+
+    for (let i = 0; i < dist_chart_num_steps; i++){
+      for (const type of exist_type){
+        if (type_dist_chart.includes(type)){
+          if (dist_residuals_class_val[type]["num"][i] > 0){
+            dist_residuals_class_val[type]["val"][i] /= dist_residuals_class_val[type]["num"][i];
+            dist_residuals_class_val[type]["abs"][i] /= dist_residuals_class_val[type]["num"][i];
+          }
+        }
+      }
+    }
+
+    for (let i = 0; i < all_active_obs.length; i++){
+      let active_obs=all_active_obs[i];
+      let type=type_obs[active_obs.code];
+      let class_num = 0;
+      for (let j = 0; j < dist_chart_num_steps - 1; j++) {
+        if (active_obs.obs_length > all_dists[j]){
+          class_num++;
+        }
+      }
+      if (type_dist_chart.includes(type)){
+        dist_residuals_class_val[type]["et"][class_num] += Math.abs(active_obs.normalized_residual - dist_residuals_class_val[type]["val"][class_num]);
+      }
+    }
+
+    for (let i = 0; i < dist_chart_num_steps; i++){
+      for (const type of exist_type){
+        if (type_dist_chart.includes(type)){
+          if (dist_residuals_class_val[type]["num"][i] > 0){
+            dist_residuals_class_val[type]["et"][i]/= dist_residuals_class_val[type]["num"][i];
+          }
+        }
+      }
+    }
+    var data2graph_dist = [];
+    var dist_residuals_all = [];
+  }
+  
+  let data2graph_type = [];
+  for (const type of exist_type){
+    data2graph_type.push({
+      label: _(full_name_type[type]),
+      backgroundColor: bgColor[type],
+      borderColor: bdColor[type],
+      pointRadius: 0,
+      data: all_residuals_class_val[type],
+    });
+    if (dist_graph){
+      if (type_dist_chart.includes(type)){
+        data2graph_dist.push({
+          label: _(full_name_type[type]),
+          backgroundColor: bgColor[type],
+          borderColor: bdColor[type],
+          pointRadius: 0,
+          data: dist_residuals_class_val[type]["abs"],
+        })
+        dist_residuals_all.push([dist_residuals_class_val[type]["val"], dist_residuals_class_val[type]["num"], dist_residuals_class_val[type]["et"], dist_residuals_class_val[type]["abs"]]);
+      }
+    }
+  }
+
+  //prepare type-based normalized residual distribution charts -----------------------
+  let all_residuals_class_config_type = {
+    type: 'bar',
+    data: {
+      labels: all_residuals_class_labels,
+      datasets: data2graph_type
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        text: _("Type-based normalized residuals distribution")
+      },
+      showTooltips: false,
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false,
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false,
+          }
+        }]
+      }
+    }
+  };
+
+  //prepare residuals vs distance charts -----------------------
+  if (dist_graph){
+    var dist_residuals_class_config_type = {
+      type: 'bar',
+      data: {
+        labels: dist_residuals_class_labels,
+        datasets: data2graph_dist
+      },
+      options: {
+        responsive: true,
+        title: {
+          display: true,
+          text: _("Average distance-relative normalized absolute residuals distribution")
+        },
+        showTooltips: true,
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem, data) {
+              return " Abs" + _(": ") + to_fixed(dist_residuals_all[tooltipItem.datasetIndex][3][tooltipItem.index], 2) + "\u03C3  | NoAbs" + _(": ") +
+                to_fixed(dist_residuals_all[tooltipItem.datasetIndex][0][tooltipItem.index], 2) + "\u03C3 +/-" +
+                to_fixed(dist_residuals_all[tooltipItem.datasetIndex][2][tooltipItem.index], 2) +
+                "\u03C3 | NbObs" + _(": ") + dist_residuals_all[tooltipItem.datasetIndex][1][tooltipItem.index];
+              //return tooltipItem.index+" "+tooltipItem.datasetIndex;//Object.keys(tooltipItem);
+              //return data.datasets[0].data[0];//Object.keys(data);
+            }
+          }
+        },
+        hover: {
+          mode: 'nearest',
+          intersect: true
+        },
+        scales: {
+          xAxes: [{
+            display: true,
+            scaleLabel: {
+              display: false,
+            }
+          }],
+          yAxes: [{
+            display: true,
+            scaleLabel: {
+              display: false,
+            },
+            ticks: {
+              callback: function(value, index, values) {
+                return to_fixed(value, 2) + "\u03C3";
+              },
+            }
+          }]
+        }
+      }
+    };
+  }
+
+  // Create table tag
+  let table1 = document.createElement("table");
+  table1.id = "residuals_charts";
+
+  let tr1 = document.createElement("tr");
+
+  let td1 = document.createElement("td");
+  let canvas1 = document.createElement("canvas");
+  canvas1.id = "canvas_residuals_chart";
+
+  let td2 = document.createElement("td");
+  let canvas2 = document.createElement("canvas");
+  canvas2.id = "canvas_residuals_chart_type";
+
+  td1.appendChild(canvas1);
+  td2.appendChild(canvas2);
+  tr1.appendChild(td1);
+  tr1.appendChild(td2);
+  table1.appendChild(tr1);
+
+  let residuals_repart_section = document.getElementById("repart_residuals");
+  residuals_repart_section.after(table1);
+
+  // Create table tag
+  let table2 = document.createElement("table");
+  table2.id = "dist_residuals_charts_type";
+
+  let tr2 = document.createElement("tr");
+
+  if (dist_graph){
+    let td3 = document.createElement("td");
+    var canvas3 = document.createElement("canvas");
+    canvas3.id = "canvas_dist_residuals_chart_type";
+
+    td3.appendChild(canvas3);
+    tr2.appendChild(td3);
+  }
+
+  table2.appendChild(tr2);
+  table1.after(table2);
+
+  let ctx1 = canvas1.getContext("2d");
+  let ctx2 = canvas2.getContext("2d");
+  ctx1.canvas.width = 400;
+  ctx1.canvas.height = 300;
+  ctx2.canvas.width = 400;
+  ctx2.canvas.height = 300;
+
+  let myNewChart2 = new Chart(ctx1, all_residuals_class_config);
+  let myNewChart3 = new Chart(ctx2, all_residuals_class_config_type);
+  if (dist_graph){
+    let ctx3 = canvas3.getContext("2d");
+    ctx3.canvas.width = 800;
+    ctx3.canvas.height = 300;
+    let myNewChart4 = new Chart(ctx3, dist_residuals_class_config_type);
+  }
+  console.timeEnd("show_repart_residuals");
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Suggestions
+//---------------------------------------------------------------------------------------
+function show_sugg(){
+  let report_div = create_title_section("propositions_sugg_aleatoires",_("Suggestions"),_("Sugg"));
+  const sum_sigma_type_instrum={};
+  const num_type_instrum = {};
+  const red_type_instrum={};
+  const nb_red_type_instrum = {};
+  for (const type of exist_type){
+    sum_sigma_type_instrum[type]={all:0};
+    num_type_instrum[type]={all:0};
+    red_type_instrum[type]={all:0};
+    nb_red_type_instrum[type]={all:0};
+  }
+  for (let i = 0; i < all_active_obs.length; i++){
+    const obs=all_active_obs[i];
+    const type=type_obs[obs.code];
+    if (type && !(type==="cint")){
+      const file_id=obs.file_id;
+      if (sum_sigma_type_instrum[type][file_id]===undefined){
+         sum_sigma_type_instrum[type][file_id]=0;
+         num_type_instrum[type][file_id]=0;
+         red_type_instrum[type][file_id]=0;
+         nb_red_type_instrum[type][file_id]=0;
+      }
+      sum_sigma_type_instrum[type][file_id]+=Math.abs(obs.normalized_residual)*(obs.obs_redondancy/100);
+      sum_sigma_type_instrum[type]["all"]+=Math.abs(obs.normalized_residual)*(obs.obs_redondancy/100);
+      num_type_instrum[type][file_id]+=1;
+      num_type_instrum[type]["all"]+=1;
+      red_type_instrum[type][file_id]+=obs.obs_redondancy/100;
+      red_type_instrum[type]["all"]+=obs.obs_redondancy/100;
+      if (obs.obs_redondancy > 80){
+        nb_red_type_instrum[type][file_id]+=1;
+        nb_red_type_instrum[type]["all"]+=1;
+      }
+    }
+  }
+  let red_tot=0
+  let sum_sigma_n=0
+  for (const type of exist_type){
+    red_tot+=red_type_instrum[type]["all"];
+    sum_sigma_n+=sum_sigma_type_instrum[type]["all"];
+  }
+  const mu=sum_sigma_n/parseFloat(data["computation"]["sigma_0_final"]);
+
+  let redundancy_section = document.createElement("h4");
+  redundancy_section.innerHTML = _("System redundancy") + _(": ") + to_fixed(red_tot, 0);
+  redundancy_section.title = _("Sum of partial redundancies corresponding to the degree of freedom of the system");
+
+  let redundancy_paragraph = document.createElement("p");
+  redundancy_paragraph.innerHTML = _("Observations sigmas may be multiplied by:");
+
+  let sugg_section = document.getElementById("propositions_sugg_aleatoires");
+  sugg_section.after(redundancy_section);
+  redundancy_section.after(redundancy_paragraph);
+  let ul = document.createElement('ul');
+  let instrum="all"
+  for (let i = 0; i < exist_type.length; i++){
+    const type=exist_type[i];
+    if (num_type_instrum[type][instrum]){
+      const li=get_data_suggestions(instrum,type,red_type_instrum,nb_red_type_instrum,num_type_instrum,sum_sigma_type_instrum,red_tot,mu);
+      ul.appendChild(li);
+    }
+  }
+  redundancy_paragraph.appendChild(ul);
+
+  //suggestions per file
+  let ul_intrum = document.createElement('ul');
+  ul_intrum.id="suggestions_data";
+
+  for (let instrum in all_files){
+    let li = document.createElement('li');
+    ul_intrum.appendChild(li);
+    li.innerHTML += all_files[instrum];
+    let ul2 = document.createElement('ul');
+    for (const type of exist_type){
+      if (num_type_instrum[type][instrum]){
+        const li2=get_data_suggestions(instrum,type,red_type_instrum,nb_red_type_instrum,num_type_instrum,sum_sigma_type_instrum,red_tot,mu)
+        ul2.appendChild(li2);
+        li.appendChild(ul2);
+      }
+    }
+  }
+
+  report_div=add_button(report_div,"suggestions",ul_intrum,'block','toggleButtons("suggestions_data","suggestions_button",_("Show suggestions per file"),_("Hide suggestions per file"))')
+  toggleButtons("suggestions_data","suggestions_button",_("Show suggestions per file"),_("Hide suggestions per file"));
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill biggest residuals
+//---------------------------------------------------------------------------------------
+function show_biggest_residuals(){
+  let report_div = create_title_section("biggest_residuals",_("Biggest residuals"),_("Big"));
+  let at_least_one_big = false;
+
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "biggest_residuals_table";
+  table.classList.add("report_tables");
+
+  // Create header table
+  let header_conf = get_header_conf("biggest_residuals", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"])
+  let thead = make_html_header(header_conf);
+  table.appendChild(thead);
+
+  let tbody = document.createElement("tbody");
+  all_active_obs.sort(residualSortFunction);
+
+  for (let i = 0; i < Math.min(max_biggest_residuals, all_active_obs.length); i++)
+    if (residual_is_big(all_active_obs[i])){
+      at_least_one_big = true
+      let new_tr = add_obs_row(header_conf, all_active_obs[i],i,data["computation"]["inverted_matrix"]);
+      tbody.appendChild(new_tr);
+    }
+
+  if(at_least_one_big){
+    table.appendChild(tbody);
+
+    let div = document.createElement("div");
+    div.classList.add("div_buttons");
+    report_div.appendChild(div);
+    report_div.appendChild(table);
+
+    // Add sort reset and copy buttons
+    const reset_button = create_sort_reset_button(table.id);
+    const export_button = create_export_button([table.id], _('Biggest residuals'));
+    const select_button = create_select_button(table.id);
+
+    div.appendChild(reset_button);
+    div.appendChild(export_button);
+    div.appendChild(select_button);
+  }else{ //If no big residual
+    const no_big = document.createElement("h5");
+    no_big.innerHTML = _("No big residuals");
+    report_div.appendChild(no_big);
+  }
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill similarities table
+//---------------------------------------------------------------------------------------
+function show_G0(){
+  let report_div = create_title_section("g_0",_("G0"),_("G0"));
+  
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "g0";
+  table.classList.add("report_tables");
+  
+  // Create header table
+  let header_conf = get_header_conf("g0s", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"]);
+  let thead = make_html_header(header_conf);
+  table.appendChild(thead);
+  
+  let tbody = document.createElement("tbody");
+  
+  for (let i = 0; i < all_g0.length; i++){
+    let g0=all_g0[i];
+    let sigma=0;
+    let value=0;
+    let unitFactor=0;
+    
+    for (const [key, val] of Object.entries(g0.params)){
+      for (const [key2, val2] of Object.entries(val)){
+        if (key2=="sigma"){
+          sigma=parseFloat(val2);
+        }else if (key2=="value"){
+          value=parseFloat(val2);
+        }else if (key2=="unit_factor"){
+          unitFactor=parseFloat(val2);
+        }
+      }
+    }
+    
+    let value_unit=value/unitFactor
+    let sigma_unit=sigma/unitFactor*10000
+    
+    //New line
+    let new_tr = document.createElement("tr");
+    new_tr.setAttribute('class',parite[i % 2]);
+    
+    //Case Point
+    let td_point=document.createElement("td");
+    td_point.innerHTML=g0.name;
+    new_tr.appendChild(td_point);
+    
+    //Case Tour number
+    let td_number=document.createElement("td");
+    td_number.innerHTML=g0.num;
+    new_tr.appendChild(td_number);
+    
+    //Case Value
+    let td_value=document.createElement("td");
+    let attribute = ['post','\u0020'+'g']
+    td_value.appendChild(format_value(value_unit, false, nb_decimals, attribute, true));
+    new_tr.appendChild(td_value);
+    
+    //Case Sigma
+    let td_sigma=document.createElement("td");
+    let attribute2 = ['post','\u0020'+'dmgon']
+    td_sigma.appendChild(format_value(sigma_unit, false, nb_decimals_mini, attribute2, true));
+    new_tr.appendChild(td_sigma);
+    
+    //Case Active obs   
+    let td_active_obs=document.createElement("td");
+    td_active_obs.innerHTML=g0.nbr_active_obs;
+    new_tr.appendChild(td_active_obs);
+    
+    tbody.appendChild(new_tr);
+  }
+  
+  table.appendChild(tbody);
+  
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  report_div.appendChild(div);
+  report_div.appendChild(table);
+
+  // Add sort reset and copy buttons
+  let reset_button = create_sort_reset_button(table.id);
+  let export_button = create_export_button([table.id], _('Equality constraints'));
+  let select_button = create_select_button(table.id);
+
+  div.appendChild(reset_button);
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill similarities table
+//---------------------------------------------------------------------------------------
+function show_similarities(){
+  let report_div = create_title_section("similarities",_("Similarities"),_("Sim"));
+
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "sim";
+  table.classList.add("report_tables");
+
+  // Create header table
+  let header_conf = get_header_conf("similarities", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"]);
+  let thead = make_html_header(header_conf);
+  table.appendChild(thead);
+
+  let tbody = document.createElement("tbody");
+
+  const triplet_types = {
+    11: "cart obs",
+    12: "angl obs"
+  };
+
+  for (let i = 0; i < all_basc.length; i++){
+    if (all_basc[i].geocentric) continue;
+    let basc = all_basc[i];
+    let origin = all_basc[i].origin;
+    let pos = origin["coord_compensated_cartesian"];
+    let matrix = basc["params_rot"]["R_global2instr"];
+    let obs_type = triplet_types[basc["triplet_type"]]; //+tooltips + traduc
+
+
+    //First line
+    let new_tr = document.createElement("tr");
+    new_tr.setAttribute('class',parite[i % 2]);
+
+    //Case file
+    let td_file=document.createElement("td");
+    td_file.classList.add("name");
+    td_file.setAttribute('rowspan',2);
+    let a_file=document.createElement("a");
+    a_file.setAttribute('href',all_files[basc["observations"][0].file_id]);
+    a_file.innerHTML=all_files[basc["observations"][0].file_id]
+    td_file.appendChild(a_file);
+    new_tr.appendChild(td_file);
+
+    //Case name
+    let td_name=document.createElement("td");
+    td_name.classList.add("name");
+    td_name.setAttribute('rowspan',4);
+    td_name.innerHTML=basc.name;
+    new_tr.appendChild(td_name);
+
+    //Case vertical
+    let td_vert=document.createElement("td");
+    td_vert.setAttribute('rowspan',2);
+    td_vert.title=_("Is subframe z forced to be aligned with vertical?");
+    td_vert.innerHTML=(basc.vertical?_("Verticalized"):_("Not vericalized"))
+    new_tr.appendChild(td_vert);
+
+    //Case T
+    let td_T=document.createElement("td");
+    td_T.title=_("Transformation between subframe and global cartesian frame");
+    td_T.innerHTML="T";
+    new_tr.appendChild(td_T);
+
+    //Cases value T
+    let td_value_T1=document.createElement("td");
+    td_value_T1.innerHTML=to_fixed(parseFloat(pos[0]), nb_decimals);
+    new_tr.appendChild(td_value_T1);
+    let td_value_T2=document.createElement("td");
+    td_value_T2.innerHTML=to_fixed(parseFloat(pos[1]), nb_decimals);
+    new_tr.appendChild(td_value_T2);
+    let td_value_T3=document.createElement("td");
+    td_value_T3.innerHTML=to_fixed(parseFloat(pos[2]), nb_decimals);
+    new_tr.appendChild(td_value_T3);
+
+    tbody.appendChild(new_tr);
+
+    //Second line
+    let new_tr2 = document.createElement("tr");
+    new_tr2.setAttribute('class',parite[i % 2]);
+
+    //Case R
+    let td_R=document.createElement("td");
+    td_R.title=_("Transformation between subframe and global cartesian frame");
+    td_R.innerHTML="R";
+    td_R.setAttribute('rowspan',3);
+    new_tr2.appendChild(td_R);
+
+    //Cases value R
+    let td_value_R0=document.createElement("td");
+    td_value_R0.innerHTML=to_fixed(parseFloat(matrix[0]), nb_decimals);
+    new_tr2.appendChild(td_value_R0);
+    let td_value_R1=document.createElement("td");
+    td_value_R1.innerHTML=to_fixed(parseFloat(matrix[1]), nb_decimals);
+    new_tr2.appendChild(td_value_R1);
+    let td_value_R2=document.createElement("td");
+    td_value_R2.innerHTML=to_fixed(parseFloat(matrix[2]), nb_decimals);
+    new_tr2.appendChild(td_value_R2);
+
+    tbody.appendChild(new_tr2);
+
+    //Third line
+    let new_tr3 = document.createElement("tr");
+    new_tr3.setAttribute('class',parite[i % 2]);
+
+    //Cases value nb_obs
+    let td_nb_obs=document.createElement("td");
+    td_nb_obs.setAttribute('rowspan',2);
+    td_nb_obs.title=_("Number and nature of active observations");
+    td_nb_obs.innerHTML=all_basc[i].nbr_active_obs + " " + obs_type;
+    new_tr3.appendChild(td_nb_obs);
+
+    //Case deflection
+    let td_def=document.createElement("td");
+    td_def.title=_("Angle between vertical and sub-frame z");
+    td_def.innerHTML=_("Deflection");
+    new_tr3.appendChild(td_def);
+
+    //Cases value R 2nd row
+    let td_value_R3=document.createElement("td");
+    td_value_R3.innerHTML=to_fixed(parseFloat(matrix[3]), nb_decimals);
+    new_tr3.appendChild(td_value_R3);
+    let td_value_R4=document.createElement("td");
+    td_value_R4.innerHTML=to_fixed(parseFloat(matrix[4]), nb_decimals);
+    new_tr3.appendChild(td_value_R4);
+    let td_value_R5=document.createElement("td");
+    td_value_R5.innerHTML=to_fixed(parseFloat(matrix[5]), nb_decimals);
+    new_tr3.appendChild(td_value_R5);
+
+    tbody.appendChild(new_tr3);
+
+    //Fourth line
+    let new_tr4 = document.createElement("tr");
+    new_tr4.setAttribute('class',parite[i % 2]);
+
+    //Case value deflection
+    let td_value_def=document.createElement("td");
+    td_value_def.title=_("Angle between vertical and sub-frame z")
+
+    td_value_def.innerHTML=to_fixed(parseFloat(basc.ang_to_vert), nb_decimals);
+    let span_value = document.createElement("span");
+    span_value.setAttribute('post', '\u0020'+data["computation"]["unit_name"]);
+    td_value_def.appendChild(span_value);
+    new_tr4.appendChild(td_value_def);
+
+    tbody.appendChild(new_tr4);
+
+    //Cases value R 3rd row
+    let td_value_R6=document.createElement("td");
+    td_value_R6.innerHTML=to_fixed(parseFloat(matrix[6]), nb_decimals);
+    new_tr4.appendChild(td_value_R6);
+    let td_value_R7=document.createElement("td");
+    td_value_R7.innerHTML=to_fixed(parseFloat(matrix[7]), nb_decimals);
+    new_tr4.appendChild(td_value_R7);
+    let td_value_R8=document.createElement("td");
+    td_value_R8.innerHTML=to_fixed(parseFloat(matrix[8]), nb_decimals);
+    new_tr4.appendChild(td_value_R8);
+
+    tbody.appendChild(new_tr4);
+  }
+
+  table.appendChild(tbody);
+
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  report_div.appendChild(div);
+  report_div.appendChild(table);
+
+
+  // Add sort reset and copy buttons
+  let export_button = create_export_button([table.id], _('Similarities'));
+  let select_button = create_select_button(table.id);
+
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill Axis table
+//---------------------------------------------------------------------------------------
+function show_axes(){
+  let report_div = create_title_section("axis",_("Axes"),_("Axes"));
+
+  const all_axis=["Aa","Ab","Ac"];
+  //One table per axis
+  for (let i = 0; i < all_axes.length; i++){
+    let p = document.createElement("p");
+    let axe = all_axes[i];
+    let origin = all_axes[i].origin;
+    let pos = origin["coord_compensated_cartesian"];
+
+    let prec={};//precision by axis
+    for (let i = 0; i < all_axis.length; i++){
+      let axis=all_axis[i];
+      const key_axis = Object.keys(axe.params).find(key => key.match(axe.name+'_'+axis+'.*'));
+      if (data["computation"]["inverted_matrix"]) {
+        prec[axis]=" &plusmn; "+to_fixed(axe.params[key_axis].sigma, nb_decimals);
+      }else{
+        prec[axis]="";
+      }
+    }
+
+    const key_a = Object.keys(axe.params).find(key => key.match(axe.name+'_Aa.*'));
+    const key_b = Object.keys(axe.params).find(key => key.match(axe.name+'_Ab.*'));
+    const key_c = Object.keys(axe.params).find(key => key.match(axe.name+'_Ac.*'));
+
+    // Create title tag
+    let table_title = document.createElement("h4");
+    table_title.innerHTML = _("Axis")+' <a href="' + all_files[axe["observations"][0].file_id] + '" download>' + all_files[axe["observations"][0].file_id] + '</a>'+_(" on point ")+axe.name;
+
+    let div = document.createElement("div");
+    div.classList.add("div_buttons");
+
+    // Create table tag
+    let table = document.createElement("table");
+    table.id = axe.name;
+    table.classList.add("axis_param_table");
+
+    // Add export button
+    let export_button = create_export_button([table.id], axe.name);
+    let select_button = create_select_button(table.id);
+
+    div.appendChild(export_button);
+    div.appendChild(select_button);
+
+    //Axis Header line
+    let new_tr=document.createElement("tr");
+    let new_th=document.createElement("th");
+    new_th.setAttribute('colspan',4);
+    new_th.innerHTML=_("Axis parameterization");
+    new_tr.appendChild(new_th);
+    table.appendChild(new_tr);
+
+    //a axis line
+    let tr_a=document.createElement("tr");
+    let td_a=document.createElement("td");
+    td_a.setAttribute('colspan',2);
+    td_a.innerHTML=to_fixed(axe.params[key_a].value, nb_decimals) + prec["Aa"];
+    tr_a.appendChild(td_a);
+    let td_a2=document.createElement("td");
+    tr_a.appendChild(td_a2);
+    let td_a3=document.createElement("td");
+    td_a3.innerHTML=to_fixed(pos[0], nb_decimals);
+    tr_a.appendChild(td_a3);
+    table.appendChild(tr_a);
+
+    //b axis line
+    let tr_b=document.createElement("tr");
+    let td_b=document.createElement("td");
+    td_b.setAttribute('colspan',2);
+    td_b.innerHTML=to_fixed(axe.params[key_b].value, nb_decimals) + prec["Ab"];
+    tr_b.appendChild(td_b);
+    let td_b2=document.createElement("td");
+    td_b2.innerHTML=" * λ + ";
+    tr_b.appendChild(td_b2);
+    let td_b3=document.createElement("td");
+    td_b3.innerHTML=to_fixed(pos[1], nb_decimals);
+    tr_b.appendChild(td_b3);
+    table.appendChild(tr_b);
+
+    //c axis line
+    let tr_c=document.createElement("tr");
+    let td_c=document.createElement("td");
+    td_c.setAttribute('colspan',2);
+    td_c.innerHTML=to_fixed(axe.params[key_c].value, nb_decimals) + prec["Ac"];
+    tr_c.appendChild(td_c);
+    let td_c2=document.createElement("td");
+    tr_c.appendChild(td_c2);
+    let td_c3=document.createElement("td");
+    td_c3.innerHTML=to_fixed(pos[2], nb_decimals);
+    tr_c.appendChild(td_c3);
+    table.appendChild(tr_c);
+
+    //Target Header line
+    let tr_tg=document.createElement("tr");
+    let th_tg=document.createElement("th");
+    th_tg.innerHTML=_("Target ID");
+    th_tg.addClass="name";
+    tr_tg.appendChild(th_tg);
+    let th_ab=document.createElement("th");
+    th_ab.innerHTML=_("Abscissa");
+    tr_tg.appendChild(th_ab);
+    let th_rd=document.createElement("th");
+    th_rd.innerHTML=_("Radius");
+    tr_tg.appendChild(th_rd);
+    let th_pos=document.createElement("th");
+    th_pos.innerHTML=_("Positions");
+    tr_tg.appendChild(th_pos);
+    table.appendChild(tr_tg);
+
+    //Line per target
+    for (let j = 0; j < axe.targets.length; j++){
+      let target=axe.targets[j];
+      const key_l = Object.keys(axe.params).find(key => key.match(axe.name+'_st.*_T'+target.num+'_l'));
+      const key_r = Object.keys(axe.params).find(key => key.match(axe.name+'_st.*_T'+target.num+'_r'));
+
+      let tg_tr=document.createElement("tr");
+      //Target case
+      let td_tg=document.createElement("td");
+      td_tg.setAttribute('field','from');
+      td_tg.innerHTML=target.num;
+      tg_tr.appendChild(td_tg);
+      //Abcsissa case
+      let td_ab=document.createElement("td");
+      td_ab.innerHTML = to_fixed(axe.params[key_l].value, nb_decimals);
+      tg_tr.appendChild(td_ab);
+      //Radius case
+      let td_rd=document.createElement("td");
+      td_rd.innerHTML = to_fixed(axe.params[key_r].value, nb_decimals);
+      tg_tr.appendChild(td_rd);
+      //Position case
+      let td_pos=document.createElement("td");
+      td_pos.innerHTML=target.axisObs.length;
+      tg_tr.appendChild(td_pos);
+      table.appendChild(tg_tr);
+    }
+
+    p.appendChild(table_title)
+    p.appendChild(div)
+    p.appendChild(table);
+    report_div.appendChild(p);
+  }
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill equality constraints table
+//---------------------------------------------------------------------------------------
+function show_equality(){
+  let report_div = create_title_section("equality",_("Equality constraints"),_("Equality"));
+  
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "eq";
+  table.classList.add("report_tables");
+  
+  // Create header table
+  let header_conf = get_header_conf("equalities", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"]);
+  let thead = make_html_header(header_conf);
+  table.appendChild(thead);
+  
+  let tbody = document.createElement("tbody");
+  
+  for (let i = 0; i < all_eq.length; i++){
+    let eq = all_eq[i];
+    let type=type_obs[eq.eq_type];
+    let sigma=0;
+    let value=0;
+    
+    for (const [key, val] of Object.entries(eq.params)){
+      for (const [key2, val2] of Object.entries(val)){
+        if (key2=="sigma"){
+          sigma=val2;
+        }else if (key2=="value"){
+          value=val2;
+        }
+      }
+    }
+    
+    //New line
+    let new_tr = document.createElement("tr");
+    new_tr.setAttribute('class',parite[i % 2]);
+    
+    //Case file
+    let td_file=document.createElement("td");
+    td_file.classList.add("name");
+    let a_file=document.createElement("a");
+    a_file.setAttribute('href',all_files[eq.file_id]);
+    a_file.innerHTML=all_files[eq.file_id]
+    td_file.appendChild(a_file);
+    new_tr.appendChild(td_file);
+    
+    //Case type
+    let td_type=document.createElement("td");
+    td_type.innerHTML=type;
+    new_tr.appendChild(td_type);
+    
+    //Case value
+    let td_value=document.createElement("td");
+    let attribute = ['post','\u0020'+ 'm'];
+    td_value.appendChild(format_value(value, false, nb_decimals, attribute, true));
+    new_tr.appendChild(td_value);
+    
+    //Case sigma    
+    let td_sigma=document.createElement("td");
+    let attribute2 = ['post','\u0020'+ 'mm'];
+    td_sigma.appendChild(format_value(sigma* 1000, false, nb_decimals_mini, attribute2, true));
+    new_tr.appendChild(td_sigma);
+    
+    //Case Active obs   
+    let td_active_obs=document.createElement("td");
+    td_active_obs.innerHTML=eq.nbr_active_obs;
+    new_tr.appendChild(td_active_obs);
+
+    tbody.appendChild(new_tr);
+  }
+    
+  table.appendChild(tbody);
+  
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  report_div.appendChild(div);
+  report_div.appendChild(table);
+
+  // Add sort reset and copy buttons
+  let reset_button = create_sort_reset_button(table.id);
+  let export_button = create_export_button([table.id], _('Equality constraints'));
+  let select_button = create_select_button(table.id);
+
+  div.appendChild(reset_button);
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill Compensated coordinates table
+//---------------------------------------------------------------------------------------
+function show_coord_comp(){
+  let report_div = create_title_section("coord_comp",_("Compensated coordinates"),_("Comp"));
+
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "coord_comp_table";
+  table.classList.add("report_tables");
+
+  // Create header table
+  let header_conf = get_header_conf("coord_comp_table", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"])
+  let thead = make_html_header(header_conf);
+  let columns_count = header_conf.length;
+  table.appendChild(thead);
+
+  let tbody = document.createElement("tbody");
+
+  for (let i = 0; i < nb_pts; i++){
+    let pt = all_pts[i];
+    let new_tr = add_pt_row(header_conf, pt, i);
+    tbody.appendChild(new_tr);
+  }
+
+  table.appendChild(tbody);
+
+  let coord_comp_section = document.getElementById("coord_comp");
+  coord_comp_section.after(table);
+
+  // Add sort reset and copy buttons
+  let reset_button = create_sort_reset_button(table.id);
+  let export_button = create_export_button([table.id], _('Compensated coordinates'));
+  let select_button = create_select_button(table.id);
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  div.appendChild(reset_button);
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+  table.parentNode.insertBefore(div, table);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill ellispoids table
+//---------------------------------------------------------------------------------------
+function show_ellips(){
+  let report_div = create_title_section("ellips",_("Confidence ellipsoids"),_("Ell"));
+
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "ellips_table";
+  table.classList.add("report_tables");
+
+  // Create header table
+  let header_conf = get_header_conf("ellips", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"])
+  let thead = make_html_header(header_conf);
+  table.appendChild(thead);
+
+  let tbody = document.createElement("tbody");
+
+  for (let i = 0; i < nb_pts; i++){
+    let pt = all_pts[i];
+
+    let new_tr = document.createElement("tr");
+    let td_name= document.createElement("td");
+    let td_axis= document.createElement("td");
+    let td_az= document.createElement("td");
+    let td_tilt= document.createElement("td");
+
+    //fill pt line
+    let pt_code = pt_code_name2html(pt.code_name);
+    let attribute = ['pre', pt_code_name2html(pt.code_name)+'\u0020']
+    let val=pt.name;
+    let nb_param=1;//Number of param of point to know how many line per point
+    if (pt.params){
+      nb_param=Object.keys(pt.params).length;
+    }
+    td_name.setAttribute('rowspan',nb_param);
+    td_name.appendChild(format_value(val, false, false, attribute));
+
+    if (!(pt.comment === "")||(pt.comment === "*")){
+      td_name,comment_tooltip=generate_comment_tooltip(pt.comment,td_name,false);
+      let sp_tooltip = document.createElement("span");
+      sp_tooltip.classList.add("tooltip");
+      let tooltiptext = document.createElement("span");
+      tooltiptext.classList.add("tooltiptext");
+      tooltiptext.appendChild(comment_tooltip);
+      sp_tooltip.appendChild(tooltiptext);
+      td_name.appendChild(sp_tooltip);
+    }
+
+    new_tr.setAttribute('class',parite[i % 2]);
+    new_tr.appendChild(td_name);
+
+    if (!pt.params){//No param -> point fixed
+      td_axis.innerText='-';
+      td_az.innerText='-';
+      td_tilt.innerText='-';
+      new_tr.appendChild(td_axis);
+      new_tr.appendChild(td_az);
+      new_tr.appendChild(td_tilt);
+      table.appendChild(new_tr);
+    }else if (pt.dimension === 1){//1D point
+      let val_axis=parseFloat(pt.ellips.axes[0][0]) * 1000;
+      td_axis.appendChild(format_value(val_axis, false, nb_decimals_mini+1));
+      td_az.innerText='-';
+      let val_tilt=parseFloat(pt.ellips.axes[0][2]);
+      td_tilt.appendChild(format_value(val_tilt, false, nb_decimals_mini+1));
+      new_tr.appendChild(td_axis);
+      new_tr.appendChild(td_az);
+      new_tr.appendChild(td_tilt);
+      table.appendChild(new_tr);
+    }else{//other case
+      for (let j = 0; j < nb_param; j++){
+        let val_axis=parseFloat(pt.ellips.axes[j][0]) * 1000;
+        td_axis.appendChild(format_value(val_axis, false , nb_decimals_mini+1));
+        let val_az=parseFloat(pt.ellips.axes[j][1]);
+        td_az.appendChild(format_value(val_az, false, nb_decimals));
+        let val_tilt=parseFloat(pt.ellips.axes[j][2]);
+        td_tilt.appendChild(format_value(val_tilt, false, nb_decimals));
+
+        //one line and 3 cases per param
+        new_tr.appendChild(td_axis);
+        new_tr.appendChild(td_az);
+        new_tr.appendChild(td_tilt);
+        table.appendChild(new_tr);
+        new_tr = document.createElement("tr");
+        new_tr.setAttribute('class',parite[i % 2]);
+        td_axis= document.createElement("td");
+        td_az= document.createElement("td");
+        td_tilt= document.createElement("td");
+      }
+    }
+  }
+
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  report_div.appendChild(div);
+  report_div.appendChild(table);
+
+  // Add copy buttons
+  let export_button = create_export_button([table.id], _('Confidence ellipsoids'));
+  let select_button = create_select_button(table.id);
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Create and fill intervals table
+//---------------------------------------------------------------------------------------
+function show_intervals(){
+  let report_div = create_title_section("interv",_("Confidence semi-intervals"),_("Inter"));
+
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "interv_table";
+  table.classList.add("report_tables");
+
+  // Create header table
+  let header_conf = get_header_conf("interv", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"]);
+  let thead = make_html_header(header_conf);
+  table.appendChild(thead);
+
+  let tbody = document.createElement("tbody");
+
+  for (let i = 0; i < nb_pts; i++) {
+    let pt = all_pts[i];
+    let new_tr = add_pt_row(header_conf, pt, i);
+    tbody.appendChild(new_tr);
+  }
+
+  table.appendChild(tbody);
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  report_div.appendChild(div);
+  report_div.appendChild(table);
+
+  let reset_button = create_sort_reset_button(table.id);
+  let export_button = create_export_button([table.id],  _("Confidence semi-intervals"));
+  let select_button = create_select_button(table.id);
+  div.appendChild(reset_button);
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Show displacements in case of Monte-Carlo simulation
+//---------------------------------------------------------------------------------------
+function show_displacements(){
+  let report_div = create_title_section("displacements",_("Points displacements simulation"),_("Disp"));
+
+  // Create paragraph
+  let disp_parag = document.createElement("p");
+  disp_parag.innerHTML = _("For ") + parseInt(data["computation"]["nbr_iterations"]) + _(" simulations:");
+  report_div.appendChild(disp_parag);
+
+
+  // Create table tag
+  let table = document.createElement("table");
+  table.id = "displa";
+  table.classList.add("report_tables");
+
+  // Create header table
+  let header_conf = get_header_conf("displa", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"]);
+  let thead = make_html_header(header_conf);
+  table.appendChild(thead);
+
+  let tbody = document.createElement("tbody");
+  for (let i = 0; i < nb_pts; i++) {
+    let pt = all_pts[i];
+    let new_tr = add_pt_row(header_conf, pt, i);
+    tbody.appendChild(new_tr);
+  }
+  table.appendChild(tbody);
+
+  let div = document.createElement("div");
+  div.classList.add("div_buttons");
+  report_div.appendChild(div);
+  report_div.appendChild(table);
+
+  let reset_button = create_sort_reset_button(table.id);
+  let export_button = create_export_button([table.id], _("Points displacements simulation"));
+  let select_button = create_select_button(table.id);
+
+  div.appendChild(reset_button);
+  div.appendChild(export_button);
+  div.appendChild(select_button);
+}
+
+//---------------------------------------------------------------------------------------
+//--------------- Show footer
+//---------------------------------------------------------------------------------------
+function show_footer(){
+  let p = document.createElement("p");
+  p.textContent = data["COMP3D_COPYRIGHT"]+ " - " + data["COMP3D_LICENSE"] + " - ";
+  p.classList.add("footer");
+
+  let mail = document.createElement("a");
+  mail.href = "mailto:"+email;
+  mail.innerHTML = email;
+  p.appendChild(mail);
+
+  let report = document.getElementById("main");
+  report.appendChild(p);
+}
+
+//------------------------------------------------------------------------------
+// Wrtting parts loading function
+//------------------------------------------------------------------------------
+function showComp3Djson(data){
+    let name = data["config"]["name"];
+    let title_tag = document.getElementById("title").innerHTML = name;
+
+    nb_decimals = parseInt(data["config"]["nb_digits"]);
+    nb_decimals_mini = Math.max(nb_decimals - 3, 0);
+
+    const lang = data["config"]["lang"];
+    if (lang in translations)
+        current_dict= translations[lang];
+
+    // Parsing data from json file
+    if (data["points"]){
+        for (const [key, val] of Object.entries(data["points"])) {
+            all_pts.push(val);
+            if (val.dimension !== 1) {
+                three_dimension=true;
+            }
+            all_pts_name[key]=val;
+            all_pts[all_pts.length - 1].name = key;
+            if (val["stations"] && Object.keys(val["stations"]).length !== 0) {
+                for (const [key2, val2] of Object.entries(val["stations"])) {
+                    for (const [key3, val3] of Object.entries(val2["observations"])) {
+                      val3.num = val2.num;
+                      all_obs.push(val3);
+                    }
+                    if (val2["type"] === "bascule") {
+                        all_basc.push(val2);
+                        all_basc[all_basc.length - 1].name = key;
+                        all_basc[all_basc.length - 1].origin = val;
+                    }else if (val2["type"] === "axis") {
+                        all_axes.push(val2);
+                        all_axes[all_axes.length - 1].name = key;
+                        all_axes[all_axes.length - 1].origin = val;
+                    }else if (val2["type"] === "hz_unknown") {
+                        all_g0.push(val2);
+                        all_g0[all_g0.length - 1].name = key;
+                    }
+                }
+            }
+        }
+    }
+    if (data["other_stations"]){
+        for (const [key, val] of Object.entries(data["other_stations"])) {
+            if (val["type"] === "eq") {
+              all_eq.push(val);
+            }
+            for (const [key3, val3] of Object.entries(val["observations"])) {
+              all_obs.push(val3);
+            }            
+        }
+    }
+    if (data["computation"]){
+        if (data["computation"]["internal_constraints_obs"]){
+            for (const [key, val] of Object.entries(data["computation"]["internal_constraints_obs"])) {
+                all_obs.push(val);
+            }
+        }
+        for (const obs of all_obs){
+            if ((obs.active)&&(data["computation"]["inverted_matrix"]===(obs.obs_redondancy!==undefined))){ //obs not used in internal constraints have no redondancy
+                all_active_obs.push(obs);
+                exist[type_obs[obs.code]] = true;
+            }
+        }
+    } else {
+      return; //no computation, nothing to do
+    }
+
+    nb_pts=all_pts.length;
+    all_pts.sort(pointSortFunction);
+    all_obs.sort(obsSortFunction);
+    all_files = data["all_data_files"];
+    var nbFiles = 0;
+    for (let o in all_files) ++nbFiles;
+
+    // Create html table of content (toc)
+
+    let toc_div = document.createElement("div");
+    toc_div.id = "table_of_content";
+    let tocmini_div = document.createElement("div");
+    tocmini_div.id = "table_of_content_mini";
+    let sidebar = document.getElementById("sideBar");
+
+    let title_a = document.createElement("div");
+    title_a.setAttribute("href", "#top");
+    let title_h = document.createElement("h1");
+    title_h.innerHtml = title;
+
+    title_a.appendChild(title_h);
+    toc_div.appendChild(title_a);
+    tocmini_div.appendChild(title_a);
+    sidebar.appendChild(toc_div);
+    sidebar.appendChild(tocmini_div);
+
+    let report = document.createElement("div");
+    report.id = "report";
+
+    let main_div = document.getElementById("main");
+
+    let notify_div = document.createElement("div");
+    notify_div.id = "notify";
+    notify_div.classList.add("hide_notif");
+    main.appendChild(notify_div);
+    main.appendChild(report);
+
+    // Each function displaying a section
+    show_version();
+    show_info_work();
+    if (data["points"]){
+        if (data["config"]["display_map"]){
+            createMap();
+        }
+    }
+    show_info_calc();
+    if (data["points"]){
+        if ((data["config"]["compute_type"] === 0) && (data["computation"]["all_sigma0"].length>0)){
+          if (data["computation"]["sigma_0_final"]!==null){
+            show_evol_sigma0();
+          }
+          show_chi2();
+        }
+        for (let type in exist){
+          if (exist[type] && !(type==="cint")){
+            exist_type.push(type);
+          }
+        }
+        show_coord_init();
+        show_obs();
+        if (exist["hz"]){
+          show_G0();
+        }
+        if (data["config"]["compute_type"] === 0){
+            show_repart_residuals();
+        }
+        if ((data["config"]["compute_type"] === 0) && (data["computation"]["inverted_matrix"])){
+            show_sugg();
+        }
+        if (data["config"]["compute_type"] === 0){
+            show_biggest_residuals();
+        }
+        if (all_basc.length > 0){
+            show_similarities();
+        }
+        if (all_axes.length > 0){
+            show_axes();
+        }
+        if (all_eq.length > 0){
+            show_equality();
+        }
+        if ((data["computation"]["compensation_done"]) && (data["config"]["compute_type"] === 0)){
+            show_coord_comp();
+        }
+        if (data["computation"]["inverted_matrix"]){
+            if (three_dimension){
+                show_ellips();
+            }
+            show_intervals();
+        }
+        if (data["config"]["compute_type"] === 2){//Monte Carlo
+            show_displacements();
+        }
+    }
+    show_footer();
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.title='... - Comp3D';//update window title ASAP
+  document.getElementById("title").innerHTML="";
+  document.getElementById("title").className="spinner";
+
+  let script_data = document.createElement("script");
   script_data.onload = function () {
-      title=data["config"]["name"]; //global variable //update window title ASAP
-      if (title==="")
-        title=data["config_file"].replace(/^.*[\\\/]/, '');
-      document.title=title+_(' - Comp3D');
-      setTimeout(() => {
-            showComp3Djson(data);
-            $("#title").removeClass("spinner");
-        }, 0);
+    title=data["config"]["name"]; //update window title ASAP
+    if (title==="")
+      title=data["config_file"].replace(/^.*[\\\/]/, '');
+    document.title=title+" - Comp3D";
+    setTimeout(() => {
+      showComp3Djson(data);
+      document.getElementById("title").classList.remove("spinner");
+    }, 0);
   };
   script_data.src = data_file;
   script_data.type = "text/javascript";
