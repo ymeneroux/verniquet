@@ -31,6 +31,7 @@ procyon = [ 7, 39, 18.0   ,   5, 13 , 29   ]
 
 # Choix de l'etoile
 etoile = procyon
+nom_etoile = "PROCYON"
 
 # ---------------------------------------------
 # Parametres de precision
@@ -54,6 +55,7 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
 
 
 print(bcolors.HEADER + "# -------------------------------------------------")
@@ -91,6 +93,10 @@ while (True):
             break
 
 
+    f = open(file_name, "a")
+    f.write("MESURE SUR L'ETOILE " + nom_etoile +"\n")
+    f.close()
+
 	
 	# -------------------------------------------------------------------------
 	# CERCLE GAUCHE
@@ -125,7 +131,7 @@ while (True):
 
     
     f = open(file_name, "a")
-    f.write("CG " + eph + " " + '{:10.10f}'.format(value-ref_cg) + "\n")
+    f.write("CG " + eph + " " + '{:10.10f}'.format(value-ref_cg) + " " + '{:10.10f}'.format(angle_cg) + "\n")
     f.close()
     
     
@@ -160,11 +166,11 @@ while (True):
    
     value = lecture_angle("CD etoile")
     ref_cd = lecture_angle("CD point de reference")
-    angle_cd = az[0] - (ref_cd - value)
+    angle_cd = az[0] - (value-ref_cd)
     
     
     f = open(file_name, "a")
-    f.write("CD " + eph + " " + '{:10.10f}'.format(angle_cd) + "\n")
+    f.write("CD " + eph + " " + '{:10.10f}'.format(value-ref_cd) + " " + '{:10.10f}'.format(angle_cd) + "\n")
     f.close()
       
     azimut = (angle_cg + angle_cd)/2
