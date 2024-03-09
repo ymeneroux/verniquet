@@ -159,11 +159,11 @@ function firstButton() {
 			formulaire += 'CG :  &nbsp'
 			formulaire += '<input type="text" maxlength="3" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cg">  ° &nbsp &nbsp';
 			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cg"> \' &nbsp &nbsp';
-			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cg">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="4" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cg">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += 'CD :  &nbsp'
 			formulaire += '<input type="text" maxlength="3" size="3" name="field_i" id="field_'+i+"_"+j+'_d_cd">  ° &nbsp &nbsp';
 			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_m_cd"> \' &nbsp &nbsp';
-			formulaire += '<input type="text" maxlength="2" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cd">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
+			formulaire += '<input type="text" maxlength="4" size="2" name="field_i" id="field_'+i+"_"+j+'_s_cd">  " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp';
 			formulaire += "</br></br>"
 			
 			

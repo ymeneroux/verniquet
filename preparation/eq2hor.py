@@ -20,6 +20,7 @@ import numpy as np
 lon = 2.4457833333333334 
 lat = 48.851333333333336
 
+
 # ---------------------------------------------
 # Catalogue d'etoiles
 # ---------------------------------------------
@@ -28,11 +29,12 @@ rigel   = [ 5, 14, 32.3   ,  -8, 12,  6    ]
 sirius  = [ 6, 45,  8.9173, -16, 42, 58.017]
 procyon = [ 7, 39, 18.0   ,   5, 13, 29    ] 
 regulus = [10,  8, 22.311 ,  11, 58,  1.951]
+spica   = [13, 25, 11.579 , -11,  9, 40.75 ]
 # ---------------------------------------------
 
 # Choix de l'etoile
-etoile = sirius
-nom_etoile = "SIRIUS"
+etoile = spica
+nom_etoile = "SPICA"
 
 # ---------------------------------------------
 # Parametres de precision
@@ -43,8 +45,11 @@ offset_time =  0.0  # Offset (in seconds) relative to true time
 # ===========================================================================
 
 # Specific RA and DEC
-ra = (etoile[0] + etoile[1]/60 + etoile[2]/3600)/24 * 360
-dec = etoile[3] + etoile[4]/60 + etoile[5]/3600
+sign_ra  = 2*(etoile[0]>=0)-1
+sign_dec = 2*(etoile[3]>=0)-1
+ra  = (etoile[0] + sign_ra *etoile[1]/60 + sign_ra *etoile[2]/3600)/24 * 360
+dec =  etoile[3] + sign_dec*etoile[4]/60 + sign_dec*etoile[5]/3600
+
 
 class bcolors:
     HEADER = '\033[95m'
@@ -58,10 +63,21 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-
-print(bcolors.HEADER + "# -------------------------------------------------")
+print(bcolors.HEADER + "# ---------------------------------------------------------")
 print("# Calcul d'orientations astronomiques")
-print("# -------------------------------------------------" + bcolors.ENDC)
+print("# ---------------------------------------------------------" + bcolors.ENDC)
+
+jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
+alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
+print(nom_etoile, jd, az)
+print("-----------------------------------------------------------")
+
+
+
+
+
+
+
 session = input("Nom session : ")
 file_name = session + ".txt"
 print("")
@@ -75,6 +91,8 @@ def lecture_angle(complement):
     value = '{:02d}'.format(val_ref_d) + "° " + '{:02d}'.format(val_ref_m) + "' " + '{:04.1f}'.format(val_ref_s) + "\" "
     print("Observation :", value)
     return val_ref_d + val_ref_m/60.0 + val_ref_s/3600
+
+
 
 
 i = 1
@@ -207,7 +225,7 @@ while (True):
 #dat = [183,32,32,257,12,23,77,35,54,3,32,14,257.4822284353528,257.8808492054696]
 #dat = [230,13,51,305,28,17,125,36,2,50,13,53,259.0562317807839,259.1936609249159]
 #dat = [275,10,40,351,38,46,171,49,20,95,10,27,260.2835793098606,260.4672441419704]
-dat = [320,2,17,37,58,28,218,6,49,140,2,6,261.7517245662855,261.8986609058640]
+#dat = [320,2,17,37,58,28,218,6,49,140,2,6,261.7517245662855,261.8986609058640]
 
 
 def process2(data):

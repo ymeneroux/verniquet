@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr-FR"><head>
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <meta http-equiv="Window-target" content="_top">
+ <meta http-equiv="Author" content="Xavier Jubier">
+ <meta http-equiv="Content-Language" content="fr">
+<!--[if IE]>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+
+ <meta name="copyright" content="1991-2021 by Xavier M. Jubier">
+ <meta name="expires" content="never">
+ <meta name="revisit-after" content="7 days">
+ <meta name="robots" content="index,follow">
+ <meta name="author" content="Xavier Jubier">
+ <meta name="MSSmartTagsPreventParsing" content="true">
+ <meta name="subject" content="'Convertisseur de Coordonnées Equatoriales vers Horizontales'">
+ <meta name="rating" content="general">
+ <meta name="keywords" content="coordonnée, convertisseur, ra, dec, alt, az, ascension, droite, déclinaison, hauteur, azimut, equatoriale, horizontale, calculatrice, jnow, j2000, Jubier">
+ <meta name="description" content="Conversion de coordonnées équatoriales vers horizontales">
+
+ <link rel="shortcut icon" href="http://xjubier.free.fr/favicon.ico" type="image/x-icon">
+ <link rel="icon" href="http://xjubier.free.fr/favicon.ico" type="image/ico">
+ <link rel="home" href="http://xjubier.free.fr/">
+ <link rel="index" href="http://xjubier.free.fr/site_pages/sitemap.html">
+ <link rel="alternate" href="http://xjubier.free.fr/index.xml" type="application/rss+xml" title="RSS 2.0">
+
+ <script src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/adsbygoogle.js"></script><script src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/cookie.js"></script><script src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/show_ads_impl_with_ama_fy2019.js" id="google_shimpl"></script><script async="" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/analytics.js"></script><script language="JavaScript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/CoordinatesEq2HoConverter.js"></script>
+ <script language="JavaScript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/NewPopWindow.js" defer="defer"></script>
+ <script language="JavaScript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/AnalyticsTracking.js"></script>
+
+ <link rel="stylesheet" href="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/commonprivate.css" type="text/css">
+
+ <title>Convertisseur Coordonnées Equatoriales vers Horizontales - Xavier Jubier</title>
+<script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/skype-uri_002.js"></script><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/skype-analytics.js"></script><script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/sdk.js"></script><link rel="preload" href="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/integrator.js" as="script"><script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/integrator.js"></script><link rel="preload" href="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/integrator_002.js" as="script"><script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/integrator_002.js"></script><script src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/lwc" type="text/javascript" defer="defer"></script><link type="text/css" rel="stylesheet" href="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/swc-sdk.css"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"></head>
+
+<body>
+
+<!-- V&eacute;rification du support de JavaScript -->
+<noscript>
+ <div class="jsError">
+  ERREUR<br><br>
+  Javascript n&rsquo;est pas activ&eacute; ou votre navigateur ne supporte pas Javascript<br><br>
+  Vous ne pouvez pas afficher cette page et naviguer sur ce site correctement avant d&rsquo;activer Javascript
+ </div>
+</noscript>
+
+<table style="border-left: solid 1px black; border-top: solid 1px black; border-right: solid 1px black; border-bottom: solid 1px black; background-color: white;" cellspacing="0" cellpadding="2" border="0">
+ <tbody><tr valign="top">
+  <td>
+<!-- La barre des chevrons -->
+   <table style="border-bottom: solid 1px lightgrey;" width="100%" cellspacing="0" cellpadding="5" border="0">
+    <tbody><tr>
+     <td class="Chevrons" valign="middle" nowrap="nowrap" align="left">
+      <a href="http://xjubier.free.fr/index.html" class="Chevrons" title="Voyage Paysage Eclipse Découverte Xavier Jubier">Accueil</a>&nbsp;&gt;&nbsp;<a href="http://xjubier.free.fr/site_pages/astronomie.html" class="Chevrons" title="Ressources pour l’astronomie">Astronomie</a>&nbsp;&gt;&nbsp;Convertisseur de Coordonnées Equatoriales vers Horizontales
+     </td>
+     <td class="Language" valign="middle" nowrap="nowrap" align="right">
+      <a href="http://xjubier.free.fr/en/site_pages/astronomy/coordinatesConverter.html" class="Language" title="Change language to English"><img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/Flag_USA_ENG.gif" title="English" alt="Language Flag" style="vertical-align: middle;" width="26" height="16" border="0">English</a>
+     </td>
+    </tr>
+   </tbody></table>
+<!-- Calculatrice -->
+   <table cellspacing="2" cellpadding="2" border="0">
+    <tbody><tr>
+     <td>
+      <h1 align="center">Convertisseur de Coordonnées Equatoriales vers Horizontales</h1>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <div align="center">
+       <center>
+       <table style="background-color: #EEEEFF;" cellspacing="0" cellpadding="5" border="1">
+        <tbody><tr>
+         <td>
+          <table border="0">
+           <tbody><tr>
+            <td colspan="5" class="EphemeridesBold" nowrap="nowrap">
+             Coordonnées Géocentriques Equatoriales (<input type="radio" name="epoch" id="epoch_j2000" value="1" checked="checked"><label for="epoch_j2000">J2000</label>&nbsp;<input type="radio" name="epoch" id="epoch_jnow" value="2"><label for="epoch_jnow">JNow</label>)
+            </td>
+           </tr>
+           <tr>
+            <td class="Ephemerides">&nbsp;</td>
+            <td class="EphemeridesCenter"><span style="color: red;">Heure</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Minute</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Seconde</span></td>
+            <td rowspan="4" width="100%">&nbsp;</td>
+           </tr>
+           <tr>
+            <td class="Ephemerides" nowrap="nowrap"><span style="color: red;">Ascension Droite</span></td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="rah" id="rah" value="7" size="3"><span class="Input">&#8201;h&nbsp;</span>
+            </td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="ram" id="ram" value="39" size="3"><span class="Input">&#8201;m&nbsp;</span>
+            </td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="ras" id="ras" value="18,1" size="6"><span class="Input">&#8201;s&nbsp;</span>
+            </td>
+           </tr>
+           <tr>
+            <td class="Ephemerides">&nbsp;</td>
+            <td class="EphemeridesCenter"><span style="color: red;">Degré</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Minute</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Seconde</span></td>
+           </tr>
+           <tr>
+            <td class="Ephemerides" nowrap="nowrap"><span style="color: red;">Déclinaison</span></td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="decd" id="decd" value="5" size="3"><span class="Input">&#8201;°&nbsp;</span>
+            </td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="decm" id="decm" value="13" size="3"><span class="Input">&#8201;'&nbsp;</span>
+            </td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="decs" id="decs" value="29" size="6"><span class="Input">&#8201;"&nbsp;</span>
+            </td>
+           </tr>
+          </tbody></table>
+          <table border="0">
+           <tbody><tr>
+            <td colspan="5" class="EphemeridesBold" nowrap="nowrap">
+             Date et Heure en Temps Universel Coordonné (UTC)
+            </td>
+           </tr>
+           <tr>
+            <td class="Ephemerides">&nbsp;</td>
+            <td class="EphemeridesCenter"><span style="color: red;">Jour</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Mois</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Année</span></td>
+            <td rowspan="4" width="100%">&nbsp;</td>
+           </tr>
+           <tr>
+            <td class="Ephemerides"><span style="color: red;">Date</span></td>
+            <td class="Ephemerides">
+             <input type="text" name="day" id="day" value="1" size="3">
+            </td>
+            <td class="Ephemerides">
+             <input type="text" name="month" id="month" value="5" size="3">
+            </td>
+            <td class="Ephemerides">
+             <input type="text" name="year" id="year" value="2022" size="6">
+            </td>
+           </tr>
+           <tr>
+            <td class="Ephemerides">&nbsp;</td>
+            <td class="EphemeridesCenter"><span style="color: red;">Heure</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Minute</span></td>
+            <td class="EphemeridesCenter"><span style="color: red;">Seconde</span></td>
+           </tr>
+           <tr>
+            <td class="Ephemerides" nowrap="nowrap"><span style="color: red;">Heure</span></td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="hour" id="hour" value="18" size="3">&#8201;h&nbsp;
+            </td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="minute" id="minute" value="0" size="3">&#8201;m&nbsp;
+            </td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="second" id="second" value="0" size="6">&#8201;s&nbsp;
+            </td>
+           </tr>
+          </tbody></table>
+          <table border="0">
+           <tbody><tr>
+            <td colspan="3" class="EphemeridesBold" nowrap="nowrap">
+             Coordonnées&nbsp;de&nbsp;l’Observateur
+            </td>
+           </tr>
+           <tr>
+            <td class="Ephemerides"><span style="color: red;">Latitude</span></td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="latd" id="latd" value="48" size="3"><span class="Input">&#8201;°&nbsp;</span>
+             <input type="text" name="latm" id="latm" value="51,080" size="9"><span class="Input">&#8201;'&nbsp;</span>
+             <select id="latx" name="latx" size="1">
+              <option value="1" selected="selected">N</option>
+              <option value="-1">S</option>
+             </select>
+             <span id="Lat_dd" style="text-align: left;"></span>
+            </td>
+            <td rowspan="3" width="30">&nbsp;</td>
+           </tr>
+           <tr>
+            <td class="Ephemerides"><span style="color: red;">Longitude</span></td>
+            <td class="Ephemerides" nowrap="nowrap">
+             <input type="text" name="lond" id="lond" value="2" size="3"><span class="Input">&#8201;°&nbsp;</span>
+             <input type="text" name="lonm" id="lonm" value="26.747" size="9"><span class="Input">&#8201;'&nbsp;</span>
+             <select id="lonx" name="lonx" size="1">
+              <option value="1" selected="selected">E</option>
+              <option value="-1">O</option>
+             </select>
+             <span id="Lon_dd" style="text-align: left;"></span>
+            </td>
+           </tr>
+           <tr>
+            <td colspan="2" class="Ephemerides" width="400">
+             <br>
+             Indiquez ci-dessus les coordonnées géographiques du lieu d’obsevation. Le <a href="javascript:makeNewWindow('../DMS2DD_Converter.html',850,400,'topright');" class="Browsers" title="Convertisseur dms &lt;-&gt; dd">[Convertisseur Lat/Lon DMS&lt;-&gt;DD]</a> peut vous y aider.
+            </td>
+           </tr>
+          </tbody></table>
+         </td>
+         <td>
+          <table style="background-color: #EEEEFF;" cellspacing="0" cellpadding="5" border="1">
+           <tbody><tr>
+            <td>
+             <table cellspacing="0" cellpadding="0" border="0">
+              <tbody><tr>
+               <td colspan="2" class="EphemeridesBold" nowrap="nowrap">
+                Coordonnées Géocentriques Horizontales
+               </td>
+               <td class="EphemeridesCenter" nowrap="nowrap">
+                (avec réfraction)
+               </td>
+              </tr>
+              <tr>
+               <td class="Ephemerides" nowrap="nowrap">
+                <span class="Ephemerides" style="color: blue;">Hauteur</span>
+               </td>
+               <td class="EphemeridesRight">
+                <span id="alt">7,67°</span>
+               </td>
+               <td class="EphemeridesRight">
+                <span id="altr">7,79°</span>
+               </td>
+              </tr>
+              <tr>
+               <td class="Ephemerides" nowrap="nowrap">
+                <span class="Ephemerides" style="color: blue;">Azimut</span>
+               </td>
+               <td class="EphemeridesRight">
+                <span id="azm">68,17°</span>
+               </td>
+               <td class="EphemeridesRight">
+                <span id="azmr">68,17°</span>
+               </td>
+              </tr>
+              <tr>
+               <td colspan="3">
+                &nbsp;
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2" class="EphemeridesBold" nowrap="nowrap">
+                Coordonnées Topocentriques Horizontales
+               </td>
+               <td class="EphemeridesCenter" nowrap="nowrap">
+                (étoiles)
+               </td>
+              </tr>
+              <tr>
+               <td class="Ephemerides" nowrap="nowrap">
+                <span class="Ephemerides" style="color: blue;">Hauteur (avec réfraction)</span>
+               </td>
+               <td class="EphemeridesRight">
+                &nbsp;
+               </td>
+               <td class="EphemeridesRight">
+                <span id="altt">7,79°</span>
+               </td>
+              </tr>
+              <tr>
+               <td class="Ephemerides" nowrap="nowrap">
+                <span class="Ephemerides" style="color: blue;">Azimut</span>
+               </td>
+               <td class="EphemeridesRight">
+                &nbsp;
+               </td>
+               <td class="EphemeridesRight">
+                <span id="azmt">68,17°</span>
+               </td>
+              </tr>
+              <tr>
+               <td colspan="3">
+                &nbsp;
+               </td>
+              </tr>
+              <tr>
+               <td class="Ephemerides" nowrap="nowrap">
+                <span class="Ephemerides" style="color: blue;">Jour Julien</span>
+               </td>
+               <td class="EphemeridesRight">
+                <span id="julianday">2455034,71557</span>
+               </td>
+               <td rowspan="5" class="EphemeridesRight">
+                &nbsp;
+               </td>
+              </tr>
+              <tr>
+               <td class="Ephemerides" nowrap="nowrap">
+                <span class="Ephemerides" style="color: blue;">Temps Sidéral Moyen à Greenwich</span>
+               </td>
+               <td class="EphemeridesRight">
+                <span id="gst">1,17986</span>
+               </td>
+              </tr>
+              <tr>
+               <td>&nbsp;</td>
+               <td class="EphemeridesRight">
+                <span id="gsth">1h10m47,48s</span>
+               </td>
+              </tr>
+              <tr>
+               <td class="Ephemerides" nowrap="nowrap">
+                <span class="Ephemerides" style="color: blue;">Temps Sidéral Local</span>
+               </td>
+               <td class="EphemeridesRight">
+                <span id="lst">1,36606</span>
+               </td>
+              </tr>
+              <tr>
+               <td>&nbsp;</td>
+               <td class="EphemeridesRight">
+                <span id="lsth">1h21m57,81s</span>
+               </td>
+              </tr>
+             </tbody></table>
+            </td>
+           </tr>
+          </tbody></table>
+          <br><br>
+          <div align="center">
+           <table border="0">
+            <tbody><tr>
+             <td class="Ephemerides" nowrap="nowrap">
+              <input type="button" value=" Mise à Jour " onclick="compute('fr');" style="background-color: #FFE279; width: 100px; -webkit-appearance: none;">
+             </td>
+            </tr>
+           </tbody></table>
+          </div>
+         </td>
+        </tr>
+       </tbody></table>
+       </center>
+      </div>
+     </td>
+    </tr>
+   </tbody></table>
+   <br><br>
+   <table width="100%" border="0">
+<!-- Bas de la page -->
+    <tbody><tr>
+     <td style="text-align: center;">
+      <hr align="center">
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+       <tbody><tr>
+        <td style="text-align: center;" width="15%" valign="middle" align="center">
+         <script language="JavaScript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/Meteo.js"></script><div id="cont_OTIwMDJ8MXw0fDF8MXxGRkZGRkZ8MXxGRkZGRkZ8Y3wx" style="width: 280px;"><iframe id="OTIwMDJ8MXw0fDF8MXxGRkZGRkZ8MXxGRkZGRkZ8Y3wx" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/a_002.htm" style="border: medium none; overflow: hidden;" scrolling="no" name="frame" width="280" height="60"></iframe><div id="spa_OTIwMDJ8MXw0fDF8MXxGRkZGRkZ8MXxGRkZGRkZ8Y3wx" style="font: 10px / 12px Tahoma, Arial, Helvetica, serif; color: rgb(51, 51, 51); padding: 0px 0px 3px; text-decoration: none;"><a id="a_OTIwMDJ8MXw0fDF8MXxGRkZGRkZ8MXxGRkZGRkZ8Y3wx" href="http://www.meteocity.com/france/antony_v92002/" target="_blank" rel="nofollow" style="font-size: 7px; color: #333333; text-decoration: none;" title="Antony, France">Météo Antony, France</a><span style="font-size: 7px;"> ©</span><a href="http://www.meteocity.com/" target="_blank" rel="nofollow" style="font-size: 7px;">meteocity.com</a></div><script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/OTIwMDJ8MXw0fDF8MXxGRkZGRkZ8MXxGRkZGRkZ8Y3wx"></script></div>
+        </td>
+        <td style="text-align: center;" width="70%" valign="middle" nowrap="nowrap" align="center">
+         <p class="Bottom">
+          <script language="JavaScript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/Email.js"></script>©&nbsp;<a href="mailto:xjubier%40free.fr" class="Bottom">Xavier M. Jubier</a>, 1991-2022.<a href="http://xjubier.free.fr/site_pages/CopyrightNotice.html" title="Droits de reproduction..."><sup>*</sup></a><br>
+          <span style="font-size: 9px;">Dernière mise à jour de cette page le 3 mai 2004.</span><br>
+          <a href="http://xjubier.free.fr/site_pages/sitemap.html" class="Bottom">Plan du Site</a>&nbsp;—&nbsp;<a href="http://xjubier.free.fr/site_pages/MentionsLegales.html" class="Bottom">Mentions Légales</a>
+         </p>
+        </td>
+        <td style="text-align: center;" width="15%" valign="middle" align="center">
+         <script language="JavaScript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/Compteur.js"></script><img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/wwwcount.gif" alt="Counter">
+         <br>
+         <a href="http://www.pagerank.net/" rel="nofollow" target="_blank">
+          <img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/pagerank.gif" alt="Page Rank" style="border: 0;">
+         </a>
+        </td>
+       </tr>
+      </tbody></table>
+     </td>
+    </tr>
+   </tbody></table>
+  </td>
+  <td style="border-left: solid 1px lightgrey; background-color: #E7E7E7;" width="120" valign="top">
+   <div style="text-align: center;" align="center">
+<!-- Search Google -->
+    <form method="get" action="http://www.google.com/custom" target="google_window">
+     <table style="background-color: #E7E7E7;">
+      <tbody><tr>
+       <td valign="top" nowrap="nowrap" height="32" align="left">
+        <a href="http://www.google.fr/" rel="nofollow" class="none">
+         <img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/Logo_25wht.gif" alt="Google" border="0" align="middle">
+        </a>
+        <br>
+        <input type="text" name="q" size="16" maxlength="255">
+       </td>
+      </tr>
+      <tr>
+       <td valign="top" align="left">
+        <input type="hidden" name="domains" value="xjubier.free.fr">
+        <input type="checkbox" name="sitesearch" id="sitesearch" value="xjubier.free.fr" checked="checked">
+        <label for="sitesearch" class="sitesearch">xjubier.free.fr</label><br>
+        <input type="hidden" name="client" value="pub-0817360300089666">
+        <input type="hidden" name="forid" value="1">
+        <input type="hidden" name="ie" value="ISO-8859-1">
+        <input type="hidden" name="oe" value="ISO-8859-1">
+        <input type="hidden" name="cof" value="S:http://xjubier.free.fr/;AH:center;LH:80;L:http://xjubier.free.fr/images/Logo_xjubier.jpg;LW:487;AWFID:b90af53b731018cc;">
+        <input type="hidden" name="hl" value="fr">
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" valign="middle" align="center">
+        <input type="submit" name="sa" value="Rechercher">
+       </td>
+      </tr>
+     </tbody></table>
+    </form>
+    <hr>
+    <div class="IndexCenter">
+     <a href="http://xjubier.free.fr/guestbook/index.php" target="_blank" class="IndexCenterLg" title="Livre d’Or"><img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/Guestbook_sm.gif" style="vertical-align: middle;" alt="Livre Or" width="26" height="14" border="0">&nbsp;Livre&nbsp;d’Or</a><br>
+     Xavier&nbsp;M.&nbsp;Jubier
+    </div>
+<!-- Links -->
+    <hr>
+    <div class="IndexCenter">
+     <img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/RSS_Safari_36x14.gif" alt="RSS" width="36" height="14" border="0" align="middle">&nbsp;
+     <img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/RSS_16x16.png" alt="RSS" width="16" height="16" border="0" align="middle"><br>
+     <a href="http://xjubier.free.fr/site_pages/RSS.html" class="Index">Service&nbsp;RSS...</a>
+    </div>
+    <hr>
+<!-- Bouton Statut Skype http://www.skype.com/intl/fr/share/buttons/ -->
+    <div class="IndexCenter">
+<!--     Stopped working on 2015 May 15 -->
+<!--     <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+     <a href="skype:xjubier?call" title="Appelez-moi avec Skype..."><img src="http://mystatus.skype.com/smallclassic/xjubier" style="border: none;" width="114" height="20" alt="Statut Skype"></a>-->
+     <script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/skype-uri.js"></script>
+     <div id="SkypeButton_Call_xjubier_1" title="Appelez-moi avec Skype...">
+      <script type="text/javascript">Skype.ui({"name": "dropdown", "element": "SkypeButton_Call_xjubier_1", "participants": ["xjubier"]});</script>
+     <iframe style="display:none;" id="_detectSkypeClient_1648069167069"></iframe><p id="SkypeButton_Call_xjubier_1_paraElement" style="font-size:14px; color:#444444"><a style="cursor: text;" onfocus="SkypeButton.showDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;" onblur="SkypeButton.hideDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;" href="javascript://" onclick="return false;"><div class="skype-button" style="pointer-events: none;"><div></div></div><img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/dropdowncallbutton_16px.png" alt="Call options" role="Pop up menu" style="border:0; margin:16px; vertical-align:-20px;" onmouseover="SkypeButton.showDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;" onmouseout="SkypeButton.hideDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;"></a><ul id="dropdown_SkypeButton_Call_xjubier_1" style="display: none; position: absolute; margin-top: -10px; margin-left: 15px; width: 200px; padding-left: 20px; padding-right: 20px; border: 2px solid #00AFF0; background-color: white; color: #00AFF0; line-height: 50px; list-style: none; list-style-type: none;" onmouseover="SkypeButton.showDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;" onmouseout="SkypeButton.hideDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;"><li style="list-style: none; list-style-type: none;"><a href="javascript://" style="text-decoration: none; color: #00AFF0; font-size: 16px;" onclick="SkypeButton.tryAnalyzeSkypeUri('dropdownCall', '0');SkypeButton.trySkypeUri_Generic('skype:xjubier?call', '_detectSkypeClient_1648069167069', '0'); return false;" onmouseover="this.style.textDecoration = 'underline'" onmouseout="this.style.textDecoration = 'none'" role="Menu item" onfocus="SkypeButton.showDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;" onblur="SkypeButton.hideDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;">Call</a></li><li style="list-style: none; list-style-type: none;"><a href="javascript://" style="text-decoration: none; color: #00AFF0; font-size: 16px;" onmouseover="this.style.textDecoration = 'underline'" onmouseout="this.style.textDecoration = 'none'" onfocus="SkypeButton.showDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;" onblur="SkypeButton.hideDropdown('dropdown_SkypeButton_Call_xjubier_1'); return false;" onclick="SkypeWebControl.SDK.Chat.startChat({ConversationType: 'person', ConversationId: 'xjubier'});">Chat</a></li></ul></p></div>
+    </div>
+<!-- Google Ads -->
+    <hr><br>
+    <script language="JavaScript" type="text/javascript">
+     <!--
+     google_ad_client = "ca-pub-0817360300089666";
+     /* 120x240 Main */
+     google_ad_slot = "6917279847";
+     google_ad_width = 120;
+     google_ad_height = 240;
+     //-->
+    </script>
+    <script language="JavaScript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/show_ads.js"></script><ins id="aswift_0_expand" style="display:inline-table;border:none;margin:0;padding:0;position:relative;visibility:visible;background-color:transparent;width:120px;height:240px;" data-ad-slot="6917279847" tabindex="0" title="Advertisement" aria-label="Advertisement" data-ad-status="unfilled"><ins id="aswift_0_anchor" style="display:block;border:none;margin:0;padding:0;position:relative;visibility:visible;background-color:transparent;width:120px;height:240px;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:120px;height:240px" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/ads.htm" data-google-container-id="a!1" data-load-complete="true" width="120" height="240" frameborder="0"></iframe></ins></ins>
+    <hr>
+    <div class="IndexCenter">
+     <script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/t.js"></script>
+     <script type="text/javascript">rmt_ki101('7',116,'907v1qhkowf','ff0000');</script><iframe style="margin-top:29px;margin-bottom:29px;" scrolling="no" marginwidth="0" marginheight="0" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/f.htm" width="116" height="58" frameborder="0"></iframe>
+    </div>
+   </div>
+  </td>
+ </tr>
+</tbody></table>
+
+<!-- phpmyvisites -->
+<div style="visibility: hidden; display: none;">
+ <script type="text/javascript">
+  <!--
+  var a_vars = Array();
+  var pagename = "";
+  var phpmyvisitesSite = 7048;
+  var phpmyvisitesURL = "http://st.free.fr/phpmyvisites.php";
+  //-->
+ </script>
+ <script language="javascript" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/phpmyvisites.js"></script><img src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/phpmyvisites.gif" alt="phpMyVisites" style="border:0">
+
+</div>
+
+
+
+<script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/sdk-run.js"></script><script type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/sdk-loader.js"></script><script crossorigin="anonymous" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/uicomponent-bundle.js"></script><iframe src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/aframe.htm" style="display: none;" width="0" height="0"></iframe><script crossorigin="anonymous" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/sdk-core.js"></script><script crossorigin="anonymous" type="text/javascript" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/telemetry-bundle.js"></script><iframe allow="microphone; camera;" seamless="seamless" border-radius="6px" allowfullscreen="true" scrolling="no" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/services.htm" frameborder="0"></iframe><ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done" data-ad-status="unfilled"><ins id="aswift_1_expand" style="border: medium none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="border: medium none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/ads_002.htm" data-google-container-id="a!2" data-load-complete="true" frameborder="0"></iframe></ins></ins></ins></body><iframe id="google_esf" name="google_esf" src="Convertisseur%20Coordonn%C3%A9es%20Equatoriales%20vers%20Horizontales%20-%20Xavier%20Jubier_fichiers/zrt_lookup.htm" style="display: none;"></iframe></html>
