@@ -73,11 +73,6 @@ print(nom_etoile, jd, az)
 print("-----------------------------------------------------------")
 
 
-
-
-
-
-
 session = input("Nom session : ")
 file_name = session + ".txt"
 print("")
@@ -124,14 +119,17 @@ while (True):
     ref_cg = lecture_angle("CG point de reference")
 	
     
-    input("Mesure etoile CG    " + bcolors.OKCYAN + " [Enter] signal " + bcolors.ENDC)
-     
-    #jd = datetime.datetime(2023, 9, 10, 0, 25, 0)
+    input("Mesure etoile CG    " + bcolors.OKCYAN + " [Enter] signal 1" + bcolors.ENDC)
     jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
+    alt1, az1, ah1 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
 
-    
-    alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
-
+    input("Mesure etoile CG    " + bcolors.OKCYAN + " [Enter] signal 2" + bcolors.ENDC)
+    jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
+    alt2, az2, ah2 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
+	
+    alt = (alt1 + alt2)/2
+    az  = (az1 + az2)/2
+    ah  = (ah1 + ah2)/2
    
     
     jd1  = datetime.datetime.now(timezone.utc)
@@ -161,13 +159,18 @@ while (True):
 	# CERCLE DROIT
 	# -------------------------------------------------------------------------
     
-    input("Mesure etoile CD    " + bcolors.OKCYAN + " [Enter] signal " + bcolors.ENDC)
-    
     #jd = datetime.datetime(2023, 9, 10, 0, 25, 0)
+    input("Mesure etoile CD    " + bcolors.OKCYAN + " [Enter] signal 1" + bcolors.ENDC)
     jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
+    alt1, az1, ah1 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
 
-
-    alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
+    input("Mesure etoile CD    " + bcolors.OKCYAN + " [Enter] signal 2" + bcolors.ENDC)
+    jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
+    alt2, az2, ah2 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
+	
+    alt = (alt1 + alt2)/2
+    az  = (az1 + az2)/2
+    ah  = (ah1 + ah2)/2
 
    
     
