@@ -17,8 +17,8 @@ import numpy as np
 
 
 # Coordonnees terrestres
-lon = 2.0 
-lat = 48.0
+lon = 2.4457833333333334 
+lat = 48.851333333333336
 
 
 # ---------------------------------------------
@@ -33,8 +33,8 @@ spica   = [13, 25, 11.579 , -11,  9, 40.75 ]
 # ---------------------------------------------
 
 # Choix de l'etoile
-etoile = procyon
-nom_etoile = "PROCYON"
+etoile = spica
+nom_etoile = "SPICA"
 
 # Specific RA and DEC
 sign_ra  = 2*(etoile[0]>=0)-1
@@ -60,17 +60,12 @@ print("# Calcul d'orientations astronomiques")
 print("# ---------------------------------------------------------" + bcolors.ENDC)
 
 
-jd  = datetime.datetime(2024, 3, 10, 12, 5, 29, 0)
-alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
-print(nom_etoile, jd, pyasl.jdcnv(jd), az)
-
-'''
 while (1):
 	input("Press enter")
 	jd  = datetime.datetime.now(timezone.utc)
 	alt, az, ah = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
 	print(nom_etoile, jd, pyasl.jdcnv(jd), az)
 	print("-----------------------------------------------------------")
-'''
+
 
 

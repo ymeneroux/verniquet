@@ -122,11 +122,12 @@ while (True):
     input("Mesure etoile CG    " + bcolors.OKCYAN + " [Enter] signal 1" + bcolors.ENDC)
     jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
     alt1, az1, ah1 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
+    print(jd, az1)
 
     input("Mesure etoile CG    " + bcolors.OKCYAN + " [Enter] signal 2" + bcolors.ENDC)
     jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
-    alt2, az2, ah2 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
-	
+    alt2, az2, ah2 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)   
+    print(jd, az2)
     alt = (alt1 + alt2)/2
     az  = (az1 + az2)/2
     ah  = (ah1 + ah2)/2
@@ -140,7 +141,7 @@ while (True):
     alt, az2, ah = pyasl.eq2hor(pyasl.jdcnv(jd2), ra, dec, lon=lon, lat=lat, alt=0.)
     daz = az2-az1
     
-    eph = str(jd) + " " + '{:.5f}'.format(az[0]) + " +/- " + '{:.5f}'.format(daz[0])
+    eph = '{:.5f}'.format(az[0]) + " +/- " + '{:.5f}'.format(daz[0])
     print(eph)
 
     value =  lecture_angle("CG etoile")
@@ -163,11 +164,13 @@ while (True):
     input("Mesure etoile CD    " + bcolors.OKCYAN + " [Enter] signal 1" + bcolors.ENDC)
     jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
     alt1, az1, ah1 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
+    print(jd, az1)
 
     input("Mesure etoile CD    " + bcolors.OKCYAN + " [Enter] signal 2" + bcolors.ENDC)
     jd  = datetime.datetime.now(timezone.utc) + timedelta(seconds=offset_time)
     alt2, az2, ah2 = pyasl.eq2hor(pyasl.jdcnv(jd), ra, dec, lon=lon, lat=lat, alt=0.)
-	
+    print(jd, az2)
+ 
     alt = (alt1 + alt2)/2
     az  = (az1 + az2)/2
     ah  = (ah1 + ah2)/2
@@ -183,7 +186,7 @@ while (True):
     daz = az2-az1
     
 
-    eph = str(jd) + " " + '{:.5f}'.format(az[0]) + " +/- " + '{:.5f}'.format(daz[0])
+    eph = '{:.5f}'.format(az[0]) + " +/- " + '{:.5f}'.format(daz[0])
     print(eph)
    
     value = lecture_angle("CD etoile")
