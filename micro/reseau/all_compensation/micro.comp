@@ -1,6 +1,6 @@
 data=
 {
-	"COMP3D_COMMIT" : "v5.21rc3-359-g2891cb96",
+	"COMP3D_COMMIT" : "v5.21rc3-361-gf6632d25-dirty",
 	"COMP3D_COPYRIGHT" : "Copyright 1992-2023 IGN France",
 	"COMP3D_LICENSE" : "Licensed for IGN usage only",
 	"COMP3D_OPTIONS" : "QT GUI SIM RES AUTO ",
@@ -182,8 +182,8 @@ data=
 			"min" : 0.86166762460609658
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.007729",
-		"computation_start" : "2024-Mar-20 19:59:42.278008",
+		"computation_duration" : "00:00:00.007777",
+		"computation_start" : "2024-Mar-27 18:03:57.875174",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
