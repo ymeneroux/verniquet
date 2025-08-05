@@ -78,8 +78,8 @@ Etape 3. Orientation du site
 Objectif : à l'aide d'une visée sur les étoiles, déterminer l'azimut d'un point de référence.
 
 3.1. Positionner trépied + théodolite au niveau du point d'origine P (point d'où les positions angulaires des étoiles sur le plafond seront 
-rigoureusement "exactes"). Mettre le téhodolite à niveau
-3.2. Définir un point de référence R (point matériel fixe, bien résolu, visible de jour comme de nuit depuis la station P0, à l'extérieur ou à 
+rigoureusement "exactes"). Mettre le théodolite à niveau
+3.2. Définir un point de référence R (point matériel fixe, bien résolu, visible de jour comme de nuit depuis la station P, à l'extérieur ou à 
 l'intéreur de l'appartement (e.g coin de meuble fixe, affiche au mur, etc)
 3.3. Dans le script de calcul d'azimut az.py, spécifier l'étoile utilisée pour calculer l'azimut de la droite de référence PR :
 
