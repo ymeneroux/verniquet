@@ -43,6 +43,8 @@ DESCRIPTIONS = {}
 f = open(input_file_desc, "r")
 LINES = f.readlines()
 for l in LINES:
+	if l.strip() == "":
+		continue
 	DESCRIPTIONS[l.split('#')[0].strip()] = l.split('#')[1]
 f.close()
 
@@ -67,6 +69,8 @@ for l in LINES:
 	l = l.strip()
 	for i in range(100):
 		l = l.replace('  ', ' ')
+	if (len(l)) == 0:
+		continue
 	if l.startswith('*'):
 		continue
 	l = l.split(' ')
@@ -97,6 +101,8 @@ def deg_dms(deg):
 for i in range(N):
 
 	point = {"name": PT_NAME[i], "date_calcul": date_calcul, "com": ""}
+	
+	point["CODE_PT"] = str(1 + 6*(PT_STD_Z[i] == 0))
 	
 	point["X_L93"] = '{:.3f}'.format(PT_X[i])
 	point["Y_L93"] = '{:.3f}'.format(PT_Y[i])

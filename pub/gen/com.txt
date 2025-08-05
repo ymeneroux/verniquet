@@ -35,8 +35,39 @@ SGRV       #  Eglise Saint-Gervais - 13 rue des Barres - axe au sommet clocher
 SRBN       #  Eglise de la Sorbonne
 SSLP       #  Eglise de Saint-Sulpice - 2 rue Palatine - axe au sommet de la tour Nord
 TFLE       #  Tour Eiffel - antenne supérieure - axe au sommet
-TUBE       #  Cheminée supérieure 20 av. Franklin Roosevelt, Vincennes : axe au sommet
 VDGC       #  Eglise du Val-de-Grâce
 VTRY_LED   #  Cheminée Nord de Vitry-sur-Seine :  signal lumineux Est, étage supérieur
 VTRY_CHN   #  Cheminée Nord de Vitry-sur-Seine :  axe au sommet 
 VTRY_CHS   #  Cheminée Sud de Vitry-sur-Seine :  axe au sommet 
+
+PTB1       #  Poteau en bois - entrée caserne garde républicaine - sommet pyramide
+PTB2       #  Poteau en bois - piste cyclable - centre cylindre blanc
+PSQC       #  Panneau - entrée Square Carnot - centre poteau au sommet
+LMP1       #  Poteau lampadaire Nord-Ouest - axe au niveau du collet 
+LMP2       #  Poteau lampadaire Nord-Est - axe au niveau du collet 
+PZNO       #  Panneau zone - passage piéton Ouest - centre du cercle
+PZNE       #  Panneau zone - passage piéton Est - centre du cercle
+PZ30       #  Panneau zone 30 - bureau de tabac - centre du cercle
+PAVC       #  Panneau Avenue Carnot - coin supérieur gauche - face avant
+ROI0       #  Lucarne Ouest - Pavillon du Roi - coin supérieur gauche
+ROI1       #  Pique décorative Ouest - Pavillon du Roi - axe au niveau du centre de l'ovale
+ROI2       #  Fenêtre supérieure Est - Pavillon du Roi - croisillon central
+PDBS       #  Porte du Bois - Fenêtre Est - coin supérieur droit
+MNHQ       #  Porte du Bois - centre symbole "Monument historique"
+PLB0       #  Plot béton Ouest - axe au sommet
+PLB1       #  Plot béton Est - axe au sommet
+RNN1       #  Fenêtre supérieure Ouest - Pavillon de la Reine - croisillon central
+BNGZ       #  Borne de gaz jaune - centre au sommet
+FTCE       #  Feu tricolore Est - axe au niveau du centre du signal vert
+FTNE       #  Fontaine à Eau - axe au sommet
+RGRD       #  Regard - centre encoche Est
+CSGP       #  Lettre 'P' Paris - Coin supérieur gauche - face avant
+TMLE       #  Panneau "Terrain Militaire" Est - Coin supérieur gauche
+CAS1       #  Caserne Bâtiment Est - Piquet central sur le toit - axe au sommet
+CAS2       #  Caserne Bâtiment avant-poste - fenêtre Est - coin supérieur gauche
+CAS3       #  Caserne Bâtiment centre - cheminée - axe au sommet
+TUBE       #  Cheminée supérieure 20 av. Franklin Roosevelt, Vincennes : axe au sommet
+BT11       #  Vis de droite croisillon fenêtre - Caserne Est - 2e fenêtre en partant de la gauche 
+BT2        #  Croisillon fenêtre - Caserne Ouest - 2e fenêtre en partant de la gauche 
+
+THTZ       #  Tour hertzienne TDF de Romainville - axe au sommet
