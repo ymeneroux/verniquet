@@ -53,7 +53,7 @@ On utilise le script coords.py. Pour afficher l'aide :
 # LON = 2.44578333  LAT = 48.85133333
 # -------------------------------------------------------------------
 Choisir une date de référence (format YYYY-MM-DD hh:mm:ss[.zzzzzz]) et une magnitude maximale. 
-Exemple : pour obtenir le listing des coordonnées angulaires de toutes les étoiles de magnitude inférieure ou égale à 2 au 1er Jan 2025 à 10:30:00 :
+Exemple : pour obtenir le listing des coordonnées angulaires de toutes les étoiles de magnitude inférieure ou égale à 2 au 1er Jan 2010 à 10:30:00 :
 
 > python coords.py 2010-01-01 10:30:00 matrix 2
 
